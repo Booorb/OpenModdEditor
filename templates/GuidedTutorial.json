@@ -1,0 +1,3039 @@
+{
+  "_id": "",
+  "gameSlug": "",
+  "title": "GuidedTutorial",
+  "tier": "1",
+  "allowDuplicateIPS": false,
+  "access": "private",
+  "solanaWalletLoginEnabled": false,
+  "isDeleted": false,
+  "playCount": 1,
+  "totalPlayCount": 1,
+  "reasonForTakingDown": "",
+  "cover": "https://cache.modd.io/asset/spriteImage/1687401119826_Guided-Tuturial-moddio-cover.png",
+  "coverUpdated": false,
+  "link": null,
+  "discordInviteLink": null,
+  "twitterLink": null,
+  "facebookLink": null,
+  "youtubeLink": null,
+  "androidLink": null,
+  "iosLink": null,
+  "redirect": "off",
+  "hidden": false,
+  "patchNotes": null,
+  "clientSidePredictionEnabled": true,
+  "clientPhysicsEngine": "planck",
+  "enableMiniMap": false,
+  "dontResize": false,
+  "releases": [
+    {
+      "version": 0.01,
+      "release": "",
+      "isStable": false,
+      "_id": ""
+    }
+  ],
+  "defaultMaxPlayers": 32,
+  "lifeSpanHours": 5,
+  "sandboxMode": "advanced",
+  "physicsEngine": "planck",
+  "frameRate": 15,
+  "extrapolation": true,
+  "moreIoGames": false,
+  "allowGuestMode": false,
+  "revenueSharing": false,
+  "mobileReady": false,
+  "autoSave": true,
+  "canHostPrivateServers": false,
+  "privateServerIdleTimeout": 0.1,
+  "enableVideoChat": false,
+  "isGuestPlayerAllowed": true,
+  "enablePersistedData": true,
+  "allowVerifiedUserToChat": false,
+  "isFeatured": false,
+  "featuredOrderNo": -1,
+  "isLobbyEnabled": false,
+  "lobbyUnitKey": "",
+  "minLobbySize": 2,
+  "maxLobbySize": 4,
+  "heightBasedZIndex": false,
+  "preferredRegion": "",
+  "isMod": false,
+  "isModdable": false,
+  "allowLateJoining": false,
+  "parentGameId": "",
+  "dailyCoinTransferLimit": 0,
+  "isPublished": true,
+  "contextMenuEnabled": true,
+  "createdAt": "",
+  "updatedAt": "",
+  "invitedUsers": [],
+  "banUsers": [],
+  "banChat": [],
+  "banIps": [],
+  "highScores": [],
+  "__v": 0,
+  "data": {
+    "entityTypeVariables": {},
+    "shops": {},
+    "animationTypes": {
+      "dropped": {
+        "name": "dropped",
+        "frames": [1],
+        "framesPerSecond": 0,
+        "loopCount": 0
+      },
+      "default": {
+        "name": "default",
+        "frames": [1],
+        "loopCount": 0,
+        "framesPerSecond": 0
+      },
+      "ug7i7NHK5N": {
+        "name": "dead",
+        "frames": [5],
+        "framesPerSecond": 0,
+        "loopCount": 0
+      },
+      "use": {
+        "loopCount": null,
+        "framesPerSecond": 20,
+        "frames": [9, 10, 11, 12, 13, 14, 15, 16],
+        "name": "animation"
+      }
+    },
+    "states": {
+      "unselected": {
+        "name": "unselected",
+        "animation": "none",
+        "body": "none",
+        "particles": {},
+        "sound": {}
+      },
+      "default": {
+        "name": "default",
+        "sound": {},
+        "particles": {},
+        "animation": "default",
+        "body": "default"
+      },
+      "selected": {
+        "name": "selected",
+        "animation": "default",
+        "body": "selected",
+        "particles": {},
+        "sound": {}
+      },
+      "dropped": {
+        "name": "dropped",
+        "animation": "dropped",
+        "body": "dropped",
+        "particles": {},
+        "sound": {}
+      }
+    },
+    "map": {
+      "originalTileHeight": 64,
+      "originalTileWidth": 64,
+      "width": 10,
+      "version": 1,
+      "type": "map",
+      "tilewidth": 64,
+      "tilesets": [
+        {
+          "tilewidth": 64,
+          "tileheight": 64,
+          "tilecount": 540,
+          "spacing": 0,
+          "name": "tilesheet_complete",
+          "margin": 0,
+          "imagewidth": 1728,
+          "imageheight": 1280,
+          "image": "https://cache.modd.io/asset/spriteImage/1581392289726_tilsheet_complete.png",
+          "firstgid": 1,
+          "columns": 27,
+          "isMaped": true,
+          "rows": 20
+        }
+      ],
+      "tileheight": 64,
+      "tiledversion": "1.1.5",
+      "renderorder": "right-down",
+      "orientation": "orthogonal",
+      "nextobjectid": 167,
+      "layers": [
+        {
+          "y": 0,
+          "x": 0,
+          "width": 10,
+          "visible": true,
+          "type": "tilelayer",
+          "opacity": 1,
+          "name": "floor",
+          "height": 10,
+          "data": [
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1
+          ]
+        },
+        {
+          "y": 0,
+          "x": 0,
+          "width": 10,
+          "visible": true,
+          "type": "tilelayer",
+          "opacity": 1,
+          "name": "floor2",
+          "height": 10,
+          "data": [
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0
+          ]
+        },
+        {
+          "width": 10,
+          "height": 10,
+          "y": 0,
+          "x": 0,
+          "visible": true,
+          "type": "objectgroup",
+          "opacity": 1,
+          "objects": [],
+          "name": "debris",
+          "draworder": "topdown"
+        },
+        {
+          "y": 0,
+          "x": 0,
+          "width": 10,
+          "visible": true,
+          "type": "tilelayer",
+          "opacity": 1,
+          "name": "walls",
+          "height": 10,
+          "data": [
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0
+          ]
+        },
+        {
+          "y": 0,
+          "x": 0,
+          "width": 10,
+          "visible": true,
+          "type": "tilelayer",
+          "opacity": 1,
+          "name": "trees",
+          "height": 10,
+          "data": [
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0
+          ]
+        }
+      ],
+      "infinite": false,
+      "height": 10,
+      "wallMap": [
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0
+      ]
+    },
+    "buffTypes": {
+      "canPenetrate": {
+        "unit": "boolean",
+        "chance": 0.05
+      },
+      "canPushDebris": {
+        "unit": "boolean",
+        "chance": 0.05
+      },
+      "height": {
+        "unit": "percentage",
+        "chance": 0.2,
+        "maxBonus": 0.3,
+        "minBonus": 0.05
+      },
+      "maxStamina": {
+        "unit": "integer",
+        "chance": 0.1,
+        "maxBonus": 120,
+        "minBonus": 20
+      },
+      "movementSpeed": {
+        "unit": "integer",
+        "chance": 0.02,
+        "maxBonus": 5,
+        "minBonus": 1
+      },
+      "immunity": {
+        "unit": "percentage",
+        "chance": 0.1,
+        "maxBonus": 0.2,
+        "minBonus": 0.05
+      },
+      "slowChance": {
+        "unit": "percentage",
+        "chance": 0.05,
+        "maxBonus": 0.1,
+        "minBonus": 0.02
+      },
+      "stunChance": {
+        "unit": "percentage",
+        "chance": 0.05,
+        "maxBonus": 0.1,
+        "minBonus": 0.02
+      },
+      "recoilForce": {
+        "unit": "integer",
+        "chance": 0.04,
+        "maxBonus": 8,
+        "minBonus": 0
+      },
+      "bulletForce": {
+        "unit": "percentage",
+        "chance": 0.07,
+        "maxBonus": 1,
+        "minBonus": 0.1
+      },
+      "ammoTotal": {
+        "unit": "percentage",
+        "chance": 0.2,
+        "maxBonus": 0.3,
+        "minBonus": 0
+      },
+      "ammoSize": {
+        "unit": "percentage",
+        "chance": 0.1,
+        "maxBonus": 0.3,
+        "minBonus": 0
+      },
+      "distanceEnd": {
+        "unit": "percentage",
+        "chance": 0.3,
+        "maxBonus": 500,
+        "minBonus": 100
+      },
+      "fireRate": {
+        "unit": "percentage",
+        "chance": 0.15,
+        "maxBonus": -0.3,
+        "minBonus": 0
+      },
+      "reloadRate": {
+        "unit": "percentage",
+        "chance": 0.1,
+        "maxBonus": -0.3,
+        "minBonus": 0
+      }
+    },
+    "projectileTypes": {},
+    "itemTypes": {},
+    "music": {},
+    "sound": {},
+    "scripts": {
+      "playerJoinsGame": {
+        "order": 1,
+        "parent": null,
+        "key": "playerJoinsGame",
+        "actions": [
+          {
+            "type": "createUnitAtPosition",
+            "unitType": "9SDtGUOM4N",
+            "position": {
+              "region": {
+                "function": "getVariable",
+                "variableName": "spawn"
+              },
+              "function": "getRandomPositionInRegion"
+            },
+            "entity": {
+              "function": "getTriggeringPlayer"
+            },
+            "angle": 0
+          },
+          {
+            "type": "assignPlayerType",
+            "entity": {
+              "function": "getTriggeringPlayer"
+            },
+            "playerType": "humanPlayer"
+          },
+          {
+            "unit": {
+              "function": "getLastCreatedUnit"
+            },
+            "fighter": {
+              "function": "getTriggeringPlayer"
+            },
+            "type": "playerCameraTrackUnit",
+            "player": {
+              "function": "getTriggeringPlayer"
+            },
+            "disabled": false
+          }
+        ],
+        "conditions": [],
+        "triggers": [
+          {
+            "type": "playerJoinsGame"
+          }
+        ],
+        "name": "player joins"
+      },
+      "playerLeavesGame": {
+        "triggers": [
+          {
+            "type": "playerLeavesGame"
+          }
+        ],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "condition",
+            "conditions": [
+              {
+                "operandType": "boolean",
+                "operator": "=="
+              },
+              {
+                "function": "playerIsCreator",
+                "player": {
+                  "function": "getTriggeringPlayer"
+                }
+              },
+              true
+            ],
+            "then": [
+              {
+                "type": "savePlayerData",
+                "player": {
+                  "function": "getTriggeringPlayer"
+                }
+              }
+            ],
+            "else": []
+          },
+          {
+            "type": "forAllUnits",
+            "unitGroup": {
+              "player": {
+                "function": "getTriggeringPlayer"
+              },
+              "function": "allUnitsOwnedByPlayer",
+              "fighter": {
+                "function": "getTriggeringPlayer"
+              }
+            },
+            "actions": [
+              {
+                "entity": {
+                  "function": "selectedUnit"
+                },
+                "type": "destroyEntity"
+              }
+            ],
+            "comment": "when a player leaves, destroy all units owned by that player"
+          }
+        ],
+        "name": "player leaves",
+        "parent": null,
+        "key": "playerLeavesGame",
+        "order": 2
+      },
+      "initialize": {
+        "isProtected": true,
+        "triggers": [
+          {
+            "type": "gameStart"
+          }
+        ],
+        "actions": [],
+        "name": "initialize",
+        "parent": null,
+        "key": "initialize",
+        "order": -1
+      },
+      "umIPHJT6ZB": {
+        "key": "umIPHJT6ZB",
+        "folderName": "tutorial stuff (don't touch!)",
+        "parent": null,
+        "order": 3,
+        "expanded": true
+      },
+      "1lVwkDpp2M": {
+        "triggers": [],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "openDialogueForPlayer",
+            "dialogue": {
+              "function": "getValueOfPlayerVariable",
+              "variable": {
+                "function": "getPlayerVariable",
+                "variable": {
+                  "text": "currentDialogue",
+                  "dataType": "dialogue",
+                  "entity": "humanPlayer",
+                  "key": "currentDialogue"
+                }
+              },
+              "player": {
+                "function": "getVariable",
+                "variableName": "creator"
+              }
+            },
+            "player": {
+              "function": "getVariable",
+              "variableName": "creator"
+            }
+          }
+        ],
+        "name": "open tutorial",
+        "parent": "umIPHJT6ZB",
+        "key": "1lVwkDpp2M",
+        "order": 0
+      },
+      "dMxaR8GPR1": {
+        "triggers": [],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "setPlayerVariable",
+            "player": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "variable": {
+              "function": "getPlayerVariable",
+              "variable": {
+                "text": "currentDialogue",
+                "dataType": "dialogue",
+                "entity": "humanPlayer",
+                "key": "currentDialogue"
+              }
+            },
+            "value": "aVeKWqDHqL",
+            "comment": ""
+          },
+          {
+            "type": "setPlayerAttribute",
+            "attribute": "iRz8FN5EGN",
+            "entity": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "value": 30
+          },
+          {
+            "type": "runScript",
+            "scriptName": "1lVwkDpp2M",
+            "isEntityScript": false
+          }
+        ],
+        "name": "progress 30",
+        "parent": "umIPHJT6ZB",
+        "key": "dMxaR8GPR1",
+        "order": 3
+      },
+      "8tTzUfz9RW": {
+        "triggers": [],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "setPlayerVariable",
+            "player": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "variable": {
+              "function": "getPlayerVariable",
+              "variable": {
+                "text": "currentDialogue",
+                "dataType": "dialogue",
+                "entity": "humanPlayer",
+                "key": "currentDialogue"
+              }
+            },
+            "value": "cbu4fFZi2z",
+            "comment": ""
+          },
+          {
+            "type": "setPlayerAttribute",
+            "attribute": "iRz8FN5EGN",
+            "entity": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "value": 40
+          },
+          {
+            "type": "runScript",
+            "scriptName": "1lVwkDpp2M",
+            "isEntityScript": false
+          }
+        ],
+        "name": "progress 40",
+        "parent": "umIPHJT6ZB",
+        "key": "8tTzUfz9RW",
+        "order": 5
+      },
+      "NBLBXH1qyT": {
+        "triggers": [
+          {
+            "type": "secondTick"
+          }
+        ],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "condition",
+            "conditions": [
+              {
+                "operandType": "dialogue",
+                "operator": "=="
+              },
+              {
+                "function": "getValueOfPlayerVariable",
+                "variable": {
+                  "function": "getPlayerVariable",
+                  "variable": {
+                    "text": "currentDialogue",
+                    "dataType": "dialogue",
+                    "entity": "humanPlayer",
+                    "key": "currentDialogue"
+                  }
+                },
+                "player": {
+                  "function": "getVariable",
+                  "variableName": "creator"
+                }
+              },
+              "tyvwIPuHnO"
+            ],
+            "then": [
+              {
+                "type": "forAllRegions",
+                "regionGroup": {
+                  "function": "allRegions"
+                },
+                "actions": [
+                  {
+                    "type": "condition",
+                    "conditions": [
+                      {
+                        "operandType": "string",
+                        "operator": "=="
+                      },
+                      {
+                        "function": "toLowerCase",
+                        "string": {
+                          "function": "nameOfRegion",
+                          "region": {
+                            "function": "selectedRegion"
+                          }
+                        }
+                      },
+                      "coop"
+                    ],
+                    "then": [
+                      {
+                        "type": "runScript",
+                        "scriptName": "026GCGsFRl",
+                        "isEntityScript": false
+                      }
+                    ],
+                    "else": []
+                  }
+                ]
+              }
+            ],
+            "else": []
+          }
+        ],
+        "name": "detect coop region",
+        "parent": "umIPHJT6ZB",
+        "key": "NBLBXH1qyT",
+        "order": 8
+      },
+      "ZKsQxKAKsl": {
+        "triggers": [],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "setPlayerVariable",
+            "player": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "variable": {
+              "function": "getPlayerVariable",
+              "variable": {
+                "text": "currentDialogue",
+                "dataType": "dialogue",
+                "entity": "humanPlayer",
+                "key": "currentDialogue"
+              }
+            },
+            "value": "wVDdWHyGHb",
+            "comment": ""
+          },
+          {
+            "type": "setPlayerAttribute",
+            "attribute": "iRz8FN5EGN",
+            "entity": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "value": 10
+          },
+          {
+            "type": "runScript",
+            "scriptName": "1lVwkDpp2M",
+            "isEntityScript": false
+          }
+        ],
+        "name": "progress 10",
+        "parent": "umIPHJT6ZB",
+        "key": "ZKsQxKAKsl",
+        "order": 1
+      },
+      "joVu7tfun5": {
+        "triggers": [],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "setPlayerVariable",
+            "player": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "variable": {
+              "function": "getPlayerVariable",
+              "variable": {
+                "text": "currentDialogue",
+                "dataType": "dialogue",
+                "entity": "humanPlayer",
+                "key": "currentDialogue"
+              }
+            },
+            "value": "t9jAk2E7nX"
+          },
+          {
+            "type": "setPlayerAttribute",
+            "attribute": "iRz8FN5EGN",
+            "entity": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "value": 20
+          },
+          {
+            "type": "runScript",
+            "scriptName": "1lVwkDpp2M",
+            "isEntityScript": false
+          }
+        ],
+        "name": "progress 20",
+        "parent": "umIPHJT6ZB",
+        "key": "joVu7tfun5",
+        "order": 2
+      },
+      "0wNHhpMkb7": {
+        "triggers": [],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "setPlayerVariable",
+            "player": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "variable": {
+              "function": "getPlayerVariable",
+              "variable": {
+                "text": "currentDialogue",
+                "dataType": "dialogue",
+                "entity": "humanPlayer",
+                "key": "currentDialogue"
+              }
+            },
+            "value": "KmZ0yB6CQI",
+            "comment": ""
+          },
+          {
+            "type": "setPlayerAttribute",
+            "attribute": "iRz8FN5EGN",
+            "entity": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "value": 50
+          },
+          {
+            "type": "runScript",
+            "scriptName": "1lVwkDpp2M",
+            "isEntityScript": false
+          }
+        ],
+        "name": "progress 50",
+        "parent": "umIPHJT6ZB",
+        "key": "0wNHhpMkb7",
+        "order": 6
+      },
+      "J5YTt3JMek": {
+        "triggers": [
+          {
+            "type": "secondTick"
+          }
+        ],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "condition",
+            "conditions": [
+              {
+                "operandType": "and",
+                "operator": "AND"
+              },
+              [
+                {
+                  "operandType": "dialogue",
+                  "operator": "=="
+                },
+                {
+                  "function": "getValueOfPlayerVariable",
+                  "variable": {
+                    "function": "getPlayerVariable",
+                    "variable": {
+                      "text": "currentDialogue",
+                      "dataType": "dialogue",
+                      "entity": "humanPlayer",
+                      "key": "currentDialogue"
+                    }
+                  },
+                  "player": {
+                    "function": "getVariable",
+                    "variableName": "creator"
+                  }
+                },
+                "aVeKWqDHqL"
+              ],
+              [
+                {
+                  "operandType": "number",
+                  "operator": "=="
+                },
+                {
+                  "function": "getMapWidth"
+                },
+                1280
+              ]
+            ],
+            "then": [
+              {
+                "type": "runScript",
+                "scriptName": "8tTzUfz9RW",
+                "isEntityScript": false
+              }
+            ],
+            "else": []
+          }
+        ],
+        "name": "detect map size change",
+        "parent": "umIPHJT6ZB",
+        "key": "J5YTt3JMek",
+        "order": 4
+      },
+      "oT7WHGSlQb": {
+        "triggers": [],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "setPlayerVariable",
+            "player": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "variable": {
+              "function": "getPlayerVariable",
+              "variable": {
+                "text": "currentDialogue",
+                "dataType": "dialogue",
+                "entity": "humanPlayer",
+                "key": "currentDialogue"
+              }
+            },
+            "value": "tyvwIPuHnO",
+            "comment": ""
+          },
+          {
+            "type": "setPlayerAttribute",
+            "attribute": "iRz8FN5EGN",
+            "entity": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "value": 60
+          },
+          {
+            "type": "runScript",
+            "scriptName": "1lVwkDpp2M",
+            "isEntityScript": false
+          }
+        ],
+        "name": "progress 60",
+        "parent": "umIPHJT6ZB",
+        "key": "oT7WHGSlQb",
+        "order": 7
+      },
+      "026GCGsFRl": {
+        "triggers": [],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "setPlayerVariable",
+            "player": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "variable": {
+              "function": "getPlayerVariable",
+              "variable": {
+                "text": "currentDialogue",
+                "dataType": "dialogue",
+                "entity": "humanPlayer",
+                "key": "currentDialogue"
+              }
+            },
+            "value": "33ihrYWhIu",
+            "comment": ""
+          },
+          {
+            "type": "setPlayerAttribute",
+            "attribute": "iRz8FN5EGN",
+            "entity": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "value": 70
+          },
+          {
+            "type": "runScript",
+            "scriptName": "1lVwkDpp2M",
+            "isEntityScript": false
+          }
+        ],
+        "name": "progress 70",
+        "parent": "umIPHJT6ZB",
+        "key": "026GCGsFRl",
+        "order": 9
+      },
+      "Rx0ALEMLxS": {
+        "triggers": [],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "setPlayerVariable",
+            "player": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "variable": {
+              "function": "getPlayerVariable",
+              "variable": {
+                "text": "currentDialogue",
+                "dataType": "dialogue",
+                "entity": "humanPlayer",
+                "key": "currentDialogue"
+              }
+            },
+            "value": "PLqSz7rsDn",
+            "comment": ""
+          },
+          {
+            "type": "setPlayerAttribute",
+            "attribute": "iRz8FN5EGN",
+            "entity": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "value": 80
+          },
+          {
+            "type": "runScript",
+            "scriptName": "1lVwkDpp2M",
+            "isEntityScript": false
+          }
+        ],
+        "name": "progress 80",
+        "parent": "umIPHJT6ZB",
+        "key": "Rx0ALEMLxS",
+        "order": 10
+      },
+      "Dg5VszkqGC": {
+        "triggers": [
+          {
+            "type": "secondTick"
+          }
+        ],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "condition",
+            "conditions": [
+              {
+                "operandType": "dialogue",
+                "operator": "=="
+              },
+              {
+                "function": "getValueOfPlayerVariable",
+                "variable": {
+                  "function": "getPlayerVariable",
+                  "variable": {
+                    "text": "currentDialogue",
+                    "dataType": "dialogue",
+                    "entity": "humanPlayer",
+                    "key": "currentDialogue"
+                  }
+                },
+                "player": {
+                  "function": "getVariable",
+                  "variableName": "creator"
+                }
+              },
+              "PLqSz7rsDn"
+            ],
+            "then": [
+              {
+                "type": "condition",
+                "conditions": [
+                  {
+                    "operator": ">",
+                    "operandType": "number"
+                  },
+                  {
+                    "function": "getUnitCount"
+                  },
+                  10
+                ],
+                "then": [
+                  {
+                    "type": "runScript",
+                    "scriptName": "mq5GnajIbc",
+                    "isEntityScript": false
+                  }
+                ],
+                "else": []
+              }
+            ],
+            "else": []
+          }
+        ],
+        "name": "detect 10 chickens",
+        "parent": "umIPHJT6ZB",
+        "key": "Dg5VszkqGC",
+        "order": 11
+      },
+      "mq5GnajIbc": {
+        "triggers": [],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "setPlayerVariable",
+            "player": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "variable": {
+              "function": "getPlayerVariable",
+              "variable": {
+                "text": "currentDialogue",
+                "dataType": "dialogue",
+                "entity": "humanPlayer",
+                "key": "currentDialogue"
+              }
+            },
+            "value": "UH9ADi21dA",
+            "comment": ""
+          },
+          {
+            "type": "setPlayerAttribute",
+            "attribute": "iRz8FN5EGN",
+            "entity": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "value": 90
+          },
+          {
+            "type": "runScript",
+            "scriptName": "1lVwkDpp2M",
+            "isEntityScript": false
+          }
+        ],
+        "name": "progress 90",
+        "parent": "umIPHJT6ZB",
+        "key": "mq5GnajIbc",
+        "order": 12
+      },
+      "rZod0w7b2q": {
+        "triggers": [],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "setPlayerVariable",
+            "player": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "variable": {
+              "function": "getPlayerVariable",
+              "variable": {
+                "text": "currentDialogue",
+                "dataType": "dialogue",
+                "entity": "humanPlayer",
+                "key": "currentDialogue"
+              }
+            },
+            "value": "4Jiyq6IVOG",
+            "comment": ""
+          },
+          {
+            "type": "setPlayerAttribute",
+            "attribute": "iRz8FN5EGN",
+            "entity": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "value": 100
+          },
+          {
+            "type": "runScript",
+            "scriptName": "1lVwkDpp2M",
+            "isEntityScript": false
+          }
+        ],
+        "name": "progress 100",
+        "parent": "umIPHJT6ZB",
+        "key": "rZod0w7b2q",
+        "order": 13
+      },
+      "9WfViwAX8D": {
+        "triggers": [],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "setPlayerVariable",
+            "player": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "variable": {
+              "function": "getPlayerVariable",
+              "variable": {
+                "text": "currentDialogue",
+                "dataType": "dialogue",
+                "entity": "humanPlayer",
+                "key": "currentDialogue"
+              }
+            },
+            "value": "ax7qDPu8Sx",
+            "comment": ""
+          },
+          {
+            "type": "setPlayerAttribute",
+            "attribute": "iRz8FN5EGN",
+            "entity": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "value": 110
+          },
+          {
+            "type": "runScript",
+            "scriptName": "1lVwkDpp2M",
+            "isEntityScript": false
+          }
+        ],
+        "name": "progress 110",
+        "parent": "umIPHJT6ZB",
+        "key": "9WfViwAX8D",
+        "order": 15
+      },
+      "STJNmzkjed": {
+        "triggers": [],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "setPlayerVariable",
+            "player": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "variable": {
+              "function": "getPlayerVariable",
+              "variable": {
+                "text": "currentDialogue",
+                "dataType": "dialogue",
+                "entity": "humanPlayer",
+                "key": "currentDialogue"
+              }
+            },
+            "value": "aBWw3xwK2o",
+            "comment": ""
+          },
+          {
+            "type": "setPlayerAttribute",
+            "attribute": "iRz8FN5EGN",
+            "entity": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "value": 130
+          },
+          {
+            "type": "runScript",
+            "scriptName": "1lVwkDpp2M",
+            "isEntityScript": false
+          }
+        ],
+        "name": "progress 130",
+        "parent": "umIPHJT6ZB",
+        "key": "STJNmzkjed",
+        "order": 17
+      },
+      "8azpc36D9S": {
+        "triggers": [],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "setPlayerVariable",
+            "player": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "variable": {
+              "function": "getPlayerVariable",
+              "variable": {
+                "text": "currentDialogue",
+                "dataType": "dialogue",
+                "entity": "humanPlayer",
+                "key": "currentDialogue"
+              }
+            },
+            "value": "cFVG3GSyiv",
+            "comment": ""
+          },
+          {
+            "type": "setPlayerAttribute",
+            "attribute": "iRz8FN5EGN",
+            "entity": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "value": 120
+          },
+          {
+            "type": "runScript",
+            "scriptName": "1lVwkDpp2M",
+            "isEntityScript": false
+          }
+        ],
+        "name": "progress 120",
+        "parent": "umIPHJT6ZB",
+        "key": "8azpc36D9S",
+        "order": 16
+      },
+      "ttG1Ggsil1": {
+        "triggers": [
+          {
+            "type": "secondTick"
+          }
+        ],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "setVariable",
+            "value": {
+              "function": "getUnitCount"
+            },
+            "variableName": "x",
+            "comment": ""
+          },
+          {
+            "type": "setVariable",
+            "value": {
+              "function": "calculate",
+              "items": [
+                {
+                  "operator": "-"
+                },
+                {
+                  "function": "getVariable",
+                  "variableName": "x"
+                },
+                {
+                  "function": "getNumberOfUnitsOfUnitType",
+                  "unitType": "9SDtGUOM4N"
+                }
+              ]
+            },
+            "variableName": "x",
+            "comment": "chicken does not exist at time of creation of this script"
+          },
+          {
+            "type": "condition",
+            "conditions": [
+              {
+                "operandType": "dialogue",
+                "operator": "=="
+              },
+              {
+                "function": "getValueOfPlayerVariable",
+                "variable": {
+                  "function": "getPlayerVariable",
+                  "variable": {
+                    "text": "currentDialogue",
+                    "dataType": "dialogue",
+                    "entity": "humanPlayer",
+                    "key": "currentDialogue"
+                  }
+                },
+                "player": {
+                  "function": "getVariable",
+                  "variableName": "creator"
+                }
+              },
+              "4Jiyq6IVOG"
+            ],
+            "then": [
+              {
+                "type": "condition",
+                "conditions": [
+                  {
+                    "operator": "<",
+                    "operandType": "number"
+                  },
+                  {
+                    "function": "getVariable",
+                    "variableName": "x"
+                  },
+                  10
+                ],
+                "then": [
+                  {
+                    "type": "runScript",
+                    "scriptName": "9WfViwAX8D",
+                    "isEntityScript": false
+                  }
+                ],
+                "else": []
+              }
+            ],
+            "else": []
+          }
+        ],
+        "name": "detect chicken death",
+        "parent": "umIPHJT6ZB",
+        "key": "ttG1Ggsil1",
+        "order": 14
+      },
+      "y9bBPfHXUs": {
+        "triggers": [],
+        "conditions": [
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "closeDialogueForPlayer",
+            "player": {
+              "function": "getVariable",
+              "variableName": "creator"
+            }
+          },
+          {
+            "type": "setPlayerAttribute",
+            "attribute": "iRz8FN5EGN",
+            "entity": {
+              "function": "getVariable",
+              "variableName": "creator"
+            },
+            "value": 140
+          },
+          {
+            "type": "showCustomModalToPlayer",
+            "htmlContent": "Great work! <br><br>\n<b><a href=\"https://www.modd.io/create\">Click here to return to Create Page</a></b>",
+            "player": {
+              "function": "getVariable",
+              "variableName": "creator"
+            }
+          }
+        ],
+        "name": "finish tutorial",
+        "parent": "umIPHJT6ZB",
+        "key": "y9bBPfHXUs",
+        "order": 18
+      }
+    },
+    "unitTypes": {
+      "9SDtGUOM4N": {
+        "backpackSize": 0,
+        "equipmentAllowed": 5,
+        "ai": {
+          "maxAttackRange": 400,
+          "sensorRadius": 150,
+          "maxTravelDistance": "",
+          "attackResponse": "none",
+          "sensorResponse": "none",
+          "idleBehaviour": "stay",
+          "pathFindingMethod": "simple"
+        },
+        "defaultItem": [
+          {
+            "name": "Gun",
+            "value": "Gun",
+            "key": "gun"
+          },
+          {
+            "name": "Crowbar",
+            "value": "Crowbar",
+            "key": "crowbar"
+          }
+        ],
+        "confinedWithinMapBoundaries": true,
+        "controls": {
+          "permittedInventorySlots": [],
+          "abilities": {
+            "b": {
+              "keyDown": {
+                "cost": {},
+                "scriptName": "eByvqQQlwL",
+                "isEntityScript": true
+              },
+              "keyUp": {
+                "cost": {},
+                "scriptName": ""
+              }
+            },
+            "movementWheel": {
+              "mobilePosition": {
+                "y": 204,
+                "x": 35
+              }
+            },
+            "lookWheel": {
+              "mobilePosition": {
+                "y": 204,
+                "x": 407
+              }
+            },
+            "button1": {
+              "keyUp": {
+                "scriptName": "DOrbWp0AGz",
+                "cost": {},
+                "isEntityScript": true
+              },
+              "keyDown": {
+                "scriptName": "YFeMQ20gBX",
+                "cost": {},
+                "isEntityScript": true
+              }
+            },
+            "e": {
+              "keyUp": {
+                "scriptName": "",
+                "cost": {}
+              },
+              "keyDown": {
+                "scriptName": "w2VrnZHyom",
+                "cost": {},
+                "isEntityScript": true
+              }
+            },
+            "g": {
+              "keyUp": {
+                "scriptName": "",
+                "cost": {}
+              },
+              "keyDown": {
+                "scriptName": "yP67J1MMRN",
+                "cost": {},
+                "isEntityScript": true
+              }
+            }
+          },
+          "mouseBehaviour": {
+            "flipSpriteHorizontallyWRTMouse": false,
+            "rotateToFaceMouseCursor": true
+          },
+          "movementType": "wasd",
+          "movementControlScheme": "wasd",
+          "movementMethod": "velocity",
+          "absoluteRotation": false
+        },
+        "inventoryImage": "",
+        "animations": {
+          "default": {
+            "name": "default",
+            "frames": [1],
+            "loopCount": 0,
+            "framesPerSecond": 0
+          }
+        },
+        "canBePurchasedBy": [],
+        "isPurchasable": false,
+        "states": {
+          "default": {
+            "name": "default",
+            "sound": {},
+            "particles": {},
+            "animation": "default",
+            "body": "default"
+          }
+        },
+        "sound": {
+          "KK9JlU1UQy": {
+            "name": "Cough",
+            "file": "https://modd.s3.amazonaws.com/asset/sound/1517554516253_man_cough.mp3"
+          },
+          "fEhDyJ8knx": {
+            "name": "Scream",
+            "file": "https://modd.s3.amazonaws.com/asset/sound/1517556903046_man_scream1.mp3"
+          }
+        },
+        "particles": {},
+        "body": {
+          "spriteScale": 1,
+          "fixtures": [
+            {
+              "shape": {
+                "type": "rectangle"
+              },
+              "restitution": 0.01,
+              "friction": 0.01,
+              "density": 3
+            }
+          ],
+          "isFlying": false,
+          "fixedRotation": false,
+          "bulletDestroyedOnCollisionWithWall/unit": false,
+          "allowSleep": true,
+          "angularDamping": 1,
+          "linearDamping": 5,
+          "rotationSpeed": 2,
+          "type": "dynamic",
+          "height": 40,
+          "width": 40,
+          "collidesWith": {
+            "units": true,
+            "items": true,
+            "projectiles": true,
+            "walls": true,
+            "unit": true,
+            "item": true,
+            "debris": true
+          },
+          "z-index": {
+            "layer": 3,
+            "depth": 3
+          },
+          "name": "Human-body"
+        },
+        "spawnPosition": {
+          "y": 2200,
+          "x": 1500
+        },
+        "attributes": {
+          "speed": {
+            "decimalPlaces": 0,
+            "dataType": "",
+            "name": "speed",
+            "min": 0,
+            "max": 200,
+            "value": 10,
+            "regenerateSpeed": 0,
+            "isVisible": [],
+            "showAsHUD": true,
+            "color": "#00fff0",
+            "displayValue": true
+          },
+          "health": {
+            "decimalPlaces": 0,
+            "color": "#ffff0f",
+            "showAsHUD": true,
+            "displayValue": true,
+            "isVisible": [
+              "centerBar",
+              "unitBarFriendly",
+              "unitBarNeutral",
+              "unitBarHostile"
+            ],
+            "regenerateSpeed": ".3",
+            "value": 100,
+            "dataType": "",
+            "max": 100,
+            "min": 0,
+            "name": "health "
+          }
+        },
+        "abilities": {
+          "movementWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 35
+            }
+          },
+          "lookWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 407
+            }
+          },
+          "w": {
+            "keyUp": "stopMovingUp",
+            "keyDown": "moveUp"
+          },
+          "a": {
+            "keyUp": "stopMovingLeft",
+            "keyDown": "moveLeft"
+          },
+          "s": {
+            "keyUp": "stopMovingDown",
+            "keyDown": "moveDown"
+          },
+          "d": {
+            "keyUp": "stopMovingRight",
+            "keyDown": "moveRight"
+          },
+          "g": {
+            "keyUp": "",
+            "keyDown": "drop"
+          },
+          "e": {
+            "keyUp": "",
+            "keyDown": "pickUp"
+          },
+          "button1": {
+            "keyUp": "stopUse",
+            "keyDown": "use"
+          }
+        },
+        "baseSpeed": 53,
+        "price": {},
+        "skin": "https://s3-us-west-1.amazonaws.com/modd/halloween-0.18/spritesheet/man.png",
+        "canBuyItem": true,
+        "handle": "human",
+        "name": "Homie",
+        "inventorySize": 5,
+        "cellSheet": {
+          "url": "https://cache.modd.io/asset/spriteImage/1588303353803_Human%20Circle%20Person.png",
+          "rowCount": 1,
+          "columnCount": 1
+        },
+        "bodies": {
+          "default": {
+            "bullet": false,
+            "name": "default",
+            "type": "dynamic",
+            "width": 50,
+            "height": 50,
+            "z-index": {
+              "layer": 3,
+              "depth": 3
+            },
+            "fixedRotation": false,
+            "bulletDestroyedOnCollisionWithWall/unit": false,
+            "allowSleep": true,
+            "collidesWith": {
+              "units": true,
+              "items": true,
+              "projectiles": true,
+              "walls": true,
+              "debris": true
+            },
+            "angularDamping": 1,
+            "linearDamping": 8,
+            "rotationSpeed": 1,
+            "spriteScale": 1,
+            "fixtures": [
+              {
+                "density": 1,
+                "friction": 0,
+                "restitution": 0,
+                "shape": {
+                  "type": "rectangle"
+                },
+                "isSensor": false
+              }
+            ],
+            "jointType": "weldJoint",
+            "unitAnchor": {
+              "x": 0,
+              "y": 33,
+              "rotation": 0
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0,
+              "lowerAngle": 0,
+              "upperAngle": 0
+            },
+            "affectedByGravity": false
+          }
+        },
+        "variables": {},
+        "effects": {
+          "idle": {
+            "projectileType": "",
+            "sound": {},
+            "animation": "",
+            "tween": ""
+          },
+          "attacked": {
+            "projectileType": "",
+            "sound": {},
+            "animation": "",
+            "tween": "recoil"
+          },
+          "move": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
+          "create": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
+          "destroy": {
+            "projectileType": "blood",
+            "sound": {},
+            "animation": ""
+          }
+        },
+        "defaultItems": [],
+        "scripts": {
+          "DOrbWp0AGz": {
+            "triggers": [],
+            "conditions": [
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
+              true,
+              true
+            ],
+            "actions": [
+              {
+                "type": "stopUsingItem",
+                "entity": {
+                  "function": "getItemCurrentlyHeldByUnit",
+                  "entity": {
+                    "function": "thisEntity",
+                    "vars": []
+                  },
+                  "vars": []
+                },
+                "hasFixedCSP": null,
+                "runOnClient": true,
+                "vars": []
+              }
+            ],
+            "name": "stop using item",
+            "parent": "YnK58YN6ZD",
+            "key": "DOrbWp0AGz",
+            "order": 1
+          },
+          "YFeMQ20gBX": {
+            "triggers": [],
+            "conditions": [
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
+              true,
+              true
+            ],
+            "actions": [
+              {
+                "type": "startUsingItem",
+                "entity": {
+                  "function": "getItemCurrentlyHeldByUnit",
+                  "entity": {
+                    "function": "thisEntity",
+                    "vars": []
+                  },
+                  "vars": []
+                },
+                "hasFixedCSP": null,
+                "runOnClient": true,
+                "vars": []
+              }
+            ],
+            "name": "start using item",
+            "parent": "YnK58YN6ZD",
+            "key": "YFeMQ20gBX",
+            "order": 0
+          },
+          "YnK58YN6ZD": {
+            "key": "YnK58YN6ZD",
+            "folderName": "abilities",
+            "parent": null,
+            "order": -1,
+            "expanded": true
+          },
+          "w2VrnZHyom": {
+            "triggers": [],
+            "conditions": [
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
+              true,
+              true
+            ],
+            "actions": [
+              {
+                "type": "forAllEntities",
+                "entityGroup": {
+                  "function": "entitiesInRegion",
+                  "region": {
+                    "function": "entityBounds",
+                    "entity": {
+                      "function": "thisEntity",
+                      "vars": [
+                        {
+                          "id": "selectedEntity",
+                          "source": "forAllEntities"
+                        },
+                        {
+                          "id": "getSelectedEntity",
+                          "source": "forAllEntities"
+                        }
+                      ]
+                    },
+                    "vars": [
+                      {
+                        "id": "selectedEntity",
+                        "source": "forAllEntities"
+                      },
+                      {
+                        "id": "getSelectedEntity",
+                        "source": "forAllEntities"
+                      }
+                    ]
+                  },
+                  "vars": [
+                    {
+                      "id": "selectedEntity",
+                      "source": "forAllEntities"
+                    },
+                    {
+                      "id": "getSelectedEntity",
+                      "source": "forAllEntities"
+                    }
+                  ]
+                },
+                "actions": [
+                  {
+                    "type": "condition",
+                    "conditions": [
+                      {
+                        "operandType": "string",
+                        "operator": "=="
+                      },
+                      {
+                        "function": "getEntityType",
+                        "entity": {
+                          "function": "getSelectedEntity",
+                          "vars": [
+                            {
+                              "id": "selectedEntity",
+                              "source": "forAllEntities"
+                            },
+                            {
+                              "id": "getSelectedEntity",
+                              "source": "forAllEntities"
+                            }
+                          ]
+                        },
+                        "vars": [
+                          {
+                            "id": "selectedEntity",
+                            "source": "forAllEntities"
+                          },
+                          {
+                            "id": "getSelectedEntity",
+                            "source": "forAllEntities"
+                          }
+                        ]
+                      },
+                      "item"
+                    ],
+                    "then": [
+                      {
+                        "type": "makeUnitPickupItem",
+                        "unit": {
+                          "function": "thisEntity",
+                          "vars": [
+                            {
+                              "id": "selectedEntity",
+                              "source": "forAllEntities"
+                            },
+                            {
+                              "id": "getSelectedEntity",
+                              "source": "forAllEntities"
+                            }
+                          ]
+                        },
+                        "item": {
+                          "function": "getSelectedEntity",
+                          "vars": [
+                            {
+                              "id": "selectedEntity",
+                              "source": "forAllEntities"
+                            },
+                            {
+                              "id": "getSelectedEntity",
+                              "source": "forAllEntities"
+                            }
+                          ]
+                        },
+                        "vars": [
+                          {
+                            "id": "selectedEntity",
+                            "source": "forAllEntities"
+                          },
+                          {
+                            "id": "getSelectedEntity",
+                            "source": "forAllEntities"
+                          }
+                        ]
+                      }
+                    ],
+                    "else": [],
+                    "vars": [
+                      {
+                        "id": "selectedEntity",
+                        "source": "forAllEntities"
+                      },
+                      {
+                        "id": "getSelectedEntity",
+                        "source": "forAllEntities"
+                      }
+                    ]
+                  }
+                ],
+                "vars": [
+                  {
+                    "id": "selectedEntity",
+                    "source": "forAllEntities"
+                  },
+                  {
+                    "id": "getSelectedEntity",
+                    "source": "forAllEntities"
+                  }
+                ]
+              }
+            ],
+            "name": "pick up item",
+            "parent": "YnK58YN6ZD",
+            "key": "w2VrnZHyom",
+            "order": 2
+          },
+          "yP67J1MMRN": {
+            "triggers": [],
+            "conditions": [
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
+              true,
+              true
+            ],
+            "actions": [
+              {
+                "type": "dropItemAtPosition",
+                "item": {
+                  "function": "getItemCurrentlyHeldByUnit",
+                  "entity": {
+                    "function": "thisEntity",
+                    "vars": []
+                  },
+                  "vars": []
+                },
+                "position": {
+                  "function": "getEntityPosition",
+                  "entity": {
+                    "function": "thisEntity",
+                    "vars": []
+                  },
+                  "vars": []
+                },
+                "vars": []
+              }
+            ],
+            "name": "drop item",
+            "parent": "YnK58YN6ZD",
+            "key": "yP67J1MMRN",
+            "order": 3
+          },
+          "8XKCMozObI": {
+            "triggers": [
+              {
+                "type": "entityCreated"
+              }
+            ],
+            "conditions": [
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
+              true,
+              true
+            ],
+            "actions": [
+              {
+                "type": "setTimeOut",
+                "duration": 1000,
+                "actions": [
+                  {
+                    "type": "condition",
+                    "conditions": [
+                      {
+                        "operandType": "boolean",
+                        "operator": "=="
+                      },
+                      {
+                        "function": "playerIsCreator",
+                        "player": {
+                          "function": "getOwner",
+                          "entity": {
+                            "function": "thisEntity"
+                          }
+                        }
+                      },
+                      true
+                    ],
+                    "then": [
+                      {
+                        "type": "setVariable",
+                        "value": {
+                          "function": "getOwner",
+                          "entity": {
+                            "function": "thisEntity"
+                          }
+                        },
+                        "variableName": "creator"
+                      },
+                      {
+                        "type": "loadPlayerDataAndApplyIt",
+                        "player": {
+                          "function": "getVariable",
+                          "variableName": "creator"
+                        },
+                        "unit": {
+                          "function": "thisEntity"
+                        },
+                        "disabled": false
+                      },
+                      {
+                        "type": "condition",
+                        "conditions": [
+                          {
+                            "operandType": "number",
+                            "operator": "=="
+                          },
+                          {
+                            "function": "getPlayerAttribute",
+                            "attribute": "iRz8FN5EGN",
+                            "entity": {
+                              "function": "getOwner",
+                              "entity": {
+                                "function": "thisEntity"
+                              }
+                            }
+                          },
+                          0
+                        ],
+                        "then": [
+                          {
+                            "type": "setPlayerAttribute",
+                            "attribute": "iRz8FN5EGN",
+                            "entity": {
+                              "function": "getVariable",
+                              "variableName": "creator"
+                            },
+                            "value": 0
+                          }
+                        ],
+                        "else": [],
+                        "disabled": false
+                      },
+                      {
+                        "type": "sendChatMessage",
+                        "message": {
+                          "function": "getValueOfPlayerVariable",
+                          "variable": {
+                            "function": "getPlayerVariable",
+                            "variable": {
+                              "text": "currentDialogue",
+                              "dataType": "dialogue",
+                              "entity": "humanPlayer",
+                              "key": "currentDialogue"
+                            }
+                          },
+                          "player": {
+                            "function": "getVariable",
+                            "variableName": "creator"
+                          }
+                        },
+                        "disabled": true
+                      },
+                      {
+                        "type": "runScript",
+                        "scriptName": "1lVwkDpp2M",
+                        "isEntityScript": false
+                      }
+                    ],
+                    "else": []
+                  }
+                ],
+                "comment": "this is necessary as owner of homie may not have been assigned to Human player type yet"
+              }
+            ],
+            "name": "creator joins",
+            "parent": "YnK58YN6ZD",
+            "key": "8XKCMozObI",
+            "order": 4
+          }
+        },
+        "isUnTargetable": false,
+        "unitTypes": {
+          "9SDtGUOM4N": {
+            "scripts": {
+              "qgvVTujUvA": {
+                "name": "open tutorial"
+              },
+              "0h9IFMAZIV": {
+                "name": "open tutorial - ability"
+              }
+            }
+          }
+        }
+      }
+    },
+    "abilities": {},
+    "variables": {
+      "creator": {
+        "dataType": "player"
+      },
+      "ai player": {
+        "default": "computer1",
+        "dataType": "player"
+      },
+      "spawn": {
+        "dataType": "region",
+        "default": {
+          "x": 304,
+          "y": 324,
+          "width": 28,
+          "height": 17
+        }
+      },
+      "x": {
+        "default": 0,
+        "dataType": "number"
+      }
+    },
+    "attributeTypes": {
+      "speed": {
+        "decimalPlaces": 0,
+        "dataType": "",
+        "name": "speed",
+        "min": 0,
+        "max": 200,
+        "value": 10,
+        "regenerateSpeed": 0,
+        "isVisible": [],
+        "showAsHUD": true,
+        "color": "#00fff0",
+        "displayValue": true
+      },
+      "health": {
+        "decimalPlaces": 0,
+        "color": "#ffff0f",
+        "showAsHUD": true,
+        "displayValue": true,
+        "isVisible": [
+          "centerBar",
+          "unitBarFriendly",
+          "unitBarNeutral",
+          "unitBarHostile"
+        ],
+        "regenerateSpeed": ".3",
+        "value": 100,
+        "dataType": "",
+        "max": 100,
+        "min": 0,
+        "name": "health "
+      },
+      "iRz8FN5EGN": {
+        "name": "progress",
+        "min": 0,
+        "max": 140,
+        "dataType": "",
+        "value": 0,
+        "regenerateSpeed": 0,
+        "isVisible": false,
+        "displayValue": false,
+        "showWhen": "",
+        "showAsHUD": true,
+        "color": "white",
+        "decimalPlaces": 0
+      }
+    },
+    "settings": {
+      "menudiv": "Welcome to the Guided Tutorial! Let's build a game together. You can leave any time and your progress will be saved.<br>\nMove on the map with WASD or Arrow keys.<br>\n<br>\n<b>Press \"Play Game\" below to get started!</b>",
+      "inventory": {
+        "isEnabled": false
+      },
+      "shop": {
+        "isEnabled": false
+      },
+      "camera": {
+        "trackingDelay": 3,
+        "zoom": {
+          "default": 600,
+          "type": "static"
+        }
+      },
+      "constants": {
+        "currency": "Food"
+      },
+      "images": {
+        "logo": "https://cache.modd.io/asset/spriteImage/1593103756304_modd_logo.png",
+        "cover": "https://cache.modd.io/1501275562940_two houses cover.png"
+      },
+      "gravity": {
+        "x": 0,
+        "y": 0
+      },
+      "scoreBoard": "n5JEoENeGg",
+      "scoreAttributeId": "SkD8udgulk",
+      "allowDuplicateIPs": true,
+      "displayScoreboard": false,
+      "prettifyingScoreboard": true,
+      "menuHTML": "<div id='left-menu' class=\"flex-column hide-on-mobile p-3\" style=\"max-width: 320px\">\n\t<div id='user-div' class=\"flex-shrink-0 mb-3\" style=\"box-shadow: 0 0 15px rgba(0,0,0,.5);\">\n\t\t{{ loginForm }}\n\t</div>\n\n</div>\n\n<div id='right-menu' class=\"d-flex justify-content-center align-items-center flex-grow-1\">\n\t<div class=\"w-100\">\n\t\t<h1 class=\"text-center game-title\">\n\t\t</h1>\n\t\t\n\t\t<div class=\"row flex-grow-0 menu-row margin-auto justify-content-center\">\n\t\t\t\n\t\t\n\t\t\t<div id=\"menu-column-main-container\" class=\"pl-3\" style=\"{{#if constants.guestMode }} margin:auto {{/if}};\">\n\t\t\t\t<div id=\"menu-column-main\">\n\t\t\t\t\t<div class=\"white-bg\" style=\"max-width: 480px\">\n\t\t\t\t\t\t{{ playForm }}\t\t\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\n\t\t\t\n\t\t</div>\n\t</div>\n</div>"
+    },
+    "images": [
+      {
+        "key": "sound",
+        "url": "https://modd.s3.amazonaws.com/sprites/1512752415166_fire_shotgun.mp3"
+      },
+      {
+        "key": "sound",
+        "url": "https://modd.s3.amazonaws.com/sprites/1512755562800_fire_empty.mp3"
+      },
+      {
+        "key": "sound",
+        "url": "https://modd.s3.amazonaws.com/sprites/1512755594697_fire_minigun.mp3"
+      },
+      {
+        "key": "sound",
+        "url": "https://modd.s3.amazonaws.com/sprites/1512755610131_fire_pistol.mp3"
+      },
+      {
+        "key": "sound",
+        "url": "https://modd.s3.amazonaws.com/sprites/1512755622475_fire_rifle.mp3"
+      },
+      {
+        "key": "sound",
+        "url": "https://modd.s3.amazonaws.com/sprites/1512755644317_man_cough.mp3"
+      },
+      {
+        "key": "sound",
+        "url": "https://modd.s3.amazonaws.com/sprites/1512755666761_man_scream1.mp3"
+      },
+      {
+        "key": "sound",
+        "url": "https://modd.s3.amazonaws.com/sprites/1512755675893_man_scream2.mp3"
+      },
+      {
+        "key": "sound",
+        "url": "https://modd.s3.amazonaws.com/sprites/1512756015200_reload.mp3"
+      }
+    ],
+    "tilesets": [
+      {
+        "image": "https://cache.modd.io/two_houses-0.18/tilesheet.png",
+        "name": "tilesheet_complete"
+      },
+      {
+        "image": "https://cache.modd.io/two_houses-0.18/2x1.png",
+        "name": "2x1"
+      },
+      {
+        "image": "https://cache.modd.io/two_houses-0.18/2x3.png",
+        "name": "2x3"
+      },
+      {
+        "image": "https://cache.modd.io/two_houses-0.18/3x1.png",
+        "name": "3x1"
+      },
+      {
+        "image": "https://cache.modd.io/two_houses-0.18/3x4.png",
+        "name": "3x4"
+      },
+      {
+        "image": "https://cache.modd.io/two_houses-0.18/spritesheet/shop.png",
+        "name": "shop"
+      }
+    ],
+    "factions": {
+      "6BTQoFGUFP": {
+        "name": "asdf",
+        "relationships": {},
+        "attributes": {
+          "4P4pWD5ExV": {
+            "name": "Stamina",
+            "min": 0,
+            "max": "100",
+            "value": "100",
+            "regenerateSpeed": 0.3,
+            "isVisible": true,
+            "color": "yellow",
+            "showAsHUD": true
+          }
+        }
+      },
+      "PgVCU0WgYj": {
+        "name": "fda",
+        "relationships": {}
+      }
+    },
+    "playerTypes": {
+      "humanPlayer": {
+        "name": "human",
+        "attributes": {
+          "iRz8FN5EGN": {
+            "name": "progress",
+            "min": 0,
+            "max": 140,
+            "dataType": "",
+            "value": 0,
+            "regenerateSpeed": 0,
+            "isVisible": false,
+            "displayValue": false,
+            "showWhen": "",
+            "showAsHUD": true,
+            "color": "white",
+            "decimalPlaces": 0
+          }
+        },
+        "color": "#ffffff",
+        "relationships": {
+          "poHpaNWWpB": "hostile"
+        },
+        "showNameLabel": true,
+        "variables": {
+          "currentDialogue": {
+            "default": "wVDdWHyGHb",
+            "dataType": "dialogue"
+          }
+        }
+      }
+    },
+    "particles": {
+      "7pA9mm1MLG": {
+        "name": "spark",
+        "color": "#f4ff00",
+        "lifeBase": 30,
+        "quantityBase": 5,
+        "quantityTimespan": 30,
+        "deathOpacityBase": 1,
+        "mountPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "velocityVector": {
+          "baseVector": {
+            "x": 0,
+            "y": 0
+          },
+          "minVector": {
+            "x": -1,
+            "y": -1
+          },
+          "maxVector": {
+            "x": 1,
+            "y": 1
+          }
+        }
+      },
+      "87BiLybZhy": {
+        "name": "bullet",
+        "color": "#636363",
+        "lifeBase": 50,
+        "quantityBase": 1,
+        "quantityTimespan": 30,
+        "deathOpacityBase": 1,
+        "mountPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "velocityVector": {
+          "baseVector": {
+            "x": 0,
+            "y": 0
+          },
+          "minVector": {
+            "x": -1,
+            "y": -1
+          },
+          "maxVector": {
+            "x": 1,
+            "y": 1
+          }
+        }
+      }
+    },
+    "particleTypes": {},
+    "bodyTypes": {
+      "default": {
+        "bullet": false,
+        "name": "default",
+        "type": "dynamic",
+        "width": 54,
+        "height": 44,
+        "z-index": {
+          "layer": 3,
+          "depth": 3
+        },
+        "fixedRotation": false,
+        "bulletDestroyedOnCollisionWithWall/unit": false,
+        "allowSleep": true,
+        "collidesWith": {
+          "units": true,
+          "items": true,
+          "projectiles": true,
+          "walls": true,
+          "debris": true
+        },
+        "angularDamping": 1,
+        "linearDamping": 8,
+        "rotationSpeed": 1,
+        "spriteScale": 1,
+        "fixtures": [
+          {
+            "density": 1,
+            "friction": 0,
+            "restitution": 0,
+            "shape": {
+              "type": "rectangle"
+            },
+            "isSensor": false
+          }
+        ],
+        "jointType": "weldJoint",
+        "unitAnchor": {
+          "x": 0,
+          "y": 33,
+          "rotation": 0
+        },
+        "itemAnchor": {
+          "x": 0,
+          "y": 0,
+          "lowerAngle": 0,
+          "upperAngle": 0
+        }
+      },
+      "selected": {
+        "name": "selected",
+        "fixedRotation": false,
+        "z-index": {
+          "layer": 3,
+          "depth": 3
+        },
+        "typeWhenDrop": "dynamic",
+        "type": "dynamic",
+        "collidesWith": {
+          "units": true,
+          "items": true,
+          "projectiles": true,
+          "walls": true,
+          "debris": false
+        },
+        "unitAnchor": {
+          "rotation": 0,
+          "y": 20,
+          "x": 0
+        },
+        "rotationSpeed": 3,
+        "itemAnchor": {
+          "y": 0,
+          "x": 0
+        },
+        "jointType": "weldJoint",
+        "width": 8,
+        "height": 20,
+        "holdPosition": {
+          "rotation": 0,
+          "y": 33,
+          "x": 0
+        },
+        "linearDamping": 1,
+        "angularDamping": 1,
+        "restitution": 1,
+        "density": 1,
+        "isTangible": false,
+        "isFlying": false,
+        "carriedBy": ["fighter"],
+        "friction": 0
+      },
+      "unselected": {
+        "friction": 0,
+        "carriedBy": ["fighter"],
+        "isFlying": false,
+        "isTangible": false,
+        "density": 1,
+        "restitution": 1,
+        "angularDamping": 1,
+        "linearDamping": 1,
+        "holdPosition": {
+          "x": 0,
+          "y": 33,
+          "rotation": 0
+        },
+        "height": 20,
+        "width": 8,
+        "jointType": "weldJoint",
+        "itemAnchor": {
+          "x": 0,
+          "y": 0
+        },
+        "rotationSpeed": 3,
+        "unitAnchor": {
+          "x": 0,
+          "y": 20,
+          "rotation": 0
+        },
+        "collidesWith": {
+          "debris": false,
+          "walls": true,
+          "projectiles": true,
+          "items": true,
+          "units": true
+        },
+        "type": "none",
+        "typeWhenDrop": "dynamic",
+        "z-index": {
+          "depth": 3,
+          "layer": 3
+        },
+        "fixedRotation": false,
+        "name": "unselected",
+        "bullet": false,
+        "allowSleep": true,
+        "spriteScale": 1,
+        "fixtures": [
+          {
+            "density": 1,
+            "friction": 0.01,
+            "restitution": 0,
+            "shape": {
+              "type": "rectangle"
+            },
+            "isSensor": false
+          }
+        ]
+      },
+      "dropped": {
+        "name": "dropped",
+        "fixedRotation": false,
+        "z-index": {
+          "layer": 1,
+          "depth": 1
+        },
+        "typeWhenDrop": "dynamic",
+        "type": "static",
+        "collidesWith": {
+          "units": false,
+          "items": false,
+          "projectiles": false,
+          "walls": false,
+          "debris": false
+        },
+        "unitAnchor": {
+          "rotation": 0,
+          "y": 20,
+          "x": 0
+        },
+        "rotationSpeed": 3,
+        "itemAnchor": {
+          "y": 0,
+          "x": 0
+        },
+        "jointType": "weldJoint",
+        "width": 8,
+        "height": 20,
+        "holdPosition": {
+          "rotation": 0,
+          "y": 33,
+          "x": 0
+        },
+        "linearDamping": 1,
+        "angularDamping": 1,
+        "restitution": 1,
+        "density": 1,
+        "isTangible": false,
+        "isFlying": false,
+        "carriedBy": ["fighter"],
+        "friction": 0
+      }
+    },
+    "playerTypeVariables": {
+      "currentDialogue": {
+        "default": "wVDdWHyGHb",
+        "dataType": "dialogue"
+      }
+    },
+    "ui": {
+      "landingpage": {
+        "key": "landingpage",
+        "folderName": "Landing Page",
+        "parent": null,
+        "order": 0,
+        "expanded": true
+      },
+      "landingpagefull": {
+        "name": "Landing Page Full",
+        "htmlData": "",
+        "parent": "landingpage",
+        "key": "landingpagefull",
+        "order": 0,
+        "type": "view",
+        "preventDelete": true
+      },
+      "dialogue": {
+        "key": "dialogue",
+        "folderName": "Dialogue",
+        "parent": null,
+        "order": 1,
+        "expanded": true
+      },
+      "dialogueview": {
+        "name": "Dialogue View",
+        "htmlData": "<style>\n  .main-container-d {\n    position: fixed;\n    top: 35px;\n    right: 145px;\n    background: white;\n    border: 1px solid black;\n    border-radius: 5px;\n    max-height: 250px;\n    width: 350px;\n    /* height: 200px; */\n    overflow-y: auto;\n    color: black;\n    padding-left: 10px;\n    padding-right: 10px;\n    padding-bottom: 10px;\n    font-family: \"Rubik\";\n  }\n  \n  .dialogue-options {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    gap: 2px;\n    margin-top: 10px;\n  }\n  \n  .dialogue-option, .dialogue-video{\n    padding: 5px 8px;\n    background: #1d4ed8;\n    color: white;\n    border-radius: 3px;\n    font-size: 18px;\n    cursor: pointer;\n    font-weight: 500;\n  }\n  \n  .dialogue-option:hover, .dialogue-video:hover {\n    background: #3b82f6;\n    color: white;\n  }\n  \n  .dialogue-title {\n    font-size: 20px;\n    padding-bottom: 8px;\n    font-weight: 500;\n  }\n</style>\n\n<div class=\"main-container-d\">\n  <div>\n    <div>\n      <img src=\"{{dialogue.image}}\"/>\n      {{#if dialogue.dialogueTitle}} <div class=\"dialogue-title\">{{dialogue.dialogueTitle}}</div> {{/if}}\n    </div>\n    <div >\n      <div id=\"modd-dialogue-message\">{{dialogue.message}}</div>\n      <div class=\"dialogue-options\">\n      {{#each dialogue.options}}\n        {{#if name}}\n          <div class=\"dialogue-option\"><div class=\"text-wrap\">{{name}}</div></div>\n        {{else}}\n          <div class=\"dialogue-option full-option\"></div>\n        {{/if}}\n      {{/each}}\n     </div>\n    </div>\n  </div>\n</div>",
+        "parent": "dialogue",
+        "key": "dialogueview",
+        "order": 0,
+        "type": "view",
+        "preventDelete": true
+      },
+      "inputModal": {
+        "name": "Input Modal View",
+        "htmlData": "\n<div class=\"modal align-items-center\" id=\"player-input-modal\" tabindex=\"-1\">\n    <div class=\"modal-dialog modal-lg\" role=\"document\">\n        <div class=\"modal-content\">\n            <div class=\"modal-header\" id=\"player-input-modal-dismiss-button\">\n                <h5 class=\"modal-title\"></h5>\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n                    <span aria-hidden=\"true\">&times;</span>\n                </button>\n            </div>\n\n            <div class=\"modal-body\">\n            <div class=\"form-group\">\n                <label id=\"player-input-field-label\">{{inputModal.fieldLabel}}</label>\n                <input id=\"player-input-field\" class=\"form-control\">\n            </div>\n\n            <div class=\"row\">\n                <div class=\"col-sm-12 d-flex justify-content-end\">\n                <div id=\"player-input-cancel-container\">\n                    <button type=\"button\" id=\"player-input-cancel\" class=\"btn pull-right\">Cancel</button>\n                </div>\n                <div id=\"player-input-submit-container\">\n                    <button type=\"button\" id=\"player-input-submit\" class=\"btn pull-right btn-primary ml-2\">Submit</button>\n                </div>\n                </div>\n            </div>\n            </div>\n        </div>\n    </div>\n</div>\n",
+        "parent": "dialogue",
+        "key": "inputModal",
+        "order": 1,
+        "type": "view",
+        "preventDelete": true
+      },
+      "customModal": {
+        "name": "Custom Modal View",
+        "htmlData": "\n<div class=\"modal fade align-items-center\" id=\"custom-modal\" tabindex=\"-1\">\n  <div class=\"modal-dialog modal-lg modal-dialog-centered\" role=\"document\">\n    <div class=\"modal-content\">\n\n      <div class=\"modal-header text-center\">\n        <h4 class=\"modal-title\"></h4>\n        <button id='custom-modal-dismiss-button' type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n      </div>\n\n      <div class=\"modal-body\">\n        <div class=\"content\">{{customModal.content}}</div>\n      </div>\n\n      <div class=\"modal-footer\">\n        <div class=\"row\">\n          <div class=\"col-sm-12\">\n            <div id=\"custom-modal-cancel-container\">\n              <button type=\"button\" data-dismiss=\"modal\" id=\"custom-modal-cancel\" class=\"btn pull-right\">Close</button>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n",
+        "parent": "dialogue",
+        "key": "customModal",
+        "order": 2,
+        "type": "view",
+        "preventDelete": true
+      }
+    },
+    "dialogues": {
+      "wVDdWHyGHb": {
+        "name": "010. Welcome",
+        "dialogueTitle": "Tutorial (1/13)",
+        "message": "Click the button to watch the introductory video:\n<br/>\n<button class=\"dialogue-video\" onclick=\"showVideoModal('Moddio Tutorial', 'https://youtu.be/MzE813qYzbA?autoplay=1', 'youtube')\">Watch Intro Video</button>\n\n<br/><br/>\nAfter watching the video, <br/>press \"Next\" to continue.",
+        "image": "",
+        "letterPrintSpeed": null,
+        "options": [
+          {
+            "name": "Next",
+            "scriptName": "joVu7tfun5"
+          }
+        ]
+      },
+      "aVeKWqDHqL": {
+        "name": "030. Making the map bigger",
+        "dialogueTitle": "Tutorial (3/13)",
+        "message": "The following video tutorial will teach you how to change the map size:<br/><br/>\n<a  class=\"dialogue-video\" href=\"https://www.youtube.com/watch?v=TG8U24ftV-I\" target=\"_blank\">Make the Map Bigger!</a>\n\n\n<br/><br/>\n<h5> Goal: </h5>\n<ul> <li> Change Map Size to 20x20 </li> </ul>\n\nOnce you complete the goal, the tutorial will automatically proceed to the next step.",
+        "image": "",
+        "letterPrintSpeed": null,
+        "options": [
+          {
+            "name": "Previous",
+            "scriptName": "joVu7tfun5"
+          }
+        ]
+      },
+      "t9jAk2E7nX": {
+        "name": "020. Navigating the Editor",
+        "dialogueTitle": "Tutorial (2/13)",
+        "message": "Watch the following video tutorial to learn how to navigate the Moddio editor:<br/>\n<button class=\"dialogue-video\" onclick=\"showVideoModal('Moddio Tutorial', 'https://youtu.be/ZuFlU5g-YBY?autoplay=1', 'youtube')\">Navigating the Editor</button>\n<br/><br/>\nAfter watching the video, press \"Next\" to continue.\n",
+        "image": "",
+        "letterPrintSpeed": null,
+        "options": [
+          {
+            "name": "Previous",
+            "scriptName": "ZKsQxKAKsl"
+          },
+          {
+            "name": "Next",
+            "scriptName": "dMxaR8GPR1"
+          }
+        ]
+      },
+      "KmZ0yB6CQI": {
+        "name": "050. Define Chicken",
+        "dialogueTitle": "Tutorial (5/13)",
+        "message": "Please follow the below video tutorial to learn how to create a new 'chicken' unit:<br/><br/>\n<a class=\"dialogue-video\" href=\"https://www.youtube.com/watch?v=4bV7cCTDZ2U\" target=\"_blank\">Define Chicken</a>\n\n<br/><br/>",
+        "image": "",
+        "letterPrintSpeed": null,
+        "options": [
+          {
+            "name": "Previous",
+            "scriptName": "8tTzUfz9RW",
+            "followUpDialogue": ""
+          },
+          {
+            "name": "Done. Proceed!",
+            "scriptName": "oT7WHGSlQb",
+            "followUpDialogue": ""
+          }
+        ]
+      },
+      "cbu4fFZi2z": {
+        "name": "040. Filling the empty tiles",
+        "dialogueTitle": "Tutorial (4/13)",
+        "message": "Watch this video to learn how to fill in the empty map tiles:<br/><br/>\n<a class=\"dialogue-video\" href=\"https://www.youtube.com/watch?v=u-AgOA5-Wyk\" target=\"_blank\">Fill the empty tiles</a>\n\n<br/><br/>",
+        "image": "",
+        "letterPrintSpeed": null,
+        "options": [
+          {
+            "name": "I've completed! Proceed.",
+            "scriptName": "0wNHhpMkb7"
+          }
+        ]
+      },
+      "tyvwIPuHnO": {
+        "name": "060. Defining Coop",
+        "dialogueTitle": "Tutorial (6/13)",
+        "message": "Please follow the below video tutorial:<br/><br/>\n<a class=\"dialogue-video\" href=\"https://www.youtube.com/watch?v=TkG_GwI2YgY\" target=\"_blank\">Define Coop Region</a>\n\n\n<br/><br/>\n\n<h5> Goal: </h5>\n<ul> <li> Create a map region called \"coop\". </li> </ul>\n\nOnce you complete the goal and republish, the tutorial will automatically proceed to the next step.",
+        "image": "",
+        "letterPrintSpeed": null,
+        "options": [
+          {
+            "name": "Previous",
+            "scriptName": "0wNHhpMkb7",
+            "followUpDialogue": ""
+          },
+          {
+            "name": "Done. Proceed!",
+            "followUpDialogue": "xKM3vz93Ji"
+          }
+        ]
+      },
+      "xKM3vz93Ji": {
+        "name": "065. Please Republish",
+        "dialogueTitle": "Republish this game",
+        "message": "Once you've finished Step 6 (Defining Coop Region), please click on the [Publish] button and republish this game.",
+        "image": "",
+        "letterPrintSpeed": null,
+        "options": [
+          {
+            "name": "Previous",
+            "scriptName": "oT7WHGSlQb",
+            "followUpDialogue": ""
+          }
+        ]
+      },
+      "33ihrYWhIu": {
+        "name": "070. Intro to Scripting",
+        "dialogueTitle": "Tutorial (7/13)",
+        "message": "In the next video, you will learn how to create your first script:<br/><br/>\n<a class=\"dialogue-video\" href=\"https://www.youtube.com/watch?v=XADjyX59ryE\" target=\"_blank\">Scripting Basics</a>\n\n<br/><br/>\n",
+        "image": "",
+        "letterPrintSpeed": null,
+        "options": [
+          {
+            "name": "Understood. Proceed.",
+            "scriptName": "Rx0ALEMLxS",
+            "followUpDialogue": ""
+          }
+        ]
+      },
+      "PLqSz7rsDn": {
+        "name": "080. Spawning the Chickens",
+        "dialogueTitle": "Tutorial (8/13)",
+        "message": "This video teaches you how to use scripting to spawn chickens inside the \"coop\" region: <br/><br/>\n<a class=\"dialogue-video\" href=\"https://www.youtube.com/watch?v=1BmHpJ6Shss\" target=\"_blank\">Spawn the Chickens</a>\n\n<br/><br/>\n<h5> Goal: </h5>\n<ul><li>in initialize script, spawn 10 chickens at random positions inside the \"coop\" region.</li> </ul>\n\nOnce you complete the goal and republish, the tutorial will automatically proceed to the next step.",
+        "image": "",
+        "letterPrintSpeed": null,
+        "options": [
+          {
+            "name": "Previous",
+            "scriptName": "026GCGsFRl",
+            "followUpDialogue": ""
+          }
+        ]
+      },
+      "UH9ADi21dA": {
+        "name": "090. Adding AI to Chickens",
+        "dialogueTitle": "Tutorial (9/13)",
+        "message": "Learn how to add basic AI to your chickens with the next video:<br/><br/>\n<a class=\"dialogue-video\" href=\"https://www.youtube.com/watch?v=8nVRAwBVaq4\" target=\"_blank\">Add AI to Chickens</a>\n\n<br/><br/>",
+        "image": "",
+        "letterPrintSpeed": null,
+        "options": [
+          {
+            "name": "Next",
+            "scriptName": "rZod0w7b2q",
+            "followUpDialogue": ""
+          }
+        ]
+      },
+      "4Jiyq6IVOG": {
+        "name": "100. Build Fences & Eat Chickens",
+        "dialogueTitle": "Tutorial (10/13)",
+        "message": "Please follow the below video tutorial:<br/><br/>\n<a class=\"dialogue-video\" href=\"https://www.youtube.com/watch?v=jMgcJhhOzuc\" target=\"_blank\">Build Fences & Eat Chickens</a>\n\n<br/><br/>\n<h5> Goal: </h5>\n<ul>\n<li> draw fences on the map wall layer</li>\n<li> remove homie wall collision </li>\n<li> create a script for catching chickens </li>\n</ul>\nOnce you complete the goals, the tutorial will automatically proceed to the next step.",
+        "image": "",
+        "letterPrintSpeed": null,
+        "options": [
+          {
+            "name": "Previous",
+            "scriptName": "mq5GnajIbc",
+            "followUpDialogue": ""
+          }
+        ]
+      },
+      "ax7qDPu8Sx": {
+        "name": "110. Respawning Chickens",
+        "dialogueTitle": "Tutorial (11/13)",
+        "message": "Please follow the below video tutorial:<br/><br/>\n<a class=\"dialogue-video\" href=\"https://www.youtube.com/watch?v=Mca_Q4oNdvg\" target=\"_blank\">Respawn Chickens</a>\n\n\n<br/><br/>\n<h5> Goal: </h5>\n<ul>\n<li> create a number variable max_chickens_allowed and set to 10</li>\n<li> create a script to respawns chickens after they are caught</li>\n</ul>\nOnce you complete the goals, the tutorial will automatically proceed to the next step.",
+        "image": "",
+        "letterPrintSpeed": 0,
+        "options": [
+          {
+            "name": "Next",
+            "scriptName": "8azpc36D9S"
+          }
+        ]
+      },
+      "4Ke1ciFDJv": {
+        "name": "115. Please Republish",
+        "dialogueTitle": "Please Republish",
+        "message": "Once you've completed Step 11 (Respawning Chickens), please REPUBLISH this game",
+        "image": "",
+        "letterPrintSpeed": null,
+        "options": [
+          {
+            "name": "Previous",
+            "scriptName": "9WfViwAX8D",
+            "followUpDialogue": ""
+          }
+        ]
+      },
+      "cFVG3GSyiv": {
+        "name": "120. Earning Points",
+        "dialogueTitle": "Tutorial (12/13)",
+        "message": "For the final touch, let's give points to the player for catching chickens: <br/><br/>\n<a class=\"dialogue-video\" href=\"https://www.youtube.com/watch?v=_olTYDlfOqc\" target=\"_blank\">Make Players Earn Points</a>\n\n<br/><br/>\n<h5> Goal: </h5>\n<ul>\n<li> add a player attribute \"points\"</li>\n<li> give player a point when they catch a chicken</li>\n<li> display points on the leaderboard</li>\n</ul>",
+        "image": "",
+        "letterPrintSpeed": null,
+        "options": [
+          {
+            "name": "Previous",
+            "scriptName": "8azpc36D9S"
+          },
+          {
+            "name": "Next",
+            "scriptName": "STJNmzkjed",
+            "followUpDialogue": ""
+          }
+        ]
+      },
+      "aBWw3xwK2o": {
+        "name": "130. Let's play together",
+        "dialogueTitle": "Tutorial (13/13)",
+        "message": "Congratulations, you completed the tutorial! You can now invite your friends and play together!<br/><br/>\n<a class=\"dialogue-video\" href=\"https://www.youtube.com/watch?v=qEqM-dPSnEE\" target=\"_blank\">Let's Play Together!</a>\n\n<br/><br/>",
+        "image": "",
+        "letterPrintSpeed": null,
+        "options": [
+          {
+            "name": "Previous",
+            "scriptName": "8azpc36D9S",
+            "followUpDialogue": ""
+          },
+          {
+            "name": "Finish Tutorial",
+            "scriptName": "y9bBPfHXUs",
+            "followUpDialogue": ""
+          }
+        ]
+      }
+    }
+  },
+  "version": 0.01,
+  "backupOn": 1688888704265
+}

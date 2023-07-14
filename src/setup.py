@@ -1,0 +1,81 @@
+import dearpygui.dearpygui as dpg
+from pyutil import filereplace
+import webbrowser
+import os
+import shutil
+import json
+from settings import edit_callback
+
+def play_callback():
+    os.system("cd taro2 && npm run server&")
+    webbrowser.open('http://localhost:3000/', new=2)
+
+def setup_project_callback():
+    if dpg.does_item_exist("setup_project"):
+        dpg.show_item("setup_project")
+    else:
+        with dpg.window(label="Setup Manager", tag="setup_project"):
+            if os.path.isdir("taro2"):
+                dpg.add_text("Taro2 is already installed!")
+            else:
+                dpg.add_text("Download Taro2:", tag="taro2_text")
+                dpg.add_button(label="Download", tag="taro2_button", callback=taro2_callback)
+
+            if os.path.isdir("taro2/node_modules"):
+                dpg.add_text("Already installed npm packages!")
+            else:
+                dpg.add_text("Download npm packages:", tag="packages_text")
+                dpg.add_button(label="Download", tag="packages_button", callback=packages_callback)
+            if os.path.isfile("taro2/src/game.json"):
+                dpg.add_text("Already added game.json!")
+            else:
+                dpg.add_text("Download template game or upload own game.json file:")
+                dpg.add_button(label="Blank Template", tag="blank_template_button", callback=blank_template_callback)
+                dpg.add_button(label="Cell Eater", tag="cell_eater_button", callback=cell_eater_callback)
+                dpg.add_button(label="Guided Tutorial", tag="guided_tutorial_button", callback=guided_tutorial_callback)
+                dpg.add_button(label="Platformer", tag="platformer_button", callback=platformer_callback)
+                dpg.add_button(label="Zombie Tag", tag="zombie_tag_button", callback=zombie_tag_callback)
+
+def taro2_callback():
+    dpg.delete_item("taro2_button")
+    dpg.set_value(value="Started downloading taro2...", item="taro2_text")
+    os.system("git clone https://github.com/moddio/taro2.git")
+    filereplace("taro2/server/server.js","80","3000")
+    dpg.set_value(value="Finished downloading taro2...", item="taro2_text")
+
+def packages_callback():
+    dpg.delete_item("packages_button")
+    dpg.set_value(value="Started downloading npm packages...", item="packages_text")
+    os.system("cd taro2 && npm install")
+    dpg.set_value(value="Finished downloading npm packages...", item="packages_text")
+
+def blank_template_callback():
+    shutil.copyfile("templates/BlankTemplate.json", "taro2/src/game.json")
+    game_callback()
+
+def cell_eater_callback():
+    shutil.copyfile("templates/CellEater.json", "taro2/src/game.json")
+    game_callback()
+
+def guided_tutorial_callback():
+    shutil.copyfile("templates/GuidedTutorial.json", "taro2/src/game.json")
+    game_callback()
+
+def platformer_callback():
+    shutil.copyfile("templates/Platformer.json", "taro2/src/game.json")
+    game_callback()
+
+def zombie_tag_callback():
+    shutil.copyfile("templates/ZombieTag.json", "taro2/src/game.json")
+    game_callback()
+
+def game_callback():
+    dpg.hide_item("setup_project")
+    dpg.delete_item("setup_project_text")
+    dpg.delete_item("setup_project_button")
+    dpg.add_text("Update Project:", parent="default_window")
+    dpg.add_button(label="Update", parent="default_window", callback=setup_project_callback)
+    dpg.add_text("Edit Game Settings:", parent="default_window")
+    dpg.add_button(label="Edit", parent="default_window", callback=edit_callback)
+    dpg.add_text("Play the game:", parent="default_window")
+    dpg.add_button(label="Play", parent="default_window", callback=play_callback)
