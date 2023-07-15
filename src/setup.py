@@ -33,10 +33,13 @@ def setup_project_callback():
                 dpg.add_button(label="Battle Royale", tag="battle_royale_button", callback=battle_royale_callback)
                 dpg.add_button(label="Blank Template", tag="blank_template_button", callback=blank_template_callback)
                 dpg.add_button(label="Cell Eater", tag="cell_eater_button", callback=cell_eater_callback)
+                dpg.add_button(label="Deathmatch", tag="deathmatch_button", callback=deathmatch_callback)
                 dpg.add_button(label="Guided Tutorial", tag="guided_tutorial_button", callback=guided_tutorial_callback)
                 dpg.add_button(label="Hunt and Gather", tag="hunt_and_gather_button", callback=hunt_and_gather_callback)
                 dpg.add_button(label="Platformer", tag="platformer_button", callback=platformer_callback)
                 dpg.add_button(label="Racer", tag="racer_button", callback=racer_callback)
+                dpg.add_button(label="Soccer", tag="soccer_button", callback=soccer_callback)
+                dpg.add_button(label="Team Elimination", tag="team_elimination_button", callback=team_elimination_callback)
                 dpg.add_button(label="Tower Defense", tag="tower_defense_button", callback=tower_defense_callback)
                 dpg.add_button(label="Zombie Tag", tag="zombie_tag_button", callback=zombie_tag_callback)
 
@@ -65,6 +68,10 @@ def cell_eater_callback():
     shutil.copyfile("templates/CellEater.json", "taro2/src/game.json")
     game_callback()
 
+def deathmatch_callback():
+    shutil.copyfile("templates/Deathmatch.json", "taro2/src/game.json")
+    game_callback()
+
 def guided_tutorial_callback():
     shutil.copyfile("templates/GuidedTutorial.json", "taro2/src/game.json")
     game_callback()
@@ -79,6 +86,14 @@ def platformer_callback():
 
 def racer_callback():
     shutil.copyfile("templates/Racer.json", "taro2/src/game.json")
+    game_callback()
+
+def soccer_callback():
+    shutil.copyfile("templates/Soccer.json", "taro2/src/game.json")
+    game_callback()
+
+def team_elimination_callback():
+    shutil.copyfile("templates/TeamElimination.json", "taro2/src/game.json")
     game_callback()
 
 def tower_defense_callback():

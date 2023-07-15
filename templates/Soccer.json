@@ -1,0 +1,3010 @@
+{
+  "_id": "",
+  "tier": "5",
+  "allowDuplicateIPS": false,
+  "access": "public",
+  "solanaWalletLoginEnabled": false,
+  "isDeleted": false,
+  "playCount": 489,
+  "totalPlayCount": 3370,
+  "reasonForTakingDown": "",
+  "cover": "https://cache.modd.io/asset/spriteImage/1665039231570_galacticleague_(1).png",
+  "link": null,
+  "discordInviteLink": "https://discord.gg/XRe8T7K",
+  "twitterLink": "https://twitter.com/moddio",
+  "facebookLink": "https://www.facebook.com/Mod-Studio-1746016635455304/",
+  "youtubeLink": "https://www.youtube.com/channel/UCNYig4aLGsXPhgHe6Ydvm3A?sub_confirmation=1",
+  "androidLink": null,
+  "iosLink": null,
+  "redirect": "off",
+  "hidden": false,
+  "patchNotes": "",
+  "clientSidePredictionEnabled": false,
+  "clientPhysicsEngine": "",
+  "enableMiniMap": false,
+  "dontResize": true,
+  "defaultMaxPlayers": 50,
+  "lifeSpanHours": 5,
+  "sandboxMode": "advanced",
+  "physicsEngine": "planck",
+  "frameRate": 20,
+  "extrapolation": true,
+  "moreIoGames": false,
+  "allowGuestMode": false,
+  "revenueSharing": false,
+  "autoSave": true,
+  "canHostPrivateServers": false,
+  "privateServerIdleTimeout": 0.1,
+  "enableVideoChat": false,
+  "isGuestPlayerAllowed": true,
+  "allowVerifiedUserToChat": true,
+  "title": "Soccer",
+  "createdAt": "",
+  "updatedAt": "",
+  "invitedUsers": [],
+  "banUsers": [],
+  "banChat": [],
+  "banIps": [],
+  "highScores": [],
+  "releases": [
+    {
+      "isStable": false,
+      "_id": "",
+      "version": 0.01,
+      "release": ""
+    }
+  ],
+  "gameSlug": "",
+  "__v": 128,
+  "featuredOrderNo": -1,
+  "isFeatured": false,
+  "enablePersistedData": false,
+  "mobileReady": true,
+  "isLobbyEnabled": false,
+  "lobbyUnitKey": "",
+  "maxLobbySize": 4,
+  "minLobbySize": 2,
+  "allowLateJoining": false,
+  "heightBasedZIndex": false,
+  "isMod": false,
+  "isModdable": false,
+  "preferredRegion": "",
+  "dailyCoinTransferLimit": 0,
+  "mapBackgroundColor": "#000000",
+  "gamePlayInstructions": "",
+  "lastPlayedAt": "",
+  "coverUpdated": false,
+  "isPublished": true,
+  "contextMenuEnabled": true,
+  "data": {
+    "attributeTypes": {
+      "stamina": {
+        "color": "white",
+        "isVisible": true,
+        "regenerateSpeed": "0.5",
+        "value": "100",
+        "max": "100",
+        "min": 0,
+        "name": "Stamina",
+        "keys": "stamina"
+      },
+      "hp": {
+        "color": "yellow",
+        "isVisible": true,
+        "regenerateSpeed": "0.2",
+        "value": "100",
+        "max": "100",
+        "min": 0,
+        "name": "HP"
+      },
+      "points": {
+        "name": "Points",
+        "min": 0,
+        "max": 1000000,
+        "value": 2400,
+        "regenerateSpeed": 0,
+        "isVisible": false,
+        "showAsHUD": true,
+        "color": "#ff9600"
+      },
+      "speed": {
+        "name": "speed",
+        "min": 0,
+        "max": 100,
+        "dataType": "",
+        "value": 100,
+        "regenerateSpeed": 0,
+        "isVisible": false,
+        "displayValue": false,
+        "showWhen": "",
+        "showAsHUD": true,
+        "color": "white",
+        "decimalPlaces": 0
+      }
+    },
+    "tilesets": [
+      {
+        "image": "https://cache.modd.io/sprites/1503522050669_tilesheet.png",
+        "name": "tilesheet"
+      }
+    ],
+    "map": "",
+    "buffTypes": {},
+    "projectileTypes": {},
+    "itemTypes": {
+      "energy": {
+        "description": "",
+        "maxQuantity": 1,
+        "quantity": 1,
+        "bodies": {
+          "selected": {
+            "name": "selected",
+            "type": "dynamic",
+            "typeWhenDrop": "static",
+            "width": 10,
+            "height": 10,
+            "z-index": { "layer": 3, "depth": 3 },
+            "linearDamping": 1,
+            "angularDamping": 1,
+            "fixedRotation": false,
+            "restitution": 1,
+            "density": 1,
+            "friction": 0,
+            "collidesWith": {
+              "units": true,
+              "items": true,
+              "projectiles": true,
+              "walls": true,
+              "debris": false
+            },
+            "carriedBy": ["bluePlayer", "redPlayer"],
+            "rotationSpeed": 3,
+            "jointType": "weldJoint",
+            "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
+            "itemAnchor": { "x": 0, "y": 0 }
+          },
+          "unselected": {
+            "name": "unselected",
+            "type": "none",
+            "typeWhenDrop": "static",
+            "width": 10,
+            "height": 10,
+            "z-index": { "layer": 3, "depth": 4 },
+            "linearDamping": 1,
+            "angularDamping": 1,
+            "fixedRotation": false,
+            "restitution": 1,
+            "density": 1,
+            "friction": 0,
+            "collidesWith": {
+              "units": false,
+              "items": false,
+              "projectiles": false,
+              "walls": false,
+              "debris": false
+            },
+            "carriedBy": ["bluePlayer", "redPlayer"],
+            "rotationSpeed": 3,
+            "jointType": "weldJoint",
+            "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
+            "itemAnchor": { "x": 0, "y": 0 }
+          },
+          "dropped": {
+            "name": "dropped",
+            "type": "static",
+            "typeWhenDrop": "static",
+            "width": 10,
+            "height": 10,
+            "z-index": { "layer": 1, "depth": 1 },
+            "linearDamping": 1,
+            "angularDamping": 1,
+            "fixedRotation": false,
+            "restitution": 1,
+            "density": 1,
+            "friction": 0,
+            "collidesWith": {
+              "units": false,
+              "items": false,
+              "projectiles": false,
+              "walls": false,
+              "debris": false
+            },
+            "carriedBy": ["bluePlayer", "redPlayer"],
+            "rotationSpeed": 3,
+            "jointType": "weldJoint",
+            "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
+            "itemAnchor": { "x": 0, "y": 0 }
+          }
+        },
+        "states": {
+          "selected": {
+            "name": "selected",
+            "animation": "default",
+            "body": "selected",
+            "particles": {},
+            "sound": {}
+          },
+          "unselected": {
+            "name": "unselected",
+            "animation": "default",
+            "body": "unselected",
+            "particles": {},
+            "sound": {}
+          },
+          "dropped": {
+            "name": "dropped",
+            "animation": "default",
+            "body": "dropped",
+            "particles": {},
+            "sound": {}
+          }
+        },
+        "cellSheet": {
+          "columnCount": 1,
+          "rowCount": 1,
+          "url": "https://cache.modd.io/asset/spriteImage/1524238161444_lightning.png"
+        },
+        "animations": {
+          "default": {
+            "framesPerSecond": 0,
+            "loopCount": 0,
+            "frames": [1],
+            "name": "default"
+          }
+        },
+        "name": "energy",
+        "handle": "",
+        "attributes": {},
+        "price": {
+          "playerAttributes": {
+            "playerAttributes": {},
+            "requiredItemTypes": []
+          },
+          "requiredItemTypes": []
+        },
+        "texture": "https://modd.s3.amazonaws.com/asset/spriteImage/1524238161444_lightning.png",
+        "isStackable": false,
+        "isPurchasable": true,
+        "canBePurchasedBy": [],
+        "isGun": false,
+        "bulletType": "raycast",
+        "type": "consumable",
+        "hits": [],
+        "ammoSize": 30,
+        "ammo": 30,
+        "projectileType": "",
+        "ammoTotal": 90,
+        "reloadRate": 2800,
+        "recoilForce": 0,
+        "fireRate": 70,
+        "bulletForce": 14,
+        "knockbackForce": 0,
+        "effects": {
+          "use": { "particles": {}, "sound": {} },
+          "reload": { "particles": {}, "sound": {} },
+          "empty": { "particles": {}, "sound": {} }
+        },
+        "bulletStartPosition": { "x": 0, "y": 0, "rotation": 0 },
+        "bulletDistance": 1300,
+        "penetration": false,
+        "lifeSpan": 60000,
+        "particles": {},
+        "damage": 2,
+        "sound": {},
+        "canBeUsedBy": ["bluePlayer", "redPlayer"],
+        "isUsedOnPickup": true,
+        "removeWhenEmpty": false,
+        "body": {
+          "name": "energy",
+          "type": "dynamic",
+          "typeWhenDrop": "static",
+          "width": 10,
+          "height": 10,
+          "z-index": { "layer": 3, "depth": 4 },
+          "linearDamping": 1,
+          "angularDamping": 1,
+          "fixedRotation": false,
+          "restitution": 1,
+          "density": 1,
+          "friction": 0,
+          "collidesWith": {
+            "units": false,
+            "items": false,
+            "projectiles": false,
+            "walls": false,
+            "debris": false
+          },
+          "carriedBy": ["bluePlayer", "redPlayer"],
+          "rotationSpeed": 3,
+          "jointType": "weldJoint",
+          "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
+          "itemAnchor": { "x": 0, "y": 0 }
+        },
+        "bonus": {
+          "consume": {
+            "playerAttribute": {},
+            "unitAttribute": { "stamina": 50 }
+          },
+          "passive": { "playerAttribute": {}, "unitAttribute": {} },
+          "isConsumedImmediately": false
+        },
+        "buffTypes": [],
+        "carriedBy": ["bluePlayer", "redPlayer"],
+        "inventoryImage": null
+      }
+    },
+    "music": {},
+    "sound": {},
+    "scripts": {
+      "resetRound": {
+        "name": "reset round",
+        "actions": [
+          {
+            "type": "setVariable",
+            "value": "gameStarted",
+            "variableName": "state",
+            "comment": ""
+          },
+          { "target": "center-lg", "type": "hideUiTextForEveryone" },
+          {
+            "type": "moveEntity",
+            "entity": { "function": "getVariable", "variableName": "ball" },
+            "position": {
+              "function": "centerOfRegion",
+              "region": { "function": "getEntireMapRegion" }
+            }
+          },
+          {
+            "actions": [
+              {
+                "type": "condition",
+                "conditions": [
+                  { "operandType": "boolean", "operator": "==" },
+                  {
+                    "function": "playerIsControlledByHuman",
+                    "player": {
+                      "function": "getOwner",
+                      "entity": { "function": "selectedUnit" }
+                    }
+                  },
+                  true
+                ],
+                "then": [
+                  {
+                    "type": "condition",
+                    "conditions": [
+                      { "operator": "==", "operandType": "unitType" },
+                      {
+                        "entity": { "function": "selectedUnit" },
+                        "function": "getUnitTypeOfUnit"
+                      },
+                      "redPlayer"
+                    ],
+                    "then": [
+                      {
+                        "type": "moveEntity",
+                        "position": {
+                          "function": "xyCoordinate",
+                          "x": {
+                            "function": "calculate",
+                            "items": [
+                              { "operator": "+" },
+                              {
+                                "function": "getPositionX",
+                                "position": {
+                                  "function": "getEntityPosition",
+                                  "entity": {
+                                    "function": "getVariable",
+                                    "variableName": "ball"
+                                  }
+                                }
+                              },
+                              300
+                            ]
+                          },
+                          "y": {
+                            "function": "getPositionY",
+                            "position": {
+                              "function": "getEntityPosition",
+                              "entity": {
+                                "function": "getVariable",
+                                "variableName": "ball"
+                              }
+                            }
+                          }
+                        },
+                        "entity": { "function": "selectedUnit" }
+                      }
+                    ],
+                    "else": [
+                      {
+                        "type": "moveEntity",
+                        "position": {
+                          "function": "xyCoordinate",
+                          "x": {
+                            "function": "calculate",
+                            "items": [
+                              { "operator": "-" },
+                              {
+                                "function": "getPositionX",
+                                "position": {
+                                  "function": "getEntityPosition",
+                                  "entity": {
+                                    "function": "getVariable",
+                                    "variableName": "ball"
+                                  }
+                                }
+                              },
+                              300
+                            ]
+                          },
+                          "y": {
+                            "function": "getPositionY",
+                            "position": {
+                              "function": "getEntityPosition",
+                              "entity": {
+                                "function": "getVariable",
+                                "variableName": "ball"
+                              }
+                            }
+                          }
+                        },
+                        "entity": { "function": "selectedUnit" }
+                      }
+                    ]
+                  }
+                ],
+                "else": []
+              }
+            ],
+            "type": "forAllUnits",
+            "unitGroup": { "function": "allUnits" }
+          }
+        ],
+        "conditions": [
+          { "operandType": "boolean", "operator": "==" },
+          true,
+          true
+        ],
+        "triggers": [],
+        "key": "resetRound",
+        "parent": "eventsKeClm",
+        "order": 5
+      },
+      "goal": {
+        "order": 1,
+        "parent": "eventsKeClm",
+        "key": "goal",
+        "triggers": [{ "type": "unitEntersRegion" }],
+        "conditions": [
+          { "operator": "==", "operandType": "boolean" },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "else": [],
+            "then": [
+              {
+                "type": "condition",
+                "conditions": [
+                  { "operator": "==", "operandType": "unitType" },
+                  {
+                    "entity": {
+                      "function": "getTriggeringUnit",
+                      "vars": [
+                        { "id": "getTriggeringUnit", "source": "trigger" },
+                        { "id": "getTriggeringRegion", "source": "trigger" }
+                      ]
+                    },
+                    "function": "getUnitTypeOfUnit",
+                    "vars": [
+                      { "id": "getTriggeringUnit", "source": "trigger" },
+                      { "id": "getTriggeringRegion", "source": "trigger" }
+                    ]
+                  },
+                  "ball (unitType)"
+                ],
+                "then": [
+                  {
+                    "type": "condition",
+                    "conditions": [
+                      { "operandType": "or", "operator": "OR" },
+                      [
+                        { "operandType": "region", "operator": "==" },
+                        { "function": "getTriggeringRegion" },
+                        {
+                          "function": "getVariable",
+                          "variableName": "redGoalPost"
+                        }
+                      ],
+                      [
+                        { "operandType": "region", "operator": "==" },
+                        { "function": "getTriggeringRegion" },
+                        {
+                          "function": "getVariable",
+                          "variableName": "blueGoalPost"
+                        }
+                      ]
+                    ],
+                    "then": [
+                      {
+                        "comment": "",
+                        "type": "setVariable",
+                        "value": 5,
+                        "variableName": "timer",
+                        "vars": [
+                          { "id": "getTriggeringUnit", "source": "trigger" },
+                          { "id": "getTriggeringRegion", "source": "trigger" }
+                        ]
+                      },
+                      {
+                        "comment": "",
+                        "variableName": "state",
+                        "value": "goalCeremony",
+                        "type": "setVariable",
+                        "vars": [
+                          { "id": "getTriggeringUnit", "source": "trigger" },
+                          { "id": "getTriggeringRegion", "source": "trigger" }
+                        ]
+                      },
+                      {
+                        "type": "updateUiTextForEveryone",
+                        "target": "center-lg",
+                        "value": {
+                          "function": "concat",
+                          "textA": {
+                            "function": "getPlayerName",
+                            "entity": {
+                              "function": "getOwner",
+                              "entity": {
+                                "function": "getVariable",
+                                "variableName": "unitLastTouchedBall",
+                                "vars": [
+                                  {
+                                    "id": "getTriggeringUnit",
+                                    "source": "trigger"
+                                  },
+                                  {
+                                    "id": "getTriggeringRegion",
+                                    "source": "trigger"
+                                  }
+                                ]
+                              },
+                              "vars": [
+                                {
+                                  "id": "getTriggeringUnit",
+                                  "source": "trigger"
+                                },
+                                {
+                                  "id": "getTriggeringRegion",
+                                  "source": "trigger"
+                                }
+                              ]
+                            },
+                            "vars": [
+                              {
+                                "id": "getTriggeringUnit",
+                                "source": "trigger"
+                              },
+                              {
+                                "id": "getTriggeringRegion",
+                                "source": "trigger"
+                              }
+                            ]
+                          },
+                          "textB": " scores!",
+                          "vars": [
+                            { "id": "getTriggeringUnit", "source": "trigger" },
+                            { "id": "getTriggeringRegion", "source": "trigger" }
+                          ]
+                        },
+                        "vars": [
+                          { "id": "getTriggeringUnit", "source": "trigger" },
+                          { "id": "getTriggeringRegion", "source": "trigger" }
+                        ]
+                      },
+                      {
+                        "type": "showUiTextForEveryone",
+                        "target": "center-lg",
+                        "vars": [
+                          { "id": "getTriggeringUnit", "source": "trigger" },
+                          { "id": "getTriggeringRegion", "source": "trigger" }
+                        ]
+                      }
+                    ],
+                    "else": [],
+                    "vars": [
+                      { "id": "getTriggeringUnit", "source": "trigger" },
+                      { "id": "getTriggeringRegion", "source": "trigger" }
+                    ]
+                  },
+                  {
+                    "comment": "blue team scores\n",
+                    "type": "condition",
+                    "conditions": [
+                      { "operator": "==", "operandType": "region" },
+                      {
+                        "function": "getTriggeringRegion",
+                        "vars": [
+                          { "id": "getTriggeringUnit", "source": "trigger" },
+                          { "id": "getTriggeringRegion", "source": "trigger" }
+                        ]
+                      },
+                      {
+                        "function": "getVariable",
+                        "variableName": "redGoalPost",
+                        "vars": [
+                          { "id": "getTriggeringUnit", "source": "trigger" },
+                          { "id": "getTriggeringRegion", "source": "trigger" }
+                        ]
+                      }
+                    ],
+                    "then": [
+                      {
+                        "type": "setVariable",
+                        "variableName": "blueScore",
+                        "value": {
+                          "function": "calculate",
+                          "items": [
+                            "+",
+                            {
+                              "function": "getVariable",
+                              "variableName": "blueScore"
+                            },
+                            "1"
+                          ],
+                          "vars": [
+                            { "id": "getTriggeringUnit", "source": "trigger" },
+                            { "id": "getTriggeringRegion", "source": "trigger" }
+                          ]
+                        },
+                        "vars": [
+                          { "id": "getTriggeringUnit", "source": "trigger" },
+                          { "id": "getTriggeringRegion", "source": "trigger" }
+                        ]
+                      },
+                      {
+                        "else": [
+                          {
+                            "comment": "Own goal!",
+                            "entity": {
+                              "entity": {
+                                "variableName": "unitLastTouchedBall",
+                                "function": "getVariable",
+                                "vars": [
+                                  {
+                                    "id": "getTriggeringUnit",
+                                    "source": "trigger"
+                                  },
+                                  {
+                                    "id": "getTriggeringRegion",
+                                    "source": "trigger"
+                                  }
+                                ]
+                              },
+                              "function": "getOwner",
+                              "vars": [
+                                {
+                                  "id": "getTriggeringUnit",
+                                  "source": "trigger"
+                                },
+                                {
+                                  "id": "getTriggeringRegion",
+                                  "source": "trigger"
+                                }
+                              ]
+                            },
+                            "value": {
+                              "items": [
+                                { "operator": "-" },
+                                {
+                                  "entity": {
+                                    "entity": {
+                                      "variableName": "unitLastTouchedBall",
+                                      "function": "getVariable"
+                                    },
+                                    "function": "getOwner"
+                                  },
+                                  "attribute": "points",
+                                  "function": "getPlayerAttribute"
+                                },
+                                1
+                              ],
+                              "function": "calculate",
+                              "vars": [
+                                {
+                                  "id": "getTriggeringUnit",
+                                  "source": "trigger"
+                                },
+                                {
+                                  "id": "getTriggeringRegion",
+                                  "source": "trigger"
+                                }
+                              ]
+                            },
+                            "attribute": "points",
+                            "type": "setPlayerAttribute",
+                            "vars": [
+                              {
+                                "id": "getTriggeringUnit",
+                                "source": "trigger"
+                              },
+                              {
+                                "id": "getTriggeringRegion",
+                                "source": "trigger"
+                              }
+                            ]
+                          }
+                        ],
+                        "then": [
+                          {
+                            "entity": {
+                              "entity": {
+                                "variableName": "unitLastTouchedBall",
+                                "function": "getVariable",
+                                "vars": [
+                                  {
+                                    "id": "getTriggeringUnit",
+                                    "source": "trigger"
+                                  },
+                                  {
+                                    "id": "getTriggeringRegion",
+                                    "source": "trigger"
+                                  }
+                                ]
+                              },
+                              "function": "getOwner",
+                              "vars": [
+                                {
+                                  "id": "getTriggeringUnit",
+                                  "source": "trigger"
+                                },
+                                {
+                                  "id": "getTriggeringRegion",
+                                  "source": "trigger"
+                                }
+                              ]
+                            },
+                            "value": {
+                              "items": [
+                                "+",
+                                {
+                                  "entity": {
+                                    "entity": {
+                                      "variableName": "unitLastTouchedBall",
+                                      "function": "getVariable"
+                                    },
+                                    "function": "getOwner"
+                                  },
+                                  "attribute": "points",
+                                  "function": "getPlayerAttribute"
+                                },
+                                1
+                              ],
+                              "function": "calculate",
+                              "vars": [
+                                {
+                                  "id": "getTriggeringUnit",
+                                  "source": "trigger"
+                                },
+                                {
+                                  "id": "getTriggeringRegion",
+                                  "source": "trigger"
+                                }
+                              ]
+                            },
+                            "attribute": "points",
+                            "type": "setPlayerAttribute",
+                            "vars": [
+                              {
+                                "id": "getTriggeringUnit",
+                                "source": "trigger"
+                              },
+                              {
+                                "id": "getTriggeringRegion",
+                                "source": "trigger"
+                              }
+                            ]
+                          }
+                        ],
+                        "conditions": [
+                          { "operandType": "unitType", "operator": "==" },
+                          {
+                            "entity": {
+                              "variableName": "unitLastTouchedBall",
+                              "function": "getVariable",
+                              "vars": [
+                                {
+                                  "id": "getTriggeringUnit",
+                                  "source": "trigger"
+                                },
+                                {
+                                  "id": "getTriggeringRegion",
+                                  "source": "trigger"
+                                }
+                              ]
+                            },
+                            "function": "getUnitTypeOfUnit",
+                            "vars": [
+                              {
+                                "id": "getTriggeringUnit",
+                                "source": "trigger"
+                              },
+                              {
+                                "id": "getTriggeringRegion",
+                                "source": "trigger"
+                              }
+                            ]
+                          },
+                          "bluePlayer"
+                        ],
+                        "type": "condition",
+                        "vars": [
+                          { "id": "getTriggeringUnit", "source": "trigger" },
+                          { "id": "getTriggeringRegion", "source": "trigger" }
+                        ]
+                      }
+                    ],
+                    "else": [
+                      {
+                        "comment": "red team scores",
+                        "type": "condition",
+                        "conditions": [
+                          { "operator": "==", "operandType": "region" },
+                          {
+                            "function": "getTriggeringRegion",
+                            "vars": [
+                              {
+                                "id": "getTriggeringUnit",
+                                "source": "trigger"
+                              },
+                              {
+                                "id": "getTriggeringRegion",
+                                "source": "trigger"
+                              }
+                            ]
+                          },
+                          {
+                            "function": "getVariable",
+                            "variableName": "blueGoalPost",
+                            "vars": [
+                              {
+                                "id": "getTriggeringUnit",
+                                "source": "trigger"
+                              },
+                              {
+                                "id": "getTriggeringRegion",
+                                "source": "trigger"
+                              }
+                            ]
+                          }
+                        ],
+                        "then": [
+                          {
+                            "value": {
+                              "items": [
+                                "+",
+                                {
+                                  "variableName": "redScore",
+                                  "function": "getVariable"
+                                },
+                                "1"
+                              ],
+                              "function": "calculate",
+                              "vars": [
+                                {
+                                  "id": "getTriggeringUnit",
+                                  "source": "trigger"
+                                },
+                                {
+                                  "id": "getTriggeringRegion",
+                                  "source": "trigger"
+                                }
+                              ]
+                            },
+                            "variableName": "redScore",
+                            "type": "setVariable",
+                            "vars": [
+                              {
+                                "id": "getTriggeringUnit",
+                                "source": "trigger"
+                              },
+                              {
+                                "id": "getTriggeringRegion",
+                                "source": "trigger"
+                              }
+                            ]
+                          },
+                          {
+                            "else": [
+                              {
+                                "comment": "Own goal!",
+                                "entity": {
+                                  "entity": {
+                                    "variableName": "unitLastTouchedBall",
+                                    "function": "getVariable",
+                                    "vars": [
+                                      {
+                                        "id": "getTriggeringUnit",
+                                        "source": "trigger"
+                                      },
+                                      {
+                                        "id": "getTriggeringRegion",
+                                        "source": "trigger"
+                                      }
+                                    ]
+                                  },
+                                  "function": "getOwner",
+                                  "vars": [
+                                    {
+                                      "id": "getTriggeringUnit",
+                                      "source": "trigger"
+                                    },
+                                    {
+                                      "id": "getTriggeringRegion",
+                                      "source": "trigger"
+                                    }
+                                  ]
+                                },
+                                "value": {
+                                  "items": [
+                                    { "operator": "-" },
+                                    {
+                                      "entity": {
+                                        "entity": {
+                                          "variableName": "unitLastTouchedBall",
+                                          "function": "getVariable"
+                                        },
+                                        "function": "getOwner"
+                                      },
+                                      "attribute": "points",
+                                      "function": "getPlayerAttribute"
+                                    },
+                                    1
+                                  ],
+                                  "function": "calculate",
+                                  "vars": [
+                                    {
+                                      "id": "getTriggeringUnit",
+                                      "source": "trigger"
+                                    },
+                                    {
+                                      "id": "getTriggeringRegion",
+                                      "source": "trigger"
+                                    }
+                                  ]
+                                },
+                                "attribute": "points",
+                                "type": "setPlayerAttribute",
+                                "vars": [
+                                  {
+                                    "id": "getTriggeringUnit",
+                                    "source": "trigger"
+                                  },
+                                  {
+                                    "id": "getTriggeringRegion",
+                                    "source": "trigger"
+                                  }
+                                ]
+                              }
+                            ],
+                            "then": [
+                              {
+                                "entity": {
+                                  "entity": {
+                                    "variableName": "unitLastTouchedBall",
+                                    "function": "getVariable",
+                                    "vars": [
+                                      {
+                                        "id": "getTriggeringUnit",
+                                        "source": "trigger"
+                                      },
+                                      {
+                                        "id": "getTriggeringRegion",
+                                        "source": "trigger"
+                                      }
+                                    ]
+                                  },
+                                  "function": "getOwner",
+                                  "vars": [
+                                    {
+                                      "id": "getTriggeringUnit",
+                                      "source": "trigger"
+                                    },
+                                    {
+                                      "id": "getTriggeringRegion",
+                                      "source": "trigger"
+                                    }
+                                  ]
+                                },
+                                "value": {
+                                  "items": [
+                                    "+",
+                                    {
+                                      "entity": {
+                                        "entity": {
+                                          "variableName": "unitLastTouchedBall",
+                                          "function": "getVariable"
+                                        },
+                                        "function": "getOwner"
+                                      },
+                                      "attribute": "points",
+                                      "function": "getPlayerAttribute"
+                                    },
+                                    1
+                                  ],
+                                  "function": "calculate",
+                                  "vars": [
+                                    {
+                                      "id": "getTriggeringUnit",
+                                      "source": "trigger"
+                                    },
+                                    {
+                                      "id": "getTriggeringRegion",
+                                      "source": "trigger"
+                                    }
+                                  ]
+                                },
+                                "attribute": "points",
+                                "type": "setPlayerAttribute",
+                                "vars": [
+                                  {
+                                    "id": "getTriggeringUnit",
+                                    "source": "trigger"
+                                  },
+                                  {
+                                    "id": "getTriggeringRegion",
+                                    "source": "trigger"
+                                  }
+                                ]
+                              }
+                            ],
+                            "conditions": [
+                              { "operandType": "unitType", "operator": "==" },
+                              {
+                                "entity": {
+                                  "variableName": "unitLastTouchedBall",
+                                  "function": "getVariable",
+                                  "vars": [
+                                    {
+                                      "id": "getTriggeringUnit",
+                                      "source": "trigger"
+                                    },
+                                    {
+                                      "id": "getTriggeringRegion",
+                                      "source": "trigger"
+                                    }
+                                  ]
+                                },
+                                "function": "getUnitTypeOfUnit",
+                                "vars": [
+                                  {
+                                    "id": "getTriggeringUnit",
+                                    "source": "trigger"
+                                  },
+                                  {
+                                    "id": "getTriggeringRegion",
+                                    "source": "trigger"
+                                  }
+                                ]
+                              },
+                              "redPlayer"
+                            ],
+                            "type": "condition",
+                            "vars": [
+                              {
+                                "id": "getTriggeringUnit",
+                                "source": "trigger"
+                              },
+                              {
+                                "id": "getTriggeringRegion",
+                                "source": "trigger"
+                              }
+                            ]
+                          }
+                        ],
+                        "else": [],
+                        "vars": [
+                          { "id": "getTriggeringUnit", "source": "trigger" },
+                          { "id": "getTriggeringRegion", "source": "trigger" }
+                        ]
+                      }
+                    ],
+                    "vars": [
+                      { "id": "getTriggeringUnit", "source": "trigger" },
+                      { "id": "getTriggeringRegion", "source": "trigger" }
+                    ]
+                  }
+                ],
+                "else": [],
+                "vars": [
+                  { "id": "getTriggeringUnit", "source": "trigger" },
+                  { "id": "getTriggeringRegion", "source": "trigger" }
+                ]
+              }
+            ],
+            "conditions": [
+              { "operandType": "string", "operator": "==" },
+              {
+                "variableName": "state",
+                "function": "getVariable",
+                "vars": [
+                  { "id": "getTriggeringUnit", "source": "trigger" },
+                  { "id": "getTriggeringRegion", "source": "trigger" }
+                ]
+              },
+              "gameStarted"
+            ],
+            "type": "condition",
+            "vars": [
+              { "id": "getTriggeringUnit", "source": "trigger" },
+              { "id": "getTriggeringRegion", "source": "trigger" }
+            ]
+          }
+        ],
+        "name": "goal"
+      },
+      "updatePlayerCount": {
+        "order": 0,
+        "parent": "helpersoQCti",
+        "key": "updatePlayerCount",
+        "triggers": [],
+        "conditions": [
+          { "operator": "==", "operandType": "boolean" },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "setVariable",
+            "variableName": "numberOfRedUnits",
+            "value": 0,
+            "vars": []
+          },
+          {
+            "type": "setVariable",
+            "variableName": "numberOfBlueUnits",
+            "value": 0,
+            "vars": []
+          },
+          {
+            "unitGroup": {
+              "function": "allUnits",
+              "vars": [
+                { "id": "selectedUnit", "source": "forAllUnits" },
+                { "id": "getSelectedUnit", "source": "forAllUnits" }
+              ]
+            },
+            "type": "forAllUnits",
+            "actions": [
+              {
+                "else": [],
+                "then": [
+                  {
+                    "else": [
+                      {
+                        "value": {
+                          "items": [
+                            "+",
+                            {
+                              "function": "getVariable",
+                              "variableName": "numberOfBlueUnits"
+                            },
+                            1
+                          ],
+                          "function": "calculate",
+                          "vars": [
+                            { "id": "selectedUnit", "source": "forAllUnits" },
+                            { "id": "getSelectedUnit", "source": "forAllUnits" }
+                          ]
+                        },
+                        "variableName": "numberOfBlueUnits",
+                        "type": "setVariable",
+                        "vars": [
+                          { "id": "selectedUnit", "source": "forAllUnits" },
+                          { "id": "getSelectedUnit", "source": "forAllUnits" }
+                        ]
+                      }
+                    ],
+                    "then": [
+                      {
+                        "value": {
+                          "items": [
+                            "+",
+                            {
+                              "variableName": "numberOfRedUnits",
+                              "function": "getVariable"
+                            },
+                            1
+                          ],
+                          "function": "calculate",
+                          "vars": [
+                            { "id": "selectedUnit", "source": "forAllUnits" },
+                            { "id": "getSelectedUnit", "source": "forAllUnits" }
+                          ]
+                        },
+                        "variableName": "numberOfRedUnits",
+                        "type": "setVariable",
+                        "vars": [
+                          { "id": "selectedUnit", "source": "forAllUnits" },
+                          { "id": "getSelectedUnit", "source": "forAllUnits" }
+                        ]
+                      }
+                    ],
+                    "conditions": [
+                      { "operandType": "unitType", "operator": "==" },
+                      {
+                        "function": "getUnitTypeOfUnit",
+                        "entity": {
+                          "function": "selectedUnit",
+                          "vars": [
+                            { "id": "selectedUnit", "source": "forAllUnits" },
+                            { "id": "getSelectedUnit", "source": "forAllUnits" }
+                          ]
+                        },
+                        "vars": [
+                          { "id": "selectedUnit", "source": "forAllUnits" },
+                          { "id": "getSelectedUnit", "source": "forAllUnits" }
+                        ]
+                      },
+                      "redPlayer"
+                    ],
+                    "type": "condition",
+                    "vars": [
+                      { "id": "selectedUnit", "source": "forAllUnits" },
+                      { "id": "getSelectedUnit", "source": "forAllUnits" }
+                    ]
+                  }
+                ],
+                "conditions": [
+                  { "operandType": "boolean", "operator": "==" },
+                  {
+                    "player": {
+                      "entity": {
+                        "function": "selectedUnit",
+                        "vars": [
+                          { "id": "selectedUnit", "source": "forAllUnits" },
+                          { "id": "getSelectedUnit", "source": "forAllUnits" }
+                        ]
+                      },
+                      "function": "getOwner",
+                      "vars": [
+                        { "id": "selectedUnit", "source": "forAllUnits" },
+                        { "id": "getSelectedUnit", "source": "forAllUnits" }
+                      ]
+                    },
+                    "function": "playerIsControlledByHuman",
+                    "vars": [
+                      { "id": "selectedUnit", "source": "forAllUnits" },
+                      { "id": "getSelectedUnit", "source": "forAllUnits" }
+                    ]
+                  },
+                  true
+                ],
+                "type": "condition",
+                "vars": [
+                  { "id": "selectedUnit", "source": "forAllUnits" },
+                  { "id": "getSelectedUnit", "source": "forAllUnits" }
+                ]
+              }
+            ],
+            "vars": [
+              { "id": "selectedUnit", "source": "forAllUnits" },
+              { "id": "getSelectedUnit", "source": "forAllUnits" }
+            ]
+          },
+          {
+            "type": "updateUiTextForEveryone",
+            "target": "scoreboard",
+            "value": {
+              "function": "concat",
+              "textA": {
+                "function": "concat",
+                "textA": {
+                  "function": "concat",
+                  "textA": "<div class=\"text-danger\">",
+                  "textB": {
+                    "function": "getVariable",
+                    "variableName": "numberOfRedUnits",
+                    "vars": []
+                  },
+                  "vars": []
+                },
+                "textB": " Red</div>",
+                "vars": []
+              },
+              "textB": {
+                "function": "concat",
+                "textA": "<div class=\"text-primary\">",
+                "textB": {
+                  "function": "concat",
+                  "textA": {
+                    "function": "getVariable",
+                    "variableName": "numberOfBlueUnits",
+                    "vars": []
+                  },
+                  "textB": " Blue</div>",
+                  "vars": []
+                },
+                "vars": []
+              },
+              "vars": []
+            },
+            "vars": []
+          }
+        ],
+        "name": "update player count"
+      },
+      "dash": {
+        "name": "dash",
+        "triggers": [],
+        "conditions": [],
+        "actions": [
+          {
+            "entity": { "function": "getLastCastingUnit" },
+            "force": { "y": 50, "x": 0 },
+            "type": "applyForceOnEntityXYRelative"
+          }
+        ],
+        "key": "dash",
+        "parent": "unitAbilitiesjrel2",
+        "order": 0
+      },
+      "eventsKeClm": {
+        "key": "eventsKeClm",
+        "folderName": "Events",
+        "parent": null,
+        "order": 0
+      },
+      "gameStarts": {
+        "triggers": [{ "type": "gameStart" }],
+        "conditions": [
+          { "operator": "==", "operandType": "boolean" },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "createUnitAtPosition",
+            "unitType": "ball (unitType)",
+            "position": {
+              "function": "centerOfRegion",
+              "region": { "function": "getEntireMapRegion" }
+            },
+            "angle": 0,
+            "entity": { "function": "getVariable", "variableName": "ball ai" }
+          },
+          {
+            "type": "setVariable",
+            "value": { "function": "getLastCreatedUnit" },
+            "variableName": "ball"
+          },
+          {
+            "playerType": "neutral",
+            "entity": { "variableName": "ball ai", "function": "getVariable" },
+            "type": "assignPlayerType"
+          }
+        ],
+        "name": "game starts",
+        "parent": "eventsKeClm",
+        "key": "gameStarts",
+        "order": 0
+      },
+      "unitTouchesTheBall": {
+        "triggers": [{ "type": "unitTouchesUnit" }],
+        "conditions": [
+          { "operator": "==", "operandType": "boolean" },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "condition",
+            "conditions": [
+              { "operator": "==", "operandType": "unitType" },
+              {
+                "function": "getUnitTypeOfUnit",
+                "entity": {
+                  "function": "getLastTouchedUnit",
+                  "vars": [
+                    { "id": "getLastTouchingUnit", "source": "trigger" },
+                    { "id": "getLastTouchedUnit", "source": "trigger" }
+                  ]
+                },
+                "vars": [
+                  { "id": "getLastTouchingUnit", "source": "trigger" },
+                  { "id": "getLastTouchedUnit", "source": "trigger" }
+                ]
+              },
+              "ball (unitType)"
+            ],
+            "then": [
+              {
+                "type": "setVariable",
+                "variableName": "unitLastTouchedBall",
+                "value": {
+                  "function": "getLastTouchingUnit",
+                  "vars": [
+                    { "id": "getLastTouchingUnit", "source": "trigger" },
+                    { "id": "getLastTouchedUnit", "source": "trigger" }
+                  ]
+                },
+                "comment": "",
+                "vars": [
+                  { "id": "getLastTouchingUnit", "source": "trigger" },
+                  { "id": "getLastTouchedUnit", "source": "trigger" }
+                ]
+              }
+            ],
+            "else": [],
+            "vars": [
+              { "id": "getLastTouchingUnit", "source": "trigger" },
+              { "id": "getLastTouchedUnit", "source": "trigger" }
+            ]
+          }
+        ],
+        "name": "unit touches the ball",
+        "parent": "eventsKeClm",
+        "key": "unitTouchesTheBall",
+        "order": 6
+      },
+      "everySecondTimerExpiries": {
+        "triggers": [{ "type": "secondTick" }],
+        "conditions": [
+          { "operator": "==", "operandType": "boolean" },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "condition",
+            "conditions": [
+              { "operandType": "string", "operator": "==" },
+              {
+                "variableName": "state",
+                "function": "getVariable",
+                "vars": []
+              },
+              "waitingForPlayers"
+            ],
+            "then": [
+              {
+                "else": [
+                  {
+                    "target": "center-lg",
+                    "type": "showUiTextForEveryone",
+                    "vars": []
+                  },
+                  {
+                    "type": "updateUiTextForEveryone",
+                    "target": "center-lg",
+                    "value": {
+                      "function": "concat",
+                      "textA": "We need ",
+                      "textB": {
+                        "function": "concat",
+                        "textA": {
+                          "function": "calculate",
+                          "items": [
+                            { "operator": "-" },
+                            {
+                              "function": "getVariable",
+                              "variableName": "minPlayerRequired"
+                            },
+                            {
+                              "function": "calculate",
+                              "items": [
+                                "+",
+                                {
+                                  "function": "getVariable",
+                                  "variableName": "numberOfBlueUnits"
+                                },
+                                {
+                                  "function": "getVariable",
+                                  "variableName": "numberOfRedUnits"
+                                }
+                              ]
+                            }
+                          ],
+                          "vars": []
+                        },
+                        "textB": " more player(s)",
+                        "vars": []
+                      },
+                      "vars": []
+                    },
+                    "vars": []
+                  }
+                ],
+                "then": [
+                  {
+                    "scriptName": "resetRound",
+                    "type": "runScript",
+                    "vars": []
+                  },
+                  {
+                    "type": "setVariable",
+                    "value": 180,
+                    "variableName": "timer",
+                    "vars": []
+                  }
+                ],
+                "conditions": [
+                  { "operator": ">=", "operandType": "number" },
+                  {
+                    "function": "calculate",
+                    "items": [
+                      "+",
+                      {
+                        "function": "getVariable",
+                        "variableName": "numberOfBlueUnits"
+                      },
+                      {
+                        "function": "getVariable",
+                        "variableName": "numberOfRedUnits"
+                      }
+                    ],
+                    "vars": []
+                  },
+                  {
+                    "function": "getVariable",
+                    "variableName": "minPlayerRequired",
+                    "vars": []
+                  }
+                ],
+                "type": "condition",
+                "vars": []
+              }
+            ],
+            "else": [
+              {
+                "else": [],
+                "then": [
+                  {
+                    "value": {
+                      "textB": {
+                        "textB": {
+                          "textB": {
+                            "variableName": "blueScore",
+                            "function": "getVariable",
+                            "vars": []
+                          },
+                          "textA": "Blue: ",
+                          "function": "concat",
+                          "vars": []
+                        },
+                        "textA": {
+                          "textB": {
+                            "textB": " - ",
+                            "textA": {
+                              "variableName": "gameTimeLeft",
+                              "function": "getVariable",
+                              "vars": []
+                            },
+                            "function": "concat",
+                            "vars": []
+                          },
+                          "textA": " - Time Left: ",
+                          "function": "concat",
+                          "vars": []
+                        },
+                        "function": "concat",
+                        "vars": []
+                      },
+                      "textA": {
+                        "textB": {
+                          "variableName": "redScore",
+                          "function": "getVariable",
+                          "vars": []
+                        },
+                        "textA": "Red: ",
+                        "function": "concat",
+                        "vars": []
+                      },
+                      "function": "concat",
+                      "vars": []
+                    },
+                    "target": "top",
+                    "type": "updateUiTextForEveryone",
+                    "vars": []
+                  },
+                  {
+                    "type": "condition",
+                    "conditions": [
+                      { "operator": "<=", "operandType": "number" },
+                      {
+                        "function": "getVariable",
+                        "variableName": "gameTimeLeft",
+                        "vars": []
+                      },
+                      0
+                    ],
+                    "then": [
+                      {
+                        "type": "setVariable",
+                        "value": "gameOver",
+                        "variableName": "state",
+                        "comment": "",
+                        "vars": []
+                      },
+                      {
+                        "type": "setVariable",
+                        "value": 25,
+                        "variableName": "timer",
+                        "vars": []
+                      },
+                      {
+                        "value": {
+                          "function": "concat",
+                          "textA": "Game Over. Restarting in ",
+                          "textB": {
+                            "function": "getVariable",
+                            "variableName": "timer",
+                            "vars": []
+                          },
+                          "vars": []
+                        },
+                        "target": "center-lg",
+                        "type": "updateUiTextForEveryone",
+                        "vars": []
+                      },
+                      {
+                        "type": "showUiTextForEveryone",
+                        "target": "center-lg",
+                        "vars": []
+                      }
+                    ],
+                    "else": [],
+                    "vars": []
+                  },
+                  {
+                    "type": "setVariable",
+                    "value": {
+                      "function": "calculate",
+                      "items": [
+                        { "operator": "-" },
+                        {
+                          "function": "getVariable",
+                          "variableName": "gameTimeLeft"
+                        },
+                        1
+                      ],
+                      "vars": []
+                    },
+                    "variableName": "gameTimeLeft",
+                    "comment": "",
+                    "vars": []
+                  }
+                ],
+                "conditions": [
+                  { "operator": "==", "operandType": "string" },
+                  {
+                    "variableName": "state",
+                    "function": "getVariable",
+                    "vars": []
+                  },
+                  "gameStarted"
+                ],
+                "type": "condition",
+                "vars": []
+              },
+              {
+                "comment": "",
+                "variableName": "timer",
+                "value": {
+                  "items": [
+                    { "operator": "-" },
+                    { "variableName": "timer", "function": "getVariable" },
+                    1
+                  ],
+                  "function": "calculate",
+                  "vars": []
+                },
+                "type": "setVariable",
+                "vars": []
+              },
+              {
+                "type": "condition",
+                "conditions": [
+                  { "operandType": "string", "operator": "==" },
+                  {
+                    "function": "getVariable",
+                    "variableName": "state",
+                    "vars": []
+                  },
+                  "gameOver"
+                ],
+                "then": [
+                  {
+                    "type": "updateUiTextForEveryone",
+                    "target": "center-lg",
+                    "value": "Game over",
+                    "vars": []
+                  },
+                  {
+                    "type": "updateUiTextForEveryone",
+                    "target": "top",
+                    "value": {
+                      "function": "concat",
+                      "textA": {
+                        "function": "concat",
+                        "textA": "Red: ",
+                        "textB": {
+                          "function": "getVariable",
+                          "variableName": "redScore",
+                          "vars": []
+                        },
+                        "vars": []
+                      },
+                      "textB": {
+                        "function": "concat",
+                        "textA": {
+                          "function": "concat",
+                          "textA": " - Restarting in: ",
+                          "textB": {
+                            "function": "concat",
+                            "textA": {
+                              "variableName": "timer",
+                              "function": "getVariable",
+                              "vars": []
+                            },
+                            "textB": " - ",
+                            "vars": []
+                          },
+                          "vars": []
+                        },
+                        "textB": {
+                          "function": "concat",
+                          "textA": "Blue: ",
+                          "textB": {
+                            "function": "getVariable",
+                            "variableName": "blueScore",
+                            "vars": []
+                          },
+                          "vars": []
+                        },
+                        "vars": []
+                      },
+                      "vars": []
+                    },
+                    "vars": []
+                  },
+                  {
+                    "type": "condition",
+                    "conditions": [
+                      { "operator": "<=", "operandType": "number" },
+                      {
+                        "function": "getVariable",
+                        "variableName": "timer",
+                        "vars": []
+                      },
+                      0
+                    ],
+                    "then": [
+                      {
+                        "type": "setVariable",
+                        "value": 30,
+                        "variableName": "timer",
+                        "comment": "",
+                        "vars": []
+                      },
+                      {
+                        "type": "setVariable",
+                        "value": 180,
+                        "variableName": "gameTimeLeft",
+                        "comment": "",
+                        "vars": []
+                      },
+                      {
+                        "scriptName": "resetGame",
+                        "type": "runScript",
+                        "vars": []
+                      }
+                    ],
+                    "else": [],
+                    "vars": []
+                  }
+                ],
+                "else": [],
+                "vars": []
+              },
+              {
+                "type": "condition",
+                "conditions": [
+                  { "operandType": "string", "operator": "==" },
+                  {
+                    "function": "getVariable",
+                    "variableName": "state",
+                    "vars": []
+                  },
+                  "goalCeremony"
+                ],
+                "then": [
+                  {
+                    "type": "condition",
+                    "conditions": [
+                      { "operator": "<=", "operandType": "number" },
+                      {
+                        "function": "getVariable",
+                        "variableName": "timer",
+                        "vars": []
+                      },
+                      0
+                    ],
+                    "then": [
+                      {
+                        "type": "runScript",
+                        "scriptName": "resetRound",
+                        "vars": []
+                      },
+                      {
+                        "target": "center-lg",
+                        "type": "hideUiTextForEveryone",
+                        "vars": []
+                      }
+                    ],
+                    "else": [],
+                    "vars": []
+                  }
+                ],
+                "else": [],
+                "vars": []
+              }
+            ],
+            "vars": []
+          },
+          {
+            "type": "setVariable",
+            "value": 0,
+            "variableName": "energyBallCount",
+            "vars": []
+          },
+          {
+            "actions": [
+              {
+                "type": "condition",
+                "conditions": [
+                  { "operandType": "itemType", "operator": "==" },
+                  {
+                    "function": "getItemTypeOfItem",
+                    "entity": {
+                      "function": "selectedItem",
+                      "vars": [
+                        { "id": "selectedItem", "source": "forAllItems" },
+                        { "id": "getSelectedItem", "source": "forAllItems" }
+                      ]
+                    },
+                    "vars": [
+                      { "id": "selectedItem", "source": "forAllItems" },
+                      { "id": "getSelectedItem", "source": "forAllItems" }
+                    ]
+                  },
+                  "energy"
+                ],
+                "then": [
+                  {
+                    "type": "setVariable",
+                    "value": {
+                      "function": "calculate",
+                      "items": [
+                        "+",
+                        {
+                          "function": "getVariable",
+                          "variableName": "energyBallCount"
+                        },
+                        1
+                      ],
+                      "vars": [
+                        { "id": "selectedItem", "source": "forAllItems" },
+                        { "id": "getSelectedItem", "source": "forAllItems" }
+                      ]
+                    },
+                    "variableName": "energyBallCount",
+                    "vars": [
+                      { "id": "selectedItem", "source": "forAllItems" },
+                      { "id": "getSelectedItem", "source": "forAllItems" }
+                    ]
+                  }
+                ],
+                "else": [],
+                "vars": [
+                  { "id": "selectedItem", "source": "forAllItems" },
+                  { "id": "getSelectedItem", "source": "forAllItems" }
+                ]
+              }
+            ],
+            "itemGroup": {
+              "function": "allItemsDroppedOnGround",
+              "vars": [
+                { "id": "selectedItem", "source": "forAllItems" },
+                { "id": "getSelectedItem", "source": "forAllItems" }
+              ]
+            },
+            "type": "forAllItems",
+            "vars": [
+              { "id": "selectedItem", "source": "forAllItems" },
+              { "id": "getSelectedItem", "source": "forAllItems" }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "position": {
+                  "region": { "function": "getEntireMapRegion" },
+                  "function": "getRandomPlayablePositionInRegion",
+                  "vars": []
+                },
+                "itemType": "energy",
+                "type": "spawnItem",
+                "vars": []
+              },
+              {
+                "type": "setVariable",
+                "value": {
+                  "function": "calculate",
+                  "items": [
+                    "+",
+                    {
+                      "function": "getVariable",
+                      "variableName": "energyBallCount"
+                    },
+                    1
+                  ],
+                  "vars": []
+                },
+                "variableName": "energyBallCount",
+                "vars": []
+              }
+            ],
+            "conditions": [
+              { "operandType": "number", "operator": "<" },
+              { "variableName": "energyBallCount", "function": "getVariable" },
+              {
+                "variableName": "maxEnergyBallsAllowed",
+                "function": "getVariable"
+              }
+            ],
+            "type": "while",
+            "vars": []
+          }
+        ],
+        "name": "every second - timer expiries",
+        "parent": "eventsKeClm",
+        "key": "everySecondTimerExpiries",
+        "order": 7
+      },
+      "resetGame": {
+        "triggers": [],
+        "conditions": [
+          { "operator": "==", "operandType": "boolean" },
+          true,
+          true
+        ],
+        "actions": [
+          { "type": "runScript", "scriptName": "resetRound", "vars": [] },
+          {
+            "comment": "",
+            "variableName": "blueScore",
+            "value": 0,
+            "type": "setVariable",
+            "vars": []
+          },
+          {
+            "comment": "",
+            "variableName": "redScore",
+            "value": 0,
+            "type": "setVariable",
+            "vars": []
+          },
+          {
+            "type": "setVariable",
+            "value": "waitingForPlayers",
+            "variableName": "state",
+            "comment": "",
+            "vars": []
+          }
+        ],
+        "name": "reset game",
+        "parent": "eventsKeClm",
+        "key": "resetGame",
+        "order": 4
+      },
+      "helpersoQCti": {
+        "key": "helpersoQCti",
+        "folderName": "Helpers",
+        "parent": null,
+        "order": 3
+      },
+      "playerJoinsGame": {
+        "order": 2,
+        "key": "playerJoinsGame",
+        "parent": "eventsKeClm",
+        "name": "player joins game",
+        "actions": [
+          {
+            "entity": { "function": "getTriggeringPlayer" },
+            "playerType": "standard",
+            "type": "assignPlayerType"
+          },
+          {
+            "type": "condition",
+            "conditions": [
+              { "operator": "<", "operandType": "number" },
+              { "function": "getVariable", "variableName": "numberOfRedUnits" },
+              { "function": "getVariable", "variableName": "numberOfBlueUnits" }
+            ],
+            "then": [
+              {
+                "type": "createUnitAtPosition",
+                "unitType": "redPlayer",
+                "position": {
+                  "function": "xyCoordinate",
+                  "x": {
+                    "function": "calculate",
+                    "items": [
+                      { "operator": "+" },
+                      {
+                        "function": "getPositionX",
+                        "position": {
+                          "function": "getEntityPosition",
+                          "entity": {
+                            "function": "getVariable",
+                            "variableName": "ball"
+                          }
+                        }
+                      },
+                      300
+                    ]
+                  },
+                  "y": {
+                    "function": "getPositionY",
+                    "position": {
+                      "function": "getEntityPosition",
+                      "entity": {
+                        "function": "getVariable",
+                        "variableName": "ball"
+                      }
+                    }
+                  }
+                },
+                "entity": { "function": "getTriggeringPlayer" },
+                "angle": 0
+              }
+            ],
+            "else": [
+              {
+                "type": "createUnitAtPosition",
+                "unitType": "bluePlayer",
+                "position": {
+                  "function": "xyCoordinate",
+                  "x": {
+                    "function": "calculate",
+                    "items": [
+                      { "operator": "-" },
+                      {
+                        "function": "getPositionX",
+                        "position": {
+                          "function": "getEntityPosition",
+                          "entity": {
+                            "function": "getVariable",
+                            "variableName": "ball"
+                          }
+                        }
+                      },
+                      300
+                    ]
+                  },
+                  "y": {
+                    "function": "getPositionY",
+                    "position": {
+                      "function": "getEntityPosition",
+                      "entity": {
+                        "function": "getVariable",
+                        "variableName": "ball"
+                      }
+                    }
+                  }
+                },
+                "entity": { "function": "getTriggeringPlayer" },
+                "angle": 0
+              }
+            ]
+          },
+          {
+            "unit": { "function": "getLastCreatedUnit" },
+            "player": { "function": "getTriggeringPlayer" },
+            "type": "playerCameraTrackUnit"
+          },
+          { "type": "runScript", "scriptName": "updatePlayerCount" },
+          {
+            "entity": { "function": "getTriggeringPlayer" },
+            "target": "top",
+            "type": "showUiTextForPlayer"
+          }
+        ],
+        "conditions": [
+          { "operandType": "boolean", "operator": "==" },
+          true,
+          true
+        ],
+        "triggers": [{ "type": "playerJoinsGame" }]
+      },
+      "playerLeavesGame": {
+        "triggers": [{ "type": "playerLeavesGame" }],
+        "conditions": [
+          { "operator": "==", "operandType": "boolean" },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "forAllUnits",
+            "unitGroup": {
+              "function": "allUnits",
+              "vars": [
+                { "id": "getTriggeringPlayer", "source": "trigger" },
+                { "id": "selectedUnit", "source": "forAllUnits" },
+                { "id": "getSelectedUnit", "source": "forAllUnits" }
+              ]
+            },
+            "actions": [
+              {
+                "else": [],
+                "then": [
+                  {
+                    "entity": {
+                      "function": "selectedUnit",
+                      "vars": [
+                        { "id": "getTriggeringPlayer", "source": "trigger" },
+                        { "id": "selectedUnit", "source": "forAllUnits" },
+                        { "id": "getSelectedUnit", "source": "forAllUnits" }
+                      ]
+                    },
+                    "type": "destroyEntity",
+                    "vars": [
+                      { "id": "getTriggeringPlayer", "source": "trigger" },
+                      { "id": "selectedUnit", "source": "forAllUnits" },
+                      { "id": "getSelectedUnit", "source": "forAllUnits" }
+                    ]
+                  }
+                ],
+                "conditions": [
+                  { "operator": "==", "operandType": "player" },
+                  {
+                    "entity": {
+                      "function": "selectedUnit",
+                      "vars": [
+                        { "id": "getTriggeringPlayer", "source": "trigger" },
+                        { "id": "selectedUnit", "source": "forAllUnits" },
+                        { "id": "getSelectedUnit", "source": "forAllUnits" }
+                      ]
+                    },
+                    "function": "getOwner",
+                    "vars": [
+                      { "id": "getTriggeringPlayer", "source": "trigger" },
+                      { "id": "selectedUnit", "source": "forAllUnits" },
+                      { "id": "getSelectedUnit", "source": "forAllUnits" }
+                    ]
+                  },
+                  {
+                    "function": "getTriggeringPlayer",
+                    "vars": [
+                      { "id": "getTriggeringPlayer", "source": "trigger" },
+                      { "id": "selectedUnit", "source": "forAllUnits" },
+                      { "id": "getSelectedUnit", "source": "forAllUnits" }
+                    ]
+                  }
+                ],
+                "type": "condition",
+                "vars": [
+                  { "id": "getTriggeringPlayer", "source": "trigger" },
+                  { "id": "selectedUnit", "source": "forAllUnits" },
+                  { "id": "getSelectedUnit", "source": "forAllUnits" }
+                ]
+              }
+            ],
+            "vars": [
+              { "id": "getTriggeringPlayer", "source": "trigger" },
+              { "id": "selectedUnit", "source": "forAllUnits" },
+              { "id": "getSelectedUnit", "source": "forAllUnits" }
+            ]
+          },
+          {
+            "type": "runScript",
+            "scriptName": "updatePlayerCount",
+            "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }]
+          }
+        ],
+        "name": "player leaves game",
+        "parent": "eventsKeClm",
+        "key": "playerLeavesGame",
+        "order": 3
+      },
+      "unitAbilitiesjrel2": {
+        "key": "unitAbilitiesjrel2",
+        "folderName": "Unit Abilities",
+        "parent": null,
+        "order": 1
+      }
+    },
+    "unitTypes": {
+      "bluePlayer": {
+        "variables": {},
+        "bodies": {
+          "bluePlayer": {
+            "name": "Blue Player",
+            "fixtures": [
+              {
+                "shape": { "type": "rectangle" },
+                "restitution": 0.5,
+                "friction": 0.01,
+                "density": 1,
+                "isSensor": false
+              }
+            ],
+            "isFlying": false,
+            "fixedRotation": false,
+            "bullet": false,
+            "allowSleep": true,
+            "angularDamping": 1,
+            "linearDamping": 1,
+            "rotationSpeed": 10,
+            "type": "dynamic",
+            "height": 20,
+            "width": 20,
+            "z-index": { "layer": 4, "debris": 3 },
+            "collidesWith": {
+              "units": true,
+              "items": false,
+              "projectiles": false,
+              "walls": false,
+              "debris": false
+            },
+            "affectedByGravity": false,
+            "spriteScale": 1
+          }
+        },
+        "body": {
+          "name": "Blue Player",
+          "fixtures": [
+            {
+              "shape": { "type": "rectangle" },
+              "restitution": 0.5,
+              "friction": 0.01,
+              "density": 1
+            }
+          ],
+          "isFlying": false,
+          "fixedRotation": false,
+          "bullet": false,
+          "allowSleep": true,
+          "angularDamping": 1,
+          "linearDamping": 3,
+          "rotationSpeed": 10,
+          "type": "dynamic",
+          "height": 16,
+          "width": 16,
+          "z-index": { "layer": 4, "debris": 3 },
+          "collidesWith": {
+            "units": true,
+            "items": false,
+            "projectiles": false,
+            "walls": false,
+            "debris": false
+          }
+        },
+        "spawnPosition": { "y": 600, "x": 1050 },
+        "attributes": {
+          "stamina": {
+            "color": "#00dbff",
+            "isVisible": ["centerBar"],
+            "regenerateSpeed": 1.5,
+            "value": "100",
+            "max": "100",
+            "min": 0,
+            "name": "Stamina",
+            "keys": "stamina",
+            "displayValue": true,
+            "decimalPlaces": 0
+          },
+          "speed": {
+            "name": "speed",
+            "min": 0,
+            "max": 100,
+            "dataType": "",
+            "value": 1,
+            "regenerateSpeed": 0,
+            "isVisible": [],
+            "displayValue": false,
+            "showWhen": "",
+            "showAsHUD": true,
+            "color": "white",
+            "decimalPlaces": 0
+          }
+        },
+        "canBuyItem": false,
+        "abilities": {
+          "w": { "keyUp": "stopMovingUp", "keyDown": "startMovingUp" },
+          "a": { "keyUp": "stopMovingLeft", "keyDown": "startMovingLeft" },
+          "s": { "keyUp": "stopMovingDown", "keyDown": "startMovingDown" },
+          "d": { "keyUp": "stopMovingRight", "keyDown": "startMovingRight" },
+          "button1": { "keyUp": "", "keyDown": "dash" },
+          "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
+          "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } }
+        },
+        "baseSpeed": "180",
+        "price": {},
+        "skin": "https://modd.s3.amazonaws.com/sprites/1503522290269_blue.png",
+        "handle": "",
+        "name": "Blue Player",
+        "inventorySize": 4,
+        "isPurchasable": false,
+        "canBePurchasedBy": [],
+        "particles": {},
+        "animations": {
+          "default": {
+            "name": "default",
+            "frames": [1],
+            "loopCount": 0,
+            "framesPerSecond": 0
+          }
+        },
+        "cellSheet": {
+          "url": "https://cache.modd.io/asset/spriteImage/1523497005950_blueship.png",
+          "rowCount": 1,
+          "columnCount": 1
+        },
+        "states": {
+          "default": {
+            "body": "bluePlayer",
+            "name": "default",
+            "sound": {},
+            "particles": {},
+            "animation": "default"
+          }
+        },
+        "inventoryImage": "",
+        "backpackSize": 13,
+        "defaultItems": [],
+        "controls": {
+          "absoluteRotation": false,
+          "movementControlScheme": "wasd",
+          "movementMethod": "force",
+          "mouseBehaviour": {
+            "rotateToFaceMouseCursor": true,
+            "flipSpriteHorizontallyWRTMouse": false
+          },
+          "abilities": {
+            "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
+            "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } },
+            "button1": {
+              "keyUp": { "scriptName": "", "cost": {} },
+              "keyDown": {
+                "scriptName": "dash",
+                "cost": { "unitAttributes": { "stamina": "40" } }
+              },
+              "mobilePosition": { "x": 330, "y": 121 }
+            }
+          },
+          "permittedInventorySlots": []
+        }
+      },
+      "redPlayer": {
+        "variables": {},
+        "bodies": {
+          "redPlayer": {
+            "name": "Red Player",
+            "collidesWith": {
+              "debris": false,
+              "walls": false,
+              "projectiles": false,
+              "items": false,
+              "units": true
+            },
+            "z-index": { "debris": 3, "layer": 4 },
+            "width": 20,
+            "height": 20,
+            "type": "dynamic",
+            "rotationSpeed": 10,
+            "linearDamping": 1,
+            "angularDamping": 1,
+            "allowSleep": true,
+            "bullet": false,
+            "fixedRotation": false,
+            "isFlying": false,
+            "fixtures": [
+              {
+                "density": 1,
+                "friction": 0.01,
+                "restitution": 0.5,
+                "shape": { "type": "rectangle" },
+                "isSensor": false
+              }
+            ],
+            "affectedByGravity": false,
+            "spriteScale": 1
+          }
+        },
+        "states": {
+          "default": {
+            "body": "redPlayer",
+            "animation": "default",
+            "particles": {},
+            "sound": {},
+            "name": "default"
+          }
+        },
+        "cellSheet": {
+          "columnCount": 1,
+          "rowCount": 1,
+          "url": "https://cache.modd.io/asset/spriteImage/1523497026978_redship.png"
+        },
+        "animations": {
+          "default": {
+            "framesPerSecond": 0,
+            "loopCount": 0,
+            "frames": [1],
+            "name": "default"
+          }
+        },
+        "inventorySize": 4,
+        "name": "Red Player",
+        "handle": "",
+        "skin": "https://modd.s3.amazonaws.com/sprites/1503522267864_red.png",
+        "price": 0,
+        "baseSpeed": "180",
+        "abilities": {
+          "movementWheel": { "mobilePosition": { "y": 204, "x": 35 } },
+          "lookWheel": { "mobilePosition": { "y": 204, "x": 407 } },
+          "button1": { "keyDown": "dash", "keyUp": "" },
+          "d": { "keyDown": "startMovingRight", "keyUp": "stopMovingRight" },
+          "s": { "keyDown": "startMovingDown", "keyUp": "stopMovingDown" },
+          "a": { "keyDown": "startMovingLeft", "keyUp": "stopMovingLeft" },
+          "w": { "keyDown": "startMovingUp", "keyUp": "stopMovingUp" }
+        },
+        "canBuyItem": false,
+        "attributes": {
+          "stamina": {
+            "decimalPlaces": 0,
+            "displayValue": true,
+            "name": "Stamina",
+            "min": 0,
+            "max": "100",
+            "value": "100",
+            "regenerateSpeed": 1.5,
+            "isVisible": ["centerBar"],
+            "color": "#00dbff"
+          },
+          "speed": {
+            "name": "speed",
+            "min": 0,
+            "max": 100,
+            "dataType": "",
+            "value": 1,
+            "regenerateSpeed": 0,
+            "isVisible": [],
+            "displayValue": false,
+            "showWhen": "",
+            "showAsHUD": true,
+            "color": "white",
+            "decimalPlaces": 0
+          }
+        },
+        "spawnPosition": { "x": 1050, "y": 600 },
+        "body": {
+          "name": "Red Player",
+          "collidesWith": {
+            "debris": false,
+            "walls": false,
+            "projectiles": false,
+            "items": false,
+            "units": true
+          },
+          "z-index": { "debris": 3, "layer": 4 },
+          "width": 16,
+          "height": 16,
+          "type": "dynamic",
+          "rotationSpeed": 10,
+          "linearDamping": 3,
+          "angularDamping": 1,
+          "allowSleep": true,
+          "bullet": false,
+          "fixedRotation": false,
+          "isFlying": false,
+          "fixtures": [
+            {
+              "density": 1,
+              "friction": 0.01,
+              "restitution": 0.5,
+              "shape": { "type": "rectangle" }
+            }
+          ]
+        },
+        "inventoryImage": "",
+        "backpackSize": 13,
+        "defaultItems": [],
+        "controls": {
+          "absoluteRotation": false,
+          "movementControlScheme": "wasd",
+          "movementMethod": "force",
+          "mouseBehaviour": {
+            "rotateToFaceMouseCursor": true,
+            "flipSpriteHorizontallyWRTMouse": false
+          },
+          "abilities": {
+            "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
+            "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } },
+            "button1": {
+              "keyUp": { "scriptName": "", "cost": {} },
+              "keyDown": {
+                "scriptName": "dash",
+                "cost": { "unitAttributes": { "stamina": "40" } }
+              },
+              "mobilePosition": { "x": 329, "y": 110 }
+            }
+          },
+          "permittedInventorySlots": []
+        }
+      },
+      "ball (unitType)": {
+        "inventoryImage": "",
+        "name": "ball (unit type)",
+        "handle": "",
+        "skin": "https://modd.s3.amazonaws.com/sprites/1503522043195_ball.png",
+        "price": {},
+        "baseSpeed": 52,
+        "abilities": {
+          "mouse1Down": "useItem",
+          "mouse1Up": "stopItem",
+          "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
+          "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } }
+        },
+        "canBeMountedBy": [],
+        "mountSlots": [],
+        "isPurchasable": true,
+        "canBePurchasedBy": [],
+        "attributes": {},
+        "particles": {},
+        "inventorySize": 4,
+        "spawnPosition": { "x": 1050, "y": 600 },
+        "body": {
+          "fixtures": [
+            {
+              "density": ".2",
+              "friction": 0.01,
+              "restitution": 1,
+              "shape": { "type": "circle" }
+            }
+          ],
+          "isFlying": false,
+          "fixedRotation": false,
+          "bullet": false,
+          "allowSleep": true,
+          "angularDamping": ".5",
+          "linearDamping": 1,
+          "rotationSpeed": 3,
+          "type": "dynamic",
+          "height": 16,
+          "width": 16,
+          "z-index": { "layer": 3, "debris": 3 },
+          "collidesWith": {
+            "units": true,
+            "items": false,
+            "projectiles": false,
+            "walls": true,
+            "debris": false
+          },
+          "name": "ball (unit type)"
+        },
+        "animations": {
+          "default": {
+            "name": "default",
+            "frames": [1],
+            "loopCount": 0,
+            "framesPerSecond": 0
+          }
+        },
+        "cellSheet": {
+          "url": "https://cache.modd.io/sprites/1503522043195_ball.png",
+          "rowCount": 1,
+          "columnCount": 1
+        },
+        "states": {
+          "default": {
+            "name": "default",
+            "sound": {},
+            "particles": {},
+            "animation": "default",
+            "body": "ball (unitType)"
+          }
+        },
+        "bodies": {
+          "ball (unitType)": {
+            "spriteScale": 1,
+            "fixtures": [
+              {
+                "isSensor": false,
+                "density": ".5",
+                "friction": 0.01,
+                "restitution": 1,
+                "shape": { "type": "circle" }
+              }
+            ],
+            "isFlying": false,
+            "fixedRotation": false,
+            "bullet": false,
+            "allowSleep": true,
+            "angularDamping": ".5",
+            "linearDamping": ".5",
+            "rotationSpeed": 3,
+            "type": "dynamic",
+            "height": 40,
+            "width": 40,
+            "z-index": { "layer": 3, "debris": 3 },
+            "collidesWith": {
+              "units": true,
+              "items": false,
+              "projectiles": false,
+              "walls": true,
+              "debris": false
+            },
+            "name": "ball (unit type)",
+            "affectedByGravity": false
+          }
+        },
+        "variables": {},
+        "backpackSize": 13,
+        "defaultItems": []
+      }
+    },
+    "abilities": {
+      "startMovingUp": {
+        "name": "start moving up",
+        "scriptName": "dgQQqTeSpo",
+        "cost": { "cast": {} }
+      },
+      "stopMovingUp": {
+        "name": "stop moving up",
+        "scriptName": "C329r0iSfT",
+        "cost": { "cast": {} }
+      },
+      "startMovingLeft": {
+        "name": "start moving left",
+        "scriptName": "IyDn0FcmUs",
+        "cost": { "cast": {} }
+      },
+      "stopMovingLeft": {
+        "name": "stop moving left",
+        "scriptName": "RkUcELhFEq",
+        "cost": { "cast": {} }
+      },
+      "startMovingRight": {
+        "name": "start moving right",
+        "scriptName": "X100400Tmf",
+        "cost": { "cast": {} }
+      },
+      "stopMovingRight": {
+        "name": "stop moving right",
+        "scriptName": "9BWBAnXrsN",
+        "cost": { "cast": {} }
+      },
+      "startMovingDown": {
+        "name": "start moving down",
+        "scriptName": "CD9BbZwsfy",
+        "cost": { "cast": {} }
+      },
+      "stopMovingDown": {
+        "name": "stop moving down",
+        "scriptName": "JlvqdMynNj",
+        "cost": { "cast": {} }
+      },
+      "dash": {
+        "name": "dash",
+        "scriptName": "dash",
+        "cost": { "unitAttributes": { "stamina": 60 }, "cast": {} }
+      }
+    },
+    "variables": {
+      "numberOfBlueUnits": { "default": 0, "dataType": "number" },
+      "blueScore": { "dataType": "number", "default": 0 },
+      "redScore": { "dataType": "number", "default": 0 },
+      "numberOfRedUnits": { "default": 0, "dataType": "number" },
+      "unitLastTouchedBall": { "dataType": "unit" },
+      "scoreText": { "dataType": "string" },
+      "ball ai": { "dataType": "player", "default": "computer1" },
+      "state": { "dataType": "string", "default": "waitingForPlayers" },
+      "timer": { "dataType": "number", "default": 0 },
+      "gameTimeLeft": { "dataType": "number", "default": 180 },
+      "minPlayerRequired": { "dataType": "number", "default": 2 },
+      "blueGoalPost": {
+        "dataType": "region",
+        "default": { "x": 66, "y": 224, "width": 22, "height": 79 },
+        "deleteKey": "Region6461"
+      },
+      "redGoalPost": {
+        "dataType": "region",
+        "default": { "x": 937, "y": 224, "width": 21, "height": 80 },
+        "deleteKey": "Region3562"
+      },
+      "maxEnergyBallsAllowed": { "dataType": "number", "default": 5 },
+      "energyBallCount": { "dataType": "number", "default": 0 },
+      "ball": { "dataType": "unit" }
+    },
+    "images": [
+      {
+        "url": "https://modd.s3.amazonaws.com/sprites/1503522267864_red.png",
+        "key": "unitTypes"
+      },
+      {
+        "url": "https://modd.s3.amazonaws.com/sprites/1503522290269_blue.png",
+        "key": "unitTypes"
+      },
+      {
+        "url": "https://modd.s3.amazonaws.com/sprites/1503527420392_glock.png",
+        "key": "itemTypes"
+      }
+    ],
+    "settings": null,
+    "playerTypes": {
+      "standard": {
+        "name": "standard",
+        "attributes": {
+          "points": {
+            "name": "Points",
+            "min": 0,
+            "max": 1000000,
+            "value": 0,
+            "regenerateSpeed": 0,
+            "isVisible": true,
+            "showAsHUD": true,
+            "color": "#ff9600"
+          }
+        },
+        "color": "white",
+        "relationships": {}
+      },
+      "neutral": {
+        "showNameLabel": false,
+        "relationships": {},
+        "color": "white",
+        "attributes": {},
+        "name": "neutral"
+      }
+    },
+    "animationTypes": {
+      "default": {
+        "name": "default",
+        "frames": [1],
+        "loopCount": 0,
+        "framesPerSecond": 0
+      }
+    },
+    "states": {
+      "default": {
+        "name": "default",
+        "sound": {},
+        "particles": {},
+        "animation": "default"
+      },
+      "selected": {
+        "name": "selected",
+        "animation": "default",
+        "body": "selected",
+        "particles": {},
+        "sound": {}
+      },
+      "unselected": {
+        "name": "unselected",
+        "animation": "default",
+        "body": "unselected",
+        "particles": {},
+        "sound": {}
+      },
+      "dropped": {
+        "name": "dropped",
+        "animation": "default",
+        "body": "dropped",
+        "particles": {},
+        "sound": {}
+      }
+    },
+    "bodyTypes": {
+      "bluePlayer": {
+        "collidesWith": {
+          "debris": false,
+          "walls": false,
+          "projectiles": false,
+          "items": false,
+          "units": true
+        },
+        "z-index": { "debris": 3, "layer": 4 },
+        "width": 16,
+        "height": 16,
+        "type": "dynamic",
+        "rotationSpeed": 10,
+        "linearDamping": 3,
+        "angularDamping": 1,
+        "allowSleep": true,
+        "bullet": false,
+        "fixedRotation": false,
+        "isFlying": false,
+        "fixtures": [
+          {
+            "density": 1,
+            "friction": 0.01,
+            "restitution": 0.5,
+            "shape": { "type": "rectangle" }
+          }
+        ],
+        "name": "Blue Player"
+      },
+      "redPlayer": {
+        "fixtures": [
+          {
+            "shape": { "type": "rectangle" },
+            "restitution": 0.5,
+            "friction": 0.01,
+            "density": 1
+          }
+        ],
+        "isFlying": false,
+        "fixedRotation": false,
+        "bullet": false,
+        "allowSleep": true,
+        "angularDamping": 1,
+        "linearDamping": 3,
+        "rotationSpeed": 10,
+        "type": "dynamic",
+        "height": 16,
+        "width": 16,
+        "z-index": { "layer": 4, "debris": 3 },
+        "collidesWith": {
+          "units": true,
+          "items": false,
+          "projectiles": false,
+          "walls": false,
+          "debris": false
+        },
+        "name": "Red Player"
+      },
+      "ball (unitType)": {
+        "fixtures": [
+          {
+            "density": ".2",
+            "friction": 0.01,
+            "restitution": 1,
+            "shape": { "type": "circle" }
+          }
+        ],
+        "isFlying": false,
+        "fixedRotation": false,
+        "bullet": false,
+        "allowSleep": true,
+        "angularDamping": ".5",
+        "linearDamping": 1,
+        "rotationSpeed": 3,
+        "type": "dynamic",
+        "height": 16,
+        "width": 16,
+        "z-index": { "layer": 3, "debris": 3 },
+        "collidesWith": {
+          "units": true,
+          "items": false,
+          "projectiles": false,
+          "walls": true,
+          "debris": false
+        },
+        "name": "ball (unit type)"
+      },
+      "energy": {
+        "itemAnchor": { "y": 0, "x": 0 },
+        "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+        "jointType": "weldJoint",
+        "rotationSpeed": 3,
+        "carriedBy": ["bluePlayer", "redPlayer"],
+        "collidesWith": {
+          "debris": false,
+          "walls": false,
+          "projectiles": false,
+          "items": false,
+          "units": false
+        },
+        "friction": 0,
+        "density": 1,
+        "restitution": 1,
+        "fixedRotation": false,
+        "angularDamping": 1,
+        "linearDamping": 1,
+        "z-index": { "depth": 4, "layer": 3 },
+        "height": 10,
+        "width": 10,
+        "typeWhenDrop": "static",
+        "type": "dynamic",
+        "name": "energy"
+      },
+      "selected": {
+        "name": "selected",
+        "type": "dynamic",
+        "typeWhenDrop": "static",
+        "width": 10,
+        "height": 10,
+        "z-index": { "layer": 3, "depth": 3 },
+        "linearDamping": 1,
+        "angularDamping": 1,
+        "fixedRotation": false,
+        "restitution": 1,
+        "density": 1,
+        "friction": 0,
+        "collidesWith": {
+          "units": true,
+          "items": true,
+          "projectiles": true,
+          "walls": true,
+          "debris": false
+        },
+        "carriedBy": ["bluePlayer", "redPlayer"],
+        "rotationSpeed": 3,
+        "jointType": "weldJoint",
+        "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
+        "itemAnchor": { "x": 0, "y": 0 }
+      },
+      "unselected": {
+        "name": "unselected",
+        "type": "none",
+        "typeWhenDrop": "static",
+        "width": 10,
+        "height": 10,
+        "z-index": { "layer": 3, "depth": 4 },
+        "linearDamping": 1,
+        "angularDamping": 1,
+        "fixedRotation": false,
+        "restitution": 1,
+        "density": 1,
+        "friction": 0,
+        "collidesWith": {
+          "units": false,
+          "items": false,
+          "projectiles": false,
+          "walls": false,
+          "debris": false
+        },
+        "carriedBy": ["bluePlayer", "redPlayer"],
+        "rotationSpeed": 3,
+        "jointType": "weldJoint",
+        "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
+        "itemAnchor": { "x": 0, "y": 0 }
+      },
+      "dropped": {
+        "name": "dropped",
+        "type": "static",
+        "typeWhenDrop": "static",
+        "width": 10,
+        "height": 10,
+        "z-index": { "layer": 1, "depth": 1 },
+        "linearDamping": 1,
+        "angularDamping": 1,
+        "fixedRotation": false,
+        "restitution": 1,
+        "density": 1,
+        "friction": 0,
+        "collidesWith": {
+          "units": false,
+          "items": false,
+          "projectiles": false,
+          "walls": false,
+          "debris": false
+        },
+        "carriedBy": ["bluePlayer", "redPlayer"],
+        "rotationSpeed": 3,
+        "jointType": "weldJoint",
+        "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
+        "itemAnchor": { "x": 0, "y": 0 }
+      }
+    },
+    "entityTypeVariables": {},
+    "playerTypeVariables": {}
+  },
+  "version": 0.01,
+  "backupOn": 1689421111027
+}
