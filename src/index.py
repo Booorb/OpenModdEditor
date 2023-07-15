@@ -14,7 +14,7 @@ dpg.create_context()
 dpg.create_viewport()
 dpg.setup_dearpygui()
 
-with dpg.window(label="Modd.io Editor", tag="default_window"):
+with dpg.window(label="Menu", tag="default_window"):
     dpg.set_primary_window("default_window", True)
     if os.path.isfile("taro2/src/game.json"):
         dpg.add_text("Update Project:")
@@ -30,7 +30,7 @@ with dpg.window(label="Modd.io Editor", tag="default_window"):
         dpg.add_button(label="Open", tag="setup_open_button")
     
 
-dpg.create_viewport(title='Modd.io Editor', width=800, height=600)
+dpg.create_viewport(title='OpenGameBuilder', width=800, height=600)
 dpg.show_viewport()
 dpg.start_dearpygui()
 dpg.destroy_context()

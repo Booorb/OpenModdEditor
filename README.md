@@ -1,1 +1,1 @@
-# Cross platform modd.io game editor made with python
+# OpenGameBuilder is a cross platform modd.io game editor made with python
