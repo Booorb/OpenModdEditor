@@ -1,11 +1,18 @@
 import dearpygui.dearpygui as dpg
 import json
 
+def back_callback():
+    if dpg.does_item_exist("game_settings"):
+        dpg.show_item("default_window")
+        dpg.set_primary_window("default_window", True)
+
 def edit_callback():
     if dpg.does_item_exist("game_settings"):
         dpg.show_item("game_settings")
+        dpg.set_primary_window("game_settings", True)
     else:
         with dpg.window(label="Settings", tag="game_settings"):
+            dpg.set_primary_window("game_settings", True)
             with dpg.menu_bar():
                 with dpg.menu(label="Default"):
                     with open("taro2/src/game.json") as f:
@@ -69,6 +76,8 @@ def edit_callback():
                     print("Moderation")
                 with dpg.menu(label="Mod/Lobby"):
                     print("Mod/Lobby")
+
+            dpg.add_button(label="Back", tag="back_button", callback=back_callback)
 
 
 def save_callback(sender):
