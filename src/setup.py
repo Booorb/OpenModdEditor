@@ -30,10 +30,14 @@ def setup_project_callback():
                 dpg.add_text("Already added game.json!")
             else:
                 dpg.add_text("Download template game or upload own game.json file:")
+                dpg.add_button(label="Battle Royale", tag="battle_royale_button", callback=battle_royale_callback)
                 dpg.add_button(label="Blank Template", tag="blank_template_button", callback=blank_template_callback)
                 dpg.add_button(label="Cell Eater", tag="cell_eater_button", callback=cell_eater_callback)
                 dpg.add_button(label="Guided Tutorial", tag="guided_tutorial_button", callback=guided_tutorial_callback)
+                dpg.add_button(label="Hunt and Gather", tag="hunt_and_gather_button", callback=hunt_and_gather_callback)
                 dpg.add_button(label="Platformer", tag="platformer_button", callback=platformer_callback)
+                dpg.add_button(label="Racer", tag="racer_button", callback=racer_callback)
+                dpg.add_button(label="Tower Defense", tag="tower_defense_button", callback=tower_defense_callback)
                 dpg.add_button(label="Zombie Tag", tag="zombie_tag_button", callback=zombie_tag_callback)
 
 def taro2_callback():
@@ -49,6 +53,10 @@ def packages_callback():
     os.system("cd taro2 && npm install")
     dpg.set_value(value="Finished downloading npm packages...", item="packages_text")
 
+def battle_royale_callback():
+    shutil.copyfile("templates/BattleRoyale.json", "taro2/src/game.json")
+    game_callback()
+
 def blank_template_callback():
     shutil.copyfile("templates/BlankTemplate.json", "taro2/src/game.json")
     game_callback()
@@ -61,8 +69,20 @@ def guided_tutorial_callback():
     shutil.copyfile("templates/GuidedTutorial.json", "taro2/src/game.json")
     game_callback()
 
+def hunt_and_gather_callback():
+    shutil.copyfile("templates/HuntAndGather.json", "taro2/src/game.json")
+    game_callback()
+
 def platformer_callback():
     shutil.copyfile("templates/Platformer.json", "taro2/src/game.json")
+    game_callback()
+
+def racer_callback():
+    shutil.copyfile("templates/Racer.json", "taro2/src/game.json")
+    game_callback()
+
+def tower_defense_callback():
+    shutil.copyfile("templates/TowerDefense.json", "taro2/src/game.json")
     game_callback()
 
 def zombie_tag_callback():

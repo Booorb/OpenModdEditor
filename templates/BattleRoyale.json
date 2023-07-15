@@ -1,0 +1,4937 @@
+{
+  "_id": "",
+  "gameSlug": "",
+  "title": "Battle Royale",
+  "tier": "1",
+  "allowDuplicateIPS": false,
+  "access": "private",
+  "solanaWalletLoginEnabled": false,
+  "isDeleted": false,
+  "playCount": 1,
+  "totalPlayCount": 1,
+  "reasonForTakingDown": "",
+  "cover": "https://cache.modd.io/asset/spriteImage/1590183216459_cover_battle_royale.png",
+  "coverUpdated": false,
+  "link": null,
+  "discordInviteLink": null,
+  "twitterLink": null,
+  "facebookLink": null,
+  "youtubeLink": null,
+  "androidLink": null,
+  "iosLink": null,
+  "redirect": "off",
+  "hidden": true,
+  "patchNotes": null,
+  "clientSidePredictionEnabled": true,
+  "clientPhysicsEngine": "planck",
+  "enableMiniMap": false,
+  "dontResize": false,
+  "releases": [
+    {
+      "isStable": false,
+      "_id": "",
+      "version": 0.01,
+      "release": ""
+    }
+  ],
+  "defaultMaxPlayers": 32,
+  "lifeSpanHours": 5,
+  "sandboxMode": "advanced",
+  "physicsEngine": "planck",
+  "frameRate": 15,
+  "extrapolation": true,
+  "moreIoGames": false,
+  "allowGuestMode": false,
+  "revenueSharing": false,
+  "mobileReady": false,
+  "autoSave": true,
+  "canHostPrivateServers": false,
+  "privateServerIdleTimeout": 0.1,
+  "enableVideoChat": false,
+  "isGuestPlayerAllowed": true,
+  "enablePersistedData": false,
+  "allowVerifiedUserToChat": false,
+  "isFeatured": false,
+  "featuredOrderNo": -1,
+  "isLobbyEnabled": false,
+  "lobbyUnitKey": "",
+  "minLobbySize": 2,
+  "maxLobbySize": 4,
+  "heightBasedZIndex": false,
+  "preferredRegion": "",
+  "isMod": false,
+  "isModdable": false,
+  "allowLateJoining": false,
+  "parentGameId": "",
+  "dailyCoinTransferLimit": 0,
+  "isPublished": true,
+  "contextMenuEnabled": true,
+  "createdAt": "2023-07-15T09:45:44.447Z",
+  "updatedAt": "2023-07-15T09:45:58.263Z",
+  "invitedUsers": [],
+  "banUsers": [],
+  "banChat": [],
+  "banIps": [],
+  "highScores": [],
+  "lastPlayedAt": "2023-07-15T09:45:47.971Z",
+  "__v": 1,
+  "data": {
+    "playerTypeVariables": {},
+    "entityTypeVariables": {},
+    "shops": {},
+    "animationTypes": {
+      "dropped": {
+        "loopCount": 0,
+        "framesPerSecond": 0,
+        "frames": [1],
+        "name": "dropped"
+      },
+      "default": {
+        "framesPerSecond": 0,
+        "loopCount": 0,
+        "frames": [1],
+        "name": "default"
+      }
+    },
+    "states": {
+      "default": {
+        "body": "default",
+        "animation": "default",
+        "particles": {},
+        "sound": {},
+        "name": "default"
+      },
+      "selected": {
+        "name": "selected",
+        "animation": "default",
+        "body": "selected",
+        "particles": {},
+        "sound": {}
+      },
+      "unselected": {
+        "name": "unselected",
+        "animation": "none",
+        "body": "none",
+        "particles": {},
+        "sound": {}
+      },
+      "dropped": {
+        "name": "dropped",
+        "animation": "dropped",
+        "body": "dropped",
+        "particles": {},
+        "sound": {}
+      }
+    },
+    "map": {
+      "originalTileHeight": 64,
+      "originalTileWidth": 64,
+      "compressionlevel": -1,
+      "editorsettings": { "export": { "target": "." } },
+      "height": 32,
+      "infinite": false,
+      "layers": [
+        {
+          "data": [
+            5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 1, 1, 86, 86, 55,
+            86, 86, 1, 1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+            5, 5, 5, 5, 5, 1, 1, 86, 86, 55, 86, 86, 1, 1, 1, 1, 1, 1, 1, 1, 5,
+            5, 5, 5, 5, 5, 5, 96, 5, 5, 5, 5, 5, 5, 5, 5, 5, 1, 1, 86, 86, 55,
+            86, 86, 1, 1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 96, 96, 96, 96, 96, 96, 5,
+            5, 5, 5, 5, 5, 5, 5, 1, 1, 86, 86, 55, 86, 86, 1, 1, 1, 1, 1, 1, 1,
+            1, 5, 5, 5, 96, 96, 96, 96, 96, 96, 5, 5, 5, 5, 5, 5, 5, 1, 1, 1,
+            86, 86, 55, 86, 86, 1, 1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 96, 96, 96, 96,
+            96, 96, 5, 5, 5, 5, 5, 5, 5, 1, 1, 1, 86, 86, 55, 86, 86, 1, 1, 1,
+            1, 1, 1, 1, 1, 5, 5, 5, 5, 96, 96, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 1,
+            1, 1, 86, 86, 55, 86, 86, 1, 1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 96, 96,
+            96, 96, 96, 96, 5, 5, 5, 5, 5, 5, 1, 1, 1, 1, 86, 86, 55, 86, 86, 1,
+            1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 96, 96, 96, 96, 96, 96, 96, 5, 5, 5,
+            5, 5, 1, 1, 1, 1, 86, 86, 55, 86, 86, 1, 1, 1, 1, 1, 1, 1, 1, 5, 5,
+            5, 96, 96, 96, 96, 96, 96, 96, 5, 5, 5, 5, 5, 1, 1, 1, 1, 86, 86,
+            55, 86, 86, 1, 1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 96, 96, 96, 96, 96, 96,
+            5, 5, 5, 5, 5, 1, 1, 1, 1, 1, 86, 86, 55, 86, 86, 1, 1, 1, 1, 1, 1,
+            1, 1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 1, 1, 1, 1, 1, 86,
+            86, 55, 86, 86, 1, 1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+            5, 5, 5, 5, 1, 1, 1, 1, 1, 1, 86, 86, 55, 86, 86, 1, 1, 1, 1, 1, 1,
+            1, 1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 1, 1, 1, 1, 1, 1, 1, 86,
+            86, 55, 86, 86, 1, 1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+            5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 86, 86, 55, 86, 86, 86, 86, 86, 86,
+            86, 86, 86, 86, 5, 5, 5, 5, 5, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 86, 86, 55, 86, 86, 86, 86, 86, 86, 86, 86, 86, 86, 5, 5, 5,
+            5, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 86, 86, 88, 56, 56,
+            56, 56, 56, 56, 56, 56, 56, 56, 5, 5, 5, 5, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 86, 86, 86, 86, 86, 86, 86, 86, 86, 86, 86, 86,
+            86, 5, 5, 5, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 86, 86,
+            86, 86, 86, 86, 86, 86, 86, 86, 86, 86, 86, 5, 5, 5, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 96, 96,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 96, 96, 96, 96, 96, 96, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 96, 96, 96, 96, 96,
+            96, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 96, 96, 96, 96, 96, 96, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1
+          ],
+          "height": 32,
+          "id": 1,
+          "name": "floor",
+          "opacity": 1,
+          "type": "tilelayer",
+          "visible": true,
+          "width": 32,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "data": [
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+          ],
+          "height": 32,
+          "id": 2,
+          "name": "floor2",
+          "opacity": 1,
+          "type": "tilelayer",
+          "visible": true,
+          "width": 32,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "draworder": "topdown",
+          "id": 3,
+          "name": "debris",
+          "objects": [
+            {
+              "igeId": "318f2f05",
+              "restitution": "0",
+              "friction": "0",
+              "density": "0",
+              "gid": 323,
+              "name": "0",
+              "id": 167,
+              "type": "dynamic",
+              "visible": 1,
+              "rotation": "0",
+              "width": 64,
+              "height": 64,
+              "y": 650,
+              "x": 440
+            },
+            {
+              "igeId": "497d5ac6",
+              "restitution": "0",
+              "friction": "0",
+              "density": "0",
+              "gid": 296,
+              "name": "0",
+              "id": 168,
+              "type": "dynamic",
+              "visible": 1,
+              "rotation": "0",
+              "width": 64,
+              "height": 64,
+              "y": 650,
+              "x": 250
+            },
+            {
+              "igeId": "2f8ae2eb",
+              "gid": 483,
+              "height": 64,
+              "id": 169,
+              "name": "",
+              "rotation": 0,
+              "type": "dynamic",
+              "visible": true,
+              "width": 64,
+              "x": 331.636363636364,
+              "y": 565.333333333333
+            },
+            {
+              "igeId": "20ec0948",
+              "restitution": "0",
+              "friction": "0",
+              "density": "0",
+              "gid": 505,
+              "name": "0",
+              "id": 170,
+              "type": "dynamic",
+              "visible": 1,
+              "rotation": "0",
+              "width": 64,
+              "height": 64,
+              "y": 300,
+              "x": 250
+            },
+            {
+              "igeId": "2a4bfa3b",
+              "restitution": "0",
+              "friction": "0",
+              "density": "0",
+              "gid": 538,
+              "name": "0",
+              "id": 173,
+              "type": "dynamic",
+              "visible": 1,
+              "rotation": "0",
+              "width": 64,
+              "height": 64,
+              "y": 1720,
+              "x": 340
+            },
+            {
+              "igeId": "bb570520",
+              "restitution": "0",
+              "friction": "0",
+              "density": "0",
+              "gid": 536,
+              "name": "0",
+              "id": 174,
+              "type": "dynamic",
+              "visible": 1,
+              "rotation": "0",
+              "width": 64,
+              "height": 64,
+              "y": 1730,
+              "x": 490
+            },
+            {
+              "igeId": "290ebca9",
+              "restitution": "0",
+              "friction": "0",
+              "density": "0",
+              "gid": 134,
+              "name": "0",
+              "id": 175,
+              "type": "dynamic",
+              "visible": 1,
+              "rotation": "0",
+              "width": 64,
+              "height": 64,
+              "y": 300,
+              "x": 450
+            }
+          ],
+          "opacity": 1,
+          "type": "objectgroup",
+          "visible": true,
+          "x": 0,
+          "y": 0,
+          "height": 32,
+          "width": 32
+        },
+        {
+          "data": [
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 369, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            280, 282, 282, 282, 285, 0, 313, 281, 0, 0, 0, 0, 0, 0, 0, 0, 369,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 309, 0, 0, 0, 0, 0, 0,
+            309, 0, 0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 309, 0, 0, 0, 0, 0, 0, 309, 0, 0, 0, 0, 0, 0, 0, 0, 369,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 309, 0, 0, 0, 0, 0, 0,
+            309, 0, 0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 310, 285, 0, 0, 313, 282, 282, 311, 0, 0, 0, 0, 0, 0, 0,
+            0, 369, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 309, 0, 0, 0,
+            0, 0, 0, 286, 0, 0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 309, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 369, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 309, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 309, 0, 0, 0, 0, 0, 0, 312, 0, 0, 0, 0, 0, 0, 0,
+            0, 369, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 307, 282, 282,
+            282, 282, 282, 282, 308, 0, 0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 369, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            369, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 369, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 118, 120, 123, 0, 0, 151, 120, 119,
+            0, 0, 0, 369, 369, 369, 369, 0, 0, 0, 369, 369, 369, 0, 0, 0, 369,
+            369, 369, 369, 0, 0, 0, 0, 147, 0, 0, 0, 0, 0, 0, 147, 0, 0, 0, 369,
+            0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 0, 0, 147,
+            0, 0, 0, 0, 0, 0, 147, 0, 0, 0, 369, 0, 0, 0, 0, 0, 0, 0, 369, 0, 0,
+            0, 0, 0, 0, 0, 369, 0, 0, 0, 0, 147, 0, 0, 0, 0, 0, 0, 147, 0, 0, 0,
+            369, 0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 0, 0,
+            145, 120, 120, 120, 120, 120, 120, 146, 0, 0, 0, 369, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 369, 0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 0, 0, 0, 0, 0, 369,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 0, 0, 0, 0,
+            0, 369, 0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 369, 0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 0, 0, 0, 0, 0, 369,
+            0
+          ],
+          "height": 32,
+          "id": 4,
+          "name": "walls",
+          "opacity": 1,
+          "type": "tilelayer",
+          "visible": true,
+          "width": 32,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "data": [
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 181, 182, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 184, 185, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            208, 209, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 211, 212, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 184, 185, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 211, 212, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 181, 182, 0, 0, 0, 0, 0, 0, 0, 181, 182, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 208, 209, 0, 0, 0, 0, 0,
+            0, 0, 208, 209, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 181, 182, 0, 0, 0, 0, 0, 0, 181, 182, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 208,
+            209, 0, 0, 0, 0, 0, 0, 208, 209, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 184, 185, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 211, 212, 0, 0, 0, 0, 0, 0, 181, 182, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 184, 185, 0, 0, 0, 0, 181, 182, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 208, 209, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 211,
+            212, 0, 0, 0, 0, 208, 209, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 181, 182, 0, 181, 182, 0, 0, 0,
+            181, 182, 0, 181, 182, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 208, 209, 0, 208, 209, 0, 0, 0, 208, 209, 0, 208, 209,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 181, 182, 0, 181, 182, 0, 0, 0, 181, 182, 0, 181,
+            182, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 208,
+            209, 0, 208, 209, 0, 0, 0, 208, 209, 0, 208, 209, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0
+          ],
+          "height": 32,
+          "id": 5,
+          "name": "trees",
+          "opacity": 1,
+          "type": "tilelayer",
+          "visible": true,
+          "width": 32,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "nextlayerid": 6,
+      "nextobjectid": 177,
+      "orientation": "orthogonal",
+      "renderorder": "right-down",
+      "tiledversion": "1.3.3",
+      "tileheight": 64,
+      "tilesets": [
+        {
+          "columns": 27,
+          "firstgid": 1,
+          "image": "https://cache.modd.io/asset/spriteImage/1526992418233_tilesheet_complete.png",
+          "imageheight": 1280,
+          "imagewidth": 1728,
+          "margin": 0,
+          "name": "tilesheet_complete",
+          "spacing": 0,
+          "tilecount": 540,
+          "tileheight": 64,
+          "tilewidth": 64
+        }
+      ],
+      "tilewidth": 64,
+      "type": "map",
+      "version": 1.2,
+      "width": 32
+    },
+    "buffTypes": {
+      "canPenetrate": { "unit": "boolean", "chance": 0.05 },
+      "canPushDebris": { "unit": "boolean", "chance": 0.05 },
+      "height": {
+        "unit": "percentage",
+        "chance": 0.2,
+        "maxBonus": 0.3,
+        "minBonus": 0.05
+      },
+      "maxStamina": {
+        "unit": "integer",
+        "chance": 0.1,
+        "maxBonus": 120,
+        "minBonus": 20
+      },
+      "movementSpeed": {
+        "unit": "integer",
+        "chance": 0.02,
+        "maxBonus": 5,
+        "minBonus": 1
+      },
+      "immunity": {
+        "unit": "percentage",
+        "chance": 0.1,
+        "maxBonus": 0.2,
+        "minBonus": 0.05
+      },
+      "slowChance": {
+        "unit": "percentage",
+        "chance": 0.05,
+        "maxBonus": 0.1,
+        "minBonus": 0.02
+      },
+      "stunChance": {
+        "unit": "percentage",
+        "chance": 0.05,
+        "maxBonus": 0.1,
+        "minBonus": 0.02
+      },
+      "recoilForce": {
+        "unit": "integer",
+        "chance": 0.04,
+        "maxBonus": 8,
+        "minBonus": 0
+      },
+      "bulletForce": {
+        "unit": "percentage",
+        "chance": 0.07,
+        "maxBonus": 1,
+        "minBonus": 0.1
+      },
+      "ammoTotal": {
+        "unit": "percentage",
+        "chance": 0.2,
+        "maxBonus": 0.3,
+        "minBonus": 0
+      },
+      "ammoSize": {
+        "unit": "percentage",
+        "chance": 0.1,
+        "maxBonus": 0.3,
+        "minBonus": 0
+      },
+      "distanceEnd": {
+        "unit": "percentage",
+        "chance": 0.3,
+        "maxBonus": 500,
+        "minBonus": 100
+      },
+      "fireRate": {
+        "unit": "percentage",
+        "chance": 0.15,
+        "maxBonus": -0.3,
+        "minBonus": 0
+      },
+      "reloadRate": {
+        "unit": "percentage",
+        "chance": 0.1,
+        "maxBonus": -0.3,
+        "minBonus": 0
+      }
+    },
+    "projectileTypes": {
+      "bullet": {
+        "confinedWithinMapBoundaries": true,
+        "effects": {
+          "create": {
+            "projectileType": "",
+            "sound": {},
+            "animation": "",
+            "runScript": ""
+          },
+          "destroy": { "sound": {}, "animation": "", "runScript": "" }
+        },
+        "lifeSpan": 1500,
+        "cellSheet": {
+          "url": "https://cache.modd.io/asset/spriteImage/1589676882104_Yellow_Bullet_Circle.png",
+          "rowCount": 1,
+          "columnCount": 1
+        },
+        "destroyTimer": 1500,
+        "bodies": {
+          "default": {
+            "itemAnchor": { "upperAngle": 0, "lowerAngle": 0, "y": 0, "x": 0 },
+            "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+            "jointType": "weldJoint",
+            "fixtures": [
+              {
+                "isSensor": true,
+                "shape": { "type": "rectangle" },
+                "restitution": 0.01,
+                "friction": 0.01,
+                "density": 1
+              }
+            ],
+            "spriteScale": 1,
+            "rotationSpeed": 1,
+            "linearDamping": 0,
+            "angularDamping": 1,
+            "collidesWith": {
+              "debris": true,
+              "walls": true,
+              "projectiles": false,
+              "items": false,
+              "units": true
+            },
+            "allowSleep": false,
+            "constantSpeed +DestroyedOnCollisionWithWall/unit": true,
+            "fixedRotation": false,
+            "z-index": { "depth": 1, "layer": 3 },
+            "height": 10,
+            "width": 10,
+            "type": "dynamic",
+            "name": "default",
+            "bullet": true
+          }
+        },
+        "animations": {
+          "default": {
+            "framesPerSecond": 0,
+            "loopCount": 0,
+            "frames": [1],
+            "name": "default"
+          }
+        },
+        "states": {
+          "default": {
+            "body": "default",
+            "animation": "default",
+            "particles": {},
+            "sound": {},
+            "name": "default"
+          }
+        },
+        "variables": {},
+        "attributes": {},
+        "name": "Bullet",
+        "inventoryImage": "",
+        "destroyOnContactWith": {
+          "units": true,
+          "items": false,
+          "projectiles": false,
+          "walls": true,
+          "debris": true
+        },
+        "scripts": {
+          "f3ypMm2Mau": {
+            "triggers": [
+              { "type": "entityTouchesWall" },
+              { "type": "entityTouchesUnit" }
+            ],
+            "conditions": [
+              { "operator": "==", "operandType": "boolean" },
+              true,
+              true
+            ],
+            "actions": [
+              {
+                "type": "createProjectileAtPosition",
+                "projectileType": "explosion",
+                "position": {
+                  "function": "getEntityPosition",
+                  "entity": { "function": "thisEntity" }
+                },
+                "force": 0,
+                "angle": 0,
+                "runOnClient": true
+              },
+              {
+                "type": "destroyEntity",
+                "entity": { "function": "thisEntity" },
+                "runOnClient": true
+              }
+            ],
+            "name": "destroy when hitting wall/unit",
+            "parent": null,
+            "key": "f3ypMm2Mau",
+            "order": 2
+          }
+        }
+      },
+      "explosion": {
+        "destroyOnContactWith": {
+          "debris": false,
+          "walls": false,
+          "projectiles": false,
+          "items": false,
+          "units": false
+        },
+        "cellSheet": {
+          "url": "https://cache.modd.io/asset/spriteImage/1588350123256_Explosion_(Animated).png",
+          "rowCount": 1,
+          "columnCount": 6
+        },
+        "lifeSpan": 500,
+        "bodies": {
+          "default": {
+            "itemAnchor": { "upperAngle": 0, "lowerAngle": 0, "y": 0, "x": 0 },
+            "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+            "jointType": "weldJoint",
+            "fixtures": [
+              {
+                "isSensor": true,
+                "shape": { "type": "rectangle" },
+                "restitution": 0.01,
+                "friction": 0.01,
+                "density": 1
+              }
+            ],
+            "spriteScale": 1,
+            "rotationSpeed": 3,
+            "linearDamping": 5,
+            "angularDamping": 1,
+            "collidesWith": {
+              "debris": false,
+              "walls": false,
+              "projectiles": false,
+              "items": false,
+              "units": false
+            },
+            "allowSleep": true,
+            "bullet": false,
+            "fixedRotation": true,
+            "z-index": { "depth": 4, "layer": 3 },
+            "height": 48,
+            "width": 48,
+            "type": "dynamic",
+            "name": "default"
+          }
+        },
+        "animations": {
+          "default": {
+            "framesPerSecond": 15,
+            "loopCount": 1,
+            "frames": [1, 2, 3, 4, 5, 6],
+            "name": "default"
+          }
+        },
+        "states": {
+          "default": {
+            "body": "default",
+            "animation": "default",
+            "particles": {},
+            "sound": {},
+            "name": "default"
+          }
+        },
+        "variables": {},
+        "attributes": {},
+        "name": "Explosion",
+        "inventoryImage": "https://cache.modd.io/asset/spriteImage/1588349840112_Explosion.png",
+        "effects": {
+          "create": { "projectileType": "", "sound": {}, "animation": "" },
+          "destroy": { "projectileType": "", "sound": {}, "animation": "" }
+        }
+      },
+      "QaE7dAgIMj": {
+        "inventoryImage": "",
+        "effects": {
+          "destroy": { "animation": "", "sound": {}, "projectileType": "" },
+          "create": { "animation": "", "sound": {}, "projectileType": "" }
+        },
+        "lifeSpan": 5500,
+        "cellSheet": {
+          "url": "https://cache.modd.io/asset/spriteImage/1589411967711_Blood_Red_Puddle.png",
+          "rowCount": 1,
+          "columnCount": 1
+        },
+        "explosiveTimer": 1500,
+        "bodies": {
+          "default": {
+            "bullet": true,
+            "itemAnchor": { "upperAngle": 0, "lowerAngle": 0, "y": 0, "x": 0 },
+            "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+            "jointType": "weldJoint",
+            "fixtures": [
+              {
+                "isSensor": true,
+                "shape": { "type": "rectangle" },
+                "restitution": 0.01,
+                "friction": 0.01,
+                "density": 1
+              }
+            ],
+            "spriteScale": 1,
+            "rotationSpeed": 3,
+            "linearDamping": 1,
+            "angularDamping": 1,
+            "collidesWith": {
+              "debris": false,
+              "walls": false,
+              "projectiles": false,
+              "items": false,
+              "units": false
+            },
+            "allowSleep": true,
+            "destroyedOnCollisionWithWall/unit": true,
+            "fixedRotation": true,
+            "z-index": { "depth": 1, "layer": 1 },
+            "height": 38,
+            "width": 38,
+            "type": "dynamic",
+            "name": "default"
+          }
+        },
+        "animations": {
+          "default": {
+            "framesPerSecond": 0,
+            "loopCount": 0,
+            "frames": [1],
+            "name": "default"
+          }
+        },
+        "states": {
+          "default": {
+            "body": "default",
+            "animation": "default",
+            "particles": {},
+            "sound": {},
+            "name": "default"
+          }
+        },
+        "variables": {},
+        "attributes": {},
+        "name": "Blood",
+        "destroyOnContactWith": {
+          "units": false,
+          "items": false,
+          "projectiles": false,
+          "walls": false,
+          "debris": false
+        }
+      }
+    },
+    "itemTypes": {
+      "KgRjkNTEFp": {
+        "delayBeforeUse": 0,
+        "defaultProjectile": {
+          "destroyOnContactWith": {
+            "debris": true,
+            "walls": true,
+            "projectiles": true,
+            "items": true,
+            "units": true
+          },
+          "effects": {
+            "destroy": { "animation": "", "sound": {}, "projectileType": "" },
+            "create": { "animation": "", "sound": {}, "projectileType": "" }
+          },
+          "lifeSpan": 1500,
+          "cellSheet": {
+            "url": "https://modd.s3.amazonaws.com/asset/spriteImage/1567988571681_bullet.png",
+            "rowCount": 1,
+            "columnCount": 1
+          },
+          "destroyTimer": 1500,
+          "bodies": {
+            "default": {
+              "itemAnchor": {
+                "upperAngle": 0,
+                "lowerAngle": 0,
+                "y": 0,
+                "x": 0
+              },
+              "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+              "jointType": "weldJoint",
+              "fixtures": [
+                {
+                  "isSensor": true,
+                  "shape": { "type": "rectangle" },
+                  "restitution": 0.01,
+                  "friction": 0.01,
+                  "density": 1
+                }
+              ],
+              "spriteScale": 1,
+              "rotationSpeed": 1,
+              "linearDamping": 0,
+              "angularDamping": 1,
+              "collidesWith": {
+                "debris": false,
+                "walls": true,
+                "projectiles": false,
+                "items": true,
+                "units": true
+              },
+              "allowSleep": false,
+              "constantSpeed +DestroyedOnCollisionWithWall/unit": true,
+              "fixedRotation": false,
+              "z-index": { "depth": 1, "layer": 3 },
+              "height": 30,
+              "width": 10,
+              "type": "dynamic",
+              "name": "default",
+              "bullet": true
+            }
+          },
+          "animations": {
+            "default": {
+              "framesPerSecond": 0,
+              "loopCount": 0,
+              "frames": [1],
+              "name": "default"
+            }
+          },
+          "states": {
+            "zTzPFYOZkc": {
+              "body": "default",
+              "animation": "default",
+              "particles": {},
+              "sound": {},
+              "name": "default"
+            }
+          },
+          "variables": {},
+          "attributes": {},
+          "name": "Constant speed + Destroyed on collision with wall/unit",
+          "inventoryImage": ""
+        },
+        "bulletStartPosition": { "rotation": 0, "y": 52, "x": 0 },
+        "name": "Uzi",
+        "handle": "",
+        "attributes": {},
+        "variables": {},
+        "cellSheet": {
+          "url": "https://cache.modd.io/asset/spriteImage/1589589980090_uzi.png",
+          "rowCount": 1,
+          "columnCount": 1
+        },
+        "inventoryImage": null,
+        "isStackable": false,
+        "isPurchasable": true,
+        "canBePurchasedBy": [],
+        "isGun": true,
+        "bulletDestroyedOnCollisionWithWall/unitType": "projectile",
+        "type": "weapon",
+        "hits": [],
+        "states": {
+          "selected": {
+            "name": "selected",
+            "animation": "default",
+            "body": "selected",
+            "particles": {},
+            "sound": {}
+          },
+          "unselected": {
+            "name": "unselected",
+            "animation": "default",
+            "body": "none",
+            "particles": {},
+            "sound": {}
+          },
+          "dropped": {
+            "name": "dropped",
+            "animation": "dropped",
+            "body": "dropped",
+            "particles": {},
+            "sound": {}
+          }
+        },
+        "animations": {
+          "default": {
+            "name": "default",
+            "frames": [1],
+            "loopCount": 0,
+            "framesPerSecond": 0
+          }
+        },
+        "bodies": {
+          "selected": {
+            "name": "selected",
+            "type": "spriteOnly",
+            "width": 10,
+            "height": 35,
+            "z-index": { "layer": 3, "depth": 4 },
+            "fixedRotation": false,
+            "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
+            "allowSleep": true,
+            "collidesWith": {
+              "units": true,
+              "items": true,
+              "projectiles": true,
+              "walls": true,
+              "debris": false
+            },
+            "angularDamping": 1,
+            "linearDamping": 5,
+            "rotationSpeed": 3,
+            "spriteScale": 1,
+            "fixtures": [
+              {
+                "density": 1,
+                "friction": 0.01,
+                "restitution": 0.01,
+                "shape": { "type": "rectangle" },
+                "isSensor": false
+              }
+            ],
+            "jointType": "weldJoint",
+            "unitAnchor": { "y": 25, "x": 18 },
+            "itemAnchor": { "y": 0, "x": 0 }
+          },
+          "dropped": {
+            "bullet": false,
+            "name": "dropped",
+            "type": "dynamic",
+            "width": 10,
+            "height": 35,
+            "z-index": { "layer": 1, "depth": 2 },
+            "fixedRotation": false,
+            "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
+            "allowSleep": true,
+            "collidesWith": {
+              "units": false,
+              "items": false,
+              "projectiles": false,
+              "walls": true,
+              "debris": false
+            },
+            "angularDamping": 1,
+            "linearDamping": 3,
+            "rotationSpeed": 1,
+            "spriteScale": 1,
+            "fixtures": [
+              {
+                "density": 1,
+                "friction": 0,
+                "restitution": 0,
+                "shape": { "type": "rectangle" },
+                "isSensor": false
+              }
+            ],
+            "jointType": "weldJoint",
+            "unitAnchor": { "y": 25, "x": 18 },
+            "itemAnchor": { "y": 0, "x": 0 }
+          }
+        },
+        "hideIfUnaffordable": false,
+        "projectileType": "bullet",
+        "quantity": 30,
+        "maxQuantity": 300,
+        "description": "",
+        "reloadRate": 2800,
+        "recoilForce": 0,
+        "fireRate": 250,
+        "bulletDestroyedOnCollisionWithWall/unitForce": 20,
+        "knockbackForce": 0,
+        "effects": {
+          "use": {
+            "projectileType": "",
+            "sound": {},
+            "animation": "use",
+            "tween": "recoil"
+          },
+          "create": { "projectileType": "", "sound": {}, "animation": "" },
+          "destroy": { "projectileType": "", "sound": {}, "animation": "" },
+          "reload": { "sound": {}, "animation": "" },
+          "empty": { "sound": {}, "animation": "" }
+        },
+        "bulletDestroyedOnCollisionWithWall/unitStartPosition": {
+          "x": -5,
+          "y": -12,
+          "rotation": 0
+        },
+        "bulletDestroyedOnCollisionWithWall/unitDistance": 1300,
+        "penetration": false,
+        "destroyTimer": 100000,
+        "particles": {},
+        "damage": { "unitAttributes": { "health": 10 } },
+        "sound": {},
+        "canBeUsedBy": ["aL90UkW5ZY"],
+        "isUsedOnPickup": false,
+        "removeWhenEmpty": false,
+        "bonus": {
+          "consume": { "playerAttribute": {}, "unitAttribute": {} },
+          "passive": { "playerAttribute": {}, "unitAttribute": {} }
+        },
+        "cost": { "quantity": 1 },
+        "buffTypes": [],
+        "carriedBy": ["aL90UkW5ZY"],
+        "frames": {},
+        "bulletType": "projectile",
+        "bulletForce": 25,
+        "bulletDistance": 1300,
+        "controls": {
+          "undroppable": false,
+          "permittedInventorySlots": [],
+          "mouseBehaviour": {
+            "rotateToFaceMouseCursor": true,
+            "flipSpriteHorizontallyWRTMouse": false
+          }
+        },
+        "deployMethod": "setVelocity",
+        "lifeSpan": 60000,
+        "confinedWithinMapBoundaries": true
+      },
+      "hFTNBiXvkp": {
+        "damageDelay": 0,
+        "damageHitBox": {
+          "offsetY": 38,
+          "offsetX": 0,
+          "height": 30,
+          "width": 32
+        },
+        "controls": {
+          "undroppable": false,
+          "designatedInventorySlot": "",
+          "mouseBehaviour": {
+            "flipSpriteHorizontallyWRTMouse": false,
+            "rotateToFaceMouseCursor": true
+          },
+          "permittedInventorySlots": []
+        },
+        "carriedBy": ["aL90UkW5ZY"],
+        "buffTypes": [],
+        "cost": { "quantity": 0 },
+        "bonus": {
+          "passive": { "unitAttribute": {}, "playerAttribute": {} },
+          "consume": { "unitAttribute": {}, "playerAttribute": {} }
+        },
+        "removeWhenEmpty": false,
+        "isUsedOnPickup": false,
+        "canBeUsedBy": ["aL90UkW5ZY"],
+        "sound": {},
+        "damage": { "targetsAffected": [], "unitAttributes": { "health": 25 } },
+        "particles": {},
+        "destroyTimer": 30000,
+        "penetration": false,
+        "bulletDestroyedOnCollisionWithWall/unitDistance": 1300,
+        "bulletDestroyedOnCollisionWithWall/unitStartPosition": {
+          "rotation": 0,
+          "y": 0,
+          "x": 0
+        },
+        "effects": {
+          "empty": { "sound": {}, "animation": "" },
+          "reload": { "sound": {}, "animation": "" },
+          "destroy": { "animation": "", "sound": {}, "projectileType": "" },
+          "create": { "animation": "", "sound": {}, "projectileType": "" },
+          "use": {
+            "tween": "swingCCW",
+            "animation": "use",
+            "sound": {},
+            "projectileType": ""
+          }
+        },
+        "knockbackForce": 0,
+        "bulletDestroyedOnCollisionWithWall/unitForce": 14,
+        "fireRate": 500,
+        "recoilForce": 0,
+        "reloadRate": 2800,
+        "description": null,
+        "maxQuantity": null,
+        "quantity": null,
+        "projectileType": "",
+        "hideIfUnaffordable": false,
+        "bodies": {
+          "dropped": {
+            "bullet": false,
+            "itemAnchor": { "y": 0, "x": 0 },
+            "unitAnchor": { "y": 50, "x": 5 },
+            "jointType": "weldJoint",
+            "fixtures": [
+              {
+                "isSensor": false,
+                "shape": { "type": "rectangle" },
+                "restitution": 0,
+                "friction": 0,
+                "density": 1
+              }
+            ],
+            "spriteScale": 1,
+            "rotationSpeed": 1,
+            "linearDamping": 3,
+            "angularDamping": 1,
+            "collidesWith": {
+              "debris": false,
+              "walls": true,
+              "projectiles": false,
+              "items": false,
+              "units": false
+            },
+            "allowSleep": true,
+            "destroyedOnCollisionWithWall/unit": false,
+            "fixedRotation": false,
+            "z-index": { "depth": 2, "layer": 1 },
+            "height": 50,
+            "width": 10,
+            "type": "dynamic",
+            "name": "dropped"
+          },
+          "selected": {
+            "itemAnchor": { "y": 0, "x": 0 },
+            "unitAnchor": { "rotation": 78, "y": 50, "x": 5 },
+            "jointType": "weldJoint",
+            "fixtures": [
+              {
+                "isSensor": false,
+                "shape": { "type": "rectangle" },
+                "restitution": 0.01,
+                "friction": 0.01,
+                "density": 1
+              }
+            ],
+            "spriteScale": 1,
+            "rotationSpeed": 3,
+            "linearDamping": 5,
+            "angularDamping": 1,
+            "collidesWith": {
+              "debris": false,
+              "walls": true,
+              "projectiles": true,
+              "items": true,
+              "units": true
+            },
+            "allowSleep": true,
+            "destroyedOnCollisionWithWall/unit": false,
+            "fixedRotation": false,
+            "z-index": { "depth": 4, "layer": 3 },
+            "height": 50,
+            "width": 10,
+            "type": "spriteOnly",
+            "name": "selected"
+          }
+        },
+        "animations": {
+          "dropped": {
+            "name": "dropped",
+            "frames": [1],
+            "framesPerSecond": 0,
+            "loopCount": ""
+          },
+          "default": {
+            "name": "default",
+            "frames": [1],
+            "loopCount": 0,
+            "framesPerSecond": 0
+          }
+        },
+        "states": {
+          "dropped": {
+            "sound": {},
+            "particles": {},
+            "body": "dropped",
+            "animation": "dropped",
+            "name": "dropped"
+          },
+          "unselected": {
+            "sound": {},
+            "particles": {},
+            "body": "none",
+            "animation": "none",
+            "name": "unselected"
+          },
+          "selected": {
+            "sound": {},
+            "particles": {},
+            "body": "selected",
+            "animation": "default",
+            "name": "selected"
+          }
+        },
+        "hits": [],
+        "type": "weapon",
+        "bulletDestroyedOnCollisionWithWall/unitType": "raycast",
+        "isGun": false,
+        "canBePurchasedBy": [],
+        "isPurchasable": true,
+        "isStackable": false,
+        "inventoryImage": null,
+        "cellSheet": {
+          "url": "https://cache.modd.io/asset/spriteImage/1588128116092_baseball bat.png",
+          "rowCount": 1,
+          "columnCount": 1
+        },
+        "variables": {},
+        "attributes": {},
+        "handle": "",
+        "name": "Baseball Bat",
+        "frames": {},
+        "bulletStartPosition": { "x": 0, "y": 0, "rotation": 0 },
+        "delayBeforeUse": 0
+      },
+      "8JZ9Oe1uBG": {
+        "delayBeforeUse": 0,
+        "confinedWithinMapBoundaries": true,
+        "lifeSpan": 60000,
+        "defaultProjectile": {
+          "inventoryImage": "",
+          "name": "Constant speed + Destroyed on collision with wall/unit",
+          "attributes": {},
+          "variables": {
+            "explodeOnContact": { "dataType": "boolean", "default": false },
+            "isAccelerating": { "dataType": "boolean" },
+            "destroyOnWallContact": { "dataType": "boolean", "default": true },
+            "destroyOnUnitContact": { "dataType": "boolean", "default": true },
+            "isSticky": { "dataType": "boolean" }
+          },
+          "states": {
+            "default": {
+              "name": "default",
+              "sound": {},
+              "particles": {},
+              "animation": "default",
+              "body": "default"
+            }
+          },
+          "animations": {
+            "default": {
+              "name": "default",
+              "frames": [1],
+              "loopCount": 0,
+              "framesPerSecond": 0
+            }
+          },
+          "bodies": {
+            "default": {
+              "bullet": true,
+              "name": "default",
+              "type": "kinematic",
+              "width": 10,
+              "height": 30,
+              "z-index": { "layer": 3, "depth": 1 },
+              "fixedRotation": false,
+              "constantSpeed +DestroyedOnCollisionWithWall/unit": true,
+              "allowSleep": false,
+              "collidesWith": {
+                "units": true,
+                "items": true,
+                "projectiles": false,
+                "walls": true,
+                "debris": false
+              },
+              "angularDamping": 1,
+              "linearDamping": 0,
+              "rotationSpeed": 1,
+              "spriteScale": 1,
+              "fixtures": [
+                {
+                  "density": 1,
+                  "friction": 0.01,
+                  "restitution": 0.01,
+                  "shape": { "type": "rectangle" },
+                  "isSensor": true
+                }
+              ],
+              "jointType": "weldJoint",
+              "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
+              "itemAnchor": { "x": 0, "y": 0, "lowerAngle": 0, "upperAngle": 0 }
+            }
+          },
+          "destroyTimer": 1500,
+          "cellSheet": {
+            "columnCount": 1,
+            "rowCount": 1,
+            "url": "https://modd.s3.amazonaws.com/asset/spriteImage/1567988571681_bullet.png"
+          },
+          "lifeSpan": 1500,
+          "effects": {
+            "create": { "projectileType": "", "sound": {}, "animation": "" },
+            "destroy": { "projectileType": "", "sound": {}, "animation": "" }
+          }
+        },
+        "bulletDistance": 1300,
+        "bulletForce": 25,
+        "bulletType": "projectile",
+        "frames": {},
+        "carriedBy": ["aL90UkW5ZY"],
+        "buffTypes": [],
+        "cost": { "quantity": 1 },
+        "bonus": {
+          "passive": { "unitAttribute": {}, "playerAttribute": {} },
+          "consume": { "unitAttribute": {}, "playerAttribute": {} }
+        },
+        "removeWhenEmpty": false,
+        "isUsedOnPickup": false,
+        "canBeUsedBy": ["aL90UkW5ZY"],
+        "sound": {},
+        "damage": { "unitAttributes": { "health": 10 } },
+        "particles": {},
+        "destroyTimer": 100000,
+        "penetration": false,
+        "bulletDestroyedOnCollisionWithWall/unitDistance": 1300,
+        "bulletDestroyedOnCollisionWithWall/unitStartPosition": {
+          "rotation": 0,
+          "y": -12,
+          "x": -5
+        },
+        "effects": {
+          "empty": { "animation": "", "sound": {} },
+          "reload": { "animation": "", "sound": {} },
+          "destroy": { "animation": "", "sound": {}, "projectileType": "" },
+          "create": { "animation": "", "sound": {}, "projectileType": "" },
+          "use": {
+            "tween": "recoil",
+            "animation": "use",
+            "sound": {},
+            "projectileType": ""
+          }
+        },
+        "knockbackForce": 0,
+        "bulletDestroyedOnCollisionWithWall/unitForce": 20,
+        "fireRate": 200,
+        "recoilForce": 0,
+        "reloadRate": 2800,
+        "description": "",
+        "maxQuantity": 500,
+        "quantity": 50,
+        "projectileType": "bullet",
+        "hideIfUnaffordable": false,
+        "bodies": {
+          "dropped": {
+            "bullet": false,
+            "itemAnchor": { "y": 0, "x": 0 },
+            "unitAnchor": { "y": 35, "x": 22 },
+            "jointType": "weldJoint",
+            "fixtures": [
+              {
+                "isSensor": false,
+                "shape": { "type": "rectangle" },
+                "restitution": 0,
+                "friction": 0,
+                "density": 1
+              }
+            ],
+            "spriteScale": 1,
+            "rotationSpeed": 1,
+            "linearDamping": 3,
+            "angularDamping": 1,
+            "collidesWith": {
+              "debris": false,
+              "walls": true,
+              "projectiles": false,
+              "items": false,
+              "units": false
+            },
+            "allowSleep": true,
+            "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
+            "fixedRotation": false,
+            "z-index": { "depth": 2, "layer": 1 },
+            "height": 74,
+            "width": 22,
+            "type": "dynamic",
+            "name": "dropped"
+          },
+          "selected": {
+            "bullet": false,
+            "itemAnchor": { "y": 0, "x": 0 },
+            "unitAnchor": { "y": 35, "x": 22 },
+            "jointType": "weldJoint",
+            "fixtures": [
+              {
+                "isSensor": false,
+                "shape": { "type": "rectangle" },
+                "restitution": 0.01,
+                "friction": 0.01,
+                "density": 1
+              }
+            ],
+            "spriteScale": 1,
+            "rotationSpeed": 3,
+            "linearDamping": 5,
+            "angularDamping": 1,
+            "collidesWith": {
+              "debris": false,
+              "walls": false,
+              "projectiles": false,
+              "items": false,
+              "units": false
+            },
+            "allowSleep": false,
+            "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
+            "fixedRotation": false,
+            "z-index": { "depth": 4, "layer": 3 },
+            "height": 74,
+            "width": 22,
+            "type": "spriteOnly",
+            "name": "selected"
+          }
+        },
+        "animations": {
+          "dropped": {
+            "loopCount": 0,
+            "framesPerSecond": 0,
+            "frames": [1],
+            "name": "dropped"
+          },
+          "default": {
+            "name": "default",
+            "frames": [1],
+            "loopCount": 0,
+            "framesPerSecond": 0
+          }
+        },
+        "states": {
+          "dropped": {
+            "sound": {},
+            "particles": {},
+            "body": "dropped",
+            "animation": "dropped",
+            "name": "dropped"
+          },
+          "unselected": {
+            "sound": {},
+            "particles": {},
+            "body": "none",
+            "animation": "none",
+            "name": "unselected"
+          },
+          "selected": {
+            "sound": {},
+            "particles": {},
+            "body": "selected",
+            "animation": "default",
+            "name": "selected"
+          }
+        },
+        "hits": [],
+        "type": "weapon",
+        "bulletDestroyedOnCollisionWithWall/unitType": "projectile",
+        "isGun": true,
+        "canBePurchasedBy": [],
+        "isPurchasable": true,
+        "isStackable": false,
+        "inventoryImage": null,
+        "cellSheet": {
+          "url": "https://cache.modd.io/asset/spriteImage/1567137436814_minigun.png",
+          "rowCount": 1,
+          "columnCount": 1
+        },
+        "variables": {},
+        "attributes": {},
+        "handle": "",
+        "name": "Machine Gun",
+        "bulletStartPosition": { "x": 0, "y": 72, "rotation": 0 },
+        "deployMethod": "setVelocity",
+        "controls": {
+          "permittedInventorySlots": [],
+          "mouseBehaviour": {
+            "rotateToFaceMouseCursor": true,
+            "flipSpriteHorizontallyWRTMouse": false
+          },
+          "designatedInventorySlot": "",
+          "undroppable": false
+        }
+      },
+      "jqhYq5WmtV": {
+        "confinedWithinMapBoundaries": true,
+        "lifeSpan": 60000,
+        "controls": {
+          "undroppable": false,
+          "designatedInventorySlot": "",
+          "mouseBehaviour": {
+            "flipSpriteHorizontallyWRTMouse": false,
+            "rotateToFaceMouseCursor": true
+          },
+          "permittedInventorySlots": []
+        },
+        "damageDelay": 0,
+        "damageHitBox": {
+          "offsetY": 38,
+          "offsetX": 0,
+          "height": 30,
+          "width": 32
+        },
+        "bulletStartPosition": { "rotation": 0, "y": 0, "x": 0 },
+        "frames": {},
+        "name": "Crowbar",
+        "handle": "",
+        "attributes": {},
+        "variables": {},
+        "cellSheet": {
+          "columnCount": 1,
+          "rowCount": 1,
+          "url": "https://cache.modd.io/asset/spriteImage/1567137993943_crowbar.png"
+        },
+        "inventoryImage": null,
+        "isStackable": false,
+        "isPurchasable": true,
+        "canBePurchasedBy": [],
+        "isGun": false,
+        "bulletDestroyedOnCollisionWithWall/unitType": "raycast",
+        "type": "weapon",
+        "hits": [],
+        "states": {
+          "selected": {
+            "name": "selected",
+            "animation": "default",
+            "body": "selected",
+            "particles": {},
+            "sound": {}
+          },
+          "unselected": {
+            "name": "unselected",
+            "animation": "none",
+            "body": "none",
+            "particles": {},
+            "sound": {}
+          },
+          "dropped": {
+            "name": "dropped",
+            "animation": "dropped",
+            "body": "dropped",
+            "particles": {},
+            "sound": {}
+          }
+        },
+        "animations": {
+          "dropped": {
+            "loopCount": 0,
+            "framesPerSecond": 0,
+            "frames": [1],
+            "name": "dropped"
+          },
+          "default": {
+            "framesPerSecond": 0,
+            "loopCount": 0,
+            "frames": [1],
+            "name": "default"
+          }
+        },
+        "bodies": {
+          "selected": {
+            "name": "selected",
+            "type": "spriteOnly",
+            "width": 14,
+            "height": 54,
+            "z-index": { "layer": 3, "depth": 4 },
+            "fixedRotation": false,
+            "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
+            "allowSleep": true,
+            "collidesWith": {
+              "units": true,
+              "items": true,
+              "projectiles": true,
+              "walls": true,
+              "debris": false
+            },
+            "angularDamping": 1,
+            "linearDamping": 5,
+            "rotationSpeed": 3,
+            "spriteScale": 1,
+            "fixtures": [
+              {
+                "density": 1,
+                "friction": 0.01,
+                "restitution": 0.01,
+                "shape": { "type": "rectangle" },
+                "isSensor": false
+              }
+            ],
+            "jointType": "weldJoint",
+            "unitAnchor": { "rotation": 78, "y": 50, "x": 5 },
+            "itemAnchor": { "y": 0, "x": 0 }
+          },
+          "dropped": {
+            "name": "dropped",
+            "type": "dynamic",
+            "width": 14,
+            "height": 54,
+            "z-index": { "layer": 1, "depth": 2 },
+            "fixedRotation": false,
+            "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
+            "allowSleep": true,
+            "collidesWith": {
+              "units": false,
+              "items": false,
+              "projectiles": false,
+              "walls": true,
+              "debris": false
+            },
+            "angularDamping": 1,
+            "linearDamping": 3,
+            "rotationSpeed": 1,
+            "spriteScale": 1,
+            "fixtures": [
+              {
+                "density": 1,
+                "friction": 0,
+                "restitution": 0,
+                "shape": { "type": "rectangle" },
+                "isSensor": false
+              }
+            ],
+            "jointType": "weldJoint",
+            "unitAnchor": { "rotation": 78, "y": 50, "x": 5 },
+            "itemAnchor": { "y": 0, "x": 0 },
+            "bullet": false
+          }
+        },
+        "hideIfUnaffordable": false,
+        "projectileType": "",
+        "quantity": null,
+        "maxQuantity": null,
+        "description": null,
+        "reloadRate": 2800,
+        "recoilForce": 0,
+        "fireRate": 500,
+        "bulletDestroyedOnCollisionWithWall/unitForce": 14,
+        "knockbackForce": 0,
+        "effects": {
+          "use": {
+            "projectileType": "",
+            "sound": {},
+            "animation": "use",
+            "tween": "swingCCW"
+          },
+          "create": { "projectileType": "", "sound": {}, "animation": "" },
+          "destroy": { "projectileType": "", "sound": {}, "animation": "" },
+          "reload": { "animation": "", "sound": {} },
+          "empty": { "animation": "", "sound": {} }
+        },
+        "bulletDestroyedOnCollisionWithWall/unitStartPosition": {
+          "x": 0,
+          "y": 0,
+          "rotation": 0
+        },
+        "bulletDestroyedOnCollisionWithWall/unitDistance": 1300,
+        "penetration": false,
+        "destroyTimer": 30000,
+        "particles": {},
+        "damage": { "unitAttributes": { "health": 35 } },
+        "sound": {},
+        "canBeUsedBy": ["aL90UkW5ZY"],
+        "isUsedOnPickup": false,
+        "removeWhenEmpty": false,
+        "bonus": {
+          "consume": { "playerAttribute": {}, "unitAttribute": {} },
+          "passive": { "playerAttribute": {}, "unitAttribute": {} }
+        },
+        "cost": { "quantity": 0 },
+        "buffTypes": [],
+        "carriedBy": ["aL90UkW5ZY"],
+        "delayBeforeUse": 0
+      }
+    },
+    "music": {},
+    "sound": {},
+    "scripts": {
+      "applyStormDamage (everySecond)": {
+        "order": 5,
+        "key": "applyStormDamage (everySecond)",
+        "parent": null,
+        "name": "apply storm damage",
+        "actions": [
+          {
+            "vars": [{ "source": "forAllRegions", "id": "selectedRegion" }],
+            "actions": [
+              {
+                "vars": [{ "source": "forAllRegions", "id": "selectedRegion" }],
+                "type": "condition",
+                "conditions": [
+                  { "operandType": "boolean", "operator": "==" },
+                  {
+                    "vars": [
+                      { "source": "forAllRegions", "id": "selectedRegion" }
+                    ],
+                    "function": "subString",
+                    "sourceString": {
+                      "vars": [
+                        { "source": "forAllRegions", "id": "selectedRegion" }
+                      ],
+                      "function": "nameOfRegion",
+                      "region": {
+                        "vars": [
+                          { "source": "forAllRegions", "id": "selectedRegion" }
+                        ],
+                        "function": "selectedRegion"
+                      }
+                    },
+                    "patternString": "storm"
+                  },
+                  true
+                ],
+                "then": [
+                  {
+                    "vars": [
+                      { "source": "forAllRegions", "id": "selectedRegion" },
+                      { "source": "forAllEntities", "id": "selectedEntity" },
+                      { "source": "forAllEntities", "id": "getSelectedEntity" }
+                    ],
+                    "type": "forAllEntities",
+                    "entityGroup": {
+                      "vars": [
+                        { "source": "forAllRegions", "id": "selectedRegion" },
+                        { "source": "forAllEntities", "id": "selectedEntity" },
+                        {
+                          "source": "forAllEntities",
+                          "id": "getSelectedEntity"
+                        }
+                      ],
+                      "function": "entitiesInRegion",
+                      "region": {
+                        "vars": [
+                          { "source": "forAllRegions", "id": "selectedRegion" },
+                          {
+                            "source": "forAllEntities",
+                            "id": "selectedEntity"
+                          },
+                          {
+                            "source": "forAllEntities",
+                            "id": "getSelectedEntity"
+                          }
+                        ],
+                        "function": "selectedRegion"
+                      }
+                    },
+                    "actions": [
+                      {
+                        "vars": [
+                          { "source": "forAllRegions", "id": "selectedRegion" },
+                          {
+                            "source": "forAllEntities",
+                            "id": "selectedEntity"
+                          },
+                          {
+                            "source": "forAllEntities",
+                            "id": "getSelectedEntity"
+                          }
+                        ],
+                        "else": [],
+                        "then": [
+                          {
+                            "vars": [
+                              {
+                                "source": "forAllRegions",
+                                "id": "selectedRegion"
+                              },
+                              {
+                                "source": "forAllEntities",
+                                "id": "selectedEntity"
+                              },
+                              {
+                                "source": "forAllEntities",
+                                "id": "getSelectedEntity"
+                              }
+                            ],
+                            "else": [],
+                            "then": [
+                              {
+                                "vars": [
+                                  {
+                                    "source": "forAllRegions",
+                                    "id": "selectedRegion"
+                                  },
+                                  {
+                                    "source": "forAllEntities",
+                                    "id": "selectedEntity"
+                                  },
+                                  {
+                                    "source": "forAllEntities",
+                                    "id": "getSelectedEntity"
+                                  }
+                                ],
+                                "type": "setEntityAttribute",
+                                "attribute": "health",
+                                "entity": {
+                                  "vars": [
+                                    {
+                                      "source": "forAllRegions",
+                                      "id": "selectedRegion"
+                                    },
+                                    {
+                                      "source": "forAllEntities",
+                                      "id": "selectedEntity"
+                                    },
+                                    {
+                                      "source": "forAllEntities",
+                                      "id": "getSelectedEntity"
+                                    }
+                                  ],
+                                  "function": "getSelectedEntity"
+                                },
+                                "value": {
+                                  "vars": [
+                                    {
+                                      "source": "forAllRegions",
+                                      "id": "selectedRegion"
+                                    },
+                                    {
+                                      "source": "forAllEntities",
+                                      "id": "selectedEntity"
+                                    },
+                                    {
+                                      "source": "forAllEntities",
+                                      "id": "getSelectedEntity"
+                                    }
+                                  ],
+                                  "items": [
+                                    { "operator": "-" },
+                                    {
+                                      "entity": {
+                                        "function": "getSelectedEntity"
+                                      },
+                                      "attribute": "health",
+                                      "function": "getEntityAttribute"
+                                    },
+                                    {
+                                      "variableName": "@regionDamage",
+                                      "function": "getVariable"
+                                    }
+                                  ],
+                                  "function": "calculate"
+                                }
+                              }
+                            ],
+                            "conditions": [
+                              { "operator": "==", "operandType": "unitType" },
+                              {
+                                "vars": [
+                                  {
+                                    "source": "forAllRegions",
+                                    "id": "selectedRegion"
+                                  },
+                                  {
+                                    "source": "forAllEntities",
+                                    "id": "selectedEntity"
+                                  },
+                                  {
+                                    "source": "forAllEntities",
+                                    "id": "getSelectedEntity"
+                                  }
+                                ],
+                                "entity": {
+                                  "vars": [
+                                    {
+                                      "source": "forAllRegions",
+                                      "id": "selectedRegion"
+                                    },
+                                    {
+                                      "source": "forAllEntities",
+                                      "id": "selectedEntity"
+                                    },
+                                    {
+                                      "source": "forAllEntities",
+                                      "id": "getSelectedEntity"
+                                    }
+                                  ],
+                                  "function": "getSelectedEntity"
+                                },
+                                "function": "getUnitTypeOfUnit"
+                              },
+                              "aL90UkW5ZY"
+                            ],
+                            "type": "condition"
+                          }
+                        ],
+                        "conditions": [
+                          { "operator": "==", "operandType": "string" },
+                          {
+                            "vars": [
+                              {
+                                "source": "forAllRegions",
+                                "id": "selectedRegion"
+                              },
+                              {
+                                "source": "forAllEntities",
+                                "id": "selectedEntity"
+                              },
+                              {
+                                "source": "forAllEntities",
+                                "id": "getSelectedEntity"
+                              }
+                            ],
+                            "entity": {
+                              "vars": [
+                                {
+                                  "source": "forAllRegions",
+                                  "id": "selectedRegion"
+                                },
+                                {
+                                  "source": "forAllEntities",
+                                  "id": "selectedEntity"
+                                },
+                                {
+                                  "source": "forAllEntities",
+                                  "id": "getSelectedEntity"
+                                }
+                              ],
+                              "function": "getSelectedEntity"
+                            },
+                            "function": "getEntityType"
+                          },
+                          "unit"
+                        ],
+                        "type": "condition"
+                      }
+                    ]
+                  }
+                ],
+                "else": []
+              }
+            ],
+            "regionGroup": {
+              "vars": [{ "source": "forAllRegions", "id": "selectedRegion" }],
+              "function": "allRegions"
+            },
+            "type": "forAllRegions"
+          }
+        ],
+        "conditions": [
+          { "operandType": "boolean", "operator": "==" },
+          true,
+          true
+        ],
+        "triggers": [{ "type": "secondTick" }]
+      },
+      "death (player,Box,Etc)": {
+        "triggers": [{ "type": "unitAttributeBecomesZero" }],
+        "conditions": [
+          { "operator": "==", "operandType": "boolean" },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "else": [],
+            "then": [
+              {
+                "else": [],
+                "then": [
+                  {
+                    "comment": "give score to the killer (player is the owner of a unit)",
+                    "value": {
+                      "items": [
+                        { "operator": "+" },
+                        {
+                          "entity": {
+                            "entity": { "function": "getLastAttackingUnit" },
+                            "function": "getOwner"
+                          },
+                          "attribute": "points",
+                          "function": "getPlayerAttribute"
+                        },
+                        1
+                      ],
+                      "function": "calculate"
+                    },
+                    "entity": {
+                      "entity": { "function": "getLastAttackingUnit" },
+                      "function": "getOwner"
+                    },
+                    "attribute": "points",
+                    "type": "setPlayerAttribute"
+                  },
+                  {
+                    "type": "dropAllItems",
+                    "entity": { "function": "getTriggeringUnit" }
+                  },
+                  {
+                    "type": "changeUnitType",
+                    "entity": { "function": "getTriggeringUnit" },
+                    "unitType": "4bZ1Vk0Q8S"
+                  },
+                  {
+                    "zoom": 1100,
+                    "player": {
+                      "entity": { "function": "getTriggeringUnit" },
+                      "function": "getOwner"
+                    },
+                    "type": "playerCameraSetZoom"
+                  }
+                ],
+                "conditions": [
+                  { "operator": "==", "operandType": "unitType" },
+                  {
+                    "entity": { "function": "getTriggeringUnit" },
+                    "function": "getUnitTypeOfUnit"
+                  },
+                  "aL90UkW5ZY"
+                ],
+                "type": "condition"
+              },
+              {
+                "else": [],
+                "then": [
+                  {
+                    "type": "makeUnitInvisible",
+                    "entity": { "function": "getTriggeringUnit" }
+                  },
+                  {
+                    "type": "for",
+                    "variableName": "i",
+                    "start": 1,
+                    "stop": {
+                      "function": "getRandomNumberBetween",
+                      "min": 1,
+                      "max": 2
+                    },
+                    "actions": [
+                      {
+                        "value": {
+                          "itemTypeGroup": {
+                            "function": "getVariable",
+                            "variableName": "Loot"
+                          },
+                          "function": "getRandomItemTypeFromItemTypeGroup"
+                        },
+                        "type": "setVariable",
+                        "variableName": "tempItemType",
+                        "comment": ""
+                      },
+                      {
+                        "type": "spawnItem",
+                        "itemType": {
+                          "variableName": "tempItemType",
+                          "function": "getVariable"
+                        },
+                        "position": {
+                          "function": "getEntityPosition",
+                          "entity": { "function": "getTriggeringUnit" }
+                        },
+                        "quantity": {
+                          "itemType": {
+                            "variableName": "tempItemType",
+                            "function": "getVariable"
+                          },
+                          "function": "defaultQuantityOfItemType"
+                        }
+                      },
+                      {
+                        "comment": "",
+                        "type": "applyForceOnEntityAngle",
+                        "force": {
+                          "function": "getRandomNumberBetween",
+                          "min": 5,
+                          "max": 50
+                        },
+                        "entity": { "function": "getLastCreatedItem" },
+                        "angle": {
+                          "function": "calculate",
+                          "items": [
+                            { "operator": "/" },
+                            {
+                              "function": "getRandomNumberBetween",
+                              "min": 0,
+                              "max": 700
+                            },
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "angle": 0,
+                    "force": 0,
+                    "position": {
+                      "entity": { "function": "getTriggeringUnit" },
+                      "function": "getEntityPosition"
+                    },
+                    "unit": { "function": "getTriggeringUnit" },
+                    "projectileType": "explosion",
+                    "type": "createProjectileAtPosition"
+                  },
+                  {
+                    "entity": { "function": "getTriggeringUnit" },
+                    "type": "destroyEntity"
+                  }
+                ],
+                "conditions": [
+                  { "operator": "==", "operandType": "unitType" },
+                  {
+                    "entity": { "function": "getTriggeringUnit" },
+                    "function": "getUnitTypeOfUnit"
+                  },
+                  "2dohRXNYjo"
+                ],
+                "type": "condition",
+                "comment": "when box is destroyed, spawn random # of random items and push them at random direction"
+              }
+            ],
+            "conditions": [
+              { "operator": "==", "operandType": "attributeType" },
+              {
+                "entity": { "function": "getTriggeringAttribute" },
+                "function": "getAttributeTypeOfAttribute"
+              },
+              "health"
+            ],
+            "type": "condition"
+          }
+        ],
+        "name": "unit death",
+        "parent": null,
+        "key": "death (player,Box,Etc)",
+        "order": 3
+      },
+      "resetStormRegions": {
+        "order": 13,
+        "key": "resetStormRegions",
+        "parent": null,
+        "name": "reset storm regions",
+        "actions": [
+          {
+            "type": "transformRegionDimensions",
+            "region": { "function": "getVariable", "variableName": "stormTop" },
+            "x": -2,
+            "y": 0,
+            "width": { "function": "getMapWidth" },
+            "height": 2
+          },
+          {
+            "type": "transformRegionDimensions",
+            "region": {
+              "function": "getVariable",
+              "variableName": "stormLeft"
+            },
+            "x": -5,
+            "y": -2,
+            "width": 2,
+            "height": { "function": "getMapWidth" }
+          },
+          {
+            "height": { "function": "getMapHeight" },
+            "width": 2,
+            "y": -2,
+            "x": { "function": "getMapWidth" },
+            "region": {
+              "variableName": "stormRight",
+              "function": "getVariable"
+            },
+            "type": "transformRegionDimensions"
+          },
+          {
+            "disabled": false,
+            "height": 2,
+            "width": { "function": "getMapWidth" },
+            "y": { "function": "getMapHeight" },
+            "x": -2,
+            "region": {
+              "variableName": "stormBottom",
+              "function": "getVariable"
+            },
+            "type": "transformRegionDimensions"
+          }
+        ],
+        "conditions": [
+          { "operandType": "boolean", "operator": "==" },
+          true,
+          true
+        ],
+        "triggers": []
+      },
+      "expandStorm": {
+        "order": 14,
+        "key": "expandStorm",
+        "parent": null,
+        "name": "expand storm",
+        "actions": [
+          {
+            "vars": [],
+            "comment": "storm squeezing in from the top",
+            "else": [],
+            "then": [
+              {
+                "vars": [],
+                "type": "transformRegionDimensions",
+                "region": {
+                  "vars": [],
+                  "variableName": "stormTop",
+                  "function": "getVariable"
+                },
+                "x": {
+                  "vars": [],
+                  "function": "getXCoordinateOfRegion",
+                  "region": {
+                    "vars": [],
+                    "function": "getVariable",
+                    "variableName": "stormTop"
+                  }
+                },
+                "y": {
+                  "vars": [],
+                  "function": "getYCoordinateOfRegion",
+                  "region": {
+                    "vars": [],
+                    "function": "getVariable",
+                    "variableName": "stormTop"
+                  }
+                },
+                "width": {
+                  "vars": [],
+                  "function": "getWidthOfRegion",
+                  "region": {
+                    "vars": [],
+                    "function": "getVariable",
+                    "variableName": "stormTop"
+                  }
+                },
+                "height": {
+                  "vars": [],
+                  "function": "calculate",
+                  "items": [
+                    "+",
+                    {
+                      "function": "getHeightOfRegion",
+                      "region": {
+                        "variableName": "stormTop",
+                        "function": "getVariable"
+                      }
+                    },
+                    {
+                      "variableName": "@regionShrinkDistance",
+                      "function": "getVariable"
+                    }
+                  ]
+                }
+              }
+            ],
+            "conditions": [
+              { "operandType": "number", "operator": ">=" },
+              {
+                "vars": [],
+                "region": {
+                  "vars": [],
+                  "function": "getVariable",
+                  "variableName": "final region"
+                },
+                "function": "getYCoordinateOfRegion"
+              },
+              {
+                "vars": [],
+                "region": {
+                  "vars": [],
+                  "variableName": "stormTop",
+                  "function": "getVariable"
+                },
+                "function": "getHeightOfRegion"
+              }
+            ],
+            "type": "condition"
+          },
+          {
+            "vars": [],
+            "type": "condition",
+            "conditions": [
+              { "operator": ">=", "operandType": "number" },
+              {
+                "vars": [],
+                "function": "getXCoordinateOfRegion",
+                "region": {
+                  "vars": [],
+                  "function": "getVariable",
+                  "variableName": "final region"
+                }
+              },
+              {
+                "vars": [],
+                "function": "getWidthOfRegion",
+                "region": {
+                  "vars": [],
+                  "function": "getVariable",
+                  "variableName": "stormLeft"
+                }
+              }
+            ],
+            "then": [
+              {
+                "vars": [],
+                "height": {
+                  "vars": [],
+                  "region": {
+                    "vars": [],
+                    "variableName": "stormLeft",
+                    "function": "getVariable"
+                  },
+                  "function": "getHeightOfRegion"
+                },
+                "width": {
+                  "vars": [],
+                  "items": [
+                    "+",
+                    {
+                      "region": {
+                        "variableName": "stormLeft",
+                        "function": "getVariable"
+                      },
+                      "function": "getWidthOfRegion"
+                    },
+                    {
+                      "variableName": "@regionShrinkDistance",
+                      "function": "getVariable"
+                    }
+                  ],
+                  "function": "calculate"
+                },
+                "y": {
+                  "vars": [],
+                  "region": {
+                    "vars": [],
+                    "variableName": "stormLeft",
+                    "function": "getVariable"
+                  },
+                  "function": "getYCoordinateOfRegion"
+                },
+                "x": {
+                  "vars": [],
+                  "function": "getYCoordinateOfRegion",
+                  "region": {
+                    "vars": [],
+                    "function": "getVariable",
+                    "variableName": "stormLeft"
+                  }
+                },
+                "region": {
+                  "vars": [],
+                  "variableName": "stormLeft",
+                  "function": "getVariable"
+                },
+                "type": "transformRegionDimensions"
+              }
+            ],
+            "else": [],
+            "comment": "storm squeezing in from the left"
+          },
+          {
+            "vars": [],
+            "comment": "storm squeezing in from right",
+            "type": "condition",
+            "conditions": [
+              { "operandType": "number", "operator": "<=" },
+              {
+                "vars": [],
+                "function": "calculate",
+                "items": [
+                  "+",
+                  {
+                    "function": "getXCoordinateOfRegion",
+                    "region": {
+                      "variableName": "final region",
+                      "function": "getVariable"
+                    }
+                  },
+                  {
+                    "function": "getWidthOfRegion",
+                    "region": {
+                      "variableName": "final region",
+                      "function": "getVariable"
+                    }
+                  }
+                ]
+              },
+              {
+                "vars": [],
+                "region": {
+                  "vars": [],
+                  "function": "getVariable",
+                  "variableName": "stormRight"
+                },
+                "function": "getXCoordinateOfRegion"
+              }
+            ],
+            "then": [
+              {
+                "vars": [],
+                "type": "transformRegionDimensions",
+                "region": {
+                  "vars": [],
+                  "variableName": "stormRight",
+                  "function": "getVariable"
+                },
+                "x": {
+                  "vars": [],
+                  "function": "calculate",
+                  "items": [
+                    { "operator": "-" },
+                    {
+                      "function": "getXCoordinateOfRegion",
+                      "region": {
+                        "variableName": "stormRight",
+                        "function": "getVariable"
+                      }
+                    },
+                    {
+                      "function": "getVariable",
+                      "variableName": "@regionShrinkDistance"
+                    }
+                  ]
+                },
+                "y": {
+                  "vars": [],
+                  "function": "getYCoordinateOfRegion",
+                  "region": {
+                    "vars": [],
+                    "variableName": "stormRight",
+                    "function": "getVariable"
+                  }
+                },
+                "width": {
+                  "vars": [],
+                  "function": "calculate",
+                  "items": [
+                    { "operator": "+" },
+                    {
+                      "function": "getWidthOfRegion",
+                      "region": {
+                        "variableName": "stormRight",
+                        "function": "getVariable"
+                      }
+                    },
+                    {
+                      "function": "getVariable",
+                      "variableName": "@regionShrinkDistance"
+                    }
+                  ]
+                },
+                "height": {
+                  "vars": [],
+                  "function": "getHeightOfRegion",
+                  "region": {
+                    "vars": [],
+                    "variableName": "stormRight",
+                    "function": "getVariable"
+                  }
+                }
+              }
+            ],
+            "else": []
+          },
+          {
+            "vars": [],
+            "type": "condition",
+            "conditions": [
+              { "operator": "<=", "operandType": "number" },
+              {
+                "vars": [],
+                "items": [
+                  "+",
+                  {
+                    "region": {
+                      "function": "getVariable",
+                      "variableName": "final region"
+                    },
+                    "function": "getYCoordinateOfRegion"
+                  },
+                  {
+                    "region": {
+                      "function": "getVariable",
+                      "variableName": "final region"
+                    },
+                    "function": "getHeightOfRegion"
+                  }
+                ],
+                "function": "calculate"
+              },
+              {
+                "vars": [],
+                "region": {
+                  "vars": [],
+                  "variableName": "stormBottom",
+                  "function": "getVariable"
+                },
+                "function": "getYCoordinateOfRegion"
+              }
+            ],
+            "then": [
+              {
+                "vars": [],
+                "height": {
+                  "vars": [],
+                  "items": [
+                    "+",
+                    {
+                      "region": {
+                        "function": "getVariable",
+                        "variableName": "stormBottom"
+                      },
+                      "function": "getHeightOfRegion"
+                    },
+                    {
+                      "variableName": "@regionShrinkDistance",
+                      "function": "getVariable"
+                    }
+                  ],
+                  "function": "calculate"
+                },
+                "width": {
+                  "vars": [],
+                  "region": {
+                    "vars": [],
+                    "function": "getVariable",
+                    "variableName": "stormBottom"
+                  },
+                  "function": "getWidthOfRegion"
+                },
+                "y": {
+                  "vars": [],
+                  "items": [
+                    { "operator": "-" },
+                    {
+                      "region": {
+                        "function": "getVariable",
+                        "variableName": "stormBottom"
+                      },
+                      "function": "getYCoordinateOfRegion"
+                    },
+                    {
+                      "variableName": "@regionShrinkDistance",
+                      "function": "getVariable"
+                    }
+                  ],
+                  "function": "calculate"
+                },
+                "x": {
+                  "vars": [],
+                  "region": {
+                    "vars": [],
+                    "variableName": "stormBottom",
+                    "function": "getVariable"
+                  },
+                  "function": "getXCoordinateOfRegion"
+                },
+                "region": {
+                  "vars": [],
+                  "function": "getVariable",
+                  "variableName": "stormBottom"
+                },
+                "type": "transformRegionDimensions"
+              }
+            ],
+            "else": [],
+            "comment": "storm squeezing in from bottom"
+          }
+        ],
+        "conditions": [
+          { "operandType": "boolean", "operator": "==" },
+          true,
+          true
+        ],
+        "triggers": []
+      },
+      "stormExpanding": {
+        "order": 10,
+        "key": "stormExpanding",
+        "parent": null,
+        "name": "storm expanding",
+        "actions": [
+          {
+            "vars": [],
+            "comment": "",
+            "value": {
+              "vars": [],
+              "function": "getVariable",
+              "variableName": "@stateShrinkingRegions"
+            },
+            "variableName": "state",
+            "type": "setVariable"
+          },
+          {
+            "vars": [],
+            "type": "setVariable",
+            "value": {
+              "vars": [],
+              "variableName": "@timeStormShrinkDuration",
+              "function": "getVariable"
+            },
+            "variableName": "timeLeft",
+            "comment": ""
+          },
+          {
+            "vars": [],
+            "comment": "",
+            "variableName": "topMessagePrefix",
+            "value": "Storm is expanding for ",
+            "type": "setVariable"
+          }
+        ],
+        "conditions": [
+          { "operandType": "boolean", "operator": "==" },
+          true,
+          true
+        ],
+        "triggers": []
+      },
+      "prepareForBattle": {
+        "triggers": [],
+        "conditions": [
+          { "operator": "==", "operandType": "boolean" },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "vars": [],
+            "type": "setVariable",
+            "variableName": "state",
+            "value": {
+              "vars": [],
+              "function": "getVariable",
+              "variableName": "@statePrepareForBattle"
+            }
+          },
+          {
+            "vars": [],
+            "type": "setVariable",
+            "variableName": "timeLeft",
+            "value": {
+              "vars": [],
+              "variableName": "@timePrepareForBattle",
+              "function": "getVariable"
+            },
+            "comment": ""
+          },
+          {
+            "vars": [],
+            "type": "setVariable",
+            "value": "Battle begins in ",
+            "variableName": "topMessagePrefix",
+            "comment": ""
+          }
+        ],
+        "name": "prepare for battle",
+        "parent": null,
+        "key": "prepareForBattle",
+        "order": 7
+      },
+      "gameStarts": {
+        "order": -1,
+        "key": "gameStarts",
+        "parent": null,
+        "name": "initialize",
+        "actions": [
+          {
+            "type": "assignPlayerType",
+            "entity": {
+              "function": "getVariable",
+              "variableName": "Computer (neutral)"
+            },
+            "playerType": "neutral (ai)"
+          },
+          { "scriptName": "resetGame", "type": "runScript" }
+        ],
+        "conditions": [
+          { "operandType": "boolean", "operator": "==" },
+          true,
+          true
+        ],
+        "triggers": [{ "type": "gameStart" }]
+      },
+      "gameOver": {
+        "order": 11,
+        "parent": null,
+        "key": "gameOver",
+        "actions": [
+          {
+            "vars": [],
+            "value": {
+              "vars": [],
+              "function": "getVariable",
+              "variableName": "@timeGameOver"
+            },
+            "variableName": "timeLeft",
+            "type": "setVariable"
+          },
+          {
+            "vars": [],
+            "value": {
+              "vars": [],
+              "function": "getVariable",
+              "variableName": "@stateGameOver"
+            },
+            "variableName": "state",
+            "type": "setVariable"
+          },
+          {
+            "vars": [],
+            "comment": "",
+            "variableName": "topMessagePrefix",
+            "value": "Restarting in ",
+            "type": "setVariable"
+          },
+          {
+            "vars": [],
+            "target": "center-lg",
+            "type": "showUiTextForEveryone"
+          },
+          {
+            "vars": [],
+            "type": "updateUiTextForEveryone",
+            "target": "center-lg",
+            "value": {
+              "vars": [],
+              "textB": {
+                "vars": [],
+                "textB": " wins!",
+                "textA": {
+                  "vars": [],
+                  "entity": {
+                    "vars": [],
+                    "entity": {
+                      "vars": [],
+                      "variableName": "finalSurvivor",
+                      "function": "getVariable"
+                    },
+                    "function": "getOwner"
+                  },
+                  "function": "getPlayerName"
+                },
+                "function": "concat"
+              },
+              "textA": "<span class='text-warning'>",
+              "function": "concat"
+            }
+          }
+        ],
+        "conditions": [
+          { "operandType": "string", "operator": "!=" },
+          { "variableName": "state", "function": "getVariable" },
+          "gameover"
+        ],
+        "triggers": [],
+        "name": "game over"
+      },
+      "battleStart": {
+        "name": "battle start",
+        "triggers": [],
+        "conditions": [],
+        "actions": [
+          { "scriptName": "startStormApproachCountdown", "type": "runScript" },
+          {
+            "type": "for",
+            "variableName": "i",
+            "start": 0,
+            "stop": 30,
+            "actions": [
+              {
+                "angle": 0,
+                "position": {
+                  "region": { "function": "getEntireMapRegion" },
+                  "function": "getRandomPositionInRegion"
+                },
+                "entity": {
+                  "variableName": "Computer (neutral)",
+                  "function": "getVariable"
+                },
+                "unitType": "2dohRXNYjo",
+                "type": "createUnitAtPosition"
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "type": "condition",
+                "conditions": [
+                  { "operator": "==", "operandType": "unitType" },
+                  {
+                    "function": "getUnitTypeOfUnit",
+                    "entity": { "function": "selectedUnit" }
+                  },
+                  "aL90UkW5ZY"
+                ],
+                "then": [
+                  {
+                    "type": "moveEntity",
+                    "entity": { "function": "selectedUnit" },
+                    "position": {
+                      "region": {
+                        "variableName": "spawn",
+                        "function": "getVariable"
+                      },
+                      "function": "getRandomPositionInRegion"
+                    }
+                  },
+                  {
+                    "value": 100,
+                    "entity": { "function": "selectedUnit" },
+                    "attribute": "health",
+                    "type": "setEntityAttribute"
+                  }
+                ],
+                "else": [
+                  {
+                    "type": "condition",
+                    "conditions": [
+                      { "operator": "==", "operandType": "unitType" },
+                      {
+                        "function": "getUnitTypeOfUnit",
+                        "entity": { "function": "selectedUnit" }
+                      },
+                      "4bZ1Vk0Q8S"
+                    ],
+                    "then": [
+                      {
+                        "unitType": "aL90UkW5ZY",
+                        "entity": { "function": "selectedUnit" },
+                        "type": "changeUnitType"
+                      },
+                      {
+                        "type": "moveEntity",
+                        "entity": { "function": "selectedUnit" },
+                        "position": {
+                          "region": { "function": "getEntireMapRegion" },
+                          "function": "getRandomPositionInRegion"
+                        }
+                      },
+                      {
+                        "value": 100,
+                        "entity": { "function": "selectedUnit" },
+                        "attribute": "health",
+                        "type": "setEntityAttribute"
+                      },
+                      {
+                        "type": "playerCameraSetZoom",
+                        "player": {
+                          "function": "getOwner",
+                          "entity": { "function": "selectedUnit" }
+                        },
+                        "zoom": 700
+                      }
+                    ],
+                    "else": []
+                  }
+                ]
+              }
+            ],
+            "unitGroup": { "function": "allUnits" },
+            "type": "forAllUnits"
+          }
+        ],
+        "key": "battleStart",
+        "parent": null,
+        "order": 8
+      },
+      "countUnits": {
+        "order": 12,
+        "parent": null,
+        "key": "countUnits",
+        "actions": [
+          {
+            "comment": "",
+            "value": {
+              "unitType": "aL90UkW5ZY",
+              "function": "getNumberOfUnitsOfUnitType"
+            },
+            "variableName": "survivorCount",
+            "type": "setVariable"
+          },
+          {
+            "actions": [
+              {
+                "else": [],
+                "then": [
+                  {
+                    "type": "setVariable",
+                    "value": { "function": "selectedUnit" },
+                    "variableName": "finalSurvivor"
+                  }
+                ],
+                "conditions": [
+                  { "operandType": "unitType", "operator": "==" },
+                  {
+                    "entity": { "function": "selectedUnit" },
+                    "function": "getUnitTypeOfUnit"
+                  },
+                  "aL90UkW5ZY"
+                ],
+                "type": "condition"
+              }
+            ],
+            "type": "forAllUnits",
+            "unitGroup": { "function": "allUnits" }
+          },
+          {
+            "type": "updateUiTextForEveryone",
+            "target": "scoreboard",
+            "value": {
+              "function": "concat",
+              "textA": {
+                "function": "getVariable",
+                "variableName": "survivorCount"
+              },
+              "textB": " Survivors"
+            }
+          }
+        ],
+        "conditions": [],
+        "triggers": [],
+        "name": "check who is alive"
+      },
+      "changeState (everySecond)": {
+        "name": "every second",
+        "triggers": [{ "type": "secondTick" }],
+        "conditions": [],
+        "actions": [
+          { "type": "runScript", "scriptName": "countUnits" },
+          {
+            "else": [],
+            "then": [
+              {
+                "type": "condition",
+                "conditions": [
+                  { "operator": "<=", "operandType": "number" },
+                  {
+                    "function": "getVariable",
+                    "variableName": "survivorCount"
+                  },
+                  1
+                ],
+                "then": [{ "scriptName": "gameOver", "type": "runScript" }],
+                "else": []
+              }
+            ],
+            "conditions": [
+              { "operator": "OR", "operandType": "or" },
+              [
+                { "operator": "==", "operandType": "number" },
+                { "variableName": "state", "function": "getVariable" },
+                {
+                  "variableName": "@stateShrinkingRegions",
+                  "function": "getVariable"
+                }
+              ],
+              [
+                { "operator": "==", "operandType": "number" },
+                { "variableName": "state", "function": "getVariable" },
+                {
+                  "variableName": "@stateCountdownRegionShrink",
+                  "function": "getVariable"
+                }
+              ]
+            ],
+            "type": "condition",
+            "comment": "check for winner"
+          },
+          {
+            "comment": "pause countdown if we're waiting for players",
+            "type": "condition",
+            "conditions": [
+              { "operator": "==", "operandType": "number" },
+              { "function": "getVariable", "variableName": "state" },
+              {
+                "function": "getVariable",
+                "variableName": "@stateWaitingForPlayers"
+              }
+            ],
+            "then": [
+              {
+                "then": [
+                  { "scriptName": "prepareForBattle", "type": "runScript" }
+                ],
+                "else": [],
+                "conditions": [
+                  { "operator": ">=", "operandType": "number" },
+                  {
+                    "function": "getVariable",
+                    "variableName": "survivorCount"
+                  },
+                  {
+                    "function": "getVariable",
+                    "variableName": "@minimumPlayersRequired"
+                  }
+                ],
+                "type": "condition"
+              },
+              {
+                "comment": "",
+                "variableName": "topMessage",
+                "value": "Waiting for players..",
+                "type": "setVariable"
+              },
+              {
+                "type": "updateUiTextForEveryone",
+                "target": "top",
+                "value": {
+                  "function": "getVariable",
+                  "variableName": "topMessage"
+                }
+              }
+            ],
+            "else": [
+              {
+                "type": "setVariable",
+                "variableName": "timeLeft",
+                "value": {
+                  "function": "calculate",
+                  "items": [
+                    "-",
+                    { "function": "getVariable", "variableName": "timeLeft" },
+                    1
+                  ]
+                }
+              },
+              {
+                "type": "condition",
+                "conditions": [
+                  { "operator": "<=", "operandType": "number" },
+                  { "function": "getVariable", "variableName": "timeLeft" },
+                  0
+                ],
+                "then": [
+                  {
+                    "type": "condition",
+                    "conditions": [
+                      { "operator": "==", "operandType": "number" },
+                      { "variableName": "state", "function": "getVariable" },
+                      {
+                        "variableName": "@statePrepareForBattle",
+                        "function": "getVariable"
+                      }
+                    ],
+                    "then": [
+                      { "type": "runScript", "scriptName": "battleStart" }
+                    ],
+                    "else": [
+                      {
+                        "type": "condition",
+                        "conditions": [
+                          { "operator": "==", "operandType": "number" },
+                          {
+                            "function": "getVariable",
+                            "variableName": "state"
+                          },
+                          {
+                            "function": "getVariable",
+                            "variableName": "@stateGameOver"
+                          }
+                        ],
+                        "then": [
+                          { "type": "runScript", "scriptName": "resetGame" }
+                        ],
+                        "else": [
+                          {
+                            "type": "condition",
+                            "conditions": [
+                              { "operator": "==", "operandType": "number" },
+                              {
+                                "variableName": "state",
+                                "function": "getVariable"
+                              },
+                              {
+                                "variableName": "@stateCountdownRegionShrink",
+                                "function": "getVariable"
+                              }
+                            ],
+                            "then": [
+                              {
+                                "scriptName": "stormExpanding",
+                                "type": "runScript"
+                              }
+                            ],
+                            "else": [
+                              {
+                                "else": [],
+                                "then": [
+                                  {
+                                    "type": "runScript",
+                                    "scriptName": "startStormApproachCountdown"
+                                  }
+                                ],
+                                "conditions": [
+                                  { "operandType": "number", "operator": "==" },
+                                  {
+                                    "function": "getVariable",
+                                    "variableName": "state"
+                                  },
+                                  {
+                                    "function": "getVariable",
+                                    "variableName": "@stateShrinkingRegions"
+                                  }
+                                ],
+                                "type": "condition"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "else": [
+                  {
+                    "else": [],
+                    "then": [
+                      { "type": "runScript", "scriptName": "expandStorm" }
+                    ],
+                    "conditions": [
+                      { "operandType": "number", "operator": "==" },
+                      { "function": "getVariable", "variableName": "state" },
+                      {
+                        "function": "getVariable",
+                        "variableName": "@stateShrinkingRegions"
+                      }
+                    ],
+                    "type": "condition"
+                  }
+                ]
+              },
+              {
+                "type": "updateUiTextForEveryone",
+                "target": "top",
+                "value": {
+                  "textB": {
+                    "variableName": "timeLeft",
+                    "function": "getVariable"
+                  },
+                  "textA": {
+                    "variableName": "topMessagePrefix",
+                    "function": "getVariable"
+                  },
+                  "function": "concat"
+                }
+              }
+            ]
+          }
+        ],
+        "key": "changeState (everySecond)",
+        "parent": null,
+        "order": 4
+      },
+      "resetGame": {
+        "name": "reset game",
+        "triggers": [],
+        "conditions": [],
+        "actions": [
+          {
+            "comment": "",
+            "value": {
+              "function": "getVariable",
+              "variableName": "@stateWaitingForPlayers"
+            },
+            "variableName": "state",
+            "type": "setVariable"
+          },
+          { "type": "hideUiTextForEveryone", "target": "center-lg" },
+          {
+            "type": "forAllUnits",
+            "actions": [
+              {
+                "type": "destroyEntity",
+                "entity": { "function": "selectedUnit" }
+              }
+            ],
+            "unitGroup": { "function": "allUnits" }
+          },
+          {
+            "type": "forAllItems",
+            "actions": [
+              {
+                "entity": { "function": "selectedItem" },
+                "type": "destroyEntity"
+              }
+            ],
+            "itemGroup": { "function": "allItemsDroppedOnGround" }
+          },
+          {
+            "type": "forAllPlayers",
+            "playerGroup": { "function": "humanPlayers" },
+            "actions": [
+              {
+                "type": "createUnitAtPosition",
+                "unitType": "aL90UkW5ZY",
+                "position": {
+                  "region": { "function": "getEntireMapRegion" },
+                  "function": "getRandomPositionInRegion"
+                },
+                "entity": { "function": "selectedPlayer" },
+                "angle": 0
+              },
+              {
+                "type": "setUnitNameLabel",
+                "unit": { "function": "getLastCreatedUnit" },
+                "name": {
+                  "entity": {
+                    "entity": { "function": "getLastCreatedUnit" },
+                    "function": "getOwner"
+                  },
+                  "function": "getPlayerName"
+                }
+              },
+              {
+                "unit": { "function": "getLastCreatedUnit" },
+                "player": { "function": "selectedPlayer" },
+                "type": "playerCameraTrackUnit"
+              },
+              {
+                "type": "playerCameraSetZoom",
+                "player": { "function": "selectedPlayer" },
+                "zoom": 700
+              }
+            ]
+          },
+          { "scriptName": "resetStormRegions", "type": "runScript" }
+        ],
+        "key": "resetGame",
+        "parent": null,
+        "order": 6
+      },
+      "playerJoin": {
+        "name": "player joins",
+        "triggers": [{ "type": "playerJoinsGame" }],
+        "conditions": [],
+        "actions": [
+          {
+            "else": [
+              {
+                "angle": 0,
+                "entity": { "function": "getTriggeringPlayer" },
+                "position": {
+                  "function": "getRandomPositionInRegion",
+                  "region": { "function": "getEntireMapRegion" }
+                },
+                "unitType": "4bZ1Vk0Q8S",
+                "type": "createUnitAtPosition"
+              },
+              {
+                "type": "playerCameraSetZoom",
+                "player": { "function": "getTriggeringPlayer" },
+                "zoom": 1200
+              }
+            ],
+            "then": [
+              {
+                "angle": 0,
+                "entity": { "function": "getTriggeringPlayer" },
+                "position": {
+                  "function": "getRandomPositionInRegion",
+                  "region": { "function": "getEntireMapRegion" }
+                },
+                "unitType": "aL90UkW5ZY",
+                "type": "createUnitAtPosition"
+              }
+            ],
+            "conditions": [
+              { "operandType": "number", "operator": "<=" },
+              { "variableName": "state", "function": "getVariable" },
+              {
+                "variableName": "@statePrepareForBattle",
+                "function": "getVariable"
+              }
+            ],
+            "type": "condition",
+            "comment": "if player joins before game starts, then spawn a survivor otherwise make the player a spectator"
+          },
+          {
+            "type": "assignPlayerType",
+            "playerType": "human",
+            "entity": { "function": "getTriggeringPlayer" }
+          },
+          {
+            "unit": { "function": "getLastCreatedUnit" },
+            "player": { "function": "getTriggeringPlayer" },
+            "type": "playerCameraTrackUnit"
+          },
+          {
+            "comment": "show \"time remaining\" message to the newly joined player",
+            "entity": { "function": "getTriggeringPlayer" },
+            "type": "showUiTextForPlayer",
+            "target": "top"
+          },
+          {
+            "entity": { "function": "getTriggeringPlayer" },
+            "value": {
+              "variableName": "topMessage",
+              "function": "getVariable"
+            },
+            "target": "top",
+            "type": "updateUiTextForPlayer"
+          }
+        ],
+        "key": "playerJoin",
+        "parent": null,
+        "order": 1
+      },
+      "playerLeaves": {
+        "triggers": [{ "type": "playerLeavesGame" }],
+        "conditions": [
+          { "operator": "==", "operandType": "boolean" },
+          true,
+          true
+        ],
+        "actions": [
+          {
+            "type": "forAllUnits",
+            "unitGroup": {
+              "function": "allUnits",
+              "vars": [
+                { "source": "trigger", "id": "getTriggeringPlayer" },
+                { "source": "forAllUnits", "id": "selectedUnit" },
+                { "source": "forAllUnits", "id": "getSelectedUnit" }
+              ]
+            },
+            "actions": [
+              {
+                "else": [],
+                "then": [
+                  {
+                    "entity": {
+                      "function": "selectedUnit",
+                      "vars": [
+                        { "source": "trigger", "id": "getTriggeringPlayer" },
+                        { "source": "forAllUnits", "id": "selectedUnit" },
+                        { "source": "forAllUnits", "id": "getSelectedUnit" }
+                      ]
+                    },
+                    "type": "destroyEntity",
+                    "vars": [
+                      { "source": "trigger", "id": "getTriggeringPlayer" },
+                      { "source": "forAllUnits", "id": "selectedUnit" },
+                      { "source": "forAllUnits", "id": "getSelectedUnit" }
+                    ]
+                  }
+                ],
+                "conditions": [
+                  { "operandType": "player", "operator": "==" },
+                  {
+                    "entity": {
+                      "function": "selectedUnit",
+                      "vars": [
+                        { "source": "trigger", "id": "getTriggeringPlayer" },
+                        { "source": "forAllUnits", "id": "selectedUnit" },
+                        { "source": "forAllUnits", "id": "getSelectedUnit" }
+                      ]
+                    },
+                    "function": "getOwner",
+                    "vars": [
+                      { "source": "trigger", "id": "getTriggeringPlayer" },
+                      { "source": "forAllUnits", "id": "selectedUnit" },
+                      { "source": "forAllUnits", "id": "getSelectedUnit" }
+                    ]
+                  },
+                  {
+                    "function": "getTriggeringPlayer",
+                    "vars": [
+                      { "source": "trigger", "id": "getTriggeringPlayer" },
+                      { "source": "forAllUnits", "id": "selectedUnit" },
+                      { "source": "forAllUnits", "id": "getSelectedUnit" }
+                    ]
+                  }
+                ],
+                "type": "condition",
+                "vars": [
+                  { "source": "trigger", "id": "getTriggeringPlayer" },
+                  { "source": "forAllUnits", "id": "selectedUnit" },
+                  { "source": "forAllUnits", "id": "getSelectedUnit" }
+                ]
+              }
+            ],
+            "vars": [
+              { "source": "trigger", "id": "getTriggeringPlayer" },
+              { "source": "forAllUnits", "id": "selectedUnit" },
+              { "source": "forAllUnits", "id": "getSelectedUnit" }
+            ]
+          }
+        ],
+        "name": "player leaves",
+        "parent": null,
+        "key": "playerLeaves",
+        "order": 2
+      },
+      "startStormApproachCountdown": {
+        "order": 9,
+        "key": "startStormApproachCountdown",
+        "parent": null,
+        "name": "start storm approach countdown",
+        "actions": [
+          {
+            "vars": [],
+            "type": "setVariable",
+            "variableName": "state",
+            "value": {
+              "vars": [],
+              "function": "getVariable",
+              "variableName": "@stateCountdownRegionShrink"
+            },
+            "comment": ""
+          },
+          {
+            "vars": [],
+            "comment": "",
+            "variableName": "timeLeft",
+            "value": {
+              "vars": [],
+              "function": "getVariable",
+              "variableName": "@timeStormApproachingCountdown"
+            },
+            "type": "setVariable"
+          },
+          {
+            "vars": [],
+            "comment": "",
+            "variableName": "topMessagePrefix",
+            "value": "Storm approaching in ",
+            "type": "setVariable"
+          }
+        ],
+        "conditions": [
+          { "operandType": "boolean", "operator": "==" },
+          true,
+          true
+        ],
+        "triggers": []
+      }
+    },
+    "unitTypes": {
+      "aL90UkW5ZY": {
+        "defaultItems": [
+          { "name": "Uzi", "value": "Uzi", "key": "KgRjkNTEFp" },
+          {
+            "key": "hFTNBiXvkp",
+            "value": "Baseball Bat",
+            "name": "Baseball Bat"
+          }
+        ],
+        "effects": {
+          "destroy": {
+            "animation": "",
+            "sound": {},
+            "projectileType": "QaE7dAgIMj"
+          },
+          "create": { "animation": "", "sound": {}, "projectileType": "" },
+          "move": { "animation": "", "sound": {}, "projectileType": "" },
+          "attacked": {
+            "tween": "recoil",
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          },
+          "idle": {
+            "tween": "",
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          }
+        },
+        "variables": {},
+        "bodies": {
+          "default": {
+            "itemAnchor": { "upperAngle": 0, "lowerAngle": 0, "y": 0, "x": 0 },
+            "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+            "jointType": "weldJoint",
+            "fixtures": [
+              {
+                "isSensor": false,
+                "shape": { "type": "rectangle" },
+                "restitution": 0,
+                "friction": 0,
+                "density": 1
+              }
+            ],
+            "spriteScale": 1,
+            "rotationSpeed": 1,
+            "linearDamping": 8,
+            "angularDamping": 1,
+            "collidesWith": {
+              "debris": true,
+              "walls": true,
+              "projectiles": true,
+              "items": true,
+              "units": true
+            },
+            "allowSleep": true,
+            "bulletDestroyedOnCollisionWithWall/unit": false,
+            "fixedRotation": false,
+            "z-index": { "depth": 3, "layer": 3 },
+            "height": 46,
+            "width": 54,
+            "type": "dynamic",
+            "name": "default",
+            "bullet": false
+          }
+        },
+        "cellSheet": {
+          "columnCount": 1,
+          "rowCount": 1,
+          "url": "https://cache.modd.io/asset/spriteImage/1590032538493_1588203665060_Woman_Human_Person.png"
+        },
+        "inventorySize": 5,
+        "name": "Fighter",
+        "handle": "human",
+        "canBuyItem": true,
+        "skin": "https://s3-us-west-1.amazonaws.com/modd/halloween-0.18/spritesheet/man.png",
+        "price": {},
+        "baseSpeed": 53,
+        "abilities": {
+          "button1": { "keyDown": "use", "keyUp": "stopUse" },
+          "e": { "keyDown": "pickUp", "keyUp": "" },
+          "g": { "keyDown": "drop", "keyUp": "" },
+          "d": { "keyDown": "moveRight", "keyUp": "stopMovingRight" },
+          "s": { "keyDown": "moveDown", "keyUp": "stopMovingDown" },
+          "a": { "keyDown": "moveLeft", "keyUp": "stopMovingLeft" },
+          "w": { "keyDown": "moveUp", "keyUp": "stopMovingUp" },
+          "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
+          "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } }
+        },
+        "attributes": {
+          "health": {
+            "name": "health ",
+            "min": 0,
+            "max": 100,
+            "dataType": "",
+            "value": 100,
+            "regenerateSpeed": ".5",
+            "isVisible": [
+              "centerBar",
+              "unitBarFriendly",
+              "unitBarNeutral",
+              "unitBarHostile"
+            ],
+            "displayValue": true,
+            "showAsHUD": true,
+            "color": "#ffff0f",
+            "decimalPlaces": 0
+          },
+          "speed": {
+            "displayValue": true,
+            "color": "#00fff0",
+            "showAsHUD": true,
+            "isVisible": [],
+            "regenerateSpeed": 0,
+            "value": 10,
+            "max": 200,
+            "min": 0,
+            "name": "speed",
+            "dataType": "",
+            "decimalPlaces": 0
+          }
+        },
+        "spawnPosition": { "x": 1500, "y": 2200 },
+        "body": {
+          "name": "Human-body",
+          "z-index": { "depth": 3, "layer": 3 },
+          "collidesWith": {
+            "debris": true,
+            "item": true,
+            "unit": true,
+            "walls": true,
+            "projectiles": true,
+            "items": true,
+            "units": true
+          },
+          "width": 40,
+          "height": 40,
+          "type": "dynamic",
+          "rotationSpeed": 2,
+          "linearDamping": 5,
+          "angularDamping": 1,
+          "allowSleep": true,
+          "bulletDestroyedOnCollisionWithWall/unit": false,
+          "fixedRotation": false,
+          "isFlying": false,
+          "fixtures": [
+            {
+              "density": 3,
+              "friction": 0.01,
+              "restitution": 0.01,
+              "shape": { "type": "rectangle" }
+            }
+          ],
+          "spriteScale": 1
+        },
+        "particles": {},
+        "sound": {
+          "fEhDyJ8knx": {
+            "file": "https://modd.s3.amazonaws.com/asset/sound/1517556903046_man_scream1.mp3",
+            "name": "Scream"
+          },
+          "KK9JlU1UQy": {
+            "file": "https://modd.s3.amazonaws.com/asset/sound/1517554516253_man_cough.mp3",
+            "name": "Cough"
+          }
+        },
+        "states": {
+          "default": {
+            "body": "default",
+            "animation": "default",
+            "particles": {},
+            "sound": {},
+            "name": "default"
+          }
+        },
+        "isPurchasable": false,
+        "canBePurchasedBy": [],
+        "animations": {
+          "default": {
+            "framesPerSecond": 0,
+            "loopCount": 0,
+            "frames": [1],
+            "name": "default"
+          }
+        },
+        "inventoryImage": "",
+        "controls": {
+          "movementMethod": "velocity",
+          "movementControlScheme": "wasd",
+          "movementType": "wasd",
+          "mouseBehaviour": {
+            "rotateToFaceMouseCursor": true,
+            "flipSpriteHorizontallyWRTMouse": false
+          },
+          "abilities": {
+            "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
+            "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } },
+            "button1": {
+              "keyUp": {
+                "scriptName": "DOrbWp0AGz",
+                "cost": {},
+                "isEntityScript": true
+              },
+              "keyDown": {
+                "scriptName": "YFeMQ20gBX",
+                "cost": {},
+                "isEntityScript": true
+              }
+            },
+            "e": {
+              "keyUp": { "scriptName": "", "cost": {} },
+              "keyDown": {
+                "scriptName": "w2VrnZHyom",
+                "cost": {},
+                "isEntityScript": true
+              }
+            },
+            "g": {
+              "keyUp": { "scriptName": "", "cost": {} },
+              "keyDown": {
+                "scriptName": "yP67J1MMRN",
+                "cost": {},
+                "isEntityScript": true
+              }
+            }
+          },
+          "permittedInventorySlots": [],
+          "absoluteRotation": false
+        },
+        "confinedWithinMapBoundaries": true,
+        "defaultItem": [
+          { "key": "gun", "value": "Gun", "name": "Gun" },
+          { "key": "crowbar", "value": "Crowbar", "name": "Crowbar" }
+        ],
+        "ai": {
+          "pathFindingMethod": "simple",
+          "idleBehaviour": "stay",
+          "sensorResponse": "none",
+          "attackResponse": "none",
+          "maxTravelDistance": "",
+          "sensorRadius": 150,
+          "maxAttackRange": 400
+        },
+        "equipmentAllowed": 5,
+        "backpackSize": 12,
+        "scripts": {
+          "DOrbWp0AGz": {
+            "triggers": [],
+            "conditions": [
+              { "operator": "==", "operandType": "boolean" },
+              true,
+              true
+            ],
+            "actions": [
+              {
+                "type": "stopUsingItem",
+                "entity": {
+                  "function": "getItemCurrentlyHeldByUnit",
+                  "entity": { "function": "thisEntity", "vars": [] },
+                  "vars": []
+                },
+                "hasFixedCSP": null,
+                "runOnClient": true,
+                "vars": []
+              }
+            ],
+            "name": "stop using item",
+            "parent": "YnK58YN6ZD",
+            "key": "DOrbWp0AGz",
+            "order": 1
+          },
+          "YFeMQ20gBX": {
+            "triggers": [],
+            "conditions": [
+              { "operator": "==", "operandType": "boolean" },
+              true,
+              true
+            ],
+            "actions": [
+              {
+                "type": "startUsingItem",
+                "entity": {
+                  "function": "getItemCurrentlyHeldByUnit",
+                  "entity": { "function": "thisEntity", "vars": [] },
+                  "vars": []
+                },
+                "hasFixedCSP": null,
+                "runOnClient": true,
+                "vars": []
+              }
+            ],
+            "name": "start using item",
+            "parent": "YnK58YN6ZD",
+            "key": "YFeMQ20gBX",
+            "order": 0
+          },
+          "YnK58YN6ZD": {
+            "key": "YnK58YN6ZD",
+            "folderName": "abilities",
+            "parent": null,
+            "order": 2
+          },
+          "w2VrnZHyom": {
+            "triggers": [],
+            "conditions": [
+              { "operator": "==", "operandType": "boolean" },
+              true,
+              true
+            ],
+            "actions": [
+              {
+                "type": "forAllEntities",
+                "entityGroup": {
+                  "function": "entitiesInRegion",
+                  "region": {
+                    "function": "entityBounds",
+                    "entity": {
+                      "function": "thisEntity",
+                      "vars": [
+                        { "id": "selectedEntity", "source": "forAllEntities" },
+                        {
+                          "id": "getSelectedEntity",
+                          "source": "forAllEntities"
+                        }
+                      ]
+                    },
+                    "vars": [
+                      { "id": "selectedEntity", "source": "forAllEntities" },
+                      { "id": "getSelectedEntity", "source": "forAllEntities" }
+                    ]
+                  },
+                  "vars": [
+                    { "id": "selectedEntity", "source": "forAllEntities" },
+                    { "id": "getSelectedEntity", "source": "forAllEntities" }
+                  ]
+                },
+                "actions": [
+                  {
+                    "type": "condition",
+                    "conditions": [
+                      { "operandType": "string", "operator": "==" },
+                      {
+                        "function": "getEntityType",
+                        "entity": {
+                          "function": "getSelectedEntity",
+                          "vars": [
+                            {
+                              "id": "selectedEntity",
+                              "source": "forAllEntities"
+                            },
+                            {
+                              "id": "getSelectedEntity",
+                              "source": "forAllEntities"
+                            }
+                          ]
+                        },
+                        "vars": [
+                          {
+                            "id": "selectedEntity",
+                            "source": "forAllEntities"
+                          },
+                          {
+                            "id": "getSelectedEntity",
+                            "source": "forAllEntities"
+                          }
+                        ]
+                      },
+                      "item"
+                    ],
+                    "then": [
+                      {
+                        "type": "makeUnitPickupItem",
+                        "unit": {
+                          "function": "thisEntity",
+                          "vars": [
+                            {
+                              "id": "selectedEntity",
+                              "source": "forAllEntities"
+                            },
+                            {
+                              "id": "getSelectedEntity",
+                              "source": "forAllEntities"
+                            }
+                          ]
+                        },
+                        "item": {
+                          "function": "getSelectedEntity",
+                          "vars": [
+                            {
+                              "id": "selectedEntity",
+                              "source": "forAllEntities"
+                            },
+                            {
+                              "id": "getSelectedEntity",
+                              "source": "forAllEntities"
+                            }
+                          ]
+                        },
+                        "vars": [
+                          {
+                            "id": "selectedEntity",
+                            "source": "forAllEntities"
+                          },
+                          {
+                            "id": "getSelectedEntity",
+                            "source": "forAllEntities"
+                          }
+                        ]
+                      }
+                    ],
+                    "else": [],
+                    "vars": [
+                      { "id": "selectedEntity", "source": "forAllEntities" },
+                      { "id": "getSelectedEntity", "source": "forAllEntities" }
+                    ]
+                  }
+                ],
+                "vars": [
+                  { "id": "selectedEntity", "source": "forAllEntities" },
+                  { "id": "getSelectedEntity", "source": "forAllEntities" }
+                ]
+              }
+            ],
+            "name": "pick up item",
+            "parent": "YnK58YN6ZD",
+            "key": "w2VrnZHyom",
+            "order": 2
+          },
+          "yP67J1MMRN": {
+            "triggers": [],
+            "conditions": [
+              { "operator": "==", "operandType": "boolean" },
+              true,
+              true
+            ],
+            "actions": [
+              {
+                "type": "dropItemAtPosition",
+                "item": {
+                  "function": "getItemCurrentlyHeldByUnit",
+                  "entity": { "function": "thisEntity", "vars": [] },
+                  "vars": []
+                },
+                "position": {
+                  "function": "getEntityPosition",
+                  "entity": { "function": "thisEntity", "vars": [] },
+                  "vars": []
+                },
+                "vars": []
+              }
+            ],
+            "name": "drop item",
+            "parent": "YnK58YN6ZD",
+            "key": "yP67J1MMRN",
+            "order": 3
+          }
+        },
+        "isUnTargetable": false
+      },
+      "2dohRXNYjo": {
+        "defaultItems": [],
+        "ai": {
+          "maxAttackRange": 400,
+          "sensorRadius": 150,
+          "maxTravelDistance": 300,
+          "attackResponse": "none",
+          "sensorResponse": "none",
+          "idleBehaviour": "stay",
+          "pathFindingMethod": "simple"
+        },
+        "confinedWithinMapBoundaries": true,
+        "effects": {
+          "destroy": { "animation": "", "sound": {}, "projectileType": "" },
+          "create": { "animation": "", "sound": {}, "projectileType": "" },
+          "move": { "animation": "", "sound": {}, "projectileType": "" },
+          "attacked": {
+            "tween": "recoil",
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          },
+          "idle": {
+            "tween": "",
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          }
+        },
+        "variables": {},
+        "bodies": {
+          "default": {
+            "itemAnchor": { "upperAngle": 0, "lowerAngle": 0, "y": 0, "x": 0 },
+            "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+            "jointType": "weldJoint",
+            "fixtures": [
+              {
+                "isSensor": false,
+                "shape": { "type": "circle" },
+                "restitution": 0,
+                "friction": 0,
+                "density": 1
+              }
+            ],
+            "spriteScale": 1,
+            "rotationSpeed": 1,
+            "linearDamping": 8,
+            "angularDamping": 1,
+            "collidesWith": {
+              "debris": true,
+              "walls": true,
+              "projectiles": true,
+              "items": true,
+              "units": true
+            },
+            "allowSleep": true,
+            "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
+            "fixedRotation": false,
+            "z-index": { "depth": 3, "layer": 3 },
+            "height": 56,
+            "width": 56,
+            "type": "dynamic",
+            "name": "default",
+            "bullet": false
+          }
+        },
+        "cellSheet": {
+          "columnCount": 1,
+          "rowCount": 1,
+          "url": "https://cache.modd.io/asset/spriteImage/1588211847884_Wooden Box Crate.png"
+        },
+        "inventorySize": 0,
+        "name": "Loot Box",
+        "handle": "human",
+        "canBuyItem": true,
+        "skin": "https://s3-us-west-1.amazonaws.com/modd/halloween-0.18/spritesheet/man.png",
+        "price": {},
+        "baseSpeed": 53,
+        "abilitiesJ8Gtv5HQ8JREnjD": {
+          "b": {
+            "mobilePosition": { "y": 32, "x": 419 },
+            "keyDown": "shop",
+            "keyUp": ""
+          },
+          "g": {
+            "mobilePosition": { "y": 33, "x": 365 },
+            "keyDown": "drop",
+            "keyUp": ""
+          },
+          "f": { "keyDown": "pickUp", "keyUp": "" },
+          "e": {
+            "mobilePosition": { "y": 85, "x": 366 },
+            "keyDown": "pickUp",
+            "keyUp": ""
+          },
+          "right": { "keyDown": "moveRight", "keyUp": "stopMovingRight" },
+          "left": { "keyDown": "moveLeft", "keyUp": "stopMovingLeft" },
+          "down": { "keyDown": "moveDown", "keyUp": "stopMovingDown" },
+          "up": { "keyDown": "moveUp", "keyUp": "stopMovingUp" },
+          "button1": {
+            "mobilePosition": { "y": 132, "x": 326 },
+            "keyDown": "startUsingItem",
+            "keyUp": "stopUsingItem"
+          },
+          "d": { "keyDown": "moveRight", "keyUp": "stopMovingRight" },
+          "s": { "keyDown": "moveDown", "keyUp": "stopMovingDown" },
+          "a": { "keyDown": "moveLeft", "keyUp": "stopMovingLeft" },
+          "w": { "keyDown": "moveUp", "keyUp": "stopMovingUp" },
+          "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
+          "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } }
+        },
+        "attributes": {
+          "health": {
+            "name": "health ",
+            "min": 0,
+            "max": 50,
+            "dataType": "",
+            "value": 50,
+            "regenerateSpeed": 0,
+            "isVisible": ["centerBar"],
+            "displayValue": true,
+            "showAsHUD": true,
+            "color": "#ffff0f",
+            "decimalPlaces": 0
+          },
+          "speed": {
+            "displayValue": true,
+            "color": "#c3efe3",
+            "showAsHUD": true,
+            "isVisible": [],
+            "regenerateSpeed": 0,
+            "value": 10,
+            "max": 200,
+            "min": 0,
+            "name": "speed",
+            "dataType": "",
+            "decimalPlaces": 0
+          }
+        },
+        "spawnPosition": { "x": 1500, "y": 2200 },
+        "body": {
+          "name": "Human-body",
+          "z-index": { "depth": 3, "layer": 3 },
+          "collidesWith": {
+            "debris": true,
+            "item": true,
+            "unit": true,
+            "walls": true,
+            "projectiles": true,
+            "items": true,
+            "units": true
+          },
+          "width": 40,
+          "height": 40,
+          "type": "dynamic",
+          "rotationSpeed": 2,
+          "linearDamping": 5,
+          "angularDamping": 1,
+          "allowSleep": true,
+          "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
+          "fixedRotation": false,
+          "isFlying": false,
+          "fixtures": [
+            {
+              "density": 3,
+              "friction": 0.01,
+              "restitution": 0.01,
+              "shape": { "type": "rectangle" }
+            }
+          ],
+          "spriteScale": 1
+        },
+        "particles": {},
+        "sound": {
+          "fEhDyJ8knx": {
+            "file": "https://modd.s3.amazonaws.com/asset/sound/1517556903046_man_scream1.mp3",
+            "name": "Scream"
+          },
+          "KK9JlU1UQy": {
+            "file": "https://modd.s3.amazonaws.com/asset/sound/1517554516253_man_cough.mp3",
+            "name": "Cough"
+          }
+        },
+        "states": {
+          "default": {
+            "body": "default",
+            "animation": "default",
+            "particles": {},
+            "sound": {},
+            "name": "default"
+          }
+        },
+        "isPurchasable": false,
+        "canBePurchasedBy": [],
+        "animations": {
+          "default": {
+            "framesPerSecond": 0,
+            "loopCount": 0,
+            "frames": [1],
+            "name": "default"
+          }
+        },
+        "inventoryImage": "",
+        "controls": {
+          "permittedInventorySlots": [],
+          "movementType": "wasd",
+          "mouseBehaviour": {
+            "rotateToFaceMouseCursor": true,
+            "flipSpriteHorizontallyWRTMouse": false
+          },
+          "abilities": {
+            "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
+            "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } }
+          },
+          "movementControlScheme": "wasd",
+          "movementMethod": "force"
+        },
+        "defaultItem": [],
+        "backpackSize": 13
+      },
+      "4bZ1Vk0Q8S": {
+        "defaultItems": [],
+        "effects": {
+          "destroy": {
+            "animation": "",
+            "sound": {},
+            "projectileType": "blood"
+          },
+          "create": { "animation": "", "sound": {}, "projectileType": "" },
+          "move": { "animation": "", "sound": {}, "projectileType": "" },
+          "attacked": {
+            "tween": "recoil",
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          },
+          "idle": {
+            "tween": "",
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          }
+        },
+        "variables": {},
+        "bodies": {
+          "default": {
+            "itemAnchor": { "upperAngle": 0, "lowerAngle": 0, "y": 0, "x": 0 },
+            "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+            "jointType": "weldJoint",
+            "fixtures": [
+              {
+                "isSensor": true,
+                "shape": { "type": "rectangle" },
+                "restitution": 0,
+                "friction": 0,
+                "density": 1
+              }
+            ],
+            "spriteScale": 1,
+            "rotationSpeed": 1,
+            "linearDamping": 8,
+            "angularDamping": 1,
+            "collidesWith": {
+              "debris": false,
+              "walls": false,
+              "projectiles": false,
+              "items": false,
+              "units": false
+            },
+            "allowSleep": true,
+            "bulletDestroyedOnCollisionWithWall/unit": false,
+            "fixedRotation": false,
+            "z-index": { "depth": 3, "layer": 3 },
+            "height": 46,
+            "width": 54,
+            "type": "dynamic",
+            "name": "default",
+            "bullet": false
+          }
+        },
+        "cellSheet": {
+          "columnCount": 1,
+          "rowCount": 1,
+          "url": "https://cache.modd.io/asset/spriteImage/1588722486692_Gray_Plane.png"
+        },
+        "inventorySize": 0,
+        "name": "Spectator",
+        "handle": "human",
+        "canBuyItem": true,
+        "skin": "https://s3-us-west-1.amazonaws.com/modd/halloween-0.18/spritesheet/man.png",
+        "price": {},
+        "baseSpeed": 53,
+        "abilities": {
+          "button1": { "keyDown": "use", "keyUp": "stopUse" },
+          "e": { "keyDown": "pickUp", "keyUp": "" },
+          "g": { "keyDown": "drop", "keyUp": "" },
+          "d": { "keyDown": "moveRight", "keyUp": "stopMovingRight" },
+          "s": { "keyDown": "moveDown", "keyUp": "stopMovingDown" },
+          "a": { "keyDown": "moveLeft", "keyUp": "stopMovingLeft" },
+          "w": { "keyDown": "moveUp", "keyUp": "stopMovingUp" },
+          "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
+          "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } }
+        },
+        "attributes": {
+          "health": {
+            "name": "health ",
+            "min": 100,
+            "max": 100,
+            "dataType": "",
+            "value": 100,
+            "regenerateSpeed": ".5",
+            "isVisible": [],
+            "displayValue": true,
+            "showAsHUD": true,
+            "color": "#ffff0f",
+            "decimalPlaces": 0
+          },
+          "speed": {
+            "displayValue": true,
+            "color": "#00fff0",
+            "showAsHUD": true,
+            "isVisible": [],
+            "regenerateSpeed": 0,
+            "value": 15,
+            "max": 200,
+            "min": 0,
+            "name": "speed",
+            "dataType": "",
+            "decimalPlaces": 0
+          }
+        },
+        "spawnPosition": { "x": 1500, "y": 2200 },
+        "body": {
+          "name": "Human-body",
+          "z-index": { "depth": 3, "layer": 3 },
+          "collidesWith": {
+            "debris": true,
+            "item": true,
+            "unit": true,
+            "walls": true,
+            "projectiles": true,
+            "items": true,
+            "units": true
+          },
+          "width": 40,
+          "height": 40,
+          "type": "dynamic",
+          "rotationSpeed": 2,
+          "linearDamping": 5,
+          "angularDamping": 1,
+          "allowSleep": true,
+          "bulletDestroyedOnCollisionWithWall/unit": false,
+          "fixedRotation": false,
+          "isFlying": false,
+          "fixtures": [
+            {
+              "density": 3,
+              "friction": 0.01,
+              "restitution": 0.01,
+              "shape": { "type": "rectangle" }
+            }
+          ],
+          "spriteScale": 1
+        },
+        "particles": {},
+        "sound": {
+          "fEhDyJ8knx": {
+            "file": "https://modd.s3.amazonaws.com/asset/sound/1517556903046_man_scream1.mp3",
+            "name": "Scream"
+          },
+          "KK9JlU1UQy": {
+            "file": "https://modd.s3.amazonaws.com/asset/sound/1517554516253_man_cough.mp3",
+            "name": "Cough"
+          }
+        },
+        "states": {
+          "default": {
+            "body": "default",
+            "animation": "default",
+            "particles": {},
+            "sound": {},
+            "name": "default"
+          }
+        },
+        "isPurchasable": false,
+        "canBePurchasedBy": [],
+        "animations": {
+          "default": {
+            "framesPerSecond": 0,
+            "loopCount": 0,
+            "frames": [1],
+            "name": "default"
+          }
+        },
+        "inventoryImage": "",
+        "controls": {
+          "movementMethod": "velocity",
+          "movementControlScheme": "wasd",
+          "movementType": "wasd",
+          "mouseBehaviour": {
+            "rotateToFaceMouseCursor": true,
+            "flipSpriteHorizontallyWRTMouse": false
+          },
+          "abilities": {
+            "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
+            "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } }
+          },
+          "permittedInventorySlots": []
+        },
+        "confinedWithinMapBoundaries": true,
+        "defaultItem": [
+          { "key": "gun", "value": "Gun", "name": "Gun" },
+          { "key": "crowbar", "value": "Crowbar", "name": "Crowbar" }
+        ],
+        "ai": {
+          "pathFindingMethod": "simple",
+          "idleBehaviour": "stay",
+          "sensorResponse": "none",
+          "attackResponse": "none",
+          "maxTravelDistance": "",
+          "sensorRadius": 150,
+          "maxAttackRange": 400
+        },
+        "equipmentAllowed": 5,
+        "backpackSize": 13
+      }
+    },
+    "abilities": {
+      "shop": { "cost": {}, "scriptName": "openShop", "name": "Shop" },
+      "jump": { "name": "Jump", "scriptName": "jump", "cost": {} },
+      "use": {
+        "type": "use",
+        "entity": { "function": "getItemCurrentlyHeldByUnit" },
+        "name": "Use",
+        "scriptName": "startUsingItem",
+        "cost": { "cast": {} }
+      },
+      "moveUp": {
+        "name": "move up",
+        "scriptName": "moveUp",
+        "cost": { "cast": {} }
+      },
+      "moveRight": {
+        "name": "move right",
+        "scriptName": "moveRight",
+        "cost": { "cast": {} }
+      },
+      "moveLeft": {
+        "name": "move left",
+        "scriptName": "moveLeft",
+        "cost": { "cast": {} }
+      },
+      "moveDown": {
+        "cost": { "cast": {} },
+        "scriptName": "moveDown",
+        "name": "move down"
+      },
+      "stopMovingRight": {
+        "name": "stop moving right",
+        "scriptName": "stopMovingRight",
+        "cost": { "cast": {} }
+      },
+      "stopMovingUp": {
+        "name": "stop moving up",
+        "scriptName": "stopMovingUp",
+        "cost": { "cast": {} }
+      },
+      "stopMovingLeft": {
+        "name": "stop moving left",
+        "scriptName": "stopMovingLeft",
+        "cost": { "cast": {} }
+      },
+      "stopMovingDown": {
+        "name": "stop moving down",
+        "scriptName": "stopMovingDown",
+        "cost": { "cast": {} }
+      },
+      "stopUse": {
+        "cost": { "cast": {} },
+        "scriptName": "stopUsingItem",
+        "name": "Stop use"
+      },
+      "drop": { "scriptName": "dropItem", "name": "Drop", "cost": {} },
+      "pickUp": { "scriptName": "pickUpItem", "name": "Pick up", "cost": {} }
+    },
+    "variables": {
+      "Loot": {
+        "default": {
+          "hFTNBiXvkp": { "quantity": 1, "probability": 20 },
+          "KgRjkNTEFp": { "probability": 20, "quantity": 1 },
+          "8JZ9Oe1uBG": { "probability": 20, "quantity": 1 },
+          "jqhYq5WmtV": { "probability": 20, "quantity": 1 }
+        },
+        "dataType": "itemTypeGroup"
+      },
+      "@regionShrinkDistance": { "default": 15, "dataType": "number" },
+      "@timeStormApproachingCountdown": { "dataType": "number", "default": 10 },
+      "@timeStormShrinkDuration": { "dataType": "number", "default": 10 },
+      "topMessagePrefix": { "dataType": "string" },
+      "tempItemType": { "dataType": "itemType" },
+      "Computer (neutral)": { "default": "computer1", "dataType": "player" },
+      "finalSurvivor": { "dataType": "unit" },
+      "i": { "dataType": "number", "default": 0 },
+      "state": { "default": 0, "dataType": "number" },
+      "tempUnit": { "dataType": "unit", "default": 26 },
+      "timeLeft": { "dataType": "number", "default": 3453453 },
+      "survivorCount": { "dataType": "number", "default": 0 },
+      "topMessage": { "dataType": "string", "default": "" },
+      "tempPlayer": { "dataType": "player" },
+      "x": { "dataType": "number", "default": null },
+      "@timeGameOver": { "default": 10, "dataType": "number" },
+      "@timePrepareForBattle": { "default": 5, "dataType": "number" },
+      "@minimumPlayersRequired": { "dataType": "number", "default": 2 },
+      "@regionDamage": { "dataType": "number", "default": 7 },
+      "@isDevEnv": { "dataType": "boolean", "default": false },
+      "@stateCountdownRegionShrink": { "default": 2, "dataType": "number" },
+      "@stateShrinkingRegions": { "default": 3, "dataType": "number" },
+      "@stateWaitingForPlayers": { "dataType": "number", "default": 0 },
+      "@statePrepareForBattle": { "dataType": "number", "default": 1 },
+      "@stateGameOver": { "dataType": "number", "default": 5 },
+      "stormLeft": {
+        "dataType": "region",
+        "default": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "inside": "#ff0000",
+          "outside": "",
+          "alpha": 0.6
+        }
+      },
+      "stormTop": {
+        "default": {
+          "alpha": 0.6,
+          "outside": "",
+          "inside": "#ff0000",
+          "height": 0,
+          "width": 0,
+          "y": 0,
+          "x": 0
+        },
+        "dataType": "region"
+      },
+      "stormRight": {
+        "dataType": "region",
+        "default": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "inside": "#ff0000",
+          "outside": "",
+          "alpha": ".6"
+        }
+      },
+      "stormBottom": {
+        "dataType": "region",
+        "default": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "inside": "#ff0000",
+          "outside": "",
+          "alpha": ".6"
+        }
+      },
+      "final region": {
+        "default": { "height": 130, "width": 208, "y": 958, "x": 920 },
+        "dataType": "region"
+      },
+      "spawn": {
+        "default": { "height": 1666, "width": 1666, "y": 190, "x": 190 },
+        "dataType": "region"
+      }
+    },
+    "attributeTypes": {
+      "health": {
+        "name": "health ",
+        "min": 100,
+        "max": 100,
+        "dataType": "",
+        "value": 100,
+        "regenerateSpeed": ".5",
+        "isVisible": [],
+        "displayValue": true,
+        "showAsHUD": true,
+        "color": "#ffff0f",
+        "decimalPlaces": 0
+      },
+      "points": {
+        "decimalPlaces": 0,
+        "displayValue": true,
+        "name": "Kills",
+        "min": 0,
+        "max": 1000000,
+        "value": 0,
+        "regenerateSpeed": 0,
+        "isVisible": true,
+        "showAsHUD": true,
+        "color": "red"
+      },
+      "speed": {
+        "displayValue": true,
+        "color": "#00fff0",
+        "showAsHUD": true,
+        "isVisible": [],
+        "regenerateSpeed": 0,
+        "value": 15,
+        "max": 200,
+        "min": 0,
+        "name": "speed",
+        "dataType": "",
+        "decimalPlaces": 0
+      }
+    },
+    "settings": {
+      "prettifyingScoreboard": true,
+      "displayScoreboard": true,
+      "allowDuplicateIPs": true,
+      "scoreAttributeId": "T8o9rLEMmW",
+      "scoreBoard": "n5JEoENeGg",
+      "gravity": { "y": 0, "x": 0 },
+      "images": {
+        "cover": "https://cache.modd.io/1501275562940_two houses cover.png",
+        "logo": "https://cache.modd.io/asset/spriteImage/1593104340274_modd_logo.png"
+      },
+      "constants": { "currency": "Food" },
+      "camera": { "zoom": { "type": "static", "default": 700 } },
+      "shop": { "isEnabled": false },
+      "inventory": { "isEnabled": false },
+      "latency": 60,
+      "menudiv": "Simple Battle Royale game. Players can move using WASD or Arrow keys. To drop / pick up items G / E.",
+      "menuHTML": "<div class=\"d-flex justify-content-center align-items-center flex-grow-1\">\n\t<div class=\"w-100\">\n\t\t<h1 class=\"text-center game-title\">\n\t\t</h1>\n\t\t\n\t\t<div class=\"row flex-grow-0 menu-row margin-auto justify-content-center\">\n\t\t\t<div id=\"menu-column-main-container\" class=\"pl-3\" style=\"{{#if constants.guestMode }} margin:auto {{/if}};\">\n\t\t\t\t<div id=\"menu-column-main\">\n\t\t\t\t\t<div class=\"white-bg\" style=\"max-width: 480px\">\n\t\t\t\t\t\t{{ playForm }}\t\t\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+      "addStrokeToNameAndAttributes": true
+    },
+    "images": [
+      {
+        "key": "sound",
+        "url": "https://modd.s3.amazonaws.com/sprites/1512752415166_fire_shotgun.mp3"
+      },
+      {
+        "key": "sound",
+        "url": "https://modd.s3.amazonaws.com/sprites/1512755562800_fire_empty.mp3"
+      },
+      {
+        "key": "sound",
+        "url": "https://modd.s3.amazonaws.com/sprites/1512755594697_fire_minigun.mp3"
+      },
+      {
+        "key": "sound",
+        "url": "https://modd.s3.amazonaws.com/sprites/1512755610131_fire_pistol.mp3"
+      },
+      {
+        "key": "sound",
+        "url": "https://modd.s3.amazonaws.com/sprites/1512755622475_fire_rifle.mp3"
+      },
+      {
+        "key": "sound",
+        "url": "https://modd.s3.amazonaws.com/sprites/1512755644317_man_cough.mp3"
+      },
+      {
+        "key": "sound",
+        "url": "https://modd.s3.amazonaws.com/sprites/1512755666761_man_scream1.mp3"
+      },
+      {
+        "key": "sound",
+        "url": "https://modd.s3.amazonaws.com/sprites/1512755675893_man_scream2.mp3"
+      },
+      {
+        "key": "sound",
+        "url": "https://modd.s3.amazonaws.com/sprites/1512756015200_reload.mp3"
+      }
+    ],
+    "tilesets": [
+      {
+        "image": "https://cache.modd.io/two_houses-0.18/tilesheet.png",
+        "name": "tilesheet_complete"
+      },
+      {
+        "image": "https://cache.modd.io/two_houses-0.18/2x1.png",
+        "name": "2x1"
+      },
+      {
+        "image": "https://cache.modd.io/two_houses-0.18/2x3.png",
+        "name": "2x3"
+      },
+      {
+        "image": "https://cache.modd.io/two_houses-0.18/3x1.png",
+        "name": "3x1"
+      },
+      {
+        "image": "https://cache.modd.io/two_houses-0.18/3x4.png",
+        "name": "3x4"
+      },
+      {
+        "image": "https://cache.modd.io/two_houses-0.18/spritesheet/shop.png",
+        "name": "shop"
+      }
+    ],
+    "factions": {
+      "6BTQoFGUFP": {
+        "name": "asdf",
+        "relationships": {},
+        "attributes": {
+          "4P4pWD5ExV": {
+            "name": "Stamina",
+            "min": 0,
+            "max": "100",
+            "value": "100",
+            "regenerateSpeed": 0.3,
+            "isVisible": true,
+            "color": "yellow",
+            "showAsHUD": true
+          }
+        }
+      },
+      "PgVCU0WgYj": { "name": "fda", "relationships": {} }
+    },
+    "playerTypes": {
+      "neutral (ai)": {
+        "showNameLabel": false,
+        "relationships": {},
+        "color": "white",
+        "attributes": {},
+        "name": "Neutral (AI)"
+      },
+      "human": {
+        "name": "Human",
+        "relationships": { "WARiuSXpmG": "hostile", "X90ySSRC3b": "hostile" },
+        "attributes": {
+          "points": {
+            "decimalPlaces": 0,
+            "displayValue": true,
+            "name": "Kills",
+            "min": 0,
+            "max": 1000000,
+            "value": 0,
+            "regenerateSpeed": 0,
+            "isVisible": true,
+            "showAsHUD": true,
+            "color": "red"
+          }
+        },
+        "showNameLabel": true
+      },
+      "spectator": {
+        "showNameLabel": false,
+        "relationships": { "human": "hostile", "neutral (ai)": "hostile" },
+        "color": "white",
+        "attributes": {},
+        "name": "Spectator"
+      }
+    },
+    "particles": {
+      "7pA9mm1MLG": {
+        "name": "spark",
+        "color": "#f4ff00",
+        "lifeBase": 30,
+        "quantityBase": 5,
+        "quantityTimespan": 30,
+        "deathOpacityBase": 1,
+        "mountPosition": { "x": 0, "y": 0 },
+        "velocityVector": {
+          "baseVector": { "x": 0, "y": 0 },
+          "minVector": { "x": -1, "y": -1 },
+          "maxVector": { "x": 1, "y": 1 }
+        }
+      },
+      "87BiLybZhy": {
+        "name": "bullet",
+        "color": "#636363",
+        "lifeBase": 50,
+        "quantityBase": 1,
+        "quantityTimespan": 30,
+        "deathOpacityBase": 1,
+        "mountPosition": { "x": 0, "y": 0 },
+        "velocityVector": {
+          "baseVector": { "x": 0, "y": 0 },
+          "minVector": { "x": -1, "y": -1 },
+          "maxVector": { "x": 1, "y": 1 }
+        }
+      }
+    },
+    "particleTypes": {},
+    "bodyTypes": {
+      "selected": {
+        "bullet": false,
+        "itemAnchor": { "y": 45, "x": 0 },
+        "unitAnchor": { "y": -10, "x": 22 },
+        "jointType": "weldJoint",
+        "fixtures": [
+          {
+            "isSensor": false,
+            "shape": { "type": "rectangle" },
+            "restitution": 0.01,
+            "friction": 0.01,
+            "density": 1
+          }
+        ],
+        "spriteScale": 1,
+        "rotationSpeed": 3,
+        "linearDamping": 5,
+        "angularDamping": 1,
+        "collidesWith": {
+          "debris": false,
+          "walls": false,
+          "projectiles": false,
+          "items": false,
+          "units": false
+        },
+        "allowSleep": false,
+        "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
+        "fixedRotation": false,
+        "z-index": { "depth": 2, "layer": 3 },
+        "height": 74,
+        "width": 22,
+        "type": "spriteOnly",
+        "name": "selected"
+      },
+      "unselected": {
+        "fixtures": [
+          {
+            "isSensor": false,
+            "shape": { "type": "rectangle" },
+            "restitution": 0,
+            "friction": 0.01,
+            "density": 1
+          }
+        ],
+        "spriteScale": 1,
+        "allowSleep": true,
+        "bullet": false,
+        "friction": 0,
+        "carriedBy": ["player"],
+        "isFlying": false,
+        "isTangible": false,
+        "density": 1,
+        "restitution": 1,
+        "angularDamping": 1,
+        "linearDamping": 1,
+        "holdPosition": { "x": 0, "y": 33, "rotation": 0 },
+        "height": 20,
+        "width": 8,
+        "jointType": "weldJoint",
+        "itemAnchor": { "x": 0, "y": 0 },
+        "rotationSpeed": 3,
+        "unitAnchor": { "x": 0, "y": 20, "rotation": 0 },
+        "collidesWith": {
+          "debris": false,
+          "walls": true,
+          "projectiles": true,
+          "items": true,
+          "units": true
+        },
+        "type": "none",
+        "typeWhenDrop": "dynamic",
+        "z-index": { "depth": 3, "layer": 3 },
+        "fixedRotation": false,
+        "name": "unselected"
+      },
+      "dropped": {
+        "bullet": false,
+        "itemAnchor": { "x": 0, "y": 45 },
+        "unitAnchor": { "y": -10, "x": 22 },
+        "jointType": "weldJoint",
+        "fixtures": [
+          {
+            "isSensor": false,
+            "shape": { "type": "rectangle" },
+            "restitution": 0,
+            "friction": 0,
+            "density": 1
+          }
+        ],
+        "spriteScale": 1,
+        "rotationSpeed": 1,
+        "linearDamping": 3,
+        "angularDamping": 1,
+        "collidesWith": {
+          "debris": false,
+          "walls": true,
+          "projectiles": false,
+          "items": false,
+          "units": false
+        },
+        "allowSleep": true,
+        "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
+        "fixedRotation": false,
+        "z-index": { "depth": 1, "layer": 1 },
+        "height": 74,
+        "width": 22,
+        "type": "dynamic",
+        "name": "dropped"
+      },
+      "default": {
+        "name": "default",
+        "type": "dynamic",
+        "width": 38,
+        "height": 38,
+        "z-index": { "layer": 1, "depth": 2 },
+        "fixedRotation": true,
+        "destroyedOnCollisionWithWall/unit": true,
+        "allowSleep": true,
+        "collidesWith": {
+          "units": false,
+          "items": false,
+          "projectiles": false,
+          "walls": false,
+          "debris": false
+        },
+        "angularDamping": 1,
+        "linearDamping": 1,
+        "rotationSpeed": 3,
+        "spriteScale": 1,
+        "fixtures": [
+          {
+            "density": 1,
+            "friction": 0.01,
+            "restitution": 0.01,
+            "shape": { "type": "rectangle" },
+            "isSensor": true
+          }
+        ],
+        "jointType": "weldJoint",
+        "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
+        "itemAnchor": { "x": 0, "y": 0, "lowerAngle": 0, "upperAngle": 0 },
+        "bullet": true
+      }
+    }
+  },
+  "version": 0.01,
+  "backupOn": 1689414362239
+}
