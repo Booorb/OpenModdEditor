@@ -16,7 +16,7 @@ dpg.setup_dearpygui()
 
 with dpg.window(label="Modd.io Editor", tag="default_window"):
     dpg.set_primary_window("default_window", True)
-    if os.path.isdir("taro2"):
+    if os.path.isfile("taro2/src/game.json"):
         dpg.add_text("Update Project:")
         dpg.add_button(label="Update", callback=setup_project_callback)
         dpg.add_text("Edit Game Settings:")
