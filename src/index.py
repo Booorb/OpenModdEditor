@@ -25,26 +25,29 @@ with dpg.font_registry():
 
 
 def open_callback(sender, app_data):
-    with open("storage.json") as f:
+    with open(editor + "/storage.json") as f:
         data = json.load(f)
         data["folder"] = app_data["file_path_name"]
-        json.dump(data, open("storage.json", "w"), indent=4)
+        json.dump(data, open(editor + "/storage.json", "w"), indent=4)
         os.chdir(data["folder"])
 
+def cancel_callback(sender, app_data):
+    print('Cancel was clicked.')
 
 dpg.add_file_dialog(
     directory_selector=True,
     show=False,
     callback=open_callback,
     tag="file_dialog_id",
+    cancel_callback=cancel_callback,
     width=700,
     height=400,
 )
 
 
 def setup_ui():
+    os.chdir(data["folder"])
     if os.path.isfile(data["folder"] + "/taro2/src/game.json"):
-        os.chdir(data["folder"])
         dpg.add_text("Update Project:")
         dpg.add_button(label="Update", callback=setup_project_callback)
         dpg.add_text("Edit Game Settings:")
@@ -71,6 +74,8 @@ with dpg.window(label="Menu", tag="default_window"):
     dpg.bind_font(default_font)
     with open("storage.json") as f:
         data = json.load(f)
+        global editor
+        editor = data["editor"]
         if os.path.exists(data["folder"]):
             setup_ui()
         else:
