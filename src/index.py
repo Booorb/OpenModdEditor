@@ -17,21 +17,18 @@ dpg.create_viewport()
 dpg.setup_dearpygui()
 
 with dpg.font_registry():
-    default_font = dpg.add_font("OpenSans-Regular.ttf", 20)
+    with open("storage.json") as f:
+        data = json.load(f)
+        data["editor"] = os.getcwd()
+        json.dump(data, open("storage.json", "w"), indent=4)
+        default_font = dpg.add_font(data["editor"] + "/OpenSans-Regular.ttf", 20)
 
 
 def open_callback(sender, app_data):
-    print("Sender: ", sender)
-    print("App Data: ", app_data["file_path_name"])
     with open("storage.json") as f:
         data = json.load(f)
         data["folder"] = app_data["file_path_name"]
         json.dump(data, open("storage.json", "w"), indent=4)
-        shutil.copyfile("storage.json", data["folder"] + "/storage.json")
-        shutil.copyfile(
-            "OpenSans-Regular.ttf", data["folder"] + "/OpenSans-Regular.ttf"
-        )
-        shutil.copytree("templates", data["folder"] + "/templates", dirs_exist_ok=True)
         os.chdir(data["folder"])
 
 
@@ -44,24 +41,10 @@ dpg.add_file_dialog(
     height=400,
 )
 
-with dpg.window(label="Menu", tag="default_window"):
-    with open("storage.json") as f:
-        data = json.load(f)
-        shutil.copyfile("storage.json", data["folder"] + "/storage.json")
-        shutil.copyfile(
-            "OpenSans-Regular.ttf", data["folder"] + "/OpenSans-Regular.ttf"
-        )
-        shutil.copytree("templates", data["folder"] + "/templates", dirs_exist_ok=True)
+
+def setup_ui():
+    if os.path.isfile(data["folder"] + "/taro2/src/game.json"):
         os.chdir(data["folder"])
-    dpg.set_primary_window("default_window", True)
-    dpg.bind_font(default_font)
-    if os.path.isfile("taro2/src/game.json"):
-        dpg.add_text("Change Project:")
-        dpg.add_button(
-            label="Change",
-            tag="setup_open_button",
-            callback=lambda: dpg.show_item("file_dialog_id"),
-        )
         dpg.add_text("Update Project:")
         dpg.add_button(label="Update", callback=setup_project_callback)
         dpg.add_text("Edit Game Settings:")
@@ -71,14 +54,29 @@ with dpg.window(label="Menu", tag="default_window"):
     else:
         dpg.add_text("Create Project:", tag="setup_project_text")
         dpg.add_button(
-            label="Create", tag="setup_project_button", callback=setup_project_callback
+            label="Create",
+            tag="setup_project_button",
+            callback=setup_project_callback,
         )
-        dpg.add_text("Change Project:")
+        dpg.add_text("Change Folder:", tag="setup_change_folder_text")
         dpg.add_button(
             label="Change",
-            tag="setup_open_button",
+            tag="setup_change_folder_button",
             callback=lambda: dpg.show_item("file_dialog_id"),
         )
+
+
+with dpg.window(label="Menu", tag="default_window"):
+    dpg.set_primary_window("default_window", True)
+    dpg.bind_font(default_font)
+    with open("storage.json") as f:
+        data = json.load(f)
+        if os.path.exists(data["folder"]):
+            setup_ui()
+        else:
+            data["folder"] = os.getcwd()
+            json.dump(data, open("storage.json", "w"), indent=4)
+            setup_ui()
 
 
 dpg.create_viewport(title="OpenGameBuilder", width=800, height=600)
