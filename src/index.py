@@ -16,6 +16,8 @@ dpg.create_context()
 dpg.create_viewport()
 dpg.setup_dearpygui()
 
+with dpg.font_registry():
+    default_font = dpg.add_font("OpenSans-Regular.ttf", 20)
 
 
 def open_callback(sender, app_data):
