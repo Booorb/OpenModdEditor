@@ -88,6 +88,12 @@ def edit_callback():
                         items=["PlanckJS", "Box2dWeb", "Box2d es6"],
                         tag="client_physics_engine",
                     )
+                    if data["clientPhysicsEngine"] == "planck":
+                        dpg.set_value(value="PlanckJS", item="client_physics_engine")
+                    elif data["clientPhysicsEngine"] == "box2dweb":
+                        dpg.set_value(value="Box2dWeb", item="client_physics_engine")
+                    else:
+                        dpg.set_value(value="Box2d es6", item="client_physics_engine")
                     dpg.add_text("Rendering Filter:")
                     dpg.add_listbox(
                         items=["Smooth", "Pixel Art"], tag="rendering_filter"
@@ -146,6 +152,12 @@ def save_callback(sender):
             data["physicsEngine"] = "box2dweb"
         else:
             data["physicsEngine"] = "box2dts"
+        if dpg.get_value("client_physics_engine") == "PlanckJS":
+            data["clientPhysicsEngine"] = "planck"
+        elif dpg.get_value("client_physics_engine") == "Box2dWeb":
+            data["clientPhysicsEngine"] = "box2dweb"
+        else:
+            data["clientPhysicsEngine"] = "box2dts"
         data["clientSidePredictionEnabled"] = dpg.get_value("predicted_movement")
         data["frameRate"] = dpg.get_value("physics_frame_rate")
         data["allowDuplicateIPS"] = dpg.get_value("duplicate_ips")
