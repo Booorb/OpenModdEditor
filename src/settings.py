@@ -77,6 +77,12 @@ def edit_callback():
                         items=["PlanckJS", "Box2dWeb", "Box2d es6"],
                         tag="physics_engine",
                     )
+                    if data["physicsEngine"] == "planck":
+                        dpg.set_value(value="PlanckJS", item="physics_engine")
+                    elif data["physicsEngine"] == "box2dweb":
+                        dpg.set_value(value="Box2dWeb", item="physics_engine")
+                    else:
+                        dpg.set_value(value="Box2d es6", item="physics_engine")
                     dpg.add_text("Client Physics Engine:")
                     dpg.add_listbox(
                         items=["PlanckJS", "Box2dWeb", "Box2d es6"],
@@ -134,6 +140,12 @@ def save_callback(sender):
         data["dailyCoinTransferLimit"] = dpg.get_value("transfer_limit")
         data["defaultMaxPlayers"] = dpg.get_value("max_players")
         data["lifeSpanHours"] = dpg.get_value("server_life_span")
+        if dpg.get_value("physics_engine") == "PlanckJS":
+            data["physicsEngine"] = "planck"
+        elif dpg.get_value("physics_engine") == "Box2dWeb":
+            data["physicsEngine"] = "box2dweb"
+        else:
+            data["physicsEngine"] = "box2dts"
         data["clientSidePredictionEnabled"] = dpg.get_value("predicted_movement")
         data["frameRate"] = dpg.get_value("physics_frame_rate")
         data["allowDuplicateIPS"] = dpg.get_value("duplicate_ips")
