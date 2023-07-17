@@ -49,7 +49,7 @@ def setup_ui():
     os.chdir(data["folder"])
     if os.path.isfile(data["folder"] + "/taro2/src/game.json"):
         dpg.add_text("Update Project:")
-        dpg.add_button(label="Update", callback=setup_project_callback)
+        dpg.add_button(label="Update", tag="update_project_button", callback=setup_project_callback)
         dpg.add_text("Edit Game Settings:")
         dpg.add_button(label="Edit", callback=edit_callback)
         dpg.add_text("Play the game:")
