@@ -75,6 +75,7 @@
   "highScores": [],
   "lastPlayedAt": "",
   "__v": 0,
+  "renderingFilter": "smooth",
   "data": {
     "entityTypeVariables": {},
     "shops": {},

@@ -76,6 +76,7 @@
   "coverUpdated": false,
   "isPublished": true,
   "contextMenuEnabled": true,
+  "renderingFilter": "smooth",
   "data": {
     "attributeTypes": {
       "stamina": {
@@ -143,7 +144,10 @@
             "typeWhenDrop": "static",
             "width": 10,
             "height": 10,
-            "z-index": { "layer": 3, "depth": 3 },
+            "z-index": {
+              "layer": 3,
+              "depth": 3
+            },
             "linearDamping": 1,
             "angularDamping": 1,
             "fixedRotation": false,
@@ -160,8 +164,15 @@
             "carriedBy": ["bluePlayer", "redPlayer"],
             "rotationSpeed": 3,
             "jointType": "weldJoint",
-            "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
-            "itemAnchor": { "x": 0, "y": 0 }
+            "unitAnchor": {
+              "x": 0,
+              "y": 33,
+              "rotation": 0
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0
+            }
           },
           "unselected": {
             "name": "unselected",
@@ -169,7 +180,10 @@
             "typeWhenDrop": "static",
             "width": 10,
             "height": 10,
-            "z-index": { "layer": 3, "depth": 4 },
+            "z-index": {
+              "layer": 3,
+              "depth": 4
+            },
             "linearDamping": 1,
             "angularDamping": 1,
             "fixedRotation": false,
@@ -186,8 +200,15 @@
             "carriedBy": ["bluePlayer", "redPlayer"],
             "rotationSpeed": 3,
             "jointType": "weldJoint",
-            "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
-            "itemAnchor": { "x": 0, "y": 0 }
+            "unitAnchor": {
+              "x": 0,
+              "y": 33,
+              "rotation": 0
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0
+            }
           },
           "dropped": {
             "name": "dropped",
@@ -195,7 +216,10 @@
             "typeWhenDrop": "static",
             "width": 10,
             "height": 10,
-            "z-index": { "layer": 1, "depth": 1 },
+            "z-index": {
+              "layer": 1,
+              "depth": 1
+            },
             "linearDamping": 1,
             "angularDamping": 1,
             "fixedRotation": false,
@@ -212,8 +236,15 @@
             "carriedBy": ["bluePlayer", "redPlayer"],
             "rotationSpeed": 3,
             "jointType": "weldJoint",
-            "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
-            "itemAnchor": { "x": 0, "y": 0 }
+            "unitAnchor": {
+              "x": 0,
+              "y": 33,
+              "rotation": 0
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0
+            }
           }
         },
         "states": {
@@ -280,11 +311,24 @@
         "bulletForce": 14,
         "knockbackForce": 0,
         "effects": {
-          "use": { "particles": {}, "sound": {} },
-          "reload": { "particles": {}, "sound": {} },
-          "empty": { "particles": {}, "sound": {} }
+          "use": {
+            "particles": {},
+            "sound": {}
+          },
+          "reload": {
+            "particles": {},
+            "sound": {}
+          },
+          "empty": {
+            "particles": {},
+            "sound": {}
+          }
         },
-        "bulletStartPosition": { "x": 0, "y": 0, "rotation": 0 },
+        "bulletStartPosition": {
+          "x": 0,
+          "y": 0,
+          "rotation": 0
+        },
         "bulletDistance": 1300,
         "penetration": false,
         "lifeSpan": 60000,
@@ -300,7 +344,10 @@
           "typeWhenDrop": "static",
           "width": 10,
           "height": 10,
-          "z-index": { "layer": 3, "depth": 4 },
+          "z-index": {
+            "layer": 3,
+            "depth": 4
+          },
           "linearDamping": 1,
           "angularDamping": 1,
           "fixedRotation": false,
@@ -317,15 +364,27 @@
           "carriedBy": ["bluePlayer", "redPlayer"],
           "rotationSpeed": 3,
           "jointType": "weldJoint",
-          "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
-          "itemAnchor": { "x": 0, "y": 0 }
+          "unitAnchor": {
+            "x": 0,
+            "y": 33,
+            "rotation": 0
+          },
+          "itemAnchor": {
+            "x": 0,
+            "y": 0
+          }
         },
         "bonus": {
           "consume": {
             "playerAttribute": {},
-            "unitAttribute": { "stamina": 50 }
+            "unitAttribute": {
+              "stamina": 50
+            }
           },
-          "passive": { "playerAttribute": {}, "unitAttribute": {} },
+          "passive": {
+            "playerAttribute": {},
+            "unitAttribute": {}
+          },
           "isConsumedImmediately": false
         },
         "buffTypes": [],
@@ -345,13 +404,21 @@
             "variableName": "state",
             "comment": ""
           },
-          { "target": "center-lg", "type": "hideUiTextForEveryone" },
+          {
+            "target": "center-lg",
+            "type": "hideUiTextForEveryone"
+          },
           {
             "type": "moveEntity",
-            "entity": { "function": "getVariable", "variableName": "ball" },
+            "entity": {
+              "function": "getVariable",
+              "variableName": "ball"
+            },
             "position": {
               "function": "centerOfRegion",
-              "region": { "function": "getEntireMapRegion" }
+              "region": {
+                "function": "getEntireMapRegion"
+              }
             }
           },
           {
@@ -359,12 +426,17 @@
               {
                 "type": "condition",
                 "conditions": [
-                  { "operandType": "boolean", "operator": "==" },
+                  {
+                    "operandType": "boolean",
+                    "operator": "=="
+                  },
                   {
                     "function": "playerIsControlledByHuman",
                     "player": {
                       "function": "getOwner",
-                      "entity": { "function": "selectedUnit" }
+                      "entity": {
+                        "function": "selectedUnit"
+                      }
                     }
                   },
                   true
@@ -373,9 +445,14 @@
                   {
                     "type": "condition",
                     "conditions": [
-                      { "operator": "==", "operandType": "unitType" },
                       {
-                        "entity": { "function": "selectedUnit" },
+                        "operator": "==",
+                        "operandType": "unitType"
+                      },
+                      {
+                        "entity": {
+                          "function": "selectedUnit"
+                        },
                         "function": "getUnitTypeOfUnit"
                       },
                       "redPlayer"
@@ -388,7 +465,9 @@
                           "x": {
                             "function": "calculate",
                             "items": [
-                              { "operator": "+" },
+                              {
+                                "operator": "+"
+                              },
                               {
                                 "function": "getPositionX",
                                 "position": {
@@ -413,7 +492,9 @@
                             }
                           }
                         },
-                        "entity": { "function": "selectedUnit" }
+                        "entity": {
+                          "function": "selectedUnit"
+                        }
                       }
                     ],
                     "else": [
@@ -424,7 +505,9 @@
                           "x": {
                             "function": "calculate",
                             "items": [
-                              { "operator": "-" },
+                              {
+                                "operator": "-"
+                              },
                               {
                                 "function": "getPositionX",
                                 "position": {
@@ -449,7 +532,9 @@
                             }
                           }
                         },
-                        "entity": { "function": "selectedUnit" }
+                        "entity": {
+                          "function": "selectedUnit"
+                        }
                       }
                     ]
                   }
@@ -458,11 +543,16 @@
               }
             ],
             "type": "forAllUnits",
-            "unitGroup": { "function": "allUnits" }
+            "unitGroup": {
+              "function": "allUnits"
+            }
           }
         ],
         "conditions": [
-          { "operandType": "boolean", "operator": "==" },
+          {
+            "operandType": "boolean",
+            "operator": "=="
+          },
           true,
           true
         ],
@@ -475,9 +565,16 @@
         "order": 1,
         "parent": "eventsKeClm",
         "key": "goal",
-        "triggers": [{ "type": "unitEntersRegion" }],
+        "triggers": [
+          {
+            "type": "unitEntersRegion"
+          }
+        ],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
@@ -488,19 +585,34 @@
               {
                 "type": "condition",
                 "conditions": [
-                  { "operator": "==", "operandType": "unitType" },
+                  {
+                    "operator": "==",
+                    "operandType": "unitType"
+                  },
                   {
                     "entity": {
                       "function": "getTriggeringUnit",
                       "vars": [
-                        { "id": "getTriggeringUnit", "source": "trigger" },
-                        { "id": "getTriggeringRegion", "source": "trigger" }
+                        {
+                          "id": "getTriggeringUnit",
+                          "source": "trigger"
+                        },
+                        {
+                          "id": "getTriggeringRegion",
+                          "source": "trigger"
+                        }
                       ]
                     },
                     "function": "getUnitTypeOfUnit",
                     "vars": [
-                      { "id": "getTriggeringUnit", "source": "trigger" },
-                      { "id": "getTriggeringRegion", "source": "trigger" }
+                      {
+                        "id": "getTriggeringUnit",
+                        "source": "trigger"
+                      },
+                      {
+                        "id": "getTriggeringRegion",
+                        "source": "trigger"
+                      }
                     ]
                   },
                   "ball (unitType)"
@@ -509,18 +621,31 @@
                   {
                     "type": "condition",
                     "conditions": [
-                      { "operandType": "or", "operator": "OR" },
+                      {
+                        "operandType": "or",
+                        "operator": "OR"
+                      },
                       [
-                        { "operandType": "region", "operator": "==" },
-                        { "function": "getTriggeringRegion" },
+                        {
+                          "operandType": "region",
+                          "operator": "=="
+                        },
+                        {
+                          "function": "getTriggeringRegion"
+                        },
                         {
                           "function": "getVariable",
                           "variableName": "redGoalPost"
                         }
                       ],
                       [
-                        { "operandType": "region", "operator": "==" },
-                        { "function": "getTriggeringRegion" },
+                        {
+                          "operandType": "region",
+                          "operator": "=="
+                        },
+                        {
+                          "function": "getTriggeringRegion"
+                        },
                         {
                           "function": "getVariable",
                           "variableName": "blueGoalPost"
@@ -534,8 +659,14 @@
                         "value": 5,
                         "variableName": "timer",
                         "vars": [
-                          { "id": "getTriggeringUnit", "source": "trigger" },
-                          { "id": "getTriggeringRegion", "source": "trigger" }
+                          {
+                            "id": "getTriggeringUnit",
+                            "source": "trigger"
+                          },
+                          {
+                            "id": "getTriggeringRegion",
+                            "source": "trigger"
+                          }
                         ]
                       },
                       {
@@ -544,8 +675,14 @@
                         "value": "goalCeremony",
                         "type": "setVariable",
                         "vars": [
-                          { "id": "getTriggeringUnit", "source": "trigger" },
-                          { "id": "getTriggeringRegion", "source": "trigger" }
+                          {
+                            "id": "getTriggeringUnit",
+                            "source": "trigger"
+                          },
+                          {
+                            "id": "getTriggeringRegion",
+                            "source": "trigger"
+                          }
                         ]
                       },
                       {
@@ -595,48 +732,87 @@
                           },
                           "textB": " scores!",
                           "vars": [
-                            { "id": "getTriggeringUnit", "source": "trigger" },
-                            { "id": "getTriggeringRegion", "source": "trigger" }
+                            {
+                              "id": "getTriggeringUnit",
+                              "source": "trigger"
+                            },
+                            {
+                              "id": "getTriggeringRegion",
+                              "source": "trigger"
+                            }
                           ]
                         },
                         "vars": [
-                          { "id": "getTriggeringUnit", "source": "trigger" },
-                          { "id": "getTriggeringRegion", "source": "trigger" }
+                          {
+                            "id": "getTriggeringUnit",
+                            "source": "trigger"
+                          },
+                          {
+                            "id": "getTriggeringRegion",
+                            "source": "trigger"
+                          }
                         ]
                       },
                       {
                         "type": "showUiTextForEveryone",
                         "target": "center-lg",
                         "vars": [
-                          { "id": "getTriggeringUnit", "source": "trigger" },
-                          { "id": "getTriggeringRegion", "source": "trigger" }
+                          {
+                            "id": "getTriggeringUnit",
+                            "source": "trigger"
+                          },
+                          {
+                            "id": "getTriggeringRegion",
+                            "source": "trigger"
+                          }
                         ]
                       }
                     ],
                     "else": [],
                     "vars": [
-                      { "id": "getTriggeringUnit", "source": "trigger" },
-                      { "id": "getTriggeringRegion", "source": "trigger" }
+                      {
+                        "id": "getTriggeringUnit",
+                        "source": "trigger"
+                      },
+                      {
+                        "id": "getTriggeringRegion",
+                        "source": "trigger"
+                      }
                     ]
                   },
                   {
                     "comment": "blue team scores\n",
                     "type": "condition",
                     "conditions": [
-                      { "operator": "==", "operandType": "region" },
+                      {
+                        "operator": "==",
+                        "operandType": "region"
+                      },
                       {
                         "function": "getTriggeringRegion",
                         "vars": [
-                          { "id": "getTriggeringUnit", "source": "trigger" },
-                          { "id": "getTriggeringRegion", "source": "trigger" }
+                          {
+                            "id": "getTriggeringUnit",
+                            "source": "trigger"
+                          },
+                          {
+                            "id": "getTriggeringRegion",
+                            "source": "trigger"
+                          }
                         ]
                       },
                       {
                         "function": "getVariable",
                         "variableName": "redGoalPost",
                         "vars": [
-                          { "id": "getTriggeringUnit", "source": "trigger" },
-                          { "id": "getTriggeringRegion", "source": "trigger" }
+                          {
+                            "id": "getTriggeringUnit",
+                            "source": "trigger"
+                          },
+                          {
+                            "id": "getTriggeringRegion",
+                            "source": "trigger"
+                          }
                         ]
                       }
                     ],
@@ -655,13 +831,25 @@
                             "1"
                           ],
                           "vars": [
-                            { "id": "getTriggeringUnit", "source": "trigger" },
-                            { "id": "getTriggeringRegion", "source": "trigger" }
+                            {
+                              "id": "getTriggeringUnit",
+                              "source": "trigger"
+                            },
+                            {
+                              "id": "getTriggeringRegion",
+                              "source": "trigger"
+                            }
                           ]
                         },
                         "vars": [
-                          { "id": "getTriggeringUnit", "source": "trigger" },
-                          { "id": "getTriggeringRegion", "source": "trigger" }
+                          {
+                            "id": "getTriggeringUnit",
+                            "source": "trigger"
+                          },
+                          {
+                            "id": "getTriggeringRegion",
+                            "source": "trigger"
+                          }
                         ]
                       },
                       {
@@ -697,7 +885,9 @@
                             },
                             "value": {
                               "items": [
-                                { "operator": "-" },
+                                {
+                                  "operator": "-"
+                                },
                                 {
                                   "entity": {
                                     "entity": {
@@ -809,7 +999,10 @@
                           }
                         ],
                         "conditions": [
-                          { "operandType": "unitType", "operator": "==" },
+                          {
+                            "operandType": "unitType",
+                            "operator": "=="
+                          },
                           {
                             "entity": {
                               "variableName": "unitLastTouchedBall",
@@ -841,8 +1034,14 @@
                         ],
                         "type": "condition",
                         "vars": [
-                          { "id": "getTriggeringUnit", "source": "trigger" },
-                          { "id": "getTriggeringRegion", "source": "trigger" }
+                          {
+                            "id": "getTriggeringUnit",
+                            "source": "trigger"
+                          },
+                          {
+                            "id": "getTriggeringRegion",
+                            "source": "trigger"
+                          }
                         ]
                       }
                     ],
@@ -851,7 +1050,10 @@
                         "comment": "red team scores",
                         "type": "condition",
                         "conditions": [
-                          { "operator": "==", "operandType": "region" },
+                          {
+                            "operator": "==",
+                            "operandType": "region"
+                          },
                           {
                             "function": "getTriggeringRegion",
                             "vars": [
@@ -949,7 +1151,9 @@
                                 },
                                 "value": {
                                   "items": [
-                                    { "operator": "-" },
+                                    {
+                                      "operator": "-"
+                                    },
                                     {
                                       "entity": {
                                         "entity": {
@@ -1061,7 +1265,10 @@
                               }
                             ],
                             "conditions": [
-                              { "operandType": "unitType", "operator": "==" },
+                              {
+                                "operandType": "unitType",
+                                "operator": "=="
+                              },
                               {
                                 "entity": {
                                   "variableName": "unitLastTouchedBall",
@@ -1106,40 +1313,73 @@
                         ],
                         "else": [],
                         "vars": [
-                          { "id": "getTriggeringUnit", "source": "trigger" },
-                          { "id": "getTriggeringRegion", "source": "trigger" }
+                          {
+                            "id": "getTriggeringUnit",
+                            "source": "trigger"
+                          },
+                          {
+                            "id": "getTriggeringRegion",
+                            "source": "trigger"
+                          }
                         ]
                       }
                     ],
                     "vars": [
-                      { "id": "getTriggeringUnit", "source": "trigger" },
-                      { "id": "getTriggeringRegion", "source": "trigger" }
+                      {
+                        "id": "getTriggeringUnit",
+                        "source": "trigger"
+                      },
+                      {
+                        "id": "getTriggeringRegion",
+                        "source": "trigger"
+                      }
                     ]
                   }
                 ],
                 "else": [],
                 "vars": [
-                  { "id": "getTriggeringUnit", "source": "trigger" },
-                  { "id": "getTriggeringRegion", "source": "trigger" }
+                  {
+                    "id": "getTriggeringUnit",
+                    "source": "trigger"
+                  },
+                  {
+                    "id": "getTriggeringRegion",
+                    "source": "trigger"
+                  }
                 ]
               }
             ],
             "conditions": [
-              { "operandType": "string", "operator": "==" },
+              {
+                "operandType": "string",
+                "operator": "=="
+              },
               {
                 "variableName": "state",
                 "function": "getVariable",
                 "vars": [
-                  { "id": "getTriggeringUnit", "source": "trigger" },
-                  { "id": "getTriggeringRegion", "source": "trigger" }
+                  {
+                    "id": "getTriggeringUnit",
+                    "source": "trigger"
+                  },
+                  {
+                    "id": "getTriggeringRegion",
+                    "source": "trigger"
+                  }
                 ]
               },
               "gameStarted"
             ],
             "type": "condition",
             "vars": [
-              { "id": "getTriggeringUnit", "source": "trigger" },
-              { "id": "getTriggeringRegion", "source": "trigger" }
+              {
+                "id": "getTriggeringUnit",
+                "source": "trigger"
+              },
+              {
+                "id": "getTriggeringRegion",
+                "source": "trigger"
+              }
             ]
           }
         ],
@@ -1151,7 +1391,10 @@
         "key": "updatePlayerCount",
         "triggers": [],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
@@ -1172,8 +1415,14 @@
             "unitGroup": {
               "function": "allUnits",
               "vars": [
-                { "id": "selectedUnit", "source": "forAllUnits" },
-                { "id": "getSelectedUnit", "source": "forAllUnits" }
+                {
+                  "id": "selectedUnit",
+                  "source": "forAllUnits"
+                },
+                {
+                  "id": "getSelectedUnit",
+                  "source": "forAllUnits"
+                }
               ]
             },
             "type": "forAllUnits",
@@ -1195,15 +1444,27 @@
                           ],
                           "function": "calculate",
                           "vars": [
-                            { "id": "selectedUnit", "source": "forAllUnits" },
-                            { "id": "getSelectedUnit", "source": "forAllUnits" }
+                            {
+                              "id": "selectedUnit",
+                              "source": "forAllUnits"
+                            },
+                            {
+                              "id": "getSelectedUnit",
+                              "source": "forAllUnits"
+                            }
                           ]
                         },
                         "variableName": "numberOfBlueUnits",
                         "type": "setVariable",
                         "vars": [
-                          { "id": "selectedUnit", "source": "forAllUnits" },
-                          { "id": "getSelectedUnit", "source": "forAllUnits" }
+                          {
+                            "id": "selectedUnit",
+                            "source": "forAllUnits"
+                          },
+                          {
+                            "id": "getSelectedUnit",
+                            "source": "forAllUnits"
+                          }
                         ]
                       }
                     ],
@@ -1220,78 +1481,144 @@
                           ],
                           "function": "calculate",
                           "vars": [
-                            { "id": "selectedUnit", "source": "forAllUnits" },
-                            { "id": "getSelectedUnit", "source": "forAllUnits" }
+                            {
+                              "id": "selectedUnit",
+                              "source": "forAllUnits"
+                            },
+                            {
+                              "id": "getSelectedUnit",
+                              "source": "forAllUnits"
+                            }
                           ]
                         },
                         "variableName": "numberOfRedUnits",
                         "type": "setVariable",
                         "vars": [
-                          { "id": "selectedUnit", "source": "forAllUnits" },
-                          { "id": "getSelectedUnit", "source": "forAllUnits" }
+                          {
+                            "id": "selectedUnit",
+                            "source": "forAllUnits"
+                          },
+                          {
+                            "id": "getSelectedUnit",
+                            "source": "forAllUnits"
+                          }
                         ]
                       }
                     ],
                     "conditions": [
-                      { "operandType": "unitType", "operator": "==" },
+                      {
+                        "operandType": "unitType",
+                        "operator": "=="
+                      },
                       {
                         "function": "getUnitTypeOfUnit",
                         "entity": {
                           "function": "selectedUnit",
                           "vars": [
-                            { "id": "selectedUnit", "source": "forAllUnits" },
-                            { "id": "getSelectedUnit", "source": "forAllUnits" }
+                            {
+                              "id": "selectedUnit",
+                              "source": "forAllUnits"
+                            },
+                            {
+                              "id": "getSelectedUnit",
+                              "source": "forAllUnits"
+                            }
                           ]
                         },
                         "vars": [
-                          { "id": "selectedUnit", "source": "forAllUnits" },
-                          { "id": "getSelectedUnit", "source": "forAllUnits" }
+                          {
+                            "id": "selectedUnit",
+                            "source": "forAllUnits"
+                          },
+                          {
+                            "id": "getSelectedUnit",
+                            "source": "forAllUnits"
+                          }
                         ]
                       },
                       "redPlayer"
                     ],
                     "type": "condition",
                     "vars": [
-                      { "id": "selectedUnit", "source": "forAllUnits" },
-                      { "id": "getSelectedUnit", "source": "forAllUnits" }
+                      {
+                        "id": "selectedUnit",
+                        "source": "forAllUnits"
+                      },
+                      {
+                        "id": "getSelectedUnit",
+                        "source": "forAllUnits"
+                      }
                     ]
                   }
                 ],
                 "conditions": [
-                  { "operandType": "boolean", "operator": "==" },
+                  {
+                    "operandType": "boolean",
+                    "operator": "=="
+                  },
                   {
                     "player": {
                       "entity": {
                         "function": "selectedUnit",
                         "vars": [
-                          { "id": "selectedUnit", "source": "forAllUnits" },
-                          { "id": "getSelectedUnit", "source": "forAllUnits" }
+                          {
+                            "id": "selectedUnit",
+                            "source": "forAllUnits"
+                          },
+                          {
+                            "id": "getSelectedUnit",
+                            "source": "forAllUnits"
+                          }
                         ]
                       },
                       "function": "getOwner",
                       "vars": [
-                        { "id": "selectedUnit", "source": "forAllUnits" },
-                        { "id": "getSelectedUnit", "source": "forAllUnits" }
+                        {
+                          "id": "selectedUnit",
+                          "source": "forAllUnits"
+                        },
+                        {
+                          "id": "getSelectedUnit",
+                          "source": "forAllUnits"
+                        }
                       ]
                     },
                     "function": "playerIsControlledByHuman",
                     "vars": [
-                      { "id": "selectedUnit", "source": "forAllUnits" },
-                      { "id": "getSelectedUnit", "source": "forAllUnits" }
+                      {
+                        "id": "selectedUnit",
+                        "source": "forAllUnits"
+                      },
+                      {
+                        "id": "getSelectedUnit",
+                        "source": "forAllUnits"
+                      }
                     ]
                   },
                   true
                 ],
                 "type": "condition",
                 "vars": [
-                  { "id": "selectedUnit", "source": "forAllUnits" },
-                  { "id": "getSelectedUnit", "source": "forAllUnits" }
+                  {
+                    "id": "selectedUnit",
+                    "source": "forAllUnits"
+                  },
+                  {
+                    "id": "getSelectedUnit",
+                    "source": "forAllUnits"
+                  }
                 ]
               }
             ],
             "vars": [
-              { "id": "selectedUnit", "source": "forAllUnits" },
-              { "id": "getSelectedUnit", "source": "forAllUnits" }
+              {
+                "id": "selectedUnit",
+                "source": "forAllUnits"
+              },
+              {
+                "id": "getSelectedUnit",
+                "source": "forAllUnits"
+              }
             ]
           },
           {
@@ -1342,8 +1669,13 @@
         "conditions": [],
         "actions": [
           {
-            "entity": { "function": "getLastCastingUnit" },
-            "force": { "y": 50, "x": 0 },
+            "entity": {
+              "function": "getLastCastingUnit"
+            },
+            "force": {
+              "y": 50,
+              "x": 0
+            },
             "type": "applyForceOnEntityXYRelative"
           }
         ],
@@ -1358,9 +1690,16 @@
         "order": 0
       },
       "gameStarts": {
-        "triggers": [{ "type": "gameStart" }],
+        "triggers": [
+          {
+            "type": "gameStart"
+          }
+        ],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
@@ -1370,19 +1709,29 @@
             "unitType": "ball (unitType)",
             "position": {
               "function": "centerOfRegion",
-              "region": { "function": "getEntireMapRegion" }
+              "region": {
+                "function": "getEntireMapRegion"
+              }
             },
             "angle": 0,
-            "entity": { "function": "getVariable", "variableName": "ball ai" }
+            "entity": {
+              "function": "getVariable",
+              "variableName": "ball ai"
+            }
           },
           {
             "type": "setVariable",
-            "value": { "function": "getLastCreatedUnit" },
+            "value": {
+              "function": "getLastCreatedUnit"
+            },
             "variableName": "ball"
           },
           {
             "playerType": "neutral",
-            "entity": { "variableName": "ball ai", "function": "getVariable" },
+            "entity": {
+              "variableName": "ball ai",
+              "function": "getVariable"
+            },
             "type": "assignPlayerType"
           }
         ],
@@ -1392,9 +1741,16 @@
         "order": 0
       },
       "unitTouchesTheBall": {
-        "triggers": [{ "type": "unitTouchesUnit" }],
+        "triggers": [
+          {
+            "type": "unitTouchesUnit"
+          }
+        ],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
@@ -1402,19 +1758,34 @@
           {
             "type": "condition",
             "conditions": [
-              { "operator": "==", "operandType": "unitType" },
+              {
+                "operator": "==",
+                "operandType": "unitType"
+              },
               {
                 "function": "getUnitTypeOfUnit",
                 "entity": {
                   "function": "getLastTouchedUnit",
                   "vars": [
-                    { "id": "getLastTouchingUnit", "source": "trigger" },
-                    { "id": "getLastTouchedUnit", "source": "trigger" }
+                    {
+                      "id": "getLastTouchingUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getLastTouchedUnit",
+                      "source": "trigger"
+                    }
                   ]
                 },
                 "vars": [
-                  { "id": "getLastTouchingUnit", "source": "trigger" },
-                  { "id": "getLastTouchedUnit", "source": "trigger" }
+                  {
+                    "id": "getLastTouchingUnit",
+                    "source": "trigger"
+                  },
+                  {
+                    "id": "getLastTouchedUnit",
+                    "source": "trigger"
+                  }
                 ]
               },
               "ball (unitType)"
@@ -1426,21 +1797,39 @@
                 "value": {
                   "function": "getLastTouchingUnit",
                   "vars": [
-                    { "id": "getLastTouchingUnit", "source": "trigger" },
-                    { "id": "getLastTouchedUnit", "source": "trigger" }
+                    {
+                      "id": "getLastTouchingUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getLastTouchedUnit",
+                      "source": "trigger"
+                    }
                   ]
                 },
                 "comment": "",
                 "vars": [
-                  { "id": "getLastTouchingUnit", "source": "trigger" },
-                  { "id": "getLastTouchedUnit", "source": "trigger" }
+                  {
+                    "id": "getLastTouchingUnit",
+                    "source": "trigger"
+                  },
+                  {
+                    "id": "getLastTouchedUnit",
+                    "source": "trigger"
+                  }
                 ]
               }
             ],
             "else": [],
             "vars": [
-              { "id": "getLastTouchingUnit", "source": "trigger" },
-              { "id": "getLastTouchedUnit", "source": "trigger" }
+              {
+                "id": "getLastTouchingUnit",
+                "source": "trigger"
+              },
+              {
+                "id": "getLastTouchedUnit",
+                "source": "trigger"
+              }
             ]
           }
         ],
@@ -1450,9 +1839,16 @@
         "order": 6
       },
       "everySecondTimerExpiries": {
-        "triggers": [{ "type": "secondTick" }],
+        "triggers": [
+          {
+            "type": "secondTick"
+          }
+        ],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
@@ -1460,7 +1856,10 @@
           {
             "type": "condition",
             "conditions": [
-              { "operandType": "string", "operator": "==" },
+              {
+                "operandType": "string",
+                "operator": "=="
+              },
               {
                 "variableName": "state",
                 "function": "getVariable",
@@ -1487,7 +1886,9 @@
                         "textA": {
                           "function": "calculate",
                           "items": [
-                            { "operator": "-" },
+                            {
+                              "operator": "-"
+                            },
                             {
                               "function": "getVariable",
                               "variableName": "minPlayerRequired"
@@ -1531,7 +1932,10 @@
                   }
                 ],
                 "conditions": [
-                  { "operator": ">=", "operandType": "number" },
+                  {
+                    "operator": ">=",
+                    "operandType": "number"
+                  },
                   {
                     "function": "calculate",
                     "items": [
@@ -1612,7 +2016,10 @@
                   {
                     "type": "condition",
                     "conditions": [
-                      { "operator": "<=", "operandType": "number" },
+                      {
+                        "operator": "<=",
+                        "operandType": "number"
+                      },
                       {
                         "function": "getVariable",
                         "variableName": "gameTimeLeft",
@@ -1663,7 +2070,9 @@
                     "value": {
                       "function": "calculate",
                       "items": [
-                        { "operator": "-" },
+                        {
+                          "operator": "-"
+                        },
                         {
                           "function": "getVariable",
                           "variableName": "gameTimeLeft"
@@ -1678,7 +2087,10 @@
                   }
                 ],
                 "conditions": [
-                  { "operator": "==", "operandType": "string" },
+                  {
+                    "operator": "==",
+                    "operandType": "string"
+                  },
                   {
                     "variableName": "state",
                     "function": "getVariable",
@@ -1694,8 +2106,13 @@
                 "variableName": "timer",
                 "value": {
                   "items": [
-                    { "operator": "-" },
-                    { "variableName": "timer", "function": "getVariable" },
+                    {
+                      "operator": "-"
+                    },
+                    {
+                      "variableName": "timer",
+                      "function": "getVariable"
+                    },
                     1
                   ],
                   "function": "calculate",
@@ -1707,7 +2124,10 @@
               {
                 "type": "condition",
                 "conditions": [
-                  { "operandType": "string", "operator": "==" },
+                  {
+                    "operandType": "string",
+                    "operator": "=="
+                  },
                   {
                     "function": "getVariable",
                     "variableName": "state",
@@ -1773,7 +2193,10 @@
                   {
                     "type": "condition",
                     "conditions": [
-                      { "operator": "<=", "operandType": "number" },
+                      {
+                        "operator": "<=",
+                        "operandType": "number"
+                      },
                       {
                         "function": "getVariable",
                         "variableName": "timer",
@@ -1812,7 +2235,10 @@
               {
                 "type": "condition",
                 "conditions": [
-                  { "operandType": "string", "operator": "==" },
+                  {
+                    "operandType": "string",
+                    "operator": "=="
+                  },
                   {
                     "function": "getVariable",
                     "variableName": "state",
@@ -1824,7 +2250,10 @@
                   {
                     "type": "condition",
                     "conditions": [
-                      { "operator": "<=", "operandType": "number" },
+                      {
+                        "operator": "<=",
+                        "operandType": "number"
+                      },
                       {
                         "function": "getVariable",
                         "variableName": "timer",
@@ -1865,19 +2294,34 @@
               {
                 "type": "condition",
                 "conditions": [
-                  { "operandType": "itemType", "operator": "==" },
+                  {
+                    "operandType": "itemType",
+                    "operator": "=="
+                  },
                   {
                     "function": "getItemTypeOfItem",
                     "entity": {
                       "function": "selectedItem",
                       "vars": [
-                        { "id": "selectedItem", "source": "forAllItems" },
-                        { "id": "getSelectedItem", "source": "forAllItems" }
+                        {
+                          "id": "selectedItem",
+                          "source": "forAllItems"
+                        },
+                        {
+                          "id": "getSelectedItem",
+                          "source": "forAllItems"
+                        }
                       ]
                     },
                     "vars": [
-                      { "id": "selectedItem", "source": "forAllItems" },
-                      { "id": "getSelectedItem", "source": "forAllItems" }
+                      {
+                        "id": "selectedItem",
+                        "source": "forAllItems"
+                      },
+                      {
+                        "id": "getSelectedItem",
+                        "source": "forAllItems"
+                      }
                     ]
                   },
                   "energy"
@@ -1896,42 +2340,74 @@
                         1
                       ],
                       "vars": [
-                        { "id": "selectedItem", "source": "forAllItems" },
-                        { "id": "getSelectedItem", "source": "forAllItems" }
+                        {
+                          "id": "selectedItem",
+                          "source": "forAllItems"
+                        },
+                        {
+                          "id": "getSelectedItem",
+                          "source": "forAllItems"
+                        }
                       ]
                     },
                     "variableName": "energyBallCount",
                     "vars": [
-                      { "id": "selectedItem", "source": "forAllItems" },
-                      { "id": "getSelectedItem", "source": "forAllItems" }
+                      {
+                        "id": "selectedItem",
+                        "source": "forAllItems"
+                      },
+                      {
+                        "id": "getSelectedItem",
+                        "source": "forAllItems"
+                      }
                     ]
                   }
                 ],
                 "else": [],
                 "vars": [
-                  { "id": "selectedItem", "source": "forAllItems" },
-                  { "id": "getSelectedItem", "source": "forAllItems" }
+                  {
+                    "id": "selectedItem",
+                    "source": "forAllItems"
+                  },
+                  {
+                    "id": "getSelectedItem",
+                    "source": "forAllItems"
+                  }
                 ]
               }
             ],
             "itemGroup": {
               "function": "allItemsDroppedOnGround",
               "vars": [
-                { "id": "selectedItem", "source": "forAllItems" },
-                { "id": "getSelectedItem", "source": "forAllItems" }
+                {
+                  "id": "selectedItem",
+                  "source": "forAllItems"
+                },
+                {
+                  "id": "getSelectedItem",
+                  "source": "forAllItems"
+                }
               ]
             },
             "type": "forAllItems",
             "vars": [
-              { "id": "selectedItem", "source": "forAllItems" },
-              { "id": "getSelectedItem", "source": "forAllItems" }
+              {
+                "id": "selectedItem",
+                "source": "forAllItems"
+              },
+              {
+                "id": "getSelectedItem",
+                "source": "forAllItems"
+              }
             ]
           },
           {
             "actions": [
               {
                 "position": {
-                  "region": { "function": "getEntireMapRegion" },
+                  "region": {
+                    "function": "getEntireMapRegion"
+                  },
                   "function": "getRandomPlayablePositionInRegion",
                   "vars": []
                 },
@@ -1958,8 +2434,14 @@
               }
             ],
             "conditions": [
-              { "operandType": "number", "operator": "<" },
-              { "variableName": "energyBallCount", "function": "getVariable" },
+              {
+                "operandType": "number",
+                "operator": "<"
+              },
+              {
+                "variableName": "energyBallCount",
+                "function": "getVariable"
+              },
               {
                 "variableName": "maxEnergyBallsAllowed",
                 "function": "getVariable"
@@ -1977,12 +2459,19 @@
       "resetGame": {
         "triggers": [],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
         "actions": [
-          { "type": "runScript", "scriptName": "resetRound", "vars": [] },
+          {
+            "type": "runScript",
+            "scriptName": "resetRound",
+            "vars": []
+          },
           {
             "comment": "",
             "variableName": "blueScore",
@@ -2023,16 +2512,27 @@
         "name": "player joins game",
         "actions": [
           {
-            "entity": { "function": "getTriggeringPlayer" },
+            "entity": {
+              "function": "getTriggeringPlayer"
+            },
             "playerType": "standard",
             "type": "assignPlayerType"
           },
           {
             "type": "condition",
             "conditions": [
-              { "operator": "<", "operandType": "number" },
-              { "function": "getVariable", "variableName": "numberOfRedUnits" },
-              { "function": "getVariable", "variableName": "numberOfBlueUnits" }
+              {
+                "operator": "<",
+                "operandType": "number"
+              },
+              {
+                "function": "getVariable",
+                "variableName": "numberOfRedUnits"
+              },
+              {
+                "function": "getVariable",
+                "variableName": "numberOfBlueUnits"
+              }
             ],
             "then": [
               {
@@ -2043,7 +2543,9 @@
                   "x": {
                     "function": "calculate",
                     "items": [
-                      { "operator": "+" },
+                      {
+                        "operator": "+"
+                      },
                       {
                         "function": "getPositionX",
                         "position": {
@@ -2068,7 +2570,9 @@
                     }
                   }
                 },
-                "entity": { "function": "getTriggeringPlayer" },
+                "entity": {
+                  "function": "getTriggeringPlayer"
+                },
                 "angle": 0
               }
             ],
@@ -2081,7 +2585,9 @@
                   "x": {
                     "function": "calculate",
                     "items": [
-                      { "operator": "-" },
+                      {
+                        "operator": "-"
+                      },
                       {
                         "function": "getPositionX",
                         "position": {
@@ -2106,34 +2612,59 @@
                     }
                   }
                 },
-                "entity": { "function": "getTriggeringPlayer" },
+                "entity": {
+                  "function": "getTriggeringPlayer"
+                },
                 "angle": 0
               }
             ]
           },
           {
-            "unit": { "function": "getLastCreatedUnit" },
-            "player": { "function": "getTriggeringPlayer" },
+            "unit": {
+              "function": "getLastCreatedUnit"
+            },
+            "player": {
+              "function": "getTriggeringPlayer"
+            },
             "type": "playerCameraTrackUnit"
           },
-          { "type": "runScript", "scriptName": "updatePlayerCount" },
           {
-            "entity": { "function": "getTriggeringPlayer" },
+            "type": "runScript",
+            "scriptName": "updatePlayerCount"
+          },
+          {
+            "entity": {
+              "function": "getTriggeringPlayer"
+            },
             "target": "top",
             "type": "showUiTextForPlayer"
           }
         ],
         "conditions": [
-          { "operandType": "boolean", "operator": "==" },
+          {
+            "operandType": "boolean",
+            "operator": "=="
+          },
           true,
           true
         ],
-        "triggers": [{ "type": "playerJoinsGame" }]
+        "triggers": [
+          {
+            "type": "playerJoinsGame"
+          }
+        ]
       },
       "playerLeavesGame": {
-        "triggers": [{ "type": "playerLeavesGame" }],
+        "triggers": [
+          {
+            "type": "playerLeavesGame"
+          }
+        ],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
@@ -2143,9 +2674,18 @@
             "unitGroup": {
               "function": "allUnits",
               "vars": [
-                { "id": "getTriggeringPlayer", "source": "trigger" },
-                { "id": "selectedUnit", "source": "forAllUnits" },
-                { "id": "getSelectedUnit", "source": "forAllUnits" }
+                {
+                  "id": "getTriggeringPlayer",
+                  "source": "trigger"
+                },
+                {
+                  "id": "selectedUnit",
+                  "source": "forAllUnits"
+                },
+                {
+                  "id": "getSelectedUnit",
+                  "source": "forAllUnits"
+                }
               ]
             },
             "actions": [
@@ -2156,64 +2696,135 @@
                     "entity": {
                       "function": "selectedUnit",
                       "vars": [
-                        { "id": "getTriggeringPlayer", "source": "trigger" },
-                        { "id": "selectedUnit", "source": "forAllUnits" },
-                        { "id": "getSelectedUnit", "source": "forAllUnits" }
+                        {
+                          "id": "getTriggeringPlayer",
+                          "source": "trigger"
+                        },
+                        {
+                          "id": "selectedUnit",
+                          "source": "forAllUnits"
+                        },
+                        {
+                          "id": "getSelectedUnit",
+                          "source": "forAllUnits"
+                        }
                       ]
                     },
                     "type": "destroyEntity",
                     "vars": [
-                      { "id": "getTriggeringPlayer", "source": "trigger" },
-                      { "id": "selectedUnit", "source": "forAllUnits" },
-                      { "id": "getSelectedUnit", "source": "forAllUnits" }
+                      {
+                        "id": "getTriggeringPlayer",
+                        "source": "trigger"
+                      },
+                      {
+                        "id": "selectedUnit",
+                        "source": "forAllUnits"
+                      },
+                      {
+                        "id": "getSelectedUnit",
+                        "source": "forAllUnits"
+                      }
                     ]
                   }
                 ],
                 "conditions": [
-                  { "operator": "==", "operandType": "player" },
+                  {
+                    "operator": "==",
+                    "operandType": "player"
+                  },
                   {
                     "entity": {
                       "function": "selectedUnit",
                       "vars": [
-                        { "id": "getTriggeringPlayer", "source": "trigger" },
-                        { "id": "selectedUnit", "source": "forAllUnits" },
-                        { "id": "getSelectedUnit", "source": "forAllUnits" }
+                        {
+                          "id": "getTriggeringPlayer",
+                          "source": "trigger"
+                        },
+                        {
+                          "id": "selectedUnit",
+                          "source": "forAllUnits"
+                        },
+                        {
+                          "id": "getSelectedUnit",
+                          "source": "forAllUnits"
+                        }
                       ]
                     },
                     "function": "getOwner",
                     "vars": [
-                      { "id": "getTriggeringPlayer", "source": "trigger" },
-                      { "id": "selectedUnit", "source": "forAllUnits" },
-                      { "id": "getSelectedUnit", "source": "forAllUnits" }
+                      {
+                        "id": "getTriggeringPlayer",
+                        "source": "trigger"
+                      },
+                      {
+                        "id": "selectedUnit",
+                        "source": "forAllUnits"
+                      },
+                      {
+                        "id": "getSelectedUnit",
+                        "source": "forAllUnits"
+                      }
                     ]
                   },
                   {
                     "function": "getTriggeringPlayer",
                     "vars": [
-                      { "id": "getTriggeringPlayer", "source": "trigger" },
-                      { "id": "selectedUnit", "source": "forAllUnits" },
-                      { "id": "getSelectedUnit", "source": "forAllUnits" }
+                      {
+                        "id": "getTriggeringPlayer",
+                        "source": "trigger"
+                      },
+                      {
+                        "id": "selectedUnit",
+                        "source": "forAllUnits"
+                      },
+                      {
+                        "id": "getSelectedUnit",
+                        "source": "forAllUnits"
+                      }
                     ]
                   }
                 ],
                 "type": "condition",
                 "vars": [
-                  { "id": "getTriggeringPlayer", "source": "trigger" },
-                  { "id": "selectedUnit", "source": "forAllUnits" },
-                  { "id": "getSelectedUnit", "source": "forAllUnits" }
+                  {
+                    "id": "getTriggeringPlayer",
+                    "source": "trigger"
+                  },
+                  {
+                    "id": "selectedUnit",
+                    "source": "forAllUnits"
+                  },
+                  {
+                    "id": "getSelectedUnit",
+                    "source": "forAllUnits"
+                  }
                 ]
               }
             ],
             "vars": [
-              { "id": "getTriggeringPlayer", "source": "trigger" },
-              { "id": "selectedUnit", "source": "forAllUnits" },
-              { "id": "getSelectedUnit", "source": "forAllUnits" }
+              {
+                "id": "getTriggeringPlayer",
+                "source": "trigger"
+              },
+              {
+                "id": "selectedUnit",
+                "source": "forAllUnits"
+              },
+              {
+                "id": "getSelectedUnit",
+                "source": "forAllUnits"
+              }
             ]
           },
           {
             "type": "runScript",
             "scriptName": "updatePlayerCount",
-            "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }]
+            "vars": [
+              {
+                "id": "getTriggeringPlayer",
+                "source": "trigger"
+              }
+            ]
           }
         ],
         "name": "player leaves game",
@@ -2236,7 +2847,9 @@
             "name": "Blue Player",
             "fixtures": [
               {
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0.5,
                 "friction": 0.01,
                 "density": 1,
@@ -2253,7 +2866,10 @@
             "type": "dynamic",
             "height": 20,
             "width": 20,
-            "z-index": { "layer": 4, "debris": 3 },
+            "z-index": {
+              "layer": 4,
+              "debris": 3
+            },
             "collidesWith": {
               "units": true,
               "items": false,
@@ -2269,7 +2885,9 @@
           "name": "Blue Player",
           "fixtures": [
             {
-              "shape": { "type": "rectangle" },
+              "shape": {
+                "type": "rectangle"
+              },
               "restitution": 0.5,
               "friction": 0.01,
               "density": 1
@@ -2285,7 +2903,10 @@
           "type": "dynamic",
           "height": 16,
           "width": 16,
-          "z-index": { "layer": 4, "debris": 3 },
+          "z-index": {
+            "layer": 4,
+            "debris": 3
+          },
           "collidesWith": {
             "units": true,
             "items": false,
@@ -2294,7 +2915,10 @@
             "debris": false
           }
         },
-        "spawnPosition": { "y": 600, "x": 1050 },
+        "spawnPosition": {
+          "y": 600,
+          "x": 1050
+        },
         "attributes": {
           "stamina": {
             "color": "#00dbff",
@@ -2325,13 +2949,38 @@
         },
         "canBuyItem": false,
         "abilities": {
-          "w": { "keyUp": "stopMovingUp", "keyDown": "startMovingUp" },
-          "a": { "keyUp": "stopMovingLeft", "keyDown": "startMovingLeft" },
-          "s": { "keyUp": "stopMovingDown", "keyDown": "startMovingDown" },
-          "d": { "keyUp": "stopMovingRight", "keyDown": "startMovingRight" },
-          "button1": { "keyUp": "", "keyDown": "dash" },
-          "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
-          "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } }
+          "w": {
+            "keyUp": "stopMovingUp",
+            "keyDown": "startMovingUp"
+          },
+          "a": {
+            "keyUp": "stopMovingLeft",
+            "keyDown": "startMovingLeft"
+          },
+          "s": {
+            "keyUp": "stopMovingDown",
+            "keyDown": "startMovingDown"
+          },
+          "d": {
+            "keyUp": "stopMovingRight",
+            "keyDown": "startMovingRight"
+          },
+          "button1": {
+            "keyUp": "",
+            "keyDown": "dash"
+          },
+          "lookWheel": {
+            "mobilePosition": {
+              "x": 407,
+              "y": 204
+            }
+          },
+          "movementWheel": {
+            "mobilePosition": {
+              "x": 35,
+              "y": 204
+            }
+          }
         },
         "baseSpeed": "180",
         "price": {},
@@ -2376,15 +3025,35 @@
             "flipSpriteHorizontallyWRTMouse": false
           },
           "abilities": {
-            "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
-            "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } },
+            "lookWheel": {
+              "mobilePosition": {
+                "x": 407,
+                "y": 204
+              }
+            },
+            "movementWheel": {
+              "mobilePosition": {
+                "x": 35,
+                "y": 204
+              }
+            },
             "button1": {
-              "keyUp": { "scriptName": "", "cost": {} },
+              "keyUp": {
+                "scriptName": "",
+                "cost": {}
+              },
               "keyDown": {
                 "scriptName": "dash",
-                "cost": { "unitAttributes": { "stamina": "40" } }
+                "cost": {
+                  "unitAttributes": {
+                    "stamina": "40"
+                  }
+                }
               },
-              "mobilePosition": { "x": 330, "y": 121 }
+              "mobilePosition": {
+                "x": 330,
+                "y": 121
+              }
             }
           },
           "permittedInventorySlots": []
@@ -2402,7 +3071,10 @@
               "items": false,
               "units": true
             },
-            "z-index": { "debris": 3, "layer": 4 },
+            "z-index": {
+              "debris": 3,
+              "layer": 4
+            },
             "width": 20,
             "height": 20,
             "type": "dynamic",
@@ -2418,7 +3090,9 @@
                 "density": 1,
                 "friction": 0.01,
                 "restitution": 0.5,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "isSensor": false
               }
             ],
@@ -2455,13 +3129,38 @@
         "price": 0,
         "baseSpeed": "180",
         "abilities": {
-          "movementWheel": { "mobilePosition": { "y": 204, "x": 35 } },
-          "lookWheel": { "mobilePosition": { "y": 204, "x": 407 } },
-          "button1": { "keyDown": "dash", "keyUp": "" },
-          "d": { "keyDown": "startMovingRight", "keyUp": "stopMovingRight" },
-          "s": { "keyDown": "startMovingDown", "keyUp": "stopMovingDown" },
-          "a": { "keyDown": "startMovingLeft", "keyUp": "stopMovingLeft" },
-          "w": { "keyDown": "startMovingUp", "keyUp": "stopMovingUp" }
+          "movementWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 35
+            }
+          },
+          "lookWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 407
+            }
+          },
+          "button1": {
+            "keyDown": "dash",
+            "keyUp": ""
+          },
+          "d": {
+            "keyDown": "startMovingRight",
+            "keyUp": "stopMovingRight"
+          },
+          "s": {
+            "keyDown": "startMovingDown",
+            "keyUp": "stopMovingDown"
+          },
+          "a": {
+            "keyDown": "startMovingLeft",
+            "keyUp": "stopMovingLeft"
+          },
+          "w": {
+            "keyDown": "startMovingUp",
+            "keyUp": "stopMovingUp"
+          }
         },
         "canBuyItem": false,
         "attributes": {
@@ -2491,7 +3190,10 @@
             "decimalPlaces": 0
           }
         },
-        "spawnPosition": { "x": 1050, "y": 600 },
+        "spawnPosition": {
+          "x": 1050,
+          "y": 600
+        },
         "body": {
           "name": "Red Player",
           "collidesWith": {
@@ -2501,7 +3203,10 @@
             "items": false,
             "units": true
           },
-          "z-index": { "debris": 3, "layer": 4 },
+          "z-index": {
+            "debris": 3,
+            "layer": 4
+          },
           "width": 16,
           "height": 16,
           "type": "dynamic",
@@ -2517,7 +3222,9 @@
               "density": 1,
               "friction": 0.01,
               "restitution": 0.5,
-              "shape": { "type": "rectangle" }
+              "shape": {
+                "type": "rectangle"
+              }
             }
           ]
         },
@@ -2533,15 +3240,35 @@
             "flipSpriteHorizontallyWRTMouse": false
           },
           "abilities": {
-            "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
-            "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } },
+            "lookWheel": {
+              "mobilePosition": {
+                "x": 407,
+                "y": 204
+              }
+            },
+            "movementWheel": {
+              "mobilePosition": {
+                "x": 35,
+                "y": 204
+              }
+            },
             "button1": {
-              "keyUp": { "scriptName": "", "cost": {} },
+              "keyUp": {
+                "scriptName": "",
+                "cost": {}
+              },
               "keyDown": {
                 "scriptName": "dash",
-                "cost": { "unitAttributes": { "stamina": "40" } }
+                "cost": {
+                  "unitAttributes": {
+                    "stamina": "40"
+                  }
+                }
               },
-              "mobilePosition": { "x": 329, "y": 110 }
+              "mobilePosition": {
+                "x": 329,
+                "y": 110
+              }
             }
           },
           "permittedInventorySlots": []
@@ -2557,8 +3284,18 @@
         "abilities": {
           "mouse1Down": "useItem",
           "mouse1Up": "stopItem",
-          "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
-          "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } }
+          "lookWheel": {
+            "mobilePosition": {
+              "x": 407,
+              "y": 204
+            }
+          },
+          "movementWheel": {
+            "mobilePosition": {
+              "x": 35,
+              "y": 204
+            }
+          }
         },
         "canBeMountedBy": [],
         "mountSlots": [],
@@ -2567,14 +3304,19 @@
         "attributes": {},
         "particles": {},
         "inventorySize": 4,
-        "spawnPosition": { "x": 1050, "y": 600 },
+        "spawnPosition": {
+          "x": 1050,
+          "y": 600
+        },
         "body": {
           "fixtures": [
             {
               "density": ".2",
               "friction": 0.01,
               "restitution": 1,
-              "shape": { "type": "circle" }
+              "shape": {
+                "type": "circle"
+              }
             }
           ],
           "isFlying": false,
@@ -2587,7 +3329,10 @@
           "type": "dynamic",
           "height": 16,
           "width": 16,
-          "z-index": { "layer": 3, "debris": 3 },
+          "z-index": {
+            "layer": 3,
+            "debris": 3
+          },
           "collidesWith": {
             "units": true,
             "items": false,
@@ -2628,7 +3373,9 @@
                 "density": ".5",
                 "friction": 0.01,
                 "restitution": 1,
-                "shape": { "type": "circle" }
+                "shape": {
+                  "type": "circle"
+                }
               }
             ],
             "isFlying": false,
@@ -2641,7 +3388,10 @@
             "type": "dynamic",
             "height": 40,
             "width": 40,
-            "z-index": { "layer": 3, "debris": 3 },
+            "z-index": {
+              "layer": 3,
+              "debris": 3
+            },
             "collidesWith": {
               "units": true,
               "items": false,
@@ -2662,74 +3412,144 @@
       "startMovingUp": {
         "name": "start moving up",
         "scriptName": "dgQQqTeSpo",
-        "cost": { "cast": {} }
+        "cost": {
+          "cast": {}
+        }
       },
       "stopMovingUp": {
         "name": "stop moving up",
         "scriptName": "C329r0iSfT",
-        "cost": { "cast": {} }
+        "cost": {
+          "cast": {}
+        }
       },
       "startMovingLeft": {
         "name": "start moving left",
         "scriptName": "IyDn0FcmUs",
-        "cost": { "cast": {} }
+        "cost": {
+          "cast": {}
+        }
       },
       "stopMovingLeft": {
         "name": "stop moving left",
         "scriptName": "RkUcELhFEq",
-        "cost": { "cast": {} }
+        "cost": {
+          "cast": {}
+        }
       },
       "startMovingRight": {
         "name": "start moving right",
         "scriptName": "X100400Tmf",
-        "cost": { "cast": {} }
+        "cost": {
+          "cast": {}
+        }
       },
       "stopMovingRight": {
         "name": "stop moving right",
         "scriptName": "9BWBAnXrsN",
-        "cost": { "cast": {} }
+        "cost": {
+          "cast": {}
+        }
       },
       "startMovingDown": {
         "name": "start moving down",
         "scriptName": "CD9BbZwsfy",
-        "cost": { "cast": {} }
+        "cost": {
+          "cast": {}
+        }
       },
       "stopMovingDown": {
         "name": "stop moving down",
         "scriptName": "JlvqdMynNj",
-        "cost": { "cast": {} }
+        "cost": {
+          "cast": {}
+        }
       },
       "dash": {
         "name": "dash",
         "scriptName": "dash",
-        "cost": { "unitAttributes": { "stamina": 60 }, "cast": {} }
+        "cost": {
+          "unitAttributes": {
+            "stamina": 60
+          },
+          "cast": {}
+        }
       }
     },
     "variables": {
-      "numberOfBlueUnits": { "default": 0, "dataType": "number" },
-      "blueScore": { "dataType": "number", "default": 0 },
-      "redScore": { "dataType": "number", "default": 0 },
-      "numberOfRedUnits": { "default": 0, "dataType": "number" },
-      "unitLastTouchedBall": { "dataType": "unit" },
-      "scoreText": { "dataType": "string" },
-      "ball ai": { "dataType": "player", "default": "computer1" },
-      "state": { "dataType": "string", "default": "waitingForPlayers" },
-      "timer": { "dataType": "number", "default": 0 },
-      "gameTimeLeft": { "dataType": "number", "default": 180 },
-      "minPlayerRequired": { "dataType": "number", "default": 2 },
+      "numberOfBlueUnits": {
+        "default": 0,
+        "dataType": "number"
+      },
+      "blueScore": {
+        "dataType": "number",
+        "default": 0
+      },
+      "redScore": {
+        "dataType": "number",
+        "default": 0
+      },
+      "numberOfRedUnits": {
+        "default": 0,
+        "dataType": "number"
+      },
+      "unitLastTouchedBall": {
+        "dataType": "unit"
+      },
+      "scoreText": {
+        "dataType": "string"
+      },
+      "ball ai": {
+        "dataType": "player",
+        "default": "computer1"
+      },
+      "state": {
+        "dataType": "string",
+        "default": "waitingForPlayers"
+      },
+      "timer": {
+        "dataType": "number",
+        "default": 0
+      },
+      "gameTimeLeft": {
+        "dataType": "number",
+        "default": 180
+      },
+      "minPlayerRequired": {
+        "dataType": "number",
+        "default": 2
+      },
       "blueGoalPost": {
         "dataType": "region",
-        "default": { "x": 66, "y": 224, "width": 22, "height": 79 },
+        "default": {
+          "x": 66,
+          "y": 224,
+          "width": 22,
+          "height": 79
+        },
         "deleteKey": "Region6461"
       },
       "redGoalPost": {
         "dataType": "region",
-        "default": { "x": 937, "y": 224, "width": 21, "height": 80 },
+        "default": {
+          "x": 937,
+          "y": 224,
+          "width": 21,
+          "height": 80
+        },
         "deleteKey": "Region3562"
       },
-      "maxEnergyBallsAllowed": { "dataType": "number", "default": 5 },
-      "energyBallCount": { "dataType": "number", "default": 0 },
-      "ball": { "dataType": "unit" }
+      "maxEnergyBallsAllowed": {
+        "dataType": "number",
+        "default": 5
+      },
+      "energyBallCount": {
+        "dataType": "number",
+        "default": 0
+      },
+      "ball": {
+        "dataType": "unit"
+      }
     },
     "images": [
       {
@@ -2818,7 +3638,10 @@
           "items": false,
           "units": true
         },
-        "z-index": { "debris": 3, "layer": 4 },
+        "z-index": {
+          "debris": 3,
+          "layer": 4
+        },
         "width": 16,
         "height": 16,
         "type": "dynamic",
@@ -2834,7 +3657,9 @@
             "density": 1,
             "friction": 0.01,
             "restitution": 0.5,
-            "shape": { "type": "rectangle" }
+            "shape": {
+              "type": "rectangle"
+            }
           }
         ],
         "name": "Blue Player"
@@ -2842,7 +3667,9 @@
       "redPlayer": {
         "fixtures": [
           {
-            "shape": { "type": "rectangle" },
+            "shape": {
+              "type": "rectangle"
+            },
             "restitution": 0.5,
             "friction": 0.01,
             "density": 1
@@ -2858,7 +3685,10 @@
         "type": "dynamic",
         "height": 16,
         "width": 16,
-        "z-index": { "layer": 4, "debris": 3 },
+        "z-index": {
+          "layer": 4,
+          "debris": 3
+        },
         "collidesWith": {
           "units": true,
           "items": false,
@@ -2874,7 +3704,9 @@
             "density": ".2",
             "friction": 0.01,
             "restitution": 1,
-            "shape": { "type": "circle" }
+            "shape": {
+              "type": "circle"
+            }
           }
         ],
         "isFlying": false,
@@ -2887,7 +3719,10 @@
         "type": "dynamic",
         "height": 16,
         "width": 16,
-        "z-index": { "layer": 3, "debris": 3 },
+        "z-index": {
+          "layer": 3,
+          "debris": 3
+        },
         "collidesWith": {
           "units": true,
           "items": false,
@@ -2898,8 +3733,15 @@
         "name": "ball (unit type)"
       },
       "energy": {
-        "itemAnchor": { "y": 0, "x": 0 },
-        "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+        "itemAnchor": {
+          "y": 0,
+          "x": 0
+        },
+        "unitAnchor": {
+          "rotation": 0,
+          "y": 33,
+          "x": 0
+        },
         "jointType": "weldJoint",
         "rotationSpeed": 3,
         "carriedBy": ["bluePlayer", "redPlayer"],
@@ -2916,7 +3758,10 @@
         "fixedRotation": false,
         "angularDamping": 1,
         "linearDamping": 1,
-        "z-index": { "depth": 4, "layer": 3 },
+        "z-index": {
+          "depth": 4,
+          "layer": 3
+        },
         "height": 10,
         "width": 10,
         "typeWhenDrop": "static",
@@ -2929,7 +3774,10 @@
         "typeWhenDrop": "static",
         "width": 10,
         "height": 10,
-        "z-index": { "layer": 3, "depth": 3 },
+        "z-index": {
+          "layer": 3,
+          "depth": 3
+        },
         "linearDamping": 1,
         "angularDamping": 1,
         "fixedRotation": false,
@@ -2946,8 +3794,15 @@
         "carriedBy": ["bluePlayer", "redPlayer"],
         "rotationSpeed": 3,
         "jointType": "weldJoint",
-        "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
-        "itemAnchor": { "x": 0, "y": 0 }
+        "unitAnchor": {
+          "x": 0,
+          "y": 33,
+          "rotation": 0
+        },
+        "itemAnchor": {
+          "x": 0,
+          "y": 0
+        }
       },
       "unselected": {
         "name": "unselected",
@@ -2955,7 +3810,10 @@
         "typeWhenDrop": "static",
         "width": 10,
         "height": 10,
-        "z-index": { "layer": 3, "depth": 4 },
+        "z-index": {
+          "layer": 3,
+          "depth": 4
+        },
         "linearDamping": 1,
         "angularDamping": 1,
         "fixedRotation": false,
@@ -2972,8 +3830,15 @@
         "carriedBy": ["bluePlayer", "redPlayer"],
         "rotationSpeed": 3,
         "jointType": "weldJoint",
-        "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
-        "itemAnchor": { "x": 0, "y": 0 }
+        "unitAnchor": {
+          "x": 0,
+          "y": 33,
+          "rotation": 0
+        },
+        "itemAnchor": {
+          "x": 0,
+          "y": 0
+        }
       },
       "dropped": {
         "name": "dropped",
@@ -2981,7 +3846,10 @@
         "typeWhenDrop": "static",
         "width": 10,
         "height": 10,
-        "z-index": { "layer": 1, "depth": 1 },
+        "z-index": {
+          "layer": 1,
+          "depth": 1
+        },
         "linearDamping": 1,
         "angularDamping": 1,
         "fixedRotation": false,
@@ -2998,8 +3866,15 @@
         "carriedBy": ["bluePlayer", "redPlayer"],
         "rotationSpeed": 3,
         "jointType": "weldJoint",
-        "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
-        "itemAnchor": { "x": 0, "y": 0 }
+        "unitAnchor": {
+          "x": 0,
+          "y": 33,
+          "rotation": 0
+        },
+        "itemAnchor": {
+          "x": 0,
+          "y": 0
+        }
       }
     },
     "entityTypeVariables": {},

@@ -75,6 +75,7 @@
   "highScores": [],
   "lastPlayedAt": "",
   "__v": 1,
+  "renderingFilter": "smooth",
   "data": {
     "dialogues": {},
     "bodyTypes": {

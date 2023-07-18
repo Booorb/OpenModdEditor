@@ -75,6 +75,7 @@
   "highScores": [],
   "lastPlayedAt": "",
   "__v": 1,
+  "renderingFilter": "smooth",
   "data": {
     "bodyTypes": {
       "7Csw2oLf77": {
@@ -82,7 +83,10 @@
         "type": "none",
         "width": 64,
         "height": 64,
-        "z-index": { "layer": 3, "depth": 3 },
+        "z-index": {
+          "layer": 3,
+          "depth": 3
+        },
         "fixedRotation": false,
         "bullet": false,
         "allowSleep": true,
@@ -102,20 +106,34 @@
             "density": 1,
             "friction": 0,
             "restitution": 0,
-            "shape": { "type": "rectangle" },
+            "shape": {
+              "type": "rectangle"
+            },
             "isSensor": false
           }
         ],
         "jointType": "weldJoint",
-        "unitAnchor": { "x": 0, "y": 32, "rotation": 0 },
-        "itemAnchor": { "x": 0, "y": 0, "lowerAngle": 0, "upperAngle": 0 }
+        "unitAnchor": {
+          "x": 0,
+          "y": 32,
+          "rotation": 0
+        },
+        "itemAnchor": {
+          "x": 0,
+          "y": 0,
+          "lowerAngle": 0,
+          "upperAngle": 0
+        }
       },
       "hfdq9IiXB0": {
         "name": "selected",
         "type": "dynamic",
         "width": 64,
         "height": 64,
-        "z-index": { "layer": 3, "depth": 3 },
+        "z-index": {
+          "layer": 3,
+          "depth": 3
+        },
         "fixedRotation": false,
         "bullet": false,
         "allowSleep": true,
@@ -135,18 +153,32 @@
             "density": 1,
             "friction": 0,
             "restitution": 0,
-            "shape": { "type": "rectangle" },
+            "shape": {
+              "type": "rectangle"
+            },
             "isSensor": false
           }
         ],
         "jointType": "weldJoint",
-        "unitAnchor": { "x": 0, "y": 32, "rotation": 0 },
-        "itemAnchor": { "x": 0, "y": 0, "lowerAngle": 0, "upperAngle": 0 }
+        "unitAnchor": {
+          "x": 0,
+          "y": 32,
+          "rotation": 0
+        },
+        "itemAnchor": {
+          "x": 0,
+          "y": 0,
+          "lowerAngle": 0,
+          "upperAngle": 0
+        }
       },
       "dropped": {
         "name": "dropped",
         "fixedRotation": false,
-        "z-index": { "layer": 1, "depth": 1 },
+        "z-index": {
+          "layer": 1,
+          "depth": 1
+        },
         "typeWhenDrop": "dynamic",
         "type": "static",
         "collidesWith": {
@@ -156,13 +188,24 @@
           "walls": false,
           "debris": false
         },
-        "unitAnchor": { "rotation": 0, "y": 32, "x": 0 },
+        "unitAnchor": {
+          "rotation": 0,
+          "y": 32,
+          "x": 0
+        },
         "rotationSpeed": 3,
-        "itemAnchor": { "y": 0, "x": 0 },
+        "itemAnchor": {
+          "y": 0,
+          "x": 0
+        },
         "jointType": "weldJoint",
         "width": 64,
         "height": 64,
-        "holdPosition": { "rotation": 0, "y": 33, "x": 0 },
+        "holdPosition": {
+          "rotation": 0,
+          "y": 33,
+          "x": 0
+        },
         "linearDamping": 5,
         "angularDamping": 1,
         "restitution": 1,
@@ -179,19 +222,32 @@
             "density": 1,
             "friction": 0,
             "restitution": 0,
-            "shape": { "type": "rectangle" },
+            "shape": {
+              "type": "rectangle"
+            },
             "isSensor": false
           }
         ]
       },
       "default": {
-        "itemAnchor": { "upperAngle": 0, "lowerAngle": 0, "y": 0, "x": 0 },
-        "unitAnchor": { "rotation": 0, "y": 32, "x": 0 },
+        "itemAnchor": {
+          "upperAngle": 0,
+          "lowerAngle": 0,
+          "y": 0,
+          "x": 0
+        },
+        "unitAnchor": {
+          "rotation": 0,
+          "y": 32,
+          "x": 0
+        },
         "jointType": "weldJoint",
         "fixtures": [
           {
             "isSensor": false,
-            "shape": { "type": "circle" },
+            "shape": {
+              "type": "circle"
+            },
             "restitution": 0,
             "friction": 0,
             "density": 1
@@ -211,20 +267,34 @@
         "allowSleep": true,
         "bullet": false,
         "fixedRotation": false,
-        "z-index": { "depth": 3, "layer": 3 },
+        "z-index": {
+          "depth": 3,
+          "layer": 3
+        },
         "height": 64,
         "width": 64,
         "type": "dynamic",
         "name": "default"
       },
       "bhyEf0ozTD": {
-        "itemAnchor": { "upperAngle": 0, "lowerAngle": 0, "y": 0, "x": 0 },
-        "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+        "itemAnchor": {
+          "upperAngle": 0,
+          "lowerAngle": 0,
+          "y": 0,
+          "x": 0
+        },
+        "unitAnchor": {
+          "rotation": 0,
+          "y": 33,
+          "x": 0
+        },
         "jointType": "weldJoint",
         "fixtures": [
           {
             "isSensor": false,
-            "shape": { "type": "rectangle" },
+            "shape": {
+              "type": "rectangle"
+            },
             "restitution": 0,
             "friction": 0.01,
             "density": 1
@@ -244,7 +314,10 @@
         "allowSleep": true,
         "bullet": false,
         "fixedRotation": false,
-        "z-index": { "depth": 3, "layer": 3 },
+        "z-index": {
+          "depth": 3,
+          "layer": 3
+        },
         "height": 60,
         "width": 35,
         "type": "static",
@@ -255,11 +328,23 @@
     "particles": {
       "87BiLybZhy": {
         "velocityVector": {
-          "maxVector": { "y": 1, "x": 1 },
-          "minVector": { "y": -1, "x": -1 },
-          "baseVector": { "y": 0, "x": 0 }
+          "maxVector": {
+            "y": 1,
+            "x": 1
+          },
+          "minVector": {
+            "y": -1,
+            "x": -1
+          },
+          "baseVector": {
+            "y": 0,
+            "x": 0
+          }
         },
-        "mountPosition": { "y": 0, "x": 0 },
+        "mountPosition": {
+          "y": 0,
+          "x": 0
+        },
         "deathOpacityBase": 1,
         "quantityTimespan": 30,
         "quantityBase": 1,
@@ -269,11 +354,23 @@
       },
       "7pA9mm1MLG": {
         "velocityVector": {
-          "maxVector": { "y": 1, "x": 1 },
-          "minVector": { "y": -1, "x": -1 },
-          "baseVector": { "y": 0, "x": 0 }
+          "maxVector": {
+            "y": 1,
+            "x": 1
+          },
+          "minVector": {
+            "y": -1,
+            "x": -1
+          },
+          "baseVector": {
+            "y": 0,
+            "x": 0
+          }
         },
-        "mountPosition": { "y": 0, "x": 0 },
+        "mountPosition": {
+          "y": 0,
+          "x": 0
+        },
         "deathOpacityBase": 1,
         "quantityTimespan": 30,
         "quantityBase": 5,
@@ -319,7 +416,10 @@
       }
     },
     "factions": {
-      "PgVCU0WgYj": { "relationships": {}, "name": "fda" },
+      "PgVCU0WgYj": {
+        "relationships": {},
+        "name": "fda"
+      },
       "6BTQoFGUFP": {
         "attributes": {
           "4P4pWD5ExV": {
@@ -403,18 +503,30 @@
     ],
     "settings": {
       "menudiv": "Simple Racer game. Players can move using the Mouse Cursor.",
-      "inventory": { "isEnabled": false },
-      "shop": { "isEnabled": false },
+      "inventory": {
+        "isEnabled": false
+      },
+      "shop": {
+        "isEnabled": false
+      },
       "camera": {
-        "zoom": { "default": 700, "type": "static" },
+        "zoom": {
+          "default": 700,
+          "type": "static"
+        },
         "trackingDelay": 3
       },
-      "constants": { "currency": "Food" },
+      "constants": {
+        "currency": "Food"
+      },
       "images": {
         "logo": "https://cache.modd.io/asset/spriteImage/1593104312461_modd_logo.png",
         "cover": "https://cache.modd.io/1501275562940_two houses cover.png"
       },
-      "gravity": { "x": 0, "y": 0 },
+      "gravity": {
+        "x": 0,
+        "y": 0
+      },
       "scoreBoard": "n5JEoENeGg",
       "scoreAttributeId": "RYs2ahzfJj",
       "allowDuplicateIPs": true,
@@ -492,112 +604,238 @@
     "variables": {
       "offroad10": {
         "deleteKey": "Region9277",
-        "default": { "height": 68, "width": 815, "y": 855, "x": 100 },
+        "default": {
+          "height": 68,
+          "width": 815,
+          "y": 855,
+          "x": 100
+        },
         "dataType": "region"
       },
       "offroad08": {
         "deleteKey": "Region9374",
-        "default": { "height": 390, "width": 1272, "y": 280, "x": 280 },
+        "default": {
+          "height": 390,
+          "width": 1272,
+          "y": 280,
+          "x": 280
+        },
         "dataType": "region"
       },
       "offroad06": {
         "deleteKey": "Region5342",
-        "default": { "height": 208, "width": 1001, "y": 1552, "x": 759 },
+        "default": {
+          "height": 208,
+          "width": 1001,
+          "y": 1552,
+          "x": 759
+        },
         "dataType": "region"
       },
       "offroad04": {
         "dataType": "region",
-        "default": { "x": 0, "y": 34, "width": 110, "height": 1925 }
+        "default": {
+          "x": 0,
+          "y": 34,
+          "width": 110,
+          "height": 1925
+        }
       },
       "offroad02": {
-        "default": { "height": 1990, "width": 105, "y": 46, "x": 1942 },
+        "default": {
+          "height": 1990,
+          "width": 105,
+          "y": 46,
+          "x": 1942
+        },
         "dataType": "region"
       },
       "finish lap": {
         "deleteKey": "final lap",
-        "default": { "height": 42, "width": 288, "y": 255, "x": 37 },
+        "default": {
+          "height": 42,
+          "width": 288,
+          "y": 255,
+          "x": 37
+        },
         "dataType": "region"
       },
       "checkpoint08": {
         "dataType": "region",
-        "default": { "x": 1335, "y": 672, "width": 266, "height": 234 },
+        "default": {
+          "x": 1335,
+          "y": 672,
+          "width": 266,
+          "height": 234
+        },
         "deleteKey": "Region2303"
       },
       "checkpoint06": {
         "deleteKey": "Region7984",
-        "default": { "height": 187, "width": 226, "y": 1371, "x": 718 },
+        "default": {
+          "height": 187,
+          "width": 226,
+          "y": 1371,
+          "x": 718
+        },
         "dataType": "region"
       },
       "checkpoint04": {
         "deleteKey": "Region5187",
-        "default": { "height": 214, "width": 203, "y": 928, "x": 106 },
+        "default": {
+          "height": 214,
+          "width": 203,
+          "y": 928,
+          "x": 106
+        },
         "dataType": "region"
       },
       "checkpoint02": {
         "dataType": "region",
-        "default": { "x": 1741, "y": 1734, "width": 242, "height": 239 },
+        "default": {
+          "x": 1741,
+          "y": 1734,
+          "width": 242,
+          "height": 239
+        },
         "deleteKey": "Region2750"
       },
       "spawn": {
-        "default": { "height": 105, "width": 105, "y": 140, "x": 350 },
+        "default": {
+          "height": 105,
+          "width": 105,
+          "y": 140,
+          "x": 350
+        },
         "dataType": "region"
       },
       "checkpoint01": {
         "deleteKey": "Region9443",
-        "default": { "height": 231, "width": 266, "y": 75, "x": 1720 },
+        "default": {
+          "height": 231,
+          "width": 266,
+          "y": 75,
+          "x": 1720
+        },
         "dataType": "region"
       },
       "checkpoint03": {
         "dataType": "region",
-        "default": { "x": 77, "y": 1739, "width": 240, "height": 219 },
+        "default": {
+          "x": 77,
+          "y": 1739,
+          "width": 240,
+          "height": 219
+        },
         "deleteKey": "Region3707"
       },
       "checkpoint05": {
         "dataType": "region",
-        "default": { "x": 728, "y": 928, "width": 197, "height": 182 },
+        "default": {
+          "x": 728,
+          "y": 928,
+          "width": 197,
+          "height": 182
+        },
         "deleteKey": "Region3880"
       },
       "checkpoint07": {
         "dataType": "region",
-        "default": { "x": 1355, "y": 1354, "width": 216, "height": 198 },
+        "default": {
+          "x": 1355,
+          "y": 1354,
+          "width": 216,
+          "height": 198
+        },
         "deleteKey": "Region6834"
       },
       "checkpoint09": {
         "dataType": "region",
-        "default": { "x": 90, "y": 664, "width": 208, "height": 199 },
+        "default": {
+          "x": 90,
+          "y": 664,
+          "width": 208,
+          "height": 199
+        },
         "deleteKey": "Region5940"
       },
       "offroad01": {
-        "default": { "height": 115, "width": 2025, "y": 0, "x": 9 },
+        "default": {
+          "height": 115,
+          "width": 2025,
+          "y": 0,
+          "x": 9
+        },
         "dataType": "region"
       },
       "offroad03": {
         "dataType": "region",
-        "default": { "x": 11, "y": 1938, "width": 2030, "height": 100 },
+        "default": {
+          "x": 11,
+          "y": 1938,
+          "width": 2030,
+          "height": 100
+        },
         "deleteKey": "Region1509"
       },
       "offroad05": {
         "dataType": "region",
-        "default": { "x": 275, "y": 1107, "width": 475, "height": 668 },
+        "default": {
+          "x": 275,
+          "y": 1107,
+          "width": 475,
+          "height": 668
+        },
         "deleteKey": "Region6781"
       },
       "offroad07": {
         "dataType": "region",
-        "default": { "x": 1554, "y": 292, "width": 208, "height": 1286 },
+        "default": {
+          "x": 1554,
+          "y": 292,
+          "width": 208,
+          "height": 1286
+        },
         "deleteKey": "Region135"
       },
       "offroad09": {
         "dataType": "region",
-        "default": { "x": 929, "y": 860, "width": 451, "height": 513 },
+        "default": {
+          "x": 929,
+          "y": 860,
+          "width": 451,
+          "height": 513
+        },
         "deleteKey": "Region2888"
       },
-      "state": { "default": 0, "dataType": "number" },
-      "@statePrepare": { "dataType": "number", "default": 10 },
-      "@stateRace": { "dataType": "number", "default": 20 },
-      "@stateGameOver": { "dataType": "number", "default": 30 },
-      "timeLeft": { "default": 5, "dataType": "number" },
-      "@stateWaitForMorePlayers": { "dataType": "number", "default": 40 },
-      "@requiredNumberOfPlayers": { "dataType": "number", "default": 2 }
+      "state": {
+        "default": 0,
+        "dataType": "number"
+      },
+      "@statePrepare": {
+        "dataType": "number",
+        "default": 10
+      },
+      "@stateRace": {
+        "dataType": "number",
+        "default": 20
+      },
+      "@stateGameOver": {
+        "dataType": "number",
+        "default": 30
+      },
+      "timeLeft": {
+        "default": 5,
+        "dataType": "number"
+      },
+      "@stateWaitForMorePlayers": {
+        "dataType": "number",
+        "default": 40
+      },
+      "@requiredNumberOfPlayers": {
+        "dataType": "number",
+        "default": 2
+      }
     },
     "abilities": {},
     "unitTypes": {
@@ -612,19 +850,39 @@
           "maxAttackRange": 400
         },
         "variables": {
-          "isOffRoad": { "dataType": "boolean", "default": false },
-          "isDecelerating": { "dataType": "boolean", "default": false },
-          "isAccelerating": { "dataType": "boolean", "default": false }
+          "isOffRoad": {
+            "dataType": "boolean",
+            "default": false
+          },
+          "isDecelerating": {
+            "dataType": "boolean",
+            "default": false
+          },
+          "isAccelerating": {
+            "dataType": "boolean",
+            "default": false
+          }
         },
         "bodies": {
           "default": {
-            "itemAnchor": { "upperAngle": 0, "lowerAngle": 0, "y": 0, "x": 0 },
-            "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+            "itemAnchor": {
+              "upperAngle": 0,
+              "lowerAngle": 0,
+              "y": 0,
+              "x": 0
+            },
+            "unitAnchor": {
+              "rotation": 0,
+              "y": 33,
+              "x": 0
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": false,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0,
                 "friction": 0,
                 "density": 4
@@ -644,7 +902,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 3, "layer": 3 },
+            "z-index": {
+              "depth": 3,
+              "layer": 3
+            },
             "height": 35,
             "width": 18,
             "type": "dynamic",
@@ -656,7 +917,10 @@
             "type": "static",
             "width": 18,
             "height": 35,
-            "z-index": { "layer": 3, "depth": 3 },
+            "z-index": {
+              "layer": 3,
+              "depth": 3
+            },
             "fixedRotation": false,
             "bullet": false,
             "allowSleep": true,
@@ -676,13 +940,24 @@
                 "density": 2,
                 "friction": 0.01,
                 "restitution": 0,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "isSensor": false
               }
             ],
             "jointType": "weldJoint",
-            "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
-            "itemAnchor": { "x": 0, "y": 0, "lowerAngle": 0, "upperAngle": 0 }
+            "unitAnchor": {
+              "x": 0,
+              "y": 33,
+              "rotation": 0
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0,
+              "lowerAngle": 0,
+              "upperAngle": 0
+            }
           }
         },
         "cellSheet": {
@@ -699,36 +974,85 @@
         "baseSpeed": 53,
         "abilitiesJ8GTV": {
           "b": {
-            "mobilePosition": { "y": 32, "x": 419 },
+            "mobilePosition": {
+              "y": 32,
+              "x": 419
+            },
             "keyDown": "shop",
             "keyUp": ""
           },
           "g": {
-            "mobilePosition": { "y": 33, "x": 365 },
+            "mobilePosition": {
+              "y": 33,
+              "x": 365
+            },
             "keyDown": "drop",
             "keyUp": ""
           },
-          "f": { "keyDown": "pickUp", "keyUp": "" },
-          "e": {
-            "mobilePosition": { "y": 85, "x": 366 },
+          "f": {
             "keyDown": "pickUp",
             "keyUp": ""
           },
-          "right": { "keyDown": "moveRight", "keyUp": "stopMovingRight" },
-          "left": { "keyDown": "moveLeft", "keyUp": "stopMovingLeft" },
-          "down": { "keyDown": "moveDown", "keyUp": "stopMovingDown" },
-          "up": { "keyDown": "moveUp", "keyUp": "stopMovingUp" },
+          "e": {
+            "mobilePosition": {
+              "y": 85,
+              "x": 366
+            },
+            "keyDown": "pickUp",
+            "keyUp": ""
+          },
+          "right": {
+            "keyDown": "moveRight",
+            "keyUp": "stopMovingRight"
+          },
+          "left": {
+            "keyDown": "moveLeft",
+            "keyUp": "stopMovingLeft"
+          },
+          "down": {
+            "keyDown": "moveDown",
+            "keyUp": "stopMovingDown"
+          },
+          "up": {
+            "keyDown": "moveUp",
+            "keyUp": "stopMovingUp"
+          },
           "button1": {
-            "mobilePosition": { "y": 132, "x": 326 },
+            "mobilePosition": {
+              "y": 132,
+              "x": 326
+            },
             "keyDown": "startUsingItem",
             "keyUp": "stopUsingItem"
           },
-          "d": { "keyDown": "moveRight", "keyUp": "stopMovingRight" },
-          "s": { "keyDown": "moveDown", "keyUp": "stopMovingDown" },
-          "a": { "keyDown": "moveLeft", "keyUp": "stopMovingLeft" },
-          "w": { "keyDown": "moveUp", "keyUp": "stopMovingUp" },
-          "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
-          "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } }
+          "d": {
+            "keyDown": "moveRight",
+            "keyUp": "stopMovingRight"
+          },
+          "s": {
+            "keyDown": "moveDown",
+            "keyUp": "stopMovingDown"
+          },
+          "a": {
+            "keyDown": "moveLeft",
+            "keyUp": "stopMovingLeft"
+          },
+          "w": {
+            "keyDown": "moveUp",
+            "keyUp": "stopMovingUp"
+          },
+          "lookWheel": {
+            "mobilePosition": {
+              "x": 407,
+              "y": 204
+            }
+          },
+          "movementWheel": {
+            "mobilePosition": {
+              "x": 35,
+              "y": 204
+            }
+          }
         },
         "attributes": {
           "health": {
@@ -771,10 +1095,16 @@
             "decimalPlaces": 0
           }
         },
-        "spawnPosition": { "x": 1500, "y": 2200 },
+        "spawnPosition": {
+          "x": 1500,
+          "y": 2200
+        },
         "body": {
           "name": "Human-body",
-          "z-index": { "depth": 3, "layer": 3 },
+          "z-index": {
+            "depth": 3,
+            "layer": 3
+          },
           "collidesWith": {
             "debris": true,
             "item": true,
@@ -799,7 +1129,9 @@
               "density": 3,
               "friction": 0.01,
               "restitution": 0.01,
-              "shape": { "type": "rectangle" }
+              "shape": {
+                "type": "rectangle"
+              }
             }
           ],
           "spriteScale": 1
@@ -851,14 +1183,36 @@
           },
           "abilities": {
             "button1": {
-              "keyDown": { "cost": {}, "scriptName": "2IbeORlIGU" },
-              "keyUp": { "cost": {}, "scriptName": "O6my5sAWf5" }
+              "keyDown": {
+                "cost": {},
+                "scriptName": "2IbeORlIGU"
+              },
+              "keyUp": {
+                "cost": {},
+                "scriptName": "O6my5sAWf5"
+              }
             },
-            "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
-            "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } },
+            "lookWheel": {
+              "mobilePosition": {
+                "x": 407,
+                "y": 204
+              }
+            },
+            "movementWheel": {
+              "mobilePosition": {
+                "x": 35,
+                "y": 204
+              }
+            },
             "button3": {
-              "keyUp": { "scriptName": "f6n7qehSHC", "cost": {} },
-              "keyDown": { "scriptName": "EBXdPtfBYw", "cost": {} }
+              "keyUp": {
+                "scriptName": "f6n7qehSHC",
+                "cost": {}
+              },
+              "keyDown": {
+                "scriptName": "EBXdPtfBYw",
+                "cost": {}
+              }
             }
           },
           "movementControlScheme": "followCursor",
@@ -877,9 +1231,21 @@
             "animation": "",
             "tween": ""
           },
-          "move": { "projectileType": "", "sound": {}, "animation": "" },
-          "create": { "projectileType": "", "sound": {}, "animation": "" },
-          "destroy": { "projectileType": "", "sound": {}, "animation": "" }
+          "move": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
+          "create": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
+          "destroy": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          }
         },
         "confinedWithinMapBoundaries": true,
         "defaultItems": [],
@@ -894,31 +1260,60 @@
         "name": "player joins",
         "actions": [
           {
-            "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+            "vars": [
+              {
+                "id": "getTriggeringPlayer",
+                "source": "trigger"
+              }
+            ],
             "angle": {
-              "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+              "vars": [
+                {
+                  "id": "getTriggeringPlayer",
+                  "source": "trigger"
+                }
+              ],
               "function": "angleBetweenPositions",
               "positionA": {
-                "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+                "vars": [
+                  {
+                    "id": "getTriggeringPlayer",
+                    "source": "trigger"
+                  }
+                ],
                 "function": "getEntityPosition",
                 "entity": {
                   "vars": [
-                    { "id": "getTriggeringPlayer", "source": "trigger" }
+                    {
+                      "id": "getTriggeringPlayer",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "getLastCreatedUnit"
                 }
               },
               "positionB": {
-                "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+                "vars": [
+                  {
+                    "id": "getTriggeringPlayer",
+                    "source": "trigger"
+                  }
+                ],
                 "function": "getMouseCursorPosition",
                 "player": {
                   "vars": [
-                    { "id": "getTriggeringPlayer", "source": "trigger" }
+                    {
+                      "id": "getTriggeringPlayer",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "getOwner",
                   "entity": {
                     "vars": [
-                      { "id": "getTriggeringPlayer", "source": "trigger" }
+                      {
+                        "id": "getTriggeringPlayer",
+                        "source": "trigger"
+                      }
                     ],
                     "function": "getLastCreatedUnit"
                   }
@@ -926,78 +1321,152 @@
               }
             },
             "position": {
-              "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+              "vars": [
+                {
+                  "id": "getTriggeringPlayer",
+                  "source": "trigger"
+                }
+              ],
               "region": {
-                "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+                "vars": [
+                  {
+                    "id": "getTriggeringPlayer",
+                    "source": "trigger"
+                  }
+                ],
                 "function": "getVariable",
                 "variableName": "spawn"
               },
               "function": "getRandomPositionInRegion"
             },
             "entity": {
-              "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+              "vars": [
+                {
+                  "id": "getTriggeringPlayer",
+                  "source": "trigger"
+                }
+              ],
               "function": "getTriggeringPlayer"
             },
             "unitType": "playerUnit",
             "type": "createUnitAtPosition"
           },
           {
-            "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+            "vars": [
+              {
+                "id": "getTriggeringPlayer",
+                "source": "trigger"
+              }
+            ],
             "unit": {
-              "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+              "vars": [
+                {
+                  "id": "getTriggeringPlayer",
+                  "source": "trigger"
+                }
+              ],
               "function": "getLastCreatedUnit"
             },
             "player": {
-              "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+              "vars": [
+                {
+                  "id": "getTriggeringPlayer",
+                  "source": "trigger"
+                }
+              ],
               "function": "getTriggeringPlayer"
             },
             "type": "playerCameraTrackUnit"
           },
           {
-            "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+            "vars": [
+              {
+                "id": "getTriggeringPlayer",
+                "source": "trigger"
+              }
+            ],
             "playerType": "HUcyBrvAlV",
             "entity": {
-              "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+              "vars": [
+                {
+                  "id": "getTriggeringPlayer",
+                  "source": "trigger"
+                }
+              ],
               "function": "getTriggeringPlayer"
             },
             "type": "assignPlayerType"
           },
           {
-            "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+            "vars": [
+              {
+                "id": "getTriggeringPlayer",
+                "source": "trigger"
+              }
+            ],
             "type": "condition",
             "conditions": [
-              { "operandType": "number", "operator": "==" },
               {
-                "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+                "operandType": "number",
+                "operator": "=="
+              },
+              {
+                "vars": [
+                  {
+                    "id": "getTriggeringPlayer",
+                    "source": "trigger"
+                  }
+                ],
                 "function": "getVariable",
                 "variableName": "state"
               },
               {
-                "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+                "vars": [
+                  {
+                    "id": "getTriggeringPlayer",
+                    "source": "trigger"
+                  }
+                ],
                 "function": "getVariable",
                 "variableName": "@stateGameOver"
               }
             ],
             "then": [
               {
-                "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+                "vars": [
+                  {
+                    "id": "getTriggeringPlayer",
+                    "source": "trigger"
+                  }
+                ],
                 "type": "showUiTextForPlayer",
                 "target": "top",
                 "entity": {
                   "vars": [
-                    { "id": "getTriggeringPlayer", "source": "trigger" }
+                    {
+                      "id": "getTriggeringPlayer",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "getTriggeringPlayer"
                 }
               },
               {
-                "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+                "vars": [
+                  {
+                    "id": "getTriggeringPlayer",
+                    "source": "trigger"
+                  }
+                ],
                 "type": "updateUiTextForPlayer",
                 "target": "top",
                 "value": "Left click - Accelerate | Right click - Decelerate",
                 "entity": {
                   "vars": [
-                    { "id": "getTriggeringPlayer", "source": "trigger" }
+                    {
+                      "id": "getTriggeringPlayer",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "getTriggeringPlayer"
                 }
@@ -1006,39 +1475,73 @@
             "else": []
           },
           {
-            "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+            "vars": [
+              {
+                "id": "getTriggeringPlayer",
+                "source": "trigger"
+              }
+            ],
             "type": "condition",
             "conditions": [
-              { "operandType": "number", "operator": "==" },
               {
-                "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+                "operandType": "number",
+                "operator": "=="
+              },
+              {
+                "vars": [
+                  {
+                    "id": "getTriggeringPlayer",
+                    "source": "trigger"
+                  }
+                ],
                 "function": "getVariable",
                 "variableName": "state"
               },
               {
-                "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+                "vars": [
+                  {
+                    "id": "getTriggeringPlayer",
+                    "source": "trigger"
+                  }
+                ],
                 "variableName": "@statePrepare",
                 "function": "getVariable"
               }
             ],
             "then": [
               {
-                "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+                "vars": [
+                  {
+                    "id": "getTriggeringPlayer",
+                    "source": "trigger"
+                  }
+                ],
                 "type": "showUiTextForPlayer",
                 "target": "center-lg",
                 "entity": {
                   "vars": [
-                    { "id": "getTriggeringPlayer", "source": "trigger" }
+                    {
+                      "id": "getTriggeringPlayer",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "getTriggeringPlayer"
                 }
               },
               {
-                "vars": [{ "id": "getTriggeringPlayer", "source": "trigger" }],
+                "vars": [
+                  {
+                    "id": "getTriggeringPlayer",
+                    "source": "trigger"
+                  }
+                ],
                 "state": "fgqViJxOnm",
                 "entity": {
                   "vars": [
-                    { "id": "getTriggeringPlayer", "source": "trigger" }
+                    {
+                      "id": "getTriggeringPlayer",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "getLastCreatedUnit"
                 },
@@ -1049,17 +1552,32 @@
           }
         ],
         "conditions": [
-          { "operandType": "boolean", "operator": "==" },
+          {
+            "operandType": "boolean",
+            "operator": "=="
+          },
           true,
           true
         ],
-        "triggers": [{ "type": "playerJoinsGame" }]
+        "triggers": [
+          {
+            "type": "playerJoinsGame"
+          }
+        ]
       },
       "initialize": {
         "isProtected": true,
-        "triggers": [{ "type": "gameStart" }],
+        "triggers": [
+          {
+            "type": "gameStart"
+          }
+        ],
         "actions": [
-          { "vars": [], "type": "runScript", "scriptName": "EZR6zwWeHj" }
+          {
+            "vars": [],
+            "type": "runScript",
+            "scriptName": "EZR6zwWeHj"
+          }
         ],
         "name": "initialize",
         "parent": null,
@@ -1067,9 +1585,16 @@
         "order": 0
       },
       "playerLeave": {
-        "triggers": [{ "type": "playerLeavesGame" }],
+        "triggers": [
+          {
+            "type": "playerLeavesGame"
+          }
+        ],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
@@ -1082,15 +1607,33 @@
               "player": {
                 "function": "getTriggeringPlayer",
                 "vars": [
-                  { "id": "getTriggeringPlayer", "source": "trigger" },
-                  { "id": "selectedUnit", "source": "forAllUnits" },
-                  { "id": "getSelectedUnit", "source": "forAllUnits" }
+                  {
+                    "id": "getTriggeringPlayer",
+                    "source": "trigger"
+                  },
+                  {
+                    "id": "selectedUnit",
+                    "source": "forAllUnits"
+                  },
+                  {
+                    "id": "getSelectedUnit",
+                    "source": "forAllUnits"
+                  }
                 ]
               },
               "vars": [
-                { "id": "getTriggeringPlayer", "source": "trigger" },
-                { "id": "selectedUnit", "source": "forAllUnits" },
-                { "id": "getSelectedUnit", "source": "forAllUnits" }
+                {
+                  "id": "getTriggeringPlayer",
+                  "source": "trigger"
+                },
+                {
+                  "id": "selectedUnit",
+                  "source": "forAllUnits"
+                },
+                {
+                  "id": "getSelectedUnit",
+                  "source": "forAllUnits"
+                }
               ]
             },
             "actions": [
@@ -1098,23 +1641,50 @@
                 "entity": {
                   "function": "selectedUnit",
                   "vars": [
-                    { "id": "getTriggeringPlayer", "source": "trigger" },
-                    { "id": "selectedUnit", "source": "forAllUnits" },
-                    { "id": "getSelectedUnit", "source": "forAllUnits" }
+                    {
+                      "id": "getTriggeringPlayer",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "selectedUnit",
+                      "source": "forAllUnits"
+                    },
+                    {
+                      "id": "getSelectedUnit",
+                      "source": "forAllUnits"
+                    }
                   ]
                 },
                 "type": "destroyEntity",
                 "vars": [
-                  { "id": "getTriggeringPlayer", "source": "trigger" },
-                  { "id": "selectedUnit", "source": "forAllUnits" },
-                  { "id": "getSelectedUnit", "source": "forAllUnits" }
+                  {
+                    "id": "getTriggeringPlayer",
+                    "source": "trigger"
+                  },
+                  {
+                    "id": "selectedUnit",
+                    "source": "forAllUnits"
+                  },
+                  {
+                    "id": "getSelectedUnit",
+                    "source": "forAllUnits"
+                  }
                 ]
               }
             ],
             "vars": [
-              { "id": "getTriggeringPlayer", "source": "trigger" },
-              { "id": "selectedUnit", "source": "forAllUnits" },
-              { "id": "getSelectedUnit", "source": "forAllUnits" }
+              {
+                "id": "getTriggeringPlayer",
+                "source": "trigger"
+              },
+              {
+                "id": "selectedUnit",
+                "source": "forAllUnits"
+              },
+              {
+                "id": "getSelectedUnit",
+                "source": "forAllUnits"
+              }
             ]
           }
         ],
@@ -1124,46 +1694,81 @@
         "order": 2
       },
       "yeFSwUKA71": {
-        "triggers": [{ "type": "unitEntersRegion" }],
+        "triggers": [
+          {
+            "type": "unitEntersRegion"
+          }
+        ],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
         "actions": [
           {
             "vars": [
-              { "id": "getTriggeringUnit", "source": "trigger" },
-              { "id": "getTriggeringRegion", "source": "trigger" }
+              {
+                "id": "getTriggeringUnit",
+                "source": "trigger"
+              },
+              {
+                "id": "getTriggeringRegion",
+                "source": "trigger"
+              }
             ],
             "else": [],
             "then": [
               {
                 "vars": [
-                  { "id": "getTriggeringUnit", "source": "trigger" },
-                  { "id": "getTriggeringRegion", "source": "trigger" }
+                  {
+                    "id": "getTriggeringUnit",
+                    "source": "trigger"
+                  },
+                  {
+                    "id": "getTriggeringRegion",
+                    "source": "trigger"
+                  }
                 ],
                 "type": "setEntityAttribute",
                 "attribute": "HMeIxfyLAY",
                 "entity": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "getTriggeringUnit"
                 },
                 "value": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "calculate",
                   "items": [
-                    { "operator": "+" },
+                    {
+                      "operator": "+"
+                    },
                     {
                       "function": "getEntityAttribute",
                       "attribute": "HMeIxfyLAY",
-                      "entity": { "function": "getTriggeringUnit" }
+                      "entity": {
+                        "function": "getTriggeringUnit"
+                      }
                     },
                     1
                   ]
@@ -1171,57 +1776,101 @@
               }
             ],
             "conditions": [
-              { "operator": "AND", "operandType": "and" },
+              {
+                "operator": "AND",
+                "operandType": "and"
+              },
               [
-                { "operator": "==", "operandType": "number" },
                 {
-                  "entity": { "function": "getTriggeringUnit" },
+                  "operator": "==",
+                  "operandType": "number"
+                },
+                {
+                  "entity": {
+                    "function": "getTriggeringUnit"
+                  },
                   "attribute": "HMeIxfyLAY",
                   "function": "getEntityAttribute"
                 },
                 0
               ],
               [
-                { "operator": "==", "operandType": "region" },
-                { "function": "getTriggeringRegion" },
-                { "variableName": "checkpoint01", "function": "getVariable" }
+                {
+                  "operator": "==",
+                  "operandType": "region"
+                },
+                {
+                  "function": "getTriggeringRegion"
+                },
+                {
+                  "variableName": "checkpoint01",
+                  "function": "getVariable"
+                }
               ]
             ],
             "type": "condition"
           },
           {
             "vars": [
-              { "id": "getTriggeringUnit", "source": "trigger" },
-              { "id": "getTriggeringRegion", "source": "trigger" }
+              {
+                "id": "getTriggeringUnit",
+                "source": "trigger"
+              },
+              {
+                "id": "getTriggeringRegion",
+                "source": "trigger"
+              }
             ],
             "else": [],
             "then": [
               {
                 "vars": [
-                  { "id": "getTriggeringUnit", "source": "trigger" },
-                  { "id": "getTriggeringRegion", "source": "trigger" }
+                  {
+                    "id": "getTriggeringUnit",
+                    "source": "trigger"
+                  },
+                  {
+                    "id": "getTriggeringRegion",
+                    "source": "trigger"
+                  }
                 ],
                 "type": "setEntityAttribute",
                 "attribute": "HMeIxfyLAY",
                 "entity": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "getTriggeringUnit"
                 },
                 "value": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "calculate",
                   "items": [
-                    { "operator": "+" },
+                    {
+                      "operator": "+"
+                    },
                     {
                       "function": "getEntityAttribute",
                       "attribute": "HMeIxfyLAY",
-                      "entity": { "function": "getTriggeringUnit" }
+                      "entity": {
+                        "function": "getTriggeringUnit"
+                      }
                     },
                     1
                   ]
@@ -1229,62 +1878,116 @@
               }
             ],
             "conditions": [
-              { "operator": "AND", "operandType": "and" },
+              {
+                "operator": "AND",
+                "operandType": "and"
+              },
               [
-                { "operator": "==", "operandType": "number" },
                 {
-                  "entity": { "function": "getTriggeringUnit" },
+                  "operator": "==",
+                  "operandType": "number"
+                },
+                {
+                  "entity": {
+                    "function": "getTriggeringUnit"
+                  },
                   "attribute": "HMeIxfyLAY",
                   "function": "getEntityAttribute"
                 },
                 1
               ],
               [
-                { "operator": "==", "operandType": "region" },
-                { "function": "getTriggeringRegion" },
-                { "function": "getVariable", "variableName": "checkpoint02" }
+                {
+                  "operator": "==",
+                  "operandType": "region"
+                },
+                {
+                  "function": "getTriggeringRegion"
+                },
+                {
+                  "function": "getVariable",
+                  "variableName": "checkpoint02"
+                }
               ]
             ],
             "type": "condition"
           },
           {
             "vars": [
-              { "id": "getTriggeringUnit", "source": "trigger" },
-              { "id": "getTriggeringRegion", "source": "trigger" }
+              {
+                "id": "getTriggeringUnit",
+                "source": "trigger"
+              },
+              {
+                "id": "getTriggeringRegion",
+                "source": "trigger"
+              }
             ],
             "type": "condition",
             "conditions": [
-              { "operandType": "and", "operator": "AND" },
+              {
+                "operandType": "and",
+                "operator": "AND"
+              },
               [
-                { "operandType": "number", "operator": "==" },
+                {
+                  "operandType": "number",
+                  "operator": "=="
+                },
                 {
                   "function": "getEntityAttribute",
                   "attribute": "HMeIxfyLAY",
-                  "entity": { "function": "getTriggeringUnit" }
+                  "entity": {
+                    "function": "getTriggeringUnit"
+                  }
                 },
                 2
               ],
               [
-                { "operandType": "region", "operator": "==" },
-                { "function": "getTriggeringRegion" },
-                { "variableName": "checkpoint03", "function": "getVariable" }
+                {
+                  "operandType": "region",
+                  "operator": "=="
+                },
+                {
+                  "function": "getTriggeringRegion"
+                },
+                {
+                  "variableName": "checkpoint03",
+                  "function": "getVariable"
+                }
               ]
             ],
             "then": [
               {
                 "vars": [
-                  { "id": "getTriggeringUnit", "source": "trigger" },
-                  { "id": "getTriggeringRegion", "source": "trigger" }
+                  {
+                    "id": "getTriggeringUnit",
+                    "source": "trigger"
+                  },
+                  {
+                    "id": "getTriggeringRegion",
+                    "source": "trigger"
+                  }
                 ],
                 "value": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "items": [
-                    { "operator": "+" },
                     {
-                      "entity": { "function": "getTriggeringUnit" },
+                      "operator": "+"
+                    },
+                    {
+                      "entity": {
+                        "function": "getTriggeringUnit"
+                      },
                       "attribute": "HMeIxfyLAY",
                       "function": "getEntityAttribute"
                     },
@@ -1294,8 +1997,14 @@
                 },
                 "entity": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "getTriggeringUnit"
                 },
@@ -1307,37 +2016,65 @@
           },
           {
             "vars": [
-              { "id": "getTriggeringUnit", "source": "trigger" },
-              { "id": "getTriggeringRegion", "source": "trigger" }
+              {
+                "id": "getTriggeringUnit",
+                "source": "trigger"
+              },
+              {
+                "id": "getTriggeringRegion",
+                "source": "trigger"
+              }
             ],
             "else": [],
             "then": [
               {
                 "vars": [
-                  { "id": "getTriggeringUnit", "source": "trigger" },
-                  { "id": "getTriggeringRegion", "source": "trigger" }
+                  {
+                    "id": "getTriggeringUnit",
+                    "source": "trigger"
+                  },
+                  {
+                    "id": "getTriggeringRegion",
+                    "source": "trigger"
+                  }
                 ],
                 "type": "setEntityAttribute",
                 "attribute": "HMeIxfyLAY",
                 "entity": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "getTriggeringUnit"
                 },
                 "value": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "calculate",
                   "items": [
-                    { "operator": "+" },
+                    {
+                      "operator": "+"
+                    },
                     {
                       "function": "getEntityAttribute",
                       "attribute": "HMeIxfyLAY",
-                      "entity": { "function": "getTriggeringUnit" }
+                      "entity": {
+                        "function": "getTriggeringUnit"
+                      }
                     },
                     1
                   ]
@@ -1345,62 +2082,116 @@
               }
             ],
             "conditions": [
-              { "operator": "AND", "operandType": "and" },
+              {
+                "operator": "AND",
+                "operandType": "and"
+              },
               [
-                { "operator": "==", "operandType": "number" },
                 {
-                  "entity": { "function": "getTriggeringUnit" },
+                  "operator": "==",
+                  "operandType": "number"
+                },
+                {
+                  "entity": {
+                    "function": "getTriggeringUnit"
+                  },
                   "attribute": "HMeIxfyLAY",
                   "function": "getEntityAttribute"
                 },
                 3
               ],
               [
-                { "operator": "==", "operandType": "region" },
-                { "function": "getTriggeringRegion" },
-                { "function": "getVariable", "variableName": "checkpoint04" }
+                {
+                  "operator": "==",
+                  "operandType": "region"
+                },
+                {
+                  "function": "getTriggeringRegion"
+                },
+                {
+                  "function": "getVariable",
+                  "variableName": "checkpoint04"
+                }
               ]
             ],
             "type": "condition"
           },
           {
             "vars": [
-              { "id": "getTriggeringUnit", "source": "trigger" },
-              { "id": "getTriggeringRegion", "source": "trigger" }
+              {
+                "id": "getTriggeringUnit",
+                "source": "trigger"
+              },
+              {
+                "id": "getTriggeringRegion",
+                "source": "trigger"
+              }
             ],
             "type": "condition",
             "conditions": [
-              { "operandType": "and", "operator": "AND" },
+              {
+                "operandType": "and",
+                "operator": "AND"
+              },
               [
-                { "operandType": "number", "operator": "==" },
+                {
+                  "operandType": "number",
+                  "operator": "=="
+                },
                 {
                   "function": "getEntityAttribute",
                   "attribute": "HMeIxfyLAY",
-                  "entity": { "function": "getTriggeringUnit" }
+                  "entity": {
+                    "function": "getTriggeringUnit"
+                  }
                 },
                 4
               ],
               [
-                { "operandType": "region", "operator": "==" },
-                { "function": "getTriggeringRegion" },
-                { "variableName": "checkpoint05", "function": "getVariable" }
+                {
+                  "operandType": "region",
+                  "operator": "=="
+                },
+                {
+                  "function": "getTriggeringRegion"
+                },
+                {
+                  "variableName": "checkpoint05",
+                  "function": "getVariable"
+                }
               ]
             ],
             "then": [
               {
                 "vars": [
-                  { "id": "getTriggeringUnit", "source": "trigger" },
-                  { "id": "getTriggeringRegion", "source": "trigger" }
+                  {
+                    "id": "getTriggeringUnit",
+                    "source": "trigger"
+                  },
+                  {
+                    "id": "getTriggeringRegion",
+                    "source": "trigger"
+                  }
                 ],
                 "value": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "items": [
-                    { "operator": "+" },
                     {
-                      "entity": { "function": "getTriggeringUnit" },
+                      "operator": "+"
+                    },
+                    {
+                      "entity": {
+                        "function": "getTriggeringUnit"
+                      },
                       "attribute": "HMeIxfyLAY",
                       "function": "getEntityAttribute"
                     },
@@ -1410,8 +2201,14 @@
                 },
                 "entity": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "getTriggeringUnit"
                 },
@@ -1423,37 +2220,65 @@
           },
           {
             "vars": [
-              { "id": "getTriggeringUnit", "source": "trigger" },
-              { "id": "getTriggeringRegion", "source": "trigger" }
+              {
+                "id": "getTriggeringUnit",
+                "source": "trigger"
+              },
+              {
+                "id": "getTriggeringRegion",
+                "source": "trigger"
+              }
             ],
             "else": [],
             "then": [
               {
                 "vars": [
-                  { "id": "getTriggeringUnit", "source": "trigger" },
-                  { "id": "getTriggeringRegion", "source": "trigger" }
+                  {
+                    "id": "getTriggeringUnit",
+                    "source": "trigger"
+                  },
+                  {
+                    "id": "getTriggeringRegion",
+                    "source": "trigger"
+                  }
                 ],
                 "type": "setEntityAttribute",
                 "attribute": "HMeIxfyLAY",
                 "entity": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "getTriggeringUnit"
                 },
                 "value": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "calculate",
                   "items": [
-                    { "operator": "+" },
+                    {
+                      "operator": "+"
+                    },
                     {
                       "function": "getEntityAttribute",
                       "attribute": "HMeIxfyLAY",
-                      "entity": { "function": "getTriggeringUnit" }
+                      "entity": {
+                        "function": "getTriggeringUnit"
+                      }
                     },
                     1
                   ]
@@ -1461,62 +2286,116 @@
               }
             ],
             "conditions": [
-              { "operator": "AND", "operandType": "and" },
+              {
+                "operator": "AND",
+                "operandType": "and"
+              },
               [
-                { "operator": "==", "operandType": "number" },
                 {
-                  "entity": { "function": "getTriggeringUnit" },
+                  "operator": "==",
+                  "operandType": "number"
+                },
+                {
+                  "entity": {
+                    "function": "getTriggeringUnit"
+                  },
                   "attribute": "HMeIxfyLAY",
                   "function": "getEntityAttribute"
                 },
                 5
               ],
               [
-                { "operator": "==", "operandType": "region" },
-                { "function": "getTriggeringRegion" },
-                { "function": "getVariable", "variableName": "checkpoint06" }
+                {
+                  "operator": "==",
+                  "operandType": "region"
+                },
+                {
+                  "function": "getTriggeringRegion"
+                },
+                {
+                  "function": "getVariable",
+                  "variableName": "checkpoint06"
+                }
               ]
             ],
             "type": "condition"
           },
           {
             "vars": [
-              { "id": "getTriggeringUnit", "source": "trigger" },
-              { "id": "getTriggeringRegion", "source": "trigger" }
+              {
+                "id": "getTriggeringUnit",
+                "source": "trigger"
+              },
+              {
+                "id": "getTriggeringRegion",
+                "source": "trigger"
+              }
             ],
             "type": "condition",
             "conditions": [
-              { "operandType": "and", "operator": "AND" },
+              {
+                "operandType": "and",
+                "operator": "AND"
+              },
               [
-                { "operandType": "number", "operator": "==" },
+                {
+                  "operandType": "number",
+                  "operator": "=="
+                },
                 {
                   "function": "getEntityAttribute",
                   "attribute": "HMeIxfyLAY",
-                  "entity": { "function": "getTriggeringUnit" }
+                  "entity": {
+                    "function": "getTriggeringUnit"
+                  }
                 },
                 6
               ],
               [
-                { "operandType": "region", "operator": "==" },
-                { "function": "getTriggeringRegion" },
-                { "variableName": "checkpoint07", "function": "getVariable" }
+                {
+                  "operandType": "region",
+                  "operator": "=="
+                },
+                {
+                  "function": "getTriggeringRegion"
+                },
+                {
+                  "variableName": "checkpoint07",
+                  "function": "getVariable"
+                }
               ]
             ],
             "then": [
               {
                 "vars": [
-                  { "id": "getTriggeringUnit", "source": "trigger" },
-                  { "id": "getTriggeringRegion", "source": "trigger" }
+                  {
+                    "id": "getTriggeringUnit",
+                    "source": "trigger"
+                  },
+                  {
+                    "id": "getTriggeringRegion",
+                    "source": "trigger"
+                  }
                 ],
                 "value": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "items": [
-                    { "operator": "+" },
                     {
-                      "entity": { "function": "getTriggeringUnit" },
+                      "operator": "+"
+                    },
+                    {
+                      "entity": {
+                        "function": "getTriggeringUnit"
+                      },
                       "attribute": "HMeIxfyLAY",
                       "function": "getEntityAttribute"
                     },
@@ -1526,8 +2405,14 @@
                 },
                 "entity": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "getTriggeringUnit"
                 },
@@ -1539,37 +2424,65 @@
           },
           {
             "vars": [
-              { "id": "getTriggeringUnit", "source": "trigger" },
-              { "id": "getTriggeringRegion", "source": "trigger" }
+              {
+                "id": "getTriggeringUnit",
+                "source": "trigger"
+              },
+              {
+                "id": "getTriggeringRegion",
+                "source": "trigger"
+              }
             ],
             "else": [],
             "then": [
               {
                 "vars": [
-                  { "id": "getTriggeringUnit", "source": "trigger" },
-                  { "id": "getTriggeringRegion", "source": "trigger" }
+                  {
+                    "id": "getTriggeringUnit",
+                    "source": "trigger"
+                  },
+                  {
+                    "id": "getTriggeringRegion",
+                    "source": "trigger"
+                  }
                 ],
                 "type": "setEntityAttribute",
                 "attribute": "HMeIxfyLAY",
                 "entity": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "getTriggeringUnit"
                 },
                 "value": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "calculate",
                   "items": [
-                    { "operator": "+" },
+                    {
+                      "operator": "+"
+                    },
                     {
                       "function": "getEntityAttribute",
                       "attribute": "HMeIxfyLAY",
-                      "entity": { "function": "getTriggeringUnit" }
+                      "entity": {
+                        "function": "getTriggeringUnit"
+                      }
                     },
                     1
                   ]
@@ -1577,57 +2490,101 @@
               }
             ],
             "conditions": [
-              { "operator": "AND", "operandType": "and" },
+              {
+                "operator": "AND",
+                "operandType": "and"
+              },
               [
-                { "operator": "==", "operandType": "number" },
                 {
-                  "entity": { "function": "getTriggeringUnit" },
+                  "operator": "==",
+                  "operandType": "number"
+                },
+                {
+                  "entity": {
+                    "function": "getTriggeringUnit"
+                  },
                   "attribute": "HMeIxfyLAY",
                   "function": "getEntityAttribute"
                 },
                 7
               ],
               [
-                { "operator": "==", "operandType": "region" },
-                { "function": "getTriggeringRegion" },
-                { "function": "getVariable", "variableName": "checkpoint08" }
+                {
+                  "operator": "==",
+                  "operandType": "region"
+                },
+                {
+                  "function": "getTriggeringRegion"
+                },
+                {
+                  "function": "getVariable",
+                  "variableName": "checkpoint08"
+                }
               ]
             ],
             "type": "condition"
           },
           {
             "vars": [
-              { "id": "getTriggeringUnit", "source": "trigger" },
-              { "id": "getTriggeringRegion", "source": "trigger" }
+              {
+                "id": "getTriggeringUnit",
+                "source": "trigger"
+              },
+              {
+                "id": "getTriggeringRegion",
+                "source": "trigger"
+              }
             ],
             "else": [],
             "then": [
               {
                 "vars": [
-                  { "id": "getTriggeringUnit", "source": "trigger" },
-                  { "id": "getTriggeringRegion", "source": "trigger" }
+                  {
+                    "id": "getTriggeringUnit",
+                    "source": "trigger"
+                  },
+                  {
+                    "id": "getTriggeringRegion",
+                    "source": "trigger"
+                  }
                 ],
                 "type": "setEntityAttribute",
                 "attribute": "HMeIxfyLAY",
                 "entity": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "getTriggeringUnit"
                 },
                 "value": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "calculate",
                   "items": [
-                    { "operator": "+" },
+                    {
+                      "operator": "+"
+                    },
                     {
                       "function": "getEntityAttribute",
                       "attribute": "HMeIxfyLAY",
-                      "entity": { "function": "getTriggeringUnit" }
+                      "entity": {
+                        "function": "getTriggeringUnit"
+                      }
                     },
                     1
                   ]
@@ -1635,42 +2592,76 @@
               }
             ],
             "conditions": [
-              { "operator": "AND", "operandType": "and" },
+              {
+                "operator": "AND",
+                "operandType": "and"
+              },
               [
-                { "operator": "==", "operandType": "number" },
                 {
-                  "entity": { "function": "getTriggeringUnit" },
+                  "operator": "==",
+                  "operandType": "number"
+                },
+                {
+                  "entity": {
+                    "function": "getTriggeringUnit"
+                  },
                   "attribute": "HMeIxfyLAY",
                   "function": "getEntityAttribute"
                 },
                 8
               ],
               [
-                { "operator": "==", "operandType": "region" },
-                { "function": "getTriggeringRegion" },
-                { "function": "getVariable", "variableName": "checkpoint09" }
+                {
+                  "operator": "==",
+                  "operandType": "region"
+                },
+                {
+                  "function": "getTriggeringRegion"
+                },
+                {
+                  "function": "getVariable",
+                  "variableName": "checkpoint09"
+                }
               ]
             ],
             "type": "condition"
           },
           {
             "vars": [
-              { "id": "getTriggeringUnit", "source": "trigger" },
-              { "id": "getTriggeringRegion", "source": "trigger" }
+              {
+                "id": "getTriggeringUnit",
+                "source": "trigger"
+              },
+              {
+                "id": "getTriggeringRegion",
+                "source": "trigger"
+              }
             ],
             "else": [],
             "then": [
               {
                 "vars": [
-                  { "id": "getTriggeringUnit", "source": "trigger" },
-                  { "id": "getTriggeringRegion", "source": "trigger" }
+                  {
+                    "id": "getTriggeringUnit",
+                    "source": "trigger"
+                  },
+                  {
+                    "id": "getTriggeringRegion",
+                    "source": "trigger"
+                  }
                 ],
                 "type": "setEntityAttribute",
                 "attribute": "HMeIxfyLAY",
                 "entity": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "getTriggeringUnit"
                 },
@@ -1678,39 +2669,67 @@
               },
               {
                 "vars": [
-                  { "id": "getTriggeringUnit", "source": "trigger" },
-                  { "id": "getTriggeringRegion", "source": "trigger" }
+                  {
+                    "id": "getTriggeringUnit",
+                    "source": "trigger"
+                  },
+                  {
+                    "id": "getTriggeringRegion",
+                    "source": "trigger"
+                  }
                 ],
                 "type": "setPlayerAttribute",
                 "attribute": "AdYkzAEZie",
                 "entity": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "getOwner",
                   "entity": {
                     "vars": [
-                      { "id": "getTriggeringUnit", "source": "trigger" },
-                      { "id": "getTriggeringRegion", "source": "trigger" }
+                      {
+                        "id": "getTriggeringUnit",
+                        "source": "trigger"
+                      },
+                      {
+                        "id": "getTriggeringRegion",
+                        "source": "trigger"
+                      }
                     ],
                     "function": "getTriggeringUnit"
                   }
                 },
                 "value": {
                   "vars": [
-                    { "id": "getTriggeringUnit", "source": "trigger" },
-                    { "id": "getTriggeringRegion", "source": "trigger" }
+                    {
+                      "id": "getTriggeringUnit",
+                      "source": "trigger"
+                    },
+                    {
+                      "id": "getTriggeringRegion",
+                      "source": "trigger"
+                    }
                   ],
                   "function": "calculate",
                   "items": [
-                    { "operator": "+" },
+                    {
+                      "operator": "+"
+                    },
                     {
                       "function": "getPlayerAttribute",
                       "attribute": "AdYkzAEZie",
                       "entity": {
                         "function": "getOwner",
-                        "entity": { "function": "getTriggeringUnit" }
+                        "entity": {
+                          "function": "getTriggeringUnit"
+                        }
                       }
                     },
                     1
@@ -1719,29 +2738,56 @@
               },
               {
                 "vars": [
-                  { "id": "getTriggeringUnit", "source": "trigger" },
-                  { "id": "getTriggeringRegion", "source": "trigger" }
+                  {
+                    "id": "getTriggeringUnit",
+                    "source": "trigger"
+                  },
+                  {
+                    "id": "getTriggeringRegion",
+                    "source": "trigger"
+                  }
                 ],
                 "type": "condition",
                 "conditions": [
-                  { "operator": ">", "operandType": "number" },
+                  {
+                    "operator": ">",
+                    "operandType": "number"
+                  },
                   {
                     "vars": [
-                      { "id": "getTriggeringUnit", "source": "trigger" },
-                      { "id": "getTriggeringRegion", "source": "trigger" }
+                      {
+                        "id": "getTriggeringUnit",
+                        "source": "trigger"
+                      },
+                      {
+                        "id": "getTriggeringRegion",
+                        "source": "trigger"
+                      }
                     ],
                     "function": "getPlayerAttribute",
                     "attribute": "AdYkzAEZie",
                     "entity": {
                       "vars": [
-                        { "id": "getTriggeringUnit", "source": "trigger" },
-                        { "id": "getTriggeringRegion", "source": "trigger" }
+                        {
+                          "id": "getTriggeringUnit",
+                          "source": "trigger"
+                        },
+                        {
+                          "id": "getTriggeringRegion",
+                          "source": "trigger"
+                        }
                       ],
                       "function": "getOwner",
                       "entity": {
                         "vars": [
-                          { "id": "getTriggeringUnit", "source": "trigger" },
-                          { "id": "getTriggeringRegion", "source": "trigger" }
+                          {
+                            "id": "getTriggeringUnit",
+                            "source": "trigger"
+                          },
+                          {
+                            "id": "getTriggeringRegion",
+                            "source": "trigger"
+                          }
                         ],
                         "function": "getTriggeringUnit"
                       }
@@ -1752,8 +2798,14 @@
                 "then": [
                   {
                     "vars": [
-                      { "id": "getTriggeringUnit", "source": "trigger" },
-                      { "id": "getTriggeringRegion", "source": "trigger" }
+                      {
+                        "id": "getTriggeringUnit",
+                        "source": "trigger"
+                      },
+                      {
+                        "id": "getTriggeringRegion",
+                        "source": "trigger"
+                      }
                     ],
                     "type": "runScript",
                     "scriptName": "cvyXY2ChLy"
@@ -1763,20 +2815,36 @@
               }
             ],
             "conditions": [
-              { "operator": "AND", "operandType": "and" },
+              {
+                "operator": "AND",
+                "operandType": "and"
+              },
               [
-                { "operator": "==", "operandType": "number" },
                 {
-                  "entity": { "function": "getTriggeringUnit" },
+                  "operator": "==",
+                  "operandType": "number"
+                },
+                {
+                  "entity": {
+                    "function": "getTriggeringUnit"
+                  },
                   "attribute": "HMeIxfyLAY",
                   "function": "getEntityAttribute"
                 },
                 9
               ],
               [
-                { "operator": "==", "operandType": "region" },
-                { "function": "getTriggeringRegion" },
-                { "function": "getVariable", "variableName": "finish lap" }
+                {
+                  "operator": "==",
+                  "operandType": "region"
+                },
+                {
+                  "function": "getTriggeringRegion"
+                },
+                {
+                  "function": "getVariable",
+                  "variableName": "finish lap"
+                }
               ]
             ],
             "type": "condition"
@@ -1790,7 +2858,10 @@
       "EZR6zwWeHj": {
         "triggers": [],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
@@ -1806,7 +2877,10 @@
             "target": "center-lg",
             "value": "Get Ready!"
           },
-          { "target": "center-lg", "type": "showUiTextForEveryone" },
+          {
+            "target": "center-lg",
+            "type": "showUiTextForEveryone"
+          },
           {
             "type": "setVariable",
             "value": {
@@ -1818,7 +2892,9 @@
           },
           {
             "type": "forAllUnits",
-            "unitGroup": { "function": "allUnits" },
+            "unitGroup": {
+              "function": "allUnits"
+            },
             "actions": [
               {
                 "position": {
@@ -1828,12 +2904,16 @@
                   },
                   "function": "getRandomPositionInRegion"
                 },
-                "entity": { "function": "selectedUnit" },
+                "entity": {
+                  "function": "selectedUnit"
+                },
                 "type": "moveEntity"
               },
               {
                 "state": "fgqViJxOnm",
-                "entity": { "function": "selectedUnit" },
+                "entity": {
+                  "function": "selectedUnit"
+                },
                 "type": "setEntityState"
               },
               {
@@ -1841,7 +2921,9 @@
                 "attribute": "AdYkzAEZie",
                 "entity": {
                   "function": "getOwner",
-                  "entity": { "function": "selectedUnit" }
+                  "entity": {
+                    "function": "selectedUnit"
+                  }
                 },
                 "value": 0
               }
@@ -1854,9 +2936,16 @@
         "order": 3
       },
       "AQixQ3n6lY": {
-        "triggers": [{ "type": "secondTick" }],
+        "triggers": [
+          {
+            "type": "secondTick"
+          }
+        ],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
@@ -1864,8 +2953,14 @@
           {
             "type": "condition",
             "conditions": [
-              { "operandType": "number", "operator": ">=" },
-              { "function": "getPlayerCount", "vars": [] },
+              {
+                "operandType": "number",
+                "operator": ">="
+              },
+              {
+                "function": "getPlayerCount",
+                "vars": []
+              },
               {
                 "variableName": "@requiredNumberOfPlayers",
                 "function": "getVariable",
@@ -1886,7 +2981,10 @@
                       }
                     ],
                     "conditions": [
-                      { "operator": "==", "operandType": "number" },
+                      {
+                        "operator": "==",
+                        "operandType": "number"
+                      },
                       {
                         "variableName": "state",
                         "function": "getVariable",
@@ -1931,7 +3029,10 @@
                           }
                         ],
                         "conditions": [
-                          { "operandType": "number", "operator": "<=" },
+                          {
+                            "operandType": "number",
+                            "operator": "<="
+                          },
                           {
                             "variableName": "timeLeft",
                             "function": "getVariable",
@@ -1944,7 +3045,10 @@
                       }
                     ],
                     "conditions": [
-                      { "operator": "==", "operandType": "number" },
+                      {
+                        "operator": "==",
+                        "operandType": "number"
+                      },
                       {
                         "variableName": "state",
                         "function": "getVariable",
@@ -1967,7 +3071,10 @@
                       {
                         "type": "condition",
                         "conditions": [
-                          { "operator": "<=", "operandType": "number" },
+                          {
+                            "operator": "<=",
+                            "operandType": "number"
+                          },
                           {
                             "function": "getVariable",
                             "variableName": "timeLeft",
@@ -2048,7 +3155,10 @@
                             },
                             "type": "forAllUnits",
                             "vars": [
-                              { "id": "selectedUnit", "source": "forAllUnits" },
+                              {
+                                "id": "selectedUnit",
+                                "source": "forAllUnits"
+                              },
                               {
                                 "id": "getSelectedUnit",
                                 "source": "forAllUnits"
@@ -2077,7 +3187,10 @@
                       }
                     ],
                     "conditions": [
-                      { "operator": "==", "operandType": "number" },
+                      {
+                        "operator": "==",
+                        "operandType": "number"
+                      },
                       {
                         "variableName": "state",
                         "function": "getVariable",
@@ -2100,7 +3213,10 @@
                   }
                 ],
                 "conditions": [
-                  { "operandType": "number", "operator": "!=" },
+                  {
+                    "operandType": "number",
+                    "operator": "!="
+                  },
                   {
                     "variableName": "state",
                     "function": "getVariable",
@@ -2137,12 +3253,16 @@
                         "textB": " more player(s)!",
                         "textA": {
                           "items": [
-                            { "operator": "-" },
+                            {
+                              "operator": "-"
+                            },
                             {
                               "variableName": "@requiredNumberOfPlayers",
                               "function": "getVariable"
                             },
-                            { "function": "getPlayerCount" }
+                            {
+                              "function": "getPlayerCount"
+                            }
                           ],
                           "function": "calculate",
                           "vars": []
@@ -2160,7 +3280,10 @@
                   }
                 ],
                 "conditions": [
-                  { "operandType": "number", "operator": "!=" },
+                  {
+                    "operandType": "number",
+                    "operator": "!="
+                  },
                   {
                     "variableName": "state",
                     "function": "getVariable",
@@ -2187,7 +3310,10 @@
       "2IbeORlIGU": {
         "triggers": [],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
@@ -2195,7 +3321,9 @@
           {
             "vars": [],
             "type": "setEntityVariable",
-            "entity": { "function": "getLastCastingUnit" },
+            "entity": {
+              "function": "getLastCastingUnit"
+            },
             "variable": {
               "function": "getEntityVariable",
               "variable": {
@@ -2222,7 +3350,9 @@
           {
             "vars": [],
             "type": "setEntityVariable",
-            "entity": { "function": "getLastCastingUnit" },
+            "entity": {
+              "function": "getLastCastingUnit"
+            },
             "variable": {
               "function": "getEntityVariable",
               "variable": {
@@ -2236,7 +3366,10 @@
           }
         ],
         "conditions": [
-          { "operandType": "boolean", "operator": "==" },
+          {
+            "operandType": "boolean",
+            "operator": "=="
+          },
           true,
           true
         ],
@@ -2251,7 +3384,9 @@
           {
             "vars": [],
             "type": "setEntityVariable",
-            "entity": { "function": "getLastCastingUnit" },
+            "entity": {
+              "function": "getLastCastingUnit"
+            },
             "variable": {
               "function": "getEntityVariable",
               "variable": {
@@ -2265,7 +3400,10 @@
           }
         ],
         "conditions": [
-          { "operandType": "boolean", "operator": "==" },
+          {
+            "operandType": "boolean",
+            "operator": "=="
+          },
           true,
           true
         ],
@@ -2280,7 +3418,9 @@
           {
             "vars": [],
             "type": "setEntityVariable",
-            "entity": { "function": "getLastCastingUnit" },
+            "entity": {
+              "function": "getLastCastingUnit"
+            },
             "variable": {
               "function": "getEntityVariable",
               "variable": {
@@ -2294,7 +3434,10 @@
           }
         ],
         "conditions": [
-          { "operandType": "boolean", "operator": "==" },
+          {
+            "operandType": "boolean",
+            "operator": "=="
+          },
           true,
           true
         ],
@@ -2309,7 +3452,9 @@
           {
             "comment": "reduce max speed for units that are off the road",
             "type": "forAllRegions",
-            "regionGroup": { "function": "allRegions" },
+            "regionGroup": {
+              "function": "allRegions"
+            },
             "actions": [
               {
                 "else": [],
@@ -2318,19 +3463,25 @@
                     "type": "forAllUnits",
                     "unitGroup": {
                       "function": "allUnitsInRegion",
-                      "region": { "function": "selectedRegion" }
+                      "region": {
+                        "function": "selectedRegion"
+                      }
                     },
                     "actions": [
                       {
                         "type": "setEntityAttribute",
                         "attribute": "speed",
-                        "entity": { "function": "selectedUnit" },
+                        "entity": {
+                          "function": "selectedUnit"
+                        },
                         "value": {
                           "function": "getMin",
                           "num1": {
                             "function": "getEntityAttribute",
                             "attribute": "speed",
-                            "entity": { "function": "selectedUnit" }
+                            "entity": {
+                              "function": "selectedUnit"
+                            }
                           },
                           "num2": 0.8
                         },
@@ -2339,11 +3490,15 @@
                       {
                         "type": "setEntityAttribute",
                         "attribute": "speed",
-                        "entity": { "function": "selectedUnit" },
+                        "entity": {
+                          "function": "selectedUnit"
+                        },
                         "value": {
                           "num2": -0.8,
                           "num1": {
-                            "entity": { "function": "selectedUnit" },
+                            "entity": {
+                              "function": "selectedUnit"
+                            },
                             "attribute": "speed",
                             "function": "getEntityAttribute"
                           },
@@ -2356,11 +3511,16 @@
                   }
                 ],
                 "conditions": [
-                  { "operator": "==", "operandType": "boolean" },
+                  {
+                    "operator": "==",
+                    "operandType": "boolean"
+                  },
                   {
                     "patternString": "offroad",
                     "sourceString": {
-                      "region": { "function": "selectedRegion" },
+                      "region": {
+                        "function": "selectedRegion"
+                      },
                       "function": "nameOfRegion"
                     },
                     "function": "subString"
@@ -2378,7 +3538,10 @@
               {
                 "type": "condition",
                 "conditions": [
-                  { "operandType": "boolean", "operator": "==" },
+                  {
+                    "operandType": "boolean",
+                    "operator": "=="
+                  },
                   {
                     "function": "getValueOfEntityVariable",
                     "variable": {
@@ -2390,7 +3553,9 @@
                         "key": "isAccelerating"
                       }
                     },
-                    "entity": { "function": "selectedUnit" }
+                    "entity": {
+                      "function": "selectedUnit"
+                    }
                   },
                   true
                 ],
@@ -2398,9 +3563,13 @@
                   {
                     "value": {
                       "items": [
-                        { "operator": "+" },
                         {
-                          "entity": { "function": "selectedUnit" },
+                          "operator": "+"
+                        },
+                        {
+                          "entity": {
+                            "function": "selectedUnit"
+                          },
                           "attribute": "speed",
                           "function": "getEntityAttribute"
                         },
@@ -2408,7 +3577,9 @@
                       ],
                       "function": "calculate"
                     },
-                    "entity": { "function": "selectedUnit" },
+                    "entity": {
+                      "function": "selectedUnit"
+                    },
                     "attribute": "speed",
                     "type": "setEntityAttribute",
                     "runOnClient": true
@@ -2418,7 +3589,10 @@
                   {
                     "type": "condition",
                     "conditions": [
-                      { "operandType": "boolean", "operator": "==" },
+                      {
+                        "operandType": "boolean",
+                        "operator": "=="
+                      },
                       {
                         "function": "getValueOfEntityVariable",
                         "variable": {
@@ -2430,7 +3604,9 @@
                           },
                           "function": "getEntityVariable"
                         },
-                        "entity": { "function": "selectedUnit" }
+                        "entity": {
+                          "function": "selectedUnit"
+                        }
                       },
                       true
                     ],
@@ -2438,15 +3614,21 @@
                       {
                         "type": "setEntityAttribute",
                         "attribute": "speed",
-                        "entity": { "function": "selectedUnit" },
+                        "entity": {
+                          "function": "selectedUnit"
+                        },
                         "value": {
                           "function": "calculate",
                           "items": [
-                            { "operator": "-" },
+                            {
+                              "operator": "-"
+                            },
                             {
                               "function": "getEntityAttribute",
                               "attribute": "speed",
-                              "entity": { "function": "selectedUnit" }
+                              "entity": {
+                                "function": "selectedUnit"
+                              }
                             },
                             2
                           ]
@@ -2458,7 +3640,9 @@
                       {
                         "type": "setEntityAttribute",
                         "attribute": "speed",
-                        "entity": { "function": "selectedUnit" },
+                        "entity": {
+                          "function": "selectedUnit"
+                        },
                         "value": 0,
                         "runOnClient": true
                       }
@@ -2469,10 +3653,14 @@
                 "runOnClient": true
               },
               {
-                "entity": { "function": "selectedUnit" },
+                "entity": {
+                  "function": "selectedUnit"
+                },
                 "force": {
                   "y": {
-                    "entity": { "function": "selectedUnit" },
+                    "entity": {
+                      "function": "selectedUnit"
+                    },
                     "attribute": "speed",
                     "function": "getEntityAttribute"
                   },
@@ -2482,22 +3670,34 @@
                 "runOnClient": true
               }
             ],
-            "unitGroup": { "function": "allUnits" },
+            "unitGroup": {
+              "function": "allUnits"
+            },
             "type": "forAllUnits",
             "runOnClient": true
           }
         ],
         "conditions": [
-          { "operandType": "boolean", "operator": "==" },
+          {
+            "operandType": "boolean",
+            "operator": "=="
+          },
           true,
           true
         ],
-        "triggers": [{ "type": "frameTick" }]
+        "triggers": [
+          {
+            "type": "frameTick"
+          }
+        ]
       },
       "cvyXY2ChLy": {
         "triggers": [],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
@@ -2523,14 +3723,22 @@
                 "type": "setVariable",
                 "vars": []
               },
-              { "target": "top", "type": "showUiTextForEveryone", "vars": [] },
+              {
+                "target": "top",
+                "type": "showUiTextForEveryone",
+                "vars": []
+              },
               {
                 "value": {
                   "items": [
-                    { "operator": "+" },
+                    {
+                      "operator": "+"
+                    },
                     {
                       "entity": {
-                        "entity": { "function": "getTriggeringUnit" },
+                        "entity": {
+                          "function": "getTriggeringUnit"
+                        },
                         "function": "getOwner"
                       },
                       "attribute": "RYs2ahzfJj",
@@ -2542,7 +3750,10 @@
                   "vars": []
                 },
                 "entity": {
-                  "entity": { "function": "getTriggeringUnit", "vars": [] },
+                  "entity": {
+                    "function": "getTriggeringUnit",
+                    "vars": []
+                  },
                   "function": "getOwner",
                   "vars": []
                 },
@@ -2601,7 +3812,10 @@
                         },
                         "textB": " wins!",
                         "vars": [
-                          { "id": "selectedPlayer", "source": "forAllPlayers" },
+                          {
+                            "id": "selectedPlayer",
+                            "source": "forAllPlayers"
+                          },
                           {
                             "id": "getSelectedPlayer",
                             "source": "forAllPlayers"
@@ -2609,35 +3823,65 @@
                         ]
                       },
                       "vars": [
-                        { "id": "selectedPlayer", "source": "forAllPlayers" },
-                        { "id": "getSelectedPlayer", "source": "forAllPlayers" }
+                        {
+                          "id": "selectedPlayer",
+                          "source": "forAllPlayers"
+                        },
+                        {
+                          "id": "getSelectedPlayer",
+                          "source": "forAllPlayers"
+                        }
                       ]
                     },
                     "player": {
                       "function": "selectedPlayer",
                       "vars": [
-                        { "id": "selectedPlayer", "source": "forAllPlayers" },
-                        { "id": "getSelectedPlayer", "source": "forAllPlayers" }
+                        {
+                          "id": "selectedPlayer",
+                          "source": "forAllPlayers"
+                        },
+                        {
+                          "id": "getSelectedPlayer",
+                          "source": "forAllPlayers"
+                        }
                       ]
                     },
                     "time": 3000,
                     "vars": [
-                      { "id": "selectedPlayer", "source": "forAllPlayers" },
-                      { "id": "getSelectedPlayer", "source": "forAllPlayers" }
+                      {
+                        "id": "selectedPlayer",
+                        "source": "forAllPlayers"
+                      },
+                      {
+                        "id": "getSelectedPlayer",
+                        "source": "forAllPlayers"
+                      }
                     ]
                   }
                 ],
                 "playerGroup": {
                   "function": "allPlayers",
                   "vars": [
-                    { "id": "selectedPlayer", "source": "forAllPlayers" },
-                    { "id": "getSelectedPlayer", "source": "forAllPlayers" }
+                    {
+                      "id": "selectedPlayer",
+                      "source": "forAllPlayers"
+                    },
+                    {
+                      "id": "getSelectedPlayer",
+                      "source": "forAllPlayers"
+                    }
                   ]
                 },
                 "type": "forAllPlayers",
                 "vars": [
-                  { "id": "selectedPlayer", "source": "forAllPlayers" },
-                  { "id": "getSelectedPlayer", "source": "forAllPlayers" }
+                  {
+                    "id": "selectedPlayer",
+                    "source": "forAllPlayers"
+                  },
+                  {
+                    "id": "getSelectedPlayer",
+                    "source": "forAllPlayers"
+                  }
                 ]
               },
               {
@@ -2645,8 +3889,14 @@
                 "unitGroup": {
                   "function": "allUnits",
                   "vars": [
-                    { "id": "selectedUnit", "source": "forAllUnits" },
-                    { "id": "getSelectedUnit", "source": "forAllUnits" }
+                    {
+                      "id": "selectedUnit",
+                      "source": "forAllUnits"
+                    },
+                    {
+                      "id": "getSelectedUnit",
+                      "source": "forAllUnits"
+                    }
                   ]
                 },
                 "actions": [
@@ -2656,25 +3906,46 @@
                     "entity": {
                       "function": "selectedUnit",
                       "vars": [
-                        { "id": "selectedUnit", "source": "forAllUnits" },
-                        { "id": "getSelectedUnit", "source": "forAllUnits" }
+                        {
+                          "id": "selectedUnit",
+                          "source": "forAllUnits"
+                        },
+                        {
+                          "id": "getSelectedUnit",
+                          "source": "forAllUnits"
+                        }
                       ]
                     },
                     "value": 0,
                     "vars": [
-                      { "id": "selectedUnit", "source": "forAllUnits" },
-                      { "id": "getSelectedUnit", "source": "forAllUnits" }
+                      {
+                        "id": "selectedUnit",
+                        "source": "forAllUnits"
+                      },
+                      {
+                        "id": "getSelectedUnit",
+                        "source": "forAllUnits"
+                      }
                     ]
                   }
                 ],
                 "vars": [
-                  { "id": "selectedUnit", "source": "forAllUnits" },
-                  { "id": "getSelectedUnit", "source": "forAllUnits" }
+                  {
+                    "id": "selectedUnit",
+                    "source": "forAllUnits"
+                  },
+                  {
+                    "id": "getSelectedUnit",
+                    "source": "forAllUnits"
+                  }
                 ]
               }
             ],
             "conditions": [
-              { "operator": "==", "operandType": "number" },
+              {
+                "operator": "==",
+                "operandType": "number"
+              },
               {
                 "variableName": "state",
                 "function": "getVariable",
@@ -2792,8 +4063,14 @@
         "chance": 0.2,
         "unit": "percentage"
       },
-      "canPushDebris": { "chance": 0.05, "unit": "boolean" },
-      "canPenetrate": { "chance": 0.05, "unit": "boolean" }
+      "canPushDebris": {
+        "chance": 0.05,
+        "unit": "boolean"
+      },
+      "canPenetrate": {
+        "chance": 0.05,
+        "unit": "boolean"
+      }
     },
     "map": {
       "originalTileHeight": 64,
@@ -3157,9 +4434,18 @@
     },
     "shops": {},
     "entityTypeVariables": {
-      "isAccelerating": { "dataType": "boolean", "default": false },
-      "isDecelerating": { "dataType": "boolean", "default": false },
-      "isOffRoad": { "dataType": "boolean", "default": false }
+      "isAccelerating": {
+        "dataType": "boolean",
+        "default": false
+      },
+      "isDecelerating": {
+        "dataType": "boolean",
+        "default": false
+      },
+      "isOffRoad": {
+        "dataType": "boolean",
+        "default": false
+      }
     },
     "playerTypeVariables": {}
   },

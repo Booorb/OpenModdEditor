@@ -75,6 +75,7 @@
   "highScores": [],
   "lastPlayedAt": "",
   "__v": 1,
+  "renderingFilter": "smooth",
   "data": {
     "bodyTypes": {
       "dropped": {
@@ -82,7 +83,10 @@
         "type": "dynamic",
         "width": 25,
         "height": 55,
-        "z-index": { "layer": 1, "depth": 1 },
+        "z-index": {
+          "layer": 1,
+          "depth": 1
+        },
         "fixedRotation": false,
         "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
         "allowSleep": true,
@@ -102,20 +106,31 @@
             "density": 1,
             "friction": 0.01,
             "restitution": 0.01,
-            "shape": { "type": "rectangle" },
+            "shape": {
+              "type": "rectangle"
+            },
             "isSensor": false
           }
         ],
         "jointType": "weldJoint",
-        "unitAnchor": { "y": 33, "x": 0 },
-        "itemAnchor": { "y": 58, "x": 0 }
+        "unitAnchor": {
+          "y": 33,
+          "x": 0
+        },
+        "itemAnchor": {
+          "y": 58,
+          "x": 0
+        }
       },
       "selected": {
         "name": "selected",
         "type": "spriteOnly",
         "width": 25,
         "height": 55,
-        "z-index": { "layer": 3, "depth": 7 },
+        "z-index": {
+          "layer": 3,
+          "depth": 7
+        },
         "fixedRotation": false,
         "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
         "allowSleep": false,
@@ -135,13 +150,22 @@
             "density": 1,
             "friction": 0.01,
             "restitution": 0.01,
-            "shape": { "type": "rectangle" },
+            "shape": {
+              "type": "rectangle"
+            },
             "isSensor": true
           }
         ],
         "jointType": "none",
-        "unitAnchor": { "rotation": -90, "y": 5, "x": 0 },
-        "itemAnchor": { "y": 58, "x": 0 },
+        "unitAnchor": {
+          "rotation": -90,
+          "y": 5,
+          "x": 0
+        },
+        "itemAnchor": {
+          "y": 58,
+          "x": 0
+        },
         "bullet": false
       },
       "default": {
@@ -150,7 +174,10 @@
         "type": "dynamic",
         "width": 58,
         "height": 58,
-        "z-index": { "layer": 3, "depth": 3 },
+        "z-index": {
+          "layer": 3,
+          "depth": 3
+        },
         "fixedRotation": true,
         "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
         "allowSleep": false,
@@ -170,13 +197,24 @@
             "density": 1,
             "friction": 0,
             "restitution": 0,
-            "shape": { "type": "rectangle" },
+            "shape": {
+              "type": "rectangle"
+            },
             "isSensor": false
           }
         ],
         "jointType": "weldJoint",
-        "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
-        "itemAnchor": { "x": 0, "y": 0, "lowerAngle": 0, "upperAngle": 0 }
+        "unitAnchor": {
+          "x": 0,
+          "y": 33,
+          "rotation": 0
+        },
+        "itemAnchor": {
+          "x": 0,
+          "y": 0,
+          "lowerAngle": 0,
+          "upperAngle": 0
+        }
       }
     },
     "particleTypes": {
@@ -187,22 +225,52 @@
         "quantityBase": 50,
         "quantityTimespan": 100,
         "deathOpacityBase": 0,
-        "dimensions": { "width": 2, "height": 2 },
-        "z-index": { "layer": 3, "depth": 7 },
-        "mountPosition": { "x": 0, "y": 0 },
+        "dimensions": {
+          "width": 2,
+          "height": 2
+        },
+        "z-index": {
+          "layer": 3,
+          "depth": 7
+        },
+        "mountPosition": {
+          "x": 0,
+          "y": 0
+        },
         "velocityVector": {
-          "baseVector": { "x": 0, "y": 0 },
-          "minVector": { "x": "-.1", "y": "-.1" },
-          "maxVector": { "x": ".1", "y": ".1" }
+          "baseVector": {
+            "x": 0,
+            "y": 0
+          },
+          "minVector": {
+            "x": "-.1",
+            "y": "-.1"
+          },
+          "maxVector": {
+            "x": ".1",
+            "y": ".1"
+          }
         }
       },
       "shell": {
         "velocityVector": {
-          "maxVector": { "y": 0.01, "x": 0.03 },
-          "minVector": { "y": -0.01, "x": 0 },
-          "baseVector": { "y": 0, "x": 0.01 }
+          "maxVector": {
+            "y": 0.01,
+            "x": 0.03
+          },
+          "minVector": {
+            "y": -0.01,
+            "x": 0
+          },
+          "baseVector": {
+            "y": 0,
+            "x": 0.01
+          }
         },
-        "mountPosition": { "y": 0, "x": 0 },
+        "mountPosition": {
+          "y": 0,
+          "x": 0
+        },
         "deathOpacityBase": 0.1,
         "quantityTimespan": 700,
         "quantityBase": 100,
@@ -212,11 +280,23 @@
       },
       "bullet": {
         "velocityVector": {
-          "maxVector": { "y": 0, "x": 0.05 },
-          "minVector": { "y": -1, "x": -0.05 },
-          "baseVector": { "y": -1, "x": 0 }
+          "maxVector": {
+            "y": 0,
+            "x": 0.05
+          },
+          "minVector": {
+            "y": -1,
+            "x": -0.05
+          },
+          "baseVector": {
+            "y": -1,
+            "x": 0
+          }
         },
-        "mountPosition": { "y": 35, "x": 0 },
+        "mountPosition": {
+          "y": 35,
+          "x": 0
+        },
         "deathOpacityBase": 1,
         "quantityTimespan": 500,
         "quantityBase": 80,
@@ -226,11 +306,23 @@
       },
       "spark": {
         "velocityVector": {
-          "maxVector": { "y": 1, "x": 1 },
-          "minVector": { "y": -1, "x": -1 },
-          "baseVector": { "y": 0, "x": 0 }
+          "maxVector": {
+            "y": 1,
+            "x": 1
+          },
+          "minVector": {
+            "y": -1,
+            "x": -1
+          },
+          "baseVector": {
+            "y": 0,
+            "x": 0
+          }
         },
-        "mountPosition": { "y": 35, "x": 0 },
+        "mountPosition": {
+          "y": 35,
+          "x": 0
+        },
         "deathOpacityBase": 0.5,
         "quantityTimespan": 70,
         "quantityBase": 40,
@@ -242,11 +334,23 @@
     "particles": {
       "87BiLybZhy": {
         "velocityVector": {
-          "maxVector": { "y": 1, "x": 1 },
-          "minVector": { "y": -1, "x": -1 },
-          "baseVector": { "y": 0, "x": 0 }
+          "maxVector": {
+            "y": 1,
+            "x": 1
+          },
+          "minVector": {
+            "y": -1,
+            "x": -1
+          },
+          "baseVector": {
+            "y": 0,
+            "x": 0
+          }
         },
-        "mountPosition": { "y": 0, "x": 0 },
+        "mountPosition": {
+          "y": 0,
+          "x": 0
+        },
         "deathOpacityBase": 1,
         "quantityTimespan": 30,
         "quantityBase": 1,
@@ -256,11 +360,23 @@
       },
       "7pA9mm1MLG": {
         "velocityVector": {
-          "maxVector": { "y": 1, "x": 1 },
-          "minVector": { "y": -1, "x": -1 },
-          "baseVector": { "y": 0, "x": 0 }
+          "maxVector": {
+            "y": 1,
+            "x": 1
+          },
+          "minVector": {
+            "y": -1,
+            "x": -1
+          },
+          "baseVector": {
+            "y": 0,
+            "x": 0
+          }
         },
-        "mountPosition": { "y": 0, "x": 0 },
+        "mountPosition": {
+          "y": 0,
+          "x": 0
+        },
         "deathOpacityBase": 1,
         "quantityTimespan": 30,
         "quantityBase": 5,
@@ -309,7 +425,9 @@
       },
       "redTeam": {
         "showNameLabel": true,
-        "relationships": { "purpleTeam": "hostile" },
+        "relationships": {
+          "purpleTeam": "hostile"
+        },
         "color": "#d44950",
         "attributes": {
           "gold": {
@@ -373,7 +491,10 @@
       }
     },
     "factions": {
-      "PgVCU0WgYj": { "relationships": {}, "name": "fda" },
+      "PgVCU0WgYj": {
+        "relationships": {},
+        "name": "fda"
+      },
       "6BTQoFGUFP": {
         "attributes": {
           "4P4pWD5ExV": {
@@ -461,18 +582,30 @@
       "allowDuplicateIPs": true,
       "scoreAttributeId": "gold",
       "scoreBoard": "n5JEoENeGg",
-      "gravity": { "y": 0, "x": 0 },
+      "gravity": {
+        "y": 0,
+        "x": 0
+      },
       "images": {
         "cover": "https://cache.modd.io/1501275562940_two houses cover.png",
         "logo": "https://cache.modd.io/asset/spriteImage/1593104286047_modd_logo.png"
       },
-      "constants": { "currency": "Food" },
+      "constants": {
+        "currency": "Food"
+      },
       "camera": {
         "trackingDelay": 3,
-        "zoom": { "type": "static", "default": 800 }
+        "zoom": {
+          "type": "static",
+          "default": 800
+        }
       },
-      "shop": { "isEnabled": false },
-      "inventory": { "isEnabled": false },
+      "shop": {
+        "isEnabled": false
+      },
+      "inventory": {
+        "isEnabled": false
+      },
       "prettifyingScoreboard": true,
       "menuHTML": "<div id='left-menu' class=\"flex-column hide-on-mobile p-3\" style=\"max-width: 320px\">\n\t<div id='user-div' class=\"flex-shrink-0 mb-3\" style=\"box-shadow: 0 0 15px rgba(0,0,0,.5);\">\n\t\t{{ loginForm }}\n\t</div>\n\n\t<div id='menu-div' class=\"flex-shrink-0 mb-3\" style=\"box-shadow: 0 0 15px rgba(0,0,0,.5);\">\n\t\t{{ sideMenu }}\n\t</div>\n\n\t{{#if isUserLoggedIn }}\n    {{ friendsPanel }}\n  {{/if}}\n</div>\n\n<div id='right-menu' class=\"d-flex justify-content-center align-items-center flex-grow-1\">\n\t<div class=\"w-100\">\n\t\t<h1 class=\"text-center game-title\">\n\t\t</h1>\n\t\t\n\t\t<div class=\"row flex-grow-0 menu-row margin-auto justify-content-center\">\n\t\t\t<!-- changed d-lg-block to d-sm-block because wanted to show it in mobile app -->\n\t\t\t<div id=\"menu-column-left-container\" class=\"d-none d-sm-block\" style=\"min-width: 235px;\">\n\t\t\t\t<div class=\"white-bg\" style=\"box-shadow: 0 0 15px rgba(0,0,0,.5);\">\n\t\t\t\t\t{{ coinShop }}\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\n\t\t\t<div id=\"menu-column-main-container\" class=\"pl-3\" style=\"{{#if constants.guestMode }} margin:auto {{/if}};\">\n\t\t\t\t<div id=\"menu-column-main\">\n\t\t\t\t\t<div class=\"white-bg\" style=\"max-width: 480px\">\n\t\t\t\t\t\t{{ playForm }}\t\t\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\n\t\t\t<div class=\"pl-3\" id=\"menu-column-right-container\" style=\"{{#if constants.guestMode }} margin:auto {{/if}};\">\n\t\t\t\t<div id=\"menu-column-left\" class=\"d-none d-lg-block bg-white rounded p-3\" style=\"max-width: 235px; width: 235px;\">\n\t\t\t\t\t{{ skinShop }}\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t</div>\n\t</div>\n</div>",
       "": "https://cache.modd.io/asset/spriteImage/1589338248085_cover_team.png"
@@ -530,30 +663,80 @@
       }
     },
     "variables": {
-      "i": { "dataType": "number", "default": 0 },
-      "timeLeft": { "dataType": "number", "default": 0 },
-      "@timeGameover": { "dataType": "number", "default": 12 },
-      "state": { "default": 0, "dataType": "number" },
-      "@stateGameOver": { "dataType": "number", "default": 2 },
-      "@stateFight": { "dataType": "number", "default": 1 },
-      "@statePrepare": { "dataType": "number", "default": 0 },
-      "@timeFight": { "default": 60, "dataType": "number" },
-      "@timePrepare": { "default": 3, "dataType": "number" },
-      "@isDev": { "dataType": "boolean", "default": false },
-      "tempUnitType": { "dataType": "unitType" },
-      "tempItem": { "dataType": "item" },
+      "i": {
+        "dataType": "number",
+        "default": 0
+      },
+      "timeLeft": {
+        "dataType": "number",
+        "default": 0
+      },
+      "@timeGameover": {
+        "dataType": "number",
+        "default": 12
+      },
+      "state": {
+        "default": 0,
+        "dataType": "number"
+      },
+      "@stateGameOver": {
+        "dataType": "number",
+        "default": 2
+      },
+      "@stateFight": {
+        "dataType": "number",
+        "default": 1
+      },
+      "@statePrepare": {
+        "dataType": "number",
+        "default": 0
+      },
+      "@timeFight": {
+        "default": 60,
+        "dataType": "number"
+      },
+      "@timePrepare": {
+        "default": 3,
+        "dataType": "number"
+      },
+      "@isDev": {
+        "dataType": "boolean",
+        "default": false
+      },
+      "tempUnitType": {
+        "dataType": "unitType"
+      },
+      "tempItem": {
+        "dataType": "item"
+      },
       "spawn A": {
         "dataType": "region",
-        "default": { "x": 195, "y": 2885, "width": 437, "height": 182 },
+        "default": {
+          "x": 195,
+          "y": 2885,
+          "width": 437,
+          "height": 182
+        },
         "deleteKey": "bandits spawn"
       },
       "spawn B": {
         "dataType": "region",
-        "default": { "x": 407, "y": 283, "width": 363, "height": 214 },
+        "default": {
+          "x": 407,
+          "y": 283,
+          "width": 363,
+          "height": 214
+        },
         "deleteKey": "sheriffSpawn"
       },
-      "redAlive": { "default": 0, "dataType": "number" },
-      "purpleAlive": { "default": 0, "dataType": "number" }
+      "redAlive": {
+        "default": 0,
+        "dataType": "number"
+      },
+      "purpleAlive": {
+        "default": 0,
+        "dataType": "number"
+      }
     },
     "abilities": {
       "pickupItem": {
@@ -562,69 +745,103 @@
         "cost": {}
       },
       "dropItem": {
-        "cost": { "cast": {} },
+        "cost": {
+          "cast": {}
+        },
         "scriptName": "YMkMZ064wI",
         "name": "drop item"
       },
       "reloadItem": {
-        "cost": { "cast": {} },
+        "cost": {
+          "cast": {}
+        },
         "scriptName": "NMkxnSjNzy",
         "name": "reload item"
       },
       "stopUsingItem": {
-        "cost": { "cast": {} },
+        "cost": {
+          "cast": {}
+        },
         "scriptName": "FPmP0mVeqG",
         "name": "stop using item"
       },
       "stopMovingDown": {
-        "cost": { "cast": {} },
+        "cost": {
+          "cast": {}
+        },
         "scriptName": "eeQaaUpFeU",
         "name": "stop moving down"
       },
       "stopMovingLeft": {
-        "cost": { "cast": {} },
+        "cost": {
+          "cast": {}
+        },
         "scriptName": "zX0Q6doKxN",
         "name": "stop moving left"
       },
       "stopMovingUp": {
-        "cost": { "cast": {} },
+        "cost": {
+          "cast": {}
+        },
         "scriptName": "ThQ6FJTMoH",
         "name": "stop moving up"
       },
       "stopMovingRight": {
-        "cost": { "cast": {} },
+        "cost": {
+          "cast": {}
+        },
         "scriptName": "j9Vhcbx4qz",
         "name": "stop moving right"
       },
       "moveDown": {
-        "cost": { "cast": {} },
+        "cost": {
+          "cast": {}
+        },
         "scriptName": "ln6972TmhW",
         "name": "move down"
       },
       "moveLeft": {
-        "cost": { "cast": {} },
+        "cost": {
+          "cast": {}
+        },
         "scriptName": "ppUPGjZfjj",
         "name": "move left"
       },
       "moveRight": {
-        "cost": { "cast": {} },
+        "cost": {
+          "cast": {}
+        },
         "scriptName": "aoxwi5IuXq",
         "name": "move right"
       },
       "moveUp": {
-        "cost": { "cast": {} },
+        "cost": {
+          "cast": {}
+        },
         "scriptName": "YtZKI0m4CZ",
         "name": "move up"
       },
       "startUsingItem": {
         "type": "startUsingItem",
-        "entity": { "function": "getItemCurrentlyHeldByUnit" },
+        "entity": {
+          "function": "getItemCurrentlyHeldByUnit"
+        },
         "name": "start using item",
         "scriptName": "5NlaQRez0O",
-        "cost": { "cast": {} }
+        "cost": {
+          "cast": {}
+        }
       },
-      "reload": { "cost": {}, "scriptName": "VQ7acza9bQ", "name": "reload" },
-      "openShop": { "cost": {}, "scriptName": "openShop", "name": "open shop" }
+      "reload": {
+        "cost": {},
+        "scriptName": "VQ7acza9bQ",
+        "name": "reload"
+      },
+      "openShop": {
+        "cost": {},
+        "scriptName": "openShop",
+        "name": "open shop"
+      }
     },
     "unitTypes": {
       "purpleFighter": {
@@ -640,7 +857,11 @@
           "pathFindingMethod": "simple"
         },
         "defaultItems": [
-          { "name": "Sword", "value": "Sword", "key": "sword" },
+          {
+            "name": "Sword",
+            "value": "Sword",
+            "key": "sword"
+          },
           {
             "name": "Plasma Pistol",
             "value": "Plasma Pistol",
@@ -652,14 +873,33 @@
           "movementMethod": "velocity",
           "movementControlScheme": "wasd",
           "abilities": {
-            "movementWheel": { "mobilePosition": { "y": 204, "x": 35 } },
-            "lookWheel": { "mobilePosition": { "y": 204, "x": 407 } },
+            "movementWheel": {
+              "mobilePosition": {
+                "y": 204,
+                "x": 35
+              }
+            },
+            "lookWheel": {
+              "mobilePosition": {
+                "y": 204,
+                "x": 407
+              }
+            },
             "b": {
-              "keyUp": { "scriptName": "", "cost": {} },
-              "keyDown": { "scriptName": "openShop", "cost": {} }
+              "keyUp": {
+                "scriptName": "",
+                "cost": {}
+              },
+              "keyDown": {
+                "scriptName": "openShop",
+                "cost": {}
+              }
             },
             "e": {
-              "keyUp": { "scriptName": "", "cost": {} },
+              "keyUp": {
+                "scriptName": "",
+                "cost": {}
+              },
               "keyDown": {
                 "scriptName": "w2VrnZHyom",
                 "cost": {},
@@ -679,7 +919,10 @@
               }
             },
             "g": {
-              "keyUp": { "scriptName": "", "cost": {} },
+              "keyUp": {
+                "scriptName": "",
+                "cost": {}
+              },
               "keyDown": {
                 "scriptName": "yP67J1MMRN",
                 "cost": {},
@@ -729,7 +972,9 @@
           "spriteScale": 1,
           "fixtures": [
             {
-              "shape": { "type": "rectangle" },
+              "shape": {
+                "type": "rectangle"
+              },
               "restitution": 0.01,
               "friction": 0.01,
               "density": 3
@@ -754,10 +999,16 @@
             "item": true,
             "debris": true
           },
-          "z-index": { "layer": 3, "depth": 3 },
+          "z-index": {
+            "layer": 3,
+            "depth": 3
+          },
           "name": "Human-body"
         },
-        "spawnPosition": { "y": 2200, "x": 1500 },
+        "spawnPosition": {
+          "y": 2200,
+          "x": 1500
+        },
         "attributes": {
           "health": {
             "decimalPlaces": 0,
@@ -788,21 +1039,70 @@
           }
         },
         "abilities": {
-          "b": { "keyDown": "openShop", "keyUp": "" },
-          "e": { "keyDown": "pickupItem", "keyUp": "" },
-          "movementWheel": { "mobilePosition": { "y": 204, "x": 35 } },
-          "lookWheel": { "mobilePosition": { "y": 204, "x": 407 } },
-          "w": { "keyUp": "stopMovingUp", "keyDown": "moveUp" },
-          "a": { "keyUp": "stopMovingLeft", "keyDown": "moveLeft" },
-          "s": { "keyUp": "stopMovingDown", "keyDown": "moveDown" },
-          "d": { "keyUp": "stopMovingRight", "keyDown": "moveRight" },
-          "button1": { "keyUp": "stopUsingItem", "keyDown": "startUsingItem" },
-          "g": { "keyUp": "", "keyDown": "dropItem" },
-          "up": { "keyUp": "stopMovingUp", "keyDown": "moveUp" },
-          "down": { "keyUp": "stopMovingDown", "keyDown": "moveDown" },
-          "left": { "keyUp": "stopMovingLeft", "keyDown": "moveLeft" },
-          "right": { "keyUp": "stopMovingRight", "keyDown": "moveRight" },
-          "r": { "keyUp": "", "keyDown": "reload" }
+          "b": {
+            "keyDown": "openShop",
+            "keyUp": ""
+          },
+          "e": {
+            "keyDown": "pickupItem",
+            "keyUp": ""
+          },
+          "movementWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 35
+            }
+          },
+          "lookWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 407
+            }
+          },
+          "w": {
+            "keyUp": "stopMovingUp",
+            "keyDown": "moveUp"
+          },
+          "a": {
+            "keyUp": "stopMovingLeft",
+            "keyDown": "moveLeft"
+          },
+          "s": {
+            "keyUp": "stopMovingDown",
+            "keyDown": "moveDown"
+          },
+          "d": {
+            "keyUp": "stopMovingRight",
+            "keyDown": "moveRight"
+          },
+          "button1": {
+            "keyUp": "stopUsingItem",
+            "keyDown": "startUsingItem"
+          },
+          "g": {
+            "keyUp": "",
+            "keyDown": "dropItem"
+          },
+          "up": {
+            "keyUp": "stopMovingUp",
+            "keyDown": "moveUp"
+          },
+          "down": {
+            "keyUp": "stopMovingDown",
+            "keyDown": "moveDown"
+          },
+          "left": {
+            "keyUp": "stopMovingLeft",
+            "keyDown": "moveLeft"
+          },
+          "right": {
+            "keyUp": "stopMovingRight",
+            "keyDown": "moveRight"
+          },
+          "r": {
+            "keyUp": "",
+            "keyDown": "reload"
+          }
         },
         "baseSpeed": 53,
         "price": {},
@@ -818,13 +1118,24 @@
         },
         "bodies": {
           "default": {
-            "itemAnchor": { "upperAngle": 0, "lowerAngle": 0, "y": 0, "x": 0 },
-            "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+            "itemAnchor": {
+              "upperAngle": 0,
+              "lowerAngle": 0,
+              "y": 0,
+              "x": 0
+            },
+            "unitAnchor": {
+              "rotation": 0,
+              "y": 33,
+              "x": 0
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": false,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0,
                 "friction": 0,
                 "density": 1
@@ -844,7 +1155,10 @@
             "allowSleep": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": true,
-            "z-index": { "depth": 3, "layer": 3 },
+            "z-index": {
+              "depth": 3,
+              "layer": 3
+            },
             "height": 59,
             "width": 40,
             "type": "dynamic",
@@ -854,9 +1168,21 @@
         },
         "variables": {},
         "effects": {
-          "destroy": { "animation": "", "sound": {}, "projectileType": "" },
-          "create": { "animation": "", "sound": {}, "projectileType": "" },
-          "move": { "animation": "", "sound": {}, "projectileType": "" },
+          "destroy": {
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          },
+          "create": {
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          },
+          "move": {
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          },
           "attacked": {
             "tween": "recoil",
             "animation": "",
@@ -875,7 +1201,10 @@
           "DOrbWp0AGz": {
             "triggers": [],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
@@ -884,7 +1213,10 @@
                 "type": "stopUsingItem",
                 "entity": {
                   "function": "getItemCurrentlyHeldByUnit",
-                  "entity": { "function": "thisEntity", "vars": [] },
+                  "entity": {
+                    "function": "thisEntity",
+                    "vars": []
+                  },
                   "vars": []
                 },
                 "hasFixedCSP": null,
@@ -900,7 +1232,10 @@
           "YFeMQ20gBX": {
             "triggers": [],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
@@ -909,7 +1244,10 @@
                 "type": "startUsingItem",
                 "entity": {
                   "function": "getItemCurrentlyHeldByUnit",
-                  "entity": { "function": "thisEntity", "vars": [] },
+                  "entity": {
+                    "function": "thisEntity",
+                    "vars": []
+                  },
                   "vars": []
                 },
                 "hasFixedCSP": null,
@@ -931,7 +1269,10 @@
           "w2VrnZHyom": {
             "triggers": [],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
@@ -945,7 +1286,10 @@
                     "entity": {
                       "function": "thisEntity",
                       "vars": [
-                        { "id": "selectedEntity", "source": "forAllEntities" },
+                        {
+                          "id": "selectedEntity",
+                          "source": "forAllEntities"
+                        },
                         {
                           "id": "getSelectedEntity",
                           "source": "forAllEntities"
@@ -953,20 +1297,35 @@
                       ]
                     },
                     "vars": [
-                      { "id": "selectedEntity", "source": "forAllEntities" },
-                      { "id": "getSelectedEntity", "source": "forAllEntities" }
+                      {
+                        "id": "selectedEntity",
+                        "source": "forAllEntities"
+                      },
+                      {
+                        "id": "getSelectedEntity",
+                        "source": "forAllEntities"
+                      }
                     ]
                   },
                   "vars": [
-                    { "id": "selectedEntity", "source": "forAllEntities" },
-                    { "id": "getSelectedEntity", "source": "forAllEntities" }
+                    {
+                      "id": "selectedEntity",
+                      "source": "forAllEntities"
+                    },
+                    {
+                      "id": "getSelectedEntity",
+                      "source": "forAllEntities"
+                    }
                   ]
                 },
                 "actions": [
                   {
                     "type": "condition",
                     "conditions": [
-                      { "operandType": "string", "operator": "==" },
+                      {
+                        "operandType": "string",
+                        "operator": "=="
+                      },
                       {
                         "function": "getEntityType",
                         "entity": {
@@ -1038,14 +1397,26 @@
                     ],
                     "else": [],
                     "vars": [
-                      { "id": "selectedEntity", "source": "forAllEntities" },
-                      { "id": "getSelectedEntity", "source": "forAllEntities" }
+                      {
+                        "id": "selectedEntity",
+                        "source": "forAllEntities"
+                      },
+                      {
+                        "id": "getSelectedEntity",
+                        "source": "forAllEntities"
+                      }
                     ]
                   }
                 ],
                 "vars": [
-                  { "id": "selectedEntity", "source": "forAllEntities" },
-                  { "id": "getSelectedEntity", "source": "forAllEntities" }
+                  {
+                    "id": "selectedEntity",
+                    "source": "forAllEntities"
+                  },
+                  {
+                    "id": "getSelectedEntity",
+                    "source": "forAllEntities"
+                  }
                 ]
               }
             ],
@@ -1057,7 +1428,10 @@
           "yP67J1MMRN": {
             "triggers": [],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
@@ -1066,12 +1440,18 @@
                 "type": "dropItemAtPosition",
                 "item": {
                   "function": "getItemCurrentlyHeldByUnit",
-                  "entity": { "function": "thisEntity", "vars": [] },
+                  "entity": {
+                    "function": "thisEntity",
+                    "vars": []
+                  },
                   "vars": []
                 },
                 "position": {
                   "function": "getEntityPosition",
-                  "entity": { "function": "thisEntity", "vars": [] },
+                  "entity": {
+                    "function": "thisEntity",
+                    "vars": []
+                  },
                   "vars": []
                 },
                 "vars": []
@@ -1088,8 +1468,18 @@
       "spectator": {
         "controls": {
           "abilities": {
-            "movementWheel": { "mobilePosition": { "y": 204, "x": 35 } },
-            "lookWheel": { "mobilePosition": { "y": 204, "x": 407 } }
+            "movementWheel": {
+              "mobilePosition": {
+                "y": 204,
+                "x": 35
+              }
+            },
+            "lookWheel": {
+              "mobilePosition": {
+                "y": 204,
+                "x": 407
+              }
+            }
           },
           "mouseBehaviour": {
             "flipSpriteHorizontallyWRTMouse": true,
@@ -1102,13 +1492,24 @@
         "variables": {},
         "bodies": {
           "default": {
-            "itemAnchor": { "upperAngle": 0, "lowerAngle": 0, "y": 0, "x": 0 },
-            "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+            "itemAnchor": {
+              "upperAngle": 0,
+              "lowerAngle": 0,
+              "y": 0,
+              "x": 0
+            },
+            "unitAnchor": {
+              "rotation": 0,
+              "y": 33,
+              "x": 0
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": true,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0,
                 "friction": 0,
                 "density": 1
@@ -1128,7 +1529,10 @@
             "allowSleep": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": true,
-            "z-index": { "depth": 3, "layer": 3 },
+            "z-index": {
+              "depth": 3,
+              "layer": 3
+            },
             "height": 55,
             "width": 35,
             "type": "dynamic",
@@ -1149,19 +1553,62 @@
         "price": {},
         "baseSpeed": 53,
         "abilities": {
-          "right": { "keyDown": "moveRight", "keyUp": "stopMovingRight" },
-          "left": { "keyDown": "moveLeft", "keyUp": "stopMovingLeft" },
-          "down": { "keyDown": "moveDown", "keyUp": "stopMovingDown" },
-          "up": { "keyDown": "moveUp", "keyUp": "stopMovingUp" },
-          "g": { "keyDown": "dropItem", "keyUp": "" },
-          "button1": { "keyDown": "startUsingItem", "keyUp": "stopUsingItem" },
-          "d": { "keyDown": "moveRight", "keyUp": "stopMovingRight" },
-          "s": { "keyDown": "moveDown", "keyUp": "stopMovingDown" },
-          "a": { "keyDown": "moveLeft", "keyUp": "stopMovingLeft" },
-          "w": { "keyDown": "moveUp", "keyUp": "stopMovingUp" },
-          "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
-          "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } },
-          "e": { "keyUp": "", "keyDown": "pickupItem" }
+          "right": {
+            "keyDown": "moveRight",
+            "keyUp": "stopMovingRight"
+          },
+          "left": {
+            "keyDown": "moveLeft",
+            "keyUp": "stopMovingLeft"
+          },
+          "down": {
+            "keyDown": "moveDown",
+            "keyUp": "stopMovingDown"
+          },
+          "up": {
+            "keyDown": "moveUp",
+            "keyUp": "stopMovingUp"
+          },
+          "g": {
+            "keyDown": "dropItem",
+            "keyUp": ""
+          },
+          "button1": {
+            "keyDown": "startUsingItem",
+            "keyUp": "stopUsingItem"
+          },
+          "d": {
+            "keyDown": "moveRight",
+            "keyUp": "stopMovingRight"
+          },
+          "s": {
+            "keyDown": "moveDown",
+            "keyUp": "stopMovingDown"
+          },
+          "a": {
+            "keyDown": "moveLeft",
+            "keyUp": "stopMovingLeft"
+          },
+          "w": {
+            "keyDown": "moveUp",
+            "keyUp": "stopMovingUp"
+          },
+          "lookWheel": {
+            "mobilePosition": {
+              "x": 407,
+              "y": 204
+            }
+          },
+          "movementWheel": {
+            "mobilePosition": {
+              "x": 35,
+              "y": 204
+            }
+          },
+          "e": {
+            "keyUp": "",
+            "keyDown": "pickupItem"
+          }
         },
         "attributes": {
           "health": {
@@ -1189,10 +1636,16 @@
             "name": "Speed"
           }
         },
-        "spawnPosition": { "x": 1500, "y": 2200 },
+        "spawnPosition": {
+          "x": 1500,
+          "y": 2200
+        },
         "body": {
           "name": "Human-body",
-          "z-index": { "depth": 3, "layer": 3 },
+          "z-index": {
+            "depth": 3,
+            "layer": 3
+          },
           "collidesWith": {
             "debris": true,
             "item": true,
@@ -1217,7 +1670,9 @@
               "density": 3,
               "friction": 0.01,
               "restitution": 0.01,
-              "shape": { "type": "rectangle" }
+              "shape": {
+                "type": "rectangle"
+              }
             }
           ],
           "spriteScale": 1
@@ -1271,20 +1726,51 @@
             "animation": "",
             "tween": "recoil"
           },
-          "move": { "projectileType": "", "sound": {}, "animation": "" },
-          "create": { "projectileType": "", "sound": {}, "animation": "" },
-          "destroy": { "projectileType": "", "sound": {}, "animation": "" }
+          "move": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
+          "create": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
+          "destroy": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          }
         },
         "controls": {
           "abilities": {
-            "movementWheel": { "mobilePosition": { "y": 204, "x": 35 } },
-            "lookWheel": { "mobilePosition": { "y": 204, "x": 407 } },
+            "movementWheel": {
+              "mobilePosition": {
+                "y": 204,
+                "x": 35
+              }
+            },
+            "lookWheel": {
+              "mobilePosition": {
+                "y": 204,
+                "x": 407
+              }
+            },
             "b": {
-              "keyUp": { "scriptName": "", "cost": {} },
-              "keyDown": { "scriptName": "openShop", "cost": {} }
+              "keyUp": {
+                "scriptName": "",
+                "cost": {}
+              },
+              "keyDown": {
+                "scriptName": "openShop",
+                "cost": {}
+              }
             },
             "e": {
-              "keyUp": { "scriptName": "", "cost": {} },
+              "keyUp": {
+                "scriptName": "",
+                "cost": {}
+              },
               "keyDown": {
                 "scriptName": "w2VrnZHyom",
                 "cost": {},
@@ -1292,7 +1778,10 @@
               }
             },
             "g": {
-              "keyUp": { "scriptName": "", "cost": {} },
+              "keyUp": {
+                "scriptName": "",
+                "cost": {}
+              },
               "keyDown": {
                 "scriptName": "yP67J1MMRN",
                 "cost": {},
@@ -1325,13 +1814,24 @@
         "variables": {},
         "bodies": {
           "default": {
-            "itemAnchor": { "upperAngle": 0, "lowerAngle": 0, "y": 0, "x": 0 },
-            "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+            "itemAnchor": {
+              "upperAngle": 0,
+              "lowerAngle": 0,
+              "y": 0,
+              "x": 0
+            },
+            "unitAnchor": {
+              "rotation": 0,
+              "y": 33,
+              "x": 0
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": false,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0,
                 "friction": 0,
                 "density": 1
@@ -1351,7 +1851,10 @@
             "allowSleep": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": true,
-            "z-index": { "depth": 3, "layer": 3 },
+            "z-index": {
+              "depth": 3,
+              "layer": 3
+            },
             "height": 59,
             "width": 40,
             "type": "dynamic",
@@ -1372,17 +1875,54 @@
         "price": {},
         "baseSpeed": 53,
         "abilitiesJ8Gtv5hQ8j": {
-          "space": { "keyUp": "", "keyDown": "jump" },
-          "right": { "keyDown": "moveRight", "keyUp": "stopMovingRight" },
-          "left": { "keyDown": "moveLeft", "keyUp": "stopMovingLeft" },
-          "d": { "keyDown": "moveRight", "keyUp": "stopMovingRight" },
-          "button1": { "keyDown": "use", "keyUp": "stopUse" },
-          "e": { "keyDown": "pickUp", "keyUp": "" },
-          "g": { "keyDown": "drop", "keyUp": "" },
-          "a": { "keyDown": "moveLeft", "keyUp": "stopMovingLeft" },
-          "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
-          "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } },
-          "b": { "keyUp": "", "keyDown": "shop" }
+          "space": {
+            "keyUp": "",
+            "keyDown": "jump"
+          },
+          "right": {
+            "keyDown": "moveRight",
+            "keyUp": "stopMovingRight"
+          },
+          "left": {
+            "keyDown": "moveLeft",
+            "keyUp": "stopMovingLeft"
+          },
+          "d": {
+            "keyDown": "moveRight",
+            "keyUp": "stopMovingRight"
+          },
+          "button1": {
+            "keyDown": "use",
+            "keyUp": "stopUse"
+          },
+          "e": {
+            "keyDown": "pickUp",
+            "keyUp": ""
+          },
+          "g": {
+            "keyDown": "drop",
+            "keyUp": ""
+          },
+          "a": {
+            "keyDown": "moveLeft",
+            "keyUp": "stopMovingLeft"
+          },
+          "lookWheel": {
+            "mobilePosition": {
+              "x": 407,
+              "y": 204
+            }
+          },
+          "movementWheel": {
+            "mobilePosition": {
+              "x": 35,
+              "y": 204
+            }
+          },
+          "b": {
+            "keyUp": "",
+            "keyDown": "shop"
+          }
         },
         "attributes": {
           "health": {
@@ -1416,10 +1956,16 @@
             "decimalPlaces": 0
           }
         },
-        "spawnPosition": { "x": 1500, "y": 2200 },
+        "spawnPosition": {
+          "x": 1500,
+          "y": 2200
+        },
         "body": {
           "name": "Human-body",
-          "z-index": { "depth": 3, "layer": 3 },
+          "z-index": {
+            "depth": 3,
+            "layer": 3
+          },
           "collidesWith": {
             "debris": true,
             "item": true,
@@ -1444,7 +1990,9 @@
               "density": 3,
               "friction": 0.01,
               "restitution": 0.01,
-              "shape": { "type": "rectangle" }
+              "shape": {
+                "type": "rectangle"
+              }
             }
           ],
           "spriteScale": 1
@@ -1481,24 +2029,77 @@
         },
         "inventoryImage": "",
         "abilities": {
-          "b": { "keyDown": "openShop", "keyUp": "" },
-          "e": { "keyDown": "pickupItem", "keyUp": "" },
-          "movementWheel": { "mobilePosition": { "y": 204, "x": 35 } },
-          "lookWheel": { "mobilePosition": { "y": 204, "x": 407 } },
-          "w": { "keyUp": "stopMovingUp", "keyDown": "moveUp" },
-          "a": { "keyUp": "stopMovingLeft", "keyDown": "moveLeft" },
-          "s": { "keyUp": "stopMovingDown", "keyDown": "moveDown" },
-          "d": { "keyUp": "stopMovingRight", "keyDown": "moveRight" },
-          "button1": { "keyUp": "stopUsingItem", "keyDown": "startUsingItem" },
-          "g": { "keyUp": "", "keyDown": "dropItem" },
-          "up": { "keyUp": "stopMovingUp", "keyDown": "moveUp" },
-          "down": { "keyUp": "stopMovingDown", "keyDown": "moveDown" },
-          "left": { "keyUp": "stopMovingLeft", "keyDown": "moveLeft" },
-          "right": { "keyUp": "stopMovingRight", "keyDown": "moveRight" },
-          "r": { "keyUp": "", "keyDown": "reload" }
+          "b": {
+            "keyDown": "openShop",
+            "keyUp": ""
+          },
+          "e": {
+            "keyDown": "pickupItem",
+            "keyUp": ""
+          },
+          "movementWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 35
+            }
+          },
+          "lookWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 407
+            }
+          },
+          "w": {
+            "keyUp": "stopMovingUp",
+            "keyDown": "moveUp"
+          },
+          "a": {
+            "keyUp": "stopMovingLeft",
+            "keyDown": "moveLeft"
+          },
+          "s": {
+            "keyUp": "stopMovingDown",
+            "keyDown": "moveDown"
+          },
+          "d": {
+            "keyUp": "stopMovingRight",
+            "keyDown": "moveRight"
+          },
+          "button1": {
+            "keyUp": "stopUsingItem",
+            "keyDown": "startUsingItem"
+          },
+          "g": {
+            "keyUp": "",
+            "keyDown": "dropItem"
+          },
+          "up": {
+            "keyUp": "stopMovingUp",
+            "keyDown": "moveUp"
+          },
+          "down": {
+            "keyUp": "stopMovingDown",
+            "keyDown": "moveDown"
+          },
+          "left": {
+            "keyUp": "stopMovingLeft",
+            "keyDown": "moveLeft"
+          },
+          "right": {
+            "keyUp": "stopMovingRight",
+            "keyDown": "moveRight"
+          },
+          "r": {
+            "keyUp": "",
+            "keyDown": "reload"
+          }
         },
         "defaultItems": [
-          { "key": "sword", "value": "Sword", "name": "Sword" },
+          {
+            "key": "sword",
+            "value": "Sword",
+            "name": "Sword"
+          },
           {
             "key": "plasmaPistol",
             "value": "Plasma Pistol",
@@ -1520,7 +2121,10 @@
           "DOrbWp0AGz": {
             "triggers": [],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
@@ -1529,7 +2133,10 @@
                 "type": "stopUsingItem",
                 "entity": {
                   "function": "getItemCurrentlyHeldByUnit",
-                  "entity": { "function": "thisEntity", "vars": [] },
+                  "entity": {
+                    "function": "thisEntity",
+                    "vars": []
+                  },
                   "vars": []
                 },
                 "hasFixedCSP": null,
@@ -1545,7 +2152,10 @@
           "YFeMQ20gBX": {
             "triggers": [],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
@@ -1554,7 +2164,10 @@
                 "type": "startUsingItem",
                 "entity": {
                   "function": "getItemCurrentlyHeldByUnit",
-                  "entity": { "function": "thisEntity", "vars": [] },
+                  "entity": {
+                    "function": "thisEntity",
+                    "vars": []
+                  },
                   "vars": []
                 },
                 "hasFixedCSP": null,
@@ -1576,7 +2189,10 @@
           "w2VrnZHyom": {
             "triggers": [],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
@@ -1590,7 +2206,10 @@
                     "entity": {
                       "function": "thisEntity",
                       "vars": [
-                        { "id": "selectedEntity", "source": "forAllEntities" },
+                        {
+                          "id": "selectedEntity",
+                          "source": "forAllEntities"
+                        },
                         {
                           "id": "getSelectedEntity",
                           "source": "forAllEntities"
@@ -1598,20 +2217,35 @@
                       ]
                     },
                     "vars": [
-                      { "id": "selectedEntity", "source": "forAllEntities" },
-                      { "id": "getSelectedEntity", "source": "forAllEntities" }
+                      {
+                        "id": "selectedEntity",
+                        "source": "forAllEntities"
+                      },
+                      {
+                        "id": "getSelectedEntity",
+                        "source": "forAllEntities"
+                      }
                     ]
                   },
                   "vars": [
-                    { "id": "selectedEntity", "source": "forAllEntities" },
-                    { "id": "getSelectedEntity", "source": "forAllEntities" }
+                    {
+                      "id": "selectedEntity",
+                      "source": "forAllEntities"
+                    },
+                    {
+                      "id": "getSelectedEntity",
+                      "source": "forAllEntities"
+                    }
                   ]
                 },
                 "actions": [
                   {
                     "type": "condition",
                     "conditions": [
-                      { "operandType": "string", "operator": "==" },
+                      {
+                        "operandType": "string",
+                        "operator": "=="
+                      },
                       {
                         "function": "getEntityType",
                         "entity": {
@@ -1683,14 +2317,26 @@
                     ],
                     "else": [],
                     "vars": [
-                      { "id": "selectedEntity", "source": "forAllEntities" },
-                      { "id": "getSelectedEntity", "source": "forAllEntities" }
+                      {
+                        "id": "selectedEntity",
+                        "source": "forAllEntities"
+                      },
+                      {
+                        "id": "getSelectedEntity",
+                        "source": "forAllEntities"
+                      }
                     ]
                   }
                 ],
                 "vars": [
-                  { "id": "selectedEntity", "source": "forAllEntities" },
-                  { "id": "getSelectedEntity", "source": "forAllEntities" }
+                  {
+                    "id": "selectedEntity",
+                    "source": "forAllEntities"
+                  },
+                  {
+                    "id": "getSelectedEntity",
+                    "source": "forAllEntities"
+                  }
                 ]
               }
             ],
@@ -1702,7 +2348,10 @@
           "yP67J1MMRN": {
             "triggers": [],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
@@ -1711,12 +2360,18 @@
                 "type": "dropItemAtPosition",
                 "item": {
                   "function": "getItemCurrentlyHeldByUnit",
-                  "entity": { "function": "thisEntity", "vars": [] },
+                  "entity": {
+                    "function": "thisEntity",
+                    "vars": []
+                  },
                   "vars": []
                 },
                 "position": {
                   "function": "getEntityPosition",
-                  "entity": { "function": "thisEntity", "vars": [] },
+                  "entity": {
+                    "function": "thisEntity",
+                    "vars": []
+                  },
                   "vars": []
                 },
                 "vars": []
@@ -1746,15 +2401,33 @@
                 "entity": {
                   "function": "selectedUnit",
                   "vars": [
-                    { "source": "trigger", "id": "getTriggeringPlayer" },
-                    { "source": "forAllUnits", "id": "selectedUnit" },
-                    { "source": "forAllUnits", "id": "getSelectedUnit" }
+                    {
+                      "source": "trigger",
+                      "id": "getTriggeringPlayer"
+                    },
+                    {
+                      "source": "forAllUnits",
+                      "id": "selectedUnit"
+                    },
+                    {
+                      "source": "forAllUnits",
+                      "id": "getSelectedUnit"
+                    }
                   ]
                 },
                 "vars": [
-                  { "source": "trigger", "id": "getTriggeringPlayer" },
-                  { "source": "forAllUnits", "id": "selectedUnit" },
-                  { "source": "forAllUnits", "id": "getSelectedUnit" }
+                  {
+                    "source": "trigger",
+                    "id": "getTriggeringPlayer"
+                  },
+                  {
+                    "source": "forAllUnits",
+                    "id": "selectedUnit"
+                  },
+                  {
+                    "source": "forAllUnits",
+                    "id": "getSelectedUnit"
+                  }
                 ]
               }
             ],
@@ -1762,37 +2435,76 @@
               "player": {
                 "function": "getTriggeringPlayer",
                 "vars": [
-                  { "source": "trigger", "id": "getTriggeringPlayer" },
-                  { "source": "forAllUnits", "id": "selectedUnit" },
-                  { "source": "forAllUnits", "id": "getSelectedUnit" }
+                  {
+                    "source": "trigger",
+                    "id": "getTriggeringPlayer"
+                  },
+                  {
+                    "source": "forAllUnits",
+                    "id": "selectedUnit"
+                  },
+                  {
+                    "source": "forAllUnits",
+                    "id": "getSelectedUnit"
+                  }
                 ]
               },
               "function": "allUnitsOwnedByPlayer",
               "vars": [
-                { "source": "trigger", "id": "getTriggeringPlayer" },
-                { "source": "forAllUnits", "id": "selectedUnit" },
-                { "source": "forAllUnits", "id": "getSelectedUnit" }
+                {
+                  "source": "trigger",
+                  "id": "getTriggeringPlayer"
+                },
+                {
+                  "source": "forAllUnits",
+                  "id": "selectedUnit"
+                },
+                {
+                  "source": "forAllUnits",
+                  "id": "getSelectedUnit"
+                }
               ]
             },
             "type": "forAllUnits",
             "vars": [
-              { "source": "trigger", "id": "getTriggeringPlayer" },
-              { "source": "forAllUnits", "id": "selectedUnit" },
-              { "source": "forAllUnits", "id": "getSelectedUnit" }
+              {
+                "source": "trigger",
+                "id": "getTriggeringPlayer"
+              },
+              {
+                "source": "forAllUnits",
+                "id": "selectedUnit"
+              },
+              {
+                "source": "forAllUnits",
+                "id": "getSelectedUnit"
+              }
             ]
           },
           {
             "type": "runScript",
             "scriptName": "checkWho'sAlive &UpdateScoreboard",
-            "vars": [{ "source": "trigger", "id": "getTriggeringPlayer" }]
+            "vars": [
+              {
+                "source": "trigger",
+                "id": "getTriggeringPlayer"
+              }
+            ]
           }
         ],
         "conditions": [
-          { "operandType": "boolean", "operator": "==" },
+          {
+            "operandType": "boolean",
+            "operator": "=="
+          },
           true,
           true
         ],
-        "triggers": [{ "type": "playerLeavesGame" }]
+        "triggers": [
+          {
+            "type": "playerLeavesGame"
+          }
+        ]
       },
       "death": {
         "order": 3,
@@ -1803,10 +2515,15 @@
           {
             "type": "condition",
             "conditions": [
-              { "operandType": "attributeType", "operator": "==" },
+              {
+                "operandType": "attributeType",
+                "operator": "=="
+              },
               {
                 "function": "getAttributeTypeOfAttribute",
-                "entity": { "function": "getTriggeringAttribute" }
+                "entity": {
+                  "function": "getTriggeringAttribute"
+                }
               },
               "health"
             ],
@@ -1815,7 +2532,9 @@
                 "type": "setPlayerAttribute",
                 "attribute": "kills",
                 "entity": {
-                  "entity": { "function": "getLastAttackingUnit" },
+                  "entity": {
+                    "function": "getLastAttackingUnit"
+                  },
                   "function": "getOwner"
                 },
                 "value": {
@@ -1827,7 +2546,9 @@
                       "attribute": "kills",
                       "entity": {
                         "function": "getOwner",
-                        "entity": { "function": "getLastAttackingUnit" }
+                        "entity": {
+                          "function": "getLastAttackingUnit"
+                        }
                       }
                     },
                     1
@@ -1840,7 +2561,9 @@
                 "type": "setPlayerAttribute",
                 "attribute": "gold",
                 "entity": {
-                  "entity": { "function": "getLastAttackingUnit" },
+                  "entity": {
+                    "function": "getLastAttackingUnit"
+                  },
                   "function": "getOwner"
                 },
                 "value": {
@@ -1852,7 +2575,9 @@
                       "attribute": "gold",
                       "entity": {
                         "function": "getOwner",
-                        "entity": { "function": "getLastAttackingUnit" }
+                        "entity": {
+                          "function": "getLastAttackingUnit"
+                        }
                       }
                     },
                     500
@@ -1860,26 +2585,34 @@
                 }
               },
               {
-                "entity": { "function": "getTriggeringUnit" },
+                "entity": {
+                  "function": "getTriggeringUnit"
+                },
                 "type": "dropAllItems"
               },
               {
                 "type": "assignPlayerType",
                 "entity": {
                   "function": "getOwner",
-                  "entity": { "function": "getTriggeringUnit" }
+                  "entity": {
+                    "function": "getTriggeringUnit"
+                  }
                 },
                 "playerType": "observers"
               },
               {
                 "unitType": "spectator",
-                "entity": { "function": "getTriggeringUnit" },
+                "entity": {
+                  "function": "getTriggeringUnit"
+                },
                 "type": "changeUnitType"
               },
               {
                 "type": "playerCameraSetZoom",
                 "player": {
-                  "entity": { "function": "getTriggeringUnit" },
+                  "entity": {
+                    "function": "getTriggeringUnit"
+                  },
                   "function": "getOwner"
                 },
                 "zoom": 1100
@@ -1887,7 +2620,9 @@
               {
                 "time": 5000,
                 "player": {
-                  "entity": { "function": "getTriggeringUnit" },
+                  "entity": {
+                    "function": "getTriggeringUnit"
+                  },
                   "function": "getOwner"
                 },
                 "value": "Currently observing<br />Please wait for the next match",
@@ -1902,7 +2637,9 @@
                     "function": "getPlayerName",
                     "entity": {
                       "function": "getOwner",
-                      "entity": { "function": "getLastAttackingUnit" }
+                      "entity": {
+                        "function": "getLastAttackingUnit"
+                      }
                     }
                   },
                   "textB": {
@@ -1912,7 +2649,9 @@
                       "function": "getPlayerName",
                       "entity": {
                         "function": "getOwner",
-                        "entity": { "function": "getLastAttackedUnit" }
+                        "entity": {
+                          "function": "getLastAttackedUnit"
+                        }
                       }
                     }
                   }
@@ -1927,30 +2666,47 @@
           }
         ],
         "conditions": [
-          { "operandType": "boolean", "operator": "==" },
+          {
+            "operandType": "boolean",
+            "operator": "=="
+          },
           true,
           true
         ],
-        "triggers": [{ "type": "unitAttributeBecomesZero" }]
+        "triggers": [
+          {
+            "type": "unitAttributeBecomesZero"
+          }
+        ]
       },
       "playerJoinsGame": {
         "name": "player joins",
-        "triggers": [{ "type": "playerJoinsGame" }],
+        "triggers": [
+          {
+            "type": "playerJoinsGame"
+          }
+        ],
         "conditions": [],
         "actions": [
           {
             "else": [
               {
-                "entity": { "function": "getTriggeringPlayer" },
+                "entity": {
+                  "function": "getTriggeringPlayer"
+                },
                 "playerType": "observers",
                 "type": "assignPlayerType",
                 "comment": "the game as already begun, assign player as an observer"
               },
               {
                 "angle": 0,
-                "entity": { "function": "getTriggeringPlayer" },
+                "entity": {
+                  "function": "getTriggeringPlayer"
+                },
                 "position": {
-                  "region": { "function": "getEntireMapRegion" },
+                  "region": {
+                    "function": "getEntireMapRegion"
+                  },
                   "function": "getRandomPositionInRegion"
                 },
                 "unitType": "spectator",
@@ -1958,11 +2714,15 @@
               },
               {
                 "zoom": 1100,
-                "player": { "function": "getTriggeringPlayer" },
+                "player": {
+                  "function": "getTriggeringPlayer"
+                },
                 "type": "playerCameraSetZoom"
               },
               {
-                "entity": { "function": "getTriggeringPlayer" },
+                "entity": {
+                  "function": "getTriggeringPlayer"
+                },
                 "value": "Currently observing<br/>Please wait for the next match",
                 "target": "center-lg",
                 "type": "updateUiTextForPlayer"
@@ -1970,7 +2730,9 @@
               {
                 "type": "showUiTextForPlayer",
                 "target": "center-lg",
-                "entity": { "function": "getTriggeringPlayer" }
+                "entity": {
+                  "function": "getTriggeringPlayer"
+                }
               }
             ],
             "then": [
@@ -1978,7 +2740,10 @@
                 "comment": "assign the new player to a team that has less players",
                 "type": "condition",
                 "conditions": [
-                  { "operator": "<", "operandType": "number" },
+                  {
+                    "operator": "<",
+                    "operandType": "number"
+                  },
                   {
                     "function": "getNumberOfPlayersOfPlayerType",
                     "playerType": "purpleTeam"
@@ -1990,13 +2755,17 @@
                 ],
                 "then": [
                   {
-                    "entity": { "function": "getTriggeringPlayer" },
+                    "entity": {
+                      "function": "getTriggeringPlayer"
+                    },
                     "playerType": "purpleTeam",
                     "type": "assignPlayerType"
                   },
                   {
                     "angle": 0,
-                    "entity": { "function": "getTriggeringPlayer" },
+                    "entity": {
+                      "function": "getTriggeringPlayer"
+                    },
                     "position": {
                       "function": "getRandomPositionInRegion",
                       "region": {
@@ -2010,13 +2779,17 @@
                 ],
                 "else": [
                   {
-                    "entity": { "function": "getTriggeringPlayer" },
+                    "entity": {
+                      "function": "getTriggeringPlayer"
+                    },
                     "playerType": "redTeam",
                     "type": "assignPlayerType"
                   },
                   {
                     "angle": 0,
-                    "entity": { "function": "getTriggeringPlayer" },
+                    "entity": {
+                      "function": "getTriggeringPlayer"
+                    },
                     "position": {
                       "function": "getRandomPositionInRegion",
                       "region": {
@@ -2031,21 +2804,36 @@
               }
             ],
             "conditions": [
-              { "operandType": "number", "operator": "==" },
-              { "variableName": "state", "function": "getVariable" },
-              { "variableName": "@statePrepare", "function": "getVariable" }
+              {
+                "operandType": "number",
+                "operator": "=="
+              },
+              {
+                "variableName": "state",
+                "function": "getVariable"
+              },
+              {
+                "variableName": "@statePrepare",
+                "function": "getVariable"
+              }
             ],
             "type": "condition"
           },
           {
             "type": "showUiTextForPlayer",
             "target": "top",
-            "entity": { "function": "getTriggeringPlayer" }
+            "entity": {
+              "function": "getTriggeringPlayer"
+            }
           },
           {
             "type": "playerCameraTrackUnit",
-            "player": { "function": "getTriggeringPlayer" },
-            "unit": { "function": "getLastCreatedUnit" }
+            "player": {
+              "function": "getTriggeringPlayer"
+            },
+            "unit": {
+              "function": "getLastCreatedUnit"
+            }
           }
         ],
         "key": "playerJoinsGame",
@@ -2053,9 +2841,16 @@
         "order": 1
       },
       "everySeconds": {
-        "triggers": [{ "type": "secondTick" }],
+        "triggers": [
+          {
+            "type": "secondTick"
+          }
+        ],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
@@ -2063,8 +2858,13 @@
           {
             "type": "condition",
             "conditions": [
-              { "operator": ">=", "operandType": "number" },
-              { "function": "getPlayerCount" },
+              {
+                "operator": ">=",
+                "operandType": "number"
+              },
+              {
+                "function": "getPlayerCount"
+              },
               2
             ],
             "then": [
@@ -2073,8 +2873,13 @@
                 "value": {
                   "function": "calculate",
                   "items": [
-                    { "operator": "-" },
-                    { "function": "getVariable", "variableName": "timeLeft" },
+                    {
+                      "operator": "-"
+                    },
+                    {
+                      "function": "getVariable",
+                      "variableName": "timeLeft"
+                    },
                     1
                   ]
                 },
@@ -2087,7 +2892,10 @@
                       {
                         "type": "condition",
                         "conditions": [
-                          { "operandType": "number", "operator": "==" },
+                          {
+                            "operandType": "number",
+                            "operator": "=="
+                          },
                           {
                             "function": "getVariable",
                             "variableName": "state"
@@ -2113,10 +2921,16 @@
                           {
                             "else": [],
                             "then": [
-                              { "scriptName": "reset", "type": "runScript" }
+                              {
+                                "scriptName": "reset",
+                                "type": "runScript"
+                              }
                             ],
                             "conditions": [
-                              { "operandType": "number", "operator": "<=" },
+                              {
+                                "operandType": "number",
+                                "operator": "<="
+                              },
                               {
                                 "variableName": "timeLeft",
                                 "function": "getVariable"
@@ -2145,7 +2959,10 @@
                       {
                         "type": "condition",
                         "conditions": [
-                          { "operator": "<=", "operandType": "number" },
+                          {
+                            "operator": "<=",
+                            "operandType": "number"
+                          },
                           {
                             "function": "getVariable",
                             "variableName": "timeLeft"
@@ -2158,14 +2975,23 @@
                             "target": "center-lg",
                             "value": "Time Out!"
                           },
-                          { "type": "runScript", "scriptName": "gameOver" }
+                          {
+                            "type": "runScript",
+                            "scriptName": "gameOver"
+                          }
                         ],
                         "else": []
                       }
                     ],
                     "conditions": [
-                      { "operator": "==", "operandType": "number" },
-                      { "variableName": "state", "function": "getVariable" },
+                      {
+                        "operator": "==",
+                        "operandType": "number"
+                      },
+                      {
+                        "variableName": "state",
+                        "function": "getVariable"
+                      },
                       {
                         "variableName": "@stateFight",
                         "function": "getVariable"
@@ -2190,18 +3016,38 @@
                   {
                     "type": "condition",
                     "conditions": [
-                      { "operator": "<=", "operandType": "number" },
-                      { "function": "getVariable", "variableName": "timeLeft" },
+                      {
+                        "operator": "<=",
+                        "operandType": "number"
+                      },
+                      {
+                        "function": "getVariable",
+                        "variableName": "timeLeft"
+                      },
                       0
                     ],
-                    "then": [{ "scriptName": "fight", "type": "runScript" }],
+                    "then": [
+                      {
+                        "scriptName": "fight",
+                        "type": "runScript"
+                      }
+                    ],
                     "else": []
                   }
                 ],
                 "conditions": [
-                  { "operator": "==", "operandType": "number" },
-                  { "variableName": "state", "function": "getVariable" },
-                  { "variableName": "@statePrepare", "function": "getVariable" }
+                  {
+                    "operator": "==",
+                    "operandType": "number"
+                  },
+                  {
+                    "variableName": "state",
+                    "function": "getVariable"
+                  },
+                  {
+                    "variableName": "@statePrepare",
+                    "function": "getVariable"
+                  }
                 ],
                 "type": "condition"
               }
@@ -2265,7 +3111,10 @@
           }
         ],
         "conditions": [
-          { "operandType": "boolean", "operator": "==" },
+          {
+            "operandType": "boolean",
+            "operator": "=="
+          },
           true,
           true
         ],
@@ -2274,29 +3123,46 @@
       "reset": {
         "triggers": [],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
         "actions": [
-          { "type": "hideUiTextForEveryone", "target": "center-lg" },
+          {
+            "type": "hideUiTextForEveryone",
+            "target": "center-lg"
+          },
           {
             "type": "forAllItems",
-            "itemGroup": { "function": "allItems" },
+            "itemGroup": {
+              "function": "allItems"
+            },
             "actions": [
               {
                 "else": [],
                 "then": [
                   {
                     "type": "destroyEntity",
-                    "entity": { "function": "selectedItem" }
+                    "entity": {
+                      "function": "selectedItem"
+                    }
                   }
                 ],
                 "conditions": [
-                  { "operandType": "state", "operator": "==" },
                   {
-                    "entity": { "function": "selectedItem" },
-                    "unit": { "function": "getTriggeringUnit" },
+                    "operandType": "state",
+                    "operator": "=="
+                  },
+                  {
+                    "entity": {
+                      "function": "selectedItem"
+                    },
+                    "unit": {
+                      "function": "getTriggeringUnit"
+                    },
                     "function": "getEntityState"
                   },
                   "dropped"
@@ -2307,17 +3173,23 @@
           },
           {
             "type": "forAllUnits",
-            "unitGroup": { "function": "allUnits" },
+            "unitGroup": {
+              "function": "allUnits"
+            },
             "actions": [
               {
                 "else": [
                   {
                     "value": {
-                      "entity": { "function": "selectedUnit" },
+                      "entity": {
+                        "function": "selectedUnit"
+                      },
                       "attribute": "health",
                       "function": "entityAttributeMax"
                     },
-                    "entity": { "function": "selectedUnit" },
+                    "entity": {
+                      "function": "selectedUnit"
+                    },
                     "attribute": "health",
                     "type": "setEntityAttribute",
                     "comment": ""
@@ -2325,17 +3197,24 @@
                   {
                     "type": "condition",
                     "conditions": [
-                      { "operandType": "unitType", "operator": "==" },
+                      {
+                        "operandType": "unitType",
+                        "operator": "=="
+                      },
                       {
                         "function": "getUnitTypeOfUnit",
-                        "entity": { "function": "selectedUnit" }
+                        "entity": {
+                          "function": "selectedUnit"
+                        }
                       },
                       "purpleFighter"
                     ],
                     "then": [
                       {
                         "type": "moveEntity",
-                        "entity": { "function": "selectedUnit" },
+                        "entity": {
+                          "function": "selectedUnit"
+                        },
                         "position": {
                           "function": "getRandomPositionInRegion",
                           "region": {
@@ -2348,7 +3227,9 @@
                     "else": [
                       {
                         "type": "moveEntity",
-                        "entity": { "function": "selectedUnit" },
+                        "entity": {
+                          "function": "selectedUnit"
+                        },
                         "position": {
                           "function": "getRandomPositionInRegion",
                           "region": {
@@ -2362,14 +3243,21 @@
                 ],
                 "then": [
                   {
-                    "entity": { "function": "selectedUnit" },
+                    "entity": {
+                      "function": "selectedUnit"
+                    },
                     "type": "destroyEntity"
                   }
                 ],
                 "conditions": [
-                  { "operandType": "unitType", "operator": "==" },
                   {
-                    "entity": { "function": "selectedUnit" },
+                    "operandType": "unitType",
+                    "operator": "=="
+                  },
+                  {
+                    "entity": {
+                      "function": "selectedUnit"
+                    },
                     "function": "getUnitTypeOfUnit"
                   },
                   "spectator"
@@ -2382,21 +3270,28 @@
           },
           {
             "type": "forAllPlayers",
-            "playerGroup": { "function": "allPlayers" },
+            "playerGroup": {
+              "function": "allPlayers"
+            },
             "actions": [
               {
                 "else": [],
                 "then": [
                   {
                     "zoom": 800,
-                    "player": { "function": "selectedPlayer" },
+                    "player": {
+                      "function": "selectedPlayer"
+                    },
                     "type": "playerCameraSetZoom"
                   },
                   {
                     "comment": "balance the teams when reviving dead players",
                     "type": "condition",
                     "conditions": [
-                      { "operator": "<", "operandType": "number" },
+                      {
+                        "operator": "<",
+                        "operandType": "number"
+                      },
                       {
                         "playerType": "purpleTeam",
                         "function": "getNumberOfPlayersOfPlayerType"
@@ -2408,7 +3303,9 @@
                     ],
                     "then": [
                       {
-                        "entity": { "function": "selectedPlayer" },
+                        "entity": {
+                          "function": "selectedPlayer"
+                        },
                         "playerType": "purpleTeam",
                         "type": "assignPlayerType"
                       },
@@ -2421,7 +3318,9 @@
                             "variableName": "spawn A"
                           }
                         },
-                        "entity": { "function": "selectedPlayer" },
+                        "entity": {
+                          "function": "selectedPlayer"
+                        },
                         "unitType": "purpleFighter",
                         "type": "createUnitAtPosition"
                       }
@@ -2430,12 +3329,16 @@
                       {
                         "type": "assignPlayerType",
                         "playerType": "redTeam",
-                        "entity": { "function": "selectedPlayer" }
+                        "entity": {
+                          "function": "selectedPlayer"
+                        }
                       },
                       {
                         "type": "createUnitAtPosition",
                         "unitType": "redFighter",
-                        "entity": { "function": "selectedPlayer" },
+                        "entity": {
+                          "function": "selectedPlayer"
+                        },
                         "position": {
                           "region": {
                             "function": "getVariable",
@@ -2448,15 +3351,24 @@
                     ]
                   },
                   {
-                    "unit": { "function": "getLastCreatedUnit" },
-                    "player": { "function": "selectedPlayer" },
+                    "unit": {
+                      "function": "getLastCreatedUnit"
+                    },
+                    "player": {
+                      "function": "selectedPlayer"
+                    },
                     "type": "playerCameraTrackUnit"
                   }
                 ],
                 "conditions": [
-                  { "operator": "==", "operandType": "playerType" },
                   {
-                    "player": { "function": "selectedPlayer" },
+                    "operator": "==",
+                    "operandType": "playerType"
+                  },
+                  {
+                    "player": {
+                      "function": "selectedPlayer"
+                    },
                     "function": "playerTypeOfPlayer"
                   },
                   "observers"
@@ -2468,14 +3380,21 @@
           {
             "actions": [
               {
-                "entity": { "function": "selectedDebris" },
+                "entity": {
+                  "function": "selectedDebris"
+                },
                 "type": "resetDebrisPosition"
               }
             ],
-            "debrisGroup": { "function": "allDebris" },
+            "debrisGroup": {
+              "function": "allDebris"
+            },
             "type": "forAllDebris"
           },
-          { "type": "runScript", "scriptName": "prepare" }
+          {
+            "type": "runScript",
+            "scriptName": "prepare"
+          }
         ],
         "name": "reset",
         "parent": null,
@@ -2522,10 +3441,17 @@
                     "target": "center-lg",
                     "value": "Purple team wins!"
                   },
-                  { "vars": [], "type": "runScript", "scriptName": "gameOver" }
+                  {
+                    "vars": [],
+                    "type": "runScript",
+                    "scriptName": "gameOver"
+                  }
                 ],
                 "conditions": [
-                  { "operandType": "number", "operator": "<=" },
+                  {
+                    "operandType": "number",
+                    "operator": "<="
+                  },
                   {
                     "vars": [],
                     "variableName": "redAlive",
@@ -2544,10 +3470,17 @@
                 "target": "center-lg",
                 "value": "Red team wins!"
               },
-              { "vars": [], "type": "runScript", "scriptName": "gameOver" }
+              {
+                "vars": [],
+                "type": "runScript",
+                "scriptName": "gameOver"
+              }
             ],
             "conditions": [
-              { "operandType": "number", "operator": "<=" },
+              {
+                "operandType": "number",
+                "operator": "<="
+              },
               {
                 "vars": [],
                 "function": "getVariable",
@@ -2588,7 +3521,10 @@
           }
         ],
         "conditions": [
-          { "operandType": "boolean", "operator": "==" },
+          {
+            "operandType": "boolean",
+            "operator": "=="
+          },
           true,
           true
         ],
@@ -2600,7 +3536,11 @@
         "parent": null,
         "name": "initialize",
         "actions": [
-          { "type": "runScript", "scriptName": "prepare", "vars": [] },
+          {
+            "type": "runScript",
+            "scriptName": "prepare",
+            "vars": []
+          },
           {
             "else": [],
             "then": [
@@ -2619,7 +3559,10 @@
               }
             ],
             "conditions": [
-              { "operandType": "boolean", "operator": "==" },
+              {
+                "operandType": "boolean",
+                "operator": "=="
+              },
               {
                 "function": "getVariable",
                 "variableName": "@isDev",
@@ -2632,11 +3575,18 @@
           }
         ],
         "conditions": [
-          { "operandType": "boolean", "operator": "==" },
+          {
+            "operandType": "boolean",
+            "operator": "=="
+          },
           true,
           true
         ],
-        "triggers": [{ "type": "gameStart" }]
+        "triggers": [
+          {
+            "type": "gameStart"
+          }
+        ]
       },
       "prepare": {
         "order": 6,
@@ -2671,7 +3621,10 @@
           }
         ],
         "conditions": [
-          { "operandType": "boolean", "operator": "==" },
+          {
+            "operandType": "boolean",
+            "operator": "=="
+          },
           true,
           true
         ],
@@ -2705,7 +3658,10 @@
           }
         ],
         "conditions": [
-          { "operandType": "boolean", "operator": "==" },
+          {
+            "operandType": "boolean",
+            "operator": "=="
+          },
           true,
           true
         ],
@@ -2720,20 +3676,43 @@
           {
             "type": "condition",
             "conditions": [
-              { "operator": "OR", "operandType": "or" },
+              {
+                "operator": "OR",
+                "operandType": "or"
+              },
               [
-                { "operandType": "number", "operator": "==" },
-                { "function": "getVariable", "variableName": "state" },
-                { "function": "getVariable", "variableName": "@statePrepare" }
+                {
+                  "operandType": "number",
+                  "operator": "=="
+                },
+                {
+                  "function": "getVariable",
+                  "variableName": "state"
+                },
+                {
+                  "function": "getVariable",
+                  "variableName": "@statePrepare"
+                }
               ],
               [
-                { "operator": "<", "operandType": "number" },
+                {
+                  "operator": "<",
+                  "operandType": "number"
+                },
                 {
                   "function": "calculate",
                   "items": [
-                    { "operator": "-" },
-                    { "function": "getVariable", "variableName": "@timeFight" },
-                    { "function": "getVariable", "variableName": "timeLeft" }
+                    {
+                      "operator": "-"
+                    },
+                    {
+                      "function": "getVariable",
+                      "variableName": "@timeFight"
+                    },
+                    {
+                      "function": "getVariable",
+                      "variableName": "timeLeft"
+                    }
                   ]
                 },
                 15
@@ -2743,7 +3722,9 @@
               {
                 "comment": "last casting unit belongs to whoever pressed a key (player is the owner of a unit)",
                 "player": {
-                  "entity": { "function": "getLastCastingUnit" },
+                  "entity": {
+                    "function": "getLastCastingUnit"
+                  },
                   "function": "getOwner"
                 },
                 "shop": "shop",
@@ -2755,7 +3736,10 @@
           }
         ],
         "conditions": [
-          { "operandType": "boolean", "operator": "==" },
+          {
+            "operandType": "boolean",
+            "operator": "=="
+          },
           true,
           true
         ],
@@ -2763,10 +3747,22 @@
       }
     },
     "sound": {
-      "bulletHit": { "file": "", "name": "Bullet hit" },
-      "outOfAmmo": { "file": "", "name": "Out of ammo" },
-      "reload": { "file": "", "name": "Reload" },
-      "fire": { "name": "Fire", "file": "" }
+      "bulletHit": {
+        "file": "",
+        "name": "Bullet hit"
+      },
+      "outOfAmmo": {
+        "file": "",
+        "name": "Out of ammo"
+      },
+      "reload": {
+        "file": "",
+        "name": "Reload"
+      },
+      "fire": {
+        "name": "Fire",
+        "file": ""
+      }
     },
     "music": {},
     "itemTypes": {
@@ -2787,10 +3783,18 @@
         "frames": {},
         "carriedBy": ["purpleFighter", "redFighter"],
         "buffTypes": [],
-        "cost": { "quantity": 0 },
+        "cost": {
+          "quantity": 0
+        },
         "bonus": {
-          "passive": { "unitAttribute": {}, "playerAttribute": {} },
-          "consume": { "unitAttribute": {}, "playerAttribute": {} }
+          "passive": {
+            "unitAttribute": {},
+            "playerAttribute": {}
+          },
+          "consume": {
+            "unitAttribute": {},
+            "playerAttribute": {}
+          }
         },
         "removeWhenEmpty": false,
         "isUsedOnPickup": false,
@@ -2798,7 +3802,9 @@
         "sound": {},
         "damage": {
           "targetsAffected": ["hostile"],
-          "unitAttributes": { "health": 30 }
+          "unitAttributes": {
+            "health": 30
+          }
         },
         "particles": {},
         "destroyTimer": 100000,
@@ -2816,10 +3822,24 @@
             "animation": "use",
             "tween": "swingCW"
           },
-          "create": { "projectileType": "", "sound": {}, "animation": "" },
-          "destroy": { "projectileType": "", "sound": {}, "animation": "" },
-          "empty": { "animation": "", "sound": {} },
-          "reload": { "animation": "", "sound": {} }
+          "create": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
+          "destroy": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
+          "empty": {
+            "animation": "",
+            "sound": {}
+          },
+          "reload": {
+            "animation": "",
+            "sound": {}
+          }
         },
         "knockbackForce": 0,
         "bulletDestroyedOnCollisionWithWall/unitForce": 20,
@@ -2833,13 +3853,21 @@
         "hideIfUnaffordable": false,
         "bodies": {
           "dropped": {
-            "itemAnchor": { "y": 0, "x": 0 },
-            "unitAnchor": { "x": 0, "y": 63 },
+            "itemAnchor": {
+              "y": 0,
+              "x": 0
+            },
+            "unitAnchor": {
+              "x": 0,
+              "y": 63
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": true,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0.01,
                 "friction": 0.01,
                 "density": 1
@@ -2859,7 +3887,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 2, "layer": 1 },
+            "z-index": {
+              "depth": 2,
+              "layer": 1
+            },
             "height": 55,
             "width": 25,
             "type": "dynamic",
@@ -2868,13 +3899,22 @@
           },
           "selected": {
             "bullet": false,
-            "itemAnchor": { "x": 0, "y": 63 },
-            "unitAnchor": { "x": 0, "y": 0, "rotation": -90 },
+            "itemAnchor": {
+              "x": 0,
+              "y": 63
+            },
+            "unitAnchor": {
+              "x": 0,
+              "y": 0,
+              "rotation": -90
+            },
             "jointType": "none",
             "fixtures": [
               {
                 "isSensor": true,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0.01,
                 "friction": 0.01,
                 "density": 1
@@ -2894,7 +3934,10 @@
             "allowSleep": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 4, "layer": 3 },
+            "z-index": {
+              "depth": 4,
+              "layer": 3
+            },
             "height": 55,
             "width": 25,
             "type": "spriteOnly",
@@ -2955,7 +3998,11 @@
         "attributes": {},
         "handle": "",
         "name": "Sword",
-        "bulletStartPosition": { "x": 0, "y": 45, "rotation": 0 },
+        "bulletStartPosition": {
+          "x": 0,
+          "y": 45,
+          "rotation": 0
+        },
         "defaultProjectile": {
           "destroyOnContactWith": {
             "debris": true,
@@ -2965,8 +4012,16 @@
             "units": true
           },
           "effects": {
-            "destroy": { "animation": "", "sound": {}, "projectileType": "" },
-            "create": { "animation": "", "sound": {}, "projectileType": "" }
+            "destroy": {
+              "animation": "",
+              "sound": {},
+              "projectileType": ""
+            },
+            "create": {
+              "animation": "",
+              "sound": {},
+              "projectileType": ""
+            }
           },
           "lifeSpan": 1500,
           "cellSheet": {
@@ -2983,12 +4038,18 @@
                 "y": 0,
                 "x": 0
               },
-              "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+              "unitAnchor": {
+                "rotation": 0,
+                "y": 33,
+                "x": 0
+              },
               "jointType": "weldJoint",
               "fixtures": [
                 {
                   "isSensor": true,
-                  "shape": { "type": "rectangle" },
+                  "shape": {
+                    "type": "rectangle"
+                  },
                   "restitution": 0.01,
                   "friction": 0.01,
                   "density": 1
@@ -3008,7 +4069,10 @@
               "allowSleep": false,
               "constantSpeed +DestroyedOnCollisionWithWall/unit": true,
               "fixedRotation": false,
-              "z-index": { "depth": 1, "layer": 3 },
+              "z-index": {
+                "depth": 1,
+                "layer": 3
+              },
               "height": 30,
               "width": 10,
               "type": "dynamic",
@@ -3063,17 +4127,27 @@
         "frames": {},
         "carriedBy": ["purpleFighter", "redFighter"],
         "buffTypes": [],
-        "cost": { "quantity": 1 },
+        "cost": {
+          "quantity": 1
+        },
         "bonus": {
-          "passive": { "unitAttribute": {}, "playerAttribute": {} },
-          "consume": { "unitAttribute": {}, "playerAttribute": {} }
+          "passive": {
+            "unitAttribute": {},
+            "playerAttribute": {}
+          },
+          "consume": {
+            "unitAttribute": {},
+            "playerAttribute": {}
+          }
         },
         "removeWhenEmpty": false,
         "isUsedOnPickup": false,
         "canBeUsedBy": ["purpleFighter", "redFighter"],
         "sound": {},
         "damage": {
-          "unitAttributes": { "health": 12 },
+          "unitAttributes": {
+            "health": 12
+          },
           "targetsAffected": ["hostile"]
         },
         "particles": {},
@@ -3092,10 +4166,24 @@
             "animation": "use",
             "tween": "recoil"
           },
-          "create": { "projectileType": "", "sound": {}, "animation": "" },
-          "destroy": { "projectileType": "", "sound": {}, "animation": "" },
-          "empty": { "animation": "", "sound": {} },
-          "reload": { "animation": "", "sound": {} }
+          "create": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
+          "destroy": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
+          "empty": {
+            "animation": "",
+            "sound": {}
+          },
+          "reload": {
+            "animation": "",
+            "sound": {}
+          }
         },
         "knockbackForce": 0,
         "bulletDestroyedOnCollisionWithWall/unitForce": 20,
@@ -3110,13 +4198,21 @@
         "bodies": {
           "dropped": {
             "bullet": false,
-            "itemAnchor": { "y": 0, "x": 0 },
-            "unitAnchor": { "x": 0, "y": 61 },
+            "itemAnchor": {
+              "y": 0,
+              "x": 0
+            },
+            "unitAnchor": {
+              "x": 0,
+              "y": 61
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": true,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0.01,
                 "friction": 0.01,
                 "density": 1
@@ -3136,7 +4232,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 2, "layer": 1 },
+            "z-index": {
+              "depth": 2,
+              "layer": 1
+            },
             "height": 55,
             "width": 28,
             "type": "dynamic",
@@ -3144,13 +4243,21 @@
           },
           "selected": {
             "bullet": false,
-            "itemAnchor": { "x": 0, "y": 61 },
-            "unitAnchor": { "x": 0, "y": 0 },
+            "itemAnchor": {
+              "x": 0,
+              "y": 61
+            },
+            "unitAnchor": {
+              "x": 0,
+              "y": 0
+            },
             "jointType": "none",
             "fixtures": [
               {
                 "isSensor": true,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0.01,
                 "friction": 0.01,
                 "density": 1
@@ -3170,7 +4277,10 @@
             "allowSleep": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 4, "layer": 3 },
+            "z-index": {
+              "depth": 4,
+              "layer": 3
+            },
             "height": 55,
             "width": 28,
             "type": "spriteOnly",
@@ -3231,7 +4341,11 @@
         "attributes": {},
         "handle": "",
         "name": "Plasma Rifle",
-        "bulletStartPosition": { "x": 0, "y": 45, "rotation": 0 },
+        "bulletStartPosition": {
+          "x": 0,
+          "y": 45,
+          "rotation": 0
+        },
         "defaultProjectile": {
           "destroyOnContactWith": {
             "debris": true,
@@ -3241,8 +4355,16 @@
             "units": true
           },
           "effects": {
-            "destroy": { "animation": "", "sound": {}, "projectileType": "" },
-            "create": { "animation": "", "sound": {}, "projectileType": "" }
+            "destroy": {
+              "animation": "",
+              "sound": {},
+              "projectileType": ""
+            },
+            "create": {
+              "animation": "",
+              "sound": {},
+              "projectileType": ""
+            }
           },
           "lifeSpan": 1500,
           "cellSheet": {
@@ -3259,12 +4381,18 @@
                 "y": 0,
                 "x": 0
               },
-              "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+              "unitAnchor": {
+                "rotation": 0,
+                "y": 33,
+                "x": 0
+              },
               "jointType": "weldJoint",
               "fixtures": [
                 {
                   "isSensor": true,
-                  "shape": { "type": "rectangle" },
+                  "shape": {
+                    "type": "rectangle"
+                  },
                   "restitution": 0.01,
                   "friction": 0.01,
                   "density": 1
@@ -3284,7 +4412,10 @@
               "allowSleep": false,
               "constantSpeed +DestroyedOnCollisionWithWall/unit": true,
               "fixedRotation": false,
-              "z-index": { "depth": 1, "layer": 3 },
+              "z-index": {
+                "depth": 1,
+                "layer": 3
+              },
               "height": 30,
               "width": 10,
               "type": "dynamic",
@@ -3346,7 +4477,10 @@
               "type": "dynamic",
               "width": 10,
               "height": 30,
-              "z-index": { "layer": 3, "depth": 1 },
+              "z-index": {
+                "layer": 3,
+                "depth": 1
+              },
               "fixedRotation": false,
               "constantSpeed +DestroyedOnCollisionWithWall/unit": true,
               "allowSleep": false,
@@ -3366,13 +4500,24 @@
                   "density": 1,
                   "friction": 0.01,
                   "restitution": 0.01,
-                  "shape": { "type": "rectangle" },
+                  "shape": {
+                    "type": "rectangle"
+                  },
                   "isSensor": true
                 }
               ],
               "jointType": "weldJoint",
-              "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
-              "itemAnchor": { "x": 0, "y": 0, "lowerAngle": 0, "upperAngle": 0 }
+              "unitAnchor": {
+                "x": 0,
+                "y": 33,
+                "rotation": 0
+              },
+              "itemAnchor": {
+                "x": 0,
+                "y": 0,
+                "lowerAngle": 0,
+                "upperAngle": 0
+              }
             }
           },
           "destroyTimer": 1500,
@@ -3383,8 +4528,16 @@
           },
           "lifeSpan": 1500,
           "effects": {
-            "create": { "projectileType": "", "sound": {}, "animation": "" },
-            "destroy": { "projectileType": "", "sound": {}, "animation": "" }
+            "create": {
+              "projectileType": "",
+              "sound": {},
+              "animation": ""
+            },
+            "destroy": {
+              "projectileType": "",
+              "sound": {},
+              "animation": ""
+            }
           },
           "destroyOnContactWith": {
             "units": true,
@@ -3394,7 +4547,11 @@
             "debris": true
           }
         },
-        "bulletStartPosition": { "rotation": 0, "y": 45, "x": 0 },
+        "bulletStartPosition": {
+          "rotation": 0,
+          "y": 45,
+          "x": 0
+        },
         "name": "Plasma Pistol",
         "handle": "",
         "attributes": {},
@@ -3455,7 +4612,10 @@
             "type": "spriteOnly",
             "width": 32,
             "height": 43,
-            "z-index": { "layer": 3, "depth": 4 },
+            "z-index": {
+              "layer": 3,
+              "depth": 4
+            },
             "fixedRotation": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "allowSleep": false,
@@ -3475,13 +4635,21 @@
                 "density": 1,
                 "friction": 0.01,
                 "restitution": 0.01,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "isSensor": true
               }
             ],
             "jointType": "none",
-            "unitAnchor": { "y": 0, "x": 0 },
-            "itemAnchor": { "y": 55, "x": 0 },
+            "unitAnchor": {
+              "y": 0,
+              "x": 0
+            },
+            "itemAnchor": {
+              "y": 55,
+              "x": 0
+            },
             "bullet": false
           },
           "dropped": {
@@ -3489,7 +4657,10 @@
             "type": "dynamic",
             "width": 32,
             "height": 43,
-            "z-index": { "layer": 1, "depth": 2 },
+            "z-index": {
+              "layer": 1,
+              "depth": 2
+            },
             "fixedRotation": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "allowSleep": true,
@@ -3509,13 +4680,21 @@
                 "density": 1,
                 "friction": 0.01,
                 "restitution": 0.01,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "isSensor": true
               }
             ],
             "jointType": "weldJoint",
-            "unitAnchor": { "y": 55, "x": 0 },
-            "itemAnchor": { "y": 0, "x": 0 },
+            "unitAnchor": {
+              "y": 55,
+              "x": 0
+            },
+            "itemAnchor": {
+              "y": 0,
+              "x": 0
+            },
             "bullet": false
           }
         },
@@ -3549,8 +4728,14 @@
             "animation": "",
             "runScript": ""
           },
-          "reload": { "sound": {}, "animation": "" },
-          "empty": { "sound": {}, "animation": "" }
+          "reload": {
+            "sound": {},
+            "animation": ""
+          },
+          "empty": {
+            "sound": {},
+            "animation": ""
+          }
         },
         "bulletDestroyedOnCollisionWithWall/unitStartPosition": {
           "x": -5,
@@ -3563,17 +4748,27 @@
         "particles": {},
         "damage": {
           "targetsAffected": ["hostile"],
-          "unitAttributes": { "health": 15 }
+          "unitAttributes": {
+            "health": 15
+          }
         },
         "sound": {},
         "canBeUsedBy": ["purpleFighter", "redFighter"],
         "isUsedOnPickup": false,
         "removeWhenEmpty": false,
         "bonus": {
-          "consume": { "playerAttribute": {}, "unitAttribute": {} },
-          "passive": { "playerAttribute": {}, "unitAttribute": {} }
+          "consume": {
+            "playerAttribute": {},
+            "unitAttribute": {}
+          },
+          "passive": {
+            "playerAttribute": {},
+            "unitAttribute": {}
+          }
         },
-        "cost": { "quantity": 1 },
+        "cost": {
+          "quantity": 1
+        },
         "buffTypes": [],
         "carriedBy": ["purpleFighter", "redFighter"],
         "frames": {},
@@ -3634,7 +4829,10 @@
               "type": "dynamic",
               "width": 10,
               "height": 30,
-              "z-index": { "layer": 3, "depth": 1 },
+              "z-index": {
+                "layer": 3,
+                "depth": 1
+              },
               "fixedRotation": false,
               "constantSpeed +DestroyedOnCollisionWithWall/unit": true,
               "allowSleep": false,
@@ -3654,13 +4852,24 @@
                   "density": 1,
                   "friction": 0.01,
                   "restitution": 0.01,
-                  "shape": { "type": "rectangle" },
+                  "shape": {
+                    "type": "rectangle"
+                  },
                   "isSensor": true
                 }
               ],
               "jointType": "weldJoint",
-              "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
-              "itemAnchor": { "x": 0, "y": 0, "lowerAngle": 0, "upperAngle": 0 }
+              "unitAnchor": {
+                "x": 0,
+                "y": 33,
+                "rotation": 0
+              },
+              "itemAnchor": {
+                "x": 0,
+                "y": 0,
+                "lowerAngle": 0,
+                "upperAngle": 0
+              }
             }
           },
           "destroyTimer": 1500,
@@ -3671,8 +4880,16 @@
           },
           "lifeSpan": 1500,
           "effects": {
-            "create": { "projectileType": "", "sound": {}, "animation": "" },
-            "destroy": { "projectileType": "", "sound": {}, "animation": "" }
+            "create": {
+              "projectileType": "",
+              "sound": {},
+              "animation": ""
+            },
+            "destroy": {
+              "projectileType": "",
+              "sound": {},
+              "animation": ""
+            }
           },
           "destroyOnContactWith": {
             "units": true,
@@ -3682,7 +4899,11 @@
             "debris": true
           }
         },
-        "bulletStartPosition": { "rotation": 0, "y": 45, "x": 0 },
+        "bulletStartPosition": {
+          "rotation": 0,
+          "y": 45,
+          "x": 0
+        },
         "name": "Spear",
         "handle": "",
         "attributes": {},
@@ -3743,7 +4964,10 @@
             "type": "spriteOnly",
             "width": 22,
             "height": 119,
-            "z-index": { "layer": 3, "depth": 4 },
+            "z-index": {
+              "layer": 3,
+              "depth": 4
+            },
             "fixedRotation": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "allowSleep": false,
@@ -3763,13 +4987,22 @@
                 "density": 1,
                 "friction": 0.01,
                 "restitution": 0.01,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "isSensor": true
               }
             ],
             "jointType": "none",
-            "unitAnchor": { "rotation": 0, "y": 0, "x": 0 },
-            "itemAnchor": { "y": 90, "x": 0 },
+            "unitAnchor": {
+              "rotation": 0,
+              "y": 0,
+              "x": 0
+            },
+            "itemAnchor": {
+              "y": 90,
+              "x": 0
+            },
             "bullet": false
           },
           "dropped": {
@@ -3777,7 +5010,10 @@
             "type": "dynamic",
             "width": 22,
             "height": 119,
-            "z-index": { "layer": 1, "depth": 2 },
+            "z-index": {
+              "layer": 1,
+              "depth": 2
+            },
             "fixedRotation": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "allowSleep": true,
@@ -3797,13 +5033,21 @@
                 "density": 1,
                 "friction": 0.01,
                 "restitution": 0.01,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "isSensor": true
               }
             ],
             "jointType": "weldJoint",
-            "unitAnchor": { "y": 90, "x": 0 },
-            "itemAnchor": { "y": 0, "x": 0 },
+            "unitAnchor": {
+              "y": 90,
+              "x": 0
+            },
+            "itemAnchor": {
+              "y": 0,
+              "x": 0
+            },
             "bullet": false
           }
         },
@@ -3824,10 +5068,24 @@
             "animation": "use",
             "tween": "poke"
           },
-          "create": { "projectileType": "", "sound": {}, "animation": "" },
-          "destroy": { "projectileType": "", "sound": {}, "animation": "" },
-          "reload": { "sound": {}, "animation": "" },
-          "empty": { "sound": {}, "animation": "" }
+          "create": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
+          "destroy": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
+          "reload": {
+            "sound": {},
+            "animation": ""
+          },
+          "empty": {
+            "sound": {},
+            "animation": ""
+          }
         },
         "bulletDestroyedOnCollisionWithWall/unitStartPosition": {
           "x": -5,
@@ -3839,7 +5097,9 @@
         "destroyTimer": 100000,
         "particles": {},
         "damage": {
-          "unitAttributes": { "health": 20 },
+          "unitAttributes": {
+            "health": 20
+          },
           "targetsAffected": ["hostile"]
         },
         "sound": {},
@@ -3847,10 +5107,18 @@
         "isUsedOnPickup": false,
         "removeWhenEmpty": false,
         "bonus": {
-          "consume": { "playerAttribute": {}, "unitAttribute": {} },
-          "passive": { "playerAttribute": {}, "unitAttribute": {} }
+          "consume": {
+            "playerAttribute": {},
+            "unitAttribute": {}
+          },
+          "passive": {
+            "playerAttribute": {},
+            "unitAttribute": {}
+          }
         },
-        "cost": { "quantity": 0 },
+        "cost": {
+          "quantity": 0
+        },
         "buffTypes": [],
         "carriedBy": ["purpleFighter", "redFighter"],
         "frames": {},
@@ -3879,13 +5147,24 @@
         "lifeSpan": 1500,
         "bodies": {
           "default": {
-            "itemAnchor": { "upperAngle": 0, "lowerAngle": 0, "y": 0, "x": 0 },
-            "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+            "itemAnchor": {
+              "upperAngle": 0,
+              "lowerAngle": 0,
+              "y": 0,
+              "x": 0
+            },
+            "unitAnchor": {
+              "rotation": 0,
+              "y": 33,
+              "x": 0
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": true,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0,
                 "friction": 0,
                 "density": 1
@@ -3905,7 +5184,10 @@
             "allowSleep": false,
             "bullet": true,
             "fixedRotation": false,
-            "z-index": { "depth": 1, "layer": 3 },
+            "z-index": {
+              "depth": 1,
+              "layer": 3
+            },
             "height": 12,
             "width": 12,
             "type": "dynamic",
@@ -3942,7 +5224,11 @@
         },
         "confinedWithinMapBoundaries": true,
         "effects": {
-          "create": { "projectileType": "", "sound": {}, "animation": "" },
+          "create": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
           "destroy": {
             "projectileType": "explosion",
             "sound": {},
@@ -3952,23 +5238,34 @@
         "scripts": {
           "sVryzkfZaJ": {
             "triggers": [
-              { "type": "entityTouchesWall" },
-              { "type": "entityTouchesUnit" }
+              {
+                "type": "entityTouchesWall"
+              },
+              {
+                "type": "entityTouchesUnit"
+              }
             ],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
             "actions": [
               {
                 "type": "destroyEntity",
-                "entity": { "function": "thisEntity" },
+                "entity": {
+                  "function": "thisEntity"
+                },
                 "runMode": 2
               },
               {
                 "type": "destroyEntity",
-                "entity": { "function": "thisEntity" }
+                "entity": {
+                  "function": "thisEntity"
+                }
               }
             ],
             "name": "destroy upon contact",
@@ -3981,8 +5278,16 @@
       "explosion": {
         "inventoryImage": "https://cache.modd.io/asset/spriteImage/1588349840112_Explosion.png",
         "effects": {
-          "destroy": { "animation": "", "sound": {}, "projectileType": "" },
-          "create": { "animation": "", "sound": {}, "projectileType": "" }
+          "destroy": {
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          },
+          "create": {
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          }
         },
         "lifeSpan": 500,
         "cellSheet": {
@@ -3994,13 +5299,24 @@
         "bodies": {
           "default": {
             "bullet": false,
-            "itemAnchor": { "upperAngle": 0, "lowerAngle": 0, "y": 0, "x": 0 },
-            "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+            "itemAnchor": {
+              "upperAngle": 0,
+              "lowerAngle": 0,
+              "y": 0,
+              "x": 0
+            },
+            "unitAnchor": {
+              "rotation": 0,
+              "y": 33,
+              "x": 0
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": true,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0.01,
                 "friction": 0.01,
                 "density": 1
@@ -4020,7 +5336,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": true,
             "fixedRotation": true,
-            "z-index": { "depth": 4, "layer": 3 },
+            "z-index": {
+              "depth": 4,
+              "layer": 3
+            },
             "height": 44,
             "width": 44,
             "type": "static",
@@ -4135,8 +5454,14 @@
         "chance": 0.2,
         "unit": "percentage"
       },
-      "canPushDebris": { "chance": 0.05, "unit": "boolean" },
-      "canPenetrate": { "chance": 0.05, "unit": "boolean" }
+      "canPushDebris": {
+        "chance": 0.05,
+        "unit": "boolean"
+      },
+      "canPenetrate": {
+        "chance": 0.05,
+        "unit": "boolean"
+      }
     },
     "map": {
       "originalTileHeight": 64,
@@ -4892,10 +6217,15 @@
             "hideIfUnaffordable": false,
             "isPurchasable": true,
             "quantity": "",
-            "requirement": { "requiredItemTypes": [], "playerAttributes": {} },
+            "requirement": {
+              "requiredItemTypes": [],
+              "playerAttributes": {}
+            },
             "price": {
               "coins": 0,
-              "requiredItemTypes": { "sword": 2 },
+              "requiredItemTypes": {
+                "sword": 2
+              },
               "playerAttributes": {}
             }
           },
@@ -4905,10 +6235,15 @@
             "hideIfUnaffordable": false,
             "isPurchasable": true,
             "quantity": "",
-            "requirement": { "requiredItemTypes": [], "playerAttributes": {} },
+            "requirement": {
+              "requiredItemTypes": [],
+              "playerAttributes": {}
+            },
             "price": {
               "coins": 0,
-              "requiredItemTypes": { "plasmaPistol": 150 },
+              "requiredItemTypes": {
+                "plasmaPistol": 150
+              },
               "playerAttributes": {}
             }
           }
@@ -4917,7 +6252,11 @@
         "name": "Main Shop"
       }
     },
-    "entityTypeVariables": { "lastAttackedBy": { "dataType": "unit" } },
+    "entityTypeVariables": {
+      "lastAttackedBy": {
+        "dataType": "unit"
+      }
+    },
     "playerTypeVariables": {}
   },
   "version": 0.01,

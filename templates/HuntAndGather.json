@@ -26,6 +26,7 @@
   "clientPhysicsEngine": "planck",
   "enableMiniMap": false,
   "dontResize": false,
+  "renderingFilter": "smooth",
   "releases": [
     {
       "isStable": false,
@@ -84,10 +85,16 @@
           "NPTFVAhfmv": {
             "price": {
               "playerAttributes": {},
-              "requiredItemTypes": { "n5d5HmCrVM": 10, "sfXSdT6Oht": 10 },
+              "requiredItemTypes": {
+                "n5d5HmCrVM": 10,
+                "sfXSdT6Oht": 10
+              },
               "coins": 0
             },
-            "requirement": { "playerAttributes": {}, "requiredItemTypes": {} },
+            "requirement": {
+              "playerAttributes": {},
+              "requiredItemTypes": {}
+            },
             "quantity": null,
             "isPurchasable": true,
             "hideIfUnaffordable": false,
@@ -101,10 +108,15 @@
             "hideIfUnaffordable": false,
             "isPurchasable": true,
             "quantity": "",
-            "requirement": { "requiredItemTypes": [], "playerAttributes": {} },
+            "requirement": {
+              "requiredItemTypes": [],
+              "playerAttributes": {}
+            },
             "price": {
               "coins": 0,
-              "requiredItemTypes": { "n5d5HmCrVM": 15 },
+              "requiredItemTypes": {
+                "n5d5HmCrVM": 15
+              },
               "playerAttributes": {}
             },
             "order": 1
@@ -115,10 +127,15 @@
             "hideIfUnaffordable": false,
             "isPurchasable": true,
             "quantity": "",
-            "requirement": { "requiredItemTypes": [], "playerAttributes": {} },
+            "requirement": {
+              "requiredItemTypes": [],
+              "playerAttributes": {}
+            },
             "price": {
               "coins": 0,
-              "requiredItemTypes": { "sfXSdT6Oht": 20 },
+              "requiredItemTypes": {
+                "sfXSdT6Oht": 20
+              },
               "playerAttributes": {}
             },
             "order": 2
@@ -126,10 +143,15 @@
           "wkuPHP94bA": {
             "price": {
               "playerAttributes": {},
-              "requiredItemTypes": { "HBlfzHEdHP": 5 },
+              "requiredItemTypes": {
+                "HBlfzHEdHP": 5
+              },
               "coins": 0
             },
-            "requirement": { "playerAttributes": {}, "requiredItemTypes": [] },
+            "requirement": {
+              "playerAttributes": {},
+              "requiredItemTypes": []
+            },
             "quantity": "",
             "isPurchasable": true,
             "hideIfUnaffordable": false,
@@ -1271,8 +1293,14 @@
       "height": 70
     },
     "buffTypes": {
-      "canPenetrate": { "unit": "boolean", "chance": 0.05 },
-      "canPushDebris": { "unit": "boolean", "chance": 0.05 },
+      "canPenetrate": {
+        "unit": "boolean",
+        "chance": 0.05
+      },
+      "canPushDebris": {
+        "unit": "boolean",
+        "chance": 0.05
+      },
       "height": {
         "unit": "percentage",
         "chance": 0.2,
@@ -1387,7 +1415,10 @@
             "type": "dynamic",
             "width": 48,
             "height": 46,
-            "z-index": { "layer": 1, "depth": 1 },
+            "z-index": {
+              "layer": 1,
+              "depth": 1
+            },
             "fixedRotation": true,
             "destroyedOnCollisionWithWall/unit": true,
             "allowSleep": true,
@@ -1407,13 +1438,24 @@
                 "density": 1,
                 "friction": 0.01,
                 "restitution": 0.01,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "isSensor": true
               }
             ],
             "jointType": "weldJoint",
-            "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
-            "itemAnchor": { "x": 0, "y": 0, "lowerAngle": 0, "upperAngle": 0 },
+            "unitAnchor": {
+              "x": 0,
+              "y": 33,
+              "rotation": 0
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0,
+              "lowerAngle": 0,
+              "upperAngle": 0
+            },
             "bullet": true,
             "affectedByGravity": false
           }
@@ -1426,8 +1468,16 @@
         },
         "lifeSpan": 5500,
         "effects": {
-          "create": { "projectileType": "", "sound": {}, "animation": "" },
-          "destroy": { "projectileType": "", "sound": {}, "animation": "" }
+          "create": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
+          "destroy": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          }
         },
         "inventoryImage": "https://cache.modd.io/asset/spriteImage/1680115669670_blood.png"
       }
@@ -1436,16 +1486,28 @@
       "meleeAttack": {
         "carriedBy": [],
         "buffTypes": [],
-        "cost": { "quantity": 0 },
+        "cost": {
+          "quantity": 0
+        },
         "bonus": {
-          "passive": { "unitAttribute": {}, "playerAttribute": {} },
-          "consume": { "unitAttribute": {}, "playerAttribute": {} }
+          "passive": {
+            "unitAttribute": {},
+            "playerAttribute": {}
+          },
+          "consume": {
+            "unitAttribute": {},
+            "playerAttribute": {}
+          }
         },
         "removeWhenEmpty": false,
         "isUsedOnPickup": false,
         "canBeUsedBy": [],
         "sound": {},
-        "damage": { "unitAttributes": { "health": 10 } },
+        "damage": {
+          "unitAttributes": {
+            "health": 10
+          }
+        },
         "particles": {},
         "destroyTimer": 30000,
         "penetration": false,
@@ -1462,10 +1524,24 @@
             "animation": "Xa8AwWbA0V",
             "tween": "none"
           },
-          "create": { "projectileType": "", "sound": {}, "animation": "" },
-          "destroy": { "projectileType": "", "sound": {}, "animation": "" },
-          "empty": { "sound": {}, "animation": "" },
-          "reload": { "sound": {}, "animation": "" }
+          "create": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
+          "destroy": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
+          "empty": {
+            "sound": {},
+            "animation": ""
+          },
+          "reload": {
+            "sound": {},
+            "animation": ""
+          }
         },
         "knockbackForce": 0,
         "bulletDestroyedOnCollisionWithWall/unitForce": 14,
@@ -1480,13 +1556,21 @@
         "bodies": {
           "dropped": {
             "bullet": false,
-            "itemAnchor": { "y": 0, "x": 0 },
-            "unitAnchor": { "x": 0, "y": 50 },
+            "itemAnchor": {
+              "y": 0,
+              "x": 0
+            },
+            "unitAnchor": {
+              "x": 0,
+              "y": 50
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": true,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0.01,
                 "friction": 0.01,
                 "density": 1
@@ -1506,20 +1590,32 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 2, "layer": 1 },
+            "z-index": {
+              "depth": 2,
+              "layer": 1
+            },
             "height": 32,
             "width": 64,
             "type": "static",
             "name": "dropped"
           },
           "selected": {
-            "itemAnchor": { "x": 0, "y": 0 },
-            "unitAnchor": { "x": 0, "y": 70, "rotation": 0 },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0
+            },
+            "unitAnchor": {
+              "x": 0,
+              "y": 70,
+              "rotation": 0
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": false,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0.01,
                 "friction": 0.01,
                 "density": 1
@@ -1539,7 +1635,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 4, "layer": 3 },
+            "z-index": {
+              "depth": 4,
+              "layer": 3
+            },
             "height": 32,
             "width": 64,
             "type": "spriteOnly",
@@ -1601,7 +1700,11 @@
         "handle": "",
         "name": "Melee Attack",
         "frames": {},
-        "bulletStartPosition": { "x": 0, "y": 0, "rotation": 0 },
+        "bulletStartPosition": {
+          "x": 0,
+          "y": 0,
+          "rotation": 0
+        },
         "damageHitBox": {
           "width": 28,
           "height": 30,
@@ -1625,16 +1728,28 @@
       "axe": {
         "carriedBy": [],
         "buffTypes": [],
-        "cost": { "quantity": 0 },
+        "cost": {
+          "quantity": 0
+        },
         "bonus": {
-          "passive": { "unitAttribute": {}, "playerAttribute": {} },
-          "consume": { "unitAttribute": {}, "playerAttribute": {} }
+          "passive": {
+            "unitAttribute": {},
+            "playerAttribute": {}
+          },
+          "consume": {
+            "unitAttribute": {},
+            "playerAttribute": {}
+          }
         },
         "removeWhenEmpty": false,
         "isUsedOnPickup": false,
         "canBeUsedBy": [],
         "sound": {},
-        "damage": { "unitAttributes": { "health": 10 } },
+        "damage": {
+          "unitAttributes": {
+            "health": 10
+          }
+        },
         "particles": {},
         "destroyTimer": 30000,
         "penetration": false,
@@ -1645,10 +1760,24 @@
           "x": 0
         },
         "effects": {
-          "empty": { "sound": {}, "animation": "" },
-          "reload": { "sound": {}, "animation": "" },
-          "destroy": { "animation": "", "sound": {}, "projectileType": "" },
-          "create": { "animation": "", "sound": {}, "projectileType": "" },
+          "empty": {
+            "sound": {},
+            "animation": ""
+          },
+          "reload": {
+            "sound": {},
+            "animation": ""
+          },
+          "destroy": {
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          },
+          "create": {
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          },
           "use": {
             "tween": "swingCCW",
             "animation": "use",
@@ -1669,13 +1798,22 @@
         "bodies": {
           "dropped": {
             "bullet": false,
-            "itemAnchor": { "y": 0, "x": 0 },
-            "unitAnchor": { "rotation": 90, "x": 0, "y": 52 },
+            "itemAnchor": {
+              "y": 0,
+              "x": 0
+            },
+            "unitAnchor": {
+              "rotation": 90,
+              "x": 0,
+              "y": 52
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": true,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0.01,
                 "friction": 0.01,
                 "density": 1
@@ -1695,20 +1833,32 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 2, "layer": 1 },
+            "z-index": {
+              "depth": 2,
+              "layer": 1
+            },
             "height": 53,
             "width": 26,
             "type": "dynamic",
             "name": "dropped"
           },
           "selected": {
-            "itemAnchor": { "x": -10, "y": 54 },
-            "unitAnchor": { "x": 0, "y": 0, "rotation": 90 },
+            "itemAnchor": {
+              "x": -10,
+              "y": 54
+            },
+            "unitAnchor": {
+              "x": 0,
+              "y": 0,
+              "rotation": 90
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": false,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0.01,
                 "friction": 0.01,
                 "density": 1
@@ -1728,7 +1878,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 4, "layer": 3 },
+            "z-index": {
+              "depth": 4,
+              "layer": 3
+            },
             "height": 64,
             "width": 32,
             "type": "spriteOnly",
@@ -1784,7 +1937,11 @@
         "handle": "",
         "name": "Axe",
         "frames": {},
-        "bulletStartPosition": { "x": 0, "y": 0, "rotation": 0 },
+        "bulletStartPosition": {
+          "x": 0,
+          "y": 0,
+          "rotation": 0
+        },
         "damageHitBox": {
           "width": 38,
           "height": 30,
@@ -1807,7 +1964,11 @@
         "scripts": {}
       },
       "KXSjsHU2aQ": {
-        "damageHitBox": { "offsetY": 50, "offsetX": 0, "width": 60 },
+        "damageHitBox": {
+          "offsetY": 50,
+          "offsetX": 0,
+          "width": 60
+        },
         "delayBeforeUse": 0,
         "controls": {
           "undroppable": false,
@@ -1820,12 +1981,19 @@
           "backpackAllowed": true
         },
         "frames": {},
-        "bulletStartPosition": { "rotation": 0, "y": 0, "x": 0 },
+        "bulletStartPosition": {
+          "rotation": 0,
+          "y": 0,
+          "x": 0
+        },
         "name": "Wooden Wall",
         "handle": "",
         "attributes": {},
         "variables": {},
-        "price": { "playerAttributes": {}, "requiredItemTypes": {} },
+        "price": {
+          "playerAttributes": {},
+          "requiredItemTypes": {}
+        },
         "cellSheet": {
           "url": "https://cache.modd.io/asset/spriteImage/1677860804370_wooden_wall.png",
           "rowCount": 1,
@@ -1882,7 +2050,10 @@
             "type": "spriteOnly",
             "width": 128,
             "height": 32,
-            "z-index": { "layer": 3, "depth": 4 },
+            "z-index": {
+              "layer": 3,
+              "depth": 4
+            },
             "fixedRotation": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "allowSleep": true,
@@ -1902,13 +2073,21 @@
                 "density": 1,
                 "friction": 0.01,
                 "restitution": 0.01,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "isSensor": false
               }
             ],
             "jointType": "weldJoint",
-            "unitAnchor": { "y": 68, "x": 0 },
-            "itemAnchor": { "x": 0, "y": 0 }
+            "unitAnchor": {
+              "y": 68,
+              "x": 0
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0
+            }
           },
           "dropped": {
             "bullet": false,
@@ -1916,7 +2095,10 @@
             "type": "dynamic",
             "width": 128,
             "height": 64,
-            "z-index": { "layer": 2, "depth": 2 },
+            "z-index": {
+              "layer": 2,
+              "depth": 2
+            },
             "fixedRotation": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "allowSleep": true,
@@ -1936,13 +2118,21 @@
                 "density": 1,
                 "friction": 0,
                 "restitution": 0,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "isSensor": true
               }
             ],
             "jointType": "weldJoint",
-            "unitAnchor": { "y": 68, "x": 0 },
-            "itemAnchor": { "x": 0, "y": 0 },
+            "unitAnchor": {
+              "y": 68,
+              "x": 0
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0
+            },
             "affectedByGravity": false
           }
         },
@@ -1976,8 +2166,14 @@
             "animation": "",
             "runScript": ""
           },
-          "reload": { "animation": "", "sound": {} },
-          "empty": { "animation": "", "sound": {} }
+          "reload": {
+            "animation": "",
+            "sound": {}
+          },
+          "empty": {
+            "animation": "",
+            "sound": {}
+          }
         },
         "bulletDestroyedOnCollisionWithWall/unitStartPosition": {
           "x": 0,
@@ -1994,7 +2190,11 @@
         "isUsedOnPickup": false,
         "removeWhenEmpty": true,
         "bonus": {
-          "consume": { "coin": 0, "playerAttribute": {}, "unitAttribute": {} },
+          "consume": {
+            "coin": 0,
+            "playerAttribute": {},
+            "unitAttribute": {}
+          },
           "passive": {
             "playerAttribute": {},
             "unitAttribute": {},
@@ -2022,7 +2222,10 @@
             "playerAttribute": {},
             "isDisabledInBackpack": false
           },
-          "consume": { "unitAttribute": {}, "playerAttribute": {} }
+          "consume": {
+            "unitAttribute": {},
+            "playerAttribute": {}
+          }
         },
         "removeWhenEmpty": true,
         "isUsedOnPickup": false,
@@ -2058,8 +2261,14 @@
             "animation": "",
             "runScript": ""
           },
-          "empty": { "sound": {}, "animation": "" },
-          "reload": { "sound": {}, "animation": "" }
+          "empty": {
+            "sound": {},
+            "animation": ""
+          },
+          "reload": {
+            "sound": {},
+            "animation": ""
+          }
         },
         "knockbackForce": 0,
         "bulletDestroyedOnCollisionWithWall/unitForce": 14,
@@ -2073,13 +2282,21 @@
         "hideIfUnaffordable": true,
         "bodies": {
           "dropped": {
-            "itemAnchor": { "x": 0, "y": 0 },
-            "unitAnchor": { "x": 0, "y": 68 },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0
+            },
+            "unitAnchor": {
+              "x": 0,
+              "y": 68
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": true,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0,
                 "friction": 0,
                 "density": 1
@@ -2099,7 +2316,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 2, "layer": 2 },
+            "z-index": {
+              "depth": 2,
+              "layer": 2
+            },
             "height": 64,
             "width": 128,
             "type": "dynamic",
@@ -2108,13 +2328,21 @@
             "affectedByGravity": false
           },
           "selected": {
-            "itemAnchor": { "x": 0, "y": 0 },
-            "unitAnchor": { "x": 0, "y": 68 },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0
+            },
+            "unitAnchor": {
+              "x": 0,
+              "y": 68
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": false,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0.01,
                 "friction": 0.01,
                 "density": 1
@@ -2134,7 +2362,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 4, "layer": 3 },
+            "z-index": {
+              "depth": 4,
+              "layer": 3
+            },
             "height": 32,
             "width": 128,
             "type": "spriteOnly",
@@ -2191,12 +2422,19 @@
           "rowCount": 1,
           "url": "https://cache.modd.io/asset/spriteImage/1677860781008_stone_wall.png"
         },
-        "price": { "requiredItemTypes": {}, "playerAttributes": {} },
+        "price": {
+          "requiredItemTypes": {},
+          "playerAttributes": {}
+        },
         "variables": {},
         "attributes": {},
         "handle": "",
         "name": "Stone Wall",
-        "bulletStartPosition": { "x": 0, "y": 0, "rotation": 0 },
+        "bulletStartPosition": {
+          "x": 0,
+          "y": 0,
+          "rotation": 0
+        },
         "frames": {},
         "controls": {
           "mouseBehaviour": {
@@ -2209,7 +2447,11 @@
           "backpackAllowed": true
         },
         "delayBeforeUse": 0,
-        "damageHitBox": { "width": 60, "offsetX": 0, "offsetY": 50 },
+        "damageHitBox": {
+          "width": 60,
+          "offsetX": 0,
+          "offsetY": 50
+        },
         "scripts": {},
         "projectileStreamMode": "0",
         "lifeSpan": 60000,
@@ -2219,7 +2461,11 @@
       "s2vnp9Ph2d": {
         "confinedWithinMapBoundaries": true,
         "lifeSpan": 60000,
-        "damageHitBox": { "offsetY": 50, "offsetX": 0, "width": 60 },
+        "damageHitBox": {
+          "offsetY": 50,
+          "offsetX": 0,
+          "width": 60
+        },
         "delayBeforeUse": 0,
         "controls": {
           "undroppable": false,
@@ -2230,12 +2476,19 @@
           }
         },
         "frames": {},
-        "bulletStartPosition": { "rotation": 0, "y": 0, "x": 0 },
+        "bulletStartPosition": {
+          "rotation": 0,
+          "y": 0,
+          "x": 0
+        },
         "name": "Meat",
         "handle": "",
         "attributes": {},
         "variables": {},
-        "price": { "playerAttributes": {}, "requiredItemTypes": {} },
+        "price": {
+          "playerAttributes": {},
+          "requiredItemTypes": {}
+        },
         "cellSheet": {
           "url": "https://cache.modd.io/asset/spriteImage/1677857330641_meat.png",
           "rowCount": 1,
@@ -2292,7 +2545,10 @@
             "type": "spriteOnly",
             "width": 34,
             "height": 34,
-            "z-index": { "layer": 3, "depth": 4 },
+            "z-index": {
+              "layer": 3,
+              "depth": 4
+            },
             "fixedRotation": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "allowSleep": true,
@@ -2312,13 +2568,21 @@
                 "density": 1,
                 "friction": 0.01,
                 "restitution": 0.01,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "isSensor": false
               }
             ],
             "jointType": "weldJoint",
-            "unitAnchor": { "y": 53, "x": 0 },
-            "itemAnchor": { "x": 0, "y": 0 }
+            "unitAnchor": {
+              "y": 53,
+              "x": 0
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0
+            }
           },
           "dropped": {
             "bullet": false,
@@ -2326,7 +2590,10 @@
             "type": "dynamic",
             "width": 50,
             "height": 50,
-            "z-index": { "layer": 2, "depth": 2 },
+            "z-index": {
+              "layer": 2,
+              "depth": 2
+            },
             "fixedRotation": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "allowSleep": true,
@@ -2346,13 +2613,21 @@
                 "density": 1,
                 "friction": 0,
                 "restitution": 0,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "isSensor": true
               }
             ],
             "jointType": "weldJoint",
-            "unitAnchor": { "y": 53, "x": 0 },
-            "itemAnchor": { "x": 0, "y": null },
+            "unitAnchor": {
+              "y": 53,
+              "x": 0
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": null
+            },
             "affectedByGravity": false
           }
         },
@@ -2367,10 +2642,24 @@
         "bulletDestroyedOnCollisionWithWall/unitForce": 14,
         "knockbackForce": 0,
         "effects": {
-          "reload": { "animation": "", "sound": {} },
-          "empty": { "animation": "", "sound": {} },
-          "destroy": { "animation": "", "sound": {}, "projectileType": "" },
-          "create": { "animation": "", "sound": {}, "projectileType": "" },
+          "reload": {
+            "animation": "",
+            "sound": {}
+          },
+          "empty": {
+            "animation": "",
+            "sound": {}
+          },
+          "destroy": {
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          },
+          "create": {
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          },
           "use": {
             "tween": "",
             "animation": "",
@@ -2395,10 +2684,15 @@
         "bonus": {
           "consume": {
             "playerAttribute": {},
-            "unitAttribute": { "health": 15 },
+            "unitAttribute": {
+              "health": 15
+            },
             "coin": 0
           },
-          "passive": { "playerAttribute": {}, "unitAttribute": {} },
+          "passive": {
+            "playerAttribute": {},
+            "unitAttribute": {}
+          },
           "isConsumedImmediately": false
         },
         "cost": {},
@@ -2412,8 +2706,15 @@
         "cost": {},
         "bonus": {
           "isConsumedImmediately": false,
-          "passive": { "unitAttribute": {}, "playerAttribute": {} },
-          "consume": { "coin": 0, "unitAttribute": {}, "playerAttribute": {} }
+          "passive": {
+            "unitAttribute": {},
+            "playerAttribute": {}
+          },
+          "consume": {
+            "coin": 0,
+            "unitAttribute": {},
+            "playerAttribute": {}
+          }
         },
         "removeWhenEmpty": true,
         "isUsedOnPickup": false,
@@ -2436,10 +2737,24 @@
             "animation": "",
             "tween": ""
           },
-          "create": { "projectileType": "", "sound": {}, "animation": "" },
-          "destroy": { "projectileType": "", "sound": {}, "animation": "" },
-          "empty": { "sound": {}, "animation": "" },
-          "reload": { "sound": {}, "animation": "" }
+          "create": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
+          "destroy": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
+          "empty": {
+            "sound": {},
+            "animation": ""
+          },
+          "reload": {
+            "sound": {},
+            "animation": ""
+          }
         },
         "knockbackForce": 0,
         "bulletDestroyedOnCollisionWithWall/unitForce": 14,
@@ -2453,13 +2768,21 @@
         "hideIfUnaffordable": true,
         "bodies": {
           "dropped": {
-            "itemAnchor": { "x": 0, "y": 0 },
-            "unitAnchor": { "x": 0, "y": 53 },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0
+            },
+            "unitAnchor": {
+              "x": 0,
+              "y": 53
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": true,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0,
                 "friction": 0,
                 "density": 1
@@ -2479,7 +2802,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 2, "layer": 2 },
+            "z-index": {
+              "depth": 2,
+              "layer": 2
+            },
             "height": 64,
             "width": 64,
             "type": "dynamic",
@@ -2488,13 +2814,21 @@
             "affectedByGravity": false
           },
           "selected": {
-            "itemAnchor": { "x": 0, "y": 53 },
-            "unitAnchor": { "x": 0, "y": 0 },
+            "itemAnchor": {
+              "x": 0,
+              "y": 53
+            },
+            "unitAnchor": {
+              "x": 0,
+              "y": 0
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": false,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0.01,
                 "friction": 0.01,
                 "density": 1
@@ -2514,7 +2848,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 4, "layer": 3 },
+            "z-index": {
+              "depth": 4,
+              "layer": 3
+            },
             "height": 34,
             "width": 34,
             "type": "spriteOnly",
@@ -2571,12 +2908,19 @@
           "rowCount": 1,
           "url": "https://cache.modd.io/asset/spriteImage/1677857247626_hide.png"
         },
-        "price": { "requiredItemTypes": {}, "playerAttributes": {} },
+        "price": {
+          "requiredItemTypes": {},
+          "playerAttributes": {}
+        },
         "variables": {},
         "attributes": {},
         "handle": "",
         "name": "Fur",
-        "bulletStartPosition": { "x": 0, "y": 0, "rotation": 0 },
+        "bulletStartPosition": {
+          "x": 0,
+          "y": 0,
+          "rotation": 0
+        },
         "frames": {},
         "controls": {
           "mouseBehaviour": {
@@ -2587,7 +2931,11 @@
           "undroppable": false
         },
         "delayBeforeUse": 0,
-        "damageHitBox": { "width": 60, "offsetX": 0, "offsetY": 50 },
+        "damageHitBox": {
+          "width": 60,
+          "offsetX": 0,
+          "offsetY": 50
+        },
         "lifeSpan": 100000,
         "confinedWithinMapBoundaries": true,
         "scripts": {}
@@ -2595,20 +2943,33 @@
       "wkuPHP94bA": {
         "carriedBy": [],
         "buffTypes": [],
-        "cost": { "quantity": 0 },
+        "cost": {
+          "quantity": 0
+        },
         "bonus": {
           "passive": {
-            "unitAttribute": { "health": { "value": 100 } },
+            "unitAttribute": {
+              "health": {
+                "value": 100
+              }
+            },
             "playerAttribute": {},
             "isDisabledInBackpack": false
           },
-          "consume": { "unitAttribute": {}, "playerAttribute": {} }
+          "consume": {
+            "unitAttribute": {},
+            "playerAttribute": {}
+          }
         },
         "removeWhenEmpty": false,
         "isUsedOnPickup": false,
         "canBeUsedBy": [],
         "sound": {},
-        "damage": { "unitAttributes": { "health": 10 } },
+        "damage": {
+          "unitAttributes": {
+            "health": 10
+          }
+        },
         "particles": {},
         "destroyTimer": 30000,
         "penetration": false,
@@ -2638,8 +2999,14 @@
             "animation": "",
             "runScript": ""
           },
-          "empty": { "sound": {}, "animation": "" },
-          "reload": { "sound": {}, "animation": "" }
+          "empty": {
+            "sound": {},
+            "animation": ""
+          },
+          "reload": {
+            "sound": {},
+            "animation": ""
+          }
         },
         "knockbackForce": 0,
         "bulletDestroyedOnCollisionWithWall/unitForce": 14,
@@ -2654,13 +3021,22 @@
         "bodies": {
           "dropped": {
             "bullet": false,
-            "itemAnchor": { "x": 0, "y": 0 },
-            "unitAnchor": { "rotation": 0, "x": 0, "y": -5 },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0
+            },
+            "unitAnchor": {
+              "rotation": 0,
+              "x": 0,
+              "y": -5
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": true,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0.01,
                 "friction": 0.01,
                 "density": 1
@@ -2680,7 +3056,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 4, "layer": 3 },
+            "z-index": {
+              "depth": 4,
+              "layer": 3
+            },
             "height": 48,
             "width": 48,
             "type": "dynamic",
@@ -2688,13 +3067,22 @@
             "affectedByGravity": false
           },
           "selected": {
-            "itemAnchor": { "x": 0, "y": 0 },
-            "unitAnchor": { "x": 0, "y": 0, "rotation": 0 },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0
+            },
+            "unitAnchor": {
+              "x": 0,
+              "y": 0,
+              "rotation": 0
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": false,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0.01,
                 "friction": 0.01,
                 "density": 1
@@ -2714,7 +3102,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 4, "layer": 3 },
+            "z-index": {
+              "depth": 4,
+              "layer": 3
+            },
             "height": 64,
             "width": 64,
             "type": "spriteOnly",
@@ -2776,7 +3167,11 @@
         "handle": "",
         "name": "Fur Helmet",
         "frames": {},
-        "bulletStartPosition": { "x": 0, "y": 0, "rotation": 0 },
+        "bulletStartPosition": {
+          "x": 0,
+          "y": 0,
+          "rotation": 0
+        },
         "damageHitBox": {
           "width": 38,
           "height": 30,
@@ -2800,21 +3195,32 @@
         "delayBeforeUse": 0,
         "scripts": {
           "UqtKIdju7z": {
-            "triggers": [{ "type": "unitPickedAnItem" }],
+            "triggers": [
+              {
+                "type": "unitPickedAnItem"
+              }
+            ],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
             "actions": [
               {
                 "type": "playEntityAnimation",
-                "entity": { "function": "thisEntity" },
+                "entity": {
+                  "function": "thisEntity"
+                },
                 "animation": "default"
               },
               {
                 "type": "flipEntitySprite",
-                "entity": { "function": "thisEntity" },
+                "entity": {
+                  "function": "thisEntity"
+                },
                 "flip": "vertical",
                 "disabled": true
               }
@@ -2826,7 +3232,13 @@
           }
         },
         "itemTypes": {
-          "wkuPHP94bA": { "scripts": { "595heTHRue": { "name": "on floor" } } }
+          "wkuPHP94bA": {
+            "scripts": {
+              "595heTHRue": {
+                "name": "on floor"
+              }
+            }
+          }
         },
         "projectileStreamMode": "0",
         "ignoreServerStream": false
@@ -2843,12 +3255,19 @@
           "backpackAllowed": false
         },
         "frames": {},
-        "bulletStartPosition": { "rotation": 0, "y": 0, "x": 0 },
+        "bulletStartPosition": {
+          "rotation": 0,
+          "y": 0,
+          "x": 0
+        },
         "name": "Wood",
         "handle": "",
         "attributes": {},
         "variables": {},
-        "price": { "playerAttributes": {}, "requiredItemTypes": {} },
+        "price": {
+          "playerAttributes": {},
+          "requiredItemTypes": {}
+        },
         "cellSheet": {
           "columnCount": 1,
           "rowCount": 1,
@@ -2899,7 +3318,10 @@
             "type": "spriteOnly",
             "width": 0,
             "height": 0,
-            "z-index": { "layer": 3, "depth": 2 },
+            "z-index": {
+              "layer": 3,
+              "depth": 2
+            },
             "fixedRotation": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "allowSleep": true,
@@ -2919,13 +3341,21 @@
                 "density": 1,
                 "friction": 0.01,
                 "restitution": 0.01,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "isSensor": false
               }
             ],
             "jointType": "weldJoint",
-            "unitAnchor": { "x": 0, "y": 30 },
-            "itemAnchor": { "x": 0, "y": 58 }
+            "unitAnchor": {
+              "x": 0,
+              "y": 30
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 58
+            }
           },
           "dropped": {
             "bullet": false,
@@ -2933,7 +3363,10 @@
             "type": "dynamic",
             "width": 40,
             "height": 38,
-            "z-index": { "layer": 5, "depth": 2 },
+            "z-index": {
+              "layer": 5,
+              "depth": 2
+            },
             "fixedRotation": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "allowSleep": true,
@@ -2953,13 +3386,21 @@
                 "density": 1,
                 "friction": 0,
                 "restitution": 0,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "isSensor": false
               }
             ],
             "jointType": "none",
-            "unitAnchor": { "x": 0, "y": 56 },
-            "itemAnchor": { "x": 0, "y": 58 },
+            "unitAnchor": {
+              "x": 0,
+              "y": 56
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 58
+            },
             "affectedByGravity": false
           }
         },
@@ -2993,8 +3434,14 @@
             "animation": "",
             "runScript": ""
           },
-          "reload": { "animation": "", "sound": {} },
-          "empty": { "animation": "", "sound": {} }
+          "reload": {
+            "animation": "",
+            "sound": {}
+          },
+          "empty": {
+            "animation": "",
+            "sound": {}
+          }
         },
         "bulletDestroyedOnCollisionWithWall/unitStartPosition": {
           "x": 0,
@@ -3011,7 +3458,11 @@
         "isUsedOnPickup": false,
         "removeWhenEmpty": true,
         "bonus": {
-          "consume": { "coin": 0, "playerAttribute": {}, "unitAttribute": {} },
+          "consume": {
+            "coin": 0,
+            "playerAttribute": {},
+            "unitAttribute": {}
+          },
           "passive": {
             "playerAttribute": {},
             "unitAttribute": {},
@@ -3028,7 +3479,11 @@
         "ignoreServerStream": false,
         "scripts": {},
         "delayBeforeUse": 0,
-        "damageHitBox": { "width": 60, "offsetX": 0, "offsetY": 50 }
+        "damageHitBox": {
+          "width": 60,
+          "offsetX": 0,
+          "offsetY": 50
+        }
       },
       "sfXSdT6Oht": {
         "controls": {
@@ -3042,12 +3497,19 @@
           "backpackAllowed": false
         },
         "frames": {},
-        "bulletStartPosition": { "rotation": 0, "y": 0, "x": 0 },
+        "bulletStartPosition": {
+          "rotation": 0,
+          "y": 0,
+          "x": 0
+        },
         "name": "Stone",
         "handle": "",
         "attributes": {},
         "variables": {},
-        "price": { "playerAttributes": {}, "requiredItemTypes": {} },
+        "price": {
+          "playerAttributes": {},
+          "requiredItemTypes": {}
+        },
         "cellSheet": {
           "url": "https://cache.modd.io/asset/spriteImage/1680115538393_rock.png",
           "rowCount": 1,
@@ -3097,7 +3559,10 @@
             "type": "spriteOnly",
             "width": 0,
             "height": 0,
-            "z-index": { "layer": 3, "depth": 2 },
+            "z-index": {
+              "layer": 3,
+              "depth": 2
+            },
             "fixedRotation": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "allowSleep": true,
@@ -3117,13 +3582,21 @@
                 "density": 1,
                 "friction": 0.01,
                 "restitution": 0.01,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "isSensor": false
               }
             ],
             "jointType": "weldJoint",
-            "unitAnchor": { "x": 0, "y": 30 },
-            "itemAnchor": { "x": 0, "y": 58 }
+            "unitAnchor": {
+              "x": 0,
+              "y": 30
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 58
+            }
           },
           "dropped": {
             "bullet": false,
@@ -3131,7 +3604,10 @@
             "type": "dynamic",
             "width": 30,
             "height": 27,
-            "z-index": { "layer": 5, "depth": 1 },
+            "z-index": {
+              "layer": 5,
+              "depth": 1
+            },
             "fixedRotation": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "allowSleep": true,
@@ -3151,13 +3627,21 @@
                 "density": "0.5",
                 "friction": 0,
                 "restitution": 0,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "isSensor": false
               }
             ],
             "jointType": "none",
-            "unitAnchor": { "x": 0, "y": 56 },
-            "itemAnchor": { "x": 0, "y": 58 },
+            "unitAnchor": {
+              "x": 0,
+              "y": 56
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 58
+            },
             "affectedByGravity": false
           }
         },
@@ -3191,8 +3675,14 @@
             "animation": "",
             "runScript": ""
           },
-          "reload": { "animation": "", "sound": {} },
-          "empty": { "animation": "", "sound": {} }
+          "reload": {
+            "animation": "",
+            "sound": {}
+          },
+          "empty": {
+            "animation": "",
+            "sound": {}
+          }
         },
         "bulletDestroyedOnCollisionWithWall/unitStartPosition": {
           "x": 0,
@@ -3209,7 +3699,11 @@
         "isUsedOnPickup": false,
         "removeWhenEmpty": true,
         "bonus": {
-          "consume": { "coin": 0, "playerAttribute": {}, "unitAttribute": {} },
+          "consume": {
+            "coin": 0,
+            "playerAttribute": {},
+            "unitAttribute": {}
+          },
           "passive": {
             "playerAttribute": {},
             "unitAttribute": {},
@@ -3227,11 +3721,18 @@
         "scripts": {
           "BiQzBJaj7d": {
             "triggers": [
-              { "type": "entityCreated" },
-              { "type": "unitPickedAnItem" }
+              {
+                "type": "entityCreated"
+              },
+              {
+                "type": "unitPickedAnItem"
+              }
             ],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
@@ -3241,7 +3742,9 @@
                 "item": {
                   "function": "getItemAtSlot",
                   "slot": 8,
-                  "unit": { "function": "thisEntity" }
+                  "unit": {
+                    "function": "thisEntity"
+                  }
                 },
                 "string": "OliveDrab"
               }
@@ -3253,22 +3756,38 @@
           }
         },
         "delayBeforeUse": 0,
-        "damageHitBox": { "width": 60, "offsetX": 0, "offsetY": 50 },
+        "damageHitBox": {
+          "width": 60,
+          "offsetX": 0,
+          "offsetY": 50
+        },
         "type": "unusable"
       },
       "KSqaFl6hmd": {
         "carriedBy": [],
         "buffTypes": [],
-        "cost": { "quantity": 0 },
+        "cost": {
+          "quantity": 0
+        },
         "bonus": {
-          "passive": { "unitAttribute": {}, "playerAttribute": {} },
-          "consume": { "unitAttribute": {}, "playerAttribute": {} }
+          "passive": {
+            "unitAttribute": {},
+            "playerAttribute": {}
+          },
+          "consume": {
+            "unitAttribute": {},
+            "playerAttribute": {}
+          }
         },
         "removeWhenEmpty": false,
         "isUsedOnPickup": false,
         "canBeUsedBy": [],
         "sound": {},
-        "damage": { "unitAttributes": { "health": 10 } },
+        "damage": {
+          "unitAttributes": {
+            "health": 10
+          }
+        },
         "particles": {},
         "destroyTimer": 30000,
         "penetration": false,
@@ -3279,10 +3798,24 @@
           "x": 0
         },
         "effects": {
-          "empty": { "sound": {}, "animation": "" },
-          "reload": { "sound": {}, "animation": "" },
-          "destroy": { "animation": "", "sound": {}, "projectileType": "" },
-          "create": { "animation": "", "sound": {}, "projectileType": "" },
+          "empty": {
+            "sound": {},
+            "animation": ""
+          },
+          "reload": {
+            "sound": {},
+            "animation": ""
+          },
+          "destroy": {
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          },
+          "create": {
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          },
           "use": {
             "tween": "swingCCW",
             "animation": "use",
@@ -3303,13 +3836,22 @@
         "bodies": {
           "dropped": {
             "bullet": false,
-            "itemAnchor": { "x": 0, "y": 0 },
-            "unitAnchor": { "rotation": 90, "x": 0, "y": 52 },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0
+            },
+            "unitAnchor": {
+              "rotation": 90,
+              "x": 0,
+              "y": 52
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": true,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0.01,
                 "friction": 0.01,
                 "density": 1
@@ -3329,7 +3871,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 2, "layer": 1 },
+            "z-index": {
+              "depth": 2,
+              "layer": 1
+            },
             "height": 32,
             "width": 32,
             "type": "dynamic",
@@ -3337,13 +3882,22 @@
             "affectedByGravity": false
           },
           "selected": {
-            "itemAnchor": { "x": -10, "y": 54 },
-            "unitAnchor": { "x": 0, "y": 0, "rotation": 90 },
+            "itemAnchor": {
+              "x": -10,
+              "y": 54
+            },
+            "unitAnchor": {
+              "x": 0,
+              "y": 0,
+              "rotation": 90
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": false,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0.01,
                 "friction": 0.01,
                 "density": 1
@@ -3363,7 +3917,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 4, "layer": 3 },
+            "z-index": {
+              "depth": 4,
+              "layer": 3
+            },
             "height": 64,
             "width": 64,
             "type": "spriteOnly",
@@ -3418,7 +3975,11 @@
         "handle": "",
         "name": "Pickaxe",
         "frames": {},
-        "bulletStartPosition": { "x": 0, "y": 0, "rotation": 0 },
+        "bulletStartPosition": {
+          "x": 0,
+          "y": 0,
+          "rotation": 0
+        },
         "damageHitBox": {
           "width": 38,
           "height": 30,
@@ -3453,12 +4014,19 @@
           "backpackAllowed": true
         },
         "frames": {},
-        "bulletStartPosition": { "rotation": 0, "y": 0, "x": 0 },
+        "bulletStartPosition": {
+          "rotation": 0,
+          "y": 0,
+          "x": 0
+        },
         "name": "Fireplace",
         "handle": "",
         "attributes": {},
         "variables": {},
-        "price": { "playerAttributes": {}, "requiredItemTypes": {} },
+        "price": {
+          "playerAttributes": {},
+          "requiredItemTypes": {}
+        },
         "cellSheet": {
           "columnCount": 1,
           "rowCount": 1,
@@ -3515,7 +4083,10 @@
             "type": "spriteOnly",
             "width": 50,
             "height": 50,
-            "z-index": { "layer": 3, "depth": 2 },
+            "z-index": {
+              "layer": 3,
+              "depth": 2
+            },
             "fixedRotation": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "allowSleep": true,
@@ -3535,13 +4106,21 @@
                 "density": 1,
                 "friction": 0.01,
                 "restitution": 0.01,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "isSensor": false
               }
             ],
             "jointType": "weldJoint",
-            "unitAnchor": { "x": 0, "y": 30 },
-            "itemAnchor": { "x": 0, "y": 58 }
+            "unitAnchor": {
+              "x": 0,
+              "y": 30
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 58
+            }
           },
           "dropped": {
             "bullet": false,
@@ -3549,7 +4128,10 @@
             "type": "dynamic",
             "width": 25,
             "height": 25,
-            "z-index": { "layer": 1, "depth": 2 },
+            "z-index": {
+              "layer": 1,
+              "depth": 2
+            },
             "fixedRotation": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "allowSleep": true,
@@ -3569,13 +4151,21 @@
                 "density": 1,
                 "friction": 0,
                 "restitution": 0,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "isSensor": false
               }
             ],
             "jointType": "none",
-            "unitAnchor": { "x": 0, "y": 56 },
-            "itemAnchor": { "x": 0, "y": 58 },
+            "unitAnchor": {
+              "x": 0,
+              "y": 56
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 58
+            },
             "affectedByGravity": false
           }
         },
@@ -3609,8 +4199,14 @@
             "animation": "",
             "runScript": ""
           },
-          "reload": { "animation": "", "sound": {} },
-          "empty": { "animation": "", "sound": {} }
+          "reload": {
+            "animation": "",
+            "sound": {}
+          },
+          "empty": {
+            "animation": "",
+            "sound": {}
+          }
         },
         "bulletDestroyedOnCollisionWithWall/unitStartPosition": {
           "x": 0,
@@ -3627,7 +4223,11 @@
         "isUsedOnPickup": false,
         "removeWhenEmpty": true,
         "bonus": {
-          "consume": { "coin": 0, "playerAttribute": {}, "unitAttribute": {} },
+          "consume": {
+            "coin": 0,
+            "playerAttribute": {},
+            "unitAttribute": {}
+          },
           "passive": {
             "playerAttribute": {},
             "unitAttribute": {},
@@ -3644,16 +4244,27 @@
         "ignoreServerStream": false,
         "scripts": {},
         "delayBeforeUse": 0,
-        "damageHitBox": { "width": 60, "offsetX": 0, "offsetY": 50 }
+        "damageHitBox": {
+          "width": 60,
+          "offsetX": 0,
+          "offsetY": 50
+        }
       }
     },
     "music": {},
     "sound": {},
     "scripts": {
       "spawnCreeps": {
-        "triggers": [{ "type": "secondTick" }],
+        "triggers": [
+          {
+            "type": "secondTick"
+          }
+        ],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
@@ -3673,15 +4284,26 @@
                 },
                 "position": {
                   "function": "getRandomPositionInRegion",
-                  "region": { "function": "getEntireMapRegion" }
+                  "region": {
+                    "function": "getEntireMapRegion"
+                  }
                 },
                 "angle": 0
               }
             ],
             "conditions": [
-              { "operandType": "number", "operator": "<" },
-              { "unitType": "pig", "function": "getNumberOfUnitsOfUnitType" },
-              { "function": "getVariable", "variableName": "minAmountPigs" }
+              {
+                "operandType": "number",
+                "operator": "<"
+              },
+              {
+                "unitType": "pig",
+                "function": "getNumberOfUnitsOfUnitType"
+              },
+              {
+                "function": "getVariable",
+                "variableName": "minAmountPigs"
+              }
             ],
             "type": "while"
           },
@@ -3696,15 +4318,26 @@
                 },
                 "position": {
                   "function": "getRandomPositionInRegion",
-                  "region": { "function": "getEntireMapRegion" }
+                  "region": {
+                    "function": "getEntireMapRegion"
+                  }
                 },
                 "angle": 0
               }
             ],
             "conditions": [
-              { "operandType": "number", "operator": "<" },
-              { "unitType": "bear", "function": "getNumberOfUnitsOfUnitType" },
-              { "function": "getVariable", "variableName": "minAmountBears" }
+              {
+                "operandType": "number",
+                "operator": "<"
+              },
+              {
+                "unitType": "bear",
+                "function": "getNumberOfUnitsOfUnitType"
+              },
+              {
+                "function": "getVariable",
+                "variableName": "minAmountBears"
+              }
             ],
             "type": "while"
           }
@@ -3716,28 +4349,44 @@
       },
       "playerJoinsGame": {
         "name": "player joins",
-        "triggers": [{ "type": "playerJoinsGame" }],
+        "triggers": [
+          {
+            "type": "playerJoinsGame"
+          }
+        ],
         "conditions": [],
         "actions": [
           {
             "angle": 0,
-            "entity": { "function": "getTriggeringPlayer" },
+            "entity": {
+              "function": "getTriggeringPlayer"
+            },
             "position": {
               "function": "getRandomPositionInRegion",
-              "region": { "function": "getEntireMapRegion" }
+              "region": {
+                "function": "getEntireMapRegion"
+              }
             },
             "unitType": "survivor",
             "type": "createUnitAtPosition"
           },
           {
-            "player": { "function": "getTriggeringPlayer" },
+            "player": {
+              "function": "getTriggeringPlayer"
+            },
             "type": "playerCameraTrackUnit",
-            "survivor": { "function": "getTriggeringPlayer" },
-            "unit": { "function": "getLastCreatedUnit" }
+            "survivor": {
+              "function": "getTriggeringPlayer"
+            },
+            "unit": {
+              "function": "getLastCreatedUnit"
+            }
           },
           {
             "playerType": "humanPlayer",
-            "entity": { "function": "getTriggeringPlayer" },
+            "entity": {
+              "function": "getTriggeringPlayer"
+            },
             "type": "assignPlayerType"
           }
         ],
@@ -3746,9 +4395,16 @@
         "order": 1
       },
       "playerLeavesGame": {
-        "triggers": [{ "type": "playerLeavesGame" }],
+        "triggers": [
+          {
+            "type": "playerLeavesGame"
+          }
+        ],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
@@ -3756,13 +4412,19 @@
           {
             "type": "forAllUnits",
             "unitGroup": {
-              "player": { "function": "getTriggeringPlayer" },
+              "player": {
+                "function": "getTriggeringPlayer"
+              },
               "function": "allUnitsOwnedByPlayer",
-              "survivor": { "function": "getTriggeringPlayer" }
+              "survivor": {
+                "function": "getTriggeringPlayer"
+              }
             },
             "actions": [
               {
-                "entity": { "function": "selectedUnit" },
+                "entity": {
+                  "function": "selectedUnit"
+                },
                 "type": "destroyEntity"
               }
             ],
@@ -3783,10 +4445,15 @@
           {
             "type": "condition",
             "conditions": [
-              { "operandType": "attributeType", "operator": "==" },
+              {
+                "operandType": "attributeType",
+                "operator": "=="
+              },
               {
                 "function": "getAttributeTypeOfAttribute",
-                "entity": { "function": "getTriggeringAttribute" }
+                "entity": {
+                  "function": "getTriggeringAttribute"
+                }
               },
               "health"
             ],
@@ -3800,29 +4467,44 @@
                     "attribute": "respawnTimer",
                     "entity": {
                       "function": "getOwner",
-                      "entity": { "function": "getTriggeringUnit" }
+                      "entity": {
+                        "function": "getTriggeringUnit"
+                      }
                     },
                     "value": 0
                   },
                   {
                     "player": {
                       "function": "getOwner",
-                      "entity": { "function": "getTriggeringUnit" }
+                      "entity": {
+                        "function": "getTriggeringUnit"
+                      }
                     },
                     "type": "playerCameraTrackUnit",
-                    "survivor": { "function": "getTriggeringPlayer" },
-                    "unit": { "function": "getLastAttackingUnit" },
+                    "survivor": {
+                      "function": "getTriggeringPlayer"
+                    },
+                    "unit": {
+                      "function": "getLastAttackingUnit"
+                    },
                     "comment": "follow the unit that killed the player"
                   },
                   {
-                    "entity": { "function": "getTriggeringUnit" },
+                    "entity": {
+                      "function": "getTriggeringUnit"
+                    },
                     "type": "dropAllItems"
                   }
                 ],
                 "conditions": [
-                  { "operator": "==", "operandType": "unitType" },
                   {
-                    "entity": { "function": "getTriggeringUnit" },
+                    "operator": "==",
+                    "operandType": "unitType"
+                  },
+                  {
+                    "entity": {
+                      "function": "getTriggeringUnit"
+                    },
                     "function": "getUnitTypeOfUnit"
                   },
                   "survivor"
@@ -3837,14 +4519,21 @@
                     "itemType": "HBlfzHEdHP",
                     "position": {
                       "function": "getEntityPosition",
-                      "entity": { "function": "getTriggeringUnit" }
+                      "entity": {
+                        "function": "getTriggeringUnit"
+                      }
                     }
                   }
                 ],
                 "conditions": [
-                  { "operator": "==", "operandType": "unitType" },
                   {
-                    "entity": { "function": "getTriggeringUnit" },
+                    "operator": "==",
+                    "operandType": "unitType"
+                  },
+                  {
+                    "entity": {
+                      "function": "getTriggeringUnit"
+                    },
                     "function": "getUnitTypeOfUnit"
                   },
                   "bear"
@@ -3859,14 +4548,21 @@
                     "itemType": "s2vnp9Ph2d",
                     "position": {
                       "function": "getEntityPosition",
-                      "entity": { "function": "getTriggeringUnit" }
+                      "entity": {
+                        "function": "getTriggeringUnit"
+                      }
                     }
                   }
                 ],
                 "conditions": [
-                  { "operator": "==", "operandType": "unitType" },
                   {
-                    "entity": { "function": "getTriggeringUnit" },
+                    "operator": "==",
+                    "operandType": "unitType"
+                  },
+                  {
+                    "entity": {
+                      "function": "getTriggeringUnit"
+                    },
                     "function": "getUnitTypeOfUnit"
                   },
                   "pig"
@@ -3875,18 +4571,27 @@
               },
               {
                 "type": "destroyEntity",
-                "entity": { "function": "getTriggeringUnit" }
+                "entity": {
+                  "function": "getTriggeringUnit"
+                }
               }
             ],
             "else": []
           }
         ],
         "conditions": [
-          { "operandType": "boolean", "operator": "==" },
+          {
+            "operandType": "boolean",
+            "operator": "=="
+          },
           true,
           true
         ],
-        "triggers": [{ "type": "unitAttributeBecomesZero" }]
+        "triggers": [
+          {
+            "type": "unitAttributeBecomesZero"
+          }
+        ]
       },
       "playerRespawn": {
         "order": 1,
@@ -3897,10 +4602,15 @@
           {
             "type": "condition",
             "conditions": [
-              { "operandType": "attributeType", "operator": "==" },
+              {
+                "operandType": "attributeType",
+                "operator": "=="
+              },
               {
                 "function": "getAttributeTypeOfAttribute",
-                "entity": { "function": "getTriggeringAttribute" }
+                "entity": {
+                  "function": "getTriggeringAttribute"
+                }
               },
               "respawnTimer"
             ],
@@ -3909,17 +4619,27 @@
                 "type": "createUnitAtPosition",
                 "unitType": "survivor",
                 "position": {
-                  "region": { "function": "getEntireMapRegion" },
+                  "region": {
+                    "function": "getEntireMapRegion"
+                  },
                   "function": "getRandomPositionInRegion"
                 },
-                "entity": { "function": "getTriggeringPlayer" },
+                "entity": {
+                  "function": "getTriggeringPlayer"
+                },
                 "angle": 0
               },
               {
-                "player": { "function": "getTriggeringPlayer" },
+                "player": {
+                  "function": "getTriggeringPlayer"
+                },
                 "type": "playerCameraTrackUnit",
-                "survivor": { "function": "getTriggeringPlayer" },
-                "unit": { "function": "getLastCreatedUnit" }
+                "survivor": {
+                  "function": "getTriggeringPlayer"
+                },
+                "unit": {
+                  "function": "getLastCreatedUnit"
+                }
               }
             ],
             "else": [],
@@ -3927,15 +4647,26 @@
           }
         ],
         "conditions": [
-          { "operandType": "boolean", "operator": "==" },
+          {
+            "operandType": "boolean",
+            "operator": "=="
+          },
           true,
           true
         ],
-        "triggers": [{ "type": "playerAttributeBecomesFull" }]
+        "triggers": [
+          {
+            "type": "playerAttributeBecomesFull"
+          }
+        ]
       },
       "initialize": {
         "isProtected": true,
-        "triggers": [{ "type": "gameStart" }],
+        "triggers": [
+          {
+            "type": "gameStart"
+          }
+        ],
         "actions": [
           {
             "playerType": "aiNeutral",
@@ -3970,9 +4701,16 @@
         "order": 0
       },
       "gatherResources": {
-        "triggers": [{ "type": "unitAttacksUnit" }],
+        "triggers": [
+          {
+            "type": "unitAttacksUnit"
+          }
+        ],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
@@ -3980,12 +4718,17 @@
           {
             "type": "condition",
             "conditions": [
-              { "operandType": "itemType", "operator": "==" },
+              {
+                "operandType": "itemType",
+                "operator": "=="
+              },
               {
                 "function": "getItemTypeOfItem",
                 "entity": {
                   "function": "getItemCurrentlyHeldByUnit",
-                  "entity": { "function": "getLastAttackingUnit" }
+                  "entity": {
+                    "function": "getLastAttackingUnit"
+                  }
                 }
               },
               "axe"
@@ -4003,7 +4746,9 @@
                           "function": "getRandomPositionInRegion",
                           "region": {
                             "function": "entityBounds",
-                            "entity": { "function": "getLastAttackedUnit" }
+                            "entity": {
+                              "function": "getLastAttackedUnit"
+                            }
                           }
                         },
                         "comment": "spawns a wood piece that can be picked up"
@@ -4015,10 +4760,15 @@
                       }
                     ],
                     "conditions": [
-                      { "operator": "==", "operandType": "unitType" },
+                      {
+                        "operator": "==",
+                        "operandType": "unitType"
+                      },
                       {
                         "function": "getUnitTypeOfUnit",
-                        "entity": { "function": "getLastAttackedUnit" }
+                        "entity": {
+                          "function": "getLastAttackedUnit"
+                        }
                       },
                       "DaqOAYbYAT"
                     ],
@@ -4033,7 +4783,9 @@
                       "function": "getRandomPositionInRegion",
                       "region": {
                         "function": "entityBounds",
-                        "entity": { "function": "getLastAttackedUnit" }
+                        "entity": {
+                          "function": "getLastAttackedUnit"
+                        }
                       }
                     },
                     "comment": "spawns a wood piece that can be picked up"
@@ -4045,10 +4797,15 @@
                   }
                 ],
                 "conditions": [
-                  { "operator": "==", "operandType": "unitType" },
+                  {
+                    "operator": "==",
+                    "operandType": "unitType"
+                  },
                   {
                     "function": "getUnitTypeOfUnit",
-                    "entity": { "function": "getLastAttackedUnit" }
+                    "entity": {
+                      "function": "getLastAttackedUnit"
+                    }
                   },
                   "tree"
                 ],
@@ -4060,12 +4817,17 @@
           {
             "type": "condition",
             "conditions": [
-              { "operandType": "itemType", "operator": "==" },
+              {
+                "operandType": "itemType",
+                "operator": "=="
+              },
               {
                 "function": "getItemTypeOfItem",
                 "entity": {
                   "function": "getItemCurrentlyHeldByUnit",
-                  "entity": { "function": "getLastAttackingUnit" }
+                  "entity": {
+                    "function": "getLastAttackingUnit"
+                  }
                 }
               },
               "KSqaFl6hmd"
@@ -4081,7 +4843,9 @@
                       "function": "getRandomPositionInRegion",
                       "region": {
                         "function": "entityBounds",
-                        "entity": { "function": "getLastAttackedUnit" }
+                        "entity": {
+                          "function": "getLastAttackedUnit"
+                        }
                       }
                     },
                     "comment": "spawns a stone piece that can be picked up"
@@ -4093,9 +4857,14 @@
                   }
                 ],
                 "conditions": [
-                  { "operator": "==", "operandType": "unitType" },
                   {
-                    "entity": { "function": "getLastAttackedUnit" },
+                    "operator": "==",
+                    "operandType": "unitType"
+                  },
+                  {
+                    "entity": {
+                      "function": "getLastAttackedUnit"
+                    },
                     "function": "getUnitTypeOfUnit"
                   },
                   "rock"
@@ -4112,9 +4881,16 @@
         "order": 0
       },
       "4E1AZDXWGv": {
-        "triggers": [{ "type": "unitUsesItem" }],
+        "triggers": [
+          {
+            "type": "unitUsesItem"
+          }
+        ],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
@@ -4126,12 +4902,16 @@
                 "type": "createUnitAtPosition",
                 "unitType": "T0IUZvxPfi",
                 "entity": {
-                  "entity": { "function": "getTriggeringUnit" },
+                  "entity": {
+                    "function": "getTriggeringUnit"
+                  },
                   "function": "getOwner"
                 },
                 "position": {
                   "function": "getEntityPosition",
-                  "entity": { "function": "getTriggeringItem" }
+                  "entity": {
+                    "function": "getTriggeringItem"
+                  }
                 },
                 "angle": {
                   "function": "angleBetweenPositions",
@@ -4139,7 +4919,9 @@
                     "function": "getEntityPosition",
                     "entity": {
                       "function": "getOwnerOfItem",
-                      "entity": { "function": "getTriggeringItem" }
+                      "entity": {
+                        "function": "getTriggeringItem"
+                      }
                     }
                   },
                   "positionB": {
@@ -4148,7 +4930,9 @@
                       "function": "getOwner",
                       "entity": {
                         "function": "getOwnerOfItem",
-                        "entity": { "function": "getTriggeringItem" }
+                        "entity": {
+                          "function": "getTriggeringItem"
+                        }
                       }
                     }
                   }
@@ -4156,15 +4940,22 @@
               }
             ],
             "conditions": [
-              { "operator": "==", "operandType": "itemType" },
               {
-                "entity": { "function": "getTriggeringItem" },
+                "operator": "==",
+                "operandType": "itemType"
+              },
+              {
+                "entity": {
+                  "function": "getTriggeringItem"
+                },
                 "function": "getItemTypeOfItem"
               },
               "KXSjsHU2aQ"
             ],
             "type": "condition",
-            "isExpanded": { "self": true }
+            "isExpanded": {
+              "self": true
+            }
           },
           {
             "else": [],
@@ -4174,11 +4965,15 @@
                 "unitType": "bLUZrdA3Gd",
                 "entity": {
                   "function": "getOwner",
-                  "entity": { "function": "getTriggeringUnit" }
+                  "entity": {
+                    "function": "getTriggeringUnit"
+                  }
                 },
                 "position": {
                   "function": "getEntityPosition",
-                  "entity": { "function": "getTriggeringItem" }
+                  "entity": {
+                    "function": "getTriggeringItem"
+                  }
                 },
                 "angle": {
                   "function": "angleBetweenPositions",
@@ -4186,7 +4981,9 @@
                     "function": "getEntityPosition",
                     "entity": {
                       "function": "getOwnerOfItem",
-                      "entity": { "function": "getTriggeringItem" }
+                      "entity": {
+                        "function": "getTriggeringItem"
+                      }
                     }
                   },
                   "positionB": {
@@ -4195,7 +4992,9 @@
                       "function": "getOwner",
                       "entity": {
                         "function": "getOwnerOfItem",
-                        "entity": { "function": "getTriggeringItem" }
+                        "entity": {
+                          "function": "getTriggeringItem"
+                        }
                       }
                     }
                   }
@@ -4203,9 +5002,14 @@
               }
             ],
             "conditions": [
-              { "operator": "==", "operandType": "itemType" },
               {
-                "entity": { "function": "getTriggeringItem" },
+                "operator": "==",
+                "operandType": "itemType"
+              },
+              {
+                "entity": {
+                  "function": "getTriggeringItem"
+                },
                 "function": "getItemTypeOfItem"
               },
               "mG6ZvXHNNX"
@@ -4220,11 +5024,15 @@
                 "unitType": "TYdx0GU1If",
                 "entity": {
                   "function": "getOwner",
-                  "entity": { "function": "getTriggeringUnit" }
+                  "entity": {
+                    "function": "getTriggeringUnit"
+                  }
                 },
                 "position": {
                   "function": "getEntityPosition",
-                  "entity": { "function": "getTriggeringItem" }
+                  "entity": {
+                    "function": "getTriggeringItem"
+                  }
                 },
                 "angle": {
                   "function": "angleBetweenPositions",
@@ -4232,7 +5040,9 @@
                     "function": "getEntityPosition",
                     "entity": {
                       "function": "getOwnerOfItem",
-                      "entity": { "function": "getTriggeringItem" }
+                      "entity": {
+                        "function": "getTriggeringItem"
+                      }
                     }
                   },
                   "positionB": {
@@ -4241,7 +5051,9 @@
                       "function": "getOwner",
                       "entity": {
                         "function": "getOwnerOfItem",
-                        "entity": { "function": "getTriggeringItem" }
+                        "entity": {
+                          "function": "getTriggeringItem"
+                        }
                       }
                     }
                   }
@@ -4249,9 +5061,14 @@
               }
             ],
             "conditions": [
-              { "operator": "==", "operandType": "itemType" },
               {
-                "entity": { "function": "getTriggeringItem" },
+                "operator": "==",
+                "operandType": "itemType"
+              },
+              {
+                "entity": {
+                  "function": "getTriggeringItem"
+                },
                 "function": "getItemTypeOfItem"
               },
               "NPTFVAhfmv"
@@ -4286,9 +5103,16 @@
         "expanded": true
       },
       "T5OqEQH3lL": {
-        "triggers": [{ "type": "secondTick" }],
+        "triggers": [
+          {
+            "type": "secondTick"
+          }
+        ],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
@@ -4306,7 +5130,9 @@
                   "max": 360
                 },
                 "position": {
-                  "region": { "function": "getEntireMapRegion" },
+                  "region": {
+                    "function": "getEntireMapRegion"
+                  },
                   "function": "getRandomPositionInRegion"
                 },
                 "entity": {
@@ -4321,7 +5147,9 @@
                 "entity": "DaqOAYbYAT",
                 "position": {
                   "function": "getRandomPositionInRegion",
-                  "region": { "function": "getEntireMapRegion" }
+                  "region": {
+                    "function": "getEntireMapRegion"
+                  }
                 },
                 "height": {
                   "function": "entityHeight",
@@ -4342,7 +5170,10 @@
               }
             ],
             "conditions": [
-              { "operandType": "number", "operator": "<" },
+              {
+                "operandType": "number",
+                "operator": "<"
+              },
               {
                 "unitType": "DaqOAYbYAT",
                 "function": "getNumberOfUnitsOfUnitType"
@@ -4363,7 +5194,9 @@
                   "max": 360
                 },
                 "position": {
-                  "region": { "function": "getEntireMapRegion" },
+                  "region": {
+                    "function": "getEntireMapRegion"
+                  },
                   "function": "getRandomPositionInRegion"
                 },
                 "entity": {
@@ -4375,9 +5208,18 @@
               }
             ],
             "conditions": [
-              { "operandType": "number", "operator": "<" },
-              { "unitType": "tree", "function": "getNumberOfUnitsOfUnitType" },
-              { "function": "getVariable", "variableName": "minAmountTrees" }
+              {
+                "operandType": "number",
+                "operator": "<"
+              },
+              {
+                "unitType": "tree",
+                "function": "getNumberOfUnitsOfUnitType"
+              },
+              {
+                "function": "getVariable",
+                "variableName": "minAmountTrees"
+              }
             ],
             "type": "while"
           },
@@ -4390,7 +5232,9 @@
                   "max": 360
                 },
                 "position": {
-                  "region": { "function": "getEntireMapRegion" },
+                  "region": {
+                    "function": "getEntireMapRegion"
+                  },
                   "function": "getRandomPositionInRegion"
                 },
                 "entity": {
@@ -4402,9 +5246,18 @@
               }
             ],
             "conditions": [
-              { "operandType": "number", "operator": "<" },
-              { "unitType": "rock", "function": "getNumberOfUnitsOfUnitType" },
-              { "function": "getVariable", "variableName": "minAmountRocks" }
+              {
+                "operandType": "number",
+                "operator": "<"
+              },
+              {
+                "unitType": "rock",
+                "function": "getNumberOfUnitsOfUnitType"
+              },
+              {
+                "function": "getVariable",
+                "variableName": "minAmountRocks"
+              }
             ],
             "type": "while"
           }
@@ -4417,7 +5270,10 @@
       "kkzWLrLGk1": {
         "triggers": [],
         "conditions": [
-          { "operator": "==", "operandType": "boolean" },
+          {
+            "operator": "==",
+            "operandType": "boolean"
+          },
           true,
           true
         ],
@@ -4429,7 +5285,9 @@
               "min": 15,
               "max": 30.1
             },
-            "entity": { "function": "getLastCreatedItem" },
+            "entity": {
+              "function": "getLastCreatedItem"
+            },
             "angle": {
               "function": "getRandomNumberBetween",
               "min": 1,
@@ -4439,7 +5297,10 @@
           {
             "type": "condition",
             "conditions": [
-              { "operandType": "number", "operator": "==" },
+              {
+                "operandType": "number",
+                "operator": "=="
+              },
               {
                 "function": "getRandomNumberBetween",
                 "min": 1,
@@ -4456,7 +5317,9 @@
             "then": [
               {
                 "type": "destroyEntity",
-                "entity": { "function": "getLastAttackedUnit" }
+                "entity": {
+                  "function": "getLastAttackedUnit"
+                }
               }
             ],
             "else": [],
@@ -4466,10 +5329,14 @@
             "comment": "",
             "value": {
               "items": [
-                { "operator": "+" },
+                {
+                  "operator": "+"
+                },
                 {
                   "entity": {
-                    "entity": { "function": "getLastAttackingUnit" },
+                    "entity": {
+                      "function": "getLastAttackingUnit"
+                    },
                     "function": "getOwner"
                   },
                   "attribute": "qo4uN9R1Uj",
@@ -4480,7 +5347,9 @@
               "function": "calculate"
             },
             "entity": {
-              "entity": { "function": "getLastAttackingUnit" },
+              "entity": {
+                "function": "getLastAttackingUnit"
+              },
               "function": "getOwner"
             },
             "attribute": "qo4uN9R1Uj",
@@ -4500,8 +5369,18 @@
           "movementMethod": "velocity",
           "movementControlScheme": "wasd",
           "abilities": {
-            "movementWheel": { "mobilePosition": { "y": 204, "x": 35 } },
-            "lookWheel": { "mobilePosition": { "y": 204, "x": 407 } }
+            "movementWheel": {
+              "mobilePosition": {
+                "y": 204,
+                "x": 35
+              }
+            },
+            "lookWheel": {
+              "mobilePosition": {
+                "y": 204,
+                "x": 407
+              }
+            }
           },
           "mouseBehaviour": {
             "flipSpriteHorizontallyWRTMouse": false,
@@ -4564,7 +5443,9 @@
           "spriteScale": 1,
           "fixtures": [
             {
-              "shape": { "type": "rectangle" },
+              "shape": {
+                "type": "rectangle"
+              },
               "restitution": 0.01,
               "friction": 0.01,
               "density": 3
@@ -4589,10 +5470,16 @@
             "item": true,
             "debris": true
           },
-          "z-index": { "layer": 3, "depth": 3 },
+          "z-index": {
+            "layer": 3,
+            "depth": 3
+          },
           "name": "Human-body"
         },
-        "spawnPosition": { "y": 2200, "x": 1500 },
+        "spawnPosition": {
+          "y": 2200,
+          "x": 1500
+        },
         "attributes": {
           "speed": {
             "decimalPlaces": 0,
@@ -4627,36 +5514,85 @@
           }
         },
         "abilitiesJ8Gtv5hQ8j": {
-          "movementWheel": { "mobilePosition": { "y": 204, "x": 35 } },
-          "lookWheel": { "mobilePosition": { "y": 204, "x": 407 } },
-          "w": { "keyUp": "stopMovingUp", "keyDown": "moveUp" },
-          "a": { "keyUp": "stopMovingLeft", "keyDown": "moveLeft" },
-          "s": { "keyUp": "stopMovingDown", "keyDown": "moveDown" },
-          "d": { "keyUp": "stopMovingRight", "keyDown": "moveRight" },
+          "movementWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 35
+            }
+          },
+          "lookWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 407
+            }
+          },
+          "w": {
+            "keyUp": "stopMovingUp",
+            "keyDown": "moveUp"
+          },
+          "a": {
+            "keyUp": "stopMovingLeft",
+            "keyDown": "moveLeft"
+          },
+          "s": {
+            "keyUp": "stopMovingDown",
+            "keyDown": "moveDown"
+          },
+          "d": {
+            "keyUp": "stopMovingRight",
+            "keyDown": "moveRight"
+          },
           "button1": {
             "keyUp": "stopUsingItem",
             "keyDown": "startUsingItem",
-            "mobilePosition": { "x": 326, "y": 132 }
+            "mobilePosition": {
+              "x": 326,
+              "y": 132
+            }
           },
-          "up": { "keyUp": "stopMovingUp", "keyDown": "moveUp" },
-          "down": { "keyUp": "stopMovingDown", "keyDown": "moveDown" },
-          "left": { "keyUp": "stopMovingLeft", "keyDown": "moveLeft" },
-          "right": { "keyUp": "stopMovingRight", "keyDown": "moveRight" },
+          "up": {
+            "keyUp": "stopMovingUp",
+            "keyDown": "moveUp"
+          },
+          "down": {
+            "keyUp": "stopMovingDown",
+            "keyDown": "moveDown"
+          },
+          "left": {
+            "keyUp": "stopMovingLeft",
+            "keyDown": "moveLeft"
+          },
+          "right": {
+            "keyUp": "stopMovingRight",
+            "keyDown": "moveRight"
+          },
           "e": {
             "keyUp": "",
             "keyDown": "pickUp",
-            "mobilePosition": { "x": 366, "y": 85 }
+            "mobilePosition": {
+              "x": 366,
+              "y": 85
+            }
           },
-          "f": { "keyUp": "", "keyDown": "pickUp" },
+          "f": {
+            "keyUp": "",
+            "keyDown": "pickUp"
+          },
           "g": {
             "keyUp": "",
             "keyDown": "drop",
-            "mobilePosition": { "x": 365, "y": 33 }
+            "mobilePosition": {
+              "x": 365,
+              "y": 33
+            }
           },
           "b": {
             "keyUp": "",
             "keyDown": "shop",
-            "mobilePosition": { "x": 419, "y": 32 }
+            "mobilePosition": {
+              "x": 419,
+              "y": 32
+            }
           }
         },
         "baseSpeed": 53,
@@ -4678,7 +5614,10 @@
             "type": "dynamic",
             "width": 80,
             "height": 160,
-            "z-index": { "layer": 3, "depth": 3 },
+            "z-index": {
+              "layer": 3,
+              "depth": 3
+            },
             "fixedRotation": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "allowSleep": true,
@@ -4698,13 +5637,24 @@
                 "density": 1,
                 "friction": 0,
                 "restitution": 0,
-                "shape": { "type": "circle" },
+                "shape": {
+                  "type": "circle"
+                },
                 "isSensor": false
               }
             ],
             "jointType": "weldJoint",
-            "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
-            "itemAnchor": { "x": 0, "y": 0, "lowerAngle": 0, "upperAngle": 0 },
+            "unitAnchor": {
+              "x": 0,
+              "y": 33,
+              "rotation": 0
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0,
+              "lowerAngle": 0,
+              "upperAngle": 0
+            },
             "affectedByGravity": false
           }
         },
@@ -4766,8 +5716,18 @@
           "movementMethod": "velocity",
           "movementControlScheme": "wasd",
           "abilities": {
-            "movementWheel": { "mobilePosition": { "y": 204, "x": 35 } },
-            "lookWheel": { "mobilePosition": { "y": 204, "x": 407 } }
+            "movementWheel": {
+              "mobilePosition": {
+                "y": 204,
+                "x": 35
+              }
+            },
+            "lookWheel": {
+              "mobilePosition": {
+                "y": 204,
+                "x": 407
+              }
+            }
           },
           "mouseBehaviour": {
             "flipSpriteHorizontallyWRTMouse": false,
@@ -4830,7 +5790,9 @@
           "spriteScale": 1,
           "fixtures": [
             {
-              "shape": { "type": "rectangle" },
+              "shape": {
+                "type": "rectangle"
+              },
               "restitution": 0.01,
               "friction": 0.01,
               "density": 3
@@ -4855,10 +5817,16 @@
             "item": true,
             "debris": true
           },
-          "z-index": { "layer": 3, "depth": 3 },
+          "z-index": {
+            "layer": 3,
+            "depth": 3
+          },
           "name": "Human-body"
         },
-        "spawnPosition": { "y": 2200, "x": 1500 },
+        "spawnPosition": {
+          "y": 2200,
+          "x": 1500
+        },
         "attributes": {
           "speed": {
             "decimalPlaces": 0,
@@ -4893,36 +5861,85 @@
           }
         },
         "abilitiesJ8Gtv5hQ8j": {
-          "movementWheel": { "mobilePosition": { "y": 204, "x": 35 } },
-          "lookWheel": { "mobilePosition": { "y": 204, "x": 407 } },
-          "w": { "keyUp": "stopMovingUp", "keyDown": "moveUp" },
-          "a": { "keyUp": "stopMovingLeft", "keyDown": "moveLeft" },
-          "s": { "keyUp": "stopMovingDown", "keyDown": "moveDown" },
-          "d": { "keyUp": "stopMovingRight", "keyDown": "moveRight" },
+          "movementWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 35
+            }
+          },
+          "lookWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 407
+            }
+          },
+          "w": {
+            "keyUp": "stopMovingUp",
+            "keyDown": "moveUp"
+          },
+          "a": {
+            "keyUp": "stopMovingLeft",
+            "keyDown": "moveLeft"
+          },
+          "s": {
+            "keyUp": "stopMovingDown",
+            "keyDown": "moveDown"
+          },
+          "d": {
+            "keyUp": "stopMovingRight",
+            "keyDown": "moveRight"
+          },
           "button1": {
             "keyUp": "stopUsingItem",
             "keyDown": "startUsingItem",
-            "mobilePosition": { "x": 326, "y": 132 }
+            "mobilePosition": {
+              "x": 326,
+              "y": 132
+            }
           },
-          "up": { "keyUp": "stopMovingUp", "keyDown": "moveUp" },
-          "down": { "keyUp": "stopMovingDown", "keyDown": "moveDown" },
-          "left": { "keyUp": "stopMovingLeft", "keyDown": "moveLeft" },
-          "right": { "keyUp": "stopMovingRight", "keyDown": "moveRight" },
+          "up": {
+            "keyUp": "stopMovingUp",
+            "keyDown": "moveUp"
+          },
+          "down": {
+            "keyUp": "stopMovingDown",
+            "keyDown": "moveDown"
+          },
+          "left": {
+            "keyUp": "stopMovingLeft",
+            "keyDown": "moveLeft"
+          },
+          "right": {
+            "keyUp": "stopMovingRight",
+            "keyDown": "moveRight"
+          },
           "e": {
             "keyUp": "",
             "keyDown": "pickUp",
-            "mobilePosition": { "x": 366, "y": 85 }
+            "mobilePosition": {
+              "x": 366,
+              "y": 85
+            }
           },
-          "f": { "keyUp": "", "keyDown": "pickUp" },
+          "f": {
+            "keyUp": "",
+            "keyDown": "pickUp"
+          },
           "g": {
             "keyUp": "",
             "keyDown": "drop",
-            "mobilePosition": { "x": 365, "y": 33 }
+            "mobilePosition": {
+              "x": 365,
+              "y": 33
+            }
           },
           "b": {
             "keyUp": "",
             "keyDown": "shop",
-            "mobilePosition": { "x": 419, "y": 32 }
+            "mobilePosition": {
+              "x": 419,
+              "y": 32
+            }
           }
         },
         "baseSpeed": 53,
@@ -4944,7 +5961,10 @@
             "type": "dynamic",
             "width": 80,
             "height": 140,
-            "z-index": { "layer": 3, "depth": 3 },
+            "z-index": {
+              "layer": 3,
+              "depth": 3
+            },
             "fixedRotation": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "allowSleep": true,
@@ -4964,13 +5984,24 @@
                 "density": 1,
                 "friction": 0,
                 "restitution": 0,
-                "shape": { "type": "circle" },
+                "shape": {
+                  "type": "circle"
+                },
                 "isSensor": false
               }
             ],
             "jointType": "weldJoint",
-            "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
-            "itemAnchor": { "x": 0, "y": 0, "lowerAngle": 0, "upperAngle": 0 },
+            "unitAnchor": {
+              "x": 0,
+              "y": 33,
+              "rotation": 0
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0,
+              "lowerAngle": 0,
+              "upperAngle": 0
+            },
             "affectedByGravity": false
           }
         },
@@ -5028,7 +6059,11 @@
       },
       "survivor": {
         "defaultItem": [
-          { "name": "Crowbar", "value": "Crowbar", "key": "axe" }
+          {
+            "name": "Crowbar",
+            "value": "Crowbar",
+            "key": "axe"
+          }
         ],
         "confinedWithinMapBoundaries": true,
         "controls": {
@@ -5036,10 +6071,18 @@
           "movementMethod": "velocity",
           "movementControlScheme": "wasd",
           "abilities": {
-            "movementWheel": { "mobilePosition": { "y": 204, "x": 35 } },
+            "movementWheel": {
+              "mobilePosition": {
+                "y": 204,
+                "x": 35
+              }
+            },
             "lookWheel": {},
             "b": {
-              "keyUp": { "scriptName": "", "cost": {} },
+              "keyUp": {
+                "scriptName": "",
+                "cost": {}
+              },
               "keyDown": {
                 "scriptName": "vVKUuBMW90",
                 "cost": {},
@@ -5059,32 +6102,52 @@
               }
             },
             "e": {
-              "keyUp": { "scriptName": "", "cost": {} },
+              "keyUp": {
+                "scriptName": "",
+                "cost": {}
+              },
               "keyDown": {
                 "scriptName": "w2VrnZHyom",
                 "cost": {},
                 "isEntityScript": true
               },
-              "mobilePosition": { "x": 88, "y": 220 }
+              "mobilePosition": {
+                "x": 88,
+                "y": 220
+              }
             },
             "g": {
-              "keyUp": { "scriptName": "", "cost": {} },
+              "keyUp": {
+                "scriptName": "",
+                "cost": {}
+              },
               "keyDown": {
                 "scriptName": "yP67J1MMRN",
                 "cost": {},
                 "isEntityScript": true
               },
-              "mobilePosition": { "x": 357, "y": 217 }
+              "mobilePosition": {
+                "x": 357,
+                "y": 217
+              }
             },
             "button3": {
-              "keyUp": { "scriptName": "", "cost": {} },
+              "keyUp": {
+                "scriptName": "",
+                "cost": {}
+              },
               "keyDown": {
                 "scriptName": "w2VrnZHyom",
                 "cost": {},
                 "isEntityScript": true
               }
             },
-            "lookAndFireWheel": { "mobilePosition": { "x": 346, "y": 198 } }
+            "lookAndFireWheel": {
+              "mobilePosition": {
+                "x": 346,
+                "y": 198
+              }
+            }
           },
           "mouseBehaviour": {
             "flipSpriteHorizontallyWRTMouse": false,
@@ -5146,7 +6209,9 @@
           "spriteScale": 1,
           "fixtures": [
             {
-              "shape": { "type": "rectangle" },
+              "shape": {
+                "type": "rectangle"
+              },
               "restitution": 0.01,
               "friction": 0.01,
               "density": 3
@@ -5171,10 +6236,16 @@
             "item": true,
             "debris": true
           },
-          "z-index": { "layer": 3, "depth": 3 },
+          "z-index": {
+            "layer": 3,
+            "depth": 3
+          },
           "name": "Human-body"
         },
-        "spawnPosition": { "y": 2200, "x": 1500 },
+        "spawnPosition": {
+          "y": 2200,
+          "x": 1500
+        },
         "attributes": {
           "speed": {
             "decimalPlaces": 0,
@@ -5209,15 +6280,46 @@
           }
         },
         "abilities": {
-          "movementWheel": { "mobilePosition": { "y": 204, "x": 35 } },
-          "lookWheel": { "mobilePosition": { "y": 204, "x": 407 } },
-          "w": { "keyUp": "stopMovingUp", "keyDown": "moveUp" },
-          "a": { "keyUp": "stopMovingLeft", "keyDown": "moveLeft" },
-          "s": { "keyUp": "stopMovingDown", "keyDown": "moveDown" },
-          "d": { "keyUp": "stopMovingRight", "keyDown": "moveRight" },
-          "g": { "keyUp": "", "keyDown": "drop" },
-          "e": { "keyUp": "", "keyDown": "pickUp" },
-          "button1": { "keyUp": "stopUse", "keyDown": "use" }
+          "movementWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 35
+            }
+          },
+          "lookWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 407
+            }
+          },
+          "w": {
+            "keyUp": "stopMovingUp",
+            "keyDown": "moveUp"
+          },
+          "a": {
+            "keyUp": "stopMovingLeft",
+            "keyDown": "moveLeft"
+          },
+          "s": {
+            "keyUp": "stopMovingDown",
+            "keyDown": "moveDown"
+          },
+          "d": {
+            "keyUp": "stopMovingRight",
+            "keyDown": "moveRight"
+          },
+          "g": {
+            "keyUp": "",
+            "keyDown": "drop"
+          },
+          "e": {
+            "keyUp": "",
+            "keyDown": "pickUp"
+          },
+          "button1": {
+            "keyUp": "stopUse",
+            "keyDown": "use"
+          }
         },
         "baseSpeed": 53,
         "price": {},
@@ -5238,7 +6340,10 @@
             "type": "dynamic",
             "width": 64,
             "height": 64,
-            "z-index": { "layer": 3, "depth": 3 },
+            "z-index": {
+              "layer": 3,
+              "depth": 3
+            },
             "fixedRotation": false,
             "bulletDestroyedOnCollisionWithWall/unit": false,
             "allowSleep": true,
@@ -5258,13 +6363,24 @@
                 "density": 1,
                 "friction": 0,
                 "restitution": 0,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "isSensor": false
               }
             ],
             "jointType": "weldJoint",
-            "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
-            "itemAnchor": { "x": 0, "y": 0, "lowerAngle": 0, "upperAngle": 0 },
+            "unitAnchor": {
+              "x": 0,
+              "y": 33,
+              "rotation": 0
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0,
+              "lowerAngle": 0,
+              "upperAngle": 0
+            },
             "affectedByGravity": false
           }
         },
@@ -5305,17 +6421,36 @@
           }
         },
         "defaultItems": [
-          { "name": "Axe", "value": "Axe", "key": "axe" },
-          { "key": "KSqaFl6hmd", "value": "Pickaxe", "name": "Pickaxe" },
-          { "key": "n5d5HmCrVM", "value": "Wood", "name": "Wood" },
-          { "key": "sfXSdT6Oht", "value": "Stone", "name": "Stone" }
+          {
+            "name": "Axe",
+            "value": "Axe",
+            "key": "axe"
+          },
+          {
+            "key": "KSqaFl6hmd",
+            "value": "Pickaxe",
+            "name": "Pickaxe"
+          },
+          {
+            "key": "n5d5HmCrVM",
+            "value": "Wood",
+            "name": "Wood"
+          },
+          {
+            "key": "sfXSdT6Oht",
+            "value": "Stone",
+            "name": "Stone"
+          }
         ],
         "backpackSize": 12,
         "scripts": {
           "YFeMQ20gBX": {
             "triggers": [],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
@@ -5324,7 +6459,10 @@
                 "type": "startUsingItem",
                 "entity": {
                   "function": "getItemCurrentlyHeldByUnit",
-                  "entity": { "function": "thisEntity", "vars": [] },
+                  "entity": {
+                    "function": "thisEntity",
+                    "vars": []
+                  },
                   "vars": []
                 },
                 "hasFixedCSP": null,
@@ -5346,7 +6484,10 @@
           "DOrbWp0AGz": {
             "triggers": [],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
@@ -5355,7 +6496,10 @@
                 "type": "stopUsingItem",
                 "entity": {
                   "function": "getItemCurrentlyHeldByUnit",
-                  "entity": { "function": "thisEntity", "vars": [] },
+                  "entity": {
+                    "function": "thisEntity",
+                    "vars": []
+                  },
                   "vars": []
                 },
                 "hasFixedCSP": null,
@@ -5371,7 +6515,10 @@
           "w2VrnZHyom": {
             "triggers": [],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
@@ -5385,7 +6532,10 @@
                     "entity": {
                       "function": "thisEntity",
                       "vars": [
-                        { "id": "selectedEntity", "source": "forAllEntities" },
+                        {
+                          "id": "selectedEntity",
+                          "source": "forAllEntities"
+                        },
                         {
                           "id": "getSelectedEntity",
                           "source": "forAllEntities"
@@ -5393,20 +6543,35 @@
                       ]
                     },
                     "vars": [
-                      { "id": "selectedEntity", "source": "forAllEntities" },
-                      { "id": "getSelectedEntity", "source": "forAllEntities" }
+                      {
+                        "id": "selectedEntity",
+                        "source": "forAllEntities"
+                      },
+                      {
+                        "id": "getSelectedEntity",
+                        "source": "forAllEntities"
+                      }
                     ]
                   },
                   "vars": [
-                    { "id": "selectedEntity", "source": "forAllEntities" },
-                    { "id": "getSelectedEntity", "source": "forAllEntities" }
+                    {
+                      "id": "selectedEntity",
+                      "source": "forAllEntities"
+                    },
+                    {
+                      "id": "getSelectedEntity",
+                      "source": "forAllEntities"
+                    }
                   ]
                 },
                 "actions": [
                   {
                     "type": "condition",
                     "conditions": [
-                      { "operandType": "string", "operator": "==" },
+                      {
+                        "operandType": "string",
+                        "operator": "=="
+                      },
                       {
                         "function": "getEntityType",
                         "entity": {
@@ -5478,14 +6643,26 @@
                     ],
                     "else": [],
                     "vars": [
-                      { "id": "selectedEntity", "source": "forAllEntities" },
-                      { "id": "getSelectedEntity", "source": "forAllEntities" }
+                      {
+                        "id": "selectedEntity",
+                        "source": "forAllEntities"
+                      },
+                      {
+                        "id": "getSelectedEntity",
+                        "source": "forAllEntities"
+                      }
                     ]
                   }
                 ],
                 "vars": [
-                  { "id": "selectedEntity", "source": "forAllEntities" },
-                  { "id": "getSelectedEntity", "source": "forAllEntities" }
+                  {
+                    "id": "selectedEntity",
+                    "source": "forAllEntities"
+                  },
+                  {
+                    "id": "getSelectedEntity",
+                    "source": "forAllEntities"
+                  }
                 ]
               }
             ],
@@ -5497,7 +6674,10 @@
           "yP67J1MMRN": {
             "triggers": [],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
@@ -5506,12 +6686,18 @@
                 "type": "dropItemAtPosition",
                 "item": {
                   "function": "getItemCurrentlyHeldByUnit",
-                  "entity": { "function": "thisEntity", "vars": [] },
+                  "entity": {
+                    "function": "thisEntity",
+                    "vars": []
+                  },
                   "vars": []
                 },
                 "position": {
                   "function": "getEntityPosition",
-                  "entity": { "function": "thisEntity", "vars": [] },
+                  "entity": {
+                    "function": "thisEntity",
+                    "vars": []
+                  },
                   "vars": []
                 },
                 "disabled": true,
@@ -5520,12 +6706,18 @@
               {
                 "type": "condition",
                 "conditions": [
-                  { "operator": ">=", "operandType": "number" },
+                  {
+                    "operator": ">=",
+                    "operandType": "number"
+                  },
                   {
                     "function": "getItemQuantity",
                     "item": {
                       "function": "getItemCurrentlyHeldByUnit",
-                      "entity": { "function": "thisEntity", "vars": [] },
+                      "entity": {
+                        "function": "thisEntity",
+                        "vars": []
+                      },
                       "vars": []
                     },
                     "vars": []
@@ -5539,7 +6731,10 @@
                       "function": "getItemTypeOfItem",
                       "entity": {
                         "function": "getItemCurrentlyHeldByUnit",
-                        "entity": { "function": "thisEntity", "vars": [] },
+                        "entity": {
+                          "function": "thisEntity",
+                          "vars": []
+                        },
                         "vars": []
                       },
                       "vars": []
@@ -5548,7 +6743,10 @@
                       "function": "getEntityPosition",
                       "entity": {
                         "function": "getItemCurrentlyHeldByUnit",
-                        "entity": { "function": "thisEntity", "vars": [] },
+                        "entity": {
+                          "function": "thisEntity",
+                          "vars": []
+                        },
                         "vars": []
                       },
                       "vars": []
@@ -5559,18 +6757,25 @@
                     "type": "updateItemQuantity",
                     "entity": {
                       "function": "getItemCurrentlyHeldByUnit",
-                      "entity": { "function": "thisEntity", "vars": [] },
+                      "entity": {
+                        "function": "thisEntity",
+                        "vars": []
+                      },
                       "vars": []
                     },
                     "quantity": {
                       "function": "calculate",
                       "items": [
-                        { "operator": "-" },
+                        {
+                          "operator": "-"
+                        },
                         {
                           "function": "getItemQuantity",
                           "item": {
                             "function": "getItemCurrentlyHeldByUnit",
-                            "entity": { "function": "thisEntity" }
+                            "entity": {
+                              "function": "thisEntity"
+                            }
                           }
                         },
                         1
@@ -5591,9 +6796,16 @@
             "order": 3
           },
           "ERfAP1AK97": {
-            "triggers": [{ "type": "frameTick" }],
+            "triggers": [
+              {
+                "type": "frameTick"
+              }
+            ],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
@@ -5612,7 +6824,10 @@
                     "entity": {
                       "function": "thisEntity",
                       "vars": [
-                        { "id": "selectedEntity", "source": "forAllEntities" },
+                        {
+                          "id": "selectedEntity",
+                          "source": "forAllEntities"
+                        },
                         {
                           "id": "getSelectedEntity",
                           "source": "forAllEntities"
@@ -5620,20 +6835,35 @@
                       ]
                     },
                     "vars": [
-                      { "id": "selectedEntity", "source": "forAllEntities" },
-                      { "id": "getSelectedEntity", "source": "forAllEntities" }
+                      {
+                        "id": "selectedEntity",
+                        "source": "forAllEntities"
+                      },
+                      {
+                        "id": "getSelectedEntity",
+                        "source": "forAllEntities"
+                      }
                     ]
                   },
                   "vars": [
-                    { "id": "selectedEntity", "source": "forAllEntities" },
-                    { "id": "getSelectedEntity", "source": "forAllEntities" }
+                    {
+                      "id": "selectedEntity",
+                      "source": "forAllEntities"
+                    },
+                    {
+                      "id": "getSelectedEntity",
+                      "source": "forAllEntities"
+                    }
                   ]
                 },
                 "actions": [
                   {
                     "type": "condition",
                     "conditions": [
-                      { "operandType": "string", "operator": "==" },
+                      {
+                        "operandType": "string",
+                        "operator": "=="
+                      },
                       {
                         "function": "getEntityType",
                         "entity": {
@@ -5666,7 +6896,10 @@
                       {
                         "type": "condition",
                         "conditions": [
-                          { "operandType": "itemType", "operator": "==" },
+                          {
+                            "operandType": "itemType",
+                            "operator": "=="
+                          },
                           {
                             "function": "getItemTypeOfItem",
                             "entity": {
@@ -5740,7 +6973,10 @@
                           {
                             "type": "condition",
                             "conditions": [
-                              { "operandType": "itemType", "operator": "==" },
+                              {
+                                "operandType": "itemType",
+                                "operator": "=="
+                              },
                               {
                                 "function": "getItemTypeOfItem",
                                 "entity": {
@@ -5837,14 +7073,26 @@
                     ],
                     "else": [],
                     "vars": [
-                      { "id": "selectedEntity", "source": "forAllEntities" },
-                      { "id": "getSelectedEntity", "source": "forAllEntities" }
+                      {
+                        "id": "selectedEntity",
+                        "source": "forAllEntities"
+                      },
+                      {
+                        "id": "getSelectedEntity",
+                        "source": "forAllEntities"
+                      }
                     ]
                   }
                 ],
                 "vars": [
-                  { "id": "selectedEntity", "source": "forAllEntities" },
-                  { "id": "getSelectedEntity", "source": "forAllEntities" }
+                  {
+                    "id": "selectedEntity",
+                    "source": "forAllEntities"
+                  },
+                  {
+                    "id": "getSelectedEntity",
+                    "source": "forAllEntities"
+                  }
                 ]
               }
             ],
@@ -5856,7 +7104,10 @@
           "vVKUuBMW90": {
             "triggers": [],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
@@ -5867,7 +7118,10 @@
                 "shop": "mainShop",
                 "player": {
                   "function": "getOwner",
-                  "entity": { "function": "thisEntity", "vars": [] },
+                  "entity": {
+                    "function": "thisEntity",
+                    "vars": []
+                  },
                   "vars": []
                 },
                 "vars": []
@@ -5880,11 +7134,18 @@
           },
           "5TVP3pwIrT": {
             "triggers": [
-              { "type": "entityCreated" },
-              { "type": "unitPickedAnItem" }
+              {
+                "type": "entityCreated"
+              },
+              {
+                "type": "unitPickedAnItem"
+              }
             ],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
@@ -5894,7 +7155,9 @@
                 "item": {
                   "function": "getItemAtSlot",
                   "slot": 7,
-                  "unit": { "function": "thisEntity" }
+                  "unit": {
+                    "function": "thisEntity"
+                  }
                 },
                 "string": "OliveDrab"
               },
@@ -5903,7 +7166,9 @@
                 "item": {
                   "function": "getItemAtSlot",
                   "slot": 8,
-                  "unit": { "function": "thisEntity" }
+                  "unit": {
+                    "function": "thisEntity"
+                  }
                 },
                 "string": "OliveDrab"
               }
@@ -5928,7 +7193,13 @@
           "enabled": false
         },
         "unitTypes": {
-          "survivor": { "scripts": { "E8ydBkXhdl": { "name": "New Script" } } }
+          "survivor": {
+            "scripts": {
+              "E8ydBkXhdl": {
+                "name": "New Script"
+              }
+            }
+          }
         }
       },
       "tree": {
@@ -5937,8 +7208,18 @@
           "movementMethod": "velocity",
           "movementControlScheme": "wasd",
           "abilities": {
-            "movementWheel": { "mobilePosition": { "y": 204, "x": 35 } },
-            "lookWheel": { "mobilePosition": { "y": 204, "x": 407 } }
+            "movementWheel": {
+              "mobilePosition": {
+                "y": 204,
+                "x": 35
+              }
+            },
+            "lookWheel": {
+              "mobilePosition": {
+                "y": 204,
+                "x": 407
+              }
+            }
           },
           "mouseBehaviour": {
             "flipSpriteHorizontallyWRTMouse": false,
@@ -5983,7 +7264,9 @@
           "spriteScale": 1,
           "fixtures": [
             {
-              "shape": { "type": "rectangle" },
+              "shape": {
+                "type": "rectangle"
+              },
               "restitution": 0.01,
               "friction": 0.01,
               "density": 3
@@ -6008,10 +7291,16 @@
             "item": true,
             "debris": true
           },
-          "z-index": { "layer": 3, "depth": 3 },
+          "z-index": {
+            "layer": 3,
+            "depth": 3
+          },
           "name": "Human-body"
         },
-        "spawnPosition": { "y": 2200, "x": 1500 },
+        "spawnPosition": {
+          "y": 2200,
+          "x": 1500
+        },
         "attributes": {
           "speed": {
             "decimalPlaces": 0,
@@ -6041,36 +7330,85 @@
           }
         },
         "abilitiesJ8Gtv5hQ8j": {
-          "movementWheel": { "mobilePosition": { "y": 204, "x": 35 } },
-          "lookWheel": { "mobilePosition": { "y": 204, "x": 407 } },
-          "w": { "keyUp": "stopMovingUp", "keyDown": "moveUp" },
-          "a": { "keyUp": "stopMovingLeft", "keyDown": "moveLeft" },
-          "s": { "keyUp": "stopMovingDown", "keyDown": "moveDown" },
-          "d": { "keyUp": "stopMovingRight", "keyDown": "moveRight" },
+          "movementWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 35
+            }
+          },
+          "lookWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 407
+            }
+          },
+          "w": {
+            "keyUp": "stopMovingUp",
+            "keyDown": "moveUp"
+          },
+          "a": {
+            "keyUp": "stopMovingLeft",
+            "keyDown": "moveLeft"
+          },
+          "s": {
+            "keyUp": "stopMovingDown",
+            "keyDown": "moveDown"
+          },
+          "d": {
+            "keyUp": "stopMovingRight",
+            "keyDown": "moveRight"
+          },
           "button1": {
             "keyUp": "stopUsingItem",
             "keyDown": "startUsingItem",
-            "mobilePosition": { "x": 326, "y": 132 }
+            "mobilePosition": {
+              "x": 326,
+              "y": 132
+            }
           },
-          "up": { "keyUp": "stopMovingUp", "keyDown": "moveUp" },
-          "down": { "keyUp": "stopMovingDown", "keyDown": "moveDown" },
-          "left": { "keyUp": "stopMovingLeft", "keyDown": "moveLeft" },
-          "right": { "keyUp": "stopMovingRight", "keyDown": "moveRight" },
+          "up": {
+            "keyUp": "stopMovingUp",
+            "keyDown": "moveUp"
+          },
+          "down": {
+            "keyUp": "stopMovingDown",
+            "keyDown": "moveDown"
+          },
+          "left": {
+            "keyUp": "stopMovingLeft",
+            "keyDown": "moveLeft"
+          },
+          "right": {
+            "keyUp": "stopMovingRight",
+            "keyDown": "moveRight"
+          },
           "e": {
             "keyUp": "",
             "keyDown": "pickUp",
-            "mobilePosition": { "x": 366, "y": 85 }
+            "mobilePosition": {
+              "x": 366,
+              "y": 85
+            }
           },
-          "f": { "keyUp": "", "keyDown": "pickUp" },
+          "f": {
+            "keyUp": "",
+            "keyDown": "pickUp"
+          },
           "g": {
             "keyUp": "",
             "keyDown": "drop",
-            "mobilePosition": { "x": 365, "y": 33 }
+            "mobilePosition": {
+              "x": 365,
+              "y": 33
+            }
           },
           "b": {
             "keyUp": "",
             "keyDown": "shop",
-            "mobilePosition": { "x": 419, "y": 32 }
+            "mobilePosition": {
+              "x": 419,
+              "y": 32
+            }
           }
         },
         "baseSpeed": 53,
@@ -6092,7 +7430,10 @@
             "type": "static",
             "width": 200,
             "height": 200,
-            "z-index": { "layer": 5, "depth": 3 },
+            "z-index": {
+              "layer": 5,
+              "depth": 3
+            },
             "fixedRotation": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "allowSleep": true,
@@ -6112,21 +7453,44 @@
                 "density": 1,
                 "friction": 0,
                 "restitution": 0,
-                "shape": { "type": "circle" },
+                "shape": {
+                  "type": "circle"
+                },
                 "isSensor": true
               }
             ],
             "jointType": "weldJoint",
-            "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
-            "itemAnchor": { "x": 0, "y": 0, "lowerAngle": 0, "upperAngle": 0 },
+            "unitAnchor": {
+              "x": 0,
+              "y": 33,
+              "rotation": 0
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0,
+              "lowerAngle": 0,
+              "upperAngle": 0
+            },
             "affectedByGravity": false
           }
         },
         "variables": {},
         "effects": {
-          "destroy": { "animation": "", "sound": {}, "projectileType": "" },
-          "create": { "animation": "", "sound": {}, "projectileType": "" },
-          "move": { "animation": "", "sound": {}, "projectileType": "" },
+          "destroy": {
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          },
+          "create": {
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          },
+          "move": {
+            "animation": "",
+            "sound": {},
+            "projectileType": ""
+          },
           "attacked": {
             "tween": "recoil",
             "animation": "",
@@ -6174,20 +7538,43 @@
             "animation": "",
             "tween": "recoil"
           },
-          "move": { "projectileType": "", "sound": {}, "animation": "" },
-          "create": { "projectileType": "", "sound": {}, "animation": "" },
-          "destroy": { "projectileType": "", "sound": {}, "animation": "" }
+          "move": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
+          "create": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          },
+          "destroy": {
+            "projectileType": "",
+            "sound": {},
+            "animation": ""
+          }
         },
         "variables": {},
         "bodies": {
           "default": {
-            "itemAnchor": { "upperAngle": 0, "lowerAngle": 0, "y": 0, "x": 0 },
-            "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+            "itemAnchor": {
+              "upperAngle": 0,
+              "lowerAngle": 0,
+              "y": 0,
+              "x": 0
+            },
+            "unitAnchor": {
+              "rotation": 0,
+              "y": 33,
+              "x": 0
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": false,
-                "shape": { "type": "circle" },
+                "shape": {
+                  "type": "circle"
+                },
                 "restitution": 0,
                 "friction": 0,
                 "density": 1
@@ -6207,7 +7594,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 3, "layer": 3 },
+            "z-index": {
+              "depth": 3,
+              "layer": 3
+            },
             "height": 64,
             "width": 85,
             "type": "static",
@@ -6230,36 +7620,85 @@
         "baseSpeed": 53,
         "abilitiesJ8Gtv5hQ8j": {
           "b": {
-            "mobilePosition": { "y": 32, "x": 419 },
+            "mobilePosition": {
+              "y": 32,
+              "x": 419
+            },
             "keyDown": "shop",
             "keyUp": ""
           },
           "g": {
-            "mobilePosition": { "y": 33, "x": 365 },
+            "mobilePosition": {
+              "y": 33,
+              "x": 365
+            },
             "keyDown": "drop",
             "keyUp": ""
           },
-          "f": { "keyDown": "pickUp", "keyUp": "" },
-          "e": {
-            "mobilePosition": { "y": 85, "x": 366 },
+          "f": {
             "keyDown": "pickUp",
             "keyUp": ""
           },
-          "right": { "keyDown": "moveRight", "keyUp": "stopMovingRight" },
-          "left": { "keyDown": "moveLeft", "keyUp": "stopMovingLeft" },
-          "down": { "keyDown": "moveDown", "keyUp": "stopMovingDown" },
-          "up": { "keyDown": "moveUp", "keyUp": "stopMovingUp" },
+          "e": {
+            "mobilePosition": {
+              "y": 85,
+              "x": 366
+            },
+            "keyDown": "pickUp",
+            "keyUp": ""
+          },
+          "right": {
+            "keyDown": "moveRight",
+            "keyUp": "stopMovingRight"
+          },
+          "left": {
+            "keyDown": "moveLeft",
+            "keyUp": "stopMovingLeft"
+          },
+          "down": {
+            "keyDown": "moveDown",
+            "keyUp": "stopMovingDown"
+          },
+          "up": {
+            "keyDown": "moveUp",
+            "keyUp": "stopMovingUp"
+          },
           "button1": {
-            "mobilePosition": { "y": 132, "x": 326 },
+            "mobilePosition": {
+              "y": 132,
+              "x": 326
+            },
             "keyDown": "startUsingItem",
             "keyUp": "stopUsingItem"
           },
-          "d": { "keyDown": "moveRight", "keyUp": "stopMovingRight" },
-          "s": { "keyDown": "moveDown", "keyUp": "stopMovingDown" },
-          "a": { "keyDown": "moveLeft", "keyUp": "stopMovingLeft" },
-          "w": { "keyDown": "moveUp", "keyUp": "stopMovingUp" },
-          "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
-          "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } }
+          "d": {
+            "keyDown": "moveRight",
+            "keyUp": "stopMovingRight"
+          },
+          "s": {
+            "keyDown": "moveDown",
+            "keyUp": "stopMovingDown"
+          },
+          "a": {
+            "keyDown": "moveLeft",
+            "keyUp": "stopMovingLeft"
+          },
+          "w": {
+            "keyDown": "moveUp",
+            "keyUp": "stopMovingUp"
+          },
+          "lookWheel": {
+            "mobilePosition": {
+              "x": 407,
+              "y": 204
+            }
+          },
+          "movementWheel": {
+            "mobilePosition": {
+              "x": 35,
+              "y": 204
+            }
+          }
         },
         "attributes": {
           "health": {
@@ -6289,10 +7728,16 @@
             "decimalPlaces": 0
           }
         },
-        "spawnPosition": { "x": 1500, "y": 2200 },
+        "spawnPosition": {
+          "x": 1500,
+          "y": 2200
+        },
         "body": {
           "name": "Human-body",
-          "z-index": { "depth": 3, "layer": 3 },
+          "z-index": {
+            "depth": 3,
+            "layer": 3
+          },
           "collidesWith": {
             "debris": true,
             "item": true,
@@ -6317,7 +7762,9 @@
               "density": 3,
               "friction": 0.01,
               "restitution": 0.01,
-              "shape": { "type": "rectangle" }
+              "shape": {
+                "type": "rectangle"
+              }
             }
           ],
           "spriteScale": 1
@@ -6360,8 +7807,18 @@
             "flipSpriteHorizontallyWRTMouse": false
           },
           "abilities": {
-            "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
-            "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } }
+            "lookWheel": {
+              "mobilePosition": {
+                "x": 407,
+                "y": 204
+              }
+            },
+            "movementWheel": {
+              "mobilePosition": {
+                "x": 35,
+                "y": 204
+              }
+            }
           },
           "movementControlScheme": "wasd",
           "permittedInventorySlots": [],
@@ -6423,13 +7880,24 @@
         "variables": {},
         "bodies": {
           "default": {
-            "itemAnchor": { "upperAngle": 0, "lowerAngle": 0, "y": 0, "x": 0 },
-            "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+            "itemAnchor": {
+              "upperAngle": 0,
+              "lowerAngle": 0,
+              "y": 0,
+              "x": 0
+            },
+            "unitAnchor": {
+              "rotation": 0,
+              "y": 33,
+              "x": 0
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": false,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0,
                 "friction": 0,
                 "density": 1
@@ -6449,7 +7917,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 3, "layer": 3 },
+            "z-index": {
+              "depth": 3,
+              "layer": 3
+            },
             "height": 32,
             "width": 128,
             "type": "static",
@@ -6459,13 +7930,22 @@
           },
           "dropped": {
             "bullet": false,
-            "itemAnchor": { "y": 40, "x": 0 },
-            "unitAnchor": { "rotation": 90, "x": 0, "y": 12 },
+            "itemAnchor": {
+              "y": 40,
+              "x": 0
+            },
+            "unitAnchor": {
+              "rotation": 90,
+              "x": 0,
+              "y": 12
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": true,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0.01,
                 "friction": 0.01,
                 "density": 1
@@ -6485,7 +7965,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 10, "layer": 3 },
+            "z-index": {
+              "depth": 10,
+              "layer": 3
+            },
             "height": 16,
             "width": 64,
             "type": "static",
@@ -6507,36 +7990,85 @@
         "baseSpeed": 53,
         "abilitiesJ8Gtv5HQ8JREnjD": {
           "b": {
-            "mobilePosition": { "y": 32, "x": 419 },
+            "mobilePosition": {
+              "y": 32,
+              "x": 419
+            },
             "keyDown": "shop",
             "keyUp": ""
           },
           "g": {
-            "mobilePosition": { "y": 33, "x": 365 },
+            "mobilePosition": {
+              "y": 33,
+              "x": 365
+            },
             "keyDown": "drop",
             "keyUp": ""
           },
-          "f": { "keyDown": "pickUp", "keyUp": "" },
-          "e": {
-            "mobilePosition": { "y": 85, "x": 366 },
+          "f": {
             "keyDown": "pickUp",
             "keyUp": ""
           },
-          "right": { "keyDown": "moveRight", "keyUp": "stopMovingRight" },
-          "left": { "keyDown": "moveLeft", "keyUp": "stopMovingLeft" },
-          "down": { "keyDown": "moveDown", "keyUp": "stopMovingDown" },
-          "up": { "keyDown": "moveUp", "keyUp": "stopMovingUp" },
+          "e": {
+            "mobilePosition": {
+              "y": 85,
+              "x": 366
+            },
+            "keyDown": "pickUp",
+            "keyUp": ""
+          },
+          "right": {
+            "keyDown": "moveRight",
+            "keyUp": "stopMovingRight"
+          },
+          "left": {
+            "keyDown": "moveLeft",
+            "keyUp": "stopMovingLeft"
+          },
+          "down": {
+            "keyDown": "moveDown",
+            "keyUp": "stopMovingDown"
+          },
+          "up": {
+            "keyDown": "moveUp",
+            "keyUp": "stopMovingUp"
+          },
           "button1": {
-            "mobilePosition": { "y": 132, "x": 326 },
+            "mobilePosition": {
+              "y": 132,
+              "x": 326
+            },
             "keyDown": "startUsingItem",
             "keyUp": "stopUsingItem"
           },
-          "d": { "keyDown": "moveRight", "keyUp": "stopMovingRight" },
-          "s": { "keyDown": "moveDown", "keyUp": "stopMovingDown" },
-          "a": { "keyDown": "moveLeft", "keyUp": "stopMovingLeft" },
-          "w": { "keyDown": "moveUp", "keyUp": "stopMovingUp" },
-          "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
-          "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } }
+          "d": {
+            "keyDown": "moveRight",
+            "keyUp": "stopMovingRight"
+          },
+          "s": {
+            "keyDown": "moveDown",
+            "keyUp": "stopMovingDown"
+          },
+          "a": {
+            "keyDown": "moveLeft",
+            "keyUp": "stopMovingLeft"
+          },
+          "w": {
+            "keyDown": "moveUp",
+            "keyUp": "stopMovingUp"
+          },
+          "lookWheel": {
+            "mobilePosition": {
+              "x": 407,
+              "y": 204
+            }
+          },
+          "movementWheel": {
+            "mobilePosition": {
+              "x": 35,
+              "y": 204
+            }
+          }
         },
         "attributes": {
           "health": {
@@ -6572,10 +8104,16 @@
             "decimalPlaces": 0
           }
         },
-        "spawnPosition": { "x": 1500, "y": 2200 },
+        "spawnPosition": {
+          "x": 1500,
+          "y": 2200
+        },
         "body": {
           "name": "Human-body",
-          "z-index": { "depth": 3, "layer": 3 },
+          "z-index": {
+            "depth": 3,
+            "layer": 3
+          },
           "collidesWith": {
             "debris": true,
             "item": true,
@@ -6600,7 +8138,9 @@
               "density": 3,
               "friction": 0.01,
               "restitution": 0.01,
-              "shape": { "type": "rectangle" }
+              "shape": {
+                "type": "rectangle"
+              }
             }
           ],
           "spriteScale": 1
@@ -6643,8 +8183,18 @@
             "flipSpriteHorizontallyWRTMouse": false
           },
           "abilities": {
-            "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
-            "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } }
+            "lookWheel": {
+              "mobilePosition": {
+                "x": 407,
+                "y": 204
+              }
+            },
+            "movementWheel": {
+              "mobilePosition": {
+                "x": 35,
+                "y": 204
+              }
+            }
           },
           "movementControlScheme": "wasd",
           "movementMethod": "force",
@@ -6709,13 +8259,24 @@
         "variables": {},
         "bodies": {
           "default": {
-            "itemAnchor": { "upperAngle": 0, "lowerAngle": 0, "y": 0, "x": 0 },
-            "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+            "itemAnchor": {
+              "upperAngle": 0,
+              "lowerAngle": 0,
+              "y": 0,
+              "x": 0
+            },
+            "unitAnchor": {
+              "rotation": 0,
+              "y": 33,
+              "x": 0
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": false,
-                "shape": { "type": "circle" },
+                "shape": {
+                  "type": "circle"
+                },
                 "restitution": 0,
                 "friction": 0,
                 "density": 1
@@ -6735,7 +8296,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 3, "layer": 3 },
+            "z-index": {
+              "depth": 3,
+              "layer": 3
+            },
             "height": 32,
             "width": 125,
             "type": "static",
@@ -6745,13 +8309,22 @@
           },
           "dropped": {
             "bullet": false,
-            "itemAnchor": { "y": 40, "x": 0 },
-            "unitAnchor": { "rotation": 90, "x": 0, "y": 12 },
+            "itemAnchor": {
+              "y": 40,
+              "x": 0
+            },
+            "unitAnchor": {
+              "rotation": 90,
+              "x": 0,
+              "y": 12
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": true,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0.01,
                 "friction": 0.01,
                 "density": 1
@@ -6771,7 +8344,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 1, "layer": 3 },
+            "z-index": {
+              "depth": 1,
+              "layer": 3
+            },
             "height": 32,
             "width": 32,
             "type": "static",
@@ -6793,36 +8369,85 @@
         "baseSpeed": 53,
         "abilitiesJ8Gtv5HQ8JREnjD": {
           "b": {
-            "mobilePosition": { "y": 32, "x": 419 },
+            "mobilePosition": {
+              "y": 32,
+              "x": 419
+            },
             "keyDown": "shop",
             "keyUp": ""
           },
           "g": {
-            "mobilePosition": { "y": 33, "x": 365 },
+            "mobilePosition": {
+              "y": 33,
+              "x": 365
+            },
             "keyDown": "drop",
             "keyUp": ""
           },
-          "f": { "keyDown": "pickUp", "keyUp": "" },
-          "e": {
-            "mobilePosition": { "y": 85, "x": 366 },
+          "f": {
             "keyDown": "pickUp",
             "keyUp": ""
           },
-          "right": { "keyDown": "moveRight", "keyUp": "stopMovingRight" },
-          "left": { "keyDown": "moveLeft", "keyUp": "stopMovingLeft" },
-          "down": { "keyDown": "moveDown", "keyUp": "stopMovingDown" },
-          "up": { "keyDown": "moveUp", "keyUp": "stopMovingUp" },
+          "e": {
+            "mobilePosition": {
+              "y": 85,
+              "x": 366
+            },
+            "keyDown": "pickUp",
+            "keyUp": ""
+          },
+          "right": {
+            "keyDown": "moveRight",
+            "keyUp": "stopMovingRight"
+          },
+          "left": {
+            "keyDown": "moveLeft",
+            "keyUp": "stopMovingLeft"
+          },
+          "down": {
+            "keyDown": "moveDown",
+            "keyUp": "stopMovingDown"
+          },
+          "up": {
+            "keyDown": "moveUp",
+            "keyUp": "stopMovingUp"
+          },
           "button1": {
-            "mobilePosition": { "y": 132, "x": 326 },
+            "mobilePosition": {
+              "y": 132,
+              "x": 326
+            },
             "keyDown": "startUsingItem",
             "keyUp": "stopUsingItem"
           },
-          "d": { "keyDown": "moveRight", "keyUp": "stopMovingRight" },
-          "s": { "keyDown": "moveDown", "keyUp": "stopMovingDown" },
-          "a": { "keyDown": "moveLeft", "keyUp": "stopMovingLeft" },
-          "w": { "keyDown": "moveUp", "keyUp": "stopMovingUp" },
-          "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
-          "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } }
+          "d": {
+            "keyDown": "moveRight",
+            "keyUp": "stopMovingRight"
+          },
+          "s": {
+            "keyDown": "moveDown",
+            "keyUp": "stopMovingDown"
+          },
+          "a": {
+            "keyDown": "moveLeft",
+            "keyUp": "stopMovingLeft"
+          },
+          "w": {
+            "keyDown": "moveUp",
+            "keyUp": "stopMovingUp"
+          },
+          "lookWheel": {
+            "mobilePosition": {
+              "x": 407,
+              "y": 204
+            }
+          },
+          "movementWheel": {
+            "mobilePosition": {
+              "x": 35,
+              "y": 204
+            }
+          }
         },
         "attributes": {
           "health": {
@@ -6858,10 +8483,16 @@
             "decimalPlaces": 0
           }
         },
-        "spawnPosition": { "x": 1500, "y": 2200 },
+        "spawnPosition": {
+          "x": 1500,
+          "y": 2200
+        },
         "body": {
           "name": "Human-body",
-          "z-index": { "depth": 3, "layer": 3 },
+          "z-index": {
+            "depth": 3,
+            "layer": 3
+          },
           "collidesWith": {
             "debris": true,
             "item": true,
@@ -6886,7 +8517,9 @@
               "density": 3,
               "friction": 0.01,
               "restitution": 0.01,
-              "shape": { "type": "rectangle" }
+              "shape": {
+                "type": "rectangle"
+              }
             }
           ],
           "spriteScale": 1
@@ -6929,8 +8562,18 @@
             "flipSpriteHorizontallyWRTMouse": false
           },
           "abilities": {
-            "lookWheel": { "mobilePosition": { "x": 407, "y": 204 } },
-            "movementWheel": { "mobilePosition": { "x": 35, "y": 204 } }
+            "lookWheel": {
+              "mobilePosition": {
+                "x": 407,
+                "y": 204
+              }
+            },
+            "movementWheel": {
+              "mobilePosition": {
+                "x": 35,
+                "y": 204
+              }
+            }
           },
           "movementControlScheme": "wasd",
           "movementMethod": "force",
@@ -6948,8 +8591,18 @@
         "controls": {
           "movementControlScheme": "wasd",
           "abilities": {
-            "movementWheel": { "mobilePosition": { "y": 204, "x": 35 } },
-            "lookWheel": { "mobilePosition": { "y": 204, "x": 407 } }
+            "movementWheel": {
+              "mobilePosition": {
+                "y": 204,
+                "x": 35
+              }
+            },
+            "lookWheel": {
+              "mobilePosition": {
+                "y": 204,
+                "x": 407
+              }
+            }
           },
           "mouseBehaviour": {
             "flipSpriteHorizontallyWRTMouse": false,
@@ -6994,7 +8647,9 @@
           "spriteScale": 1,
           "fixtures": [
             {
-              "shape": { "type": "rectangle" },
+              "shape": {
+                "type": "rectangle"
+              },
               "restitution": 0.01,
               "friction": 0.01,
               "density": 3
@@ -7019,10 +8674,16 @@
             "item": true,
             "debris": true
           },
-          "z-index": { "layer": 3, "depth": 3 },
+          "z-index": {
+            "layer": 3,
+            "depth": 3
+          },
           "name": "Human-body"
         },
-        "spawnPosition": { "y": 2200, "x": 1500 },
+        "spawnPosition": {
+          "y": 2200,
+          "x": 1500
+        },
         "attributes": {
           "speed": {
             "decimalPlaces": 0,
@@ -7052,36 +8713,85 @@
           }
         },
         "abilitiesJ8Gtv5hQ8j": {
-          "movementWheel": { "mobilePosition": { "y": 204, "x": 35 } },
-          "lookWheel": { "mobilePosition": { "y": 204, "x": 407 } },
-          "w": { "keyUp": "stopMovingUp", "keyDown": "moveUp" },
-          "a": { "keyUp": "stopMovingLeft", "keyDown": "moveLeft" },
-          "s": { "keyUp": "stopMovingDown", "keyDown": "moveDown" },
-          "d": { "keyUp": "stopMovingRight", "keyDown": "moveRight" },
+          "movementWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 35
+            }
+          },
+          "lookWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 407
+            }
+          },
+          "w": {
+            "keyUp": "stopMovingUp",
+            "keyDown": "moveUp"
+          },
+          "a": {
+            "keyUp": "stopMovingLeft",
+            "keyDown": "moveLeft"
+          },
+          "s": {
+            "keyUp": "stopMovingDown",
+            "keyDown": "moveDown"
+          },
+          "d": {
+            "keyUp": "stopMovingRight",
+            "keyDown": "moveRight"
+          },
           "button1": {
             "keyUp": "stopUsingItem",
             "keyDown": "startUsingItem",
-            "mobilePosition": { "x": 326, "y": 132 }
+            "mobilePosition": {
+              "x": 326,
+              "y": 132
+            }
           },
-          "up": { "keyUp": "stopMovingUp", "keyDown": "moveUp" },
-          "down": { "keyUp": "stopMovingDown", "keyDown": "moveDown" },
-          "left": { "keyUp": "stopMovingLeft", "keyDown": "moveLeft" },
-          "right": { "keyUp": "stopMovingRight", "keyDown": "moveRight" },
+          "up": {
+            "keyUp": "stopMovingUp",
+            "keyDown": "moveUp"
+          },
+          "down": {
+            "keyUp": "stopMovingDown",
+            "keyDown": "moveDown"
+          },
+          "left": {
+            "keyUp": "stopMovingLeft",
+            "keyDown": "moveLeft"
+          },
+          "right": {
+            "keyUp": "stopMovingRight",
+            "keyDown": "moveRight"
+          },
           "e": {
             "keyUp": "",
             "keyDown": "pickUp",
-            "mobilePosition": { "x": 366, "y": 85 }
+            "mobilePosition": {
+              "x": 366,
+              "y": 85
+            }
           },
-          "f": { "keyUp": "", "keyDown": "pickUp" },
+          "f": {
+            "keyUp": "",
+            "keyDown": "pickUp"
+          },
           "g": {
             "keyUp": "",
             "keyDown": "drop",
-            "mobilePosition": { "x": 365, "y": 33 }
+            "mobilePosition": {
+              "x": 365,
+              "y": 33
+            }
           },
           "b": {
             "keyUp": "",
             "keyDown": "shop",
-            "mobilePosition": { "x": 419, "y": 32 }
+            "mobilePosition": {
+              "x": 419,
+              "y": 32
+            }
           }
         },
         "baseSpeed": 53,
@@ -7103,7 +8813,10 @@
             "type": "kinematic",
             "width": 118,
             "height": 128,
-            "z-index": { "layer": 5, "depth": 3 },
+            "z-index": {
+              "layer": 5,
+              "depth": 3
+            },
             "fixedRotation": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "allowSleep": true,
@@ -7123,13 +8836,24 @@
                 "density": 1,
                 "friction": 0,
                 "restitution": 0,
-                "shape": { "type": "circle" },
+                "shape": {
+                  "type": "circle"
+                },
                 "isSensor": true
               }
             ],
             "jointType": "weldJoint",
-            "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
-            "itemAnchor": { "x": 0, "y": 0, "lowerAngle": 0, "upperAngle": 0 },
+            "unitAnchor": {
+              "x": 0,
+              "y": 33,
+              "rotation": 0
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0,
+              "lowerAngle": 0,
+              "upperAngle": 0
+            },
             "affectedByGravity": false
           }
         },
@@ -7193,8 +8917,18 @@
           "permittedInventorySlots": [],
           "movementControlScheme": "wasd",
           "abilities": {
-            "movementWheel": { "mobilePosition": { "y": 204, "x": 35 } },
-            "lookWheel": { "mobilePosition": { "y": 204, "x": 407 } }
+            "movementWheel": {
+              "mobilePosition": {
+                "y": 204,
+                "x": 35
+              }
+            },
+            "lookWheel": {
+              "mobilePosition": {
+                "y": 204,
+                "x": 407
+              }
+            }
           },
           "mouseBehaviour": {
             "flipSpriteHorizontallyWRTMouse": false,
@@ -7244,7 +8978,9 @@
           "spriteScale": 1,
           "fixtures": [
             {
-              "shape": { "type": "rectangle" },
+              "shape": {
+                "type": "rectangle"
+              },
               "restitution": 0.01,
               "friction": 0.01,
               "density": 3
@@ -7269,10 +9005,16 @@
             "item": true,
             "debris": true
           },
-          "z-index": { "layer": 3, "depth": 3 },
+          "z-index": {
+            "layer": 3,
+            "depth": 3
+          },
           "name": "Human-body"
         },
-        "spawnPosition": { "y": 2200, "x": 1500 },
+        "spawnPosition": {
+          "y": 2200,
+          "x": 1500
+        },
         "attributes": {
           "speed": {
             "decimalPlaces": 0,
@@ -7316,36 +9058,85 @@
           }
         },
         "abilities": {
-          "movementWheel": { "mobilePosition": { "y": 204, "x": 35 } },
-          "lookWheel": { "mobilePosition": { "y": 204, "x": 407 } },
-          "w": { "keyUp": "stopMovingUp", "keyDown": "moveUp" },
-          "a": { "keyUp": "stopMovingLeft", "keyDown": "moveLeft" },
-          "s": { "keyUp": "stopMovingDown", "keyDown": "moveDown" },
-          "d": { "keyUp": "stopMovingRight", "keyDown": "moveRight" },
+          "movementWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 35
+            }
+          },
+          "lookWheel": {
+            "mobilePosition": {
+              "y": 204,
+              "x": 407
+            }
+          },
+          "w": {
+            "keyUp": "stopMovingUp",
+            "keyDown": "moveUp"
+          },
+          "a": {
+            "keyUp": "stopMovingLeft",
+            "keyDown": "moveLeft"
+          },
+          "s": {
+            "keyUp": "stopMovingDown",
+            "keyDown": "moveDown"
+          },
+          "d": {
+            "keyUp": "stopMovingRight",
+            "keyDown": "moveRight"
+          },
           "button1": {
             "keyUp": "stopUsingItem",
             "keyDown": "startUsingItem",
-            "mobilePosition": { "x": 326, "y": 132 }
+            "mobilePosition": {
+              "x": 326,
+              "y": 132
+            }
           },
-          "up": { "keyUp": "stopMovingUp", "keyDown": "moveUp" },
-          "down": { "keyUp": "stopMovingDown", "keyDown": "moveDown" },
-          "left": { "keyUp": "stopMovingLeft", "keyDown": "moveLeft" },
-          "right": { "keyUp": "stopMovingRight", "keyDown": "moveRight" },
+          "up": {
+            "keyUp": "stopMovingUp",
+            "keyDown": "moveUp"
+          },
+          "down": {
+            "keyUp": "stopMovingDown",
+            "keyDown": "moveDown"
+          },
+          "left": {
+            "keyUp": "stopMovingLeft",
+            "keyDown": "moveLeft"
+          },
+          "right": {
+            "keyUp": "stopMovingRight",
+            "keyDown": "moveRight"
+          },
           "e": {
             "keyUp": "",
             "keyDown": "pickUp",
-            "mobilePosition": { "x": 366, "y": 85 }
+            "mobilePosition": {
+              "x": 366,
+              "y": 85
+            }
           },
-          "f": { "keyUp": "", "keyDown": "pickUp" },
+          "f": {
+            "keyUp": "",
+            "keyDown": "pickUp"
+          },
           "g": {
             "keyUp": "",
             "keyDown": "drop",
-            "mobilePosition": { "x": 365, "y": 33 }
+            "mobilePosition": {
+              "x": 365,
+              "y": 33
+            }
           },
           "b": {
             "keyUp": "",
             "keyDown": "shop",
-            "mobilePosition": { "x": 419, "y": 32 }
+            "mobilePosition": {
+              "x": 419,
+              "y": 32
+            }
           }
         },
         "baseSpeed": 53,
@@ -7367,7 +9158,10 @@
             "type": "dynamic",
             "width": 75,
             "height": 75,
-            "z-index": { "layer": 3, "depth": 3 },
+            "z-index": {
+              "layer": 3,
+              "depth": 3
+            },
             "fixedRotation": false,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "allowSleep": true,
@@ -7387,24 +9181,44 @@
                 "density": 100,
                 "friction": 0,
                 "restitution": 0,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "isSensor": false
               }
             ],
             "jointType": "weldJoint",
-            "unitAnchor": { "x": 0, "y": 33, "rotation": 0 },
-            "itemAnchor": { "x": 0, "y": 0, "lowerAngle": 0, "upperAngle": 0 },
+            "unitAnchor": {
+              "x": 0,
+              "y": 33,
+              "rotation": 0
+            },
+            "itemAnchor": {
+              "x": 0,
+              "y": 0,
+              "lowerAngle": 0,
+              "upperAngle": 0
+            },
             "affectedByGravity": false
           },
           "dropped": {
             "bullet": false,
-            "itemAnchor": { "y": 40, "x": 0 },
-            "unitAnchor": { "rotation": 90, "x": 0, "y": 12 },
+            "itemAnchor": {
+              "y": 40,
+              "x": 0
+            },
+            "unitAnchor": {
+              "rotation": 90,
+              "x": 0,
+              "y": 12
+            },
             "jointType": "weldJoint",
             "fixtures": [
               {
                 "isSensor": true,
-                "shape": { "type": "rectangle" },
+                "shape": {
+                  "type": "rectangle"
+                },
                 "restitution": 0.01,
                 "friction": 0.01,
                 "density": 1
@@ -7424,7 +9238,10 @@
             "allowSleep": true,
             "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
             "fixedRotation": false,
-            "z-index": { "depth": 1, "layer": 1 },
+            "z-index": {
+              "depth": 1,
+              "layer": 1
+            },
             "height": 50,
             "width": 50,
             "type": "static",
@@ -7483,21 +9300,32 @@
         "defaultItems": [],
         "scripts": {
           "nzuzE78qJN": {
-            "triggers": [{ "type": "entityCreated" }],
+            "triggers": [
+              {
+                "type": "entityCreated"
+              }
+            ],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
             "actions": [
               {
                 "type": "playEntityAnimation",
-                "entity": { "function": "thisEntity" },
+                "entity": {
+                  "function": "thisEntity"
+                },
                 "animation": "6beGlIwtcG"
               },
               {
                 "type": "setUnitNameLabel",
-                "unit": { "function": "thisEntity" },
+                "unit": {
+                  "function": "thisEntity"
+                },
                 "name": ""
               }
             ],
@@ -7507,16 +9335,26 @@
             "order": 1
           },
           "Wix3eApZ3e": {
-            "triggers": [{ "type": "entityAttributeBecomesZero" }],
+            "triggers": [
+              {
+                "type": "entityAttributeBecomesZero"
+              }
+            ],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
             "actions": [
               {
                 "type": "playEntityAnimation",
-                "entity": { "function": "thisEntity", "vars": [] },
+                "entity": {
+                  "function": "thisEntity",
+                  "vars": []
+                },
                 "animation": "default",
                 "vars": []
               }
@@ -7527,9 +9365,16 @@
             "order": 2
           },
           "VUcisp4qhS": {
-            "triggers": [{ "type": "entityTouchesItem" }],
+            "triggers": [
+              {
+                "type": "entityTouchesItem"
+              }
+            ],
             "conditions": [
-              { "operator": "==", "operandType": "boolean" },
+              {
+                "operator": "==",
+                "operandType": "boolean"
+              },
               true,
               true
             ],
@@ -7537,11 +9382,17 @@
               {
                 "type": "condition",
                 "conditions": [
-                  { "operandType": "itemType", "operator": "==" },
+                  {
+                    "operandType": "itemType",
+                    "operator": "=="
+                  },
                   {
                     "function": "getItemTypeOfItem",
                     "vars": [],
-                    "entity": { "function": "getTriggeringItem", "vars": [] }
+                    "entity": {
+                      "function": "getTriggeringItem",
+                      "vars": []
+                    }
                   },
                   "n5d5HmCrVM"
                 ],
@@ -7549,15 +9400,22 @@
                   {
                     "type": "setEntityAttribute",
                     "attribute": "1Ay6okr34y",
-                    "entity": { "function": "thisEntity", "vars": [] },
+                    "entity": {
+                      "function": "thisEntity",
+                      "vars": []
+                    },
                     "value": {
                       "function": "calculate",
                       "items": [
-                        { "operator": "/" },
+                        {
+                          "operator": "/"
+                        },
                         {
                           "function": "getEntityAttribute",
                           "attribute": "1Ay6okr34y",
-                          "entity": { "function": "thisEntity" }
+                          "entity": {
+                            "function": "thisEntity"
+                          }
                         },
                         2
                       ],
@@ -7581,9 +9439,15 @@
         "unitTypes": {
           "TYdx0GU1If": {
             "scripts": {
-              "nzuzE78qJN": { "name": "play animation on spawn" },
-              "Wix3eApZ3e": { "name": "fire extinguished" },
-              "VUcisp4qhS": { "name": "keep Fire going" }
+              "nzuzE78qJN": {
+                "name": "play animation on spawn"
+              },
+              "Wix3eApZ3e": {
+                "name": "fire extinguished"
+              },
+              "VUcisp4qhS": {
+                "name": "keep Fire going"
+              }
             }
           }
         }
@@ -7591,18 +9455,50 @@
     },
     "abilities": {},
     "variables": {
-      "AI hostile": { "dataType": "player", "default": "computer1" },
-      "AI neutral": { "dataType": "player", "default": "computer2" },
-      "AI resources": { "dataType": "player", "default": "computer3" },
-      "minAmountPigs": { "default": 25, "dataType": "number" },
-      "minAmountBears": { "default": 6, "dataType": "number" },
-      "minAmountRocks": { "default": 20, "dataType": "number" },
-      "minAmountTrees": { "default": 10, "dataType": "number" },
-      "minAmountSmallTrees": { "default": 15, "dataType": "number" },
-      "resourceDestructionChance": { "default": 15, "dataType": "number" },
+      "AI hostile": {
+        "dataType": "player",
+        "default": "computer1"
+      },
+      "AI neutral": {
+        "dataType": "player",
+        "default": "computer2"
+      },
+      "AI resources": {
+        "dataType": "player",
+        "default": "computer3"
+      },
+      "minAmountPigs": {
+        "default": 25,
+        "dataType": "number"
+      },
+      "minAmountBears": {
+        "default": 6,
+        "dataType": "number"
+      },
+      "minAmountRocks": {
+        "default": 20,
+        "dataType": "number"
+      },
+      "minAmountTrees": {
+        "default": 10,
+        "dataType": "number"
+      },
+      "minAmountSmallTrees": {
+        "default": 15,
+        "dataType": "number"
+      },
+      "resourceDestructionChance": {
+        "default": 15,
+        "dataType": "number"
+      },
       "region1": {
         "dataType": "region",
-        "default": { "x": 1603, "y": 3244, "width": 454, "height": 279 }
+        "default": {
+          "x": 1603,
+          "y": 3244,
+          "width": 454,
+          "height": 279
+        }
       }
     },
     "attributeTypes": {
@@ -7687,18 +9583,30 @@
       }
     },
     "settings": {
-      "inventory": { "isEnabled": false },
-      "shop": { "isEnabled": false },
+      "inventory": {
+        "isEnabled": false
+      },
+      "shop": {
+        "isEnabled": false
+      },
       "camera": {
         "trackingDelay": 3,
-        "zoom": { "default": 700, "type": "static" }
+        "zoom": {
+          "default": 700,
+          "type": "static"
+        }
       },
-      "constants": { "currency": "Food" },
+      "constants": {
+        "currency": "Food"
+      },
       "images": {
         "logo": "https://cache.modd.io/asset/spriteImage/1593104040375_modd_logo.png",
         "cover": "https://cache.modd.io/1501275562940_two houses cover.png"
       },
-      "gravity": { "x": 0, "y": 0 },
+      "gravity": {
+        "x": 0,
+        "y": 0
+      },
       "scoreBoard": "n5JEoENeGg",
       "scoreAttributeId": "qo4uN9R1Uj",
       "allowDuplicateIPs": true,
@@ -7788,14 +9696,20 @@
           }
         }
       },
-      "PgVCU0WgYj": { "name": "fda", "relationships": {} }
+      "PgVCU0WgYj": {
+        "name": "fda",
+        "relationships": {}
+      }
     },
     "playerTypes": {
       "aiHostile": {
         "name": "Hostile Creeps",
         "attributes": {},
         "color": "white",
-        "relationships": { "aiNeutral": "hostile", "humanPlayer": "hostile" },
+        "relationships": {
+          "aiNeutral": "hostile",
+          "humanPlayer": "hostile"
+        },
         "showNameLabel": false
       },
       "humanPlayer": {
@@ -7829,12 +9743,18 @@
           }
         },
         "color": "white",
-        "relationships": { "aiHostile": "neutral", "humanPlayer": "neutral" },
+        "relationships": {
+          "aiHostile": "neutral",
+          "humanPlayer": "neutral"
+        },
         "showNameLabel": true
       },
       "aiNeutral": {
         "showNameLabel": false,
-        "relationships": { "aiHostile": "hostile", "humanPlayer": "hostile" },
+        "relationships": {
+          "aiHostile": "hostile",
+          "humanPlayer": "hostile"
+        },
         "color": "white",
         "attributes": {},
         "name": "Neutral Creeps"
@@ -7848,11 +9768,23 @@
         "quantityBase": 5,
         "quantityTimespan": 30,
         "deathOpacityBase": 1,
-        "mountPosition": { "x": 0, "y": 0 },
+        "mountPosition": {
+          "x": 0,
+          "y": 0
+        },
         "velocityVector": {
-          "baseVector": { "x": 0, "y": 0 },
-          "minVector": { "x": -1, "y": -1 },
-          "maxVector": { "x": 1, "y": 1 }
+          "baseVector": {
+            "x": 0,
+            "y": 0
+          },
+          "minVector": {
+            "x": -1,
+            "y": -1
+          },
+          "maxVector": {
+            "x": 1,
+            "y": 1
+          }
         }
       },
       "87BiLybZhy": {
@@ -7862,24 +9794,47 @@
         "quantityBase": 1,
         "quantityTimespan": 30,
         "deathOpacityBase": 1,
-        "mountPosition": { "x": 0, "y": 0 },
+        "mountPosition": {
+          "x": 0,
+          "y": 0
+        },
         "velocityVector": {
-          "baseVector": { "x": 0, "y": 0 },
-          "minVector": { "x": -1, "y": -1 },
-          "maxVector": { "x": 1, "y": 1 }
+          "baseVector": {
+            "x": 0,
+            "y": 0
+          },
+          "minVector": {
+            "x": -1,
+            "y": -1
+          },
+          "maxVector": {
+            "x": 1,
+            "y": 1
+          }
         }
       }
     },
     "particleTypes": {},
     "bodyTypes": {
       "default": {
-        "itemAnchor": { "upperAngle": 0, "lowerAngle": 0, "y": 0, "x": 0 },
-        "unitAnchor": { "rotation": 0, "y": 33, "x": 0 },
+        "itemAnchor": {
+          "upperAngle": 0,
+          "lowerAngle": 0,
+          "y": 0,
+          "x": 0
+        },
+        "unitAnchor": {
+          "rotation": 0,
+          "y": 33,
+          "x": 0
+        },
         "jointType": "weldJoint",
         "fixtures": [
           {
             "isSensor": false,
-            "shape": { "type": "circle" },
+            "shape": {
+              "type": "circle"
+            },
             "restitution": 0,
             "friction": 0,
             "density": 1
@@ -7899,7 +9854,10 @@
         "allowSleep": true,
         "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
         "fixedRotation": false,
-        "z-index": { "depth": 3, "layer": 3 },
+        "z-index": {
+          "depth": 3,
+          "layer": 3
+        },
         "height": 64,
         "width": 64,
         "type": "static",
@@ -7907,13 +9865,22 @@
         "bullet": false
       },
       "selected": {
-        "itemAnchor": { "y": 40, "x": 0 },
-        "unitAnchor": { "x": 0, "y": 12, "rotation": 90 },
+        "itemAnchor": {
+          "y": 40,
+          "x": 0
+        },
+        "unitAnchor": {
+          "x": 0,
+          "y": 12,
+          "rotation": 90
+        },
         "jointType": "weldJoint",
         "fixtures": [
           {
             "isSensor": false,
-            "shape": { "type": "rectangle" },
+            "shape": {
+              "type": "rectangle"
+            },
             "restitution": 0.01,
             "friction": 0.01,
             "density": 1
@@ -7933,7 +9900,10 @@
         "allowSleep": true,
         "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
         "fixedRotation": false,
-        "z-index": { "depth": 2, "layer": 3 },
+        "z-index": {
+          "depth": 2,
+          "layer": 3
+        },
         "height": 53,
         "width": 26,
         "type": "spriteOnly",
@@ -7941,13 +9911,22 @@
       },
       "dropped": {
         "bullet": false,
-        "itemAnchor": { "y": 40, "x": 0 },
-        "unitAnchor": { "rotation": 90, "x": 0, "y": 12 },
+        "itemAnchor": {
+          "y": 40,
+          "x": 0
+        },
+        "unitAnchor": {
+          "rotation": 90,
+          "x": 0,
+          "y": 12
+        },
         "jointType": "weldJoint",
         "fixtures": [
           {
             "isSensor": true,
-            "shape": { "type": "rectangle" },
+            "shape": {
+              "type": "rectangle"
+            },
             "restitution": 0.01,
             "friction": 0.01,
             "density": 1
@@ -7967,7 +9946,10 @@
         "allowSleep": true,
         "constantSpeed +DestroyedOnCollisionWithWall/unit": false,
         "fixedRotation": false,
-        "z-index": { "depth": 1, "layer": 1 },
+        "z-index": {
+          "depth": 1,
+          "layer": 1
+        },
         "height": 53,
         "width": 26,
         "type": "static",
