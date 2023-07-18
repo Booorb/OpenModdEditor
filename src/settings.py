@@ -1,5 +1,6 @@
 import dearpygui.dearpygui as dpg
 import json
+from update import update_project_callback
 
 
 def back_callback():
@@ -60,7 +61,10 @@ def edit_callback():
                     dpg.add_menu_item(
                         label="Toggle Fullscreen", callback=fullscreen_callback
                     )
-                    dpg.add_menu_item(label="Update", callback=fullscreen_callback)
+                    dpg.add_menu_item(
+                        label="Update",
+                        callback=update_project_callback,
+                    )
                 with dpg.menu(label="Engine"):
                     dpg.add_text("Maximum Players:")
                     dpg.add_slider_int(

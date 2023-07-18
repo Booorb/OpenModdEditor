@@ -5,6 +5,7 @@ import os
 import shutil
 import json
 from settings import edit_callback
+from update import update_project_callback
 
 
 def play_callback():
@@ -199,7 +200,7 @@ def game_callback():
             label="Update",
             parent="default_window",
             tag="update_project_button",
-            callback=setup_project_callback,
+            callback=update_project_callback,
         )
         dpg.add_text("Edit Game Settings:", parent="default_window")
         dpg.add_button(label="Edit", parent="default_window", callback=edit_callback)
