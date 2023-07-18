@@ -11,6 +11,7 @@ from setup import play_callback
 from settings import fullscreen_callback
 from settings import edit_callback
 from settings import save_callback
+from update import update_project_callback
 
 dpg.create_context()
 dpg.create_viewport()
@@ -31,8 +32,10 @@ def open_callback(sender, app_data):
         json.dump(data, open(editor + "/storage.json", "w"), indent=4)
         os.chdir(data["folder"])
 
+
 def cancel_callback(sender, app_data):
-    print('Cancel was clicked.')
+    print("Cancel was clicked.")
+
 
 dpg.add_file_dialog(
     directory_selector=True,
@@ -49,7 +52,11 @@ def setup_ui():
     os.chdir(data["folder"])
     if os.path.isfile(data["folder"] + "/taro2/src/game.json"):
         dpg.add_text("Update Project:")
-        dpg.add_button(label="Update", tag="update_project_button", callback=setup_project_callback)
+        dpg.add_button(
+            label="Update",
+            tag="update_project_button",
+            callback=update_project_callback,
+        )
         dpg.add_text("Edit Game Settings:")
         dpg.add_button(label="Edit", callback=edit_callback)
         dpg.add_text("Play the game:")
