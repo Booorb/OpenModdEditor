@@ -102,6 +102,10 @@ def edit_callback():
                     dpg.add_listbox(
                         items=["Smooth", "Pixel Art"], tag="rendering_filter"
                     )
+                    if data["renderingFilter"] == "smooth":
+                        dpg.set_value(value="Smooth", item="rendering_filter")
+                    else:
+                        dpg.set_value(value="Pixel Art", item="rendering_filter")
                     dpg.add_text("Client-side predicted movement:")
                     dpg.add_checkbox(
                         default_value=data["clientSidePredictionEnabled"],
@@ -162,6 +166,10 @@ def save_callback(sender):
             data["clientPhysicsEngine"] = "box2dweb"
         else:
             data["clientPhysicsEngine"] = "box2dts"
+        if dpg.get_value("rendering_filter") == "Smooth":
+            data["renderingFilter"] = "smooth"
+        else:
+            data["renderingFilter"] = "pixelArt"
         data["clientSidePredictionEnabled"] = dpg.get_value("predicted_movement")
         data["frameRate"] = dpg.get_value("physics_frame_rate")
         data["allowDuplicateIPS"] = dpg.get_value("duplicate_ips")
