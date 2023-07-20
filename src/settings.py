@@ -134,9 +134,14 @@ def edit_callback():
                     print("Moderation")
                 with dpg.menu(label="Mod/Lobby"):
                     dpg.add_text("Allow Modding:")
-                    dpg.add_checkbox(tag="allow_modding")
+                    dpg.add_checkbox(
+                        default_value=data["isModdable"], tag="allow_modding"
+                    )
                     dpg.add_text("Enable Lobby:")
-                    dpg.add_checkbox(tag="enable_lobby")
+                    dpg.add_checkbox(
+                        default_value=data["isLobbyEnabled"], tag="enable_lobby"
+                    )
+                    dpg.add_button(label="Save", callback=save_callback)
 
             dpg.add_button(label="Back", tag="back_button", callback=back_callback)
 
@@ -178,6 +183,8 @@ def save_callback(sender):
         data["allowDuplicateIPS"] = dpg.get_value("duplicate_ips")
         data["data"]["settings"]["gravity"]["x"] = dpg.get_value("gravity_x")
         data["data"]["settings"]["gravity"]["y"] = dpg.get_value("gravity_y")
+        data["isModdable"] = dpg.get_value("allow_modding")
+        data["isLobbyEnabled"] = dpg.get_value("enable_lobby")
         json.dump(data, open("taro2/src/game.json", "w"), indent=4)
 
 
