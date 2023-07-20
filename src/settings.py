@@ -133,7 +133,10 @@ def edit_callback():
                 with dpg.menu(label="Moderation"):
                     print("Moderation")
                 with dpg.menu(label="Mod/Lobby"):
-                    print("Mod/Lobby")
+                    dpg.add_text("Allow Modding:")
+                    dpg.add_checkbox(tag="allow_modding")
+                    dpg.add_text("Enable Lobby:")
+                    dpg.add_checkbox(tag="enable_lobby")
 
             dpg.add_button(label="Back", tag="back_button", callback=back_callback)
 
