@@ -130,8 +130,6 @@ def edit_callback():
                     print("Map")
                 with dpg.menu(label="Title Screen"):
                     print("Title Screen")
-                with dpg.menu(label="Moderation"):
-                    print("Moderation")
                 with dpg.menu(label="Mod/Lobby"):
                     dpg.add_text("Allow Modding:")
                     dpg.add_checkbox(
