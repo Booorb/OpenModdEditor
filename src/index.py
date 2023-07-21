@@ -90,6 +90,28 @@ with dpg.window(label="Menu", tag="default_window"):
             json.dump(data, open("storage.json", "w"), indent=4)
             setup_ui()
 
+with dpg.theme() as global_theme:
+    with dpg.theme_component(dpg.mvAll):
+        dpg.add_theme_color(
+            dpg.mvThemeCol_Text, (219, 251, 249, 255), category=dpg.mvThemeCat_Core
+        )
+        dpg.add_theme_color(
+            dpg.mvThemeCol_FrameBg, (69, 89, 92, 255), category=dpg.mvThemeCat_Core
+        )
+        dpg.add_theme_color(
+            dpg.mvThemeCol_CheckMark, (119, 244, 216, 153), category=dpg.mvThemeCat_Core
+        )
+        dpg.add_theme_color(
+            dpg.mvThemeCol_WindowBg, (38, 39, 44, 255), category=dpg.mvThemeCat_Core
+        )
+        dpg.add_theme_style(
+            dpg.mvStyleVar_FrameRounding, 8, category=dpg.mvThemeCat_Core
+        )
+        dpg.add_theme_style(
+            dpg.mvStyleVar_WindowRounding, 8, category=dpg.mvThemeCat_Core
+        )
+
+dpg.bind_theme(global_theme)
 
 dpg.create_viewport(title="OpenGameBuilder", width=800, height=600)
 dpg.show_viewport()
