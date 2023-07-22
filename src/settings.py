@@ -153,6 +153,13 @@ def edit_callback():
                         max_value=60,
                         tag="camera_tracking_speed",
                     )
+                    dpg.add_text("Add stroke to name labels and attribute bars:")
+                    dpg.add_checkbox(
+                        default_value=data["data"]["settings"][
+                            "addStrokeToNameAndAttributes"
+                        ],
+                        tag="add_stroke",
+                    )
                     dpg.add_button(label="Save", callback=save_callback)
                 with dpg.menu(label="Map"):
                     print("Map")
@@ -220,6 +227,9 @@ def save_callback(sender):
         )
         data["data"]["settings"]["camera"]["trackingDelay"] = dpg.get_value(
             "camera_tracking_speed"
+        )
+        data["data"]["settings"]["addStrokeToNameAndAttributes"] = dpg.get_value(
+            "add_stroke"
         )
         data["isModdable"] = dpg.get_value("allow_modding")
         data["isLobbyEnabled"] = dpg.get_value("enable_lobby")
