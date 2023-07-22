@@ -160,6 +160,11 @@ def edit_callback():
                         ],
                         tag="add_stroke",
                     )
+                    dpg.add_text("Height Based Z-Index:")
+                    dpg.add_checkbox(
+                        default_value=data["heightBasedZIndex"],
+                        tag="height_based_z_index",
+                    )
                     dpg.add_button(label="Save", callback=save_callback)
                 with dpg.menu(label="Map"):
                     print("Map")
@@ -231,6 +236,7 @@ def save_callback(sender):
         data["data"]["settings"]["addStrokeToNameAndAttributes"] = dpg.get_value(
             "add_stroke"
         )
+        data["heightBasedZIndex"] = dpg.get_value("height_based_z_index")
         data["isModdable"] = dpg.get_value("allow_modding")
         data["isLobbyEnabled"] = dpg.get_value("enable_lobby")
         json.dump(data, open("taro2/src/game.json", "w"), indent=4)
