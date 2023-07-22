@@ -110,6 +110,11 @@ def setup_project_callback():
                     tag="zombie_tag_button",
                     callback=zombie_tag_callback,
                 )
+                dpg.add_button(
+                    label="Import game.json",
+                    tag="import_game_button",
+                    callback=lambda: dpg.show_item("import_game_file"),
+                )
 
 
 with open("storage.json") as f:
@@ -183,6 +188,10 @@ with open("storage.json") as f:
         shutil.copyfile(
             data["editor"] + "/templates/ZombieTag.json", "taro2/src/game.json"
         )
+        game_callback()
+
+    def import_game_file_callback(sender, app_data, user_data):
+        shutil.copyfile(app_data["file_path_name"], "taro2/src/game.json")
         game_callback()
 
 

@@ -8,6 +8,7 @@ from setup import taro2_callback
 from setup import packages_callback
 from setup import game_callback
 from setup import play_callback
+from setup import import_game_file_callback
 from settings import fullscreen_callback
 from settings import edit_callback
 from settings import save_callback
@@ -46,6 +47,17 @@ dpg.add_file_dialog(
     width=700,
     height=400,
 )
+
+
+with dpg.file_dialog(
+    directory_selector=False,
+    show=False,
+    callback=import_game_file_callback,
+    id="import_game_file",
+    width=700,
+    height=400,
+):
+    dpg.add_file_extension(".json", color=(0, 255, 0, 255), custom_text="[JSON]")
 
 
 def setup_ui():
