@@ -42,7 +42,7 @@ dpg.add_file_dialog(
     directory_selector=True,
     show=False,
     callback=open_callback,
-    tag="file_dialog_id",
+    tag="change_folder_selector",
     cancel_callback=cancel_callback,
     width=700,
     height=400,
@@ -84,7 +84,7 @@ def setup_ui():
         dpg.add_button(
             label="Change",
             tag="setup_change_folder_button",
-            callback=lambda: dpg.show_item("file_dialog_id"),
+            callback=lambda: dpg.show_item("change_folder_selector"),
         )
 
 
