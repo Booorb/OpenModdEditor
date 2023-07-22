@@ -125,7 +125,17 @@ def edit_callback():
                     dpg.add_button(label="Save", callback=save_callback)
 
                 with dpg.menu(label="UI"):
-                    print("UI")
+                    dpg.add_text("Display Leaderboard:")
+                    dpg.add_checkbox(
+                        default_value=data["data"]["settings"]["displayScoreboard"],
+                        tag="display_leaderboard",
+                    )
+                    dpg.add_text("Prettify Leaderboard:")
+                    dpg.add_checkbox(
+                        default_value=data["data"]["settings"]["prettifyingScoreboard"],
+                        tag="prettify_leaderboard",
+                    )
+                    dpg.add_button(label="Save", callback=save_callback)
                 with dpg.menu(label="Map"):
                     print("Map")
                 with dpg.menu(label="Title Screen"):
@@ -181,6 +191,12 @@ def save_callback(sender):
         data["allowDuplicateIPS"] = dpg.get_value("duplicate_ips")
         data["data"]["settings"]["gravity"]["x"] = dpg.get_value("gravity_x")
         data["data"]["settings"]["gravity"]["y"] = dpg.get_value("gravity_y")
+        data["data"]["settings"]["displayScoreboard"] = dpg.get_value(
+            "display_leaderboard"
+        )
+        data["data"]["settings"]["prettifyingScoreboard"] = dpg.get_value(
+            "prettify_leaderboard"
+        )
         data["isModdable"] = dpg.get_value("allow_modding")
         data["isLobbyEnabled"] = dpg.get_value("enable_lobby")
         json.dump(data, open("taro2/src/game.json", "w"), indent=4)
