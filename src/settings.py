@@ -135,6 +135,24 @@ def edit_callback():
                         default_value=data["data"]["settings"]["prettifyingScoreboard"],
                         tag="prettify_leaderboard",
                     )
+                    dpg.add_text("Default Camera Zoom:")
+                    dpg.add_slider_int(
+                        default_value=data["data"]["settings"]["camera"]["zoom"][
+                            "default"
+                        ],
+                        min_value=250,
+                        max_value=1500,
+                        tag="camera_zoom",
+                    )
+                    dpg.add_text("Camera Tracking Speed:")
+                    dpg.add_slider_int(
+                        default_value=data["data"]["settings"]["camera"][
+                            "trackingDelay"
+                        ],
+                        min_value=1,
+                        max_value=60,
+                        tag="camera_tracking_speed",
+                    )
                     dpg.add_button(label="Save", callback=save_callback)
                 with dpg.menu(label="Map"):
                     print("Map")
@@ -196,6 +214,12 @@ def save_callback(sender):
         )
         data["data"]["settings"]["prettifyingScoreboard"] = dpg.get_value(
             "prettify_leaderboard"
+        )
+        data["data"]["settings"]["camera"]["zoom"]["default"] = dpg.get_value(
+            "camera_zoom"
+        )
+        data["data"]["settings"]["camera"]["trackingDelay"] = dpg.get_value(
+            "camera_tracking_speed"
         )
         data["isModdable"] = dpg.get_value("allow_modding")
         data["isLobbyEnabled"] = dpg.get_value("enable_lobby")
