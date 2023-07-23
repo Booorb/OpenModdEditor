@@ -125,7 +125,7 @@ with dpg.theme() as global_theme:
 
 dpg.bind_theme(global_theme)
 
-dpg.create_viewport(title="OpenGameBuilder", width=800, height=600)
+dpg.create_viewport(title="OpenModdEditor", width=800, height=600)
 dpg.show_viewport()
 dpg.start_dearpygui()
 dpg.destroy_context()
