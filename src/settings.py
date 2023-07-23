@@ -50,6 +50,11 @@ def edit_callback():
                         dpg.add_checkbox(
                             default_value=data["contextMenuEnabled"], tag="context_menu"
                         )
+                        dpg.add_text("Disable ads in portals:")
+                        dpg.add_checkbox(
+                            default_value=data["disableAdsPortals"],
+                            tag="ads_in_portals",
+                        )
                         dpg.add_text("Daily coin transfer limit:")
                         dpg.add_slider_int(
                             default_value=data["dailyCoinTransferLimit"],
@@ -197,6 +202,7 @@ def save_callback(sender):
         data["hidden"] = dpg.get_value("hidden")
         data["enablePersistedData"] = dpg.get_value("enable_persistent_data")
         data["contextMenuEnabled"] = dpg.get_value("context_menu")
+        data["disableAdsPortals"] = dpg.get_value("ads_in_portals")
         data["dailyCoinTransferLimit"] = dpg.get_value("transfer_limit")
         data["defaultMaxPlayers"] = dpg.get_value("max_players")
         data["lifeSpanHours"] = dpg.get_value("server_life_span")
