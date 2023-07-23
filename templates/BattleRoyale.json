@@ -5867,6 +5867,7 @@
         "currency": "Food"
       },
       "camera": {
+        "trackingDelay": 3,
         "zoom": {
           "type": "static",
           "default": 700

@@ -3285,7 +3285,10 @@
     "settings": {
       "inventory": { "isEnabled": false },
       "shop": { "isEnabled": false },
-      "camera": { "zoom": { "default": 400, "type": "static" } },
+      "camera": {
+        "trackingDelay": 3,
+        "zoom": { "default": 400, "type": "static" }
+      },
       "constants": { "currency": "Food" },
       "images": {
         "cover": "https://cache.modd.io/sprites/1506521724594_soccer.png",
