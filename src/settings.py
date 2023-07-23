@@ -17,7 +17,7 @@ def edit_callback():
         with dpg.window(label="Settings", tag="game_settings"):
             dpg.set_primary_window("game_settings", True)
             with dpg.menu_bar():
-                with dpg.menu(label="Default"):
+                with dpg.menu(label="General"):
                     with open("taro2/src/game.json") as f:
                         data = json.load(f)
                         dpg.add_text("Game Name:")
