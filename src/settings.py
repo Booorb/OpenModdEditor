@@ -116,6 +116,11 @@ def edit_callback():
                         default_value=data["clientSidePredictionEnabled"],
                         tag="predicted_movement",
                     )
+                    dpg.add_text("Continuous Physics:")
+                    dpg.add_checkbox(
+                        default_value=data["data"]["settings"]["continuousPhysics"],
+                        tag="continuous_physics",
+                    )
                     dpg.add_text("Physics frame rate:")
                     dpg.add_slider_int(
                         default_value=15, max_value=60, tag="physics_frame_rate"
@@ -223,6 +228,9 @@ def save_callback(sender):
         else:
             data["renderingFilter"] = "pixelArt"
         data["clientSidePredictionEnabled"] = dpg.get_value("predicted_movement")
+        data["data"]["settings"]["continuousPhysics"] = dpg.get_value(
+            "continuous_physics"
+        )
         data["frameRate"] = dpg.get_value("physics_frame_rate")
         data["allowDuplicateIPS"] = dpg.get_value("duplicate_ips")
         data["data"]["settings"]["gravity"]["x"] = dpg.get_value("gravity_x")
