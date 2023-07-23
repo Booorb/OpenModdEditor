@@ -66,6 +66,7 @@
   "dailyCoinTransferLimit": 0,
   "isPublished": true,
   "contextMenuEnabled": true,
+  "disableAdsPortals": false,
   "createdAt": "",
   "updatedAt": "",
   "invitedUsers": [],
