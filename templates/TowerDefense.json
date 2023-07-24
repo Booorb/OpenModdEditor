@@ -477,7 +477,8 @@
       },
       "menudiv": "Simple Tower Defense game. Players can move using WASD or Arrow keys.",
       "prettifyingScoreboard": true,
-      "addStrokeToNameAndAttributes": true
+      "addStrokeToNameAndAttributes": true,
+      "continuousPhysics": true
     },
     "attributeTypes": {
       "health": {
