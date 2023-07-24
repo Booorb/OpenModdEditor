@@ -184,6 +184,11 @@ def edit_callback():
                         default_value=data["data"]["settings"]["menudiv"],
                         tag="game_description",
                     )
+                    dpg.add_text("Gameplay Instructions:")
+                    dpg.add_input_text(
+                        default_value=data["gamePlayInstructions"],
+                        tag="gameplay_instructions",
+                    )
                     dpg.add_button(label="Save", callback=save_callback)
                 with dpg.menu(label="Mod/Lobby"):
                     dpg.add_text("Allow Modding:")
@@ -257,6 +262,7 @@ def save_callback(sender):
         )
         data["heightBasedZIndex"] = dpg.get_value("height_based_z_index")
         data["data"]["settings"]["menudiv"] = dpg.get_value("game_description")
+        data["gamePlayInstructions"] = dpg.get_value("gameplay_instructions")
         data["isModdable"] = dpg.get_value("allow_modding")
         data["isLobbyEnabled"] = dpg.get_value("enable_lobby")
         json.dump(data, open("taro2/src/game.json", "w"), indent=4)
