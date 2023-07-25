@@ -76,6 +76,7 @@
   "highScores": [],
   "lastPlayedAt": "2023-07-15T09:45:47.971Z",
   "__v": 1,
+  "gamePlayInstructions": "",
   "renderingFilter": "smooth",
   "data": {
     "playerTypeVariables": {},

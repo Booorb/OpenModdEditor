@@ -76,6 +76,7 @@
   "highScores": [],
   "lastPlayedAt": "",
   "__v": 1,
+  "gamePlayInstructions": "",
   "renderingFilter": "smooth",
   "data": {
     "entityTypeVariables": {

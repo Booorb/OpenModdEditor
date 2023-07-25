@@ -55,7 +55,6 @@
   "parentGameId": null,
   "dailyCoinTransferLimit": 0,
   "mapBackgroundColor": "#000000",
-  "gamePlayInstructions": "",
   "isPublished": true,
   "contextMenuEnabled": true,
   "disableAdsPortals": false,
@@ -77,6 +76,7 @@
   "lastPlayedAt": "",
   "gameSlug": "",
   "__v": 3,
+  "gamePlayInstructions": "",
   "invitedUsers": [],
   "data": {
     "attributeTypes": {
