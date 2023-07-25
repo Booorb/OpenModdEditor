@@ -29,10 +29,10 @@ with dpg.font_registry():
 
 
 def open_callback(sender, app_data):
-    with open(editor + "/storage.json") as f:
+    with open(editorFolder + "/storage.json") as f:
         data = json.load(f)
         data["gameFolder"] = app_data["file_path_name"]
-        json.dump(data, open(editor + "/storage.json", "w"), indent=4)
+        json.dump(data, open(editorFolder + "/storage.json", "w"), indent=4)
         os.chdir(data["gameFolder"])
 
 
@@ -95,8 +95,8 @@ with dpg.window(label="Menu", tag="default_window"):
     dpg.bind_font(default_font)
     with open("storage.json") as f:
         data = json.load(f)
-        global editor
-        editor = data["editorFolder"]
+        global editorFolder
+        editorFolder = data["editorFolder"]
         if os.path.exists(data["gameFolder"]):
             setup_ui()
         else:
