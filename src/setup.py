@@ -122,71 +122,77 @@ with open("storage.json") as f:
 
     def battle_royale_callback():
         shutil.copyfile(
-            data["editor"] + "/templates/BattleRoyale.json", "taro2/src/game.json"
+            data["editorFolder"] + "/templates/BattleRoyale.json", "taro2/src/game.json"
         )
         game_callback()
 
     def blank_template_callback():
         shutil.copyfile(
-            data["editor"] + "/templates/BlankTemplate.json", "taro2/src/game.json"
+            data["editorFolder"] + "/templates/BlankTemplate.json",
+            "taro2/src/game.json",
         )
         game_callback()
 
     def cell_eater_callback():
         shutil.copyfile(
-            data["editor"] + "/templates/CellEater.json", "taro2/src/game.json"
+            data["editorFolder"] + "/templates/CellEater.json", "taro2/src/game.json"
         )
         game_callback()
 
     def deathmatch_callback():
         shutil.copyfile(
-            data["editor"] + "/templates/Deathmatch.json", "taro2/src/game.json"
+            data["editorFolder"] + "/templates/Deathmatch.json", "taro2/src/game.json"
         )
         game_callback()
 
     def guided_tutorial_callback():
         shutil.copyfile(
-            data["editor"] + "/templates/GuidedTutorial.json", "taro2/src/game.json"
+            data["editorFolder"] + "/templates/GuidedTutorial.json",
+            "taro2/src/game.json",
         )
         game_callback()
 
     def hunt_and_gather_callback():
         shutil.copyfile(
-            data["editor"] + "/templates/HuntAndGather.json", "taro2/src/game.json"
+            data["editorFolder"] + "/templates/HuntAndGather.json",
+            "taro2/src/game.json",
         )
         game_callback()
 
     def platformer_callback():
         shutil.copyfile(
-            data["editor"] + "/templates/Platformer.json", "taro2/src/game.json"
+            data["editorFolder"] + "/templates/Platformer.json", "taro2/src/game.json"
         )
         game_callback()
 
     def racer_callback():
-        shutil.copyfile(data["editor"] + "/templates/Racer.json", "taro2/src/game.json")
+        shutil.copyfile(
+            data["editorFolder"] + "/templates/Racer.json", "taro2/src/game.json"
+        )
         game_callback()
 
     def soccer_callback():
         shutil.copyfile(
-            data["editor"] + "/templates/Soccer.json", "taro2/src/game.json"
+            data["editorFolder"] + "/templates/Soccer.json", "taro2/src/game.json"
         )
         game_callback()
 
     def team_elimination_callback():
         shutil.copyfile(
-            data["editor"] + "/templates/TeamElimination.json", "taro2/src/game.json"
+            data["editorFolder"] + "/templates/TeamElimination.json",
+            "taro2/src/game.json",
         )
         game_callback()
 
     def tower_defense_callback():
         shutil.copyfile(
-            data["editor"] + "/templates/TowerDefense.json", "taro2/src/game.json"
+            data["editorFolder"] + "/templates/TowerDefense.json", "taro2/src/game.json"
         )
         game_callback()
 
     def zombie_tag_callback():
         shutil.copyfile(
-            data["editor"] + "/templates/ZombieTag.json", "taro2/src/game.json"
+            data["editorFolder"] + "/templates/ZombieTag.json", "taro2/src/game.json"
         )
         game_callback()
 
