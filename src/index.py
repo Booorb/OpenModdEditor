@@ -23,7 +23,9 @@ with dpg.font_registry():
         data = json.load(f)
         data["editorFolder"] = os.getcwd()
         json.dump(data, open("storage.json", "w"), indent=4)
-        default_font = dpg.add_font(data["editorFolder"] + "/OpenSans-Regular.ttf", 20)
+        default_font = dpg.add_font(
+            data["editorFolder"] + "/assets/OpenSans-Regular.ttf", 20
+        )
 
 
 def open_callback(sender, app_data):
