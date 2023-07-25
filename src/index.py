@@ -21,17 +21,17 @@ dpg.setup_dearpygui()
 with dpg.font_registry():
     with open("storage.json") as f:
         data = json.load(f)
-        data["editor"] = os.getcwd()
+        data["editorFolder"] = os.getcwd()
         json.dump(data, open("storage.json", "w"), indent=4)
-        default_font = dpg.add_font(data["editor"] + "/OpenSans-Regular.ttf", 20)
+        default_font = dpg.add_font(data["editorFolder"] + "/OpenSans-Regular.ttf", 20)
 
 
 def open_callback(sender, app_data):
     with open(editor + "/storage.json") as f:
         data = json.load(f)
-        data["folder"] = app_data["file_path_name"]
+        data["gameFolder"] = app_data["file_path_name"]
         json.dump(data, open(editor + "/storage.json", "w"), indent=4)
-        os.chdir(data["folder"])
+        os.chdir(data["gameFolder"])
 
 
 def cancel_callback(sender, app_data):
@@ -61,8 +61,8 @@ with dpg.file_dialog(
 
 
 def setup_ui():
-    os.chdir(data["folder"])
-    if os.path.isfile(data["folder"] + "/taro2/src/game.json"):
+    os.chdir(data["gameFolder"])
+    if os.path.isfile(data["gameFolder"] + "/taro2/src/game.json"):
         dpg.add_text("Update Project:")
         dpg.add_button(
             label="Update",
@@ -94,11 +94,11 @@ with dpg.window(label="Menu", tag="default_window"):
     with open("storage.json") as f:
         data = json.load(f)
         global editor
-        editor = data["editor"]
-        if os.path.exists(data["folder"]):
+        editor = data["editorFolder"]
+        if os.path.exists(data["gameFolder"]):
             setup_ui()
         else:
-            data["folder"] = os.getcwd()
+            data["gameFolder"] = os.getcwd()
             json.dump(data, open("storage.json", "w"), indent=4)
             setup_ui()
 
