@@ -2,3 +2,5 @@ env/
 taro2/
 **/__pycache__/
 .vscode/
+build/
+dist/
