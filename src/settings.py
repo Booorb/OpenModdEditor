@@ -62,11 +62,11 @@ def edit_callback():
                         if "enablePersistedData" in data.keys():
                             dpg.add_checkbox(
                                 default_value=data["enablePersistedData"],
-                                tag="enable_persisftent_data",
+                                tag="enable_persistent_data",
                             )
                         else:
                             dpg.add_checkbox(
-                                tag="enable_persisftent_data",
+                                tag="enable_persistent_data",
                             )
                         dpg.add_text("Enable Context Menu:")
                         if "contextMenuEnabled" in data.keys():
