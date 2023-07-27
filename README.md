@@ -11,6 +11,8 @@ There are no downloadable binaries yet, as the project is still very unstable!
 Ensure you have Python & pip installed!
 
 **Build steps:**
+
+***Linux:***
 ```
 git clone https://github.com/Booorb/OpenModdEditor.git
 ```
@@ -18,14 +20,17 @@ git clone https://github.com/Booorb/OpenModdEditor.git
 cd OpenModdEditor
 ```
 ```
-python -m venv <virtual-environment-name>
+python -m venv venv
 ```
 ```
-source /path/to/venv/bin/activate
+source venv/bin/activate
 ```
 ```
 pip install -r requirements.txt
 ```
 ```
-pip src/index.py
+pyinstaller index.spec
+```
+```
+./dist/index/index 
 ```
