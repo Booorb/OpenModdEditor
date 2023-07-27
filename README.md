@@ -20,7 +20,7 @@ git clone https://github.com/Booorb/OpenModdEditor.git
 cd OpenModdEditor
 ```
 ```
-python -m venv venv
+python3 -m venv venv
 ```
 ```
 source venv/bin/activate
@@ -33,4 +33,26 @@ pyinstaller index.spec
 ```
 ```
 ./dist/index/index 
+```
+***Windows:***
+```
+git clone https://github.com/Booorb/OpenModdEditor.git
+```
+```
+cd OpenModdEditor
+```
+```
+venv\Scripts\activate
+```
+```
+source venv/bin/activate
+```
+```
+pip install -r requirements.txt
+```
+```
+pyinstaller index.spec
+```
+```
+open executable located in the dist folder
 ```
