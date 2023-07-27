@@ -22,44 +22,80 @@ def edit_callback():
                         data = json.load(f)
                         dpg.add_text("Game Name:")
                         dpg.add_input_text(tag="game_name")
-                        dpg.set_value(value=data["title"], item="game_name")
+                        if "title" in data.keys():
+                            dpg.set_value(value=data["title"], item="game_name")
+                        else:
+                            dpg.set_value(value="title", item="game_name")
                         dpg.add_text("Game Slug:")
                         dpg.add_input_text(tag="game_slug")
-                        dpg.set_value(value=data["gameSlug"], item="game_slug")
+                        if "gameSlug" in data.keys():
+                            dpg.set_value(value=data["gameSlug"], item="game_slug")
+                        else:
+                            dpg.set_value(value="gameSlug", item="game_slug")
                         dpg.add_text("Repository Access:")
                         dpg.add_listbox(
                             items=["Open Source", "Private"], tag="repository_access"
                         )
-                        if data["access"] == "private":
-                            dpg.set_value(value="Private", item="repository_access")
-                        else:
-                            dpg.set_value(value="Open Source", item="repository_access")
+                        if "access" in data.keys():
+                            if data["access"] == "private":
+                                dpg.set_value(value="Private", item="repository_access")
+                            else:
+                                dpg.set_value(
+                                    value="Open Source", item="repository_access"
+                                )
                         dpg.add_text("Enable video chat:")
-                        dpg.add_checkbox(
-                            default_value=data["enableVideoChat"],
-                            tag="enable_video_chat",
-                        )
+                        if "enableVideoChat" in data.keys():
+                            dpg.add_checkbox(
+                                default_value=data["enableVideoChat"],
+                                tag="enable_video_chat",
+                            )
+                        else:
+                            dpg.add_checkbox(
+                                tag="enable_video_chat",
+                            )
                         dpg.add_text("Hidden:")
-                        dpg.add_checkbox(default_value=data["hidden"], tag="hidden")
+                        if "hidden" in data.keys():
+                            dpg.add_checkbox(default_value=data["hidden"], tag="hidden")
+                        else:
+                            dpg.add_checkbox(tag="hidden")
                         dpg.add_text("Enable Data Saving:")
-                        dpg.add_checkbox(
-                            default_value=data["enablePersistedData"],
-                            tag="enable_persistent_data",
-                        )
+                        if "enablePersistedData" in data.keys():
+                            dpg.add_checkbox(
+                                default_value=data["enablePersistedData"],
+                                tag="enable_persisftent_data",
+                            )
+                        else:
+                            dpg.add_checkbox(
+                                tag="enable_persisftent_data",
+                            )
                         dpg.add_text("Enable Context Menu:")
-                        dpg.add_checkbox(
-                            default_value=data["contextMenuEnabled"], tag="context_menu"
-                        )
+                        if "contextMenuEnabled" in data.keys():
+                            dpg.add_checkbox(
+                                default_value=data["contextMenuEnabled"],
+                                tag="context_menu",
+                            )
+                        else:
+                            dpg.add_checkbox(tag="context_menu")
                         dpg.add_text("Disable ads in portals:")
-                        dpg.add_checkbox(
-                            default_value=data["disableAdsPortals"],
-                            tag="ads_in_portals",
-                        )
+                        if "disableAdsPortals" in data.keys():
+                            dpg.add_checkbox(
+                                default_value=data["disableAdsPortals"],
+                                tag="ads_in_portals",
+                            )
+                        else:
+                            dpg.add_checkbox(
+                                tag="ads_in_portals",
+                            )
                         dpg.add_text("Daily coin transfer limit:")
-                        dpg.add_slider_int(
-                            default_value=data["dailyCoinTransferLimit"],
-                            tag="transfer_limit",
-                        )
+                        if "dailyCoinTransferLimit" in data.keys():
+                            dpg.add_slider_int(
+                                default_value=data["dailyCoinTransferLimit"],
+                                tag="transfer_limit",
+                            )
+                        else:
+                            dpg.add_slider_int(
+                                tag="transfer_limit",
+                            )
                         dpg.add_button(label="Save", callback=save_callback)
                 with dpg.menu(label="Editor"):
                     dpg.add_menu_item(label="Theme")
