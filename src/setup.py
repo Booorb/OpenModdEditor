@@ -117,7 +117,7 @@ def setup_project_callback():
                 )
 
 
-with open("storage.json") as f:
+with open("settings.json") as f:
     data = json.load(f)
 
     def battle_royale_callback():

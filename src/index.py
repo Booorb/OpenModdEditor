@@ -19,20 +19,20 @@ dpg.create_viewport()
 dpg.setup_dearpygui()
 
 with dpg.font_registry():
-    with open("storage.json") as f:
+    with open("settings.json") as f:
         data = json.load(f)
         data["editorFolder"] = os.getcwd()
-        json.dump(data, open("storage.json", "w"), indent=4)
+        json.dump(data, open("settings.json", "w"), indent=4)
         default_font = dpg.add_font(
             data["editorFolder"] + "/assets/OpenSans-Regular.ttf", 20
         )
 
 
 def open_callback(sender, app_data):
-    with open(editorFolder + "/storage.json") as f:
+    with open(editorFolder + "/settings.json") as f:
         data = json.load(f)
         data["gameFolder"] = app_data["file_path_name"]
-        json.dump(data, open(editorFolder + "/storage.json", "w"), indent=4)
+        json.dump(data, open(editorFolder + "/settings.json", "w"), indent=4)
         os.chdir(data["gameFolder"])
 
 
@@ -93,7 +93,7 @@ def setup_ui():
 with dpg.window(label="Menu", tag="default_window"):
     dpg.set_primary_window("default_window", True)
     dpg.bind_font(default_font)
-    with open("storage.json") as f:
+    with open("settings.json") as f:
         data = json.load(f)
         global editorFolder
         editorFolder = data["editorFolder"]
@@ -101,7 +101,7 @@ with dpg.window(label="Menu", tag="default_window"):
             setup_ui()
         else:
             data["gameFolder"] = os.getcwd()
-            json.dump(data, open("storage.json", "w"), indent=4)
+            json.dump(data, open("settings.json", "w"), indent=4)
             setup_ui()
 
 with dpg.theme() as global_theme:
