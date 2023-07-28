@@ -108,55 +108,79 @@ def edit_callback():
                     )
                 with dpg.menu(label="Engine"):
                     dpg.add_text("Maximum Players:")
-                    dpg.add_slider_int(
-                        default_value=data["defaultMaxPlayers"], tag="max_players"
-                    )
+                    if "defaultMaxPlayers" in data.keys():
+                        dpg.add_slider_int(
+                            default_value=data["defaultMaxPlayers"], tag="max_players"
+                        )
+                    else:
+                        dpg.add_slider_int(tag="max_players")
                     dpg.add_text("Server Life Span:")
-                    dpg.add_slider_int(
-                        default_value=data["lifeSpanHours"],
-                        max_value=6,
-                        tag="server_life_span",
-                    )
+                    if "lifeSpanHours" in data.keys():
+                        dpg.add_slider_int(
+                            default_value=data["lifeSpanHours"],
+                            max_value=6,
+                            tag="server_life_span",
+                        )
+                    else:
+                        dpg.add_slider_int(
+                            max_value=6,
+                            tag="server_life_span",
+                        )
                     dpg.add_text("Physics Engine:")
                     dpg.add_listbox(
                         items=["PlanckJS", "Box2dWeb", "Box2d es6"],
                         tag="physics_engine",
                     )
-                    if data["physicsEngine"] == "planck":
-                        dpg.set_value(value="PlanckJS", item="physics_engine")
-                    elif data["physicsEngine"] == "box2dweb":
-                        dpg.set_value(value="Box2dWeb", item="physics_engine")
-                    else:
-                        dpg.set_value(value="Box2d es6", item="physics_engine")
+                    if "physicsEngine" in data.keys():
+                        if data["physicsEngine"] == "planck":
+                            dpg.set_value(value="PlanckJS", item="physics_engine")
+                        elif data["physicsEngine"] == "box2dweb":
+                            dpg.set_value(value="Box2dWeb", item="physics_engine")
+                        else:
+                            dpg.set_value(value="Box2d es6", item="physics_engine")
                     dpg.add_text("Client Physics Engine:")
                     dpg.add_listbox(
                         items=["PlanckJS", "Box2dWeb", "Box2d es6"],
                         tag="client_physics_engine",
                     )
-                    if data["clientPhysicsEngine"] == "planck":
-                        dpg.set_value(value="PlanckJS", item="client_physics_engine")
-                    elif data["clientPhysicsEngine"] == "box2dweb":
-                        dpg.set_value(value="Box2dWeb", item="client_physics_engine")
-                    else:
-                        dpg.set_value(value="Box2d es6", item="client_physics_engine")
+                    if "clientPhysicsEngine" in data.keys():
+                        if data["clientPhysicsEngine"] == "planck":
+                            dpg.set_value(
+                                value="PlanckJS", item="client_physics_engine"
+                            )
+                        elif data["clientPhysicsEngine"] == "box2dweb":
+                            dpg.set_value(
+                                value="Box2dWeb", item="client_physics_engine"
+                            )
+                        else:
+                            dpg.set_value(
+                                value="Box2d es6", item="client_physics_engine"
+                            )
                     dpg.add_text("Rendering Filter:")
                     dpg.add_listbox(
                         items=["Smooth", "Pixel Art"], tag="rendering_filter"
                     )
-                    if data["renderingFilter"] == "smooth":
-                        dpg.set_value(value="Smooth", item="rendering_filter")
-                    else:
-                        dpg.set_value(value="Pixel Art", item="rendering_filter")
+                    if "renderingFilter" in data.keys():
+                        if data["renderingFilter"] == "smooth":
+                            dpg.set_value(value="Smooth", item="rendering_filter")
+                        else:
+                            dpg.set_value(value="Pixel Art", item="rendering_filter")
                     dpg.add_text("Client-side predicted movement:")
-                    dpg.add_checkbox(
-                        default_value=data["clientSidePredictionEnabled"],
-                        tag="predicted_movement",
-                    )
+                    if "clientSidePredictionEnabled" in data.keys():
+                        dpg.add_checkbox(
+                            default_value=data["clientSidePredictionEnabled"],
+                            tag="predicted_movement",
+                        )
+                    else:
+                        dpg.add_checkbox(tag="predicted_movement")
                     dpg.add_text("Continuous Physics:")
-                    dpg.add_checkbox(
-                        default_value=data["data"]["settings"]["continuousPhysics"],
-                        tag="continuous_physics",
-                    )
+                    if "continuousPhysics" in data["data"]["settings"].keys():
+                        dpg.add_checkbox(
+                            default_value=data["data"]["settings"]["continuousPhysics"],
+                            tag="continuous_physics",
+                        )
+                    else:
+                        dpg.add_checkbox(tag="continuous_physics")
                     dpg.add_text("Physics frame rate:")
                     dpg.add_slider_int(
                         default_value=15, max_value=60, tag="physics_frame_rate"
@@ -165,9 +189,12 @@ def edit_callback():
                     dpg.add_slider_int(label="x", default_value=0, tag="gravity_x")
                     dpg.add_slider_int(label="y", default_value=0, tag="gravity_y")
                     dpg.add_text("Allow duplicate IP's:")
-                    dpg.add_checkbox(
-                        default_value=data["allowDuplicateIPS"], tag="duplicate_ips"
-                    )
+                    if "allowDuplicateIPS" in data.keys():
+                        dpg.add_checkbox(
+                            default_value=data["allowDuplicateIPS"], tag="duplicate_ips"
+                        )
+                    else:
+                        dpg.add_checkbox(tag="duplicate_ips")
                     dpg.add_button(label="Save", callback=save_callback)
 
                 with dpg.menu(label="UI"):
