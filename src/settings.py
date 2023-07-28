@@ -292,13 +292,19 @@ def edit_callback():
                     dpg.add_button(label="Save", callback=save_callback)
                 with dpg.menu(label="Mod/Lobby"):
                     dpg.add_text("Allow Modding:")
-                    dpg.add_checkbox(
-                        default_value=data["isModdable"], tag="allow_modding"
-                    )
+                    if "isModdable" in data.keys():
+                        dpg.add_checkbox(
+                            default_value=data["isModdable"], tag="allow_modding"
+                        )
+                    else:
+                        dpg.add_checkbox(tag="allow_modding")
                     dpg.add_text("Enable Lobby:")
-                    dpg.add_checkbox(
-                        default_value=data["isLobbyEnabled"], tag="enable_lobby"
-                    )
+                    if "isLobbyEnabled" in data.keys():
+                        dpg.add_checkbox(
+                            default_value=data["isLobbyEnabled"], tag="enable_lobby"
+                        )
+                    else:
+                        dpg.add_checkbox(tag="enable_lobby")
                     dpg.add_button(label="Save", callback=save_callback)
 
             dpg.add_button(label="Back", tag="back_button", callback=back_callback)
