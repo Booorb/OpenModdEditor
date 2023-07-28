@@ -199,45 +199,76 @@ def edit_callback():
 
                 with dpg.menu(label="UI"):
                     dpg.add_text("Display Leaderboard:")
-                    dpg.add_checkbox(
-                        default_value=data["data"]["settings"]["displayScoreboard"],
-                        tag="display_leaderboard",
-                    )
+                    if "displayScoreboard" in data["data"]["settings"].keys():
+                        dpg.add_checkbox(
+                            default_value=data["data"]["settings"]["displayScoreboard"],
+                            tag="display_leaderboard",
+                        )
+                    else:
+                        dpg.add_checkbox(tag="display_leaderboard")
                     dpg.add_text("Prettify Leaderboard:")
-                    dpg.add_checkbox(
-                        default_value=data["data"]["settings"]["prettifyingScoreboard"],
-                        tag="prettify_leaderboard",
-                    )
+                    if "prettifyingScoreboard" in data["data"]["settings"].keys():
+                        dpg.add_checkbox(
+                            default_value=data["data"]["settings"][
+                                "prettifyingScoreboard"
+                            ],
+                            tag="prettify_leaderboard",
+                        )
+                    else:
+                        dpg.add_checkbox(tag="prettify_leaderboard")
                     dpg.add_text("Default Camera Zoom:")
-                    dpg.add_slider_int(
-                        default_value=data["data"]["settings"]["camera"]["zoom"][
-                            "default"
-                        ],
-                        min_value=250,
-                        max_value=1500,
-                        tag="camera_zoom",
-                    )
+                    if "default" in data["data"]["settings"]["camera"]["zoom"].keys():
+                        dpg.add_slider_int(
+                            default_value=data["data"]["settings"]["camera"]["zoom"][
+                                "default"
+                            ],
+                            min_value=250,
+                            max_value=1500,
+                            tag="camera_zoom",
+                        )
+                    else:
+                        dpg.add_slider_int(
+                            min_value=250,
+                            max_value=1500,
+                            tag="camera_zoom",
+                        )
                     dpg.add_text("Camera Tracking Speed:")
-                    dpg.add_slider_int(
-                        default_value=data["data"]["settings"]["camera"][
-                            "trackingDelay"
-                        ],
-                        min_value=1,
-                        max_value=60,
-                        tag="camera_tracking_speed",
-                    )
+                    if "trackingDelay" in data["data"]["settings"]["camera"].keys():
+                        dpg.add_slider_int(
+                            default_value=data["data"]["settings"]["camera"][
+                                "trackingDelay"
+                            ],
+                            min_value=1,
+                            max_value=60,
+                            tag="camera_tracking_speed",
+                        )
+                    else:
+                        dpg.add_slider_int(
+                            min_value=1,
+                            max_value=60,
+                            tag="camera_tracking_speed",
+                        )
                     dpg.add_text("Add stroke to name labels and attribute bars:")
-                    dpg.add_checkbox(
-                        default_value=data["data"]["settings"][
-                            "addStrokeToNameAndAttributes"
-                        ],
-                        tag="add_stroke",
-                    )
+                    if (
+                        "addStrokeToNameAndAttributes"
+                        in data["data"]["settings"].keys()
+                    ):
+                        dpg.add_checkbox(
+                            default_value=data["data"]["settings"][
+                                "addStrokeToNameAndAttributes"
+                            ],
+                            tag="add_stroke",
+                        )
+                    else:
+                        dpg.add_checkbox(tag="add_stroke")
                     dpg.add_text("Height Based Z-Index:")
-                    dpg.add_checkbox(
-                        default_value=data["heightBasedZIndex"],
-                        tag="height_based_z_index",
-                    )
+                    if "heightBasedZIndex" in data.keys():
+                        dpg.add_checkbox(
+                            default_value=data["heightBasedZIndex"],
+                            tag="height_based_z_index",
+                        )
+                    else:
+                        dpg.add_checkbox(tag="height_based_z_index")
                     dpg.add_button(label="Save", callback=save_callback)
                 with dpg.menu(label="Map"):
                     print("Map")
