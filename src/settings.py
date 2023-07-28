@@ -274,15 +274,21 @@ def edit_callback():
                     print("Map")
                 with dpg.menu(label="Title Screen"):
                     dpg.add_text("Game Description:")
-                    dpg.add_input_text(
-                        default_value=data["data"]["settings"]["menudiv"],
-                        tag="game_description",
-                    )
+                    if "menudiv" in data["data"]["settings"].keys():
+                        dpg.add_input_text(
+                            default_value=data["data"]["settings"]["menudiv"],
+                            tag="game_description",
+                        )
+                    else:
+                        dpg.add_input_text(tag="game_description")
                     dpg.add_text("Gameplay Instructions:")
-                    dpg.add_input_text(
-                        default_value=data["gamePlayInstructions"],
-                        tag="gameplay_instructions",
-                    )
+                    if "gamePlayInstructions" in data.keys():
+                        dpg.add_input_text(
+                            default_value=data["gamePlayInstructions"],
+                            tag="gameplay_instructions",
+                        )
+                    else:
+                        dpg.add_input_text(tag="gameplay_instructions")
                     dpg.add_button(label="Save", callback=save_callback)
                 with dpg.menu(label="Mod/Lobby"):
                     dpg.add_text("Allow Modding:")
