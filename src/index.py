@@ -26,6 +26,9 @@ with dpg.font_registry():
         default_font = dpg.add_font(
             data["editorFolder"] + "/assets/OpenSans-Regular.ttf", 20
         )
+        title_font = dpg.add_font(
+            data["editorFolder"] + "/assets/OpenSans-Bold.ttf", 30
+        )
 
 
 def open_callback(sender, app_data):
