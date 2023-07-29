@@ -14,11 +14,9 @@ def play_callback():
 
 
 def taro2_callback():
-    dpg.delete_item("taro2_button")
-    dpg.set_value(value="Started downloading taro2...", item="taro2_text")
     os.system("git clone https://github.com/moddio/taro2.git")
     filereplace("taro2/server/server.js", "80", "3000")
-    dpg.set_value(value="Finished downloading taro2...", item="taro2_text")
+    os.system("cd taro2 && npm install")
 
 
 def packages_callback():
@@ -33,27 +31,10 @@ def setup_project_callback():
         dpg.show_item("setup_project")
     else:
         with dpg.window(label="Setup Manager", tag="setup_project"):
-            if os.path.isdir("taro2"):
-                dpg.add_text("Taro2 is already installed!")
-            else:
-                dpg.add_text("Download Taro2:", tag="taro2_text")
-                dpg.add_button(
-                    label="Download", tag="taro2_button", callback=taro2_callback
-                )
-
-            if os.path.isdir("taro2/node_modules"):
-                dpg.add_text("Already installed npm packages!")
-            else:
-                dpg.add_text("Download npm packages:", tag="packages_text")
-                dpg.add_button(
-                    label="Download",
-                    tag="packages_button",
-                    callback=packages_callback,
-                )
             if os.path.isfile("taro2/src/game.json"):
                 dpg.add_text("Already added game.json!")
             else:
-                dpg.add_text("Download template game or upload own game.json file:")
+                dpg.add_text("Download template game or import own game.json file:")
                 dpg.add_button(
                     label="Battle Royale",
                     tag="battle_royale_button",
@@ -110,6 +91,7 @@ def setup_project_callback():
                     tag="zombie_tag_button",
                     callback=zombie_tag_callback,
                 )
+                dpg.add_separator()
                 dpg.add_button(
                     label="Import game.json",
                     tag="import_game_button",
@@ -121,87 +103,88 @@ with open("settings.json") as f:
     data = json.load(f)
 
     def battle_royale_callback():
+        game_callback()
         shutil.copyfile(
             data["editorFolder"] + "/templates/BattleRoyale.json", "taro2/src/game.json"
         )
-        game_callback()
 
     def blank_template_callback():
+        game_callback()
         shutil.copyfile(
             data["editorFolder"] + "/templates/BlankTemplate.json",
             "taro2/src/game.json",
         )
-        game_callback()
 
     def cell_eater_callback():
+        game_callback()
         shutil.copyfile(
             data["editorFolder"] + "/templates/CellEater.json", "taro2/src/game.json"
         )
-        game_callback()
 
     def deathmatch_callback():
+        game_callback()
         shutil.copyfile(
             data["editorFolder"] + "/templates/Deathmatch.json", "taro2/src/game.json"
         )
-        game_callback()
 
     def guided_tutorial_callback():
+        game_callback()
         shutil.copyfile(
             data["editorFolder"] + "/templates/GuidedTutorial.json",
             "taro2/src/game.json",
         )
-        game_callback()
 
     def hunt_and_gather_callback():
+        game_callback()
         shutil.copyfile(
             data["editorFolder"] + "/templates/HuntAndGather.json",
             "taro2/src/game.json",
         )
-        game_callback()
 
     def platformer_callback():
+        game_callback()
         shutil.copyfile(
             data["editorFolder"] + "/templates/Platformer.json", "taro2/src/game.json"
         )
-        game_callback()
 
     def racer_callback():
+        game_callback()
         shutil.copyfile(
             data["editorFolder"] + "/templates/Racer.json", "taro2/src/game.json"
         )
-        game_callback()
 
     def soccer_callback():
+        game_callback()
         shutil.copyfile(
             data["editorFolder"] + "/templates/Soccer.json", "taro2/src/game.json"
         )
-        game_callback()
 
     def team_elimination_callback():
+        game_callback()
         shutil.copyfile(
             data["editorFolder"] + "/templates/TeamElimination.json",
             "taro2/src/game.json",
         )
-        game_callback()
 
     def tower_defense_callback():
+        game_callback()
         shutil.copyfile(
             data["editorFolder"] + "/templates/TowerDefense.json", "taro2/src/game.json"
         )
-        game_callback()
 
     def zombie_tag_callback():
+        game_callback()
         shutil.copyfile(
             data["editorFolder"] + "/templates/ZombieTag.json", "taro2/src/game.json"
         )
-        game_callback()
 
     def import_game_file_callback(sender, app_data, user_data):
-        shutil.copyfile(app_data["file_path_name"], "taro2/src/game.json")
         game_callback()
+        shutil.copyfile(app_data["file_path_name"], "taro2/src/game.json")
 
 
 def game_callback():
+    taro2_callback()
     dpg.hide_item("setup_project")
     dpg.delete_item("setup_project_group")
     if dpg.does_item_exist("update_project_button"):
