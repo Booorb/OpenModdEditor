@@ -76,18 +76,17 @@ def setup_ui():
         dpg.add_text("Play the game:")
         dpg.add_button(label="Play", callback=play_callback)
     else:
-        dpg.add_text("Create Project:", tag="setup_project_text")
-        dpg.add_button(
-            label="Create",
-            tag="setup_project_button",
-            callback=setup_project_callback,
-        )
-        dpg.add_text("Change Folder:", tag="setup_change_folder_text")
-        dpg.add_button(
-            label="Change",
-            tag="setup_change_folder_button",
-            callback=lambda: dpg.show_item("change_folder_selector"),
-        )
+        with dpg.group(tag="setup_project_group"):
+            dpg.add_text("Create Project:")
+            dpg.add_button(
+                label="Create",
+                callback=setup_project_callback,
+            )
+            dpg.add_text("Open Project:")
+            dpg.add_button(
+                label="Open",
+                callback=lambda: dpg.show_item("change_folder_selector"),
+            )
 
 
 with dpg.window(label="Menu", tag="default_window"):

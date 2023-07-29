@@ -203,10 +203,7 @@ with open("settings.json") as f:
 
 def game_callback():
     dpg.hide_item("setup_project")
-    dpg.delete_item("setup_project_text")
-    dpg.delete_item("setup_project_button")
-    dpg.delete_item("setup_change_folder_text")
-    dpg.delete_item("setup_change_folder_button")
+    dpg.delete_item("setup_project_group")
     if dpg.does_item_exist("update_project_button"):
         print("button exists")
     else:
