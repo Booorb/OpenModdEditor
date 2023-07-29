@@ -98,6 +98,15 @@ def setup_project_callback():
                     callback=lambda: dpg.show_item("import_game_file"),
                 )
 
+                with dpg.window(
+                    modal=True,
+                    show=False,
+                    tag="please_wait_popup",
+                    no_title_bar=True,
+                ):
+                    dpg.add_text("Setting up project...")
+                    dpg.add_text("Please wait!")
+
 
 with open("settings.json") as f:
     data = json.load(f)
@@ -184,9 +193,11 @@ with open("settings.json") as f:
 
 
 def game_callback():
+    dpg.configure_item("please_wait_popup", show=True)
     taro2_callback()
     dpg.hide_item("setup_project")
     dpg.delete_item("setup_project_group")
+    dpg.configure_item("please_wait_popup", show=False)
     if dpg.does_item_exist("update_project_button"):
         print("button exists")
     else:
