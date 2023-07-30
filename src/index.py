@@ -67,6 +67,40 @@ with dpg.file_dialog(
 
 def setup_ui():
     os.chdir(data["gameFolder"])
+    with dpg.window(label="Menu", tag="menu_window"):
+        dpg.set_primary_window("menu_window", True)
+        with dpg.viewport_menu_bar():
+            with dpg.menu(label="File"):
+                dpg.add_menu_item(label="Import Project")
+                dpg.add_menu_item(label="Export Project")
+                dpg.add_menu_item(
+                    label="Open Project",
+                )
+
+                with dpg.menu(label="Create Project"):
+                    dpg.add_menu_item(label="create project with template")
+                    dpg.add_menu_item(label="create empty project")
+
+            with dpg.menu(label="View"):
+                dpg.add_menu_item(
+                    label="Toggle Fullscreen", callback=fullscreen_callback
+                )
+                dpg.add_separator()
+                dpg.add_menu_item(
+                    label="Show Project Manager", callback=fullscreen_callback
+                )
+                dpg.add_menu_item(
+                    label="Show Update Manager", callback=fullscreen_callback
+                )
+                dpg.add_menu_item(
+                    label="Show Settings Window", callback=fullscreen_callback
+                )
+
+            with dpg.menu(label="Help"):
+                dpg.add_menu_item(label="About OpenModdEditor")
+
+            dpg.add_menu_item(label="Play")
+
     if os.path.isfile(data["gameFolder"] + "/taro2/src/game.json"):
         dpg.add_text("Update Project:")
         dpg.add_button(
@@ -80,20 +114,21 @@ def setup_ui():
         dpg.add_button(label="Play", callback=play_callback)
     else:
         with dpg.group(tag="setup_project_group"):
-            dpg.add_text("Create Project:")
+            projects_title = dpg.add_text("Your Projects:")
+            dpg.add_text("no projects yet!")
+            dpg.bind_item_font(projects_title, title_font)
+            dpg.add_separator()
             dpg.add_button(
-                label="Create",
+                label="Create Project",
                 callback=setup_project_callback,
             )
-            dpg.add_text("Open Project:")
             dpg.add_button(
-                label="Open",
+                label="Open Project",
                 callback=lambda: dpg.show_item("change_folder_selector"),
             )
 
 
 with dpg.window(label="Menu", tag="default_window"):
-    dpg.set_primary_window("default_window", True)
     dpg.bind_font(default_font)
     with open("settings.json") as f:
         data = json.load(f)
