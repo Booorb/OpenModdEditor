@@ -312,25 +312,40 @@ def edit_callback():
                     dpg.add_text("Social")
                     dpg.add_separator()
                     dpg.add_text("Discord invite link:")
-                    dpg.add_input_text(
-                        default_value=data["discordInviteLink"], tag="discord_link"
-                    )
+                    if "discordInviteLink" in data.keys():
+                        dpg.add_input_text(
+                            default_value=data["discordInviteLink"], tag="discord_link"
+                        )
+                    else:
+                        dpg.add_input_text(tag="discord_link")
                     dpg.add_text("Twitter link:")
-                    dpg.add_input_text(
-                        default_value=data["twitterLink"], tag="twitter_link"
-                    )
+                    if "twitterLink" in data.keys():
+                        dpg.add_input_text(
+                            default_value=data["twitterLink"], tag="twitter_link"
+                        )
+                    else:
+                        dpg.add_input_text(tag="twitter_link")
                     dpg.add_text("Facebook link:")
-                    dpg.add_input_text(
-                        default_value=data["facebookLink"], tag="facebook_link"
-                    )
+                    if "facebookLink" in data.keys():
+                        dpg.add_input_text(
+                            default_value=data["facebookLink"], tag="facebook_link"
+                        )
+                    else:
+                        dpg.add_input_text(tag="facebook_link")
                     dpg.add_text("Youtube link:")
-                    dpg.add_input_text(
-                        default_value=data["youtubeLink"], tag="youtube_link"
-                    )
+                    if "youtubeLink" in data.keys():
+                        dpg.add_input_text(
+                            default_value=data["youtubeLink"], tag="youtube_link"
+                        )
+                    else:
+                        dpg.add_input_text(tag="youtube_link")
                     dpg.add_text("More IO Games link for iogames.space:")
-                    dpg.add_checkbox(
-                        default_value=data["moreIoGames"], tag="iogames_link"
-                    )
+                    if "moreIoGames" in data.keys():
+                        dpg.add_checkbox(
+                            default_value=data["moreIoGames"], tag="iogames_link"
+                        )
+                    else:
+                        dpg.add_checkbox(tag="iogames_link")
                     dpg.add_button(label="Save", callback=save_callback)
                 with dpg.menu(label="Mod/Lobby"):
                     dpg.add_text("Allow Modding:")
