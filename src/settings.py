@@ -273,6 +273,8 @@ def edit_callback():
                 with dpg.menu(label="Map"):
                     print("Map")
                 with dpg.menu(label="Title Screen"):
+                    dpg.add_text("Menu")
+                    dpg.add_separator()
                     dpg.add_text("Game Description:")
                     if "menudiv" in data["data"]["settings"].keys():
                         dpg.add_input_text(
@@ -289,6 +291,28 @@ def edit_callback():
                         )
                     else:
                         dpg.add_input_text(tag="gameplay_instructions")
+                    dpg.add_text("Social")
+                    dpg.add_separator()
+                    dpg.add_text("Discord invite link:")
+                    dpg.add_input_text(
+                        default_value=data["discordInviteLink"], tag="discord_link"
+                    )
+                    dpg.add_text("Twitter link:")
+                    dpg.add_input_text(
+                        default_value=data["twitterLink"], tag="twitter_link"
+                    )
+                    dpg.add_text("Facebook link:")
+                    dpg.add_input_text(
+                        default_value=data["facebookLink"], tag="facebook_link"
+                    )
+                    dpg.add_text("Youtube link:")
+                    dpg.add_input_text(
+                        default_value=data["youtubeLink"], tag="youtube_link"
+                    )
+                    dpg.add_text("More IO Games link for iogames.space:")
+                    dpg.add_checkbox(
+                        default_value=data["moreIoGames"], tag="iogames_link"
+                    )
                     dpg.add_button(label="Save", callback=save_callback)
                 with dpg.menu(label="Mod/Lobby"):
                     dpg.add_text("Allow Modding:")
@@ -369,6 +393,11 @@ def save_callback(sender):
         data["heightBasedZIndex"] = dpg.get_value("height_based_z_index")
         data["data"]["settings"]["menudiv"] = dpg.get_value("game_description")
         data["gamePlayInstructions"] = dpg.get_value("gameplay_instructions")
+        data["discordInviteLink"] = dpg.get_value("discord_link")
+        data["twitterLink"] = dpg.get_value("twitter_link")
+        data["facebookLink"] = dpg.get_value("facebook_link")
+        data["youtubeLink"] = dpg.get_value("youtube_link")
+        data["moreIoGames"] = dpg.get_value("iogames_link")
         data["isModdable"] = dpg.get_value("allow_modding")
         data["isLobbyEnabled"] = dpg.get_value("enable_lobby")
         json.dump(data, open("taro2/src/game.json", "w"), indent=4)
