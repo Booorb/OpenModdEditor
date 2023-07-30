@@ -283,6 +283,32 @@ def edit_callback():
                         )
                     else:
                         dpg.add_input_text(tag="gameplay_instructions")
+                    dpg.add_text("Images")
+                    dpg.add_separator()
+                    dpg.add_text("Logo Image:")
+                    if "logo" in data["data"]["settings"]["images"].keys():
+                        dpg.add_input_text(
+                            default_value=data["data"]["settings"]["images"]["logo"],
+                            tag="logo_link",
+                        )
+                    else:
+                        dpg.add_input_text(tag="logo_link")
+                    dpg.add_text("Cover Image:")
+                    if "cover" in data["data"]["settings"]["images"].keys():
+                        dpg.add_input_text(
+                            default_value=data["data"]["settings"]["images"]["cover"],
+                            tag="cover_link",
+                        )
+                    else:
+                        dpg.add_input_text(tag="cover_link")
+                    dpg.add_text("Game Icon:")
+                    if "icon" in data["data"]["settings"]["images"].keys():
+                        dpg.add_input_text(
+                            default_value=data["data"]["settings"]["images"]["icon"],
+                            tag="icon_link",
+                        )
+                    else:
+                        dpg.add_input_text(tag="icon_link")
                     dpg.add_text("Social")
                     dpg.add_separator()
                     dpg.add_text("Discord invite link:")
@@ -383,6 +409,9 @@ def save_callback(sender):
         data["heightBasedZIndex"] = dpg.get_value("height_based_z_index")
         data["data"]["settings"]["menudiv"] = dpg.get_value("game_description")
         data["gamePlayInstructions"] = dpg.get_value("gameplay_instructions")
+        data["data"]["settings"]["images"]["cover"] = dpg.get_value("cover_link")
+        data["data"]["settings"]["images"]["logo"] = dpg.get_value("logo_link")
+        data["data"]["settings"]["images"]["icon"] = dpg.get_value("icon_link")
         data["discordInviteLink"] = dpg.get_value("discord_link")
         data["twitterLink"] = dpg.get_value("twitter_link")
         data["facebookLink"] = dpg.get_value("facebook_link")
