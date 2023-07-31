@@ -195,20 +195,4 @@ with open("settings.json") as f:
 def game_callback():
     dpg.configure_item("please_wait_popup", show=True)
     taro2_callback()
-    dpg.hide_item("setup_project")
-    dpg.delete_item("setup_project_group")
     dpg.configure_item("please_wait_popup", show=False)
-    if dpg.does_item_exist("update_project_button"):
-        print("button exists")
-    else:
-        dpg.add_text("Update Project:", parent="default_window")
-        dpg.add_button(
-            label="Update",
-            parent="default_window",
-            tag="update_project_button",
-            callback=update_project_callback,
-        )
-        dpg.add_text("Edit Game Settings:", parent="default_window")
-        dpg.add_button(label="Edit", parent="default_window", callback=edit_callback)
-        dpg.add_text("Play the game:", parent="default_window")
-        dpg.add_button(label="Play", parent="default_window", callback=play_callback)

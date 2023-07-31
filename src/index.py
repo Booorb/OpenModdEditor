@@ -44,6 +44,10 @@ def cancel_callback(sender, app_data):
     print("Cancel was clicked.")
 
 
+def project_manager_callback():
+    dpg.show_item("project_manager_window")
+
+
 dpg.add_file_dialog(
     directory_selector=True,
     show=False,
@@ -102,34 +106,28 @@ def setup_ui():
 
             dpg.add_menu_item(label="Play")
 
-    if os.path.isfile(data["gameFolder"] + "/taro2/src/game.json"):
-        dpg.add_text("Update Project:")
-        dpg.add_button(
-            label="Update",
-            tag="update_project_button",
-            callback=update_project_callback,
-        )
-        dpg.add_text("Edit Game Settings:")
-        dpg.add_button(label="Edit", callback=edit_callback)
-        dpg.add_text("Play the game:")
-        dpg.add_button(label="Play", callback=play_callback)
-    else:
-        with dpg.group(tag="setup_project_group"):
-            projects_title = dpg.add_text("Your Projects:")
+    with dpg.group(tag="setup_project_group"):
+        projects_title = dpg.add_text("Your Projects:")
+        if os.path.isfile(data["gameFolder"] + "/taro2/src/game.json"):
+            dpg.hide_item("project_manager_window")
+            with open("taro2/src/game.json") as f:
+                game = json.load(f)
+                dpg.add_button(label=game["title"])
+        else:
             dpg.add_text("no projects yet!")
-            dpg.bind_item_font(projects_title, title_font)
-            dpg.add_separator()
-            dpg.add_button(
-                label="Create Project",
-                callback=setup_project_callback,
-            )
-            dpg.add_button(
-                label="Open Project",
-                callback=lambda: dpg.show_item("change_folder_selector"),
-            )
+        dpg.bind_item_font(projects_title, title_font)
+        dpg.add_separator()
+        dpg.add_button(
+            label="Create Project",
+            callback=setup_project_callback,
+        )
+        dpg.add_button(
+            label="Open Project",
+            callback=lambda: dpg.show_item("change_folder_selector"),
+        )
 
 
-with dpg.window(label="Menu", tag="default_window"):
+with dpg.window(label="Project Manager", tag="project_manager_window"):
     dpg.bind_font(default_font)
     with open("settings.json") as f:
         data = json.load(f)
