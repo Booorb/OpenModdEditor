@@ -92,19 +92,17 @@ def setup_ui():
                 )
                 dpg.add_separator()
                 dpg.add_menu_item(
-                    label="Show Project Manager", callback=fullscreen_callback
+                    label="Show Project Manager", callback=project_manager_callback
                 )
                 dpg.add_menu_item(
-                    label="Show Update Manager", callback=fullscreen_callback
+                    label="Show Update Manager", callback=update_project_callback
                 )
-                dpg.add_menu_item(
-                    label="Show Settings Window", callback=fullscreen_callback
-                )
+                dpg.add_menu_item(label="Show Settings Window", callback=edit_callback)
 
             with dpg.menu(label="Help"):
                 dpg.add_menu_item(label="About OpenModdEditor", callback=about_callback)
 
-            dpg.add_menu_item(label="Play")
+            dpg.add_menu_item(label="Play", callback=play_callback)
 
     with dpg.group(tag="setup_project_group"):
         projects_title = dpg.add_text("Your Projects:")
