@@ -13,6 +13,7 @@ from settings import fullscreen_callback
 from settings import edit_callback
 from settings import save_callback
 from update import update_project_callback
+from about import about_callback
 
 dpg.create_context()
 dpg.create_viewport()
@@ -97,7 +98,7 @@ def setup_ui():
                 )
 
             with dpg.menu(label="Help"):
-                dpg.add_menu_item(label="About OpenModdEditor")
+                dpg.add_menu_item(label="About OpenModdEditor", callback=about_callback)
 
             dpg.add_menu_item(label="Play")
 
