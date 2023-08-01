@@ -19,6 +19,14 @@ def taro2_callback():
     os.system("cd taro2 && npm install")
 
 
+def save_project():
+    with open("taro2/src/game.json") as f:
+        game = json.load(f)
+        data["projects"] = ({game["title"]: data["gameFolder"]},)
+        json.dump(data, open(data["editorFolder"] + "/settings.json", "w"), indent=4)
+        os.chdir(data["gameFolder"])
+
+
 def packages_callback():
     dpg.delete_item("packages_button")
     dpg.set_value(value="Started downloading npm packages...", item="packages_text")
@@ -116,6 +124,7 @@ with open("settings.json") as f:
         shutil.copyfile(
             data["editorFolder"] + "/templates/BattleRoyale.json", "taro2/src/game.json"
         )
+        save_project()
 
     def blank_template_callback():
         game_callback()
@@ -123,18 +132,21 @@ with open("settings.json") as f:
             data["editorFolder"] + "/templates/BlankTemplate.json",
             "taro2/src/game.json",
         )
+        save_project()
 
     def cell_eater_callback():
         game_callback()
         shutil.copyfile(
             data["editorFolder"] + "/templates/CellEater.json", "taro2/src/game.json"
         )
+        save_project()
 
     def deathmatch_callback():
         game_callback()
         shutil.copyfile(
             data["editorFolder"] + "/templates/Deathmatch.json", "taro2/src/game.json"
         )
+        save_project()
 
     def guided_tutorial_callback():
         game_callback()
@@ -142,6 +154,7 @@ with open("settings.json") as f:
             data["editorFolder"] + "/templates/GuidedTutorial.json",
             "taro2/src/game.json",
         )
+        save_project()
 
     def hunt_and_gather_callback():
         game_callback()
@@ -149,24 +162,28 @@ with open("settings.json") as f:
             data["editorFolder"] + "/templates/HuntAndGather.json",
             "taro2/src/game.json",
         )
+        save_project()
 
     def platformer_callback():
         game_callback()
         shutil.copyfile(
             data["editorFolder"] + "/templates/Platformer.json", "taro2/src/game.json"
         )
+        save_project()
 
     def racer_callback():
         game_callback()
         shutil.copyfile(
             data["editorFolder"] + "/templates/Racer.json", "taro2/src/game.json"
         )
+        save_project()
 
     def soccer_callback():
         game_callback()
         shutil.copyfile(
             data["editorFolder"] + "/templates/Soccer.json", "taro2/src/game.json"
         )
+        save_project()
 
     def team_elimination_callback():
         game_callback()
@@ -174,22 +191,26 @@ with open("settings.json") as f:
             data["editorFolder"] + "/templates/TeamElimination.json",
             "taro2/src/game.json",
         )
+        save_project()
 
     def tower_defense_callback():
         game_callback()
         shutil.copyfile(
             data["editorFolder"] + "/templates/TowerDefense.json", "taro2/src/game.json"
         )
+        save_project()
 
     def zombie_tag_callback():
         game_callback()
         shutil.copyfile(
             data["editorFolder"] + "/templates/ZombieTag.json", "taro2/src/game.json"
         )
+        save_project()
 
     def import_game_file_callback(sender, app_data, user_data):
         game_callback()
         shutil.copyfile(app_data["file_path_name"], "taro2/src/game.json")
+        save_project()
 
 
 def game_callback():
