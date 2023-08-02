@@ -76,16 +76,19 @@ def setup_ui():
         dpg.set_primary_window("menu_window", True)
         with dpg.viewport_menu_bar():
             with dpg.menu(label="File"):
-                dpg.add_menu_item(label="Import Project")
+                dpg.add_menu_item(
+                    label="Import Project",
+                    callback=lambda: dpg.show_item("import_game_file"),
+                )
                 dpg.add_menu_item(label="Export Project")
                 dpg.add_menu_item(
                     label="Open Project",
                     callback=lambda: dpg.show_item("change_folder_selector"),
                 )
 
-                with dpg.menu(label="Create Project"):
-                    dpg.add_menu_item(label="create project with template")
-                    dpg.add_menu_item(label="create empty project")
+                dpg.add_menu_item(
+                    label="Create Project", callback=setup_project_callback
+                )
 
             with dpg.menu(label="View"):
                 dpg.add_menu_item(
