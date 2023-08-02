@@ -80,6 +80,7 @@ def setup_ui():
                 dpg.add_menu_item(label="Export Project")
                 dpg.add_menu_item(
                     label="Open Project",
+                    callback=lambda: dpg.show_item("change_folder_selector"),
                 )
 
                 with dpg.menu(label="Create Project"):
@@ -108,8 +109,8 @@ def setup_ui():
         projects_title = dpg.add_text("Your Projects:")
         if os.path.isfile(data["gameFolder"] + "/taro2/src/game.json"):
             dpg.hide_item("project_manager_window")
-            for projects in data["projects"]:
-                dpg.add_button(label=projects)
+            for titles in data["projects"]:
+                dpg.add_button(label=titles)
         else:
             dpg.add_text("no projects yet!")
         dpg.bind_item_font(projects_title, title_font)
