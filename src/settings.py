@@ -263,7 +263,12 @@ def edit_callback():
                         dpg.add_checkbox(tag="height_based_z_index")
                     dpg.add_button(label="Save", callback=save_callback)
                 with dpg.menu(label="Map"):
-                    print("Map")
+                    dpg.add_text("Tileset Link:")
+                    dpg.add_input_text(
+                        default_value=data["data"]["map"]["tilesets"][0]["image"],
+                        tag="tileset_link",
+                    )
+                    dpg.add_button(label="Save", callback=save_callback)
                 with dpg.menu(label="Title Screen"):
                     dpg.add_text("Menu")
                     dpg.add_separator()
@@ -422,6 +427,7 @@ def save_callback(sender):
             "add_stroke"
         )
         data["heightBasedZIndex"] = dpg.get_value("height_based_z_index")
+        data["data"]["map"]["tilesets"][0]["image"] = dpg.get_value("tileset_link")
         data["data"]["settings"]["menudiv"] = dpg.get_value("game_description")
         data["gamePlayInstructions"] = dpg.get_value("gameplay_instructions")
         data["data"]["settings"]["images"]["cover"] = dpg.get_value("cover_link")
