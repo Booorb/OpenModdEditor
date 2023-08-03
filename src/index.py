@@ -112,6 +112,7 @@ def setup_ui():
         projects_title = dpg.add_text("Your Projects:")
         if os.path.isfile(data["gameFolder"] + "/taro2/src/game.json"):
             dpg.hide_item("project_manager_window")
+        if "projects" in data.keys():
             for titles in data["projects"]:
                 dpg.add_button(label=titles)
         else:
