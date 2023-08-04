@@ -1,6 +1,16 @@
 import dearpygui.dearpygui as dpg
 import json
+import shutil
 from update import update_project_callback
+
+
+def import_map_callback(sender, app_data, user_data):
+    with open(app_data["file_path_name"]) as f:
+        map = json.load(f)
+        with open("taro2/src/game.json") as f:
+            data = json.load(f)
+            data["data"]["map"]["layers"] = map["layers"]
+            json.dump(data, open("taro2/src/game.json", "w"), indent=4)
 
 
 def edit_callback():
@@ -267,6 +277,10 @@ def edit_callback():
                     dpg.add_input_text(
                         default_value=data["data"]["map"]["tilesets"][0]["image"],
                         tag="tileset_link",
+                    dpg.add_text("Tiled Import:")
+                    dpg.add_button(
+                        label="Upload Tiled Map JSON",
+                        callback=lambda: dpg.show_item("import_map"),
                     )
                     dpg.add_button(label="Save", callback=save_callback)
                 with dpg.menu(label="Title Screen"):

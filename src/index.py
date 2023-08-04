@@ -12,6 +12,7 @@ from setup import import_game_file_callback
 from settings import fullscreen_callback
 from settings import edit_callback
 from settings import save_callback
+from settings import import_map_callback
 from update import update_project_callback
 from about import about_callback
 
@@ -64,6 +65,17 @@ with dpg.file_dialog(
     show=False,
     callback=import_game_file_callback,
     id="import_game_file",
+    width=700,
+    height=400,
+):
+    dpg.add_file_extension(".json", color=(0, 255, 0, 255), custom_text="[JSON]")
+
+
+with dpg.file_dialog(
+    directory_selector=False,
+    show=False,
+    callback=import_map_callback,
+    id="import_map",
     width=700,
     height=400,
 ):
