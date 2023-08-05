@@ -274,9 +274,27 @@ def edit_callback():
                     dpg.add_button(label="Save", callback=save_callback)
                 with dpg.menu(label="Map"):
                     dpg.add_text("Tileset Link:")
-                    dpg.add_input_text(
-                        default_value=data["data"]["map"]["tilesets"][0]["image"],
-                        tag="tileset_link",
+                    if "image" in data["data"]["map"]["tilesets"][0].keys():
+                        dpg.add_input_text(
+                            default_value=data["data"]["map"]["tilesets"][0]["image"],
+                            tag="tileset_link",
+                        )
+                    else:
+                        dpg.add_input_text(tag="tileset_link")
+                    dpg.add_text("Map Out of Bounds Color:")
+                    if "mapBackgroundColor" in data.keys():
+                        dpg.add_color_picker(
+                            default_value=data["mapBackgroundColor"],
+                            tag="background_color",
+                        )
+                    else:
+                        dpg.add_color_edit(tag="background_color")
+
+                    dpg.add_text("Scale tiles to 64x64:")
+                    dpg.add_checkbox()
+                    dpg.add_text("Map Size:")
+                    dpg.add_slider_int(label="tiles")
+                    dpg.add_slider_int(label="tiles")
                     dpg.add_text("Tiled Import:")
                     dpg.add_button(
                         label="Upload Tiled Map JSON",
