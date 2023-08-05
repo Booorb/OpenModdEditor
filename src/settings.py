@@ -1,6 +1,8 @@
 import dearpygui.dearpygui as dpg
 import json
 import shutil
+import matplotlib
+import numpy
 from update import update_project_callback
 
 
@@ -283,13 +285,14 @@ def edit_callback():
                         dpg.add_input_text(tag="tileset_link")
                     dpg.add_text("Map Out of Bounds Color:")
                     if "mapBackgroundColor" in data.keys():
-                        dpg.add_color_picker(
-                            default_value=data["mapBackgroundColor"],
-                            tag="background_color",
-                        )
+                        with open("settings.json") as f:
+                            settings = json.load(f)
+                            dpg.add_color_picker(
+                                default_value=settings["mapBackgroundColor"],
+                                tag="background_color",
+                            )
                     else:
-                        dpg.add_color_edit(tag="background_color")
-
+                        dpg.add_color_picker(tag="background_color")
                     dpg.add_text("Scale tiles to 64x64:")
                     dpg.add_checkbox()
                     dpg.add_text("Map Size:")
@@ -460,6 +463,10 @@ def save_callback(sender):
         )
         data["heightBasedZIndex"] = dpg.get_value("height_based_z_index")
         data["data"]["map"]["tilesets"][0]["image"] = dpg.get_value("tileset_link")
+        backgroundColor255Range = list(map(int, dpg.get_value("background_color")))
+        backgroundColor1Range = numpy.divide(backgroundColor255Range, 255)
+        backgroundColorHex = matplotlib.colors.to_hex(backgroundColor1Range)
+        data["mapBackgroundColor"] = backgroundColorHex
         data["data"]["settings"]["menudiv"] = dpg.get_value("game_description")
         data["gamePlayInstructions"] = dpg.get_value("gameplay_instructions")
         data["data"]["settings"]["images"]["cover"] = dpg.get_value("cover_link")
@@ -473,6 +480,10 @@ def save_callback(sender):
         data["isModdable"] = dpg.get_value("allow_modding")
         data["isLobbyEnabled"] = dpg.get_value("enable_lobby")
         json.dump(data, open("taro2/src/game.json", "w"), indent=4)
+    with open("settings.json") as f:
+        data = json.load(f)
+        data["mapBackgroundColor"] = dpg.get_value("background_color")
+        json.dump(data, open("settings.json", "w"), indent=4)
 
 
 def fullscreen_callback():
