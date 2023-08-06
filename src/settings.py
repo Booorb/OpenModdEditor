@@ -363,6 +363,7 @@ def edit_callback():
                         dpg.add_input_text(
                             default_value=data["data"]["settings"]["menudiv"],
                             tag="game_description",
+                            multiline=True,
                         )
                     else:
                         dpg.add_input_text(tag="game_description")
@@ -371,6 +372,7 @@ def edit_callback():
                         dpg.add_input_text(
                             default_value=data["gamePlayInstructions"],
                             tag="gameplay_instructions",
+                            multiline=True,
                         )
                     else:
                         dpg.add_input_text(tag="gameplay_instructions")
