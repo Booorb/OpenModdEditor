@@ -48,7 +48,10 @@ def edit_callback():
                                     value="Open Source", item="repository_access"
                                 )
                         dpg.add_text("Enable video chat:")
-                        if "enableVideoChat" in data.keys():
+                        if (
+                            "enableVideoChat" in data.keys()
+                            and data["enableVideoChat"] is not None
+                        ):
                             dpg.add_checkbox(
                                 default_value=data["enableVideoChat"],
                                 tag="enable_video_chat",
@@ -58,12 +61,15 @@ def edit_callback():
                                 tag="enable_video_chat",
                             )
                         dpg.add_text("Hidden:")
-                        if "hidden" in data.keys():
+                        if "hidden" in data.keys() and data["hidden"] is not None:
                             dpg.add_checkbox(default_value=data["hidden"], tag="hidden")
                         else:
                             dpg.add_checkbox(tag="hidden")
                         dpg.add_text("Enable Data Saving:")
-                        if "enablePersistedData" in data.keys():
+                        if (
+                            "enablePersistedData" in data.keys()
+                            and data["enablePersistedData"] is not None
+                        ):
                             dpg.add_checkbox(
                                 default_value=data["enablePersistedData"],
                                 tag="enable_persistent_data",
@@ -73,7 +79,10 @@ def edit_callback():
                                 tag="enable_persistent_data",
                             )
                         dpg.add_text("Enable Context Menu:")
-                        if "contextMenuEnabled" in data.keys():
+                        if (
+                            "contextMenuEnabled" in data.keys()
+                            and data["contextMenuEnabled"] is not None
+                        ):
                             dpg.add_checkbox(
                                 default_value=data["contextMenuEnabled"],
                                 tag="context_menu",
@@ -81,7 +90,10 @@ def edit_callback():
                         else:
                             dpg.add_checkbox(tag="context_menu")
                         dpg.add_text("Disable ads in portals:")
-                        if "disableAdsPortals" in data.keys():
+                        if (
+                            "disableAdsPortals" in data.keys()
+                            and data["disableAdsPortals"] is not None
+                        ):
                             dpg.add_checkbox(
                                 default_value=data["disableAdsPortals"],
                                 tag="ads_in_portals",
@@ -170,7 +182,10 @@ def edit_callback():
                         else:
                             dpg.set_value(value="Pixel Art", item="rendering_filter")
                     dpg.add_text("Client-side predicted movement:")
-                    if "clientSidePredictionEnabled" in data.keys():
+                    if (
+                        "clientSidePredictionEnabled" in data.keys()
+                        and data["clientSidePredictionEnabled"] is not None
+                    ):
                         dpg.add_checkbox(
                             default_value=data["clientSidePredictionEnabled"],
                             tag="predicted_movement",
@@ -178,7 +193,10 @@ def edit_callback():
                     else:
                         dpg.add_checkbox(tag="predicted_movement")
                     dpg.add_text("Continuous Physics:")
-                    if "continuousPhysics" in data["data"]["settings"].keys():
+                    if (
+                        "continuousPhysics" in data["data"]["settings"].keys()
+                        and data["data"]["settings"]["continuousPhysics"] is not None
+                    ):
                         dpg.add_checkbox(
                             default_value=data["data"]["settings"]["continuousPhysics"],
                             tag="continuous_physics",
@@ -193,7 +211,10 @@ def edit_callback():
                     dpg.add_slider_int(label="x", default_value=0, tag="gravity_x")
                     dpg.add_slider_int(label="y", default_value=0, tag="gravity_y")
                     dpg.add_text("Allow duplicate IP's:")
-                    if "allowDuplicateIPS" in data.keys():
+                    if (
+                        "allowDuplicateIPS" in data.keys()
+                        and data["allowDuplicateIPS"] is not None
+                    ):
                         dpg.add_checkbox(
                             default_value=data["allowDuplicateIPS"], tag="duplicate_ips"
                         )
@@ -203,7 +224,10 @@ def edit_callback():
 
                 with dpg.menu(label="UI"):
                     dpg.add_text("Display Leaderboard:")
-                    if "displayScoreboard" in data["data"]["settings"].keys():
+                    if (
+                        "displayScoreboard" in data["data"]["settings"].keys()
+                        and data["data"]["settings"]["displayScoreboard"] is not None
+                    ):
                         dpg.add_checkbox(
                             default_value=data["data"]["settings"]["displayScoreboard"],
                             tag="display_leaderboard",
@@ -211,7 +235,11 @@ def edit_callback():
                     else:
                         dpg.add_checkbox(tag="display_leaderboard")
                     dpg.add_text("Prettify Leaderboard:")
-                    if "prettifyingScoreboard" in data["data"]["settings"].keys():
+                    if (
+                        "prettifyingScoreboard" in data["data"]["settings"].keys()
+                        and data["data"]["settings"]["prettifyingScoreboard"]
+                        is not None
+                    ):
                         dpg.add_checkbox(
                             default_value=data["data"]["settings"][
                                 "prettifyingScoreboard"
@@ -256,6 +284,8 @@ def edit_callback():
                     if (
                         "addStrokeToNameAndAttributes"
                         in data["data"]["settings"].keys()
+                        and data["data"]["settings"]["addStrokeToNameAndAttributes"]
+                        is not None
                     ):
                         dpg.add_checkbox(
                             default_value=data["data"]["settings"][
@@ -266,7 +296,10 @@ def edit_callback():
                     else:
                         dpg.add_checkbox(tag="add_stroke")
                     dpg.add_text("Height Based Z-Index:")
-                    if "heightBasedZIndex" in data.keys():
+                    if (
+                        "heightBasedZIndex" in data.keys()
+                        and data["heightBasedZIndex"] is not None
+                    ):
                         dpg.add_checkbox(
                             default_value=data["heightBasedZIndex"],
                             tag="height_based_z_index",
@@ -294,7 +327,7 @@ def edit_callback():
                     else:
                         dpg.add_color_edit(tag="background_color")
                     dpg.add_text("Disable tile scaling:")
-                    if "dontResize" in data.keys():
+                    if "dontResize" in data.keys() and data["dontResize"] is not None:
                         dpg.add_checkbox(
                             default_value=data["dontResize"], tag="scale_tiles"
                         )
@@ -398,7 +431,7 @@ def edit_callback():
                     else:
                         dpg.add_input_text(tag="youtube_link")
                     dpg.add_text("More IO Games link for iogames.space:")
-                    if "moreIoGames" in data.keys():
+                    if "moreIoGames" in data.keys() and data["moreIoGames"] is not None:
                         dpg.add_checkbox(
                             default_value=data["moreIoGames"], tag="iogames_link"
                         )
@@ -407,14 +440,17 @@ def edit_callback():
                     dpg.add_button(label="Save", callback=save_callback)
                 with dpg.menu(label="Mod/Lobby"):
                     dpg.add_text("Allow Modding:")
-                    if "isModdable" in data.keys():
+                    if "isModdable" in data.keys() and data["isModdable"] is not None:
                         dpg.add_checkbox(
                             default_value=data["isModdable"], tag="allow_modding"
                         )
                     else:
                         dpg.add_checkbox(tag="allow_modding")
                     dpg.add_text("Enable Lobby:")
-                    if "isLobbyEnabled" in data.keys():
+                    if (
+                        "isLobbyEnabled" in data.keys()
+                        and data["isLobbyEnabled"] is not None
+                    ):
                         dpg.add_checkbox(
                             default_value=data["isLobbyEnabled"], tag="enable_lobby"
                         )
