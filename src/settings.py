@@ -301,8 +301,21 @@ def edit_callback():
                     else:
                         dpg.add_checkbox(tag="scale_tiles")
                     dpg.add_text("Map Size:")
-                    dpg.add_slider_int(label="tiles")
-                    dpg.add_slider_int(label="tiles")
+                    dpg.add_text("width:")
+                    if "width" in data["data"]["map"].keys():
+                        dpg.add_slider_int(
+                            default_value=data["data"]["map"]["width"], tag="map_width"
+                        )
+                    else:
+                        dpg.add_slider_int(tag="map_width")
+                    dpg.add_text("height:")
+                    if "height" in data["data"]["map"].keys():
+                        dpg.add_slider_int(
+                            default_value=data["data"]["map"]["height"],
+                            tag="map_height",
+                        )
+                    else:
+                        dpg.add_slider_int(tag="map_height")
                     dpg.add_text("Tiled Import:")
                     dpg.add_button(
                         label="Upload Tiled Map JSON",
@@ -473,6 +486,8 @@ def save_callback(sender):
         backgroundColorHex = matplotlib.colors.to_hex(backgroundColor1Range)
         data["mapBackgroundColor"] = backgroundColorHex
         data["dontResize"] = dpg.get_value("scale_tiles")
+        data["data"]["map"]["width"] = dpg.get_value("map_width")
+        data["data"]["map"]["height"] = dpg.get_value("map_height")
         data["data"]["settings"]["menudiv"] = dpg.get_value("game_description")
         data["gamePlayInstructions"] = dpg.get_value("gameplay_instructions")
         data["data"]["settings"]["images"]["cover"] = dpg.get_value("cover_link")
