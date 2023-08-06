@@ -287,14 +287,14 @@ def edit_callback():
                     if "mapBackgroundColor" in data.keys():
                         with open("settings.json") as f:
                             settings = json.load(f)
-                            dpg.add_color_picker(
+                            dpg.add_color_edit(
                                 default_value=settings["mapBackgroundColor"],
                                 tag="background_color",
                             )
                     else:
-                        dpg.add_color_picker(tag="background_color")
                     dpg.add_text("Scale tiles to 64x64:")
                     dpg.add_checkbox()
+                        dpg.add_color_edit(tag="background_color")
                     dpg.add_text("Map Size:")
                     dpg.add_slider_int(label="tiles")
                     dpg.add_slider_int(label="tiles")
