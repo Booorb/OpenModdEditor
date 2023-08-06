@@ -292,9 +292,14 @@ def edit_callback():
                                 tag="background_color",
                             )
                     else:
-                    dpg.add_text("Scale tiles to 64x64:")
-                    dpg.add_checkbox()
                         dpg.add_color_edit(tag="background_color")
+                    dpg.add_text("Disable tile scaling:")
+                    if "dontResize" in data.keys():
+                        dpg.add_checkbox(
+                            default_value=data["dontResize"], tag="scale_tiles"
+                        )
+                    else:
+                        dpg.add_checkbox(tag="scale_tiles")
                     dpg.add_text("Map Size:")
                     dpg.add_slider_int(label="tiles")
                     dpg.add_slider_int(label="tiles")
@@ -467,6 +472,7 @@ def save_callback(sender):
         backgroundColor1Range = numpy.divide(backgroundColor255Range, 255)
         backgroundColorHex = matplotlib.colors.to_hex(backgroundColor1Range)
         data["mapBackgroundColor"] = backgroundColorHex
+        data["dontResize"] = dpg.get_value("scale_tiles")
         data["data"]["settings"]["menudiv"] = dpg.get_value("game_description")
         data["gamePlayInstructions"] = dpg.get_value("gameplay_instructions")
         data["data"]["settings"]["images"]["cover"] = dpg.get_value("cover_link")
