@@ -15,6 +15,7 @@ from settings import save_callback
 from settings import import_map_callback
 from update import update_project_callback
 from about import about_callback
+from world import world_callback
 
 dpg.create_context()
 dpg.create_viewport()
@@ -113,7 +114,9 @@ def setup_ui():
                 dpg.add_menu_item(
                     label="Show Update Manager", callback=update_project_callback
                 )
+                dpg.add_separator()
                 dpg.add_menu_item(label="Show Settings Window", callback=edit_callback)
+                dpg.add_menu_item(label="Show World Window", callback=world_callback)
 
             with dpg.menu(label="Help"):
                 dpg.add_menu_item(label="About OpenModdEditor", callback=about_callback)
