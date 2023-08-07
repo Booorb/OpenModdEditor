@@ -37,7 +37,7 @@ def edit_callback():
                         else:
                             dpg.set_value(value="gameSlug", item="game_slug")
                         dpg.add_text("Repository Access:")
-                        dpg.add_listbox(
+                        dpg.add_combo(
                             items=["Open Source", "Private"], tag="repository_access"
                         )
                         if "access" in data.keys():
@@ -143,7 +143,7 @@ def edit_callback():
                             tag="server_life_span",
                         )
                     dpg.add_text("Physics Engine:")
-                    dpg.add_listbox(
+                    dpg.add_combo(
                         items=["PlanckJS", "Box2dWeb", "Box2d es6"],
                         tag="physics_engine",
                     )
@@ -155,7 +155,7 @@ def edit_callback():
                         else:
                             dpg.set_value(value="Box2d es6", item="physics_engine")
                     dpg.add_text("Client Physics Engine:")
-                    dpg.add_listbox(
+                    dpg.add_combo(
                         items=["PlanckJS", "Box2dWeb", "Box2d es6"],
                         tag="client_physics_engine",
                     )
@@ -173,9 +173,7 @@ def edit_callback():
                                 value="Box2d es6", item="client_physics_engine"
                             )
                     dpg.add_text("Rendering Filter:")
-                    dpg.add_listbox(
-                        items=["Smooth", "Pixel Art"], tag="rendering_filter"
-                    )
+                    dpg.add_combo(items=["Smooth", "Pixel Art"], tag="rendering_filter")
                     if "renderingFilter" in data.keys():
                         if data["renderingFilter"] == "smooth":
                             dpg.set_value(value="Smooth", item="rendering_filter")
