@@ -1,7 +1,7 @@
 altgraph==0.17.3
 black==23.7.0
 bottle==0.12.25
-click==8.1.5
+click==8.1.6
 colorama==0.4.6
 colorlog==6.7.0
 colormap==1.0.4
@@ -15,15 +15,15 @@ matplotlib==3.7.2
 mypy-extensions==1.0.0
 numpy==1.25.2
 packaging==23.1
-pathspec==0.11.1
+pathspec==0.11.2
 pexpect==4.8.0
 Pillow==10.0.0
-platformdirs==3.9.1
+platformdirs==3.10.0
 proxy-tools==0.1.0
 ptyprocess==0.7.0
 pyinstaller==5.13.0
 pyinstaller-hooks-contrib==2023.6
-pyparsing==3.0.9
+pyparsing==3.1.1
 python-dateutil==2.8.2
 python-util==1.2.1
 six==1.16.0
