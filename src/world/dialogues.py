@@ -10,4 +10,4 @@ def dialogues_callback():
             dpg.add_separator()
             if "dialogues" in data["data"].keys():
                 for dialogues in data["data"]["dialogues"]:
-                    dpg.add_button(label=dialogues)
+                    dpg.add_button(label=data["data"]["dialogues"][dialogues]["name"])
