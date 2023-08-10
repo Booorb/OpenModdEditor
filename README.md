@@ -1,8 +1,10 @@
 # OpenModdEditor
 ![Editor](assets/editor.jpg)
-## cross-platform modd.io game editor
+## Cross-platform modd.io game editor
 OpenModdEditor is a cross-platform game editor to create 2D multiplayer .io games.
 It uses Taro2 for the backend, which makes games made with it compatible with modd.io.
+## License
+OpenModdEditor is completely free and open source under the APGL License!
 ## Getting OpenModdEditor
 ### Binary Downloads:
 There are no downloadable binaries yet, as the project is still very unstable!
