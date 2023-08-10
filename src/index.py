@@ -66,6 +66,7 @@ with dpg.file_dialog(
     show=False,
     callback=import_game_file_callback,
     id="import_game_file",
+    cancel_callback=cancel_callback,
     width=700,
     height=400,
 ):
@@ -77,6 +78,7 @@ with dpg.file_dialog(
     show=False,
     callback=import_map_callback,
     id="import_map",
+    cancel_callback=cancel_callback,
     width=700,
     height=400,
 ):
