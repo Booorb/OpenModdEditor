@@ -8,7 +8,7 @@ It uses Taro2 for the backend, which makes games made with it compatible with mo
 There are no downloadable binaries yet, as the project is still very unstable!
 ### Build OpenModdEditor from source:
 **Build Prerequisites:**
-Ensure you have Python & pip installed!
+Ensure you have Python, pip & git installed!
 
 **Build steps:**
 
