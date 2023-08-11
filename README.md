@@ -16,7 +16,7 @@ Ensure you have Python, pip & git installed!
 
 ***Linux:***
 ```
-git clone https://github.com/Booorb/OpenModdEditor.git
+git clone https://codeberg.org/Boorb/OpenModdEditor.git
 ```
 ```
 cd OpenModdEditor
@@ -38,7 +38,7 @@ pyinstaller index.spec
 ```
 ***Windows:***
 ```
-git clone https://github.com/Booorb/OpenModdEditor.git
+git clone https://codeberg.org/Boorb/OpenModdEditor.git
 ```
 ```
 cd OpenModdEditor
