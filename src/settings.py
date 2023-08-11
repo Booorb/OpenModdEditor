@@ -232,6 +232,15 @@ def edit_callback():
                         )
                     else:
                         dpg.add_checkbox(tag="display_leaderboard")
+                    dpg.add_text("For leaderboard, use:")
+                    leaderboard_var = []
+                    if "attributeTypes" in data["data"].keys():
+                        for attributes in data["data"]["attributeTypes"]:
+                            leaderboard_var.append(
+                                data["data"]["attributeTypes"][attributes]["name"]
+                            )
+
+                    dpg.add_combo(items=leaderboard_var, tag="leaderboard_attribute")
                     dpg.add_text("Prettify Leaderboard:")
                     if (
                         "prettifyingScoreboard" in data["data"]["settings"].keys()
@@ -505,6 +514,9 @@ def save_callback(sender):
         )
         data["data"]["settings"]["prettifyingScoreboard"] = dpg.get_value(
             "prettify_leaderboard"
+        )
+        data["data"]["settings"]["scoreAttributeId"] = dpg.get_value(
+            "leaderboard_attribute"
         )
         data["data"]["settings"]["camera"]["zoom"]["default"] = dpg.get_value(
             "camera_zoom"
