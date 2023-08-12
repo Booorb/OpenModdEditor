@@ -9,8 +9,9 @@ a = Analysis(
     pathex=[],
     binaries=[],
     datas=[
-        ( 'storage.json', '.' ),
+        ( 'settings.json', '.' ),
         ( 'assets/OpenSans-Regular.ttf', 'assets' ),
+        ( 'assets/OpenSans-Bold.ttf', 'assets' ),
         ( 'templates', 'templates' )],
     hiddenimports=[],
     hookspath=[],
