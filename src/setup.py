@@ -41,80 +41,81 @@ def setup_project_callback():
     else:
         with dpg.window(label="Setup Manager", tag="setup_project_window"):
             if os.path.isfile("taro2/src/game.json"):
-                dpg.add_text("Already added game.json!")
-            else:
-                dpg.add_text("Download template game or import own game.json file:")
-                dpg.add_button(
-                    label="Battle Royale",
-                    tag="battle_royale_button",
-                    callback=battle_royale_callback,
-                )
-                dpg.add_button(
-                    label="Blank Template",
-                    tag="blank_template_button",
-                    callback=blank_template_callback,
-                )
-                dpg.add_button(
-                    label="Cell Eater",
-                    tag="cell_eater_button",
-                    callback=cell_eater_callback,
-                )
-                dpg.add_button(
-                    label="Deathmatch",
-                    tag="deathmatch_button",
-                    callback=deathmatch_callback,
-                )
-                dpg.add_button(
-                    label="Guided Tutorial",
-                    tag="guided_tutorial_button",
-                    callback=guided_tutorial_callback,
-                )
-                dpg.add_button(
-                    label="Hunt and Gather",
-                    tag="hunt_and_gather_button",
-                    callback=hunt_and_gather_callback,
-                )
-                dpg.add_button(
-                    label="Platformer",
-                    tag="platformer_button",
-                    callback=platformer_callback,
-                )
-                dpg.add_button(
-                    label="Racer", tag="racer_button", callback=racer_callback
-                )
-                dpg.add_button(
-                    label="Soccer", tag="soccer_button", callback=soccer_callback
-                )
-                dpg.add_button(
-                    label="Team Elimination",
-                    tag="team_elimination_button",
-                    callback=team_elimination_callback,
-                )
-                dpg.add_button(
-                    label="Tower Defense",
-                    tag="tower_defense_button",
-                    callback=tower_defense_callback,
-                )
-                dpg.add_button(
-                    label="Zombie Tag",
-                    tag="zombie_tag_button",
-                    callback=zombie_tag_callback,
+                dpg.add_text(
+                    "Already added game.json! \nIf you continue, the existing game will be overwritten."
                 )
                 dpg.add_separator()
-                dpg.add_button(
-                    label="Import game.json",
-                    tag="import_game_button",
-                    callback=lambda: dpg.show_item("import_game_file"),
-                )
 
-                with dpg.window(
-                    modal=True,
-                    show=False,
-                    tag="please_wait_popup",
-                    no_title_bar=True,
-                ):
-                    dpg.add_text("Setting up project...")
-                    dpg.add_text("Please wait!")
+            dpg.add_text("Download template game or import own game.json file:")
+            dpg.add_button(
+                label="Battle Royale",
+                tag="battle_royale_button",
+                callback=battle_royale_callback,
+            )
+            dpg.add_button(
+                label="Blank Template",
+                tag="blank_template_button",
+                callback=blank_template_callback,
+            )
+            dpg.add_button(
+                label="Cell Eater",
+                tag="cell_eater_button",
+                callback=cell_eater_callback,
+            )
+            dpg.add_button(
+                label="Deathmatch",
+                tag="deathmatch_button",
+                callback=deathmatch_callback,
+            )
+            dpg.add_button(
+                label="Guided Tutorial",
+                tag="guided_tutorial_button",
+                callback=guided_tutorial_callback,
+            )
+            dpg.add_button(
+                label="Hunt and Gather",
+                tag="hunt_and_gather_button",
+                callback=hunt_and_gather_callback,
+            )
+            dpg.add_button(
+                label="Platformer",
+                tag="platformer_button",
+                callback=platformer_callback,
+            )
+            dpg.add_button(label="Racer", tag="racer_button", callback=racer_callback)
+            dpg.add_button(
+                label="Soccer", tag="soccer_button", callback=soccer_callback
+            )
+            dpg.add_button(
+                label="Team Elimination",
+                tag="team_elimination_button",
+                callback=team_elimination_callback,
+            )
+            dpg.add_button(
+                label="Tower Defense",
+                tag="tower_defense_button",
+                callback=tower_defense_callback,
+            )
+            dpg.add_button(
+                label="Zombie Tag",
+                tag="zombie_tag_button",
+                callback=zombie_tag_callback,
+            )
+            dpg.add_separator()
+            dpg.add_button(
+                label="Import game.json",
+                tag="import_game_button",
+                callback=lambda: dpg.show_item("import_game_file"),
+            )
+
+            with dpg.window(
+                modal=True,
+                show=False,
+                tag="please_wait_popup",
+                no_title_bar=True,
+            ):
+                dpg.add_text("Setting up project...")
+                dpg.add_text("Please wait!")
 
 
 with open("settings.json") as f:
