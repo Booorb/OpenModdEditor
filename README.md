@@ -1,3 +1,4 @@
+> ⚠️ OpenModdEditor is still in an early development stage. Numerous bugs and unfinished features are to be expected!
 # OpenModdEditor
 ![Editor](assets/editor.jpg)
 ## Cross-platform modd.io game editor
