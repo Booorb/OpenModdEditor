@@ -233,16 +233,17 @@ def edit_callback():
                     else:
                         dpg.add_checkbox(tag="display_leaderboard")
                     dpg.add_text("For leaderboard, use:")
-                    leaderboard_var = []
+                    attribute_list = []
                     if "attributeTypes" in data["data"].keys():
                         for attributes in data["data"]["attributeTypes"]:
                             leaderboard_var.append(
                                 data["data"]["attributeTypes"][attributes]["name"]
+                            attribute_list.append(
                             )
                     if "scoreAttributeId" in data["data"]["settings"].keys():
-                        dpg.add_combo(default_value=data["data"]["settings"]["scoreAttributeId"], items=leaderboard_var, tag="leaderboard_attribute")
+                        dpg.add_combo(default_value=data["data"]["settings"]["scoreAttributeId"], items=attribute_list, tag="leaderboard_attribute")
                     else:
-                        dpg.add_combo(items=leaderboard_var, tag="leaderboard_attribute")
+                        dpg.add_combo(items=attribute_list, tag="leaderboard_attribute")
                     dpg.add_text("Prettify Leaderboard:")
                     if (
                         "prettifyingScoreboard" in data["data"]["settings"].keys()
