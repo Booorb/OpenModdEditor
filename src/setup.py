@@ -218,3 +218,5 @@ def game_callback():
     dpg.configure_item("please_wait_popup", show=True)
     taro2_callback()
     dpg.configure_item("please_wait_popup", show=False)
+    dpg.configure_item("setup_project", show=False)
+    dpg.configure_item("project_manager_window", show=False)
