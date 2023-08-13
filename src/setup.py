@@ -36,10 +36,10 @@ def packages_callback():
 
 
 def setup_project_callback():
-    if dpg.does_item_exist("setup_project"):
-        dpg.show_item("setup_project")
+    if dpg.does_item_exist("setup_project_window"):
+        dpg.show_item("setup_project_window")
     else:
-        with dpg.window(label="Setup Manager", tag="setup_project"):
+        with dpg.window(label="Setup Manager", tag="setup_project_window"):
             if os.path.isfile("taro2/src/game.json"):
                 dpg.add_text("Already added game.json!")
             else:
@@ -218,5 +218,5 @@ def game_callback():
     dpg.configure_item("please_wait_popup", show=True)
     taro2_callback()
     dpg.configure_item("please_wait_popup", show=False)
-    dpg.configure_item("setup_project", show=False)
+    dpg.configure_item("setup_project_window", show=False)
     dpg.configure_item("project_manager_window", show=False)
