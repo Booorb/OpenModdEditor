@@ -235,10 +235,9 @@ def edit_callback():
                     dpg.add_text("For leaderboard, use:")
                     attribute_list = []
                     if "attributeTypes" in data["data"].keys():
-                        for attributes in data["data"]["attributeTypes"]:
-                            leaderboard_var.append(
-                                data["data"]["attributeTypes"][attributes]["name"]
+                        for attribute in data["data"]["attributeTypes"]:
                             attribute_list.append(
+                                attribute
                             )
                     if "scoreAttributeId" in data["data"]["settings"].keys():
                         dpg.add_combo(default_value=data["data"]["settings"]["scoreAttributeId"], items=attribute_list, tag="leaderboard_attribute")
