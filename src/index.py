@@ -3,6 +3,7 @@ import os
 import webbrowser
 import json
 import shutil
+from re import sub
 from setup import setup_project_callback
 from setup import taro2_callback
 from setup import packages_callback
@@ -48,6 +49,24 @@ def cancel_callback(sender, app_data):
 
 def project_manager_callback():
     dpg.show_item("project_manager_window")
+
+
+def snake_case(s):
+    return "_".join(
+        sub(
+            "([A-Z][a-z]+)", r" \1", sub("([A-Z]+)", r" \1", s.replace("-", " "))
+        ).split()
+    ).lower()
+
+
+def script_editor_callback():
+    with open(editorFolder + "/settings.json") as f:
+        data = json.load(f)
+        with open(data["gameFolder"] + "/taro2/src/game.json") as f:
+            game = json.load(f)
+            webbrowser.open(
+                data["gameFolder"] + "/" + snake_case(game["title"]) + "/scripts.py"
+            )
 
 
 dpg.add_file_dialog(
@@ -119,6 +138,9 @@ def setup_ui():
                 dpg.add_separator()
                 dpg.add_menu_item(label="Show Settings Window", callback=edit_callback)
                 dpg.add_menu_item(label="Show World Window", callback=world_callback)
+                dpg.add_menu_item(
+                    label="Open Script Editor", callback=script_editor_callback
+                )
 
             with dpg.menu(label="Help"):
                 dpg.add_menu_item(label="About OpenModdEditor", callback=about_callback)
