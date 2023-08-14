@@ -236,11 +236,13 @@ def edit_callback():
                     attribute_list = []
                     if "attributeTypes" in data["data"].keys():
                         for attribute in data["data"]["attributeTypes"]:
-                            attribute_list.append(
-                                attribute
-                            )
+                            attribute_list.append(attribute)
                     if "scoreAttributeId" in data["data"]["settings"].keys():
-                        dpg.add_combo(default_value=data["data"]["settings"]["scoreAttributeId"], items=attribute_list, tag="leaderboard_attribute")
+                        dpg.add_combo(
+                            default_value=data["data"]["settings"]["scoreAttributeId"],
+                            items=attribute_list,
+                            tag="leaderboard_attribute",
+                        )
                     else:
                         dpg.add_combo(items=attribute_list, tag="leaderboard_attribute")
                     dpg.add_text("Prettify Leaderboard:")
