@@ -16,6 +16,7 @@ def play_callback():
 def taro2_callback():
     os.system("git clone https://github.com/moddio/taro2.git")
     filereplace("taro2/server/server.js", "80", "3000")
+    os.system("pip install -U pymodd")
     os.system("cd taro2 && npm install")
 
 
@@ -26,6 +27,7 @@ def save_project():
         data["projects"].update(project)
         json.dump(data, open(data["editorFolder"] + "/settings.json", "w"), indent=4)
         os.chdir(data["gameFolder"])
+        os.system("pymodd generate-project taro2/src/game.json")
 
 
 def packages_callback():
