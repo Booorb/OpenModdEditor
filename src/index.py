@@ -69,6 +69,10 @@ def script_editor_callback():
             )
 
 
+def discord_callback():
+    webbrowser.open("https://discord.gg/uBqVVFcJpz")
+
+
 dpg.add_file_dialog(
     directory_selector=True,
     show=False,
@@ -143,6 +147,9 @@ def setup_ui():
                 )
 
             with dpg.menu(label="Help"):
+                dpg.add_menu_item(
+                    label="Community Discord Server", callback=discord_callback
+                )
                 dpg.add_menu_item(label="About OpenModdEditor", callback=about_callback)
 
             dpg.add_menu_item(label="Play", callback=play_callback)
