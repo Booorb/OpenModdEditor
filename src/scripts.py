@@ -2,6 +2,7 @@ import dearpygui.dearpygui as dpg
 import json
 import webbrowser
 import os
+import shutil
 from re import sub
 
 
@@ -50,6 +51,23 @@ with open("settings.json") as f:
                     + snake_case(game["title"])
                     + " && pymodd compile"
                 )
+                json_names = [
+                    filename
+                    for filename in os.listdir(
+                        data["gameFolder"] + "/" + snake_case(game["title"] + "/output")
+                    )
+                    if filename.endswith(".json")
+                ]
+
+                for json_name in json_names:
+                    shutil.copyfile(
+                        data["gameFolder"]
+                        + "/"
+                        + snake_case(game["title"])
+                        + "/output/"
+                        + json_name,
+                        data["gameFolder"] + "/taro2/src/game.json",
+                    )
 
 
 def script_editor_callback():
