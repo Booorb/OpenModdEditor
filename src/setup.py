@@ -37,16 +37,33 @@ def packages_callback():
     dpg.set_value(value="Finished downloading npm packages...", item="packages_text")
 
 
+def continue_anyway_callback():
+    dpg.configure_item("game_exists_popup", show=False)
+
+
 def setup_project_callback():
     if dpg.does_item_exist("setup_project_window"):
         dpg.show_item("setup_project_window")
     else:
         with dpg.window(label="Setup Manager", tag="setup_project_window"):
             if os.path.isfile("taro2/src/game.json"):
-                dpg.add_text(
-                    "Already added game.json! \nIf you continue, the existing game will be overwritten."
-                )
-                dpg.add_separator()
+                with dpg.window(
+                    modal=True,
+                    show=True,
+                    tag="game_exists_popup",
+                    no_title_bar=True,
+                ):
+                    dpg.add_text(
+                        "Already added game.json! \nIf you continue, the existing game will be overwritten."
+                    )
+                    dpg.add_separator()
+                    dpg.add_button(
+                        label="Change folder",
+                        callback=lambda: dpg.show_item("change_folder_selector"),
+                    )
+                    dpg.add_button(
+                        label="Continue anyway", callback=continue_anyway_callback
+                    )
 
             dpg.add_text("Download template game or import own game.json file:")
             dpg.add_button(
