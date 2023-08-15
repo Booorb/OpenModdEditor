@@ -3,7 +3,6 @@ import os
 import webbrowser
 import json
 import shutil
-from re import sub
 from setup import setup_project_callback
 from setup import taro2_callback
 from setup import packages_callback
@@ -17,6 +16,7 @@ from settings import import_map_callback
 from update import update_project_callback
 from about import about_callback
 from world import world_callback
+from scripts import script_editor_callback
 
 dpg.create_context()
 dpg.create_viewport()
@@ -49,24 +49,6 @@ def cancel_callback(sender, app_data):
 
 def project_manager_callback():
     dpg.show_item("project_manager_window")
-
-
-def snake_case(s):
-    return "_".join(
-        sub(
-            "([A-Z][a-z]+)", r" \1", sub("([A-Z]+)", r" \1", s.replace("-", " "))
-        ).split()
-    ).lower()
-
-
-def script_editor_callback():
-    with open(editorFolder + "/settings.json") as f:
-        data = json.load(f)
-        with open(data["gameFolder"] + "/taro2/src/game.json") as f:
-            game = json.load(f)
-            webbrowser.open(
-                data["gameFolder"] + "/" + snake_case(game["title"]) + "/scripts.py"
-            )
 
 
 def discord_callback():
