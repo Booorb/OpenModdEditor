@@ -25,6 +25,20 @@ with open("settings.json") as f:
                     data["gameFolder"] + "/" + snake_case(game["title"]) + "/scripts.py"
                 )
 
+    def entity_scripts_callback():
+        with open(editorFolder + "/settings.json") as f:
+            data = json.load(f)
+            with open(data["gameFolder"] + "/taro2/src/game.json") as f:
+                game = json.load(f)
+                webbrowser.open(
+                    data["gameFolder"]
+                    + "/"
+                    + snake_case(game["title"])
+                    + "/entity_scripts.py"
+                )
+
+
 def script_editor_callback():
     with dpg.window(label="Scripts", tag="scripts_window"):
         dpg.add_button(label="Global Scripts", callback=global_scripts_callback)
+        dpg.add_button(label="Entity Scripts", callback=entity_scripts_callback)
