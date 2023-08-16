@@ -60,7 +60,7 @@ def save_callback(sender):
         data["data"]["dialogues"][dpg.get_value("new_dialogue_id")] = {
             "name": dpg.get_value("new_dialogue_name"),
             "dialogueTitle": dpg.get_value("new_dialogue_title"),
-            "message": dpg.get_value("new_dialogue_value"),
+            "message": dpg.get_value("new_dialogue_message"),
             "image": dpg.get_value("new_dialogue_image"),
             "letterPrintSpeed": dpg.get_value("new_dialogue_print_speed"),
         }
