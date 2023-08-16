@@ -36,6 +36,24 @@ def new_dialogue_callback():
             dpg.add_button(label="Save", callback=save_callback)
 
 
+def select_dialogue_callback():
+    if dpg.does_item_exist("select_dialogue_window"):
+        dpg.show_item("select_dialogue_window")
+    else:
+        with dpg.window(label="Select Dialogue", tag="select_dialogue_window"):
+            with open("taro2/src/game.json") as f:
+                data = json.load(f)
+                dpg.add_text("Select Dialogue:")
+                dialogue_list = []
+                if "dialogues" in data["data"].keys():
+                    for dialogue in data["data"]["dialogues"]:
+                        dialogue_list.append(dialogue)
+                    dpg.add_combo(
+                        items=dialogue_list,
+                        tag="select_dialogue_button",
+                    )
+                else:
+                    dpg.add_text("no dialogues exist, please create a dialogue first!")
 def save_callback(sender):
     with open("taro2/src/game.json") as f:
         data = json.load(f)
@@ -57,6 +75,9 @@ def dialogues_callback():
             with open("taro2/src/game.json") as f:
                 data = json.load(f)
                 dpg.add_button(label="New Dialogue", callback=new_dialogue_callback)
+                dpg.add_button(
+                    label="Update Dialogue", callback=select_dialogue_callback
+                )
                 dpg.add_separator()
                 if "dialogues" in data["data"].keys():
                     for dialogues in data["data"]["dialogues"]:
