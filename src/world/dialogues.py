@@ -3,24 +3,10 @@ import json
 
 
 def new_dialogue_callback():
-    with dpg.window(label="New Dialogue", tag="new_dialogue_window", width=400):
-        dpg.add_text("ID:")
-        dpg.add_input_text(tag="new_dialogue_id")
-        dpg.add_text("Name:")
-        dpg.add_input_text(tag="new_dialogue_name")
-        dpg.add_text("Title:")
-        dpg.add_input_text(tag="new_dialogue_title")
-        dpg.add_text("HTML Message:")
-        dpg.add_input_text(multiline=True, tag="new_dialogue_message")
-        dpg.add_text("Image:")
-        dpg.add_input_text(tag="new_dialogue_image")
-        dpg.add_text("Letter Print Speed:")
-        dpg.add_slider_int(tag="new_dialogue_print_speed")
-        dpg.add_button(label="Save", callback=save_callback)
     if dpg.does_item_exist("new_dialogue_window"):
         dpg.show_item("new_dialogue_window")
     else:
-        with dpg.window(label="New Dialogue", tag="new_dialogue_window", width=400):
+        with dpg.window(label="New Dialogue", tag="new_dialogue_window"):
             dpg.add_text("ID:")
             dpg.add_input_text(tag="new_dialogue_id")
             dpg.add_text("Name:")
@@ -65,6 +51,8 @@ def save_callback(sender):
             "letterPrintSpeed": dpg.get_value("new_dialogue_print_speed"),
         }
         json.dump(data, open("taro2/src/game.json", "w"), indent=4)
+        if dpg.does_item_exist("new_dialogue_window"):
+            dpg.delete_item("new_dialogue_window")
 
 
 def dialogues_callback():
