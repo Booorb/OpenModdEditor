@@ -3,6 +3,8 @@ import json
 
 
 def new_dialogue_callback():
+    if dpg.does_item_exist("update_dialogue_window"):
+        dpg.delete_item("update_dialogue_window")
     if dpg.does_item_exist("new_dialogue_window"):
         dpg.show_item("new_dialogue_window")
     else:
@@ -44,6 +46,11 @@ def select_dialogue_callback():
 
 
 def update_dialogue_callback():
+    if dpg.does_item_exist("new_dialogue_window"):
+        dpg.delete_item("new_dialogue_window")
+    elif dpg.does_item_exist("update_dialogue_window"):
+        dpg.delete_item("update_dialogue_window")
+    dpg.hide_item("select_dialogue_window")
     with open("taro2/src/game.json") as f:
         data = json.load(f)
         with dpg.window(label="Update Dialogue", tag="update_dialogue_window"):
