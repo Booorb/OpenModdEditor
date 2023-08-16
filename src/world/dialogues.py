@@ -17,6 +17,23 @@ def new_dialogue_callback():
         dpg.add_text("Letter Print Speed:")
         dpg.add_slider_int(tag="new_dialogue_print_speed")
         dpg.add_button(label="Save", callback=save_callback)
+    if dpg.does_item_exist("new_dialogue_window"):
+        dpg.show_item("new_dialogue_window")
+    else:
+        with dpg.window(label="New Dialogue", tag="new_dialogue_window", width=400):
+            dpg.add_text("ID:")
+            dpg.add_input_text(tag="new_dialogue_id")
+            dpg.add_text("Name:")
+            dpg.add_input_text(tag="new_dialogue_name")
+            dpg.add_text("Title:")
+            dpg.add_input_text(tag="new_dialogue_title")
+            dpg.add_text("HTML Message:")
+            dpg.add_input_text(multiline=True, tag="new_dialogue_message")
+            dpg.add_text("Image:")
+            dpg.add_input_text(tag="new_dialogue_image")
+            dpg.add_text("Letter Print Speed:")
+            dpg.add_slider_int(tag="new_dialogue_print_speed")
+            dpg.add_button(label="Save", callback=save_callback)
 
 
 def save_callback(sender):
@@ -33,11 +50,16 @@ def save_callback(sender):
 
 
 def dialogues_callback():
-    with dpg.window(label="Dialogoues", tag="dialogues_window"):
-        with open("taro2/src/game.json") as f:
-            data = json.load(f)
-            dpg.add_button(label="New Dialogue", callback=new_dialogue_callback)
-            dpg.add_separator()
-            if "dialogues" in data["data"].keys():
-                for dialogues in data["data"]["dialogues"]:
-                    dpg.add_button(label=data["data"]["dialogues"][dialogues]["name"])
+    if dpg.does_item_exist("dialogues_window"):
+        dpg.show_item("dialogues_window")
+    else:
+        with dpg.window(label="Dialogoues", tag="dialogues_window"):
+            with open("taro2/src/game.json") as f:
+                data = json.load(f)
+                dpg.add_button(label="New Dialogue", callback=new_dialogue_callback)
+                dpg.add_separator()
+                if "dialogues" in data["data"].keys():
+                    for dialogues in data["data"]["dialogues"]:
+                        dpg.add_button(
+                            label=data["data"]["dialogues"][dialogues]["name"]
+                        )
