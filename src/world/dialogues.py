@@ -104,6 +104,8 @@ def save_callback(sender):
         json.dump(data, open("taro2/src/game.json", "w"), indent=4)
         if dpg.does_item_exist("new_dialogue_window"):
             dpg.delete_item("new_dialogue_window")
+        elif dpg.does_item_exist("update_dialogue_window"):
+            dpg.delete_item("update_dialogue_window")
 
 
 def dialogues_callback():
