@@ -40,6 +40,57 @@ def select_dialogue_callback():
                     )
                 else:
                     dpg.add_text("no dialogues exist, please create a dialogue first!")
+                dpg.add_button(label="Open", callback=update_dialogue_callback)
+
+
+def update_dialogue_callback():
+    with open("taro2/src/game.json") as f:
+        data = json.load(f)
+        with dpg.window(label="Update Dialogue", tag="update_dialogue_window"):
+            dpg.add_text("ID:")
+            dpg.add_input_text(
+                default_value=dpg.get_value("select_dialogue_button"),
+                tag="new_dialogue_id",
+            )
+            dpg.add_text("Name:")
+            dpg.add_input_text(
+                default_value=data["data"]["dialogues"][
+                    dpg.get_value("select_dialogue_button")
+                ]["name"],
+                tag="new_dialogue_name",
+            )
+            dpg.add_text("Title:")
+            dpg.add_input_text(
+                default_value=data["data"]["dialogues"][
+                    dpg.get_value("select_dialogue_button")
+                ]["dialogueTitle"],
+                tag="new_dialogue_title",
+            )
+            dpg.add_text("HTML Message:")
+            dpg.add_input_text(
+                default_value=data["data"]["dialogues"][
+                    dpg.get_value("select_dialogue_button")
+                ]["message"],
+                multiline=True,
+                tag="new_dialogue_message",
+            )
+            dpg.add_text("Image:")
+            dpg.add_input_text(
+                default_value=data["data"]["dialogues"][
+                    dpg.get_value("select_dialogue_button")
+                ]["image"],
+                tag="new_dialogue_image",
+            )
+            dpg.add_text("Letter Print Speed:")
+            dpg.add_slider_int(
+                default_value=data["data"]["dialogues"][
+                    dpg.get_value("select_dialogue_button")
+                ]["letterPrintSpeed"],
+                tag="new_dialogue_print_speed",
+            )
+            dpg.add_button(label="Save", callback=save_callback)
+
+
 def save_callback(sender):
     with open("taro2/src/game.json") as f:
         data = json.load(f)
