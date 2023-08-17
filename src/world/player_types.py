@@ -19,6 +19,17 @@ def new_player_type_callback():
             dpg.add_color_edit(tag="player_types_color")
             dpg.add_text("Show name label:")
             dpg.add_checkbox(tag="player_types_label")
+            with open("taro2/src/game.json") as f:
+                data = json.load(f)
+                dpg.add_text("Variables:")
+                variables_list = []
+                if "entityTypeVariables" in data["data"].keys():
+                    for variable in data["data"]["entityTypeVariables"]:
+                        variables_list.append(variable)
+                    dpg.add_combo(
+                        items=variables_list,
+                        tag="select_variable_button",
+                    )
             dpg.add_button(label="Save", callback=save_callback)
 
 
@@ -32,6 +43,11 @@ def save_callback():
             "name": dpg.get_value("player_types_name"),
             "color": playerTypesColorHex,
             "showNameLabel": dpg.get_value("player_types_label"),
+        }
+        data["data"]["playerTypes"][dpg.get_value("player_type_id")]["variables"] = {
+            dpg.get_value("select_variable_button"): data["data"][
+                "entityTypeVariables"
+            ][dpg.get_value("select_variable_button")]
         }
         json.dump(data, open("taro2/src/game.json", "w"), indent=4)
 
