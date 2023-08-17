@@ -120,9 +120,5 @@ def dialogues_callback():
         dpg.show_item("dialogues_window")
     else:
         with dpg.window(label="Dialogoues", tag="dialogues_window"):
-            with open("taro2/src/game.json") as f:
-                data = json.load(f)
-                dpg.add_button(label="New Dialogue", callback=new_dialogue_callback)
-                dpg.add_button(
-                    label="Update Dialogue", callback=select_dialogue_callback
-                )
+            dpg.add_button(label="New Dialogue", callback=new_dialogue_callback)
+            dpg.add_button(label="Update Dialogue", callback=select_dialogue_callback)
