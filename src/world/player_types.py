@@ -49,6 +49,12 @@ def save_callback():
                 "entityTypeVariables"
             ][dpg.get_value("select_variable_button")]
         }
+        playerTypeVariables = {
+            dpg.get_value("select_variable_button"): data["data"][
+                "entityTypeVariables"
+            ][dpg.get_value("select_variable_button")]
+        }
+        data["data"]["playerTypeVariables"].update(playerTypeVariables)
         json.dump(data, open("taro2/src/game.json", "w"), indent=4)
 
 
