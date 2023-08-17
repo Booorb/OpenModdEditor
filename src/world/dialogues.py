@@ -98,7 +98,7 @@ def update_dialogue_callback():
             dpg.add_button(label="Save", callback=save_callback)
 
 
-def save_callback(sender):
+def save_callback():
     with open("taro2/src/game.json") as f:
         data = json.load(f)
         data["data"]["dialogues"][dpg.get_value("new_dialogue_id")] = {
