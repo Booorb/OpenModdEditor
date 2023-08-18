@@ -128,14 +128,14 @@ def setup_ui():
                     label="Import Project",
                     callback=change_folder_callback,
                 )
-                dpg.add_menu_item(label="Export Project")
-                dpg.add_menu_item(
-                    label="Open Project",
-                    callback=lambda: dpg.show_item("change_folder_selector"),
-                )
 
                 dpg.add_menu_item(
                     label="Create Project", callback=setup_project_callback
+                )
+
+                dpg.add_menu_item(
+                    label="Change Folder",
+                    callback=lambda: dpg.show_item("change_folder_selector"),
                 )
 
             with dpg.menu(label="View"):
