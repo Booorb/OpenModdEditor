@@ -11,7 +11,7 @@ OpenModdEditor is completely free and open source under the APGL License!
 There are no downloadable binaries yet, as the project is still very unstable!
 ### Build OpenModdEditor from source:
 **Build Prerequisites:**
-Ensure you have Python, pip & git installed!
+Ensure you have python, pip, git, rust and cargo installed!
 
 **Build steps:**
 
