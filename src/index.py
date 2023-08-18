@@ -55,6 +55,34 @@ def discord_callback():
     webbrowser.open("https://discord.gg/uBqVVFcJpz")
 
 
+def change_folder_callback():
+    if dpg.does_item_exist("game_exists_popup2"):
+        dpg.show_item("game_exists_popup2")
+    else:
+        if os.path.isfile("taro2/src/game.json"):
+            with dpg.window(
+                modal=True,
+                show=True,
+                tag="game_exists_popup2",
+                no_title_bar=True,
+            ):
+                dpg.add_text(
+                    "Already added game.json! \nIf you continue, the existing game will be overwritten."
+                )
+                dpg.add_separator()
+                dpg.add_button(
+                    label="Change folder",
+                    callback=lambda: dpg.show_item("change_folder_selector"),
+                )
+                dpg.add_button(
+                    label="Continue anyway",
+                    callback=lambda: dpg.show_item("import_game_file")
+                    and dpg.configure_item("please_wait_popup", show=False),
+                )
+        else:
+            dpg.show_item("import_game_file")
+
+
 dpg.add_file_dialog(
     directory_selector=True,
     show=False,
@@ -98,7 +126,7 @@ def setup_ui():
             with dpg.menu(label="File"):
                 dpg.add_menu_item(
                     label="Import Project",
-                    callback=lambda: dpg.show_item("import_game_file"),
+                    callback=change_folder_callback,
                 )
                 dpg.add_menu_item(label="Export Project")
                 dpg.add_menu_item(
@@ -152,8 +180,8 @@ def setup_ui():
             callback=setup_project_callback,
         )
         dpg.add_button(
-            label="Open Project",
-            callback=lambda: dpg.show_item("change_folder_selector"),
+            label="Import Project",
+            callback=change_folder_callback,
         )
 
 
