@@ -235,8 +235,12 @@ with open("settings.json") as f:
 
 
 def game_callback():
-    dpg.configure_item("please_wait_popup", show=True)
+    if dpg.does_item_exist("please_wait_popup"):
+        dpg.configure_item("please_wait_popup", show=True)
     taro2_callback()
-    dpg.configure_item("please_wait_popup", show=False)
-    dpg.configure_item("setup_project_window", show=False)
-    dpg.configure_item("project_manager_window", show=False)
+    if dpg.does_item_exist("please_wait_popup"):
+        dpg.configure_item("please_wait_popup", show=False)
+    if dpg.does_item_exist("setup_project_window"):
+        dpg.configure_item("setup_project_window", show=False)
+    if dpg.does_item_exist("project_manager_window"):
+        dpg.configure_item("project_manager_window", show=False)
