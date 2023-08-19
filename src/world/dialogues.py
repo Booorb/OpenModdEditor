@@ -101,6 +101,8 @@ def update_dialogue_callback():
 def save_callback():
     with open("taro2/src/game.json") as f:
         data = json.load(f)
+        if not "dialogues" in data["data"].keys():
+            data["data"]["dialogues"] = {}
         data["data"]["dialogues"][dpg.get_value("new_dialogue_id")] = {
             "name": dpg.get_value("new_dialogue_name"),
             "dialogueTitle": dpg.get_value("new_dialogue_title"),
