@@ -60,6 +60,9 @@ with open("settings.json") as f:
 
 
 def script_editor_callback():
+    if dpg.does_item_exist("scripts_window"):
+        dpg.show_item("scripts_window")
+    else:
         with dpg.window(label="Scripts", tag="scripts_window"):
             if os.path.isfile(data["gameFolder"] + "taro2/src/game.json"):
                 dpg.add_button(label="Global Scripts", callback=global_scripts_callback)
