@@ -10,8 +10,11 @@ from shops import shops_callback
 
 
 def world_callback():
-    with dpg.window(label="World", tag="world_window"):
-        dpg.add_button(label="Player Types", callback=player_types_callback)
-        dpg.add_button(label="Dialogues", callback=dialogues_callback)
-        dpg.add_button(label="Shops", callback=shops_callback)
-        dpg.add_button(label="Global Variables", callback=global_variables_callback)
+    if dpg.does_item_exist("world_window"):
+        dpg.show_item("world_window")
+    else:
+        with dpg.window(label="World", tag="world_window"):
+            dpg.add_button(label="Player Types", callback=player_types_callback)
+            dpg.add_button(label="Dialogues", callback=dialogues_callback)
+            dpg.add_button(label="Shops", callback=shops_callback)
+            dpg.add_button(label="Global Variables", callback=global_variables_callback)
