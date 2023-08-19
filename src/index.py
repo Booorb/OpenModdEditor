@@ -35,7 +35,7 @@ with dpg.font_registry():
         )
 
 
-def open_callback(sender, app_data):
+def change_folder_callback(sender, app_data):
     with open(editorFolder + "/settings.json") as f:
         data = json.load(f)
         data["gameFolder"] = app_data["file_path_name"]
@@ -55,7 +55,7 @@ def discord_callback():
     webbrowser.open("https://discord.gg/uBqVVFcJpz")
 
 
-def change_folder_callback():
+def folder_exists_callback():
     if dpg.does_item_exist("game_exists_popup2"):
         dpg.show_item("game_exists_popup2")
     else:
@@ -94,7 +94,7 @@ def open_project_callback():
 dpg.add_file_dialog(
     directory_selector=True,
     show=False,
-    callback=open_callback,
+    callback=change_folder_callback,
     tag="change_folder_selector",
     cancel_callback=cancel_callback,
     width=700,
@@ -134,7 +134,7 @@ def setup_ui():
             with dpg.menu(label="File"):
                 dpg.add_menu_item(
                     label="Import Project",
-                    callback=change_folder_callback,
+                    callback=folder_exists_callback,
                 )
 
                 dpg.add_menu_item(
@@ -195,7 +195,7 @@ def setup_ui():
         )
         dpg.add_button(
             label="Import Project",
-            callback=change_folder_callback,
+            callback=folder_exists_callback,
         )
 
 
