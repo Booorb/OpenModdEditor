@@ -83,6 +83,14 @@ def change_folder_callback():
             dpg.show_item("import_game_file")
 
 
+def open_project_callback():
+    with open(editorFolder + "/settings.json") as f:
+        data = json.load(f)
+        data["gameFolder"] = data["projects"][dpg.get_value("projects_listbox")]
+        json.dump(data, open(editorFolder + "/settings.json", "w"), indent=4)
+        os.chdir(data["gameFolder"])
+
+
 dpg.add_file_dialog(
     directory_selector=True,
     show=False,
@@ -169,8 +177,14 @@ def setup_ui():
         if os.path.isfile(data["gameFolder"] + "/taro2/src/game.json"):
             dpg.hide_item("project_manager_window")
         if "projects" in data.keys():
-            for titles in data["projects"]:
-                dpg.add_button(label=titles)
+            projects_list = []
+            for project in data["projects"]:
+                projects_list.append(project)
+            dpg.add_listbox(
+                items=projects_list,
+                tag="projects_listbox",
+                callback=open_project_callback,
+            )
         else:
             dpg.add_text("no projects yet!")
         dpg.bind_item_font(projects_title, title_font)
