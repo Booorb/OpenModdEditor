@@ -64,7 +64,7 @@ def script_editor_callback():
         dpg.show_item("scripts_window")
     else:
         with dpg.window(label="Scripts", tag="scripts_window"):
-            if os.path.isfile(data["gameFolder"] + "taro2/src/game.json"):
+            if os.path.isfile(data["gameFolder"] + "/taro2/src/game.json"):
                 dpg.add_button(label="Global Scripts", callback=global_scripts_callback)
                 dpg.add_button(label="Entity Scripts", callback=entity_scripts_callback)
                 dpg.add_button(
