@@ -16,58 +16,47 @@ def snake_case(s):
 
 with open("settings.json") as f:
     data = json.load(f)
-    editorFolder = data["editorFolder"]
+    with open(data["gameFolder"] + "/taro2/src/game.json") as f:
+        game = json.load(f)
 
-    def global_scripts_callback():
-        with open(editorFolder + "/settings.json") as f:
-            data = json.load(f)
-            with open(data["gameFolder"] + "/taro2/src/game.json") as f:
-                game = json.load(f)
-                webbrowser.open(
-                    data["gameFolder"] + "/" + snake_case(game["title"]) + "/scripts.py"
+        def global_scripts_callback():
+            webbrowser.open(
+                data["gameFolder"] + "/" + snake_case(game["title"]) + "/scripts.py"
+            )
+
+        def entity_scripts_callback():
+            webbrowser.open(
+                data["gameFolder"]
+                + "/"
+                + snake_case(game["title"])
+                + "/entity_scripts.py"
+            )
+
+        def compile_scripts_callback():
+            os.system(
+                "cd "
+                + data["gameFolder"]
+                + "/"
+                + snake_case(game["title"])
+                + " && pymodd compile"
+            )
+            json_names = [
+                filename
+                for filename in os.listdir(
+                    data["gameFolder"] + "/" + snake_case(game["title"] + "/output")
                 )
+                if filename.endswith(".json")
+            ]
 
-    def entity_scripts_callback():
-        with open(editorFolder + "/settings.json") as f:
-            data = json.load(f)
-            with open(data["gameFolder"] + "/taro2/src/game.json") as f:
-                game = json.load(f)
-                webbrowser.open(
+            for json_name in json_names:
+                shutil.copyfile(
                     data["gameFolder"]
                     + "/"
                     + snake_case(game["title"])
-                    + "/entity_scripts.py"
+                    + "/output/"
+                    + json_name,
+                    data["gameFolder"] + "/taro2/src/game.json",
                 )
-
-    def compile_scripts_callback():
-        with open(editorFolder + "/settings.json") as f:
-            data = json.load(f)
-            with open(data["gameFolder"] + "/taro2/src/game.json") as f:
-                game = json.load(f)
-                os.system(
-                    "cd "
-                    + data["gameFolder"]
-                    + "/"
-                    + snake_case(game["title"])
-                    + " && pymodd compile"
-                )
-                json_names = [
-                    filename
-                    for filename in os.listdir(
-                        data["gameFolder"] + "/" + snake_case(game["title"] + "/output")
-                    )
-                    if filename.endswith(".json")
-                ]
-
-                for json_name in json_names:
-                    shutil.copyfile(
-                        data["gameFolder"]
-                        + "/"
-                        + snake_case(game["title"])
-                        + "/output/"
-                        + json_name,
-                        data["gameFolder"] + "/taro2/src/game.json",
-                    )
 
 
 def script_editor_callback():
