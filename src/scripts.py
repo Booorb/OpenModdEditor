@@ -60,7 +60,12 @@ with open("settings.json") as f:
 
 
 def script_editor_callback():
-    with dpg.window(label="Scripts", tag="scripts_window"):
-        dpg.add_button(label="Global Scripts", callback=global_scripts_callback)
-        dpg.add_button(label="Entity Scripts", callback=entity_scripts_callback)
-        dpg.add_button(label="Compile Scripts", callback=compile_scripts_callback)
+        with dpg.window(label="Scripts", tag="scripts_window"):
+            if os.path.isfile(data["gameFolder"] + "taro2/src/game.json"):
+                dpg.add_button(label="Global Scripts", callback=global_scripts_callback)
+                dpg.add_button(label="Entity Scripts", callback=entity_scripts_callback)
+                dpg.add_button(
+                    label="Compile Scripts", callback=compile_scripts_callback
+                )
+            else:
+                dpg.add_text("Please setup a project first!")
