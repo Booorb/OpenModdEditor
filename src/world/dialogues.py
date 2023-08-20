@@ -29,7 +29,7 @@ def select_dialogue_callback():
         dpg.show_item("select_dialogue_window")
     else:
         with dpg.window(label="Select Dialogue", tag="select_dialogue_window"):
-            with open("taro2/src/game.json") as f:
+            with open(gameFolder + "/taro2/src/game.json") as f:
                 data = json.load(f)
                 dpg.add_text("Select Dialogue:")
                 dialogue_list = []
@@ -51,7 +51,7 @@ def update_dialogue_callback():
     elif dpg.does_item_exist("update_dialogue_window"):
         dpg.delete_item("update_dialogue_window")
     dpg.hide_item("select_dialogue_window")
-    with open("taro2/src/game.json") as f:
+    with open(gameFolder + "/taro2/src/game.json") as f:
         data = json.load(f)
         with dpg.window(label="Update Dialogue", tag="update_dialogue_window"):
             dpg.add_text("ID:")
@@ -99,7 +99,7 @@ def update_dialogue_callback():
 
 
 def save_callback():
-    with open("taro2/src/game.json") as f:
+    with open(gameFolder + "/taro2/src/game.json") as f:
         data = json.load(f)
         if not "dialogues" in data["data"].keys():
             data["data"]["dialogues"] = {}
@@ -110,7 +110,7 @@ def save_callback():
             "image": dpg.get_value("new_dialogue_image"),
             "letterPrintSpeed": dpg.get_value("new_dialogue_print_speed"),
         }
-        json.dump(data, open("taro2/src/game.json", "w"), indent=4)
+        json.dump(data, open(gameFolder + "/taro2/src/game.json", "w"), indent=4)
         if dpg.does_item_exist("new_dialogue_window"):
             dpg.delete_item("new_dialogue_window")
         elif dpg.does_item_exist("update_dialogue_window"):
@@ -118,6 +118,10 @@ def save_callback():
 
 
 def dialogues_callback():
+    with open("settings.json") as f:
+        settings = json.load(f)
+        global gameFolder
+        gameFolder = settings["gameFolder"]
     if dpg.does_item_exist("dialogues_window"):
         dpg.show_item("dialogues_window")
     else:

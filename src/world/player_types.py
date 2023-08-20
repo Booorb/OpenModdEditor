@@ -19,7 +19,7 @@ def new_player_type_callback():
             dpg.add_color_edit(tag="player_types_color")
             dpg.add_text("Show name label:")
             dpg.add_checkbox(tag="player_types_label")
-            with open("taro2/src/game.json") as f:
+            with open(gameFolder + "/taro2/src/game.json") as f:
                 data = json.load(f)
                 dpg.add_text("Variables:")
                 variables_list = []
@@ -34,7 +34,7 @@ def new_player_type_callback():
 
 
 def save_callback():
-    with open("taro2/src/game.json") as f:
+    with open(gameFolder + "/taro2/src/game.json") as f:
         data = json.load(f)
         playerTypesColor255Range = list(map(int, dpg.get_value("player_types_color")))
         playerTypesColor1Range = numpy.divide(playerTypesColor255Range, 255)
@@ -55,10 +55,14 @@ def save_callback():
             ][dpg.get_value("select_variable_button")]
         }
         data["data"]["playerTypeVariables"].update(playerTypeVariables)
-        json.dump(data, open("taro2/src/game.json", "w"), indent=4)
+        json.dump(data, open(gameFolder + "/taro2/src/game.json", "w"), indent=4)
 
 
 def player_types_callback():
+    with open("settings.json") as f:
+        settings = json.load(f)
+        global gameFolder
+        gameFolder = settings["gameFolder"]
     if dpg.does_item_exist("player_types_window"):
         dpg.show_item("player_types_window")
     else:

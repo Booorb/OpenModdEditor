@@ -11,7 +11,6 @@ from setup import play_callback
 from setup import import_game_file_callback
 from settings import fullscreen_callback
 from settings import edit_callback
-from settings import save_callback
 from settings import import_map_callback
 from update import update_project_callback
 from about import about_callback
@@ -40,7 +39,6 @@ def change_folder_callback(sender, app_data):
         data = json.load(f)
         data["gameFolder"] = app_data["file_path_name"]
         json.dump(data, open(editorFolder + "/settings.json", "w"), indent=4)
-        os.chdir(data["gameFolder"])
 
 
 def cancel_callback(sender, app_data):
@@ -88,7 +86,6 @@ def open_project_callback():
         data = json.load(f)
         data["gameFolder"] = data["projects"][dpg.get_value("projects_listbox")]
         json.dump(data, open(editorFolder + "/settings.json", "w"), indent=4)
-        os.chdir(data["gameFolder"])
 
 
 dpg.add_file_dialog(
@@ -127,7 +124,6 @@ with dpg.file_dialog(
 
 
 def setup_ui():
-    os.chdir(data["gameFolder"])
     with dpg.window(label="Menu", tag="menu_window"):
         dpg.set_primary_window("menu_window", True)
         with dpg.viewport_menu_bar():
