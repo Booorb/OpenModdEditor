@@ -1,6 +1,6 @@
 dearpygui==1.9.1
 matplotlib==3.7.2
-numpy==1.25.1
+numpy==1.25.2
 python-util==1.2.1
 pyinstaller==5.13.0
 pymodd==1.0.5
