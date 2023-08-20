@@ -56,6 +56,8 @@ def save_callback():
         }
         data["data"]["playerTypeVariables"].update(playerTypeVariables)
         json.dump(data, open(gameFolder + "/taro2/src/game.json", "w"), indent=4)
+        if dpg.does_item_exist("new_player_type_window"):
+            dpg.delete_item("new_player_type_window")
 
 
 def player_types_callback():
