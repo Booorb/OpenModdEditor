@@ -16,7 +16,7 @@ def snake_case(s):
 
 with open("settings.json") as f:
     data = json.load(f)
-    if os.path.isfile(data["gameFolder"] + "taro2/src/game.json"):
+    if os.path.isfile(data["gameFolder"] + "/taro2/src/game.json"):
         with open(data["gameFolder"] + "/taro2/src/game.json") as f:
             game = json.load(f)
 
