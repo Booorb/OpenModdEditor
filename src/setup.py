@@ -17,7 +17,6 @@ def taro2_callback():
     os.chdir(data["gameFolder"])
     os.system("git clone https://github.com/moddio/taro2.git")
     filereplace("taro2/server/server.js", "80", "3000")
-    os.system("pip install -U pymodd")
     os.system("cd taro2 && npm install")
 
 
