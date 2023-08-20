@@ -86,6 +86,7 @@ def open_project_callback():
         data = json.load(f)
         data["gameFolder"] = data["projects"][dpg.get_value("projects_listbox")]
         json.dump(data, open(editorFolder + "/settings.json", "w"), indent=4)
+        dpg.hide_item("project_manager_window")
 
 
 dpg.add_file_dialog(
@@ -170,8 +171,6 @@ def setup_ui():
 
     with dpg.group(tag="setup_project_group"):
         projects_title = dpg.add_text("Your Projects:")
-        if os.path.isfile(data["gameFolder"] + "/taro2/src/game.json"):
-            dpg.hide_item("project_manager_window")
         if "projects" in data.keys():
             projects_list = []
             for project in data["projects"]:
