@@ -57,7 +57,7 @@ def folder_exists_callback():
     if dpg.does_item_exist("game_exists_popup2"):
         dpg.show_item("game_exists_popup2")
     else:
-        if os.path.isfile("taro2/src/game.json"):
+        if os.path.isfile(data["gameFolder"] + "/taro2/src/game.json"):
             with dpg.window(
                 modal=True,
                 show=True,

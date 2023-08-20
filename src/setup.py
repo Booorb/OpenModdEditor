@@ -47,7 +47,7 @@ def setup_project_callback():
         dpg.show_item("setup_project_window")
     else:
         with dpg.window(label="Setup Manager", tag="setup_project_window"):
-            if os.path.isfile("taro2/src/game.json"):
+            if os.path.isfile(data["gameFolder"] + "/taro2/src/game.json"):
                 with dpg.window(
                     modal=True,
                     show=True,
