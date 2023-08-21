@@ -360,7 +360,9 @@ def edit_callback():
                         dpg.add_text("Map Out of Bounds Color:")
                         if "mapBackgroundColor" in data.keys():
                             dpg.add_color_edit(
-                                default_value=settings["mapBackgroundColor"],
+                                default_value=settings["projects"][
+                                    dpg.get_value("game_name")
+                                ]["mapBackgroundColor"],
                                 tag="background_color",
                             )
                         else:
@@ -601,10 +603,12 @@ def save_callback(sender):
         data["isModdable"] = dpg.get_value("allow_modding")
         data["isLobbyEnabled"] = dpg.get_value("enable_lobby")
         json.dump(data, open(gameFolder + "/taro2/src/game.json", "w"), indent=4)
-    with open("settings.json") as f:
-        settings = json.load(f)
-        settings["mapBackgroundColor"] = dpg.get_value("background_color")
-        json.dump(settings, open("settings.json", "w"), indent=4)
+        with open("settings.json") as f:
+            settings = json.load(f)
+            settings["projects"][dpg.get_value("game_name")][
+                "mapBackgroundColor"
+            ] = dpg.get_value("background_color")
+            json.dump(settings, open("settings.json", "w"), indent=4)
 
 
 def fullscreen_callback():
