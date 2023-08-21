@@ -84,7 +84,9 @@ def folder_exists_callback():
 def open_project_callback():
     with open(editorFolder + "/settings.json") as f:
         data = json.load(f)
-        data["gameFolder"] = data["projects"][dpg.get_value("projects_listbox")]
+        data["gameFolder"] = data["projects"][dpg.get_value("projects_listbox")][
+            "folder"
+        ]
         json.dump(data, open(editorFolder + "/settings.json", "w"), indent=4)
         dpg.hide_item("project_manager_window")
 

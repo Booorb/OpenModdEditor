@@ -23,7 +23,7 @@ def taro2_callback():
 def save_project():
     with open("taro2/src/game.json") as f:
         game = json.load(f)
-        project = {game["title"]: data["gameFolder"]}
+        project = {game["title"]: {"folder": data["gameFolder"]}}
         data["projects"].update(project)
         json.dump(data, open(data["editorFolder"] + "/settings.json", "w"), indent=4)
         os.system("pymodd generate-project taro2/src/game.json")
