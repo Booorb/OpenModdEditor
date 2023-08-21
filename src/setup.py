@@ -8,13 +8,6 @@ from settings import edit_callback
 from update import update_project_callback
 
 
-def play_callback():
-    with open("settings.json") as f:
-        data = json.load(f)
-        os.system("cd " + data["gameFolder"] + "/taro2 && npm run server&")
-        webbrowser.open("http://localhost:3000/", new=2)
-
-
 def taro2_callback():
     os.chdir(data["gameFolder"])
     os.system("git clone https://github.com/moddio/taro2.git")

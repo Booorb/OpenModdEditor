@@ -7,7 +7,6 @@ from setup import setup_project_callback
 from setup import taro2_callback
 from setup import packages_callback
 from setup import game_callback
-from setup import play_callback
 from setup import import_game_file_callback
 from settings import fullscreen_callback
 from settings import edit_callback
@@ -16,6 +15,7 @@ from update import update_project_callback
 from about import about_callback
 from world import world_callback
 from scripts import script_editor_callback
+from play import play_callback
 
 dpg.create_context()
 dpg.create_viewport()
