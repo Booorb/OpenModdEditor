@@ -35,6 +35,50 @@ def new_option_callback():
                     dpg.add_text("no dialogues exist, please create a dialogue first!")
 
 
+def edit_option_callback():
+    if dpg.does_item_exist("edit_option_window"):
+        dpg.show_item("edit_option_window")
+    else:
+        with dpg.window(label="Edit Option", tag="edit_option_window"):
+            with open(gameFolder + "/taro2/src/game.json") as f:
+                data = json.load(f)
+                dpg.add_text("Name:")
+                dpg.add_input_text(
+                    default_value=data["data"]["dialogues"][
+                        dpg.get_value("select_dialogue_button")
+                    ]["options"][0]["name"],
+                    tag="new_option_name",
+                )
+                dpg.add_text("Run script:")
+                script_list = []
+                if "scripts" in data["data"].keys():
+                    for script in data["data"]["scripts"]:
+                        script_list.append(script)
+                    dpg.add_combo(
+                        items=script_list,
+                        default_value=data["data"]["dialogues"][
+                            dpg.get_value("select_dialogue_button")
+                        ]["options"][0]["scriptName"],
+                        tag="select_script_button",
+                    )
+                else:
+                    dpg.add_text("no scripts exist, please create a script first!")
+                dpg.add_text("Follow-Up Dialogue:")
+                dialogue_list = []
+                if "dialogues" in data["data"].keys():
+                    for dialogue in data["data"]["dialogues"]:
+                        dialogue_list.append(dialogue)
+                    dpg.add_combo(
+                        items=dialogue_list,
+                        default_value=data["data"]["dialogues"][
+                            dpg.get_value("select_dialogue_button")
+                        ]["options"][0]["followUpDialogue"],
+                        tag="select_follow_up_dialogue_button",
+                    )
+                else:
+                    dpg.add_text("no dialogues exist, please create a dialogue first!")
+
+
 def new_dialogue_callback():
     if dpg.does_item_exist("update_dialogue_window"):
         dpg.delete_item("update_dialogue_window")
@@ -130,6 +174,8 @@ def update_dialogue_callback():
                 ]["letterPrintSpeed"],
                 tag="new_dialogue_print_speed",
             )
+            dpg.add_text("Options:")
+            dpg.add_button(label="Edit Option", callback=edit_option_callback)
             dpg.add_button(label="Save", callback=save_callback)
 
 
