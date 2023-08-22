@@ -43,24 +43,45 @@ def edit_option_callback():
             with open(gameFolder + "/taro2/src/game.json") as f:
                 data = json.load(f)
                 dpg.add_text("Name:")
-                dpg.add_input_text(
-                    default_value=data["data"]["dialogues"][
+                if (
+                    "name"
+                    in data["data"]["dialogues"][
                         dpg.get_value("select_dialogue_button")
-                    ]["options"][0]["name"],
-                    tag="new_option_name",
-                )
+                    ]["options"][0].keys()
+                ):
+                    dpg.add_input_text(
+                        default_value=data["data"]["dialogues"][
+                            dpg.get_value("select_dialogue_button")
+                        ]["options"][0]["name"],
+                        tag="new_option_name",
+                    )
+                else:
+                    dpg.add_input_text(
+                        tag="new_option_name",
+                    )
                 dpg.add_text("Run script:")
                 script_list = []
                 if "scripts" in data["data"].keys():
                     for script in data["data"]["scripts"]:
                         script_list.append(script)
-                    dpg.add_combo(
-                        items=script_list,
-                        default_value=data["data"]["dialogues"][
+                    if (
+                        "scriptName"
+                        in data["data"]["dialogues"][
                             dpg.get_value("select_dialogue_button")
-                        ]["options"][0]["scriptName"],
-                        tag="select_script_button",
-                    )
+                        ]["options"][0].keys()
+                    ):
+                        dpg.add_combo(
+                            items=script_list,
+                            default_value=data["data"]["dialogues"][
+                                dpg.get_value("select_dialogue_button")
+                            ]["options"][0]["scriptName"],
+                            tag="select_script_button",
+                        )
+                    else:
+                        dpg.add_combo(
+                            items=script_list,
+                            tag="select_script_button",
+                        )
                 else:
                     dpg.add_text("no scripts exist, please create a script first!")
                 dpg.add_text("Follow-Up Dialogue:")
@@ -68,13 +89,24 @@ def edit_option_callback():
                 if "dialogues" in data["data"].keys():
                     for dialogue in data["data"]["dialogues"]:
                         dialogue_list.append(dialogue)
-                    dpg.add_combo(
-                        items=dialogue_list,
-                        default_value=data["data"]["dialogues"][
+                    if (
+                        "followUpDialogue"
+                        in data["data"]["dialogues"][
                             dpg.get_value("select_dialogue_button")
-                        ]["options"][0]["followUpDialogue"],
-                        tag="select_follow_up_dialogue_button",
-                    )
+                        ]["options"][0].keys()
+                    ):
+                        dpg.add_combo(
+                            items=dialogue_list,
+                            default_value=data["data"]["dialogues"][
+                                dpg.get_value("select_dialogue_button")
+                            ]["options"][0]["followUpDialogue"],
+                            tag="select_follow_up_dialogue_button",
+                        )
+                    else:
+                        dpg.add_combo(
+                            items=dialogue_list,
+                            tag="select_follow_up_dialogue_button",
+                        )
                 else:
                     dpg.add_text("no dialogues exist, please create a dialogue first!")
 
