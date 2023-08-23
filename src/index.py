@@ -174,11 +174,15 @@ def setup_ui():
     with dpg.group(tag="setup_project_group"):
         projects_title = dpg.add_text("Your Projects:")
         if "projects" in data.keys():
-            projects_list = []
+            project_list = []
             for project in data["projects"]:
-                projects_list.append(project)
+                if os.path.isfile(
+                    data["projects"][project]["folder"] + "/taro2/src/game.json"
+                ):
+                    project_list.append(project)
+
             dpg.add_listbox(
-                items=projects_list,
+                items=project_list,
                 tag="projects_listbox",
                 callback=open_project_callback,
             )
