@@ -5,7 +5,6 @@ import matplotlib
 import numpy
 import requests
 import os
-from update import update_project_callback
 
 
 def import_map_callback(sender, app_data, user_data):
@@ -144,15 +143,6 @@ def edit_callback():
                                     tag="transfer_limit",
                                 )
                             dpg.add_button(label="Save", callback=save_callback)
-                    with dpg.menu(label="Editor"):
-                        dpg.add_menu_item(label="Theme")
-                        dpg.add_menu_item(
-                            label="Toggle Fullscreen", callback=fullscreen_callback
-                        )
-                        dpg.add_menu_item(
-                            label="Update",
-                            callback=update_project_callback,
-                        )
                     with dpg.menu(label="Engine"):
                         dpg.add_text("Maximum Players:")
                         if "defaultMaxPlayers" in data.keys():
