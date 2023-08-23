@@ -3,6 +3,8 @@ import json
 import shutil
 import matplotlib
 import numpy
+import requests
+import os
 from update import update_project_callback
 
 
@@ -13,6 +15,26 @@ def import_map_callback(sender, app_data, user_data):
             data = json.load(f)
             data["data"]["map"]["layers"] = map["layers"]
             json.dump(data, open(gameFolder + "/taro2/src/game.json", "w"), indent=4)
+
+
+def download_map_assets_callback():
+    res = requests.get(dpg.get_value("tileset_link"), stream=True)
+
+    if res.status_code == 200:
+        if not os.path.exists(gameFolder + "/map_assets"):
+            os.makedirs(gameFolder + "/map_assets")
+            with open(
+                gameFolder + "/map_assets" + "/tilesheet_complete.png", "wb"
+            ) as f:
+                shutil.copyfileobj(res.raw, f)
+
+    if not os.path.exists(gameFolder + "/map_assets/map.json"):
+        open(gameFolder + "/map_assets/map.json", "w").close()
+    with open(gameFolder + "/map_assets/map.json") as f:
+        with open(gameFolder + "/taro2/src/game.json") as f:
+            data = json.load(f)
+            map = data["data"]["map"]
+            json.dump(map, open(gameFolder + "/map_assets/map.json", "w"), indent=4)
 
 
 def edit_callback():
@@ -394,10 +416,14 @@ def edit_callback():
                             )
                         else:
                             dpg.add_slider_int(tag="map_height")
-                        dpg.add_text("Tiled Import:")
+                        dpg.add_text("Tiled Import/Export:")
                         dpg.add_button(
                             label="Upload Tiled Map JSON",
                             callback=lambda: dpg.show_item("import_map"),
+                        )
+                        dpg.add_button(
+                            label="Download Map Assets",
+                            callback=download_map_assets_callback,
                         )
                         dpg.add_button(label="Save", callback=save_callback)
                     with dpg.menu(label="Title Screen"):
