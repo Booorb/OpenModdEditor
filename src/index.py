@@ -16,6 +16,10 @@ from about import about_callback
 from world import world_callback
 from scripts import script_editor_callback
 from play import play_callback
+import sys
+
+sys.path.insert(0, "src/plugins/")
+from EditThemePlugin import EditThemePlugin
 
 dpg.create_context()
 dpg.create_viewport()
@@ -146,6 +150,7 @@ def setup_ui():
                 )
 
             with dpg.menu(label="View"):
+                EditThemePlugin()
                 dpg.add_menu_item(
                     label="Toggle Fullscreen", callback=fullscreen_callback
                 )
@@ -212,29 +217,6 @@ with dpg.window(label="Project Manager", tag="project_manager_window"):
             data["gameFolder"] = os.getcwd()
             json.dump(data, open("settings.json", "w"), indent=4)
             setup_ui()
-
-with dpg.theme() as global_theme:
-    with dpg.theme_component(dpg.mvAll):
-        dpg.add_theme_color(
-            dpg.mvThemeCol_Text, (219, 251, 249, 255), category=dpg.mvThemeCat_Core
-        )
-        dpg.add_theme_color(
-            dpg.mvThemeCol_FrameBg, (69, 89, 92, 255), category=dpg.mvThemeCat_Core
-        )
-        dpg.add_theme_color(
-            dpg.mvThemeCol_CheckMark, (119, 244, 216, 153), category=dpg.mvThemeCat_Core
-        )
-        dpg.add_theme_color(
-            dpg.mvThemeCol_WindowBg, (38, 39, 44, 255), category=dpg.mvThemeCat_Core
-        )
-        dpg.add_theme_style(
-            dpg.mvStyleVar_FrameRounding, 8, category=dpg.mvThemeCat_Core
-        )
-        dpg.add_theme_style(
-            dpg.mvStyleVar_WindowRounding, 8, category=dpg.mvThemeCat_Core
-        )
-
-dpg.bind_theme(global_theme)
 
 dpg.create_viewport(title="OpenModdEditor", width=800, height=600)
 dpg.show_viewport()
