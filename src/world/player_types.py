@@ -44,17 +44,23 @@ def save_callback():
             "color": playerTypesColorHex,
             "showNameLabel": dpg.get_value("player_types_label"),
         }
-        data["data"]["playerTypes"][dpg.get_value("player_type_id")]["variables"] = {
-            dpg.get_value("select_variable_button"): data["data"][
-                "entityTypeVariables"
-            ][dpg.get_value("select_variable_button")]
-        }
-        playerTypeVariables = {
-            dpg.get_value("select_variable_button"): data["data"][
-                "entityTypeVariables"
-            ][dpg.get_value("select_variable_button")]
-        }
-        data["data"]["playerTypeVariables"].update(playerTypeVariables)
+        if (
+            dpg.get_value("select_variable_button")
+            in data["data"]["entityTypeVariables"].keys()
+        ):
+            data["data"]["playerTypes"][dpg.get_value("player_type_id")][
+                "variables"
+            ] = {
+                dpg.get_value("select_variable_button"): data["data"][
+                    "entityTypeVariables"
+                ][dpg.get_value("select_variable_button")]
+            }
+            playerTypeVariables = {
+                dpg.get_value("select_variable_button"): data["data"][
+                    "entityTypeVariables"
+                ][dpg.get_value("select_variable_button")]
+            }
+            data["data"]["playerTypeVariables"].update(playerTypeVariables)
         json.dump(data, open(gameFolder + "/taro2/src/game.json", "w"), indent=4)
         if dpg.does_item_exist("new_player_type_window"):
             dpg.delete_item("new_player_type_window")
