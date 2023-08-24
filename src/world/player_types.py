@@ -38,6 +38,7 @@ def new_player_type_callback():
                         player_types_list.append(player_type)
                         dpg.add_text(player_type + ":")
                         dpg.add_combo(
+                            default_value="neutral",
                             items=["neutral", "friendly", "hostile"],
                             tag=player_type + "_diplomacy_button",
                         )
@@ -82,7 +83,6 @@ def save_callback():
                 data["data"]["playerTypes"][dpg.get_value("player_type_id")][
                     "relationships"
                 ].update(relationship)
-                print(player_type)
 
         json.dump(data, open(gameFolder + "/taro2/src/game.json", "w"), indent=4)
         if dpg.does_item_exist("new_player_type_window"):
