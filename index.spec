@@ -13,7 +13,7 @@ a = Analysis(
         ( 'assets/OpenSans-Regular.ttf', 'assets' ),
         ( 'assets/OpenSans-Bold.ttf', 'assets' ),
         ( 'templates', 'templates' )],
-    hiddenimports=[],
+    hiddenimports=["configparser"],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
