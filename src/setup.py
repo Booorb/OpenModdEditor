@@ -13,6 +13,14 @@ def taro2_callback():
     os.system("git clone https://github.com/moddio/taro2.git")
     filereplace("taro2/server/server.js", "80", "3000")
     os.system("cd taro2 && npm install")
+    if os.path.isfile(data["gameFolder"] + "/taro2/src/game.json"):
+        with open("taro2/src/game.json") as f:
+            game = json.load(f)
+            if game["title"] in data["projects"].keys():
+                del data["projects"][game["title"]]
+                json.dump(
+                    data, open(data["editorFolder"] + "/settings.json", "w"), indent=4
+                )
 
 
 def save_project():
