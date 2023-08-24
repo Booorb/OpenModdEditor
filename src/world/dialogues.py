@@ -151,9 +151,9 @@ def select_dialogue_callback():
                         items=dialogue_list,
                         tag="select_dialogue_button",
                     )
+                    dpg.add_button(label="Open", callback=update_dialogue_callback)
                 else:
                     dpg.add_text("no dialogues exist, please create a dialogue first!")
-                dpg.add_button(label="Open", callback=update_dialogue_callback)
 
 
 def update_dialogue_callback():
