@@ -30,6 +30,17 @@ def new_player_type_callback():
                         items=variables_list,
                         tag="select_variable_button",
                     )
+                dpg.add_text("Diplomacy")
+                dpg.add_separator()
+                player_types_list = []
+                if "playerTypes" in data["data"].keys():
+                    for player_type in data["data"]["playerTypes"]:
+                        player_types_list.append(player_type)
+                        dpg.add_text(player_type + ":")
+                        dpg.add_combo(
+                            items=["neutral", "friendly", "hostile"],
+                            tag=player_type + "_diplomacy_button",
+                        )
             dpg.add_button(label="Save", callback=save_callback)
 
 
@@ -43,6 +54,7 @@ def save_callback():
             "name": dpg.get_value("player_types_name"),
             "color": playerTypesColorHex,
             "showNameLabel": dpg.get_value("player_types_label"),
+            "relationships": {},
         }
         if (
             dpg.get_value("select_variable_button")
@@ -61,6 +73,17 @@ def save_callback():
                 ][dpg.get_value("select_variable_button")]
             }
             data["data"]["playerTypeVariables"].update(playerTypeVariables)
+        if "playerTypes" in data["data"].keys():
+            for player_type in data["data"]["playerTypes"]:
+                relationship = {
+                    player_type: dpg.get_value(player_type + "_diplomacy_button")
+                }
+
+                data["data"]["playerTypes"][dpg.get_value("player_type_id")][
+                    "relationships"
+                ].update(relationship)
+                print(player_type)
+
         json.dump(data, open(gameFolder + "/taro2/src/game.json", "w"), indent=4)
         if dpg.does_item_exist("new_player_type_window"):
             dpg.delete_item("new_player_type_window")
