@@ -5,6 +5,8 @@ import numpy
 
 
 def new_player_type_callback():
+    if dpg.does_item_exist("edit_player_type_window"):
+        dpg.delete_item("edit_player_type_window")
     if dpg.does_item_exist("new_player_type_window"):
         dpg.show_item("new_player_type_window")
     else:
@@ -43,6 +45,136 @@ def new_player_type_callback():
                             tag=player_type + "_diplomacy_button",
                         )
             dpg.add_button(label="Save", callback=save_callback)
+
+
+def select_player_type_callback():
+    if dpg.does_item_exist("select_player_type_window"):
+        dpg.show_item("select_player_type_window")
+    else:
+        with dpg.window(label="Select Player Type", tag="select_player_type_window"):
+            with open(gameFolder + "/taro2/src/game.json") as f:
+                data = json.load(f)
+                dpg.add_text("Select Player Type:")
+                player_type_list = []
+                if "playerTypes" in data["data"].keys():
+                    for player_type in data["data"]["playerTypes"]:
+                        player_type_list.append(player_type)
+                    dpg.add_listbox(
+                        items=player_type_list,
+                        tag="select_player_type_button",
+                        callback=update_player_type_callback,
+                    )
+                else:
+                    dpg.add_text(
+                        "no player types exist, please create a player type first!"
+                    )
+
+
+def update_player_type_callback():
+    if dpg.does_item_exist("new_player_type_window"):
+        dpg.delete_item("new_player_type_window")
+    if dpg.does_item_exist("edit_player_type_window"):
+        dpg.delete_item("edit_player_type_window")
+    dpg.hide_item("select_player_type_window")
+    with dpg.window(
+        label="Update Player Type", tag="edit_player_type_window", width=250
+    ):
+        with open(gameFolder + "/taro2/src/game.json") as f:
+            data = json.load(f)
+            dpg.add_text("ID:")
+            dpg.add_input_text(
+                default_value=dpg.get_value("select_player_type_button"),
+                tag="player_type_id",
+            )
+            dpg.add_text("Name:")
+            dpg.add_input_text(
+                default_value=data["data"]["playerTypes"][
+                    dpg.get_value("select_player_type_button")
+                ]["name"],
+                tag="player_types_name",
+            )
+            dpg.add_text("Color:")
+            with open("settings.json") as f:
+                settings = json.load(f)
+                if (
+                    dpg.get_value("player_type_id")
+                    in settings["projects"][data["title"]].keys()
+                ):
+                    dpg.add_color_edit(
+                        default_value=settings["projects"][data["title"]][
+                            dpg.get_value("player_type_id")
+                        ]["playerTypesColor"],
+                        tag="player_types_color",
+                    )
+                else:
+                    dpg.add_color_edit(tag="player_types_color")
+            dpg.add_text("Show name label:")
+            dpg.add_checkbox(
+                default_value=data["data"]["playerTypes"][
+                    dpg.get_value("select_player_type_button")
+                ]["showNameLabel"],
+                tag="player_types_label",
+            )
+            dpg.add_text("Variables:")
+            variables_list = []
+            if "entityTypeVariables" in data["data"].keys():
+                for variable in data["data"]["entityTypeVariables"]:
+                    variables_list.append(variable)
+                if (
+                    "variables"
+                    in data["data"]["playerTypes"][
+                        dpg.get_value("player_type_id")
+                    ].keys()
+                ):
+                    default_variable = []
+                    for variable in data["data"]["playerTypes"][
+                        dpg.get_value("player_type_id")
+                    ]["variables"].keys():
+                        default_variable.append(variable)
+                    if default_variable:
+                        dpg.add_combo(
+                            default_value=default_variable[0],
+                            items=variables_list,
+                            tag="select_variable_button",
+                        )
+                    else:
+                        dpg.add_combo(
+                            items=variables_list,
+                            tag="select_variable_button",
+                        )
+                else:
+                    dpg.add_combo(
+                        items=variables_list,
+                        tag="select_variable_button",
+                    )
+            dpg.add_text("Diplomacy")
+            dpg.add_separator()
+            player_types_list = []
+            if "playerTypes" in data["data"].keys():
+                for player_type in data["data"]["playerTypes"]:
+                    player_types_list.append(player_type)
+                    dpg.add_text(player_type + ":")
+                    if (
+                        player_type
+                        in data["data"]["playerTypes"][dpg.get_value("player_type_id")][
+                            "relationships"
+                        ].keys()
+                    ):
+                        dpg.add_combo(
+                            default_value=data["data"]["playerTypes"][
+                                dpg.get_value("player_type_id")
+                            ]["relationships"][player_type],
+                            items=["neutral", "friendly", "hostile"],
+                            tag=player_type + "_diplomacy_button",
+                        )
+                    else:
+                        dpg.add_combo(
+                            default_value="neutral",
+                            items=["neutral", "friendly", "hostile"],
+                            tag=player_type + "_diplomacy_button",
+                        )
+
+        dpg.add_button(label="Save", callback=save_callback)
 
 
 def save_callback():
@@ -105,3 +237,6 @@ def player_types_callback():
     else:
         with dpg.window(label="Player Types", tag="player_types_window"):
             dpg.add_button(label="New Player Type", callback=new_player_type_callback)
+            dpg.add_button(
+                label="Update Player Type", callback=select_player_type_callback
+            )
