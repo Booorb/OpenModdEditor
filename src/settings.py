@@ -370,7 +370,10 @@ def edit_callback():
                         else:
                             dpg.add_input_text(tag="tileset_link")
                         dpg.add_text("Map Out of Bounds Color:")
-                        if "mapBackgroundColor" in data.keys():
+                        if (
+                            "mapBackgroundColor"
+                            in settings["projects"][dpg.get_value("game_name")].keys()
+                        ):
                             dpg.add_color_edit(
                                 default_value=settings["projects"][
                                     dpg.get_value("game_name")
