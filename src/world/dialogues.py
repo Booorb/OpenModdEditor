@@ -147,11 +147,11 @@ def select_dialogue_callback():
                 if "dialogues" in data["data"].keys():
                     for dialogue in data["data"]["dialogues"]:
                         dialogue_list.append(dialogue)
-                    dpg.add_combo(
+                    dpg.add_listbox(
                         items=dialogue_list,
                         tag="select_dialogue_button",
+                        callback=update_dialogue_callback,
                     )
-                    dpg.add_button(label="Open", callback=update_dialogue_callback)
                 else:
                     dpg.add_text("no dialogues exist, please create a dialogue first!")
 
