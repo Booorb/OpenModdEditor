@@ -4,3 +4,4 @@ numpy==1.25.2
 python-util==1.2.1
 pyinstaller==5.13.0
 pymodd==1.0.5
+requests==2.31.0
