@@ -88,7 +88,7 @@ def save_callback():
         with open("settings.json") as f:
             settings = json.load(f)
             settings["projects"][data["title"]][dpg.get_value("player_type_id")] = {
-                "playerTypesColor": [dpg.get_value("player_types_color")]
+                "playerTypesColor": dpg.get_value("player_types_color")
             }
             json.dump(settings, open("settings.json", "w"), indent=4)
         if dpg.does_item_exist("new_player_type_window"):
