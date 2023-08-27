@@ -5,7 +5,6 @@ import json
 import shutil
 from setup import setup_project_callback
 from setup import taro2_callback
-from setup import packages_callback
 from setup import game_callback
 from setup import import_game_file_callback
 from settings import fullscreen_callback

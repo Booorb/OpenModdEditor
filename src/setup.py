@@ -33,13 +33,6 @@ def save_project():
         os.chdir(data["editorFolder"])
 
 
-def packages_callback():
-    dpg.delete_item("packages_button")
-    dpg.set_value(value="Started downloading npm packages...", item="packages_text")
-    os.system("cd taro2 && npm install")
-    dpg.set_value(value="Finished downloading npm packages...", item="packages_text")
-
-
 def continue_anyway_callback():
     dpg.configure_item("game_exists_popup", show=False)
 
