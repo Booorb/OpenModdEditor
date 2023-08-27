@@ -153,16 +153,16 @@ def setup_ui():
                 dpg.add_menu_item(
                     label="Toggle Fullscreen", callback=fullscreen_callback
                 )
+                dpg.add_menu_item(
+                    label="Update OpenModdEditor", callback=update_project_callback
+                )
                 dpg.add_separator()
                 dpg.add_menu_item(
                     label="Show Project Manager", callback=project_manager_callback
                 )
-                dpg.add_menu_item(
-                    label="Show Update Manager", callback=update_project_callback
-                )
-                dpg.add_separator()
                 dpg.add_menu_item(label="Show Settings Window", callback=edit_callback)
                 dpg.add_menu_item(label="Show World Window", callback=world_callback)
+                dpg.add_separator()
                 dpg.add_menu_item(
                     label="Open Script Editor", callback=script_editor_callback
                 )
