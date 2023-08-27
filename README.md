@@ -13,6 +13,7 @@ There are no downloadable binaries yet, as the project is still very unstable!
 ### Build OpenModdEditor from source:
 **Build Prerequisites:**
 Ensure you have python, pip, git, rust and cargo installed!
+For Windows you also need the latest Microsoft Visual C++ Redistributable.
 
 **Build steps:**
 
@@ -46,11 +47,12 @@ git clone https://codeberg.org/Boorb/OpenModdEditor.git
 cd OpenModdEditor
 ```
 ```
+python3 -m venv venv
+```
+```
 venv\Scripts\activate
 ```
-```
-source venv/bin/activate
-```
+> If this command fails, try executing **Set-ExecutionPolicy Unrestricted -Scope Process** as root in a PowerShell window.
 ```
 pip install -r requirements.txt
 ```
@@ -58,5 +60,5 @@ pip install -r requirements.txt
 pyinstaller index.spec
 ```
 ```
-open executable located in the dist folder
+./dist/index/index 
 ```
