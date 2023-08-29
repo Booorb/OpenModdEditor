@@ -60,6 +60,10 @@ def report_bug_callback():
     webbrowser.open("https://codeberg.org/Boorb/OpenModdEditor/issues")
 
 
+def online_documentation_callback():
+    webbrowser.open("https://codeberg.org/Boorb/OpenModdEditor/wiki")
+
+
 def folder_exists_callback():
     if dpg.does_item_exist("game_exists_popup2"):
         dpg.show_item("game_exists_popup2")
@@ -174,6 +178,9 @@ def setup_ui():
             with dpg.menu(label="Help"):
                 dpg.add_menu_item(label="Discord Server", callback=discord_callback)
                 dpg.add_menu_item(label="Report a Bug", callback=report_bug_callback)
+                dpg.add_menu_item(
+                    label="Online Documentation", callback=online_documentation_callback
+                )
                 dpg.add_separator()
                 dpg.add_menu_item(label="About OpenModdEditor", callback=about_callback)
 
