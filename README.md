@@ -12,7 +12,7 @@ This license applies to the entire repo except for subfolders that have their ow
 There are no downloadable binaries yet, as the project is still very unstable!
 ### Build OpenModdEditor from source:
 **Build Prerequisites:**
-Ensure you have python, pip, git, rust and cargo installed!
+Ensure you have python, pip, git, rust, cargo, node.js & npm installed!
 For Windows you also need the latest Microsoft Visual C++ Redistributable.
 
 **Build steps:**
