@@ -18,23 +18,12 @@ from play import play_callback
 import sys
 
 sys.path.insert(0, "src/plugins/")
+from ChooseFontsPlugin import ChooseFontsPlugin
 from EditThemePlugin import EditThemePlugin
 
 dpg.create_context()
 dpg.create_viewport()
 dpg.setup_dearpygui()
-
-with dpg.font_registry():
-    with open("settings.json") as f:
-        data = json.load(f)
-        data["editorFolder"] = os.getcwd()
-        json.dump(data, open("settings.json", "w"), indent=4)
-        default_font = dpg.add_font(
-            data["editorFolder"] + "/assets/OpenSans-Regular.ttf", 20
-        )
-        title_font = dpg.add_font(
-            data["editorFolder"] + "/assets/OpenSans-Bold.ttf", 30
-        )
 
 
 def change_folder_callback(sender, app_data):
@@ -158,6 +147,7 @@ def setup_ui():
 
             with dpg.menu(label="View"):
                 EditThemePlugin()
+                ChooseFontsPlugin()
                 dpg.add_menu_item(
                     label="Toggle Fullscreen", callback=fullscreen_callback
                 )
@@ -203,7 +193,6 @@ def setup_ui():
             )
         else:
             dpg.add_text("no projects yet!")
-        dpg.bind_item_font(projects_title, title_font)
         dpg.add_separator()
         dpg.add_button(
             label="Create Project",
@@ -216,7 +205,6 @@ def setup_ui():
 
 
 with dpg.window(label="Project Manager", tag="project_manager_window"):
-    dpg.bind_font(default_font)
     with open("settings.json") as f:
         data = json.load(f)
         global editorFolder
