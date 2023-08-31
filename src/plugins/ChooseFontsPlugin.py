@@ -17,40 +17,40 @@ class ChooseFontsPlugin:
         self.create_font_menu()
 
     def create_folders(self):
-        if not os.path.exists("Fonts"):
-            os.mkdir("Fonts")
-        if not os.path.exists("Fonts/USERFONT"):
-            with open("Fonts/USERFONT", "w") as f:
+        if not os.path.exists("fonts"):
+            os.mkdir("fonts")
+        if not os.path.exists("fonts/USERFONT"):
+            with open("fonts/USERFONT", "w") as f:
                 f.write(self.ignore)
-        if not os.path.exists("Fonts/USERSIZE"):
-            with open("Fonts/USERSIZE", "w") as f:
+        if not os.path.exists("fonts/USERSIZE"):
+            with open("fonts/USERSIZE", "w") as f:
                 f.write("16")
-        if not os.path.exists("Fonts/USERSCALE"):
-            with open("Fonts/USERSCALE", "w") as f:
+        if not os.path.exists("fonts/USERSCALE"):
+            with open("fonts/USERSCALE", "w") as f:
                 f.write("1")
 
     def create_font_library(self):
-        with open("Fonts/USERFONT", "r") as f:
+        with open("fonts/USERFONT", "r") as f:
             self.userFont = f.read()
             if not self.userFont:
                 self.userFont = self.ignore
-        with open("Fonts/USERSIZE", "r") as f:
+        with open("fonts/USERSIZE", "r") as f:
             try:
                 self.userSize = int(f.read())
             except:
                 self.userSize = 16
             if not self.userSize:
                 self.userSize = self.ignore
-        with open("Fonts/USERSCALE", "r") as f:
+        with open("fonts/USERSCALE", "r") as f:
             try:
                 self.userScale = float(f.read())
             except:
                 self.userScale = 1
             if not self.userScale:
                 self.userScale = 1
-        for filename in os.listdir("Fonts"):
+        for filename in os.listdir("fonts"):
             if filename.endswith((".ttf", "otf")):
-                self.fontDict[filename] = f"Fonts/{filename}"
+                self.fontDict[filename] = f"fonts/{filename}"
                 with dpg.font(self.fontDict[filename], 16, parent=self.font_registry):
                     dpg.add_font_range_hint(dpg.mvFontRangeHint_Default)
                     dpg.add_font_range_hint(dpg.mvFontRangeHint_Cyrillic)
@@ -159,11 +159,11 @@ class ChooseFontsPlugin:
         dpg.set_global_font_scale(self.userScale)
 
     def save_fonts(self):
-        with open("Fonts/USERFONT", "w") as f:
+        with open("fonts/USERFONT", "w") as f:
             f.write(str(self.userFont))
-        with open("Fonts/USERSIZE", "w") as f:
+        with open("fonts/USERSIZE", "w") as f:
             f.write(str(self.userSize))
-        with open("Fonts/USERSCALE", "w") as f:
+        with open("fonts/USERSCALE", "w") as f:
             f.write(str(self.userScale))
 
 
