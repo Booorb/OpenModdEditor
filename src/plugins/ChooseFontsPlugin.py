@@ -2,8 +2,8 @@ import dearpygui.dearpygui as dpg
 import os
 import ctypes
 
-# Include the following code before showing the viewport/calling `dearpygui.dearpygui.show_viewport`.
-ctypes.windll.shcore.SetProcessDpiAwareness(2)
+if os.name == "nt":
+    ctypes.windll.shcore.SetProcessDpiAwareness(2)
 
 
 class ChooseFontsPlugin:
