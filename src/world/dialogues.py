@@ -135,33 +135,11 @@ def new_dialogue_callback():
             dpg.add_button(label="Save", callback=save_callback)
 
 
-def select_dialogue_callback():
-    if dpg.does_item_exist("select_dialogue_window"):
-        dpg.show_item("select_dialogue_window")
-    else:
-        with dpg.window(label="Select Dialogue", tag="select_dialogue_window"):
-            with open(gameFolder + "/taro2/src/game.json") as f:
-                data = json.load(f)
-                dpg.add_text("Select Dialogue:")
-                dialogue_list = []
-                if "dialogues" in data["data"].keys():
-                    for dialogue in data["data"]["dialogues"]:
-                        dialogue_list.append(dialogue)
-                    dpg.add_listbox(
-                        items=dialogue_list,
-                        tag="select_dialogue_button",
-                        callback=update_dialogue_callback,
-                    )
-                else:
-                    dpg.add_text("no dialogues exist, please create a dialogue first!")
-
-
 def update_dialogue_callback():
     if dpg.does_item_exist("new_dialogue_window"):
         dpg.delete_item("new_dialogue_window")
     elif dpg.does_item_exist("update_dialogue_window"):
         dpg.delete_item("update_dialogue_window")
-    dpg.hide_item("select_dialogue_window")
     with open(gameFolder + "/taro2/src/game.json") as f:
         data = json.load(f)
         with dpg.window(label="Update Dialogue", tag="update_dialogue_window"):
@@ -249,4 +227,17 @@ def dialogues_callback():
     else:
         with dpg.window(label="Dialogoues", tag="dialogues_window"):
             dpg.add_button(label="New Dialogue", callback=new_dialogue_callback)
-            dpg.add_button(label="Update Dialogue", callback=select_dialogue_callback)
+            with open(gameFolder + "/taro2/src/game.json") as f:
+                data = json.load(f)
+                dpg.add_text("Update Dialogue:")
+                dialogue_list = []
+                if "dialogues" in data["data"].keys():
+                    for dialogue in data["data"]["dialogues"]:
+                        dialogue_list.append(dialogue)
+                    dpg.add_listbox(
+                        items=dialogue_list,
+                        tag="select_dialogue_button",
+                        callback=update_dialogue_callback,
+                    )
+                else:
+                    dpg.add_text("no dialogues exist, please create a dialogue first!")
