@@ -47,35 +47,11 @@ def new_player_type_callback():
             dpg.add_button(label="Save", callback=save_callback)
 
 
-def select_player_type_callback():
-    if dpg.does_item_exist("select_player_type_window"):
-        dpg.show_item("select_player_type_window")
-    else:
-        with dpg.window(label="Select Player Type", tag="select_player_type_window"):
-            with open(gameFolder + "/taro2/src/game.json") as f:
-                data = json.load(f)
-                dpg.add_text("Select Player Type:")
-                player_type_list = []
-                if "playerTypes" in data["data"].keys():
-                    for player_type in data["data"]["playerTypes"]:
-                        player_type_list.append(player_type)
-                    dpg.add_listbox(
-                        items=player_type_list,
-                        tag="select_player_type_button",
-                        callback=update_player_type_callback,
-                    )
-                else:
-                    dpg.add_text(
-                        "no player types exist, please create a player type first!"
-                    )
-
-
 def update_player_type_callback():
     if dpg.does_item_exist("new_player_type_window"):
         dpg.delete_item("new_player_type_window")
     if dpg.does_item_exist("edit_player_type_window"):
         dpg.delete_item("edit_player_type_window")
-    dpg.hide_item("select_player_type_window")
     with dpg.window(
         label="Update Player Type", tag="edit_player_type_window", width=250
     ):
@@ -237,6 +213,19 @@ def player_types_callback():
     else:
         with dpg.window(label="Player Types", tag="player_types_window"):
             dpg.add_button(label="New Player Type", callback=new_player_type_callback)
-            dpg.add_button(
-                label="Update Player Type", callback=select_player_type_callback
-            )
+            with open(gameFolder + "/taro2/src/game.json") as f:
+                data = json.load(f)
+                dpg.add_text("Update Player Type:")
+                player_type_list = []
+                if "playerTypes" in data["data"].keys():
+                    for player_type in data["data"]["playerTypes"]:
+                        player_type_list.append(player_type)
+                    dpg.add_listbox(
+                        items=player_type_list,
+                        tag="select_player_type_button",
+                        callback=update_player_type_callback,
+                    )
+                else:
+                    dpg.add_text(
+                        "no player types exist, please create a player type first!"
+                    )
