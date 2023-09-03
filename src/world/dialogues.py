@@ -1,5 +1,6 @@
 import dearpygui.dearpygui as dpg
 import json
+import os
 
 
 def new_option_callback():
@@ -226,18 +227,23 @@ def dialogues_callback():
         dpg.show_item("dialogues_window")
     else:
         with dpg.window(label="Dialogoues", tag="dialogues_window"):
-            dpg.add_button(label="New Dialogue", callback=new_dialogue_callback)
-            with open(gameFolder + "/taro2/src/game.json") as f:
-                data = json.load(f)
-                dpg.add_text("Update Dialogue:")
-                dialogue_list = []
-                if "dialogues" in data["data"].keys():
-                    for dialogue in data["data"]["dialogues"]:
-                        dialogue_list.append(dialogue)
-                    dpg.add_listbox(
-                        items=dialogue_list,
-                        tag="select_dialogue_button",
-                        callback=update_dialogue_callback,
-                    )
-                else:
-                    dpg.add_text("no dialogues exist, please create a dialogue first!")
+            if os.path.isfile(gameFolder + "/taro2/src/game.json"):
+                dpg.add_button(label="New Dialogue", callback=new_dialogue_callback)
+                with open(gameFolder + "/taro2/src/game.json") as f:
+                    data = json.load(f)
+                    dpg.add_text("Update Dialogue:")
+                    dialogue_list = []
+                    if "dialogues" in data["data"].keys():
+                        for dialogue in data["data"]["dialogues"]:
+                            dialogue_list.append(dialogue)
+                        dpg.add_listbox(
+                            items=dialogue_list,
+                            tag="select_dialogue_button",
+                            callback=update_dialogue_callback,
+                        )
+                    else:
+                        dpg.add_text(
+                            "no dialogues exist, please create a dialogue first!"
+                        )
+            else:
+                dpg.add_text("no project exist, please create a project first!")
