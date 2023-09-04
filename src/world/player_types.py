@@ -2,6 +2,7 @@ import dearpygui.dearpygui as dpg
 import json
 import matplotlib
 import numpy
+import os
 
 
 def new_player_type_callback():
@@ -212,20 +213,25 @@ def player_types_callback():
         dpg.show_item("player_types_window")
     else:
         with dpg.window(label="Player Types", tag="player_types_window"):
-            dpg.add_button(label="New Player Type", callback=new_player_type_callback)
-            with open(gameFolder + "/taro2/src/game.json") as f:
-                data = json.load(f)
-                dpg.add_text("Update Player Type:")
-                player_type_list = []
-                if "playerTypes" in data["data"].keys():
-                    for player_type in data["data"]["playerTypes"]:
-                        player_type_list.append(player_type)
-                    dpg.add_listbox(
-                        items=player_type_list,
-                        tag="select_player_type_button",
-                        callback=update_player_type_callback,
-                    )
-                else:
-                    dpg.add_text(
-                        "no player types exist, please create a player type first!"
-                    )
+            if os.path.isfile(gameFolder + "/taro2/src/game.json"):
+                dpg.add_button(
+                    label="New Player Type", callback=new_player_type_callback
+                )
+                with open(gameFolder + "/taro2/src/game.json") as f:
+                    data = json.load(f)
+                    dpg.add_text("Update Player Type:")
+                    player_type_list = []
+                    if "playerTypes" in data["data"].keys():
+                        for player_type in data["data"]["playerTypes"]:
+                            player_type_list.append(player_type)
+                        dpg.add_listbox(
+                            items=player_type_list,
+                            tag="select_player_type_button",
+                            callback=update_player_type_callback,
+                        )
+                    else:
+                        dpg.add_text(
+                            "no player types exist, please create a player type first!"
+                        )
+            else:
+                dpg.add_text("no project exist, please create a project first!")
