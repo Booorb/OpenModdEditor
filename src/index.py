@@ -25,6 +25,11 @@ dpg.create_context()
 dpg.create_viewport()
 dpg.setup_dearpygui()
 
+with open("settings.json") as f:
+    data = json.load(f)
+    data["editorFolder"] = os.getcwd()
+    json.dump(data, open("settings.json", "w"), indent=4)
+
 
 def change_folder_callback(sender, app_data):
     with open(editorFolder + "/settings.json") as f:
