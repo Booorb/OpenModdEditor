@@ -4,9 +4,9 @@ import json
 
 
 def start_update_callback():
-    os.system("cd taro2 && git pull && npm install")
     with open("settings.json") as f:
         settings = json.load(f)
+        os.system("cd " + settings["gameFolder"] + "/taro2 && git pull && npm install")
         os.system("cd " + settings["editorFolder"] + "  && git pull")
 
 
