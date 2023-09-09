@@ -35,6 +35,12 @@ def change_folder_callback(sender, app_data):
     with open(editorFolder + "/settings.json") as f:
         data = json.load(f)
         data["gameFolder"] = app_data["file_path_name"]
+        if os.path.isfile(app_data["file_path_name"] + "/taro2/src/game.json"):
+            with open(app_data["file_path_name"] + "/taro2/src/game.json") as f:
+                game = json.load(f)
+                if not game["title"] in data["projects"].keys():
+                    project = {game["title"]: {"folder": app_data["file_path_name"]}}
+                    data["projects"].update(project)
         json.dump(data, open(editorFolder + "/settings.json", "w"), indent=4)
 
 
